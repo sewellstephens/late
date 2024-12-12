@@ -1,0 +1,14 @@
+{
+  "dependencies": [
+    "@sewellstephens/plate-block-quote"
+  ],
+  "files": [
+    {
+      "content": "'use client';\n\nimport React from 'react';\n\nimport { cn, withRef } from '@sewellstephens/cn';\nimport { PlateElement } from '@sewellstephens/plate-common/react';\n\nexport const BlockquoteElement = withRef<typeof PlateElement>(\n  ({ children, className, ...props }, ref) => {\n    return (\n      <PlateElement\n        asChild\n        className={cn('my-1 border-l-2 pl-6 italic', className)}\n        ref={ref}\n        {...props}\n      >\n        <blockquote>{children}</blockquote>\n      </PlateElement>\n    );\n  }\n);\n",
+      "name": "blockquote-element.tsx"
+    }
+  ],
+  "name": "blockquote-element",
+  "registryDependencies": [],
+  "type": "components:plate-ui"
+}

@@ -1,0 +1,117 @@
+{
+  "name": "@sewellstephens/plate",
+  "version": "37.0.0",
+  "description": "Plate – a plugin system for slate",
+  "keywords": [
+    "contentEditable",
+    "editor",
+    "framework",
+    "html",
+    "plate",
+    "plugin",
+    "rich text",
+    "slate",
+    "wysiwyg"
+  ],
+  "homepage": "https://platejs.org",
+  "bugs": {
+    "url": "https://github.com/udecode/plate/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/udecode/plate.git",
+    "directory": "packages/plate"
+  },
+  "license": "MIT",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "module": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "import": "./dist/react/index.mjs",
+      "module": "./dist/react/index.mjs",
+      "require": "./dist/react/index.js"
+    }
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "brl": "yarn p:brl",
+    "build": "yarn p:build",
+    "build:watch": "yarn p:build:watch",
+    "clean": "yarn p:clean",
+    "lint": "yarn p:lint",
+    "lint:fix": "yarn p:lint:fix",
+    "test": "yarn p:test",
+    "test:watch": "yarn p:test:watch",
+    "typecheck": "yarn p:typecheck"
+  },
+  "dependencies": {
+    "@sewellstephens/plate-alignment": "37.0.0",
+    "@sewellstephens/plate-autoformat": "37.0.0",
+    "@sewellstephens/plate-basic-elements": "37.0.0",
+    "@sewellstephens/plate-basic-marks": "37.0.0",
+    "@sewellstephens/plate-block-quote": "37.0.0",
+    "@sewellstephens/plate-break": "37.0.0",
+    "@sewellstephens/plate-code-block": "37.0.0",
+    "@sewellstephens/plate-combobox": "37.0.0",
+    "@sewellstephens/plate-comments": "37.0.0",
+    "@sewellstephens/plate-common": "37.0.0",
+    "@sewellstephens/plate-csv": "37.0.0",
+    "@sewellstephens/plate-diff": "37.0.0",
+    "@sewellstephens/plate-docx": "37.0.0",
+    "@sewellstephens/plate-find-replace": "37.0.0",
+    "@sewellstephens/plate-floating": "37.0.0",
+    "@sewellstephens/plate-font": "37.0.0",
+    "@sewellstephens/plate-heading": "37.0.0",
+    "@sewellstephens/plate-highlight": "37.0.0",
+    "@sewellstephens/plate-horizontal-rule": "37.0.0",
+    "@sewellstephens/plate-html": "37.0.0",
+    "@sewellstephens/plate-indent": "37.0.0",
+    "@sewellstephens/plate-indent-list": "37.0.0",
+    "@sewellstephens/plate-kbd": "37.0.0",
+    "@sewellstephens/plate-layout": "37.0.0",
+    "@sewellstephens/plate-line-height": "37.0.0",
+    "@sewellstephens/plate-link": "37.0.0",
+    "@sewellstephens/plate-list": "37.0.0",
+    "@sewellstephens/plate-markdown": "37.0.0",
+    "@sewellstephens/plate-media": "37.0.0",
+    "@sewellstephens/plate-mention": "37.0.0",
+    "@sewellstephens/plate-node-id": "37.0.0",
+    "@sewellstephens/plate-normalizers": "37.0.0",
+    "@sewellstephens/plate-reset-node": "37.0.0",
+    "@sewellstephens/plate-resizable": "37.0.0",
+    "@sewellstephens/plate-select": "37.0.0",
+    "@sewellstephens/plate-selection": "37.0.0",
+    "@sewellstephens/plate-slash-command": "37.0.0",
+    "@sewellstephens/plate-suggestion": "37.0.0",
+    "@sewellstephens/plate-tabbable": "37.0.0",
+    "@sewellstephens/plate-table": "37.0.0",
+    "@sewellstephens/plate-toggle": "37.0.0",
+    "@sewellstephens/plate-trailing-block": "37.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "slate": ">=0.103.0",
+    "slate-history": ">=0.93.0",
+    "slate-hyperscript": ">=0.66.0",
+    "slate-react": ">=0.108.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "9f660a54cbd931cd20a6ad99e9319dbebfc7e1af",
+  "installConfig": {
+    "hoistingLimits": "workspaces"
+  }
+}

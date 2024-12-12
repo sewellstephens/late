@@ -1,0 +1,129 @@
+---
+title: Collaboration
+description: Collaborate with others in a single document.
+---
+
+<Callout className="my-4">
+
+**Backend Development in Progress** - Demo Unavailable.
+
+</Callout>
+
+<PackageInfo>
+
+## Features
+
+- The yjs plugin enables support for collaboration using <Link href="https://docs.slate-yjs.dev/">slate-yjs</Link> and <Link href="https://docs.slate-yjs.dev/walkthroughs/collaboration-hocuspocus">Hocuspocus</Link>.
+
+</PackageInfo>
+
+## Frontend
+
+### Installation
+
+```bash
+npm install @sewellstephens/plate-yjs
+```
+
+### Usage
+
+```tsx
+import { YjsPlugin } from '@sewellstephens/plate-yjs/react';
+
+const editor = createPlateEditor({
+  plugins: [
+    // ...otherPlugins,
+    YjsPlugin.configure({
+      hocuspocusProviderOptions: {
+        url: 'https://hocuspocus.test/hocuspocus',
+        name: 'test',
+      },
+    }),
+  ]
+});
+```
+
+## Backend
+
+Follow the backend instructions in <Link href="https://tiptap.dev/hocuspocus/getting-started">Hocuspocus docs</Link>.
+
+## Plugins
+
+### YjsPlugin
+
+<APIOptions>
+<APIItem name="cursorOptions" type="WithCursorsOptions<TCursorData>" optional>
+Configuration for handling cursors in the editor. These options are passed
+to the `withCursors` function.
+
+- <Link href="https://docs.slate-yjs.dev/api/slate-yjs-core/cursor-plugin#withcursors">WithCursorsOptions API</Link>.
+
+</APIItem>
+<APIItem
+  name="hocuspocusProviderOptions"
+  type="HocuspocusProviderConfiguration"
+  required
+>
+Configuration for the Hocuspocus provider.
+
+- <Link href="https://tiptap.dev/hocuspocus/provider/configuration">HocuspocusProviderConfiguration API</Link>.
+
+</APIItem>
+<APIItem name="yjsOptions" type="WithYjsOptions" optional>
+Optional configuration for the Yjs integration. These options are passed to
+the `withYjs` function.
+
+- <Link href="https://docs.slate-yjs.dev/api/slate-yjs-core/yjs-plugin#withyjs">WithYjsOptions API</Link>.
+
+</APIItem>
+<APIItem name="disableCursors" type="boolean" optional>
+A flag indicating whether to disable the cursor feature in the editor.
+</APIItem>
+</APIOptions>
+
+## API
+
+### useYjsStore
+
+<APIState>
+  <APIItem name="isConnected" type="boolean">
+    A flag indicating whether the editor is connected to the Hocuspocus server.
+  </APIItem>
+  <APIItem name="isSynced" type="boolean">
+    A flag indicating whether the editor is synced with the Hocuspocus server.
+  </APIItem>
+</APIState>
+
+### withTYjs
+
+Higher-order function that wraps a Plate editor with Yjs support, allowing for real-time collaborative editing.
+
+### PlateYjsEditorProps
+
+<APIAttributes>
+
+Extends `YjsEditorProps` and <Link href="https://docs.slate-yjs.dev/api/slate-yjs-core/cursor-plugin#cursoreditor">CursorEditor</Link>.
+
+<APIItem name="yjs" type="object">
+  
+<APISubList>
+
+<APISubListItem parent="yjs" name="provider" type="HocuspocusProvider">
+
+The Hocuspocus provider instance.
+
+</APISubListItem>
+
+</APISubList>
+
+</APIItem>
+
+</APIAttributes>
+
+### YHistoryEditorProps
+
+Extends `YjsEditorProps`, <Link href="https://docs.slate-yjs.dev/api/slate-yjs-core/history-plugin#yhistoryeditor">YHistoryEditor</Link>.
+
+### YjsEditorProps
+
+<Link href="https://docs.slate-yjs.dev/api/slate-yjs-core/yjs-plugin#yjseditor">YjsEditor API</Link>.

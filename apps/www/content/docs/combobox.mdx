@@ -1,0 +1,80 @@
+---
+title: Combobox
+description: Utilities for adding comboboxes to your editor.
+---
+
+The `TriggerComboboxPluginOptions` mixin configures your plugin to insert a combobox input element when the user types a specified trigger character.
+
+For example, the [Mention](/docs/mention) plugin uses TriggerComboboxPluginOptions to insert an `MentionInputPlugin.key` whenever the user types `@`.
+
+### Usage
+
+<Steps>
+
+<Step>
+Extend the editor using `withTriggerCombobox` and specify default values for the required options. (See below for the full list of options).
+
+```ts
+import { withTriggerCombobox } from '@sewellstephens/plate-combobox';
+
+const MyPlugin = createPlatePlugin({
+  // ...
+  extendEditor: withTriggerCombobox,
+  options: {
+    createComboboxInput: (trigger) => ({
+      children: [{ text: '' }],
+      trigger,
+      type: 'input',
+    }),
+    trigger: '@',
+    triggerPreviousCharPattern: /^\s?$/,
+  } as TriggerComboboxPluginOptions,
+});
+```
+</Step>
+
+<Step>
+Define your input element as an inline void element. It's often useful to do this inside a nested plugin.
+
+```ts
+const MyPlugin = createPlatePlugin({
+  // ...
+  plugins: [
+    createPlatePlugin({
+      key: 'input',
+      node: {
+        isElement: true,
+        isInline: true,
+        isVoid: true,
+      },
+    }),
+  ],
+});
+```
+
+The input element component can be built using [Inline Combobox](/docs/components/inline-combobox). 
+</Step>
+
+</Steps>
+
+### Options
+
+<APIOptions>
+
+<APIItem name="createComboboxInput" type="(trigger: string) => TElement">
+  A function to create the input node.
+</APIItem>
+
+<APIItem name="trigger" type="string">
+  The character that triggers the combobox.
+</APIItem>
+
+<APIItem name="triggerPreviousCharPattern" type="RegExp">
+  Only trigger the combobox if the char before the trigger character matches a regular expression. For example, `/^\s?$/` matches beginning of the line or a space.
+</APIItem>
+
+<APIItem name="triggerQuery" type="(editor: PlateEditor) => boolean" optional>
+  A query function to enable the behavior.
+</APIItem>
+
+</APIOptions>

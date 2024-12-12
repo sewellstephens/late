@@ -1,0 +1,14 @@
+{
+  "dependencies": [
+    "@sewellstephens/plate-code-block"
+  ],
+  "files": [
+    {
+      "content": "'use client';\n\nimport React from 'react';\n\nimport { withRef } from '@sewellstephens/cn';\nimport { useCodeSyntaxLeaf } from '@sewellstephens/plate-code-block/react';\nimport { PlateLeaf } from '@sewellstephens/plate-common/react';\n\nexport const CodeSyntaxLeaf = withRef<typeof PlateLeaf>(\n  ({ children, ...props }, ref) => {\n    const { leaf } = props;\n\n    const { tokenProps } = useCodeSyntaxLeaf({ leaf });\n\n    return (\n      <PlateLeaf ref={ref} {...props}>\n        <span {...tokenProps}>{children}</span>\n      </PlateLeaf>\n    );\n  }\n);\n",
+      "name": "code-syntax-leaf.tsx"
+    }
+  ],
+  "name": "code-syntax-leaf",
+  "registryDependencies": [],
+  "type": "components:plate-ui"
+}
