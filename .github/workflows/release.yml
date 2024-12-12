@@ -6,8 +6,6 @@ on:
 
 jobs:
   release:
-    # Basic security: the release job can only be executed from this repo and from the main branch (not a remote thing)
-    if: ${{ github.repository == 'sewellstephens/late' && contains('refs/heads/main',github.ref)}}
     name: Release and changelog
     runs-on: ubuntu-latest
     steps:
@@ -34,7 +32,7 @@ jobs:
           # publish: yarn g:release
           cwd: ${{ github.workspace }}
           title: '[Release] Version packages'
-          publish: npm publish
+          publish: yarn release
           # Optional, might be used in conjunction with GITHUB_TOKEN to
           # allow running the workflows on a Version package action.
           # Be aware of security implications.
