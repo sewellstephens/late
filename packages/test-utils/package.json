@@ -35,7 +35,7 @@
   ],
   "scripts": {
     "brl": "yarn p:brl",
-    "build": "yarn p:build",
+    "build": "cd 'C:\\Users\\sewel\\OneDrive\\Documents\\Software\\NPM packages\\late\\packages\\test-utils'; yarn p:build",
     "build:watch": "yarn p:build:watch",
     "clean": "yarn p:clean",
     "lint": "yarn p:lint",
