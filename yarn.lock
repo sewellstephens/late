@@ -5047,7 +5047,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@sewellstephens/cn@workspace:packages/cn"
   dependencies:
-    "@sewellstephens/react-utils": "npm:37.0.0"
+    "@sewellstephens/react-utils": "npm:^0.0.1"
   peerDependencies:
     class-variance-authority: ">=0.7.0"
     react: ">=16.8.0"
@@ -5056,7 +5056,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-alignment@npm:37.0.0, @sewellstephens/plate-alignment@workspace:^, @sewellstephens/plate-alignment@workspace:packages/alignment":
+"@sewellstephens/plate-alignment@npm:^0.0.1, @sewellstephens/plate-alignment@workspace:^, @sewellstephens/plate-alignment@workspace:packages/alignment":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-alignment@workspace:packages/alignment"
   dependencies:
@@ -5072,7 +5072,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-autoformat@npm:37.0.0, @sewellstephens/plate-autoformat@workspace:^, @sewellstephens/plate-autoformat@workspace:packages/autoformat":
+"@sewellstephens/plate-autoformat@npm:^0.0.1, @sewellstephens/plate-autoformat@workspace:^, @sewellstephens/plate-autoformat@workspace:packages/autoformat":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-autoformat@workspace:packages/autoformat"
   dependencies:
@@ -5089,14 +5089,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-basic-elements@npm:37.0.0, @sewellstephens/plate-basic-elements@workspace:^, @sewellstephens/plate-basic-elements@workspace:packages/basic-elements":
+"@sewellstephens/plate-basic-elements@npm:^0.0.1, @sewellstephens/plate-basic-elements@workspace:^, @sewellstephens/plate-basic-elements@workspace:packages/basic-elements":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-basic-elements@workspace:packages/basic-elements"
   dependencies:
-    "@sewellstephens/plate-block-quote": "npm:37.0.0"
-    "@sewellstephens/plate-code-block": "npm:37.0.0"
+    "@sewellstephens/plate-block-quote": "npm:^0.0.1"
+    "@sewellstephens/plate-code-block": "npm:^0.0.1"
     "@sewellstephens/plate-common": "workspace:^"
-    "@sewellstephens/plate-heading": "npm:37.0.0"
+    "@sewellstephens/plate-heading": "npm:^0.0.1"
   peerDependencies:
     "@sewellstephens/plate-common": ">=37.0.0"
     react: ">=16.8.0"
@@ -5108,7 +5108,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-basic-marks@npm:37.0.0, @sewellstephens/plate-basic-marks@workspace:^, @sewellstephens/plate-basic-marks@workspace:packages/basic-marks":
+"@sewellstephens/plate-basic-marks@npm:^0.0.1, @sewellstephens/plate-basic-marks@workspace:^, @sewellstephens/plate-basic-marks@workspace:packages/basic-marks":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-basic-marks@workspace:packages/basic-marks"
   dependencies:
@@ -5124,7 +5124,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-block-quote@npm:37.0.0, @sewellstephens/plate-block-quote@workspace:^, @sewellstephens/plate-block-quote@workspace:packages/block-quote":
+"@sewellstephens/plate-block-quote@npm:^0.0.1, @sewellstephens/plate-block-quote@workspace:^, @sewellstephens/plate-block-quote@workspace:packages/block-quote":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-block-quote@workspace:packages/block-quote"
   dependencies:
@@ -5140,7 +5140,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-break@npm:37.0.0, @sewellstephens/plate-break@workspace:^, @sewellstephens/plate-break@workspace:packages/break":
+"@sewellstephens/plate-break@npm:^0.0.1, @sewellstephens/plate-break@workspace:^, @sewellstephens/plate-break@workspace:packages/break":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-break@workspace:packages/break"
   dependencies:
@@ -5208,7 +5208,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-code-block@npm:37.0.0, @sewellstephens/plate-code-block@workspace:^, @sewellstephens/plate-code-block@workspace:packages/code-block":
+"@sewellstephens/plate-code-block@npm:^0.0.1, @sewellstephens/plate-code-block@workspace:^, @sewellstephens/plate-code-block@workspace:packages/code-block":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-code-block@workspace:packages/code-block"
   dependencies:
@@ -5225,7 +5225,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-combobox@npm:37.0.0, @sewellstephens/plate-combobox@workspace:^, @sewellstephens/plate-combobox@workspace:packages/combobox":
+"@sewellstephens/plate-combobox@npm:^0.0.1, @sewellstephens/plate-combobox@workspace:^, @sewellstephens/plate-combobox@workspace:packages/combobox":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-combobox@workspace:packages/combobox"
   dependencies:
@@ -5242,7 +5242,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-comments@npm:37.0.0, @sewellstephens/plate-comments@workspace:^, @sewellstephens/plate-comments@workspace:packages/comments":
+"@sewellstephens/plate-comments@npm:^0.0.1, @sewellstephens/plate-comments@workspace:^, @sewellstephens/plate-comments@workspace:packages/comments":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-comments@workspace:packages/comments"
   dependencies:
@@ -5259,18 +5259,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-common@npm:37.0.0, @sewellstephens/plate-common@workspace:^, @sewellstephens/plate-common@workspace:packages/common":
+"@sewellstephens/plate-common@npm:^0.0.1, @sewellstephens/plate-common@workspace:^, @sewellstephens/plate-common@workspace:packages/common":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-common@workspace:packages/common"
   dependencies:
-    "@sewellstephens/plate-core": "npm:37.0.0"
-    "@sewellstephens/plate-utils": "npm:37.0.0"
-    "@sewellstephens/react-hotkeys": "npm:37.0.0"
-    "@sewellstephens/react-utils": "npm:37.0.0"
-    "@sewellstephens/slate": "npm:37.0.0"
-    "@sewellstephens/slate-react": "npm:37.0.0"
-    "@sewellstephens/slate-utils": "npm:37.0.0"
-    "@sewellstephens/utils": "npm:37.0.0"
+    "@sewellstephens/plate-core": "npm:^0.0.1"
+    "@sewellstephens/plate-utils": "npm:^0.0.1"
+    "@sewellstephens/react-hotkeys": "npm:^0.0.1"
+    "@sewellstephens/react-utils": "npm:^0.0.1"
+    "@sewellstephens/slate": "npm:^0.0.1"
+    "@sewellstephens/slate-react": "npm:^0.0.1"
+    "@sewellstephens/slate-utils": "npm:^0.0.1"
+    "@sewellstephens/utils": "npm:^0.0.1"
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
@@ -5281,16 +5281,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-core@npm:37.0.0, @sewellstephens/plate-core@workspace:^, @sewellstephens/plate-core@workspace:packages/core":
+"@sewellstephens/plate-core@npm:^0.0.1, @sewellstephens/plate-core@workspace:^, @sewellstephens/plate-core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-core@workspace:packages/core"
   dependencies:
-    "@sewellstephens/react-hotkeys": "npm:37.0.0"
-    "@sewellstephens/react-utils": "npm:37.0.0"
-    "@sewellstephens/slate": "npm:37.0.0"
-    "@sewellstephens/slate-react": "npm:37.0.0"
-    "@sewellstephens/slate-utils": "npm:37.0.0"
-    "@sewellstephens/utils": "npm:37.0.0"
+    "@sewellstephens/react-hotkeys": "npm:^0.0.1"
+    "@sewellstephens/react-utils": "npm:^0.0.1"
+    "@sewellstephens/slate": "npm:^0.0.1"
+    "@sewellstephens/slate-react": "npm:^0.0.1"
+    "@sewellstephens/slate-utils": "npm:^0.0.1"
+    "@sewellstephens/utils": "npm:^0.0.1"
     clsx: "npm:^1.2.1"
     is-hotkey: "npm:^0.2.0"
     jotai: "npm:^2.7.1"
@@ -5312,12 +5312,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-csv@npm:37.0.0, @sewellstephens/plate-csv@workspace:^, @sewellstephens/plate-csv@workspace:packages/csv":
+"@sewellstephens/plate-csv@npm:^0.0.1, @sewellstephens/plate-csv@workspace:^, @sewellstephens/plate-csv@workspace:packages/csv":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-csv@workspace:packages/csv"
   dependencies:
     "@sewellstephens/plate-common": "workspace:^"
-    "@sewellstephens/plate-table": "npm:37.0.0"
+    "@sewellstephens/plate-table": "npm:^0.0.1"
     "@types/papaparse": "npm:^5.3.14"
     papaparse: "npm:^5.4.1"
   peerDependencies:
@@ -5363,7 +5363,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-diff@npm:37.0.0, @sewellstephens/plate-diff@workspace:^, @sewellstephens/plate-diff@workspace:packages/diff":
+"@sewellstephens/plate-diff@npm:^0.0.1, @sewellstephens/plate-diff@workspace:^, @sewellstephens/plate-diff@workspace:packages/diff":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-diff@workspace:packages/diff"
   dependencies:
@@ -5401,16 +5401,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-docx@npm:37.0.0, @sewellstephens/plate-docx@workspace:^, @sewellstephens/plate-docx@workspace:packages/docx":
+"@sewellstephens/plate-docx@npm:^0.0.1, @sewellstephens/plate-docx@workspace:^, @sewellstephens/plate-docx@workspace:packages/docx":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-docx@workspace:packages/docx"
   dependencies:
     "@sewellstephens/plate-common": "workspace:^"
-    "@sewellstephens/plate-heading": "npm:37.0.0"
-    "@sewellstephens/plate-indent": "npm:37.0.0"
-    "@sewellstephens/plate-indent-list": "npm:37.0.0"
-    "@sewellstephens/plate-media": "npm:37.0.0"
-    "@sewellstephens/plate-table": "npm:37.0.0"
+    "@sewellstephens/plate-heading": "npm:^0.0.1"
+    "@sewellstephens/plate-indent": "npm:^0.0.1"
+    "@sewellstephens/plate-indent-list": "npm:^0.0.1"
+    "@sewellstephens/plate-media": "npm:^0.0.1"
+    "@sewellstephens/plate-table": "npm:^0.0.1"
     validator: "npm:^13.11.0"
   peerDependencies:
     "@sewellstephens/plate-common": ">=37.0.0"
@@ -5428,7 +5428,7 @@ __metadata:
   resolution: "@sewellstephens/plate-emoji@workspace:packages/emoji"
   dependencies:
     "@emoji-mart/data": "npm:^1.1.2"
-    "@sewellstephens/plate-combobox": "npm:37.0.0"
+    "@sewellstephens/plate-combobox": "npm:^0.0.1"
     "@sewellstephens/plate-common": "workspace:^"
   peerDependencies:
     "@sewellstephens/plate-common": ">=37.0.0"
@@ -5458,7 +5458,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-find-replace@npm:37.0.0, @sewellstephens/plate-find-replace@workspace:^, @sewellstephens/plate-find-replace@workspace:packages/find-replace":
+"@sewellstephens/plate-find-replace@npm:^0.0.1, @sewellstephens/plate-find-replace@workspace:^, @sewellstephens/plate-find-replace@workspace:packages/find-replace":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-find-replace@workspace:packages/find-replace"
   dependencies:
@@ -5474,7 +5474,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-floating@npm:37.0.0, @sewellstephens/plate-floating@workspace:^, @sewellstephens/plate-floating@workspace:packages/floating":
+"@sewellstephens/plate-floating@npm:^0.0.1, @sewellstephens/plate-floating@workspace:^, @sewellstephens/plate-floating@workspace:packages/floating":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-floating@workspace:packages/floating"
   dependencies:
@@ -5492,7 +5492,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-font@npm:37.0.0, @sewellstephens/plate-font@workspace:^, @sewellstephens/plate-font@workspace:packages/font":
+"@sewellstephens/plate-font@npm:^0.0.1, @sewellstephens/plate-font@workspace:^, @sewellstephens/plate-font@workspace:packages/font":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-font@workspace:packages/font"
   dependencies:
@@ -5509,7 +5509,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-heading@npm:37.0.0, @sewellstephens/plate-heading@workspace:^, @sewellstephens/plate-heading@workspace:packages/heading":
+"@sewellstephens/plate-heading@npm:^0.0.1, @sewellstephens/plate-heading@workspace:^, @sewellstephens/plate-heading@workspace:packages/heading":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-heading@workspace:packages/heading"
   dependencies:
@@ -5525,7 +5525,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-highlight@npm:37.0.0, @sewellstephens/plate-highlight@workspace:^, @sewellstephens/plate-highlight@workspace:packages/highlight":
+"@sewellstephens/plate-highlight@npm:^0.0.1, @sewellstephens/plate-highlight@workspace:^, @sewellstephens/plate-highlight@workspace:packages/highlight":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-highlight@workspace:packages/highlight"
   dependencies:
@@ -5541,7 +5541,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-horizontal-rule@npm:37.0.0, @sewellstephens/plate-horizontal-rule@workspace:^, @sewellstephens/plate-horizontal-rule@workspace:packages/horizontal-rule":
+"@sewellstephens/plate-horizontal-rule@npm:^0.0.1, @sewellstephens/plate-horizontal-rule@workspace:^, @sewellstephens/plate-horizontal-rule@workspace:packages/horizontal-rule":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-horizontal-rule@workspace:packages/horizontal-rule"
   dependencies:
@@ -5557,7 +5557,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-html@npm:37.0.0, @sewellstephens/plate-html@workspace:^, @sewellstephens/plate-html@workspace:packages/html":
+"@sewellstephens/plate-html@npm:^0.0.1, @sewellstephens/plate-html@workspace:^, @sewellstephens/plate-html@workspace:packages/html":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-html@workspace:packages/html"
   dependencies:
@@ -5575,13 +5575,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-indent-list@npm:37.0.0, @sewellstephens/plate-indent-list@workspace:^, @sewellstephens/plate-indent-list@workspace:packages/indent-list":
+"@sewellstephens/plate-indent-list@npm:^0.0.1, @sewellstephens/plate-indent-list@workspace:^, @sewellstephens/plate-indent-list@workspace:packages/indent-list":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-indent-list@workspace:packages/indent-list"
   dependencies:
     "@sewellstephens/plate-common": "workspace:^"
-    "@sewellstephens/plate-indent": "npm:37.0.0"
-    "@sewellstephens/plate-list": "npm:37.0.0"
+    "@sewellstephens/plate-indent": "npm:^0.0.1"
+    "@sewellstephens/plate-list": "npm:^0.0.1"
     clsx: "npm:^1.2.1"
   peerDependencies:
     "@sewellstephens/plate-common": ">=37.0.0"
@@ -5594,7 +5594,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-indent@npm:37.0.0, @sewellstephens/plate-indent@workspace:^, @sewellstephens/plate-indent@workspace:packages/indent":
+"@sewellstephens/plate-indent@npm:^0.0.1, @sewellstephens/plate-indent@workspace:^, @sewellstephens/plate-indent@workspace:packages/indent":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-indent@workspace:packages/indent"
   dependencies:
@@ -5627,7 +5627,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-kbd@npm:37.0.0, @sewellstephens/plate-kbd@workspace:^, @sewellstephens/plate-kbd@workspace:packages/kbd":
+"@sewellstephens/plate-kbd@npm:^0.0.1, @sewellstephens/plate-kbd@workspace:^, @sewellstephens/plate-kbd@workspace:packages/kbd":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-kbd@workspace:packages/kbd"
   dependencies:
@@ -5643,7 +5643,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-layout@npm:37.0.0, @sewellstephens/plate-layout@workspace:^, @sewellstephens/plate-layout@workspace:packages/layout":
+"@sewellstephens/plate-layout@npm:^0.0.1, @sewellstephens/plate-layout@workspace:^, @sewellstephens/plate-layout@workspace:packages/layout":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-layout@workspace:packages/layout"
   dependencies:
@@ -5659,7 +5659,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-line-height@npm:37.0.0, @sewellstephens/plate-line-height@workspace:^, @sewellstephens/plate-line-height@workspace:packages/line-height":
+"@sewellstephens/plate-line-height@npm:^0.0.1, @sewellstephens/plate-line-height@workspace:^, @sewellstephens/plate-line-height@workspace:packages/line-height":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-line-height@workspace:packages/line-height"
   dependencies:
@@ -5675,13 +5675,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-link@npm:37.0.0, @sewellstephens/plate-link@workspace:^, @sewellstephens/plate-link@workspace:packages/link":
+"@sewellstephens/plate-link@npm:^0.0.1, @sewellstephens/plate-link@workspace:^, @sewellstephens/plate-link@workspace:packages/link":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-link@workspace:packages/link"
   dependencies:
     "@sewellstephens/plate-common": "workspace:^"
-    "@sewellstephens/plate-floating": "npm:37.0.0"
-    "@sewellstephens/plate-normalizers": "npm:37.0.0"
+    "@sewellstephens/plate-floating": "npm:^0.0.1"
+    "@sewellstephens/plate-normalizers": "npm:^0.0.1"
   peerDependencies:
     "@sewellstephens/plate-common": ">=37.0.0"
     react: ">=16.8.0"
@@ -5693,12 +5693,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-list@npm:37.0.0, @sewellstephens/plate-list@workspace:^, @sewellstephens/plate-list@workspace:packages/list":
+"@sewellstephens/plate-list@npm:^0.0.1, @sewellstephens/plate-list@workspace:^, @sewellstephens/plate-list@workspace:packages/list":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-list@workspace:packages/list"
   dependencies:
     "@sewellstephens/plate-common": "workspace:^"
-    "@sewellstephens/plate-reset-node": "npm:37.0.0"
+    "@sewellstephens/plate-reset-node": "npm:^0.0.1"
     lodash: "npm:^4.17.21"
   peerDependencies:
     "@sewellstephens/plate-common": ">=37.0.0"
@@ -5711,7 +5711,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-markdown@npm:37.0.0, @sewellstephens/plate-markdown@workspace:^, @sewellstephens/plate-markdown@workspace:packages/markdown":
+"@sewellstephens/plate-markdown@npm:^0.0.1, @sewellstephens/plate-markdown@workspace:^, @sewellstephens/plate-markdown@workspace:packages/markdown":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-markdown@workspace:packages/markdown"
   dependencies:
@@ -5748,7 +5748,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-media@npm:37.0.0, @sewellstephens/plate-media@workspace:^, @sewellstephens/plate-media@workspace:packages/media":
+"@sewellstephens/plate-media@npm:^0.0.1, @sewellstephens/plate-media@workspace:^, @sewellstephens/plate-media@workspace:packages/media":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-media@workspace:packages/media"
   dependencies:
@@ -5765,11 +5765,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-mention@npm:37.0.0, @sewellstephens/plate-mention@workspace:^, @sewellstephens/plate-mention@workspace:packages/mention":
+"@sewellstephens/plate-mention@npm:^0.0.1, @sewellstephens/plate-mention@workspace:^, @sewellstephens/plate-mention@workspace:packages/mention":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-mention@workspace:packages/mention"
   dependencies:
-    "@sewellstephens/plate-combobox": "npm:37.0.0"
+    "@sewellstephens/plate-combobox": "npm:^0.0.1"
     "@sewellstephens/plate-common": "workspace:^"
   peerDependencies:
     "@sewellstephens/plate-common": ">=37.0.0"
@@ -5782,7 +5782,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-node-id@npm:37.0.0, @sewellstephens/plate-node-id@workspace:^, @sewellstephens/plate-node-id@workspace:packages/node-id":
+"@sewellstephens/plate-node-id@npm:^0.0.1, @sewellstephens/plate-node-id@workspace:^, @sewellstephens/plate-node-id@workspace:packages/node-id":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-node-id@workspace:packages/node-id"
   dependencies:
@@ -5799,7 +5799,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-normalizers@npm:37.0.0, @sewellstephens/plate-normalizers@workspace:^, @sewellstephens/plate-normalizers@workspace:packages/normalizers":
+"@sewellstephens/plate-normalizers@npm:^0.0.1, @sewellstephens/plate-normalizers@workspace:^, @sewellstephens/plate-normalizers@workspace:packages/normalizers":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-normalizers@workspace:packages/normalizers"
   dependencies:
@@ -5833,7 +5833,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-reset-node@npm:37.0.0, @sewellstephens/plate-reset-node@workspace:^, @sewellstephens/plate-reset-node@workspace:packages/reset-node":
+"@sewellstephens/plate-reset-node@npm:^0.0.1, @sewellstephens/plate-reset-node@workspace:^, @sewellstephens/plate-reset-node@workspace:packages/reset-node":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-reset-node@workspace:packages/reset-node"
   dependencies:
@@ -5849,7 +5849,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-resizable@npm:37.0.0, @sewellstephens/plate-resizable@workspace:^, @sewellstephens/plate-resizable@workspace:packages/resizable":
+"@sewellstephens/plate-resizable@npm:^0.0.1, @sewellstephens/plate-resizable@workspace:^, @sewellstephens/plate-resizable@workspace:packages/resizable":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-resizable@workspace:packages/resizable"
   dependencies:
@@ -5865,7 +5865,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-select@npm:37.0.0, @sewellstephens/plate-select@workspace:^, @sewellstephens/plate-select@workspace:packages/select":
+"@sewellstephens/plate-select@npm:^0.0.1, @sewellstephens/plate-select@workspace:^, @sewellstephens/plate-select@workspace:packages/select":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-select@workspace:packages/select"
   dependencies:
@@ -5881,7 +5881,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-selection@npm:37.0.0, @sewellstephens/plate-selection@workspace:^, @sewellstephens/plate-selection@workspace:packages/selection":
+"@sewellstephens/plate-selection@npm:^0.0.1, @sewellstephens/plate-selection@workspace:^, @sewellstephens/plate-selection@workspace:packages/selection":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-selection@workspace:packages/selection"
   dependencies:
@@ -5898,11 +5898,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-slash-command@npm:37.0.0, @sewellstephens/plate-slash-command@workspace:^, @sewellstephens/plate-slash-command@workspace:packages/slash-command":
+"@sewellstephens/plate-slash-command@npm:^0.0.1, @sewellstephens/plate-slash-command@workspace:^, @sewellstephens/plate-slash-command@workspace:packages/slash-command":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-slash-command@workspace:packages/slash-command"
   dependencies:
-    "@sewellstephens/plate-combobox": "npm:37.0.0"
+    "@sewellstephens/plate-combobox": "npm:^0.0.1"
     "@sewellstephens/plate-common": "workspace:^"
   peerDependencies:
     "@sewellstephens/plate-common": ">=37.0.0"
@@ -5915,12 +5915,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-suggestion@npm:37.0.0, @sewellstephens/plate-suggestion@workspace:^, @sewellstephens/plate-suggestion@workspace:packages/suggestion":
+"@sewellstephens/plate-suggestion@npm:^0.0.1, @sewellstephens/plate-suggestion@workspace:^, @sewellstephens/plate-suggestion@workspace:packages/suggestion":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-suggestion@workspace:packages/suggestion"
   dependencies:
     "@sewellstephens/plate-common": "workspace:^"
-    "@sewellstephens/plate-diff": "npm:37.0.0"
+    "@sewellstephens/plate-diff": "npm:^0.0.1"
     lodash: "npm:^4.17.21"
   peerDependencies:
     "@sewellstephens/plate-common": ">=37.0.0"
@@ -5933,7 +5933,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-tabbable@npm:37.0.0, @sewellstephens/plate-tabbable@workspace:^, @sewellstephens/plate-tabbable@workspace:packages/tabbable":
+"@sewellstephens/plate-tabbable@npm:^0.0.1, @sewellstephens/plate-tabbable@workspace:^, @sewellstephens/plate-tabbable@workspace:packages/tabbable":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-tabbable@workspace:packages/tabbable"
   dependencies:
@@ -5950,12 +5950,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-table@npm:37.0.0, @sewellstephens/plate-table@workspace:^, @sewellstephens/plate-table@workspace:packages/table":
+"@sewellstephens/plate-table@npm:^0.0.1, @sewellstephens/plate-table@workspace:^, @sewellstephens/plate-table@workspace:packages/table":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-table@workspace:packages/table"
   dependencies:
     "@sewellstephens/plate-common": "workspace:^"
-    "@sewellstephens/plate-resizable": "npm:37.0.0"
+    "@sewellstephens/plate-resizable": "npm:^0.0.1"
     lodash: "npm:^4.17.21"
   peerDependencies:
     "@sewellstephens/plate-common": ">=37.0.0"
@@ -5976,13 +5976,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-toggle@npm:37.0.0, @sewellstephens/plate-toggle@workspace:^, @sewellstephens/plate-toggle@workspace:packages/toggle":
+"@sewellstephens/plate-toggle@npm:^0.0.1, @sewellstephens/plate-toggle@workspace:^, @sewellstephens/plate-toggle@workspace:packages/toggle":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-toggle@workspace:packages/toggle"
   dependencies:
     "@sewellstephens/plate-common": "workspace:^"
-    "@sewellstephens/plate-indent": "npm:37.0.0"
-    "@sewellstephens/plate-node-id": "npm:37.0.0"
+    "@sewellstephens/plate-indent": "npm:^0.0.1"
+    "@sewellstephens/plate-node-id": "npm:^0.0.1"
     lodash: "npm:^4.17.21"
   peerDependencies:
     "@sewellstephens/plate-common": ">=37.0.0"
@@ -5995,7 +5995,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-trailing-block@npm:37.0.0, @sewellstephens/plate-trailing-block@workspace:^, @sewellstephens/plate-trailing-block@workspace:packages/trailing-block":
+"@sewellstephens/plate-trailing-block@npm:^0.0.1, @sewellstephens/plate-trailing-block@workspace:^, @sewellstephens/plate-trailing-block@workspace:packages/trailing-block":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-trailing-block@workspace:packages/trailing-block"
   dependencies:
@@ -6042,16 +6042,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/plate-utils@npm:37.0.0, @sewellstephens/plate-utils@workspace:^, @sewellstephens/plate-utils@workspace:packages/plate-utils":
+"@sewellstephens/plate-utils@npm:^0.0.1, @sewellstephens/plate-utils@workspace:^, @sewellstephens/plate-utils@workspace:packages/plate-utils":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate-utils@workspace:packages/plate-utils"
   dependencies:
-    "@sewellstephens/plate-core": "npm:37.0.0"
-    "@sewellstephens/react-utils": "npm:37.0.0"
-    "@sewellstephens/slate": "npm:37.0.0"
-    "@sewellstephens/slate-react": "npm:37.0.0"
-    "@sewellstephens/slate-utils": "npm:37.0.0"
-    "@sewellstephens/utils": "npm:37.0.0"
+    "@sewellstephens/plate-core": "npm:^0.0.1"
+    "@sewellstephens/react-utils": "npm:^0.0.1"
+    "@sewellstephens/slate": "npm:^0.0.1"
+    "@sewellstephens/slate-react": "npm:^0.0.1"
+    "@sewellstephens/slate-utils": "npm:^0.0.1"
+    "@sewellstephens/utils": "npm:^0.0.1"
     clsx: "npm:^1.2.1"
     lodash: "npm:^4.17.21"
   peerDependencies:
@@ -6087,48 +6087,48 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@sewellstephens/plate@workspace:packages/plate"
   dependencies:
-    "@sewellstephens/plate-alignment": "npm:37.0.0"
-    "@sewellstephens/plate-autoformat": "npm:37.0.0"
-    "@sewellstephens/plate-basic-elements": "npm:37.0.0"
-    "@sewellstephens/plate-basic-marks": "npm:37.0.0"
-    "@sewellstephens/plate-block-quote": "npm:37.0.0"
-    "@sewellstephens/plate-break": "npm:37.0.0"
-    "@sewellstephens/plate-code-block": "npm:37.0.0"
-    "@sewellstephens/plate-combobox": "npm:37.0.0"
-    "@sewellstephens/plate-comments": "npm:37.0.0"
-    "@sewellstephens/plate-common": "npm:37.0.0"
-    "@sewellstephens/plate-csv": "npm:37.0.0"
-    "@sewellstephens/plate-diff": "npm:37.0.0"
-    "@sewellstephens/plate-docx": "npm:37.0.0"
-    "@sewellstephens/plate-find-replace": "npm:37.0.0"
-    "@sewellstephens/plate-floating": "npm:37.0.0"
-    "@sewellstephens/plate-font": "npm:37.0.0"
-    "@sewellstephens/plate-heading": "npm:37.0.0"
-    "@sewellstephens/plate-highlight": "npm:37.0.0"
-    "@sewellstephens/plate-horizontal-rule": "npm:37.0.0"
-    "@sewellstephens/plate-html": "npm:37.0.0"
-    "@sewellstephens/plate-indent": "npm:37.0.0"
-    "@sewellstephens/plate-indent-list": "npm:37.0.0"
-    "@sewellstephens/plate-kbd": "npm:37.0.0"
-    "@sewellstephens/plate-layout": "npm:37.0.0"
-    "@sewellstephens/plate-line-height": "npm:37.0.0"
-    "@sewellstephens/plate-link": "npm:37.0.0"
-    "@sewellstephens/plate-list": "npm:37.0.0"
-    "@sewellstephens/plate-markdown": "npm:37.0.0"
-    "@sewellstephens/plate-media": "npm:37.0.0"
-    "@sewellstephens/plate-mention": "npm:37.0.0"
-    "@sewellstephens/plate-node-id": "npm:37.0.0"
-    "@sewellstephens/plate-normalizers": "npm:37.0.0"
-    "@sewellstephens/plate-reset-node": "npm:37.0.0"
-    "@sewellstephens/plate-resizable": "npm:37.0.0"
-    "@sewellstephens/plate-select": "npm:37.0.0"
-    "@sewellstephens/plate-selection": "npm:37.0.0"
-    "@sewellstephens/plate-slash-command": "npm:37.0.0"
-    "@sewellstephens/plate-suggestion": "npm:37.0.0"
-    "@sewellstephens/plate-tabbable": "npm:37.0.0"
-    "@sewellstephens/plate-table": "npm:37.0.0"
-    "@sewellstephens/plate-toggle": "npm:37.0.0"
-    "@sewellstephens/plate-trailing-block": "npm:37.0.0"
+    "@sewellstephens/plate-alignment": "npm:^0.0.1"
+    "@sewellstephens/plate-autoformat": "npm:^0.0.1"
+    "@sewellstephens/plate-basic-elements": "npm:^0.0.1"
+    "@sewellstephens/plate-basic-marks": "npm:^0.0.1"
+    "@sewellstephens/plate-block-quote": "npm:^0.0.1"
+    "@sewellstephens/plate-break": "npm:^0.0.1"
+    "@sewellstephens/plate-code-block": "npm:^0.0.1"
+    "@sewellstephens/plate-combobox": "npm:^0.0.1"
+    "@sewellstephens/plate-comments": "npm:^0.0.1"
+    "@sewellstephens/plate-common": "npm:^0.0.1"
+    "@sewellstephens/plate-csv": "npm:^0.0.1"
+    "@sewellstephens/plate-diff": "npm:^0.0.1"
+    "@sewellstephens/plate-docx": "npm:^0.0.1"
+    "@sewellstephens/plate-find-replace": "npm:^0.0.1"
+    "@sewellstephens/plate-floating": "npm:^0.0.1"
+    "@sewellstephens/plate-font": "npm:^0.0.1"
+    "@sewellstephens/plate-heading": "npm:^0.0.1"
+    "@sewellstephens/plate-highlight": "npm:^0.0.1"
+    "@sewellstephens/plate-horizontal-rule": "npm:^0.0.1"
+    "@sewellstephens/plate-html": "npm:^0.0.1"
+    "@sewellstephens/plate-indent": "npm:^0.0.1"
+    "@sewellstephens/plate-indent-list": "npm:^0.0.1"
+    "@sewellstephens/plate-kbd": "npm:^0.0.1"
+    "@sewellstephens/plate-layout": "npm:^0.0.1"
+    "@sewellstephens/plate-line-height": "npm:^0.0.1"
+    "@sewellstephens/plate-link": "npm:^0.0.1"
+    "@sewellstephens/plate-list": "npm:^0.0.1"
+    "@sewellstephens/plate-markdown": "npm:^0.0.1"
+    "@sewellstephens/plate-media": "npm:^0.0.1"
+    "@sewellstephens/plate-mention": "npm:^0.0.1"
+    "@sewellstephens/plate-node-id": "npm:^0.0.1"
+    "@sewellstephens/plate-normalizers": "npm:^0.0.1"
+    "@sewellstephens/plate-reset-node": "npm:^0.0.1"
+    "@sewellstephens/plate-resizable": "npm:^0.0.1"
+    "@sewellstephens/plate-select": "npm:^0.0.1"
+    "@sewellstephens/plate-selection": "npm:^0.0.1"
+    "@sewellstephens/plate-slash-command": "npm:^0.0.1"
+    "@sewellstephens/plate-suggestion": "npm:^0.0.1"
+    "@sewellstephens/plate-tabbable": "npm:^0.0.1"
+    "@sewellstephens/plate-table": "npm:^0.0.1"
+    "@sewellstephens/plate-toggle": "npm:^0.0.1"
+    "@sewellstephens/plate-trailing-block": "npm:^0.0.1"
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
@@ -6139,7 +6139,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/react-hotkeys@npm:37.0.0, @sewellstephens/react-hotkeys@workspace:^, @sewellstephens/react-hotkeys@workspace:packages/react-hotkeys":
+"@sewellstephens/react-hotkeys@npm:^0.0.1, @sewellstephens/react-hotkeys@workspace:^, @sewellstephens/react-hotkeys@workspace:packages/react-hotkeys":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/react-hotkeys@workspace:packages/react-hotkeys"
   peerDependencies:
@@ -6148,12 +6148,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/react-utils@npm:37.0.0, @sewellstephens/react-utils@workspace:^, @sewellstephens/react-utils@workspace:packages/react-utils":
+"@sewellstephens/react-utils@npm:^0.0.1, @sewellstephens/react-utils@workspace:^, @sewellstephens/react-utils@workspace:packages/react-utils":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/react-utils@workspace:packages/react-utils"
   dependencies:
     "@radix-ui/react-slot": "npm:^1.0.2"
-    "@sewellstephens/utils": "npm:37.0.0"
+    "@sewellstephens/utils": "npm:^0.0.1"
     clsx: "npm:^1.2.1"
   peerDependencies:
     react: ">=16.8.0"
@@ -6161,13 +6161,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/slate-react@npm:37.0.0, @sewellstephens/slate-react@workspace:^, @sewellstephens/slate-react@workspace:packages/slate-react":
+"@sewellstephens/slate-react@npm:^0.0.1, @sewellstephens/slate-react@workspace:^, @sewellstephens/slate-react@workspace:packages/slate-react":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/slate-react@workspace:packages/slate-react"
   dependencies:
-    "@sewellstephens/react-utils": "npm:37.0.0"
-    "@sewellstephens/slate": "npm:37.0.0"
-    "@sewellstephens/utils": "npm:37.0.0"
+    "@sewellstephens/react-utils": "npm:^0.0.1"
+    "@sewellstephens/slate": "npm:^0.0.1"
+    "@sewellstephens/utils": "npm:^0.0.1"
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
@@ -6177,12 +6177,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/slate-utils@npm:37.0.0, @sewellstephens/slate-utils@workspace:^, @sewellstephens/slate-utils@workspace:packages/slate-utils":
+"@sewellstephens/slate-utils@npm:^0.0.1, @sewellstephens/slate-utils@workspace:^, @sewellstephens/slate-utils@workspace:packages/slate-utils":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/slate-utils@workspace:packages/slate-utils"
   dependencies:
-    "@sewellstephens/slate": "npm:37.0.0"
-    "@sewellstephens/utils": "npm:37.0.0"
+    "@sewellstephens/slate": "npm:^0.0.1"
+    "@sewellstephens/utils": "npm:^0.0.1"
     lodash: "npm:^4.17.21"
   peerDependencies:
     slate: ">=0.103.0"
@@ -6190,18 +6190,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/slate@npm:37.0.0, @sewellstephens/slate@workspace:^, @sewellstephens/slate@workspace:packages/slate":
+"@sewellstephens/slate@npm:^0.0.1, @sewellstephens/slate@workspace:^, @sewellstephens/slate@workspace:packages/slate":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/slate@workspace:packages/slate"
   dependencies:
-    "@sewellstephens/utils": "npm:37.0.0"
+    "@sewellstephens/utils": "npm:^0.0.1"
   peerDependencies:
     slate: ">=0.103.0"
     slate-history: ">=0.93.0"
   languageName: unknown
   linkType: soft
 
-"@sewellstephens/utils@npm:37.0.0, @sewellstephens/utils@workspace:^, @sewellstephens/utils@workspace:packages/utils":
+"@sewellstephens/utils@npm:^0.0.1, @sewellstephens/utils@workspace:^, @sewellstephens/utils@workspace:packages/utils":
   version: 0.0.0-use.local
   resolution: "@sewellstephens/utils@workspace:packages/utils"
   languageName: unknown

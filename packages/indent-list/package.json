@@ -1,6 +1,6 @@
 {
   "name": "@sewellstephens/plate-indent-list",
-  "version": "37.0.0",
+  "version": "0.0.1",
   "description": "Indent list plugin for Late",
   "keywords": [
     "plate",
@@ -50,8 +50,8 @@
     "typecheck": "yarn p:typecheck"
   },
   "dependencies": {
-    "@sewellstephens/plate-indent": "37.0.0",
-    "@sewellstephens/plate-list": "37.0.0",
+    "@sewellstephens/plate-indent": "^0.0.1",
+    "@sewellstephens/plate-list": "^0.0.1",
     "clsx": "^1.2.1"
   },
   "devDependencies": {

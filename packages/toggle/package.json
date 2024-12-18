@@ -1,6 +1,6 @@
 {
   "name": "@sewellstephens/plate-toggle",
-  "version": "37.0.0",
+  "version": "0.0.1",
   "description": "Toggle plugin for Late",
   "keywords": [
     "plate",
@@ -50,8 +50,8 @@
     "typecheck": "yarn p:typecheck"
   },
   "dependencies": {
-    "@sewellstephens/plate-indent": "37.0.0",
-    "@sewellstephens/plate-node-id": "37.0.0",
+    "@sewellstephens/plate-indent": "^0.0.1",
+    "@sewellstephens/plate-node-id": "^0.0.1",
     "lodash": "^4.17.21"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "@sewellstephens/plate-link",
-  "version": "37.0.0",
+  "version": "0.0.1",
   "description": "Link plugin for Late",
   "keywords": [
     "plate",
@@ -50,8 +50,8 @@
     "typecheck": "yarn p:typecheck"
   },
   "dependencies": {
-    "@sewellstephens/plate-floating": "37.0.0",
-    "@sewellstephens/plate-normalizers": "37.0.0"
+    "@sewellstephens/plate-floating": "^0.0.1",
+    "@sewellstephens/plate-normalizers": "^0.0.1"
   },
   "devDependencies": {
     "@sewellstephens/plate-common": "workspace:^"

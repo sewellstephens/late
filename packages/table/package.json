@@ -1,6 +1,6 @@
 {
   "name": "@sewellstephens/plate-table",
-  "version": "37.0.0",
+  "version": "0.0.1",
   "description": "Table plugin for Late",
   "keywords": [
     "plate",
@@ -50,7 +50,7 @@
     "typecheck": "yarn p:typecheck"
   },
   "dependencies": {
-    "@sewellstephens/plate-resizable": "37.0.0",
+    "@sewellstephens/plate-resizable": "^0.0.1",
     "lodash": "^4.17.21"
   },
   "devDependencies": {

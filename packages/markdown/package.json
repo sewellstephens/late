@@ -1,6 +1,6 @@
 {
   "name": "@sewellstephens/plate-markdown",
-  "version": "37.0.0",
+  "version": "0.0.1",
   "description": "Markdown serializer plugin for Late",
   "keywords": [
     "markdown",

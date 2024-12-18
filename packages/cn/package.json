@@ -1,6 +1,6 @@
 {
   "name": "@sewellstephens/cn",
-  "version": "37.0.0",
+  "version": "0.0.1",
   "description": "React cn utils",
   "keywords": [
     "utils"
@@ -41,7 +41,7 @@
     "typecheck": "yarn p:typecheck"
   },
   "dependencies": {
-    "@sewellstephens/react-utils": "37.0.0"
+    "@sewellstephens/react-utils": "^0.0.1"
   },
   "peerDependencies": {
     "class-variance-authority": ">=0.7.0",

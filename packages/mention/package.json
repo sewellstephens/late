@@ -1,6 +1,6 @@
 {
   "name": "@sewellstephens/plate-mention",
-  "version": "37.0.0",
+  "version": "0.0.1",
   "description": "Mention plugin for Late",
   "keywords": [
     "plate",
@@ -50,7 +50,7 @@
     "typecheck": "yarn p:typecheck"
   },
   "dependencies": {
-    "@sewellstephens/plate-combobox": "37.0.0"
+    "@sewellstephens/plate-combobox": "^0.0.1"
   },
   "devDependencies": {
     "@sewellstephens/plate-common": "workspace:^"

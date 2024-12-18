@@ -1,6 +1,6 @@
 {
   "name": "@sewellstephens/plate-csv",
-  "version": "37.0.0",
+  "version": "0.0.1",
   "description": "CSV serializer plugin for Late",
   "keywords": [
     "csv",
@@ -46,7 +46,7 @@
     "typecheck": "yarn p:typecheck"
   },
   "dependencies": {
-    "@sewellstephens/plate-table": "37.0.0",
+    "@sewellstephens/plate-table": "^0.0.1",
     "papaparse": "^5.4.1"
   },
   "devDependencies": {

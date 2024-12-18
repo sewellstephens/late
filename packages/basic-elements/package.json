@@ -1,6 +1,6 @@
 {
   "name": "@sewellstephens/plate-basic-elements",
-  "version": "37.0.0",
+  "version": "0.0.1",
   "description": "Basic elements plugin for Late",
   "keywords": [
     "plate",
@@ -50,9 +50,9 @@
     "typecheck": "yarn p:typecheck"
   },
   "dependencies": {
-    "@sewellstephens/plate-block-quote": "37.0.0",
-    "@sewellstephens/plate-code-block": "37.0.0",
-    "@sewellstephens/plate-heading": "37.0.0"
+    "@sewellstephens/plate-block-quote": "^0.0.1",
+    "@sewellstephens/plate-code-block": "^0.0.1",
+    "@sewellstephens/plate-heading": "^0.0.1"
   },
   "devDependencies": {
     "@sewellstephens/plate-common": "workspace:^"

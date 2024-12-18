@@ -1,6 +1,6 @@
 {
   "name": "@sewellstephens/plate-core",
-  "version": "37.0.0",
+  "version": "0.0.1",
   "description": "The core of Late – a plugin system for slate",
   "keywords": [
     "contentEditable",
@@ -56,12 +56,12 @@
     "typecheck": "yarn p:typecheck"
   },
   "dependencies": {
-    "@sewellstephens/react-hotkeys": "37.0.0",
-    "@sewellstephens/react-utils": "37.0.0",
-    "@sewellstephens/slate": "37.0.0",
-    "@sewellstephens/slate-react": "37.0.0",
-    "@sewellstephens/slate-utils": "37.0.0",
-    "@sewellstephens/utils": "37.0.0",
+    "@sewellstephens/react-hotkeys": "^0.0.1",
+    "@sewellstephens/react-utils": "^0.0.1",
+    "@sewellstephens/slate": "^0.0.1",
+    "@sewellstephens/slate-react": "^0.0.1",
+    "@sewellstephens/slate-utils": "^0.0.1",
+    "@sewellstephens/utils": "^0.0.1",
     "clsx": "^1.2.1",
     "is-hotkey": "^0.2.0",
     "jotai": "^2.7.1",

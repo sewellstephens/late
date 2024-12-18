@@ -1,6 +1,6 @@
 {
   "name": "@sewellstephens/slate-utils",
-  "version": "37.0.0",
+  "version": "0.0.1",
   "description": "Slate utils",
   "keywords": [
     "slate"
@@ -42,8 +42,8 @@
     "typecheck": "yarn p:typecheck"
   },
   "dependencies": {
-    "@sewellstephens/slate": "37.0.0",
-    "@sewellstephens/utils": "37.0.0",
+    "@sewellstephens/slate": "^0.0.1",
+    "@sewellstephens/utils": "^0.0.1",
     "lodash": "^4.17.21"
   },
   "peerDependencies": {

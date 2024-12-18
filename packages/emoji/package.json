@@ -1,6 +1,6 @@
 {
   "name": "@sewellstephens/plate-emoji",
-  "version": "37.0.0",
+  "version": "0.0.1",
   "description": "Emoji plugin for Late",
   "keywords": [
     "plate",
@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "@emoji-mart/data": "^1.1.2",
-    "@sewellstephens/plate-combobox": "37.0.0"
+    "@sewellstephens/plate-combobox": "^0.0.1"
   },
   "devDependencies": {
     "@sewellstephens/plate-common": "workspace:^"

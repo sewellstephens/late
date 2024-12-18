@@ -1,6 +1,6 @@
 {
   "name": "@sewellstephens/plate-docx",
-  "version": "37.0.0",
+  "version": "0.0.1",
   "description": "Docx serializer plugin for Late",
   "keywords": [
     "docx",
@@ -46,11 +46,11 @@
     "typecheck": "yarn p:typecheck"
   },
   "dependencies": {
-    "@sewellstephens/plate-heading": "37.0.0",
-    "@sewellstephens/plate-indent": "37.0.0",
-    "@sewellstephens/plate-indent-list": "37.0.0",
-    "@sewellstephens/plate-media": "37.0.0",
-    "@sewellstephens/plate-table": "37.0.0",
+    "@sewellstephens/plate-heading": "^0.0.1",
+    "@sewellstephens/plate-indent": "^0.0.1",
+    "@sewellstephens/plate-indent-list": "^0.0.1",
+    "@sewellstephens/plate-media": "^0.0.1",
+    "@sewellstephens/plate-table": "^0.0.1",
     "validator": "^13.11.0"
   },
   "devDependencies": {
