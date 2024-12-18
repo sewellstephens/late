@@ -3,7 +3,7 @@ import React from 'react';
 import type { TSelection, Value } from '@sewellstephens/slate';
 import type { SlateProps } from '@sewellstephens/slate-react';
 
-import { useEditorRef, usePlateSelectors } from '../stores';
+import { useEditorRef, useLateSelectors } from '../stores';
 import { pipeOnChange } from '../utils/pipeOnChange';
 
 /** Get Slate props stored in a global store. */
@@ -13,9 +13,9 @@ export const useSlateProps = ({
   id?: string;
 }): Omit<SlateProps, 'children'> => {
   const editor = useEditorRef(id);
-  const onChangeProp = usePlateSelectors(id).onChange();
-  const onValueChangeProp = usePlateSelectors(id).onValueChange();
-  const onSelectionChangeProp = usePlateSelectors(id).onSelectionChange();
+  const onChangeProp = useLateSelectors(id).onChange();
+  const onValueChangeProp = useLateSelectors(id).onValueChange();
+  const onSelectionChangeProp = useLateSelectors(id).onSelectionChange();
 
   const onChange = React.useCallback(
     (newValue: Value) => {

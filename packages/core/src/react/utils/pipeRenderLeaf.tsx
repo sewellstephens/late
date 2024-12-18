@@ -2,8 +2,8 @@ import React from 'react';
 
 import type { TEditableProps } from '@sewellstephens/slate-react';
 
-import type { PlateEditor } from '../editor/PlateEditor';
-import type { PlateRenderLeafProps } from '../plugin/PlateRenderLeafProps';
+import type { LateEditor } from '../editor/LateEditor';
+import type { LateRenderLeafProps } from '../plugin/LateRenderLeafProps';
 
 import { pipeInjectNodeProps } from '../../lib';
 import { DefaultLeaf } from '../components';
@@ -11,7 +11,7 @@ import { type RenderLeaf, pluginRenderLeaf } from './pluginRenderLeaf';
 
 /** @see {@link RenderLeaf} */
 export const pipeRenderLeaf = (
-  editor: PlateEditor,
+  editor: LateEditor,
   renderLeafProp?: TEditableProps['renderLeaf']
 ): TEditableProps['renderLeaf'] => {
   const renderLeafs: RenderLeaf[] = [];
@@ -26,7 +26,7 @@ export const pipeRenderLeaf = (
     const props = pipeInjectNodeProps(
       editor,
       nodeProps
-    ) as PlateRenderLeafProps;
+    ) as LateRenderLeafProps;
 
     renderLeafs.forEach((renderLeaf) => {
       const newChildren = renderLeaf(props as any);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { cn, withRef } from '@sewellstephens/cn';
-import { PlateElement, withHOC } from '@sewellstephens/plate-common';
+import { LateElement, withHOC } from '@sewellstephens/plate-common';
 import { ELEMENT_IMAGE, Image, useMediaState } from '@sewellstephens/plate-media';
 import { ResizableProvider, useResizableStore } from '@sewellstephens/plate-resizable';
 
@@ -14,14 +14,14 @@ import {
 
 export const ImageElement = withHOC(
   ResizableProvider,
-  withRef<typeof PlateElement>(
+  withRef<typeof LateElement>(
     ({ className, children, nodeProps, ...props }, ref) => {
       const { readOnly, focused, selected, align = 'center' } = useMediaState();
       const width = useResizableStore().get.width();
 
       return (
         <MediaPopover pluginKey={ELEMENT_IMAGE}>
-          <PlateElement
+          <LateElement
             ref={ref}
             className={cn('py-2.5', className)}
             {...props}
@@ -62,7 +62,7 @@ export const ImageElement = withHOC(
             </figure>
 
             {children}
-          </PlateElement>
+          </LateElement>
         </MediaPopover>
       );
     }

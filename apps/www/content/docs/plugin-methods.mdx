@@ -1,6 +1,6 @@
 ---
 title: Plugin Methods
-description: Explore the various methods available for extending Plate plugins.
+description: Explore the various methods available for extending Late plugins.
 ---
 
 ## Configuration Methods
@@ -38,7 +38,7 @@ const ConfiguredPlugin = MyPlugin.configure(({ getOptions }) => ({
 The `.configurePlugin` method allows you to configure the properties of a nested plugin:
 
 ```ts
-const TablePlugin = createPlatePlugin({
+const TablePlugin = createLatePlugin({
   key: 'table',
   plugins: [TableCellPlugin],
 }).configurePlugin(TableCellPlugin, {
@@ -89,7 +89,7 @@ const ExtendedPlugin = MyPlugin.extend(({ editor, plugin }) => ({
 The `.extendPlugin` method allows you to extend the configuration and functionality of a nested plugin:
 
 ```ts
-const TablePlugin = createPlatePlugin({
+const TablePlugin = createLatePlugin({
   key: 'table',
   plugins: [TableCellPlugin],
 }).extendPlugin(TableCellPlugin, {
@@ -124,7 +124,7 @@ Choose the appropriate method based on whether you need to extend the plugin's t
 The `extendOptions` method allows you to extend the plugin options with selectors.
 
 ```ts
-const CounterPlugin = createPlatePlugin({
+const CounterPlugin = createLatePlugin({
   key: 'counter',
   options: {
     count: 0,
@@ -164,7 +164,7 @@ const CounterComponent = () => {
 The `withComponent` method allows you to set or replace the component associated with a plugin.
 
 ```ts
-const ParagraphPlugin = createPlatePlugin({
+const ParagraphPlugin = createLatePlugin({
   key: 'p',
   node: {
     isElement: true,
@@ -182,7 +182,7 @@ Plugins can define their own API methods and transforms that will be merged into
 Use `extendApi` to add plugin-specific API methods:
 
 ```ts
-const MyPlugin = createPlatePlugin({
+const MyPlugin = createLatePlugin({
   key: 'myPlugin',
 }).extendApi(() => ({
   pluginMethod: () => 'plugin method result',
@@ -197,7 +197,7 @@ editor.api.myPlugin.api.pluginMethod();
 Use `extendEditorApi` to add root-level API methods:
 
 ```ts
-const MyPlugin = createPlatePlugin({
+const MyPlugin = createLatePlugin({
   key: 'myPlugin',
 }).extendEditorApi(({ getOptions }) => ({
   editorMethod: () => getOptions().someOption,
@@ -212,7 +212,7 @@ editor.api.editorMethod();
 Use `extendTransforms` to add plugin-specific transform methods:
 
 ```ts
-const MyPlugin = createPlatePlugin({
+const MyPlugin = createLatePlugin({
   key: 'myPlugin',
 }).extendTransforms(() => ({
   pluginTransform: () => {
@@ -232,7 +232,7 @@ editor.transforms.myPlugin.pluginTransform();
 Use `extendEditorTransforms` to add root-level transform methods:
 
 ```ts
-const MyPlugin = createPlatePlugin({
+const MyPlugin = createLatePlugin({
   key: 'myPlugin',
 }).extendEditorTransforms(({ editor }) => ({
   editorTransform: () => {
@@ -246,7 +246,7 @@ editor.tf.editorTransform();
 
 ### Difference between API and Transforms
 
-While there is currently no core difference between API and Transforms in Plate, they serve distinct purposes and are designed with future extensibility in mind:
+While there is currently no core difference between API and Transforms in Late, they serve distinct purposes and are designed with future extensibility in mind:
 
 - **Transforms:** 
   - Store all Slate transforms and editor operations here. Structured to potentially support middlewares in the future, allowing for more complex transform pipelines and devtools.
@@ -262,7 +262,7 @@ While there is currently no core difference between API and Transforms in Plate,
 You can chain these methods to create a comprehensive plugin:
 
 ```ts
-const MyPlugin = createPlatePlugin({
+const MyPlugin = createLatePlugin({
   key: 'myPlugin',
   options: {
     baseValue: 5,
@@ -291,12 +291,12 @@ editor.tf.myPlugin.pluginTransform();
 editor.tf.editorTransform();
 ```
 
-## Convert a Slate Plugin to a Plate Plugin
+## Convert a Slate Plugin to a Late Plugin
 
-To convert a typed Slate plugin to a Plate plugin, you can use `toPlatePlugin`:
+To convert a typed Slate plugin to a Late plugin, you can use `toLatePlugin`:
 
 ```ts
-const CodeBlockPlugin = toPlatePlugin(createSlatePlugin({ key: 'code_block' }), {
+const CodeBlockPlugin = toLatePlugin(createSlatePlugin({ key: 'code_block' }), {
   extendEditor: ({ api, editor }) => {
     api.plugin.getSyntaxState();
     return editor;

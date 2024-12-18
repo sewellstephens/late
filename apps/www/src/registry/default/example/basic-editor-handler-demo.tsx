@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import type { Value } from '@sewellstephens/plate-common';
 
-import { Plate, usePlateEditor } from '@sewellstephens/plate-common/react';
+import { Late, useLateEditor } from '@sewellstephens/plate-common/react';
 
 import {
   Accordion,
@@ -26,10 +26,10 @@ const value = [
 
 export default function BasicEditorHandlerDemo() {
   const [debugValue, setDebugValue] = useState<Value>(value);
-  const editor = usePlateEditor({ value });
+  const editor = useLateEditor({ value });
 
   return (
-    <Plate
+    <Late
       editor={editor}
       onChange={({ value }) => {
         setDebugValue(value);
@@ -44,6 +44,6 @@ export default function BasicEditorHandlerDemo() {
           <AccordionContent>{JSON.stringify(debugValue)}</AccordionContent>
         </AccordionItem>
       </Accordion>
-    </Plate>
+    </Late>
   );
 }

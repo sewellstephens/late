@@ -8,9 +8,9 @@ import {
 import { findNodePath } from '@sewellstephens/slate-react';
 import { useFocused, useSelected } from 'slate-react';
 
-import type { PlateElementProps } from './PlateElement';
+import type { LateElementProps } from './LateElement';
 
-export interface PlaceholderProps extends PlateElementProps {
+export interface PlaceholderProps extends LateElementProps {
   placeholder: string;
   hideOnBlur?: boolean;
   query?: QueryNodeOptions;

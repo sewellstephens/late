@@ -1,10 +1,10 @@
-import { toPlatePlugin } from '@sewellstephens/plate-common/react';
+import { toLatePlugin } from '@sewellstephens/plate-common/react';
 
 import {
   MentionInputPlugin as BaseMentionInputPlugin,
   MentionPlugin as BaseMentionPlugin,
 } from '../lib';
 
-export const MentionPlugin = toPlatePlugin(BaseMentionPlugin);
+export const MentionPlugin = toLatePlugin(BaseMentionPlugin);
 
-export const MentionInputPlugin = toPlatePlugin(BaseMentionInputPlugin);
+export const MentionInputPlugin = toLatePlugin(BaseMentionInputPlugin);

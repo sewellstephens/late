@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { withRef } from '@sewellstephens/cn';
-import { PlateElement } from '@sewellstephens/plate-common';
+import { LateElement } from '@sewellstephens/plate-common';
 
-export const CodeLineElement = withRef<typeof PlateElement>((props, ref) => (
-  <PlateElement ref={ref} {...props} />
+export const CodeLineElement = withRef<typeof LateElement>((props, ref) => (
+  <LateElement ref={ref} {...props} />
 ));

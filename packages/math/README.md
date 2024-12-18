@@ -1,10 +1,10 @@
-# Plate math plugin
+# Late math plugin
 
-This package implements the math plugin for Plate.
+This package implements the math plugin for Late.
 
 ## Documentation
 
-Check out [math](https://platejs.org/docs/math).
+Check out [math](https://sewellstephens.github.io/late/docs/math).
 
 ## License
 

@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
 import {
-  createPlateEditor,
+  createLateEditor,
   getEditorPlugin,
 } from '@sewellstephens/plate-common/react';
 import { jsx } from '@sewellstephens/plate-test-utils';
@@ -32,7 +32,7 @@ const output = (
 ) as any;
 
 it('should be', () => {
-  const editor = createPlateEditor({ editor: input });
+  const editor = createLateEditor({ editor: input });
 
   onKeyDownSoftBreak({
     ...getEditorPlugin(editor, SoftBreakPlugin),

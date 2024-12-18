@@ -129,7 +129,7 @@ Finds the highest end list that can be deleted. The path of the list should be d
 - Its path is not equal to `diffListPath`.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="options" type="object" optional>
@@ -155,7 +155,7 @@ Finds the highest end list that can be deleted. The path of the list should be d
 Returns the nearest `li` and `ul`/`ol` wrapping node entries for a given path (`default = selection`).
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="object">
@@ -188,7 +188,7 @@ the current selection.
 Searches upward for the root list element.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="at" type="Path | Range | Point | null" optional>
@@ -211,7 +211,7 @@ Searches upward for the root list element.
 Returns an array of list types supported by the editor.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
 </APIParameters>
@@ -225,7 +225,7 @@ Returns an array of list types supported by the editor.
 Checks if a node has a list child.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="node" type="TAncestor">
@@ -246,7 +246,7 @@ Checks if a node has a list child.
 Indents the list items in the editor.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
 </APIParameters>
@@ -256,7 +256,7 @@ Indents the list items in the editor.
 Inserts a list item if the selection is in an li>p element.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
 </APIParameters>
@@ -272,7 +272,7 @@ Inserts a list item if the selection is in an li>p element.
 Inserts a todo list item if the selection is in an li>p element.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="TodoListPlugin">
@@ -317,7 +317,7 @@ new todo item at the end of a line.
 Checks if the selection is across blocks with list items.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
 </APIParameters>
@@ -333,7 +333,7 @@ Checks if the selection is across blocks with list items.
 Checks if the list is nested, i.e., its parent is a list item.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="listPath" type="Path">
@@ -352,7 +352,7 @@ Checks if the list is nested, i.e., its parent is a list item.
 Checks if a node is the root of a list.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="node" type="TElement | TText">
@@ -371,7 +371,7 @@ Checks if a node is the root of a list.
 Moves a list item down to the next list item.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="options" type="MoveListItemDownOptions" optional>
@@ -397,7 +397,7 @@ Moves a list item down to the next list item.
 Moves sublist items from one list item to another list item's sublist.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem
@@ -432,7 +432,7 @@ Move the sublist items to the start of the sublist instead of the end.
 Moves a list item up.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="options" type="MoveListItemUpOptions" optional>
@@ -458,7 +458,7 @@ Moves a list item up.
 Moves the selected list items up or down within their respective lists or increases/decreases their indentation level.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="MoveListItemsOptions" optional>
@@ -509,7 +509,7 @@ Shift+Tab
 Moves the list items from a sublist or a list to another list.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="MergeListItemIntoListOptions" optional>
@@ -595,7 +595,7 @@ are moved.
 Moves the list siblings after the cursor position to a specified path.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="options" type="Object">
@@ -619,7 +619,7 @@ Moves the list siblings after the cursor position to a specified path.
 Removes the first list item if the list is not nested and the list item is not the first child.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="options" type="Object">
@@ -645,7 +645,7 @@ Removes the first list item if the list is not nested and the list item is not t
 Removes a list item and moves its sublist to the parent list if any.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="RemoveListItemOptions" optional>
@@ -678,7 +678,7 @@ Whether to reverse the sublist items before moving them.
 Checks if the current selection is inside a list of a specific type.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="type" type="string">
@@ -698,7 +698,7 @@ Checks if the current selection is inside a list of a specific type.
 Decreases the indentation level of the list items in the editor.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="options" type="UnindentListItemsOptions" optional>
@@ -712,7 +712,7 @@ Decreases the indentation level of the list items in the editor.
 Removes the list formatting from the selected list items or the list items at the specified path.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="options" type="object" optional>
@@ -766,7 +766,7 @@ The node type of the list.
 Returns the nearest list and list item node entries for a given path (default = selection) in a todo list.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="object">
@@ -804,7 +804,7 @@ A behavior hook a todo list item element.
   <APIItem name="element" type="TElement">
     The todo list item element.
   </APIItem>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
 </APIState>

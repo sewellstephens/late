@@ -3,7 +3,7 @@
 import type { SlateEditor } from '@sewellstephens/plate-common';
 
 import { ParagraphPlugin } from '@sewellstephens/plate-common';
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { IndentPlugin } from '@sewellstephens/plate-indent';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
@@ -87,7 +87,7 @@ describe('normalizeIndentListStart', () => {
     ) as any as SlateEditor;
 
     it('should be', async () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins: [ParagraphPlugin, IndentPlugin, IndentListPlugin],
         shouldNormalizeEditor: true,
@@ -146,7 +146,7 @@ describe('normalizeIndentListStart', () => {
     ) as any as SlateEditor;
 
     it('should be', async () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins: [ParagraphPlugin, IndentPlugin, indentListPluginPage],
         shouldNormalizeEditor: true,
@@ -194,7 +194,7 @@ describe('normalizeIndentListStart', () => {
     ) as any as SlateEditor;
 
     it('should be', async () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins: [ParagraphPlugin, IndentPlugin, indentListPluginPage],
         shouldNormalizeEditor: true,

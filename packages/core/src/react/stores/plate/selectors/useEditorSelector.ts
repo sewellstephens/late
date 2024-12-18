@@ -2,21 +2,21 @@ import React from 'react';
 
 import { selectAtom } from 'jotai/utils';
 
-import type { PlateEditor } from '../../../editor/PlateEditor';
+import type { LateEditor } from '../../../editor/LateEditor';
 
 import {
-  type UsePlateEditorStoreOptions,
+  type UseLateEditorStoreOptions,
   plateStore,
-  usePlateSelectors,
-} from '../createPlateStore';
+  useLateSelectors,
+} from '../createLateStore';
 
 export interface UseEditorSelectorOptions<T>
-  extends UsePlateEditorStoreOptions {
+  extends UseLateEditorStoreOptions {
   equalityFn?: (a: T, b: T) => boolean;
   id?: string;
 }
 
-export const useEditorSelector = <T, E extends PlateEditor = PlateEditor>(
+export const useEditorSelector = <T, E extends LateEditor = LateEditor>(
   selector: (editor: E, prev?: T) => T,
   deps: React.DependencyList,
   {
@@ -36,7 +36,7 @@ export const useEditorSelector = <T, E extends PlateEditor = PlateEditor>(
     deps
   );
 
-  return usePlateSelectors(id, {
+  return useLateSelectors(id, {
     debugHookName: 'useEditorSelector',
     ...storeOptions,
   }).atom(selectorAtom);

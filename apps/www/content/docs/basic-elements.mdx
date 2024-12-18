@@ -105,7 +105,7 @@ Defines deserializers for the code block plugin.
 Checks if the selection is inside an empty code block.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
 </APIParameters>
@@ -121,7 +121,7 @@ Checks if the selection is inside an empty code block.
 Checks if the selection is at the start of the first code line in a code block.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
 </APIParameters>
@@ -138,7 +138,7 @@ Checks if the selection is at the start of the first code line in a code block.
 Indents the code line if the selection is expanded or there are no non-whitespace characters at left of the cursor. The indentation is 2 spaces by default.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="IndentCodeLineOptions">
@@ -166,7 +166,7 @@ The size of indentation for the code line.
 Inserts a code block by setting the node to code line and wrapping it with a code block. If the cursor is not at the block start, it inserts a break before the code block.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem
@@ -181,7 +181,7 @@ Inserts a code block by setting the node to code line and wrapping it with a cod
 Inserts a code line starting with the specified indentation depth.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="indentDepth" type="number" optional>
@@ -197,7 +197,7 @@ Inserts a code line starting with the specified indentation depth.
 Outdents a code line, removing two whitespace characters if present.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="options" type="OutdentCodeLineOptions" optional>
@@ -217,7 +217,7 @@ Outdents a code line, removing two whitespace characters if present.
 Toggles the code block in the editor.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
 </APIParameters>
@@ -227,7 +227,7 @@ Toggles the code block in the editor.
 Unwraps the code block in the editor.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
 </APIParameters>

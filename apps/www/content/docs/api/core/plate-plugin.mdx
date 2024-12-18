@@ -1,13 +1,13 @@
 ---
-title: PlatePlugin
-description: API reference for Plate plugins.
+title: LatePlugin
+description: API reference for Late plugins.
 ---
 
-Plate plugins are objects passed to `Plate` [plugins](/docs/api/core/plate#plugins) prop.
+Late plugins are objects passed to `Late` [plugins](/docs/api/core/plate#plugins) prop.
 
 ## Generic Types
 
-The `PlatePlugin` interface uses one generic type:
+The `LatePlugin` interface uses one generic type:
 
 <APIAttributes>
 <APIItem name="C" type="AnyPluginConfig = PluginConfig">
@@ -25,7 +25,7 @@ type MyPluginConfig = PluginConfig<
   { customTransform: () => void }
 >;
 
-const MyPlugin = createPlatePlugin<MyPluginConfig>({
+const MyPlugin = createLatePlugin<MyPluginConfig>({
   key: 'myPlugin',
   // plugin implementation
 });
@@ -37,7 +37,7 @@ const MyPlugin = createPlatePlugin<MyPluginConfig>({
 
 <APIAttributes>
 <APIItem name="key" type="C['key']" required>
-Unique identifier used by Plate to store the plugins by key in `editor.plugins`.
+Unique identifier used by Late to store the plugins by key in `editor.plugins`.
 </APIItem>
 
 <APIItem name="api" type="UnionToIntersection<InferApi<C>>">
@@ -61,9 +61,9 @@ Defines how the plugin injects functionality into other plugins or the editor.
 
 <APISubList>
 <APISubListItem parent="inject" name="nodeProps" type="InjectNodeProps<WithAnyKey<C>>" optional>
-Properties used by Plate to inject props into any node component.
+Properties used by Late to inject props into any node component.
 </APISubListItem>
-<APISubListItem parent="inject" name="plugins" type="Record<string, Partial<EditorPlatePlugin<AnyPluginConfig>>>" optional>
+<APISubListItem parent="inject" name="plugins" type="Record<string, Partial<EditorLatePlugin<AnyPluginConfig>>>" optional>
 Property that can be used by a plugin to allow other plugins to inject code.
 </APISubListItem>
 <APISubListItem parent="inject" name="targetPluginToInject" type="function" optional>
@@ -117,8 +117,8 @@ Allows overriding components and plugins by key.
 <APISubListItem parent="override" name="components" type="Record<string, NodeComponent>" optional>
 Replace plugin `NodeComponent` by key.
 </APISubListItem>
-<APISubListItem parent="override" name="plugins" type="Record<string, Partial<EditorPlatePlugin<AnyPluginConfig>>>" optional>
-Extend `PlatePlugin` by key.
+<APISubListItem parent="override" name="plugins" type="Record<string, Partial<EditorLatePlugin<AnyPluginConfig>>>" optional>
+Extend `LatePlugin` by key.
 </APISubListItem>
 <APISubListItem parent="override" name="enabled" type="Partial<Record<string, boolean>>" optional>
 Enable or disable plugins.
@@ -184,7 +184,7 @@ An array of plugin keys that this plugin depends on.
 </APIItem>
 
 <APIItem name="enabled" type="boolean" optional>
-Enables or disables the plugin. Used by Plate to determine if the plugin should be used.
+Enables or disables the plugin. Used by Late to determine if the plugin should be used.
 </APIItem>
 
 <APIItem name="plugins" type="any[]">
@@ -198,7 +198,7 @@ Defines the order in which plugins are registered and executed.
 </APIItem>
 
 <APIItem name="decorate" type="Decorate<WithAnyKey<C>>" optional>
-Property used by Plate to decorate editor ranges.
+Property used by Late to decorate editor ranges.
 </APIItem>
 
 <APIItem name="useHooks" type="UseHooks<WithAnyKey<C>>" optional>
@@ -213,7 +213,7 @@ Hook called when the editor is initialized.
 Creates a new plugin instance with updated options.
 
 ```ts
-(config: PlatePluginConfig<C['key'], InferOptions<C>, InferApi<C>, InferTransforms<C>> | ((ctx: PlatePluginContext<C>) => PlatePluginConfig<C['key'], InferOptions<C>, InferApi<C>, InferTransforms<C>>)) => PlatePlugin<C>
+(config: LatePluginConfig<C['key'], InferOptions<C>, InferApi<C>, InferTransforms<C>> | ((ctx: LatePluginContext<C>) => LatePluginConfig<C['key'], InferOptions<C>, InferApi<C>, InferTransforms<C>>)) => LatePlugin<C>
 ```
 </APIItem>
 
@@ -221,7 +221,7 @@ Creates a new plugin instance with updated options.
 Creates a new plugin instance with additional configuration. Can accept either an object or a function.
 
 ```ts
-(extendConfig: Partial<PlatePlugin> | ((ctx: PlatePluginContext<AnyPluginConfig>) => Partial<PlatePlugin>)) => PlatePlugin
+(extendConfig: Partial<LatePlugin> | ((ctx: LatePluginContext<AnyPluginConfig>) => Partial<LatePlugin>)) => LatePlugin
 ```
 </APIItem>
 
@@ -229,7 +229,7 @@ Creates a new plugin instance with additional configuration. Can accept either a
 Extends an existing nested plugin or adds a new one if not found. Supports deep nesting.
 
 ```ts
-(key: string, extendConfig: Partial<PlatePlugin> | ((ctx: PlatePluginContext<AnyPluginConfig>) => Partial<PlatePlugin>)) => PlatePlugin
+(key: string, extendConfig: Partial<LatePlugin> | ((ctx: LatePluginContext<AnyPluginConfig>) => Partial<LatePlugin>)) => LatePlugin
 ```
 </APIItem>
 
@@ -237,7 +237,7 @@ Extends an existing nested plugin or adds a new one if not found. Supports deep 
 Sets or replaces the component associated with a plugin.
 
 ```ts
-(component: NodeComponent) => PlatePlugin<C>
+(component: NodeComponent) => LatePlugin<C>
 ```
 </APIItem>
 
@@ -245,7 +245,7 @@ Sets or replaces the component associated with a plugin.
 Extends the plugin's API.
 
 ```ts
-(api: (ctx: PlatePluginContext<AnyPluginConfig>) => any) => PlatePlugin<C>
+(api: (ctx: LatePluginContext<AnyPluginConfig>) => any) => LatePlugin<C>
 ```
 </APIItem>
 
@@ -253,7 +253,7 @@ Extends the plugin's API.
 Extends the editor's API with plugin-specific methods.
 
 ```ts
-(api: (ctx: PlatePluginContext<AnyPluginConfig>) => any) => PlatePlugin<C>
+(api: (ctx: LatePluginContext<AnyPluginConfig>) => any) => LatePlugin<C>
 ```
 </APIItem>
 
@@ -261,7 +261,7 @@ Extends the editor's API with plugin-specific methods.
 Extends the plugin's transforms.
 
 ```ts
-(transforms: (ctx: PlatePluginContext<AnyPluginConfig>) => any) => PlatePlugin<C>
+(transforms: (ctx: LatePluginContext<AnyPluginConfig>) => any) => LatePlugin<C>
 ```
 </APIItem>
 
@@ -269,7 +269,7 @@ Extends the plugin's transforms.
 Extends the editor's transforms with plugin-specific methods.
 
 ```ts
-(transforms: (ctx: PlatePluginContext<AnyPluginConfig>) => any) => PlatePlugin<C>
+(transforms: (ctx: LatePluginContext<AnyPluginConfig>) => any) => LatePlugin<C>
 ```
 </APIItem>
 
@@ -277,20 +277,20 @@ Extends the editor's transforms with plugin-specific methods.
 Extends the plugin options with selectors.
 
 ```ts
-(options: (ctx: PlatePluginContext<AnyPluginConfig>) => any) => PlatePlugin<C>
+(options: (ctx: LatePluginContext<AnyPluginConfig>) => any) => LatePlugin<C>
 ```
 </APIItem>
 </APIAttributes>
 
 ## Plugin Context
 
-Most plugin functions receive a `PlatePluginContext` object as their first parameter. This object includes:
+Most plugin functions receive a `LatePluginContext` object as their first parameter. This object includes:
 
 <APIAttributes>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The current editor instance.
 </APIItem>
-<APIItem name="plugin" type="EditorPlatePlugin<C>">
+<APIItem name="plugin" type="EditorLatePlugin<C>">
 The current plugin instance.
 </APIItem>
 <APIItem name="getOption" type="function">
@@ -310,4 +310,4 @@ Hook to subscribe to a specific option value in a React component.
 </APIItem>
 </APIAttributes>
 
-For more detailed information on specific aspects of Plate plugins, refer to the individual guides on [Plugin Configuration](/docs/plugin), [Plugin Methods](/docs/plugin-methods), [Plugin Context](/docs/plugin-context), [Plugin Components](/docs/plugin-components), and [Plugin Shortcuts](/docs/plugin-shortcuts).
+For more detailed information on specific aspects of Late plugins, refer to the individual guides on [Plugin Configuration](/docs/plugin), [Plugin Methods](/docs/plugin-methods), [Plugin Context](/docs/plugin-context), [Plugin Components](/docs/plugin-components), and [Plugin Shortcuts](/docs/plugin-shortcuts).

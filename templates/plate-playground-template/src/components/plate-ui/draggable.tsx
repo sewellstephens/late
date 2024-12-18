@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { cn, withRef } from '@sewellstephens/cn';
-import { ClassNames, PlateElementProps, TEditor } from '@sewellstephens/plate-common';
+import { ClassNames, LateElementProps, TEditor } from '@sewellstephens/plate-common';
 import {
   DragItemNode,
   useDraggable,
@@ -15,7 +15,7 @@ import { Icons } from '@/components/icons';
 import { Tooltip, TooltipContent, TooltipTrigger } from './tooltip';
 
 export interface DraggableProps
-  extends PlateElementProps,
+  extends LateElementProps,
     ClassNames<{
       /**
        * Block and gutter.

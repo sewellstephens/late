@@ -1,8 +1,8 @@
-import { Key, toPlatePlugin } from '@sewellstephens/plate-common/react';
+import { Key, toLatePlugin } from '@sewellstephens/plate-common/react';
 
 import { BlockquotePlugin as BaseBlockquotePlugin } from '../lib/BlockquotePlugin';
 
-export const BlockquotePlugin = toPlatePlugin(
+export const BlockquotePlugin = toLatePlugin(
   BaseBlockquotePlugin,
   ({ editor, type }) => ({
     shortcuts: {

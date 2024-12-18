@@ -3,10 +3,10 @@ import { createPortal } from 'react-dom';
 
 import { BasicElementsPlugin } from '@sewellstephens/plate-basic-elements/react';
 import { BasicMarksPlugin } from '@sewellstephens/plate-basic-marks/react';
-import { Plate, usePlateEditor } from '@sewellstephens/plate-common/react';
+import { Late, useLateEditor } from '@sewellstephens/plate-common/react';
 
 import { editableProps } from '@/plate/demo/editableProps';
-import { PlateUI } from '@/plate/demo/plate-ui';
+import { LateUI } from '@/plate/demo/plate-ui';
 import { iframeValue } from '@/plate/demo/values/iframeValue';
 import { Editor } from '@/registry/default/plate-ui/editor';
 
@@ -25,17 +25,17 @@ export function IFrame({ children, ...props }: any) {
 }
 
 export default function IframeDemo() {
-  const editor = usePlateEditor({
-    override: { components: PlateUI },
+  const editor = useLateEditor({
+    override: { components: LateUI },
     plugins: [BasicElementsPlugin, BasicMarksPlugin, EditableVoidPlugin],
     value: iframeValue,
   });
 
   return (
     <IFrame className="p-10">
-      <Plate editor={editor}>
+      <Late editor={editor}>
         <Editor {...editableProps} />
-      </Plate>
+      </Late>
     </IFrame>
   );
 }

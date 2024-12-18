@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - `createSlashPlugin` -> `SlashPlugin`
   - NEW `SlashInputPlugin`
 
@@ -16,7 +16,7 @@
 
 ### Major Changes
 
-- [#3168](https://github.com/udecode/plate/pull/3168) by [@12joan](https://github.com/12joan) –
+- [#3168](https://github.com/sewellstephens/late/pull/3168) by [@12joan](https://github.com/12joan) –
   - Now uses the reworked combobox package
   - `ELEMENT_SLASH_INPUT` is now an inline void element, and combobox functionality must now be handled in the component
   - Replaced all plugin options with those extended from `TriggerComboboxPlugin`
@@ -40,4 +40,4 @@
 
 ### Minor Changes
 
-- [#3155](https://github.com/udecode/plate/pull/3155) by [@felixfeng33](https://github.com/felixfeng33) – Add `createSlashCommandPlugin`
+- [#3155](https://github.com/sewellstephens/late/pull/3155) by [@felixfeng33](https://github.com/felixfeng33) – Add `createSlashCommandPlugin`

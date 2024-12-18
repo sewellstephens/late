@@ -1,6 +1,6 @@
 import { type DragSourceHookSpec, useDrag } from 'react-dnd';
 
-import type { PlateEditor } from '@sewellstephens/plate-common/react';
+import type { LateEditor } from '@sewellstephens/plate-common/react';
 
 import type { DragItemNode } from '../types';
 
@@ -29,7 +29,7 @@ export interface UseDragNodeOptions
  * - IsDragging: true if mouse is dragging the block
  */
 export const useDragNode = (
-  editor: PlateEditor,
+  editor: LateEditor,
   { id, item, ...options }: UseDragNodeOptions
 ) => {
   return useDrag<DragItemNode, unknown, { isDragging: boolean }>(

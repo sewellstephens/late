@@ -1,10 +1,10 @@
 import type { Value } from '@sewellstephens/slate';
 
-import type { PlateEditor } from '../editor/PlateEditor';
+import type { LateEditor } from '../editor/LateEditor';
 
 import { getEditorPlugin } from '../plugin/getEditorPlugin';
 
-export const pipeOnChange = (editor: PlateEditor, value: Value) => {
+export const pipeOnChange = (editor: LateEditor, value: Value) => {
   return editor.pluginList.some((plugin) => {
     const handler = plugin.handlers.onChange;
 

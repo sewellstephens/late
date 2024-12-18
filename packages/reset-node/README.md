@@ -1,11 +1,11 @@
-# Plate reset node plugin
+# Late reset node plugin
 
-This package implements the reset node plugin for Plate.
+This package implements the reset node plugin for Late.
 
 ## Documentation
 
 Check out
-[Reset Node](https://platejs.org/docs/reset-node).
+[Reset Node](https://sewellstephens.github.io/late/docs/reset-node).
 
 ## License
 

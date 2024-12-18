@@ -41,7 +41,7 @@ export const docsConfig: DocsConfig = {
           title: 'Changelog',
         },
       ],
-      title: 'Plate UI',
+      title: 'Late UI',
     },
     {
       items: [
@@ -135,7 +135,7 @@ export const docsConfig: DocsConfig = {
     },
     {
       external: true,
-      href: 'https://github.com/udecode/plate',
+      href: 'https://github.com/sewellstephens/late',
       title: 'GitHub',
     },
     {
@@ -166,7 +166,7 @@ export const docsConfig: DocsConfig = {
       items: [
         {
           href: '/docs/migration/slate-to-plate',
-          title: 'From Slate to Plate',
+          title: 'From Slate to Late',
         },
       ],
       title: 'Migration',
@@ -433,7 +433,7 @@ export const docsConfig: DocsConfig = {
         {
           headings: [],
           href: '/docs/api/common',
-          title: 'Plate Common',
+          title: 'Late Common',
         },
         {
           headings: [
@@ -445,10 +445,10 @@ export const docsConfig: DocsConfig = {
             'createHistoryPlugin',
             'createInlineVoidPlugin',
             'createInsertDataPlugin',
-            'createPlateEditor',
+            'createLateEditor',
             'createSlatePlugin',
             'createPrevSelectionPlugin',
-            'createPlatePlugin',
+            'createLatePlugin',
             'getPlugin',
             'getPluginInjectProps',
             'getPluginOptions',
@@ -462,15 +462,15 @@ export const docsConfig: DocsConfig = {
             'useEditorSelection',
             'useEditorVersion',
             'useSelectionVersion',
-            'withPlate',
+            'withLate',
             'withTReact',
           ],
           href: '/docs/api/core',
           items: [
             {
               headings: [
-                'PlateProps',
-                'PlateContent',
+                'LateProps',
+                'LateContent',
                 'id',
                 'children',
                 'decorate',
@@ -489,7 +489,7 @@ export const docsConfig: DocsConfig = {
                 'value',
               ],
               href: '/docs/api/core/plate',
-              title: 'Plate',
+              title: 'Late',
             },
             {
               headings: [
@@ -504,7 +504,7 @@ export const docsConfig: DocsConfig = {
                 'dealing-with-fallback-editors',
               ],
               href: '/docs/api/core/plate-controller',
-              title: 'PlateController',
+              title: 'LateController',
             },
             {
               headings: [
@@ -517,7 +517,7 @@ export const docsConfig: DocsConfig = {
                 'reset',
               ],
               href: '/docs/api/core/plate-editor',
-              title: 'PlateEditor',
+              title: 'LateEditor',
             },
             {
               headings: [
@@ -578,20 +578,20 @@ export const docsConfig: DocsConfig = {
                 'extendEditor',
               ],
               href: '/docs/api/core/plate-plugin',
-              title: 'PlatePlugin',
+              title: 'LatePlugin',
             },
             {
-              headings: ['useEventEditorSelectors', 'useEventPlateId'],
+              headings: ['useEventEditorSelectors', 'useEventLateId'],
               href: '/docs/api/core/store',
               title: 'Store',
             },
           ],
-          title: 'Plate Core',
+          title: 'Late Core',
         },
         {
           headings: [
-            'PlateElement',
-            'PlateLeaf',
+            'LateElement',
+            'LateLeaf',
             'useMarkToolbarButtonState',
             'useMarkToolbarButton',
             'usePlaceholderState',
@@ -602,7 +602,7 @@ export const docsConfig: DocsConfig = {
             'defaultsDeepToNodes',
           ],
           href: '/docs/api/utils',
-          title: 'Plate Utils',
+          title: 'Late Utils',
         },
         {
           headings: [

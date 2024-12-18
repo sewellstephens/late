@@ -7,8 +7,8 @@ import {
 } from '@sewellstephens/plate-code-block';
 import { TCommentText } from '@sewellstephens/plate-comments';
 import {
-  createPlateEditor,
-  CreatePlateEditorOptions,
+  createLateEditor,
+  CreateLateEditorOptions,
   createPluginFactory,
   createPlugins,
   createTEditor,
@@ -31,13 +31,13 @@ import {
   NoInfer,
   OnChange,
   OverrideByKey,
-  PlateEditor,
+  LateEditor,
   string,
-  PlatePlugin,
-  PlatePluginComponent,
-  PlatePluginInsertData,
-  PlatePluginProps,
-  PlateProps,
+  LatePlugin,
+  LatePluginComponent,
+  LatePluginInsertData,
+  LatePluginProps,
+  LateProps,
   PluginOptions,
   SerializeHtml,
   TElement,
@@ -316,7 +316,7 @@ export type MyValue = MyRootBlock[];
  * Editor types
  */
 
-export type MyEditor = TPlateEditor<MyValue> & { isDragging?: boolean };
+export type MyEditor = TLateEditor<MyValue> & { isDragging?: boolean };
 export type MyReactEditor = TReactEditor<MyValue>;
 export type MyNode = NodeOf<MyValue>;
 export type MyNodeEntry = NodeEntryOf<MyValue>;
@@ -330,7 +330,7 @@ export type MyMarks = MarksOf<MyValue>;
 export type MyMark = keyof MyMarks;
 
 /**
- * Plate types
+ * Late types
  */
 
 export type MyDecorate<P = PluginOptions> = Decorate<P, MyValue, MyEditor>;
@@ -345,14 +345,14 @@ export type MyKeyboardHandler<P = PluginOptions> = KeyboardHandler<
 >;
 export type MyOnChange<P = PluginOptions> = OnChange<P, MyValue, MyEditor>;
 export type MyOverrideByKey = OverrideByKey<MyValue, MyEditor>;
-export type MyPlatePlugin<P = PluginOptions> = PlatePlugin<
+export type MyLatePlugin<P = PluginOptions> = LatePlugin<
   P,
   MyValue,
   MyEditor
 >;
-export type MyPlatePluginInsertData = PlatePluginInsertData<MyValue>;
-export type MyPlatePluginProps = PlatePluginProps<MyValue>;
-export type MyPlateProps = PlateProps<MyValue, MyEditor>;
+export type MyLatePluginInsertData = LatePluginInsertData<MyValue>;
+export type MyLatePluginProps = LatePluginProps<MyValue>;
+export type MyLateProps = LateProps<MyValue, MyEditor>;
 export type MySerializeHtml = SerializeHtml<MyValue>;
 export type MyWithOverride<P = PluginOptions> = WithOverride<
   P,
@@ -361,7 +361,7 @@ export type MyWithOverride<P = PluginOptions> = WithOverride<
 >;
 
 /**
- * Plate store, Slate context
+ * Late store, Slate context
  */
 
 export const getMyEditor = (editor: MyEditor) =>
@@ -373,16 +373,16 @@ export const useMyEditorState = () => useEditorState<MyValue, MyEditor>();
  * Utils
  */
 export const createMyEditor = () => createTEditor() as MyEditor;
-export const createMyPlateEditor = (
-  options: CreatePlateEditorOptions<MyValue, MyEditor> = {}
-) => createPlateEditor<MyValue, MyEditor>(options);
+export const createMyLateEditor = (
+  options: CreateLateEditorOptions<MyValue, MyEditor> = {}
+) => createLateEditor<MyValue, MyEditor>(options);
 export const createMyPluginFactory = <P = PluginOptions>(
-  defaultPlugin: PlatePlugin<NoInfer<P>, MyValue, MyEditor>
+  defaultPlugin: LatePlugin<NoInfer<P>, MyValue, MyEditor>
 ) => createPluginFactory(defaultPlugin);
 export const createMyPlugins = (
-  plugins: PlatePlugin[],
+  plugins: LatePlugin[],
   options?: {
-    components?: Record<string, PlatePluginComponent>;
+    components?: Record<string, LatePluginComponent>;
     overrideByKey?: OverrideByKey;
   }
 ) => createPlugins<MyValue, MyEditor>(plugins, options);

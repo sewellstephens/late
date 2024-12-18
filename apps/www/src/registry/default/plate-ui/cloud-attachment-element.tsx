@@ -8,8 +8,8 @@ import {
   useCloudAttachmentElementState,
 } from '@sewellstephens/plate-cloud';
 import {
-  PlateElement,
-  type PlateElementProps,
+  LateElement,
+  type LateElementProps,
 } from '@sewellstephens/plate-common/react';
 
 import { Icons } from '@/components/icons';
@@ -17,7 +17,7 @@ import { Icons } from '@/components/icons';
 import { StatusBar } from './cloud-status-bar';
 
 export interface CloudAttachmentElementProps
-  extends PlateElementProps<TCloudAttachmentElement> {}
+  extends LateElementProps<TCloudAttachmentElement> {}
 
 export function CloudAttachmentElement({
   className,
@@ -30,7 +30,7 @@ export function CloudAttachmentElement({
   });
 
   return (
-    <PlateElement
+    <LateElement
       className={cn(
         'relative my-4 flex h-10 max-w-sm items-center gap-2 rounded-lg border border-border bg-background p-4',
         focused && selected && 'border-blue-400 shadow-[0_0_1px_3px_#60a5fa]',
@@ -65,6 +65,6 @@ export function CloudAttachmentElement({
         )}
       </div>
       {children}
-    </PlateElement>
+    </LateElement>
   );
 }

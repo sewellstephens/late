@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - `createTabbablePlugin` -> `TabbablePlugin`
   - `TabbablePlugin` option `isTabbable`: remove first `editor` parameter
 
@@ -22,7 +22,7 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/udecode/plate/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -40,7 +40,7 @@
 
 ### Patch Changes
 
-- [#2816](https://github.com/udecode/plate/pull/2816) by [@12joan](https://github.com/12joan) –
+- [#2816](https://github.com/sewellstephens/late/pull/2816) by [@12joan](https://github.com/12joan) –
   - Replace `useEdtiorState` with `useEditorSelector`
 
 ## 27.0.3
@@ -57,7 +57,7 @@
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -67,7 +67,7 @@
 
 ### Patch Changes
 
-- [#2665](https://github.com/udecode/plate/pull/2665) by [@12joan](https://github.com/12joan) – Disable tabbable when editor is read-only
+- [#2665](https://github.com/sewellstephens/late/pull/2665) by [@12joan](https://github.com/12joan) – Disable tabbable when editor is read-only
 
 ## 24.3.2
 
@@ -129,16 +129,16 @@
 
 ### Patch Changes
 
-- [#2202](https://github.com/udecode/plate/pull/2202) by [@zbeyens](https://github.com/zbeyens) – Patch
+- [#2202](https://github.com/sewellstephens/late/pull/2202) by [@zbeyens](https://github.com/zbeyens) – Patch
 
 ## 19.4.5
 
 ### Patch Changes
 
-- [#2205](https://github.com/udecode/plate/pull/2205) by [@12joan](https://github.com/12joan) – Make plugin options optional
+- [#2205](https://github.com/sewellstephens/late/pull/2205) by [@12joan](https://github.com/12joan) – Make plugin options optional
 
 ## 19.4.3
 
 ### Patch Changes
 
-- [#2183](https://github.com/udecode/plate/pull/2183) by [@12joan](https://github.com/12joan) – Create @sewellstephens/plate-tabbable plugin
+- [#2183](https://github.com/sewellstephens/late/pull/2183) by [@12joan](https://github.com/12joan) – Create @sewellstephens/plate-tabbable plugin

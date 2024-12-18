@@ -1,9 +1,9 @@
 ---
-title: Plate Editor
-description: API reference for Plate editor.
+title: Late Editor
+description: API reference for Late editor.
 ---
 
-A custom editor interface that extends the base **`TEditor`** interface and includes additional properties and methods specific to the Plate library.
+A custom editor interface that extends the base **`TEditor`** interface and includes additional properties and methods specific to the Late library.
 
 ## Core Properties
 
@@ -25,10 +25,10 @@ A custom editor interface that extends the base **`TEditor`** interface and incl
   <APIItem name="prevSelection" type="TRange | null">
     The previous selection range in the editor.
   </APIItem>
-  <APIItem name="pluginList" type="AnyEditorPlatePlugin[]">
+  <APIItem name="pluginList" type="AnyEditorLatePlugin[]">
     An array of plugins that are currently being used by the editor.
   </APIItem>
-  <APIItem name="plugins" type="Record<string, AnyEditorPlatePlugin>">
+  <APIItem name="plugins" type="Record<string, AnyEditorLatePlugin>">
     A record of plugins indexed by their keys.
   </APIItem>
 </APIParameters>
@@ -42,7 +42,7 @@ A custom editor interface that extends the base **`TEditor`** interface and incl
   <APIItem name="getTransforms" type="<C extends AnyPluginConfig = PluginConfig>(plugin?: WithRequiredKey<C>) => InferTransforms<C>">
     Get the typed transforms for a plugin.
   </APIItem>
-  <APIItem name="getPlugin" type="<C extends AnyPluginConfig = PluginConfig>(plugin: WithRequiredKey<C>) => C extends { node: any } ? C : EditorPlatePlugin<C>">
+  <APIItem name="getPlugin" type="<C extends AnyPluginConfig = PluginConfig>(plugin: WithRequiredKey<C>) => C extends { node: any } ? C : EditorLatePlugin<C>">
     Retrieve the editor plugin instance by its key or base plugin.
   </APIItem>
   <APIItem name="getType" type="(plugin: WithRequiredKey) => string">
@@ -81,11 +81,11 @@ A custom editor interface that extends the base **`TEditor`** interface and incl
   </APIItem>
 </APIParameters>
 
-## Plate Store Methods
+## Late Store Methods
 
 <APIParameters>
-  <APIItem name="setPlateState" type="<K extends (typeof EXPOSED_STORE_KEYS)[number]>(optionKey: K, value: PlateStoreState[K]) => void">
-    Update the global Plate state.
+  <APIItem name="setLateState" type="<K extends (typeof EXPOSED_STORE_KEYS)[number]>(optionKey: K, value: LateStoreState[K]) => void">
+    Update the global Late state.
   </APIItem>
 </APIParameters>
 
@@ -135,7 +135,7 @@ A custom editor interface that extends the base **`TEditor`** interface and incl
   </APIItem>
 </APIParameters>
 
-### PlateApiPlugin
+### LateApiPlugin
 
 <APIParameters>
   <APIItem name="editor.api.redecorate" type="() => void">

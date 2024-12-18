@@ -26,12 +26,12 @@ npm install @sewellstephens/plate-alignment
 
 ```tsx
 // ...
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { AlignPlugin } from '@sewellstephens/plate-alignment/react';
 import { ParagraphPlugin } from '@sewellstephens/plate-common/react';
 import { HeadingPlugin } from '@sewellstephens/plate-heading/react';
 
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [
     HeadingPlugin,
     AlignPlugin.configure({
@@ -57,7 +57,7 @@ const editor = createPlateEditor({
 Sets the alignment for the specified block elements in the editor.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="object" optional>

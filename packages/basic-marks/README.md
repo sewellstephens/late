@@ -1,4 +1,4 @@
-# Plate basic marks plugins
+# Late basic marks plugins
 
 This package implements the following basic marks plugins:
 
@@ -13,7 +13,7 @@ This package implements the following basic marks plugins:
 ## Documentation
 
 Check out
-[Basic Marks](https://platejs.org/docs/basic-marks).
+[Basic Marks](https://sewellstephens.github.io/late/docs/basic-marks).
 
 ## License
 

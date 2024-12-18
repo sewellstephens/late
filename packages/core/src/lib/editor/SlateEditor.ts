@@ -63,7 +63,7 @@ export type BaseEditor = {
    * Whether the editor is a fallback editor.
    *
    * @default false
-   * @see {@link createPlateFallbackEditor}
+   * @see {@link createLateFallbackEditor}
    */
   isFallback: boolean;
 

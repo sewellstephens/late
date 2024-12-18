@@ -1,10 +1,10 @@
-# Plate block indentation plugin
+# Late block indentation plugin
 
-This package implements block indentation support for Plate.
+This package implements block indentation support for Late.
 
 ## Documentation
 
-Check out [Indentation](https://platejs.org/docs/indent).
+Check out [Indentation](https://sewellstephens.github.io/late/docs/indent).
 
 ## License
 

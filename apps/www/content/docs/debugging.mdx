@@ -1,14 +1,14 @@
 ---
 title: Debugging
-description: Debugging in Plate.
+description: Debugging in Late.
 ---
 
 ## Using the DebugPlugin
 
-The `DebugPlugin` is automatically included when you create a Plate editor. You can access its methods through the editor's API:
+The `DebugPlugin` is automatically included when you create a Late editor. You can access its methods through the editor's API:
 
 ```ts
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [/* your plugins */],
 });
 
@@ -30,7 +30,7 @@ The `DebugPlugin` supports four log levels:
 You can set the minimum log level to control which messages are displayed:
 
 ```ts
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [
     DebugPlugin.configure({
       options: {
@@ -53,7 +53,7 @@ The `DebugPlugin` can be configured with the following options:
 Example configuration:
 
 ```ts
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [
     DebugPlugin.configure({
       options: {
@@ -81,7 +81,7 @@ By default, the `DebugPlugin` throws errors when `error` is called. You can catc
 try {
   editor.api.debug.error('An error occurred', 'CUSTOM_ERROR', { details: 'Additional information' });
 } catch (error) {
-  if (error instanceof PlateError) {
+  if (error instanceof LateError) {
     console.log(error.type); // 'CUSTOM_ERROR'
     console.log(error.message); // '[CUSTOM_ERROR] An error occurred'
   }
@@ -100,14 +100,14 @@ To log errors instead of throwing them, set `throwErrors` to `false` in the conf
 
 ## Additional Debugging Strategies
 
-Besides using the DebugPlugin, there are other effective ways to debug your Plate editor:
+Besides using the DebugPlugin, there are other effective ways to debug your Late editor:
 
 ### 1. Override Editor Methods with Logging
 
 You can use the `extendEditor` option to override editor methods and add logging:
 
 ```ts
-const LoggingPlugin = createPlatePlugin({
+const LoggingPlugin = createLatePlugin({
   key: 'logging',
   extendEditor: (editor) => {
     const { apply } = editor;
@@ -121,7 +121,7 @@ const LoggingPlugin = createPlatePlugin({
   },
 });
 
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [LoggingPlugin],
 });
 ```
@@ -133,7 +133,7 @@ This approach allows you to log operations, selections, or any other editor beha
 If you're experiencing issues, try removing plugins one by one to isolate the problem:
 
 ```ts
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [
     // Comment out or remove suspected plugins
     // ParagraphPlugin,
@@ -148,12 +148,12 @@ Gradually add plugins back until you identify the one causing the issue.
 
 ### 3. Use React DevTools
 
-React DevTools can be invaluable for debugging Plate components:
+React DevTools can be invaluable for debugging Late components:
 
 1. Install the React DevTools browser extension.
 2. Open your app and the DevTools.
 3. Navigate to the Components tab.
-4. Inspect Plate components, their props, and state.
+4. Inspect Late components, their props, and state.
 
 ### 4. Use Browser DevTools Breakpoints
 
@@ -171,11 +171,11 @@ If you're facing a complex issue:
 
 1. Pick a [template](docs/getting-started).
 2. Add only the essential plugins and components to reproduce the issue.
-3. If the issue persists, <Link href="https://github.com/udecode/plate/issues/new?assignees=&labels=bug&projects=&template=bug.yml">open an issue on GitHub</Link> or share your example on <Link href="https://discord.gg/mAZRuBzGM3">Discord</Link>.
+3. If the issue persists, <Link href="https://github.com/sewellstephens/late/issues/new?assignees=&labels=bug&projects=&template=bug.yml">open an issue on GitHub</Link> or share your example on <Link href="https://discord.gg/mAZRuBzGM3">Discord</Link>.
 
 ## Debug Error Types
 
-Plate uses several predefined error types to help identify specific issues during development. Here's a list of these error types and their descriptions:
+Late uses several predefined error types to help identify specific issues during development. Here's a list of these error types and their descriptions:
 
 ### DEFAULT
 
@@ -199,7 +199,7 @@ Indicates an attempt to use a plugin that hasn't been registered. This happens w
 
 ### USE_CREATE_PLUGIN
 
-Thrown when a plugin wasn't created using `createSlatePlugin` or `createPlatePlugin` function. This error occurs when a plugin is added to the editor without being properly created using the designated function.
+Thrown when a plugin wasn't created using `createSlatePlugin` or `createLatePlugin` function. This error occurs when a plugin is added to the editor without being properly created using the designated function.
 
 ### USE_ELEMENT_CONTEXT
 

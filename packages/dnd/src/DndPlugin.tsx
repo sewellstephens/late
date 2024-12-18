@@ -2,7 +2,7 @@ import React from 'react';
 
 import type { PluginConfig } from '@sewellstephens/plate-common';
 
-import { createTPlatePlugin } from '@sewellstephens/plate-common/react';
+import { createTLatePlugin } from '@sewellstephens/plate-common/react';
 
 import { DndScroller, type ScrollerProps } from './components/Scroller';
 
@@ -16,7 +16,7 @@ export type DndConfig = PluginConfig<
   }
 >;
 
-export const DndPlugin = createTPlatePlugin<DndConfig>({
+export const DndPlugin = createTLatePlugin<DndConfig>({
   handlers: {
     onDragEnd: ({ editor, plugin }) => {
       editor.setOption(plugin, 'isDragging', false);

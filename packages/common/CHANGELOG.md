@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - Split build into `@sewellstephens/plate-common` and `@sewellstephens/plate-common/react`.
   - NEW `/react` exports `@sewellstephens/react-hotkeys`
 
@@ -38,7 +38,7 @@
 
 ### Patch Changes
 
-- [#3199](https://github.com/udecode/plate/pull/3199) by [@zbeyens](https://github.com/zbeyens) – Fix `PlateElementProps` type
+- [#3199](https://github.com/sewellstephens/late/pull/3199) by [@zbeyens](https://github.com/zbeyens) – Fix `LateElementProps` type
 
 ## 33.0.3
 
@@ -66,12 +66,12 @@
 
 ### Minor Changes
 
-- [#2829](https://github.com/udecode/plate/pull/2829) by [@zbeyens](https://github.com/zbeyens) –
+- [#2829](https://github.com/sewellstephens/late/pull/2829) by [@zbeyens](https://github.com/zbeyens) –
   - re-export `@sewellstephens/react-utils`
 
 ### Patch Changes
 
-- [#2829](https://github.com/udecode/plate/pull/2829) by [@zbeyens](https://github.com/zbeyens) –
+- [#2829](https://github.com/sewellstephens/late/pull/2829) by [@zbeyens](https://github.com/zbeyens) –
   - Fix import from RSC
 
 ## 28.0.0
@@ -90,7 +90,7 @@
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 

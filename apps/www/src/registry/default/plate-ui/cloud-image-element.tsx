@@ -8,15 +8,15 @@ import {
   useCloudImageElementState,
 } from '@sewellstephens/plate-cloud';
 import {
-  PlateElement,
-  type PlateElementProps,
+  LateElement,
+  type LateElementProps,
 } from '@sewellstephens/plate-common/react';
 
 import { ResizeControls } from './cloud-resize-controls';
 import { StatusBar } from './cloud-status-bar';
 
 export interface CloudImageElementProps
-  extends PlateElementProps<TCloudImageElement> {}
+  extends LateElementProps<TCloudImageElement> {}
 
 export function CloudImageElement({
   className,
@@ -28,7 +28,7 @@ export function CloudImageElement({
     useCloudImageElementState({ element });
 
   return (
-    <PlateElement
+    <LateElement
       className={cn('relative my-4', className)}
       draggable
       {...props}
@@ -95,6 +95,6 @@ export function CloudImageElement({
         )}
       </span>
       {children}
-    </PlateElement>
+    </LateElement>
   );
 }

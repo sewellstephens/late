@@ -1,10 +1,10 @@
 import React from 'react';
 import { cn, withRef } from '@sewellstephens/cn';
-import { PlateLeaf } from '@sewellstephens/plate-common';
+import { LateLeaf } from '@sewellstephens/plate-common';
 
-export const KbdLeaf = withRef<typeof PlateLeaf>(
+export const KbdLeaf = withRef<typeof LateLeaf>(
   ({ className, children, ...props }, ref) => (
-    <PlateLeaf
+    <LateLeaf
       ref={ref}
       asChild
       className={cn(
@@ -14,6 +14,6 @@ export const KbdLeaf = withRef<typeof PlateLeaf>(
       {...props}
     >
       <kbd>{children}</kbd>
-    </PlateLeaf>
+    </LateLeaf>
   )
 );

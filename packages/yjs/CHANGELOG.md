@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - `createYjsPlugin` -> `YjsPlugin`
   - Move `yjsStore` to `YjsPlugin`
   - Move `editor.yjs.provider` to `options.provider`
@@ -14,7 +14,7 @@
 
 ### Patch Changes
 
-- [`e01e1fc73403aaa6abccb04326e78cdfc8e6e8b6`](https://github.com/udecode/plate/commit/e01e1fc73403aaa6abccb04326e78cdfc8e6e8b6) by [@zbeyens](https://github.com/zbeyens) – doc: homepage
+- [`e01e1fc73403aaa6abccb04326e78cdfc8e6e8b6`](https://github.com/sewellstephens/late/commit/e01e1fc73403aaa6abccb04326e78cdfc8e6e8b6) by [@zbeyens](https://github.com/zbeyens) – doc: homepage
 
 ## 36.0.0
 
@@ -28,13 +28,13 @@
 
 ### Minor Changes
 
-- [#3040](https://github.com/udecode/plate/pull/3040) by [@zbeyens](https://github.com/zbeyens) – Updated minor dependencies
+- [#3040](https://github.com/sewellstephens/late/pull/3040) by [@zbeyens](https://github.com/zbeyens) – Updated minor dependencies
 
 ## 30.5.3
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/udecode/plate/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -56,7 +56,7 @@
 
 ### Patch Changes
 
-- [#2763](https://github.com/udecode/plate/pull/2763) by [@12joan](https://github.com/12joan) – Update Zustood imports
+- [#2763](https://github.com/sewellstephens/late/pull/2763) by [@12joan](https://github.com/12joan) – Update Zustood imports
 
 ## 25.0.1
 
@@ -68,7 +68,7 @@
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -102,4 +102,4 @@
 
 ### Minor Changes
 
-- [#2487](https://github.com/udecode/plate/pull/2487) by [@zbeyens](https://github.com/zbeyens) – New plugin: yjs for collaboration.
+- [#2487](https://github.com/sewellstephens/late/pull/2487) by [@zbeyens](https://github.com/zbeyens) – New plugin: yjs for collaboration.

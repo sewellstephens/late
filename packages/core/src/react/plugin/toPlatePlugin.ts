@@ -7,19 +7,19 @@ import type {
   SlatePlugin,
 } from '../../lib';
 import type {
-  PlatePlugin,
-  PlatePluginContext,
-  PlatePluginMethods,
-} from './PlatePlugin';
+  LatePlugin,
+  LatePluginContext,
+  LatePluginMethods,
+} from './LatePlugin';
 
-type PlatePluginConfig<C extends AnyPluginConfig, EO = {}, EA = {}, ET = {}> = {
+type LatePluginConfig<C extends AnyPluginConfig, EO = {}, EA = {}, ET = {}> = {
   api?: EA & Partial<InferApi<C>>;
-  node?: Partial<PlatePlugin<C>['node']>;
+  node?: Partial<LatePlugin<C>['node']>;
   options?: EO & Partial<InferOptions<C>>;
   transforms?: ET & Partial<InferTransforms<C>>;
 } & Omit<
   Partial<
-    PlatePlugin<
+    LatePlugin<
       PluginConfig<
         C['key'],
         EO & InferOptions<C>,
@@ -28,7 +28,7 @@ type PlatePluginConfig<C extends AnyPluginConfig, EO = {}, EA = {}, ET = {}> = {
       >
     >
   >,
-  'api' | 'node' | 'options' | 'transforms' | keyof PlatePluginMethods
+  'api' | 'node' | 'options' | 'transforms' | keyof LatePluginMethods
 >;
 
 const methodsToWrap: (keyof SlatePlugin)[] = [
@@ -42,20 +42,20 @@ const methodsToWrap: (keyof SlatePlugin)[] = [
 ];
 
 /**
- * Extends a SlatePlugin to create a React PlatePlugin.
+ * Extends a SlatePlugin to create a React LatePlugin.
  *
  * @remarks
- *   This function transforms a SlatePlugin into a React PlatePlugin, allowing for
+ *   This function transforms a SlatePlugin into a React LatePlugin, allowing for
  *   React-specific functionality to be added.
  * @param basePlugin - The base SlatePlugin to be extended.
  * @param extendConfig - A function or object that provides the extension
  *   configuration. If a function, it receives the plugin context and should
- *   return a partial PlatePlugin. If an object, it should be a partial
- *   PlatePlugin configuration.
- * @returns A new PlatePlugin that combines the base SlatePlugin functionality
+ *   return a partial LatePlugin. If an object, it should be a partial
+ *   LatePlugin configuration.
+ * @returns A new LatePlugin that combines the base SlatePlugin functionality
  *   with React-specific features defined in the extension configuration.
  */
-export function toPlatePlugin<
+export function toLatePlugin<
   C extends AnyPluginConfig,
   EO = {},
   EA = {},
@@ -63,9 +63,9 @@ export function toPlatePlugin<
 >(
   basePlugin: SlatePlugin<C>,
   extendConfig?:
-    | ((ctx: PlatePluginContext<C>) => PlatePluginConfig<C, EO, EA, ET>)
-    | PlatePluginConfig<C, EO, EA, ET>
-): PlatePlugin<
+    | ((ctx: LatePluginContext<C>) => LatePluginConfig<C, EO, EA, ET>)
+    | LatePluginConfig<C, EO, EA, ET>
+): LatePlugin<
   PluginConfig<
     C['key'],
     EO & InferOptions<C>,
@@ -73,7 +73,7 @@ export function toPlatePlugin<
     ET & InferTransforms<C>
   >
 > {
-  const plugin = { ...basePlugin } as unknown as PlatePlugin;
+  const plugin = { ...basePlugin } as unknown as LatePlugin;
 
   methodsToWrap.forEach((method) => {
     const originalMethod = plugin[method];
@@ -81,7 +81,7 @@ export function toPlatePlugin<
     (plugin as any)[method] = (...args: any[]) => {
       const slatePlugin = originalMethod(...args);
 
-      return toPlatePlugin(slatePlugin);
+      return toLatePlugin(slatePlugin);
     };
   });
 
@@ -98,7 +98,7 @@ export function toPlatePlugin<
 
 type ExtendPluginConfig<C extends AnyPluginConfig = PluginConfig> = Omit<
   Partial<
-    PlatePlugin<
+    LatePlugin<
       PluginConfig<
         C['key'],
         Partial<InferOptions<C>>,
@@ -107,32 +107,32 @@ type ExtendPluginConfig<C extends AnyPluginConfig = PluginConfig> = Omit<
       >
     >
   >,
-  keyof PlatePluginMethods
+  keyof LatePluginMethods
 >;
 
 /**
- * Explicitly typed version of {@link toPlatePlugin}.
+ * Explicitly typed version of {@link toLatePlugin}.
  *
  * @remarks
  *   This function requires explicit type parameters for both the base plugin
  *   configuration and the extension configuration. Use this when you need
  *   precise control over the plugin's type structure or when type inference
  *   doesn't provide the desired result.
- * @typeParam C - The type of the extension configuration for the PlatePlugin
+ * @typeParam C - The type of the extension configuration for the LatePlugin
  *   (required).
  * @typeParam TContext - The type of the base SlatePlugin configuration
  *   (optional).
  */
-export function toTPlatePlugin<
+export function toTLatePlugin<
   C extends AnyPluginConfig = PluginConfig,
   TContext extends AnyPluginConfig = AnyPluginConfig,
 >(
   basePlugin: SlatePlugin<TContext>,
   extendConfig?:
-    | ((ctx: PlatePluginContext<TContext>) => ExtendPluginConfig<C>)
+    | ((ctx: LatePluginContext<TContext>) => ExtendPluginConfig<C>)
     | ExtendPluginConfig<C>
-): PlatePlugin<
+): LatePlugin<
   PluginConfig<C['key'], InferOptions<C>, InferApi<C>, InferTransforms<C>>
 > {
-  return toPlatePlugin(basePlugin as any, extendConfig as any);
+  return toLatePlugin(basePlugin as any, extendConfig as any);
 }

@@ -1,11 +1,11 @@
-# Plate combobox
+# Late combobox
 
-This package implements the combobox for Plate.
+This package implements the combobox for Late.
 
 ## Documentation
 
-Check out [Playground](https://platejs.org/docs/playground) and
-[Combobox](https://platejs.org/docs/combobox).
+Check out [Playground](https://sewellstephens.github.io/late/docs/playground) and
+[Combobox](https://sewellstephens.github.io/late/docs/combobox).
 
 ## License
 

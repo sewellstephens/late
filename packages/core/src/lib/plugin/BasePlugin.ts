@@ -15,7 +15,7 @@ export type BasePlugin<C extends AnyPluginConfig = PluginConfig> = {
   dependencies: string[];
 
   /**
-   * Enables or disables the plugin. Used by Plate to determine if the plugin
+   * Enables or disables the plugin. Used by Late to determine if the plugin
    * should be used.
    */
   enabled?: boolean;
@@ -49,7 +49,7 @@ export type BasePlugin<C extends AnyPluginConfig = PluginConfig> = {
 
   /**
    * Recursive plugin support to allow having multiple plugins in a single
-   * plugin. Plate eventually flattens all the plugins into the editor.
+   * plugin. Late eventually flattens all the plugins into the editor.
    */
   plugins: any[];
 
@@ -75,7 +75,7 @@ export type BasePlugin<C extends AnyPluginConfig = PluginConfig> = {
 export type BasePluginNode = {
   /**
    * Indicates if this plugin's nodes should be rendered as elements. Used by
-   * Plate for {@link NodeComponent} rendering as elements.
+   * Late for {@link NodeComponent} rendering as elements.
    */
   isElement?: boolean;
 
@@ -87,7 +87,7 @@ export type BasePluginNode = {
 
   /**
    * Indicates if this plugin's nodes should be rendered as leaves. Used by
-   * Plate for {@link NodeComponent} rendering as leaves.
+   * Late for {@link NodeComponent} rendering as leaves.
    */
   isLeaf?: boolean;
 
@@ -116,7 +116,7 @@ export type BasePluginNode = {
    * - The {@link NodeComponent} will be used for any leaf where `node[type] ===
    *   true`.
    *
-   * This property is crucial for Plate to correctly match nodes to their
+   * This property is crucial for Late to correctly match nodes to their
    * respective plugins.
    *
    * @default plugin.key

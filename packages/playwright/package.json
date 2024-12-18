@@ -1,18 +1,18 @@
 {
   "name": "@sewellstephens/plate-playwright",
   "version": "37.0.0",
-  "description": "Interact with a Plate editor from inside a Playwright test",
+  "description": "Interact with a Late editor from inside a Playwright test",
   "keywords": [
     "plate",
     "slate"
   ],
-  "homepage": "https://platejs.org",
+  "homepage": "https://sewellstephens.github.io/late",
   "bugs": {
-    "url": "https://github.com/udecode/plate/issues"
+    "url": "https://github.com/sewellstephens/late/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/udecode/plate.git",
+    "url": "https://github.com/sewellstephens/late.git",
     "directory": "packages/playwright"
   },
   "sideEffects": false,

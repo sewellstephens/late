@@ -1,16 +1,16 @@
 import React from 'react';
 
-import type { AnyEditorPlatePlugin } from '../plugin/PlatePlugin';
+import type { AnyEditorLatePlugin } from '../plugin/LatePlugin';
 
 import { getEditorPlugin } from '../plugin';
-import { useEditorRef, usePlateActions, usePlateSelectors } from '../stores';
+import { useEditorRef, useLateActions, useLateSelectors } from '../stores';
 
 export function EditorRefPluginEffect({
   id,
   plugin,
 }: {
   id?: string;
-  plugin: AnyEditorPlatePlugin;
+  plugin: AnyEditorLatePlugin;
 }) {
   const editor = useEditorRef(id);
 
@@ -20,8 +20,8 @@ export function EditorRefPluginEffect({
 }
 
 export function EditorRefEffect({ id }: { id?: string }) {
-  const editor = usePlateSelectors(id).editor();
-  const setIsMounted = usePlateActions(id).isMounted();
+  const editor = useLateSelectors(id).editor();
+  const setIsMounted = useLateActions(id).isMounted();
 
   React.useEffect(() => {
     setIsMounted(true);

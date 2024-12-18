@@ -4,7 +4,7 @@
   ],
   "files": [
     {
-      "content": "import React from 'react';\n\nimport { cn, withRef } from '@sewellstephens/cn';\nimport { PlateElement } from '@sewellstephens/plate-common/react';\n\nexport const TableRowElement = withRef<\n  typeof PlateElement,\n  {\n    hideBorder?: boolean;\n  }\n>(({ children, hideBorder, ...props }, ref) => {\n  return (\n    <PlateElement\n      asChild\n      className={cn('h-full', hideBorder && 'border-none')}\n      ref={ref}\n      {...props}\n    >\n      <tr>{children}</tr>\n    </PlateElement>\n  );\n});\n",
+      "content": "import React from 'react';\n\nimport { cn, withRef } from '@sewellstephens/cn';\nimport { LateElement } from '@sewellstephens/plate-common/react';\n\nexport const TableRowElement = withRef<\n  typeof LateElement,\n  {\n    hideBorder?: boolean;\n  }\n>(({ children, hideBorder, ...props }, ref) => {\n  return (\n    <LateElement\n      asChild\n      className={cn('h-full', hideBorder && 'border-none')}\n      ref={ref}\n      {...props}\n    >\n      <tr>{children}</tr>\n    </LateElement>\n  );\n});\n",
       "name": "table-row-element.tsx"
     }
   ],

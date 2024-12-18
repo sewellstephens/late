@@ -1,6 +1,6 @@
-# Plate Drag & Drop
+# Late Drag & Drop
 
-Visit https://platejs.org/docs/dnd to view the documentation.
+Visit https://sewellstephens.github.io/late/docs/dnd to view the documentation.
 
 ## License
 

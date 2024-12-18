@@ -1,8 +1,8 @@
-import { Key, toPlatePlugin } from '@sewellstephens/plate-common/react';
+import { Key, toLatePlugin } from '@sewellstephens/plate-common/react';
 
 import { BoldPlugin as BaseBoldPlugin } from '../lib/BoldPlugin';
 
-export const BoldPlugin = toPlatePlugin(BaseBoldPlugin, ({ editor, type }) => ({
+export const BoldPlugin = toLatePlugin(BaseBoldPlugin, ({ editor, type }) => ({
   shortcuts: {
     toggleBold: {
       handler: () => {

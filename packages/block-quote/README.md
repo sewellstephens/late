@@ -1,11 +1,11 @@
-# Plate block quote plugin
+# Late block quote plugin
 
-This package implements the block quote plugin for Plate.
+This package implements the block quote plugin for Late.
 
 ## Documentation
 
 Check out
-[Basic Elements](https://platejs.org/docs/basic-elements).
+[Basic Elements](https://sewellstephens.github.io/late/docs/basic-elements).
 
 ## License
 

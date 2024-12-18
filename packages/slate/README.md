@@ -2,7 +2,7 @@
 
 ## Documentation
 
-Visit https://platejs.org/docs/api/slate to view the documentation.
+Visit https://sewellstephens.github.io/late/docs/api/slate to view the documentation.
 
 ## License
 

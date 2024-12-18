@@ -1,16 +1,16 @@
 import type { JSHandle, Page } from '@playwright/test';
 
-import type { TPlatePlaywrightAdapter } from '../types';
+import type { TLatePlaywrightAdapter } from '../types';
 
 export const getAdapter = (
   page: Page
-): Promise<JSHandle<TPlatePlaywrightAdapter>> =>
+): Promise<JSHandle<TLatePlaywrightAdapter>> =>
   page.evaluateHandle(() => {
     const adapter = window.platePlaywrightAdapter;
 
     if (!adapter) {
       throw new Error(
-        'window.platePlaywrightAdapter not found. Ensure that <PlatePlaywrightAdapter /> is rendered as a child of your Plate editor.'
+        'window.platePlaywrightAdapter not found. Ensure that <LatePlaywrightAdapter /> is rendered as a child of your Late editor.'
       );
     }
 

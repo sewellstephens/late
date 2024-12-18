@@ -1,18 +1,18 @@
 {
   "name": "@sewellstephens/plate-resizable",
   "version": "37.0.0",
-  "description": "Plate React resize components",
+  "description": "Late React resize components",
   "keywords": [
     "plate",
     "resize"
   ],
-  "homepage": "https://platejs.org",
+  "homepage": "https://sewellstephens.github.io/late",
   "bugs": {
-    "url": "https://github.com/udecode/plate/issues"
+    "url": "https://github.com/sewellstephens/late/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/udecode/plate.git",
+    "url": "https://github.com/sewellstephens/late.git",
     "directory": "packages/resizable"
   },
   "license": "MIT",

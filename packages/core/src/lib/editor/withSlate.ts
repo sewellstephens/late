@@ -75,15 +75,15 @@ export type WithSlateOptions<
   >;
 
 /**
- * Applies Plate enhancements to an editor instance (non-React version).
+ * Applies Late enhancements to an editor instance (non-React version).
  *
  * @remarks
  *   This function supports server-side usage as it doesn't include the
  *   ReactPlugin.
  * @see {@link createSlateEditor} for a higher-level non-React editor creation function.
- * @see {@link createPlateEditor} for a higher-level React editor creation function.
- * @see {@link usePlateEditor} for a React memoized version.
- * @see {@link withPlate} for the React-specific enhancement function.
+ * @see {@link createLateEditor} for a higher-level React editor creation function.
+ * @see {@link useLateEditor} for a React memoized version.
+ * @see {@link withLate} for the React-specific enhancement function.
  */
 export const withSlate = <
   V extends Value = Value,
@@ -219,7 +219,7 @@ export type CreateSlateEditorOptions<
   P extends AnyPluginConfig = CorePlugin,
 > = {
   /**
-   * Initial editor to be extended with `withPlate`.
+   * Initial editor to be extended with `withLate`.
    *
    * @default createEditor()
    */
@@ -229,8 +229,8 @@ export type CreateSlateEditorOptions<
 /**
  * Creates a Slate editor without React-specific enhancements.
  *
- * @see {@link createPlateEditor} for a React-specific version of editor creation.
- * @see {@link usePlateEditor} for a memoized React version.
+ * @see {@link createLateEditor} for a React-specific version of editor creation.
+ * @see {@link useLateEditor} for a memoized React version.
  * @see {@link withSlate} for the underlying function that applies Slate enhancements to an editor.
  */
 export const createSlateEditor = <

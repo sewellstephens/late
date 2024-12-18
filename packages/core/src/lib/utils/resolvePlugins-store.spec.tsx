@@ -4,21 +4,21 @@ import { render } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
 
 import {
-  type PlatePlugin,
-  createPlateEditor,
-  createPlatePlugin,
+  type LatePlugin,
+  createLateEditor,
+  createLatePlugin,
 } from '../../react';
 import { createSlateEditor } from '../editor';
 import { type PluginConfig, createSlatePlugin } from '../plugin';
-import { PlateError } from '../plugins';
+import { LateError } from '../plugins';
 
 // Mock component to test re-rendering
 const TestComponent = ({
   editor,
   plugin,
 }: {
-  editor: ReturnType<typeof createPlateEditor>;
-  plugin: PlatePlugin<PluginConfig<any, { value: number }>>;
+  editor: ReturnType<typeof createLateEditor>;
+  plugin: LatePlugin<PluginConfig<any, { value: number }>>;
 }) => {
   const value = editor.useOption(plugin, 'value');
 
@@ -33,8 +33,8 @@ const TestComponentNested = ({
   editor,
   plugin,
 }: {
-  editor: ReturnType<typeof createPlateEditor>;
-  plugin: PlatePlugin<
+  editor: ReturnType<typeof createLateEditor>;
+  plugin: LatePlugin<
     PluginConfig<any, { nested?: { subValue: string }; value: number }>
   >;
 }) => {
@@ -53,7 +53,7 @@ describe('SlatePlugin store', () => {
   it('should create a store for each plugin', () => {
     const p1 = createSlatePlugin({ key: 'plugin1', options: { value: 1 } });
     const p2 = createSlatePlugin({ key: 'plugin2', options: { value: 2 } });
-    const editor = createPlateEditor({ plugins: [p1, p2] });
+    const editor = createLateEditor({ plugins: [p1, p2] });
 
     expect(editor.getOptionsStore(p1)).toBeDefined();
     expect(editor.getOptionsStore(p2)).toBeDefined();
@@ -121,7 +121,7 @@ describe('SlatePlugin store', () => {
 
   it('should allow getting the entire store', () => {
     const p1 = createSlatePlugin({ key: 'plugin1', options: { value: 1 } });
-    const editor = createPlateEditor({ plugins: [p1] });
+    const editor = createLateEditor({ plugins: [p1] });
 
     const store = editor.getOptionsStore(p1);
     expect(store).toBeDefined();
@@ -137,7 +137,7 @@ describe('SlatePlugin store', () => {
         param: (a1: number, a2: number) => getOptions().value + a1 + a2,
       }));
 
-      const editor = createPlateEditor({ plugins: [p1] });
+      const editor = createLateEditor({ plugins: [p1] });
 
       expect(editor.getOption(p1, 'doubleValue')).toBe(2);
       expect(editor.getOption(p1, 'param', 2, 2)).toBe(5);
@@ -155,7 +155,7 @@ describe('SlatePlugin store', () => {
           tripleValue: () => getOption('doubleValue', 2) * 3,
         }));
 
-      const editor = createPlateEditor({ plugins: [p1] });
+      const editor = createLateEditor({ plugins: [p1] });
 
       expect(editor.getOption(p1, 'doubleValue', 2)).toBe(2);
       expect(editor.getOption(p1, 'tripleValue')).toBe(6);
@@ -171,7 +171,7 @@ describe('SlatePlugin store', () => {
         },
       }));
 
-      const editor = createPlateEditor({ plugins: [p1] });
+      const editor = createLateEditor({ plugins: [p1] });
 
       expect(editor.getOption(p1, 'doubleValue')).toBe(2);
 
@@ -182,13 +182,13 @@ describe('SlatePlugin store', () => {
   });
 });
 
-describe('PlatePlugin useOptions', () => {
+describe('LatePlugin useOptions', () => {
   it('should re-render component when setOption is called', async () => {
-    const p1 = createPlatePlugin({
+    const p1 = createLatePlugin({
       key: 'plugin1',
       options: { value: 1 },
     });
-    const editor = createPlateEditor({ plugins: [p1] });
+    const editor = createLateEditor({ plugins: [p1] });
 
     const { getByTestId } = render(
       <TestComponent editor={editor} plugin={p1} />
@@ -209,7 +209,7 @@ describe('PlatePlugin useOptions', () => {
   describe('setOption', () => {
     it('should update a single option', () => {
       const p1 = createSlatePlugin({ key: 'plugin1', options: { value: 1 } });
-      const editor = createPlateEditor({ plugins: [p1] });
+      const editor = createLateEditor({ plugins: [p1] });
 
       editor.setOption(p1, 'value', 2);
 
@@ -221,7 +221,7 @@ describe('PlatePlugin useOptions', () => {
         key: 'plugin1',
         options: { other: 'test', untouched: 1, value: 1 },
       });
-      const editor = createPlateEditor({ plugins: [p1] });
+      const editor = createLateEditor({ plugins: [p1] });
 
       editor.setOptions(p1, { other: 'updated', value: 2 });
 
@@ -237,7 +237,7 @@ describe('PlatePlugin useOptions', () => {
         key: 'plugin1',
         options: { other: 'test', value: 1 },
       });
-      const editor = createPlateEditor({ plugins: [p1] });
+      const editor = createLateEditor({ plugins: [p1] });
 
       editor.setOptions(p1, (draft) => {
         draft.other = 'updated';
@@ -251,7 +251,7 @@ describe('PlatePlugin useOptions', () => {
         key: 'plugin1',
         options: { nested: { subValue: 'initial' } },
       });
-      const editor = createPlateEditor({ plugins: [p1] });
+      const editor = createLateEditor({ plugins: [p1] });
 
       editor.setOption(p1, 'nested', { subValue: 'updated' });
 
@@ -264,7 +264,7 @@ describe('PlatePlugin useOptions', () => {
   describe('useOption', () => {
     it('should return the current option value', () => {
       const p1 = createSlatePlugin({ key: 'plugin1', options: { value: 1 } });
-      const editor = createPlateEditor({ plugins: [p1] });
+      const editor = createLateEditor({ plugins: [p1] });
 
       const TestHook = () => {
         const value = editor.useOption(p1, 'value');
@@ -278,8 +278,8 @@ describe('PlatePlugin useOptions', () => {
     });
 
     it('should update when option value changes', () => {
-      const p1 = createPlatePlugin({ key: 'plugin1', options: { value: 1 } });
-      const editor = createPlateEditor({ plugins: [p1] });
+      const p1 = createLatePlugin({ key: 'plugin1', options: { value: 1 } });
+      const editor = createLateEditor({ plugins: [p1] });
 
       const { getByTestId } = render(
         <TestComponent editor={editor} plugin={p1} />
@@ -295,11 +295,11 @@ describe('PlatePlugin useOptions', () => {
     });
 
     it('should handle nested option values', () => {
-      const p1 = createPlatePlugin({
+      const p1 = createLatePlugin({
         key: 'plugin1',
         options: { nested: { subValue: 'initial' }, value: 1 },
       });
-      const editor = createPlateEditor({ plugins: [p1] });
+      const editor = createLateEditor({ plugins: [p1] });
 
       const { getByTestId } = render(
         <TestComponentNested editor={editor} plugin={p1 as any} />
@@ -319,7 +319,7 @@ describe('PlatePlugin useOptions', () => {
         key: 'plugin1',
         options: { other: 'test', value: 1 },
       });
-      const editor = createPlateEditor({ plugins: [p1] });
+      const editor = createLateEditor({ plugins: [p1] });
 
       let renderCount = 0;
       const TestHook = () => {
@@ -347,23 +347,23 @@ describe('PlatePlugin useOptions', () => {
         existingOption: string;
       };
       const p1 = createSlatePlugin<any, PluginOptions>({ key: 'plugin1' });
-      const editor = createPlateEditor({ plugins: [p1] });
+      const editor = createLateEditor({ plugins: [p1] });
 
       // Setting an existing option should work
       expect(() => {
         editor.setOption(p1, 'existingOption', 'value');
-      }).not.toThrow(new PlateError('', ''));
+      }).not.toThrow(new LateError('', ''));
     });
 
     it('should work with extended options', () => {
-      const p1 = createPlatePlugin({
+      const p1 = createLatePlugin({
         key: 'plugin1',
         options: { value: 1 },
       }).extendOptions(({ getOptions }) => ({
         doubleValue: (mul: number) => getOptions().value * mul,
       }));
 
-      const editor = createPlateEditor({ plugins: [p1] });
+      const editor = createLateEditor({ plugins: [p1] });
 
       const TestHook = () => {
         let never = editor.useOption(p1, 'doubleValue');
@@ -392,7 +392,7 @@ describe('PlatePlugin useOptions', () => {
         key: 'plugin1',
         options: { other: 'test', value: 1 },
       });
-      const editor = createPlateEditor({ plugins: [p1] });
+      const editor = createLateEditor({ plugins: [p1] });
 
       const TestHook = () => {
         const { other, value } = editor.useOptions(p1, (state) => ({

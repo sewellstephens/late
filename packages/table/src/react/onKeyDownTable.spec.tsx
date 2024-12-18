@@ -4,7 +4,7 @@ import type { SlateEditor } from '@sewellstephens/plate-common';
 
 import { jsx } from '@sewellstephens/plate-test-utils';
 
-import { createPlateTestEditor } from '../../../core/src/react/__tests__/createPlateTestEditor';
+import { createLateTestEditor } from '../../../core/src/react/__tests__/createLateTestEditor';
 import { TablePlugin } from './TablePlugin';
 
 jsx;
@@ -57,7 +57,7 @@ describe('onKeyDownTable', () => {
   //       </editor>
   //     ) as any) as SlateEditor;
   //
-  //     const [editor, { triggerKeyboardEvent }] = await createPlateTestEditor({
+  //     const [editor, { triggerKeyboardEvent }] = await createLateTestEditor({
   //       editor: input,
   //       plugins: [TablePlugin],
   //     });
@@ -111,7 +111,7 @@ describe('onKeyDownTable', () => {
   //       </editor>
   //     ) as any) as SlateEditor;
   //
-  //     const [editor, { triggerKeyboardEvent }] = await createPlateTestEditor({
+  //     const [editor, { triggerKeyboardEvent }] = await createLateTestEditor({
   //       editor: input,
   //       plugins: [TablePlugin],
   //     });
@@ -160,7 +160,7 @@ describe('onKeyDownTable', () => {
   //       </editor>
   //     ) as any) as SlateEditor;
   //
-  //     const [editor, { triggerKeyboardEvent }] = await createPlateTestEditor({
+  //     const [editor, { triggerKeyboardEvent }] = await createLateTestEditor({
   //       editor: input,
   //       plugins: [TablePlugin],
   //     });
@@ -211,7 +211,7 @@ describe('onKeyDownTable', () => {
   //       </editor>
   //     ) as any) as SlateEditor;
   //
-  //     const [editor, { triggerKeyboardEvent }] = await createPlateTestEditor({
+  //     const [editor, { triggerKeyboardEvent }] = await createLateTestEditor({
   //       editor: input,
   //       plugins: [TablePlugin],
   //     });
@@ -262,7 +262,7 @@ describe('onKeyDownTable', () => {
   //       </editor>
   //     ) as any) as SlateEditor;
   //
-  //     const [editor, { triggerKeyboardEvent }] = await createPlateTestEditor({
+  //     const [editor, { triggerKeyboardEvent }] = await createLateTestEditor({
   //       editor: input,
   //       plugins: [TablePlugin],
   //     });
@@ -327,7 +327,7 @@ describe('onKeyDownTable', () => {
         </editor>
       ) as any as SlateEditor;
 
-      const [editor, { triggerKeyboardEvent }] = await createPlateTestEditor({
+      const [editor, { triggerKeyboardEvent }] = await createLateTestEditor({
         editor: input,
         plugins: [TablePlugin],
       });
@@ -392,7 +392,7 @@ describe('onKeyDownTable', () => {
         </editor>
       ) as any as SlateEditor;
 
-      const [editor, { triggerKeyboardEvent }] = await createPlateTestEditor({
+      const [editor, { triggerKeyboardEvent }] = await createLateTestEditor({
         editor: input,
         plugins: [TablePlugin],
       });
@@ -452,7 +452,7 @@ describe('onKeyDownTable', () => {
         </editor>
       ) as any as SlateEditor;
 
-      const [editor, { triggerKeyboardEvent }] = await createPlateTestEditor({
+      const [editor, { triggerKeyboardEvent }] = await createLateTestEditor({
         editor: input,
         plugins: [TablePlugin],
       });
@@ -512,7 +512,7 @@ describe('onKeyDownTable', () => {
         </editor>
       ) as any as SlateEditor;
 
-      const [editor, { triggerKeyboardEvent }] = await createPlateTestEditor({
+      const [editor, { triggerKeyboardEvent }] = await createLateTestEditor({
         editor: input,
         plugins: [TablePlugin],
       });

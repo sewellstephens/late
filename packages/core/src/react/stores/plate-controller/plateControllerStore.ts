@@ -7,9 +7,9 @@ import { type Atom, atom } from 'jotai';
 import { createAtomStore } from '../../libs';
 
 export const {
-  PlateControllerProvider: PlateController,
+  LateControllerProvider: LateController,
   plateControllerStore,
-  usePlateControllerStore,
+  useLateControllerStore,
 } = createAtomStore(
   {
     activeId: atom(null as null | string),
@@ -21,21 +21,21 @@ export const {
   }
 );
 
-export const usePlateControllerSelectors = () => usePlateControllerStore().get;
+export const useLateControllerSelectors = () => useLateControllerStore().get;
 
-export const usePlateControllerActions = () => usePlateControllerStore().set;
+export const useLateControllerActions = () => useLateControllerStore().set;
 
-export const usePlateControllerStates = () => usePlateControllerStore().use;
+export const useLateControllerStates = () => useLateControllerStore().use;
 
-export const usePlateControllerExists = () =>
-  !!usePlateControllerStore().store({ warnIfNoStore: false });
+export const useLateControllerExists = () =>
+  !!useLateControllerStore().store({ warnIfNoStore: false });
 
 /**
- * Retrieve from PlateController the JotaiStore for the editor with a given ID,
+ * Retrieve from LateController the JotaiStore for the editor with a given ID,
  * or the active editor if no ID is provided, or the first primary editor if no
  * editor is active, or null.
  */
-export const usePlateControllerEditorStore = (
+export const useLateControllerEditorStore = (
   idProp?: string
 ): JotaiStore | null => {
   const storeAtom: Atom<JotaiStore | null> = React.useMemo(
@@ -67,5 +67,5 @@ export const usePlateControllerEditorStore = (
     [idProp]
   );
 
-  return usePlateControllerSelectors().atom(storeAtom);
+  return useLateControllerSelectors().atom(storeAtom);
 };

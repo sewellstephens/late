@@ -1,10 +1,10 @@
-# Plate date plugin
+# Late date plugin
 
-This package implements the date plugin for Plate.
+This package implements the date plugin for Late.
 
 ## Documentation
 
-Check out [date](https://platejs.org/docs/date).
+Check out [date](https://sewellstephens.github.io/late/docs/date).
 
 ## License
 

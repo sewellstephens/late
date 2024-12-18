@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - `createDeserializeHtmlPlugin` -> `HtmlPlugin`
   - Rename `deserializeHtml` plugin to `html`
   - Rename `deserializeHtml.getNode` to `parse`
@@ -19,31 +19,31 @@
 
 ### Patch Changes
 
-- [#3155](https://github.com/udecode/plate/pull/3155) by [@felixfeng33](https://github.com/felixfeng33) – Missing export
+- [#3155](https://github.com/sewellstephens/late/pull/3155) by [@felixfeng33](https://github.com/felixfeng33) – Missing export
 
 ## 31.4.4
 
 ### Patch Changes
 
-- [#3149](https://github.com/udecode/plate/pull/3149) by [@dimaanj](https://github.com/dimaanj) – `serialzieHtml`: remove `renderToStaticMarkup` from client code
+- [#3149](https://github.com/sewellstephens/late/pull/3149) by [@dimaanj](https://github.com/dimaanj) – `serialzieHtml`: remove `renderToStaticMarkup` from client code
 
 ## 31.1.0
 
 ### Patch Changes
 
-- [#2837](https://github.com/udecode/plate/pull/2837) by [@dimaanj](https://github.com/dimaanj) – Fixes "The `useSlateStatic` hook must be used inside the <Slate> component's context." error in `serializeHtml`
+- [#2837](https://github.com/sewellstephens/late/pull/2837) by [@dimaanj](https://github.com/dimaanj) – Fixes "The `useSlateStatic` hook must be used inside the <Slate> component's context." error in `serializeHtml`
 
 ## 31.0.0
 
 ### Minor Changes
 
-- [#3040](https://github.com/udecode/plate/pull/3040) by [@zbeyens](https://github.com/zbeyens) – Updated minor dependencies
+- [#3040](https://github.com/sewellstephens/late/pull/3040) by [@zbeyens](https://github.com/zbeyens) – Updated minor dependencies
 
 ## 30.5.3
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/udecode/plate/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -51,7 +51,7 @@
 
 ### Patch Changes
 
-- [#2943](https://github.com/udecode/plate/pull/2943) by [@shaungrady](https://github.com/shaungrady) –
+- [#2943](https://github.com/sewellstephens/late/pull/2943) by [@shaungrady](https://github.com/shaungrady) –
   - Fix handling of empty `preserveClassNames` array
     - Previously, would output `<div class="                 ">`
     - Now, it outputs `<div>`
@@ -77,15 +77,15 @@
 
 ### Patch Changes
 
-- [#2797](https://github.com/udecode/plate/pull/2797) by [@12joan](https://github.com/12joan) – Fix: `serializeHtml` mutates the live `editor` instance
+- [#2797](https://github.com/sewellstephens/late/pull/2797) by [@12joan](https://github.com/12joan) – Fix: `serializeHtml` mutates the live `editor` instance
 
 ## 26.0.0
 
 ### Major Changes
 
-- [#2733](https://github.com/udecode/plate/pull/2733) by [@dimaanj](https://github.com/dimaanj) –
+- [#2733](https://github.com/sewellstephens/late/pull/2733) by [@dimaanj](https://github.com/dimaanj) –
   - [Breaking] `serializeHtml`: replaced option `slateProps` by `plateProps`.
-  - Fix errors when the components were using Plate hooks.
+  - Fix errors when the components were using Late hooks.
 
 ## 25.0.1
 
@@ -97,7 +97,7 @@
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -135,7 +135,7 @@
 
 ### Patch Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Fix `serializeHtml` to support `initialValue`
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Fix `serializeHtml` to support `initialValue`
 
 ## 21.5.0
 
@@ -143,13 +143,13 @@
 
 ### Patch Changes
 
-- [#2450](https://github.com/udecode/plate/pull/2450) by [@chandreshpatidar](https://github.com/chandreshpatidar) – Fix html serializer: expected dnd context
+- [#2450](https://github.com/sewellstephens/late/pull/2450) by [@chandreshpatidar](https://github.com/chandreshpatidar) – Fix html serializer: expected dnd context
 
   When we want to serialize plate value in html with DnD support, it throws `Uncaught Invariant Violation: Expected drag drop context` error
 
   ```tsx
   const Serialized = () => {
-    const editor = usePlateEditorState();
+    const editor = useLateEditorState();
     const html = serializeHtml(editor, {
       nodes: editor.children,
       dndWrapper: (props) => <DndProvider backend={HTML5Backend} {...props} />,
@@ -160,13 +160,13 @@
 
   export default () => (
     <DndProvider backend={HTML5Backend}>
-      <Plate<MyValue>
+      <Late<MyValue>
         editableProps={editableProps}
         plugins={plugins}
         initialValue={deserializeHtmlValue}
       >
         <Serialized />
-      </Plate>
+      </Late>
     </DndProvider>
   );
   ```
@@ -241,7 +241,7 @@
 
 ### Patch Changes
 
-- [#1825](https://github.com/udecode/plate/pull/1825) by [@mskelton](https://github.com/mskelton) – Add missing `slate-history` peer dependency.
+- [#1825](https://github.com/sewellstephens/late/pull/1825) by [@mskelton](https://github.com/mskelton) – Add missing `slate-history` peer dependency.
 
 ## 16.3.0
 
@@ -263,7 +263,7 @@
 
 ### Patch Changes
 
-- [#1667](https://github.com/udecode/plate/pull/1667) by [@tjramage](https://github.com/tjramage) –
+- [#1667](https://github.com/sewellstephens/late/pull/1667) by [@tjramage](https://github.com/tjramage) –
   - fix `serializeHtml`: `convertNewLinesToHtmlBr` option was not used
 
 ## 14.0.0

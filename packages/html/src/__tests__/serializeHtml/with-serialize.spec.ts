@@ -3,18 +3,18 @@ import React from 'react';
 import { BoldPlugin } from '@sewellstephens/plate-basic-marks/react';
 import { htmlStringToDOMNode } from '@sewellstephens/plate-common';
 import {
-  type PlatePlugins,
-  createPlateEditor,
-  createPlatePlugin,
-  toPlatePlugin,
+  type LatePlugins,
+  createLateEditor,
+  createLatePlugin,
+  toLatePlugin,
 } from '@sewellstephens/plate-core/react';
 import { ImagePlugin } from '@sewellstephens/plate-media';
 
 import { serializeHtml } from '../../react/serializeHtml';
-import { createPlateUIEditor } from '../create-plate-ui-editor';
+import { createLateUIEditor } from '../create-plate-ui-editor';
 
 const plugins = [
-  toPlatePlugin(ImagePlugin, {
+  toLatePlugin(ImagePlugin, {
     parsers: {
       htmlReact: {
         serializer: {
@@ -29,7 +29,7 @@ const plugins = [
 it('custom serialize image to html', () => {
   expect(
     htmlStringToDOMNode(
-      serializeHtml(createPlateUIEditor({ plugins }), {
+      serializeHtml(createLateUIEditor({ plugins }), {
         nodes: [
           {
             children: [],
@@ -47,7 +47,7 @@ it('custom serialize image to html', () => {
 it('custom serialize bold to html', () => {
   expect(
     serializeHtml(
-      createPlateUIEditor({
+      createLateUIEditor({
         plugins: [
           BoldPlugin.extend({
             parsers: {
@@ -83,16 +83,16 @@ describe('multiple custom leaf serializers', () => {
     new DOMParser().parseFromString(html, 'text/html').body.innerHTML;
 
   it('serialization with the similar renderLeaf/serialize.left options of the same nodes should give the same result', () => {
-    const pluginsWithoutSerializers: PlatePlugins = [
-      createPlatePlugin({
+    const pluginsWithoutSerializers: LatePlugins = [
+      createLatePlugin({
         key: 'bold',
         node: { isLeaf: true },
         render: { node: Bold as any },
       }), // always bold
     ];
 
-    const pluginsWithSerializers: PlatePlugins = [
-      createPlatePlugin({
+    const pluginsWithSerializers: LatePlugins = [
+      createLatePlugin({
         key: 'bold',
         node: { isLeaf: true },
         parsers: { htmlReact: { serializer: { parse: Bold } } },
@@ -101,7 +101,7 @@ describe('multiple custom leaf serializers', () => {
     ];
 
     const result1 = serializeHtml(
-      createPlateEditor({
+      createLateEditor({
         plugins: pluginsWithoutSerializers,
       }),
       {
@@ -110,7 +110,7 @@ describe('multiple custom leaf serializers', () => {
     );
 
     const result2 = serializeHtml(
-      createPlateEditor({
+      createLateEditor({
         plugins: pluginsWithSerializers,
       }),
       {

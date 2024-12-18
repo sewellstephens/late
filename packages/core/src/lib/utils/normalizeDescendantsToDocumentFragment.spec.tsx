@@ -2,7 +2,7 @@
 import { LinkPlugin } from '@sewellstephens/plate-link';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
-import { createPlateEditor } from '../../react';
+import { createLateEditor } from '../../react';
 import { normalizeDescendantsToDocumentFragment } from './index';
 
 jsx;
@@ -34,7 +34,7 @@ describe('normalizeDescendantsToDocumentFragment()', () => {
   ])(
     'should add a blank leaf to blocks without children',
     ({ input, output }: any) => {
-      const editor = createPlateEditor();
+      const editor = createLateEditor();
 
       const result = normalizeDescendantsToDocumentFragment(editor, {
         descendants: input,
@@ -102,7 +102,7 @@ describe('normalizeDescendantsToDocumentFragment()', () => {
   ])(
     'should wrap inline blocks and text nodes in case they have a sibling block',
     ({ input, output }: any) => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [LinkPlugin],
       });
 

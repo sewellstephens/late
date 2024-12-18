@@ -4,15 +4,15 @@ description: Latest component updates and announcements.
 toc: true
 ---
 
-Since Plate UI is not a component library, a changelog is maintained here.
+Since Late UI is not a component library, a changelog is maintained here.
 
-Use the [CLI](https://platejs.org/docs/components/cli) to install the latest version of the components.
+Use the [CLI](https://sewellstephens.github.io/late/docs/components/cli) to install the latest version of the components.
 
 ## August 2024 #13
 
 ### August 27 #13.3
 
-- Migrate to Plate 37
+- Migrate to Late 37
 
 ### August 26 #13.2
 
@@ -87,7 +87,7 @@ Use the [CLI](https://platejs.org/docs/components/cli) to install the latest ver
 ### February 5 #8.1
 
 - fix `mention-element`: Mention input removed when clicking mention combobox scrollbar
-  ([#2919](https://github.com/udecode/plate/issues/2919))
+  ([#2919](https://github.com/sewellstephens/late/issues/2919))
 
 ## January 2024 #7
 
@@ -117,7 +117,7 @@ Use the [CLI](https://platejs.org/docs/components/cli) to install the latest ver
 
 ```tsx
 // Before
-export const TableElement = withRef<typeof PlateElement>(
+export const TableElement = withRef<typeof LateElement>(
   ({ className, children, ...props }, ref) => {
     // ...
   }
@@ -126,7 +126,7 @@ export const TableElement = withRef<typeof PlateElement>(
 // After
 export const TableElement = withHOC(
   TableProvider,
-  withRef<typeof PlateElement>(({ className, children, ...props }, ref) => {
+  withRef<typeof LateElement>(({ className, children, ...props }, ref) => {
     // ...
   })
 );
@@ -177,8 +177,8 @@ export const Avatar = withCn(
 
 ### December 25 #6.2
 
-- [dialog](https://github.com/udecode/plate/pull/2824/files#diff-5f7205cdd85718b7f26cef1e746ad67d69c83703135a7e3ad1a9a09ca69c38c8)
-- Plate 28, includes a few optimizations: [changes](https://github.com/udecode/plate/pull/2816/files#diff-726cd463a614f1a49228e05a2eb7ea9bc95f2e574423eb4264c6cb95eb0ac792)
+- [dialog](https://github.com/sewellstephens/late/pull/2824/files#diff-5f7205cdd85718b7f26cef1e746ad67d69c83703135a7e3ad1a9a09ca69c38c8)
+- Late 28, includes a few optimizations: [changes](https://github.com/sewellstephens/late/pull/2816/files#diff-726cd463a614f1a49228e05a2eb7ea9bc95f2e574423eb4264c6cb95eb0ac792)
   - `combobox`
   - `insert-dropdown-menu`
   - `media-popover`
@@ -198,24 +198,24 @@ export const Avatar = withCn(
 ### 28 Nov #5.1
 
 - `table-element`
-  - [feat](https://github.com/udecode/plate/pull/2733/files#diff-c5f0c4861d1d4f4e3551cebd8bc75888f5ab60a21a41d5da07487a6c9c79d483): merging support (plate 26)
+  - [feat](https://github.com/sewellstephens/late/pull/2733/files#diff-c5f0c4861d1d4f4e3551cebd8bc75888f5ab60a21a41d5da07487a6c9c79d483): merging support (plate 26)
 - `table-cell-element`
-  - [feat](https://github.com/udecode/plate/pull/2733/files#diff-b474b48d3e947c67296867abe2421b7dad66a8327a4e09f43402825393e3aa26): merging support (plate 26)
+  - [feat](https://github.com/sewellstephens/late/pull/2733/files#diff-b474b48d3e947c67296867abe2421b7dad66a8327a4e09f43402825393e3aa26): merging support (plate 26)
 - `comments-popover`
   - `comment-more-dropdown`
-    - [fix](https://github.com/udecode/plate/commit/cb6838962f105e30b4d6a56db2e5bda01a118b43): edit and delete comments
+    - [fix](https://github.com/sewellstephens/late/commit/cb6838962f105e30b4d6a56db2e5bda01a118b43): edit and delete comments
   - `comment-value`
-    - [fix](https://github.com/udecode/plate/commit/cb6838962f105e30b4d6a56db2e5bda01a118b43#diff-9234422f7416eb31a4f9aca1d2070bf26dae1dcf92579ee4145702123b4347e2): remove `useCommentValue` (deprecated from plate 25)
+    - [fix](https://github.com/sewellstephens/late/commit/cb6838962f105e30b4d6a56db2e5bda01a118b43#diff-9234422f7416eb31a4f9aca1d2070bf26dae1dcf92579ee4145702123b4347e2): remove `useCommentValue` (deprecated from plate 25)
 - `toolbar`
-  - [fix](https://github.com/udecode/plate/pull/2742/files): pressed state
+  - [fix](https://github.com/sewellstephens/late/pull/2742/files): pressed state
 
 ## September 2023 #4
 
 ### 18 Sept #4.4
 
-- `editor`: New component 🎉 See [Editor](https://platejs.org/docs/components/editor)
+- `editor`: New component 🎉 See [Editor](https://sewellstephens.github.io/late/docs/components/editor)
 - `fixed-toolbar-buttons`, `floating-toolbar-buttons`, `mode-dropdown-menu`:
-  - plate 24: rename `usePlateReadOnly` to `useEditorReadOnly`
+  - plate 24: rename `useLateReadOnly` to `useEditorReadOnly`
 - `code-block-element`: changes in `code-block-element.css`
 
 ### 15 Sept #4.3
@@ -239,9 +239,9 @@ export const Avatar = withCn(
 ### 2 Sept #4.1
 
 - `link-floating-toolbar`
-  - [fix](https://github.com/udecode/plate/pull/2593/files#diff-bd61ef4cfdcfe9401df0307a461ac13dce507b178d8e9a7ed693cb36453e9202): props type
+  - [fix](https://github.com/sewellstephens/late/pull/2593/files#diff-bd61ef4cfdcfe9401df0307a461ac13dce507b178d8e9a7ed693cb36453e9202): props type
 - `media-embed-element`
-  - [fix](https://github.com/udecode/plate/pull/2593/files#diff-13ddd3e18dbdc399e507d7bb512e0f592fba062a36bca14d66d39069773617bdR54): use `align` option
+  - [fix](https://github.com/sewellstephens/late/pull/2593/files#diff-13ddd3e18dbdc399e507d7bb512e0f592fba062a36bca14d66d39069773617bdR54): use `align` option
 - `caption`
   - fix: `style` prop
 
@@ -249,34 +249,34 @@ export const Avatar = withCn(
 
 ### 19 August #3.4
 
-- `floating-toolbar` - [changes](https://github.com/udecode/plate/pull/2585/files#diff-c3329bdae6493e8868acb88f985b2929109dae7a04d756359346f0c614913766):
+- `floating-toolbar` - [changes](https://github.com/sewellstephens/late/pull/2585/files#diff-c3329bdae6493e8868acb88f985b2929109dae7a04d756359346f0c614913766):
   - feat: `ref` support
   - refactor: using `useFloatingToolbarState`, control `floatingOptions` default value
   - fix: added `fallbackPlacements` to keep the floating in the viewport
   - br: remove the following props: `portalElement`, `floatingOptions`, `ignoreReadOnly`, `hideToolbar`
   - feat: `state` prop
-- `link-floating-toolbar` - [changes](https://github.com/udecode/plate/pull/2585/files#diff-bd61ef4cfdcfe9401df0307a461ac13dce507b178d8e9a7ed693cb36453e9202):
+- `link-floating-toolbar` - [changes](https://github.com/sewellstephens/late/pull/2585/files#diff-bd61ef4cfdcfe9401df0307a461ac13dce507b178d8e9a7ed693cb36453e9202):
   - refactor: control `floatingOptions` default value
   - fix: added `fallbackPlacements` to keep the floating in the viewport
 
 ### 9 August #3.3
 
-- `mention-element` - [feat](https://github.com/udecode/plate/pull/2564/files#diff-b008c662509a2be20fae922f91462771d69105ba04e5731184427e37dc86b236): support bold, italic, underline
+- `mention-element` - [feat](https://github.com/sewellstephens/late/pull/2564/files#diff-b008c662509a2be20fae922f91462771d69105ba04e5731184427e37dc86b236): support bold, italic, underline
 
 ### 3 August #3.2
 
-- `table-cell-element` - [feat](https://github.com/udecode/plate/pull/2557/files#diff-b474b48d3e947c67296867abe2421b7dad66a8327a4e09f43402825393e3aa26): support table cell backround styles
+- `table-cell-element` - [feat](https://github.com/sewellstephens/late/pull/2557/files#diff-b474b48d3e947c67296867abe2421b7dad66a8327a4e09f43402825393e3aa26): support table cell backround styles
 
 ### 2 August #3.1
 
-- `image-element`: [refactor](https://github.com/udecode/plate/pull/2555/files#diff-932738209da6d341356f451777ebf380ae116fd70bf73124a786ede5ca7eb77e): use `mediaResizeHandleVariants`
-- `media-embed-element`: [refactor](https://github.com/udecode/plate/pull/2555/files#diff-13ddd3e18dbdc399e507d7bb512e0f592fba062a36bca14d66d39069773617bd): use `mediaResizeHandleVariants`
-- `resizable` - [changes](https://github.com/udecode/plate/pull/2555/files#diff-514a5137146b81612a86bf85717ed3185ec745889f6aa5beeddf9dc8f03acae7):
+- `image-element`: [refactor](https://github.com/sewellstephens/late/pull/2555/files#diff-932738209da6d341356f451777ebf380ae116fd70bf73124a786ede5ca7eb77e): use `mediaResizeHandleVariants`
+- `media-embed-element`: [refactor](https://github.com/sewellstephens/late/pull/2555/files#diff-13ddd3e18dbdc399e507d7bb512e0f592fba062a36bca14d66d39069773617bd): use `mediaResizeHandleVariants`
+- `resizable` - [changes](https://github.com/sewellstephens/late/pull/2555/files#diff-514a5137146b81612a86bf85717ed3185ec745889f6aa5beeddf9dc8f03acae7):
   - refactor
   - feat: `mediaResizeHandleVariants`
 - `table-cell-element`:
-  - [fix](https://github.com/udecode/plate/pull/2555/files#diff-b474b48d3e947c67296867abe2421b7dad66a8327a4e09f43402825393e3aa26): resizable
-  - [fix](https://github.com/udecode/plate/pull/2550/files#diff-b474b48d3e947c67296867abe2421b7dad66a8327a4e09f43402825393e3aa26): table selection in firefox
+  - [fix](https://github.com/sewellstephens/late/pull/2555/files#diff-b474b48d3e947c67296867abe2421b7dad66a8327a4e09f43402825393e3aa26): resizable
+  - [fix](https://github.com/sewellstephens/late/pull/2550/files#diff-b474b48d3e947c67296867abe2421b7dad66a8327a4e09f43402825393e3aa26): table selection in firefox
 
 ## July 2023 #2
 
@@ -301,8 +301,8 @@ export const Avatar = withCn(
 
 ### Launch #1
 
-Plate headless components are now available:
+Late headless components are now available:
 
-- [Manual Installation](https://platejs.org/docs/components/installation/manual)
-- [Theming](https://platejs.org/docs/components/theming)
-- [CLI](https://platejs.org/docs/components/cli)
+- [Manual Installation](https://sewellstephens.github.io/late/docs/components/installation/manual)
+- [Theming](https://sewellstephens.github.io/late/docs/components/theming)
+- [CLI](https://sewellstephens.github.io/late/docs/components/cli)

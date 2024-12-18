@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { type TEditor, type Value, createTEditor } from '@sewellstephens/slate';
 
-import type { AnyPlatePlugin } from '../plugin';
-import type { PlateApiPlugin } from '../plugins';
-import type { TPlateEditor } from './PlateEditor';
+import type { AnyLatePlugin } from '../plugin';
+import type { LateApiPlugin } from '../plugins';
+import type { TLateEditor } from './LateEditor';
 
 import {
   type AnyPluginConfig,
@@ -12,18 +12,18 @@ import {
   type InferPlugins,
   withSlate,
 } from '../../lib';
-import { getPlateCorePlugins } from './getPlateCorePlugins';
+import { getLateCorePlugins } from './getLateCorePlugins';
 
-export type PlateCorePlugin = CorePlugin | typeof PlateApiPlugin;
+export type LateCorePlugin = CorePlugin | typeof LateApiPlugin;
 
-export type WithPlateOptions<
+export type WithLateOptions<
   V extends Value = Value,
-  P extends AnyPluginConfig = PlateCorePlugin,
+  P extends AnyPluginConfig = LateCorePlugin,
 > = {
-  rootPlugin?: (plugin: AnyPlatePlugin) => AnyPlatePlugin;
+  rootPlugin?: (plugin: AnyLatePlugin) => AnyLatePlugin;
 } & BaseWithSlateOptions<V, P> &
   Pick<
-    Partial<AnyPlatePlugin>,
+    Partial<AnyLatePlugin>,
     | 'api'
     | 'decorate'
     | 'extendEditor'
@@ -40,23 +40,23 @@ export type WithPlateOptions<
   >;
 
 /**
- * Applies Plate-specific enhancements to an editor instance with ReactPlugin.
+ * Applies Late-specific enhancements to an editor instance with ReactPlugin.
  *
- * @see {@link createPlateEditor} for a higher-level React editor creation function.
- * @see {@link usePlateEditor} for a memoized version in React components.
+ * @see {@link createLateEditor} for a higher-level React editor creation function.
+ * @see {@link useLateEditor} for a memoized version in React components.
  * @see {@link withSlate} for the non-React version of editor enhancement
  */
-export const withPlate = <
+export const withLate = <
   V extends Value = Value,
-  P extends AnyPluginConfig = PlateCorePlugin,
+  P extends AnyPluginConfig = LateCorePlugin,
 >(
   e: TEditor,
-  { plugins = [], ...options }: WithPlateOptions<V, P> = {}
-): TPlateEditor<V, InferPlugins<P[]>> => {
+  { plugins = [], ...options }: WithLateOptions<V, P> = {}
+): TLateEditor<V, InferPlugins<P[]>> => {
   const editor = withSlate<V, P>(e, {
     ...options,
-    plugins: [...getPlateCorePlugins(), ...plugins],
-  } as any) as unknown as TPlateEditor<V, InferPlugins<P[]>>;
+    plugins: [...getLateCorePlugins(), ...plugins],
+  } as any) as unknown as TLateEditor<V, InferPlugins<P[]>>;
 
   editor.useOptions = ((plugin: any, selector: any, equalityFn: any) => {
     const store = editor.getOptionsStore(plugin);
@@ -96,23 +96,23 @@ export const withPlate = <
   return editor;
 };
 
-export type CreatePlateEditorOptions<
+export type CreateLateEditorOptions<
   V extends Value = Value,
-  P extends AnyPluginConfig = PlateCorePlugin,
+  P extends AnyPluginConfig = LateCorePlugin,
 > = {
   /**
-   * Initial editor to be extended with `withPlate`.
+   * Initial editor to be extended with `withLate`.
    *
    * @default createEditor()
    */
   editor?: TEditor;
-} & WithPlateOptions<V, P>;
+} & WithLateOptions<V, P>;
 
 /**
- * Creates a fully configured Plate editor with optional customizations.
+ * Creates a fully configured Late editor with optional customizations.
  *
  * @remarks
- *   This function creates a Plate editor with the following enhancements and
+ *   This function creates a Late editor with the following enhancements and
  *   configurations:
  *
  *   1. Editor Initialization:
@@ -146,11 +146,11 @@ export type CreatePlateEditorOptions<
  *   - Allows for deep customization through plugins and overrides.
  *   - Supports custom editor types and configurations.
  *
- *   The resulting editor is a fully-initialized Plate instance, ready for use
- *   with Plate components and APIs, with all core functionalities and custom
+ *   The resulting editor is a fully-initialized Late instance, ready for use
+ *   with Late components and APIs, with all core functionalities and custom
  *   plugins applied.
  * @example
- *   const editor = createPlateEditor({
+ *   const editor = createLateEditor({
  *     plugins: [ParagraphPlugin, BoldPlugin],
  *     override: {
  *       components: {
@@ -162,16 +162,16 @@ export type CreatePlateEditorOptions<
  * @template V - The value type.
  * @template P - The plugins type.
  * @see {@link createSlateEditor} for a non-React version of editor creation.
- *  * @see {@link usePlateEditor} for a memoized version, suitable for use in React components.
- *  * @see {@link withPlate} for the underlying function that applies Plate enhancements to an editor.
+ *  * @see {@link useLateEditor} for a memoized version, suitable for use in React components.
+ *  * @see {@link withLate} for the underlying function that applies Late enhancements to an editor.
  *  * @see {@link withSlate} for a non-React version of editor enhancement.
  */
-export const createPlateEditor = <
+export const createLateEditor = <
   V extends Value = Value,
-  P extends AnyPluginConfig = PlateCorePlugin,
+  P extends AnyPluginConfig = LateCorePlugin,
 >({
   editor = createTEditor(),
   ...options
-}: CreatePlateEditorOptions<V, P> = {}): TPlateEditor<V, InferPlugins<P[]>> => {
-  return withPlate<V, P>(editor, options);
+}: CreateLateEditorOptions<V, P> = {}): TLateEditor<V, InferPlugins<P[]>> => {
+  return withLate<V, P>(editor, options);
 };

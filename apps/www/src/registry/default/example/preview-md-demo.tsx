@@ -8,11 +8,11 @@ import {
   type Decorate,
   type TText, createSlatePlugin, isText
 } from "@sewellstephens/plate-common";
-import { Plate, type TRenderLeafProps , usePlateEditor } from "@sewellstephens/plate-common/react";
+import { Late, type TRenderLeafProps , useLateEditor } from "@sewellstephens/plate-common/react";
 import Prism from 'prismjs';
 
 import { editableProps } from '@/plate/demo/editableProps';
-import { PlateUI } from '@/plate/demo/plate-ui';
+import { LateUI } from '@/plate/demo/plate-ui';
 import { previewMdValue } from '@/plate/demo/values/previewMdValue';
 import { Editor } from '@/registry/default/plate-ui/editor';
 
@@ -103,8 +103,8 @@ const _editableProps = {
 };
 
 export default function PreviewMdDemo() {
-  const editor = usePlateEditor({
-    override: { components: PlateUI },
+  const editor = useLateEditor({
+    override: { components: LateUI },
     plugins: [BasicElementsPlugin, BasicMarksPlugin, createSlatePlugin({
       decorate: decoratePreview,
       key: 'preview-md',
@@ -114,9 +114,9 @@ export default function PreviewMdDemo() {
   
   return (
     <div className="p-10">
-      <Plate editor={editor}>
+      <Late editor={editor}>
         <Editor {..._editableProps} />
-      </Plate>
+      </Late>
     </div>
   );
 }

@@ -6,18 +6,18 @@ import { useFocused } from 'slate-react';
 import {
   plateControllerStore,
   useEditorId,
-  usePlateControllerActions,
-  usePlateSelectors,
-  usePlateStore,
+  useLateControllerActions,
+  useLateSelectors,
+  useLateStore,
 } from '../stores';
 
-export interface PlateControllerEffectProps {
+export interface LateControllerEffectProps {
   id?: string;
 }
 
-export const PlateControllerEffect = ({
+export const LateControllerEffect = ({
   id: idProp,
-}: PlateControllerEffectProps) => {
+}: LateControllerEffectProps) => {
   const idFromStore = useEditorId();
   const id = idProp ?? idFromStore;
 
@@ -28,18 +28,18 @@ export const PlateControllerEffect = ({
       ),
     [id]
   );
-  const setCurrentStore = usePlateControllerActions().atom(currentStoreAtom, {
+  const setCurrentStore = useLateControllerActions().atom(currentStoreAtom, {
     warnIfNoStore: false,
   });
-  const store = usePlateStore(id).store();
+  const store = useLateStore(id).store();
 
-  const primary = usePlateSelectors(id).primary();
-  const setPrimaryEditorIds = usePlateControllerActions().primaryEditorIds({
+  const primary = useLateSelectors(id).primary();
+  const setPrimaryEditorIds = useLateControllerActions().primaryEditorIds({
     warnIfNoStore: false,
   });
 
   const focused = useFocused();
-  const setActiveId = usePlateControllerActions().activeId({
+  const setActiveId = useLateControllerActions().activeId({
     warnIfNoStore: false,
   });
 

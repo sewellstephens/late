@@ -1,9 +1,9 @@
 import type { CursorData, CursorState } from '@sewellstephens/plate-cursor';
 
-import { createPlatePlugin, findEventRange } from '@sewellstephens/plate-common/react';
+import { createLatePlugin, findEventRange } from '@sewellstephens/plate-common/react';
 import { DndPlugin } from '@sewellstephens/plate-dnd';
 
-export const DragOverCursorPlugin = createPlatePlugin({
+export const DragOverCursorPlugin = createLatePlugin({
   handlers: {
     onDragEnd: ({ editor, plugin }) => {
       editor.setOption(plugin, 'cursors', {});

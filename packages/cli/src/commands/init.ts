@@ -181,7 +181,7 @@ export async function promptForConfig(
   ]);
 
   const config = rawConfigSchema.parse({
-    $schema: 'https://platejs.org/schema.json',
+    $schema: 'https://sewellstephens.github.io/late/schema.json',
     aliases: {
       components: options.components,
       'plate-ui': options['plate-ui'],

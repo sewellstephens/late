@@ -22,7 +22,7 @@ docs:
 - Supports multiple media providers: video, youtube, vimeo, dailymotion, youku, coub, twitter.
 - Editable captions.
 - Resizable.
-- Use [Plate Cloud](/docs/cloud) for easy cloud uploads and server-side image resizing.
+- Use [Late Cloud](/docs/cloud) for easy cloud uploads and server-side image resizing.
 
 </PackageInfo>
 
@@ -93,7 +93,7 @@ Options extends `MediaPluginOptions`.
 Inserts media (image or media embed) into the editor. The type of media to insert is determined by the `type` parameter.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="InsertMediaOptions" optional>
@@ -125,7 +125,7 @@ type.
 Parses a media URL and returns the data associated with it based on the configured rules of the media plugin.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="options" type="object">
@@ -145,7 +145,7 @@ Parses a media URL and returns the data associated with it based on the configur
 Submits the floating media element by setting its URL and performing necessary transformations.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="options" type="object">
@@ -199,7 +199,7 @@ A type defining the data returned from parsing an embed URL.
 Inserts an image element into the editor.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="url" type="string | ArrayBuffer">
@@ -233,7 +233,7 @@ Enhances the editor to support pasting images from the clipboard.
   <APIItem name="editor" type="E">
     The editor instance.
   </APIItem>
-  <APIItem name="plugin" type="PlatePlugin">
+  <APIItem name="plugin" type="LatePlugin">
     The plate plugin.
   </APIItem>
 </APIParameters>
@@ -246,7 +246,7 @@ Enhances the editor to automatically insert an image when a URL is pasted.
   <APIItem name="editor" type="E">
     The editor instance.
   </APIItem>
-  <APIItem name="plugin" type="PlatePlugin">
+  <APIItem name="plugin" type="LatePlugin">
     The plate plugin.
   </APIItem>
 </APIParameters>
@@ -258,7 +258,7 @@ Enhances the editor to automatically insert an image when a URL is pasted.
 Inserts a media embed element at the current selection.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="object">

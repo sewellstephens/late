@@ -1,6 +1,6 @@
 /** @jsx jsx */
 
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
 import { ImagePlugin } from './ImagePlugin';
@@ -22,7 +22,7 @@ describe('withImageUpload', () => {
     ) as any;
 
     it('should insert image from the file(s)', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins: [ImagePlugin],
       });
@@ -57,7 +57,7 @@ describe('withImageUpload', () => {
     it('should run default insertData', () => {
       jest.spyOn(JSON, 'parse').mockReturnValue(<fragment>image.png</fragment>);
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins: [ImagePlugin],
       });
@@ -85,7 +85,7 @@ describe('withImageUpload', () => {
     ) as any;
 
     it('should insert image from the file(s)', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins: [ImagePlugin],
       });

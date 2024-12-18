@@ -2,10 +2,10 @@ import { BoldPlugin } from '@sewellstephens/plate-basic-marks/react';
 import { ParagraphPlugin } from '@sewellstephens/plate-common/react';
 
 import { serializeHtml } from '../../react/serializeHtml';
-import { createPlateUIEditor } from '../create-plate-ui-editor';
+import { createLateUIEditor } from '../create-plate-ui-editor';
 
 it('serialize with slate className', () => {
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins: [ParagraphPlugin],
   });
 
@@ -22,7 +22,7 @@ it('serialize with slate className', () => {
 });
 
 it('serialize with without modifying content', () => {
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins: [ParagraphPlugin],
   });
 
@@ -39,7 +39,7 @@ it('serialize with without modifying content', () => {
 });
 
 it('serialize with slate classNames: a+slate', () => {
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins: [
       ParagraphPlugin.extend({
         node: {
@@ -64,7 +64,7 @@ it('serialize with slate classNames: a+slate', () => {
 });
 
 it('serialize with slate classNames: slate+b', () => {
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins: [
       ParagraphPlugin.extend({
         node: {
@@ -89,7 +89,7 @@ it('serialize with slate classNames: slate+b', () => {
 });
 
 it('serialize with classNames: a+slate+b', () => {
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins: [
       ParagraphPlugin.extend({
         node: {
@@ -114,7 +114,7 @@ it('serialize with classNames: a+slate+b', () => {
 });
 
 it('serialize with classNames: a+slate+b+slate', () => {
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins: [
       ParagraphPlugin.extend({
         node: {
@@ -141,7 +141,7 @@ it('serialize with classNames: a+slate+b+slate', () => {
 });
 
 it('serialize with slate classNames: multiple tags', () => {
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins: [
       ParagraphPlugin.extend({
         node: {
@@ -172,7 +172,7 @@ it('serialize with slate classNames: multiple tags', () => {
 });
 
 it('serialize with custom preserved classname: a+custom', () => {
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins: [
       ParagraphPlugin.extend({
         node: {
@@ -198,7 +198,7 @@ it('serialize with custom preserved classname: a+custom', () => {
 });
 
 it('serialize without preserving classnames', () => {
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins: [
       ParagraphPlugin.extend({
         node: {
@@ -224,7 +224,7 @@ it('serialize without preserving classnames', () => {
 });
 
 it('serialize nested with custom preserved classname: a+custom', () => {
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins: [
       ParagraphPlugin.extend({
         node: {
@@ -263,7 +263,7 @@ it('serialize nested with custom preserved classname: a+custom', () => {
 });
 
 it('serialize with multiple custom classname: a+custom+slate', () => {
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins: [
       ParagraphPlugin.extend({
         node: {

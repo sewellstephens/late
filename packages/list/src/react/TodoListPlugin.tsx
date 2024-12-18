@@ -1,9 +1,9 @@
-import { Key, toTPlatePlugin } from '@sewellstephens/plate-common/react';
+import { Key, toTLatePlugin } from '@sewellstephens/plate-common/react';
 
 import { TodoListPlugin as BaseTodoListPlugin } from '../lib/TodoListPlugin';
 
 /** Enables support for todo lists with React-specific features. */
-export const TodoListPlugin = toTPlatePlugin(
+export const TodoListPlugin = toTLatePlugin(
   BaseTodoListPlugin,
   ({ editor, type }) => ({
     shortcuts: {

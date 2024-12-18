@@ -111,7 +111,7 @@ When adding or modifying components, please ensure that you update the documenta
 
 ## CLI
 
-The `@sewellstephens/plate-ui` package is a CLI for adding components to your project. You can find the documentation for the CLI [here](https://platejs.org/docs/components/cli).
+The `@sewellstephens/plate-ui` package is a CLI for adding components to your project. You can find the documentation for the CLI [here](https://sewellstephens.github.io/late/docs/components/cli).
 
 Any changes to the CLI should be made in the `packages/plate-ui` directory. If you can, it would be great if you could add tests for your changes.
 
@@ -175,7 +175,7 @@ If you have a request for a new feature, please open a discussion on GitHub. We'
 
 No software is without bugs. If you encounter a problem, please follow these steps:
 
-- Look through our **[issue list](https://github.com/udecode/plate/issues?utf8=%E2%9C%93&q=)** to see if the issue already exists.
+- Look through our **[issue list](https://github.com/sewellstephens/late/issues?utf8=%E2%9C%93&q=)** to see if the issue already exists.
   - If you find an existing issue that matches yours, please give it a "thumbs-up reaction". This helps us prioritize which issues to address first!
 - If you can't find a match, feel free to create a new issue.
 
@@ -185,7 +185,7 @@ The best way to help us understand and fix your issue is to provide a minimal re
 
 ### Responding to questions
 
-The **[Q&A](https://github.com/udecode/plate/discussions/categories/q-a)** is a great place to help. If you can answer a question, it will benefit the asker and others who have a similar question. If an issue needs reproduction, you may be able to guide the reporter toward one, or even reproduce it yourself using **[this technique](https://github.com/udecode/plate/blob/main/CONTRIBUTING.md#reproductions)**.
+The **[Q&A](https://github.com/sewellstephens/late/discussions/categories/q-a)** is a great place to help. If you can answer a question, it will benefit the asker and others who have a similar question. If an issue needs reproduction, you may be able to guide the reporter toward one, or even reproduce it yourself using **[this technique](https://github.com/sewellstephens/late/blob/main/CONTRIBUTING.md#reproductions)**.
 
 ### Triaging issues
 
@@ -207,8 +207,6 @@ If an issue is a **`bug`**, and it doesn't have a clear reproduction that you ha
 - **`feature`**s, **`maintenance`**s, should be closed when released or if the feature is deemed not appropriate.
 
 ## Pull Requests (PRs)
-
-We welcome all contributions and there are many ways you can help. Before you submit a new PR, please run **build**, **lint** and **test**. Do not submit a PR if tests are failing. If you need help, the best way is to **[join Plate's Discord and ask in the #contributing channel](https://discord.gg/mAZRuBzGM3)**.
 
 You miss time/knowledge but still want to contribute? Just open a PR or a gist on Discord and we'll try to help.
 
@@ -249,7 +247,7 @@ Creating a new document?
 - Create a new mdx file in **`/apps/www/content/docs`**
 - Add the new document to **`/apps/www/src/config/docs.ts`**
 
-### How to: Create a Plate Package
+### How to: Create a Late Package
 
 Use the command below and follow the prompts to create a new package:
 

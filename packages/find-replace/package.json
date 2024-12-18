@@ -1,19 +1,19 @@
 {
   "name": "@sewellstephens/plate-find-replace",
   "version": "37.0.0",
-  "description": "Find and replace plugin for Plate",
+  "description": "Find and replace plugin for Late",
   "keywords": [
     "plate",
     "plugin",
     "slate"
   ],
-  "homepage": "https://platejs.org",
+  "homepage": "https://sewellstephens.github.io/late",
   "bugs": {
-    "url": "https://github.com/udecode/plate/issues"
+    "url": "https://github.com/sewellstephens/late/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/udecode/plate.git",
+    "url": "https://github.com/sewellstephens/late.git",
     "directory": "packages/find-replace"
   },
   "license": "MIT",

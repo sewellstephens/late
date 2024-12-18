@@ -2,28 +2,28 @@
 
 import React, { useState } from 'react';
 
-import type { PlateRenderElementProps } from '@sewellstephens/plate-common/react';
+import type { LateRenderElementProps } from '@sewellstephens/plate-common/react';
 
 import { BasicElementsPlugin } from '@sewellstephens/plate-basic-elements/react';
 import { BasicMarksPlugin } from '@sewellstephens/plate-basic-marks/react';
 import { ExitBreakPlugin } from '@sewellstephens/plate-break/react';
 import {
-  Plate,
-  createPlatePlugin,
-  usePlateEditor,
+  Late,
+  createLatePlugin,
+  useLateEditor,
 } from '@sewellstephens/plate-common/react';
 
 import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { editableProps } from '@/plate/demo/editableProps';
-import { PlateUI } from '@/plate/demo/plate-ui';
+import { LateUI } from '@/plate/demo/plate-ui';
 import { resetBlockTypePlugin } from '@/plate/demo/plugins/resetBlockTypePlugin';
 import { softBreakPlugin } from '@/plate/demo/plugins/softBreakPlugin';
 import { editableVoidsValue } from '@/plate/demo/values/editableVoidsValue';
 import { Editor } from '@/registry/default/plate-ui/editor';
 import { Input } from '@/registry/default/plate-ui/input';
 
-export const EditableVoidPlugin = createPlatePlugin({
+export const EditableVoidPlugin = createLatePlugin({
   key: 'editable-void',
   node: {
     component: EditableVoidElement,
@@ -35,12 +35,12 @@ export const EditableVoidPlugin = createPlatePlugin({
 export function EditableVoidElement({
   attributes,
   children,
-}: PlateRenderElementProps) {
+}: LateRenderElementProps) {
   const [inputValue, setInputValue] = useState('');
 
-  const editor = usePlateEditor({
+  const editor = useLateEditor({
     id: 'editable-void-basic-elements',
-    override: { components: PlateUI },
+    override: { components: LateUI },
     plugins: [
       BasicElementsPlugin,
       resetBlockTypePlugin,
@@ -84,12 +84,12 @@ export function EditableVoidElement({
             Tell us about yourself:
           </Label>
 
-          <Plate
+          <Late
             editor={editor}
             // initialValue={basicElementsValue}
           >
             <Editor {...editableProps} />
-          </Plate>
+          </Late>
         </div>
       </div>
       {children}
@@ -98,17 +98,17 @@ export function EditableVoidElement({
 }
 
 export default function EditableVoidsDemo() {
-  const editor = usePlateEditor({
-    override: { components: PlateUI },
+  const editor = useLateEditor({
+    override: { components: LateUI },
     plugins: [BasicElementsPlugin, BasicMarksPlugin, EditableVoidPlugin],
     value: editableVoidsValue,
   });
 
   return (
     <div className="p-10">
-      <Plate editor={editor}>
+      <Late editor={editor}>
         <Editor {...editableProps} />
-      </Plate>
+      </Late>
     </div>
   );
 }

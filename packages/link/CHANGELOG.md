@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - `createLinkPlugin` -> `LinkPlugin`
   - Move `floatingLinkStore` to `LinkPlugin`
 
@@ -14,7 +14,7 @@
 
 ### Patch Changes
 
-- [`8342b6c2f333ee445c8b6be7e864857fd2a2584a`](https://github.com/udecode/plate/commit/8342b6c2f333ee445c8b6be7e864857fd2a2584a) by [@zbeyens](https://github.com/zbeyens) – fix: Potential uncaught error when immediately dismounting the floating link input after update
+- [`8342b6c2f333ee445c8b6be7e864857fd2a2584a`](https://github.com/sewellstephens/late/commit/8342b6c2f333ee445c8b6be7e864857fd2a2584a) by [@zbeyens](https://github.com/zbeyens) – fix: Potential uncaught error when immediately dismounting the floating link input after update
 
 ## 36.3.8
 
@@ -24,7 +24,7 @@
 
 ### Minor Changes
 
-- [#3389](https://github.com/udecode/plate/pull/3389) by [@georeith](https://github.com/georeith) – feat:`LinkPlugin` new option `transformInput: (url: string) => string | undefined;` that optionally transform's the
+- [#3389](https://github.com/sewellstephens/late/pull/3389) by [@georeith](https://github.com/georeith) – feat:`LinkPlugin` new option `transformInput: (url: string) => string | undefined;` that optionally transform's the
   submitted URL provided by the user to the URL input before validation.
 
 ## 36.0.0
@@ -33,7 +33,7 @@
 
 ### Patch Changes
 
-- [#3317](https://github.com/udecode/plate/pull/3317) by [@12joan](https://github.com/12joan) – Handle unencoded URLs in floating URL input
+- [#3317](https://github.com/sewellstephens/late/pull/3317) by [@12joan](https://github.com/12joan) – Handle unencoded URLs in floating URL input
 
 ## 34.1.1
 
@@ -45,13 +45,13 @@
 
 ### Patch Changes
 
-- [#3241](https://github.com/udecode/plate/pull/3241) by [@felixfeng33](https://github.com/felixfeng33) – Fix link button closing the floating toolbar.
+- [#3241](https://github.com/sewellstephens/late/pull/3241) by [@felixfeng33](https://github.com/felixfeng33) – Fix link button closing the floating toolbar.
 
 ## 33.0.5
 
 ### Patch Changes
 
-- [#3204](https://github.com/udecode/plate/pull/3204) by [@jijiseong](https://github.com/jijiseong) – Fix zIndex of floating link
+- [#3204](https://github.com/sewellstephens/late/pull/3204) by [@jijiseong](https://github.com/jijiseong) – Fix zIndex of floating link
 
 ## 33.0.3
 
@@ -59,7 +59,7 @@
 
 ### Patch Changes
 
-- [#3187](https://github.com/udecode/plate/pull/3187) by [@zbeyens](https://github.com/zbeyens) – Fix types
+- [#3187](https://github.com/sewellstephens/late/pull/3187) by [@zbeyens](https://github.com/zbeyens) – Fix types
 
 ## 33.0.0
 
@@ -71,19 +71,19 @@
 
 ### Patch Changes
 
-- [#3036](https://github.com/udecode/plate/pull/3036) by [@Zum-Gluck](https://github.com/Zum-Gluck) – fix #2526,the url and text not cleaned up in time
+- [#3036](https://github.com/sewellstephens/late/pull/3036) by [@Zum-Gluck](https://github.com/Zum-Gluck) – fix #2526,the url and text not cleaned up in time
 
 ## 30.9.2
 
 ### Patch Changes
 
-- [#3022](https://github.com/udecode/plate/pull/3022) by [@Zum-Gluck](https://github.com/Zum-Gluck) – Fixes #2526
+- [#3022](https://github.com/sewellstephens/late/pull/3022) by [@Zum-Gluck](https://github.com/Zum-Gluck) – Fixes #2526
 
 ## 30.5.3
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/udecode/plate/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.5.2
 
@@ -103,7 +103,7 @@
 
 ### Patch Changes
 
-- [#2816](https://github.com/udecode/plate/pull/2816) by [@12joan](https://github.com/12joan) –
+- [#2816](https://github.com/sewellstephens/late/pull/2816) by [@12joan](https://github.com/12joan) –
   - Replace `useEdtiorState` with `useEditorSelector`
 
 ## 27.0.3
@@ -112,7 +112,7 @@
 
 ### Patch Changes
 
-- [#2763](https://github.com/udecode/plate/pull/2763) by [@12joan](https://github.com/12joan) – Update Zustood imports
+- [#2763](https://github.com/sewellstephens/late/pull/2763) by [@12joan](https://github.com/12joan) – Update Zustood imports
 
 ## 26.0.4
 
@@ -126,13 +126,13 @@
 
 ### Patch Changes
 
-- [#2705](https://github.com/udecode/plate/pull/2705) by [@AndreyMarchuk](https://github.com/AndreyMarchuk) – Fix: "Cannot resolve a DOM node from Slate node" floating link case
+- [#2705](https://github.com/sewellstephens/late/pull/2705) by [@AndreyMarchuk](https://github.com/AndreyMarchuk) – Fix: "Cannot resolve a DOM node from Slate node" floating link case
 
 ## 24.4.0
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -162,7 +162,7 @@
 
 ### Minor Changes
 
-- [#2585](https://github.com/udecode/plate/pull/2585) by [@zbeyens](https://github.com/zbeyens) – `LinkFloatingToolbar`:
+- [#2585](https://github.com/sewellstephens/late/pull/2585) by [@zbeyens](https://github.com/zbeyens) – `LinkFloatingToolbar`:
 
   - soft br: `useVirtualFloatingLink` removed `placement` and `middleware` default values from floating options.
   - refactor: `useFloatingLinkEdit` and `useFloatingLinkEditState`
@@ -173,7 +173,7 @@
 
 ### Patch Changes
 
-- [#2579](https://github.com/udecode/plate/pull/2579) by [@zbeyens](https://github.com/zbeyens) – Add missing dependency `@sewellstephens/plate-floating`
+- [#2579](https://github.com/sewellstephens/late/pull/2579) by [@zbeyens](https://github.com/zbeyens) – Add missing dependency `@sewellstephens/plate-floating`
 
 ## 23.3.1
 
@@ -187,7 +187,7 @@
 
 ### Major Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
   - `FloatingLink`
   - `FloatingLinkEditButton`
   - `FloatingLinkTextInput`
@@ -200,12 +200,12 @@
 
 ### Minor Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – New hooks:
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – New hooks:
 
   - `useLink`
   - `useLinkToolbarButton`
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – New exports:
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – New exports:
   - `useListToolbarButton`
   - `useTodoListElement`
   - `someList`
@@ -216,7 +216,7 @@
 
 ### Patch Changes
 
-- [#2453](https://github.com/udecode/plate/pull/2453) by [@dimaanj](https://github.com/dimaanj) – `LinkPlugin` - new option:
+- [#2453](https://github.com/sewellstephens/late/pull/2453) by [@dimaanj](https://github.com/dimaanj) – `LinkPlugin` - new option:
   - `keepSelectedTextOnPaste`: Allow pasting links as urls
 
 ## 21.4.1
@@ -225,7 +225,7 @@
 
 ### Minor Changes
 
-- [#2441](https://github.com/udecode/plate/pull/2441) by [@vevsindre](https://github.com/vevsindre) – Added option to skip link sanitation
+- [#2441](https://github.com/sewellstephens/late/pull/2441) by [@vevsindre](https://github.com/vevsindre) – Added option to skip link sanitation
 
 ## 21.3.2
 
@@ -235,7 +235,7 @@
 
 ### Minor Changes
 
-- [#2405](https://github.com/udecode/plate/pull/2405) by [@12joan](https://github.com/12joan) –
+- [#2405](https://github.com/sewellstephens/late/pull/2405) by [@12joan](https://github.com/12joan) –
   - New link plugin option `defaultLinkAttributes?: AnchorHTMLAttributes<HTMLAnchorElement>`
   - Avoid returning `undefined` from `getLinkAttributes`, since this overrides other values
 
@@ -251,7 +251,7 @@
 
 ### Patch Changes
 
-- [#2296](https://github.com/udecode/plate/pull/2296) by [@bojangles-m](https://github.com/bojangles-m) – fix target for new tab
+- [#2296](https://github.com/sewellstephens/late/pull/2296) by [@bojangles-m](https://github.com/bojangles-m) – fix target for new tab
 
 ## 20.4.0
 
@@ -261,13 +261,13 @@
 
 ### Major Changes
 
-- [#2240](https://github.com/udecode/plate/pull/2240) by [@OliverWales](https://github.com/OliverWales) –
+- [#2240](https://github.com/sewellstephens/late/pull/2240) by [@OliverWales](https://github.com/OliverWales) –
   - Add `allowedSchemes` plugin option
     - Any URL schemes other than `http(s)`, `mailto` and `tel` must be added to `allowedSchemes`, otherwise they will not be included in links
 
 ### Minor Changes
 
-- [#2240](https://github.com/udecode/plate/pull/2240) by [@OliverWales](https://github.com/OliverWales) –
+- [#2240](https://github.com/sewellstephens/late/pull/2240) by [@OliverWales](https://github.com/OliverWales) –
   - `upsertLink`:
     - Removed `isUrl`
     - Added `skipValidation`
@@ -281,7 +281,7 @@
 
 ### Patch Changes
 
-- [#2225](https://github.com/udecode/plate/pull/2225) by [@TomMorane](https://github.com/TomMorane) – fix: hotkey
+- [#2225](https://github.com/sewellstephens/late/pull/2225) by [@TomMorane](https://github.com/TomMorane) – fix: hotkey
 
 ## 19.5.0
 
@@ -307,32 +307,32 @@
 
 ### Patch Changes
 
-- [#1829](https://github.com/udecode/plate/pull/1829) by [@osamatanveer](https://github.com/osamatanveer) –
+- [#1829](https://github.com/sewellstephens/late/pull/1829) by [@osamatanveer](https://github.com/osamatanveer) –
   - fix import
 
 ## 18.11.0
 
 ### Patch Changes
 
-- [#2005](https://github.com/udecode/plate/pull/2005) by [@O4epegb](https://github.com/O4epegb) – Fix link hotkey prevent default
+- [#2005](https://github.com/sewellstephens/late/pull/2005) by [@O4epegb](https://github.com/O4epegb) – Fix link hotkey prevent default
 
 ## 18.9.1
 
 ### Patch Changes
 
-- [#1981](https://github.com/udecode/plate/pull/1981) by [@O4epegb](https://github.com/O4epegb) – Fix floating link escape handling
+- [#1981](https://github.com/sewellstephens/late/pull/1981) by [@O4epegb](https://github.com/O4epegb) – Fix floating link escape handling
 
 ## 18.9.0
 
 ### Patch Changes
 
-- [#1976](https://github.com/udecode/plate/pull/1976) by [@O4epegb](https://github.com/O4epegb) – Fixes #1771
+- [#1976](https://github.com/sewellstephens/late/pull/1976) by [@O4epegb](https://github.com/O4epegb) – Fixes #1771
 
 ## 18.8.1
 
 ### Patch Changes
 
-- [#1970](https://github.com/udecode/plate/pull/1970) by [@O4epegb](https://github.com/O4epegb) –
+- [#1970](https://github.com/sewellstephens/late/pull/1970) by [@O4epegb](https://github.com/O4epegb) –
   - Fixes #1771
   - Fixes #1967
 
@@ -342,7 +342,7 @@
 
 ### Patch Changes
 
-- [#1955](https://github.com/udecode/plate/pull/1955) by [@zbeyens](https://github.com/zbeyens) –
+- [#1955](https://github.com/sewellstephens/late/pull/1955) by [@zbeyens](https://github.com/zbeyens) –
   - feat:`LinkPlugin` new option `forceSubmit?: boolean`. When true and inserting a link, `enter` key should submit even when url is invalid
   - fix: when inserting a link, `enter` key should now submit even another key is pressed
   - fix: hotkey to trigger floating link (`cmd+k` by default) should prevent default
@@ -355,7 +355,7 @@
 
 ### Minor Changes
 
-- [#1892](https://github.com/udecode/plate/pull/1892) by [@zakishaheen](https://github.com/zakishaheen) – Wrap valid link in anchor element when inserting a break
+- [#1892](https://github.com/sewellstephens/late/pull/1892) by [@zakishaheen](https://github.com/zakishaheen) – Wrap valid link in anchor element when inserting a break
 
 ## 17.0.3
 
@@ -369,14 +369,14 @@
 
 ### Patch Changes
 
-- [#1868](https://github.com/udecode/plate/pull/1868) by [@rawi96](https://github.com/rawi96) –
+- [#1868](https://github.com/sewellstephens/late/pull/1868) by [@rawi96](https://github.com/rawi96) –
   - `upsertLink()` Set nodes also if only the link target has changed.
 
 ## 16.9.0
 
 ### Minor Changes
 
-- [#1865](https://github.com/udecode/plate/pull/1865) by [@rawi96](https://github.com/rawi96) –
+- [#1865](https://github.com/sewellstephens/late/pull/1865) by [@rawi96](https://github.com/rawi96) –
   - `TLinkElement` new optional prop `target`: allows you to control the link `target` attribute. Default is `undefined` (`_blank`).
 
 ## 16.8.0
@@ -389,13 +389,13 @@
 
 ### Patch Changes
 
-- [#1783](https://github.com/udecode/plate/pull/1783) by [@zbeyens](https://github.com/zbeyens) – fix: https://github.com/udecode/editor-protocol/issues/70
+- [#1783](https://github.com/sewellstephens/late/pull/1783) by [@zbeyens](https://github.com/zbeyens) – fix: https://github.com/udecode/editor-protocol/issues/70
 
 ## 16.2.1
 
 ### Patch Changes
 
-- [#1765](https://github.com/udecode/plate/pull/1765) by [@zbeyens](https://github.com/zbeyens) – fix:
+- [#1765](https://github.com/sewellstephens/late/pull/1765) by [@zbeyens](https://github.com/zbeyens) – fix:
   - overall, marks should be kept on link insert/edit
   - `unwrapLink`: new option `split`
     - if true: split the link above anchor/focus before unwrapping
@@ -421,7 +421,7 @@
 
 ### Patch Changes
 
-- [#1715](https://github.com/udecode/plate/pull/1715) by [@tmilewski](https://github.com/tmilewski) – Fix FloatingLinkUrlInput snapping to the previous location on show and to the bottom of the editor upon clicking outside of the element
+- [#1715](https://github.com/sewellstephens/late/pull/1715) by [@tmilewski](https://github.com/tmilewski) – Fix FloatingLinkUrlInput snapping to the previous location on show and to the bottom of the editor upon clicking outside of the element
 
 ## 15.0.3
 
@@ -429,13 +429,13 @@
 
 ### Patch Changes
 
-- [#1697](https://github.com/udecode/plate/pull/1697) by [@zbeyens](https://github.com/zbeyens) – fix: copy/paste was blocked by the link plugin. Now it should work when the data is not a url and not inserted into a link
+- [#1697](https://github.com/sewellstephens/late/pull/1697) by [@zbeyens](https://github.com/zbeyens) – fix: copy/paste was blocked by the link plugin. Now it should work when the data is not a url and not inserted into a link
 
 ## 15.0.0
 
 ### Major Changes
 
-- [#1677](https://github.com/udecode/plate/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
+- [#1677](https://github.com/sewellstephens/late/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
   - `createLinkPlugin`
     - removed `onKeyDownLink` for floating link
     - removed `hotkey` for `triggerFloatingLinkHotkeys`
@@ -447,12 +447,12 @@
 
 ### Minor Changes
 
-- [#1677](https://github.com/udecode/plate/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
+- [#1677](https://github.com/sewellstephens/late/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
 
   - new dep:
     - `@sewellstephens/plate-button`
   - new unstyled components + props hooks:
-    - `PlateFloatingLink`
+    - `LateFloatingLink`
     - `LinkRoot`
     - `FloatingLink`
     - `FloatingLinkEditRoot`
@@ -514,7 +514,7 @@
 
 ### Patch Changes
 
-- [#1677](https://github.com/udecode/plate/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
+- [#1677](https://github.com/sewellstephens/late/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
   - Fixes #1580
   - Fixes #1542
   - Fixes #1194
@@ -526,13 +526,13 @@
 
 ### Patch Changes
 
-- [#1687](https://github.com/udecode/plate/pull/1687) by [@davisg123](https://github.com/davisg123) – Allow the link plugin to optionally specify a custom href for link text
+- [#1687](https://github.com/sewellstephens/late/pull/1687) by [@davisg123](https://github.com/davisg123) – Allow the link plugin to optionally specify a custom href for link text
 
 ## 14.4.0
 
 ### Patch Changes
 
-- [#1685](https://github.com/udecode/plate/pull/1685) by [@davisg123](https://github.com/davisg123) – Allow the link plugin to optionally specify a custom href for link text
+- [#1685](https://github.com/sewellstephens/late/pull/1685) by [@davisg123](https://github.com/davisg123) – Allow the link plugin to optionally specify a custom href for link text
 
 ## 14.0.2
 
@@ -606,7 +606,7 @@
 
 ### Patch Changes
 
-- [#1257](https://github.com/udecode/plate/pull/1257) by [@tjramage](https://github.com/tjramage) –
+- [#1257](https://github.com/sewellstephens/late/pull/1257) by [@tjramage](https://github.com/tjramage) –
   - fix link upsert on space
   - `getPointBefore`: will return early if the point before is in another block. Removed `multiPaths` option as it's not used anymore.
 
@@ -636,7 +636,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`a6bf8c5e`](https://github.com/udecode/plate/commit/a6bf8c5e6897c6ab443e0ac3d69a30befeaddadf)]:
+- Updated dependencies [[`a6bf8c5e`](https://github.com/sewellstephens/late/commit/a6bf8c5e6897c6ab443e0ac3d69a30befeaddadf)]:
   - @sewellstephens/plate-common@5.3.5
   - @sewellstephens/plate-normalizers@5.3.5
 
@@ -644,7 +644,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`8aec270f`](https://github.com/udecode/plate/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118)]:
+- Updated dependencies [[`8aec270f`](https://github.com/sewellstephens/late/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118)]:
   - @sewellstephens/plate-core@5.3.1
   - @sewellstephens/plate-common@5.3.1
   - @sewellstephens/plate-normalizers@5.3.1
@@ -653,7 +653,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`7ee21356`](https://github.com/udecode/plate/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e)]:
+- Updated dependencies [[`7ee21356`](https://github.com/sewellstephens/late/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e)]:
   - @sewellstephens/plate-core@5.3.0
   - @sewellstephens/plate-common@5.3.0
   - @sewellstephens/plate-normalizers@5.3.0
@@ -662,7 +662,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`503956fd`](https://github.com/udecode/plate/commit/503956fd9f71253249b3ad699b81c1c465351b0a)]:
+- Updated dependencies [[`503956fd`](https://github.com/sewellstephens/late/commit/503956fd9f71253249b3ad699b81c1c465351b0a)]:
   - @sewellstephens/plate-common@5.1.0
   - @sewellstephens/plate-normalizers@5.1.0
 
@@ -670,7 +670,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`b22c06aa`](https://github.com/udecode/plate/commit/b22c06aad1cfed08069dadc7ec39bcbfb1d0af37)]:
+- Updated dependencies [[`b22c06aa`](https://github.com/sewellstephens/late/commit/b22c06aad1cfed08069dadc7ec39bcbfb1d0af37)]:
   - @sewellstephens/plate-common@4.4.0
   - @sewellstephens/plate-normalizers@4.4.0
 
@@ -678,7 +678,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`58f6fb53`](https://github.com/udecode/plate/commit/58f6fb53bf45a2e0509f4aca617aa21356952fca)]:
+- Updated dependencies [[`58f6fb53`](https://github.com/sewellstephens/late/commit/58f6fb53bf45a2e0509f4aca617aa21356952fca)]:
   - @sewellstephens/plate-core@4.3.7
   - @sewellstephens/plate-common@4.3.7
   - @sewellstephens/plate-normalizers@4.3.7
@@ -687,7 +687,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`6af469cd`](https://github.com/udecode/plate/commit/6af469cd5ac310e831eb8a99a71eba73bde62fc6)]:
+- Updated dependencies [[`6af469cd`](https://github.com/sewellstephens/late/commit/6af469cd5ac310e831eb8a99a71eba73bde62fc6)]:
   - @sewellstephens/plate-core@4.3.0
   - @sewellstephens/plate-common@4.3.0
   - @sewellstephens/plate-normalizers@4.3.0
@@ -696,19 +696,19 @@
 
 ### Minor Changes
 
-- [#1052](https://github.com/udecode/plate/pull/1052) [`22da824e`](https://github.com/udecode/plate/commit/22da824e9acea62cbd9073a150b543348a1b128b) Thanks [@aj-foster](https://github.com/aj-foster)! - Add keyboard shortcut for inserting a link at the current selection
+- [#1052](https://github.com/sewellstephens/late/pull/1052) [`22da824e`](https://github.com/sewellstephens/late/commit/22da824e9acea62cbd9073a150b543348a1b128b) Thanks [@aj-foster](https://github.com/aj-foster)! - Add keyboard shortcut for inserting a link at the current selection
 
 ## 3.5.0
 
 ### Minor Changes
 
-- [#1041](https://github.com/udecode/plate/pull/1041) [`7ab01674`](https://github.com/udecode/plate/commit/7ab016745c5eddcf4daa73bbc1958f087d0c4b90) Thanks [@aj-foster](https://github.com/aj-foster)! - feat(link): Unwrap selected links when pasting a URL. Previously, pasting any text (including a URL) with an existing link selected would insert plain text. With this change, pasting a URL will unwrap any selected links and wrap a new link.
+- [#1041](https://github.com/sewellstephens/late/pull/1041) [`7ab01674`](https://github.com/sewellstephens/late/commit/7ab016745c5eddcf4daa73bbc1958f087d0c4b90) Thanks [@aj-foster](https://github.com/aj-foster)! - feat(link): Unwrap selected links when pasting a URL. Previously, pasting any text (including a URL) with an existing link selected would insert plain text. With this change, pasting a URL will unwrap any selected links and wrap a new link.
 
 ## 3.4.0
 
 ### Patch Changes
 
-- Updated dependencies [[`f1da7267`](https://github.com/udecode/plate/commit/f1da7267d46d94e207f4477f73e42b63736a9085), [`35caf35d`](https://github.com/udecode/plate/commit/35caf35d48fff851518648ff66e64a4268dcc97c)]:
+- Updated dependencies [[`f1da7267`](https://github.com/sewellstephens/late/commit/f1da7267d46d94e207f4477f73e42b63736a9085), [`35caf35d`](https://github.com/sewellstephens/late/commit/35caf35d48fff851518648ff66e64a4268dcc97c)]:
   - @sewellstephens/plate-common@3.4.0
   - @sewellstephens/plate-core@3.4.0
   - @sewellstephens/plate-normalizers@3.4.0
@@ -717,11 +717,11 @@
 
 ### Minor Changes
 
-- [#995](https://github.com/udecode/plate/pull/995) [`58387c6d`](https://github.com/udecode/plate/commit/58387c6d34e86be7880999b40a9105b6178f4ce4) Thanks [@dylans](https://github.com/dylans)! - update slate dependencies and peerDependencies to 0.66.\*
+- [#995](https://github.com/sewellstephens/late/pull/995) [`58387c6d`](https://github.com/sewellstephens/late/commit/58387c6d34e86be7880999b40a9105b6178f4ce4) Thanks [@dylans](https://github.com/dylans)! - update slate dependencies and peerDependencies to 0.66.\*
 
 ### Patch Changes
 
-- Updated dependencies [[`58387c6d`](https://github.com/udecode/plate/commit/58387c6d34e86be7880999b40a9105b6178f4ce4)]:
+- Updated dependencies [[`58387c6d`](https://github.com/sewellstephens/late/commit/58387c6d34e86be7880999b40a9105b6178f4ce4)]:
   - @sewellstephens/plate-common@3.2.0
   - @sewellstephens/plate-core@3.2.0
   - @sewellstephens/plate-normalizers@3.2.0
@@ -730,7 +730,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`f6c58134`](https://github.com/udecode/plate/commit/f6c581347cc5877b7afa0774ef1ad78ad227564e)]:
+- Updated dependencies [[`f6c58134`](https://github.com/sewellstephens/late/commit/f6c581347cc5877b7afa0774ef1ad78ad227564e)]:
   - @sewellstephens/plate-common@3.1.3
   - @sewellstephens/plate-normalizers@3.1.3
 
@@ -738,7 +738,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`ec4d5b7b`](https://github.com/udecode/plate/commit/ec4d5b7bd01b6fd21ba14a28f782c143d32c7532)]:
+- Updated dependencies [[`ec4d5b7b`](https://github.com/sewellstephens/late/commit/ec4d5b7bd01b6fd21ba14a28f782c143d32c7532)]:
   - @sewellstephens/plate-common@2.0.0
   - @sewellstephens/plate-normalizers@2.0.0
 
@@ -746,9 +746,9 @@
 
 ### Patch Changes
 
-- [#918](https://github.com/udecode/plate/pull/918) [`7d045d8d`](https://github.com/udecode/plate/commit/7d045d8db39515d4574c5313cc97287486c5866b) Thanks [@zbeyens](https://github.com/zbeyens)! - add `slate-history` as a peerDep
+- [#918](https://github.com/sewellstephens/late/pull/918) [`7d045d8d`](https://github.com/sewellstephens/late/commit/7d045d8db39515d4574c5313cc97287486c5866b) Thanks [@zbeyens](https://github.com/zbeyens)! - add `slate-history` as a peerDep
 
-- Updated dependencies [[`7d045d8d`](https://github.com/udecode/plate/commit/7d045d8db39515d4574c5313cc97287486c5866b)]:
+- Updated dependencies [[`7d045d8d`](https://github.com/sewellstephens/late/commit/7d045d8db39515d4574c5313cc97287486c5866b)]:
   - @sewellstephens/plate-common@1.1.6
   - @sewellstephens/plate-normalizers@1.1.6
 
@@ -756,14 +756,14 @@
 
 ### Major Changes
 
-🎉 The **Slate Plugins** project has evolved to **Plate** 🎉
+🎉 The **Slate Plugins** project has evolved to **Late** 🎉
 
 To migrate, install `@sewellstephens/plate[-x]` then find and replace all
 occurrences of:
 
 - `slate-plugins` to `plate`
-- `SlatePlugins` to `Plate`
-- `SlatePlugin` to `PlatePlugin`
+- `SlatePlugins` to `Late`
+- `SlatePlugin` to `LatePlugin`
 
 ## 1.0.0-next.61
 

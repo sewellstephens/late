@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - `createCommentsPlugin` -> `CommentsPlugin`
   - Move `commentsStore` to `CommentsPlugin`
   - Remove `CommentsProvider` and its hooks
@@ -31,7 +31,7 @@
 
 ### Patch Changes
 
-- [#3187](https://github.com/udecode/plate/pull/3187) by [@zbeyens](https://github.com/zbeyens) – Fix types
+- [#3187](https://github.com/sewellstephens/late/pull/3187) by [@zbeyens](https://github.com/zbeyens) – Fix types
 
 ## 33.0.0
 
@@ -43,13 +43,13 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/udecode/plate/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.5.2
 
 ### Patch Changes
 
-- [#2961](https://github.com/udecode/plate/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -67,14 +67,14 @@
 
 ### Patch Changes
 
-- [#2816](https://github.com/udecode/plate/pull/2816) by [@12joan](https://github.com/12joan) –
+- [#2816](https://github.com/sewellstephens/late/pull/2816) by [@12joan](https://github.com/12joan) –
   - Remove `{ fn: ... }` workaround for jotai stores that contain functions
 
 ## 27.0.4
 
 ### Patch Changes
 
-- [#2817](https://github.com/udecode/plate/pull/2817) by [@12joan](https://github.com/12joan) –
+- [#2817](https://github.com/sewellstephens/late/pull/2817) by [@12joan](https://github.com/12joan) –
   - Fix the `onCommentAdd`, `onCommentUpdate` and `onCommentDelete` callbacks on CommentsProvider
 
 ## 27.0.3
@@ -83,7 +83,7 @@
 
 ### Major Changes
 
-- [#2763](https://github.com/udecode/plate/pull/2763) by [@12joan](https://github.com/12joan) –
+- [#2763](https://github.com/sewellstephens/late/pull/2763) by [@12joan](https://github.com/12joan) –
   - Migrate store to jotai@2
   - Revert the breaking changes to `@sewellstephens/plate-comments` made in 26.0.0
 
@@ -91,7 +91,7 @@
 
 ### Major Changes
 
-- [#2760](https://github.com/udecode/plate/pull/2760) by [@12joan](https://github.com/12joan) –
+- [#2760](https://github.com/sewellstephens/late/pull/2760) by [@12joan](https://github.com/12joan) –
   - Renamed the `comments` prop on CommentsProvider to `initialComments` to reflect the fact that updating its value after the initial render has no effect
   - Removed the following props from CommentsProvider, since they represent the internal state of the comments plugin and should not be controlled externally:
     - `activeCommentId`
@@ -111,7 +111,7 @@
 
 ### Major Changes
 
-- [#2725](https://github.com/udecode/plate/pull/2725) by [@EandrewJones](https://github.com/EandrewJones) – Remove `useCommentValue`, which was redundant with the hooks applied automatically in `CommentEditTextarea.tsx`.
+- [#2725](https://github.com/sewellstephens/late/pull/2725) by [@EandrewJones](https://github.com/EandrewJones) – Remove `useCommentValue`, which was redundant with the hooks applied automatically in `CommentEditTextarea.tsx`.
 
 ## 24.5.2
 
@@ -119,7 +119,7 @@
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -153,9 +153,9 @@
 
 ### Patch Changes
 
-- [#2518](https://github.com/udecode/plate/pull/2518) by [@12joan](https://github.com/12joan) – Remove comment node when new comment form is closed
+- [#2518](https://github.com/sewellstephens/late/pull/2518) by [@12joan](https://github.com/12joan) – Remove comment node when new comment form is closed
 
-- [#2520](https://github.com/udecode/plate/pull/2520) by [@12joan](https://github.com/12joan) – Return `hidden: true` from `useCommentAddButton` when `myUserId` is not set
+- [#2520](https://github.com/sewellstephens/late/pull/2520) by [@12joan](https://github.com/12joan) – Return `hidden: true` from `useCommentAddButton` when `myUserId` is not set
 
 ## 22.0.2
 
@@ -165,7 +165,7 @@
 
 ### Major Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
   - `AccountCircleIcon`
   - `CheckIcon`
   - `MoreVertIcon`
@@ -176,11 +176,11 @@
   - `CommentLinkDialogCloseButton`
   - `CommentLinkDialogCopyLink`
   - `CommentLinkDialogInput`
-  - `PlateCommentLeaf` for `useCommentLeafState`
+  - `LateCommentLeaf` for `useCommentLeafState`
 
 ### Minor Changes
 
-- ## [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – New exports:
+- ## [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – New exports:
 
 ## 21.5.0
 
@@ -208,19 +208,19 @@
 
 ### Patch Changes
 
-- [#2252](https://github.com/udecode/plate/pull/2252) by [@12joan](https://github.com/12joan) – Include `createdAt` and `userId` (if present) in comment passed to `onCommentAdd`
+- [#2252](https://github.com/sewellstephens/late/pull/2252) by [@12joan](https://github.com/12joan) – Include `createdAt` and `userId` (if present) in comment passed to `onCommentAdd`
 
 ## 19.7.0
 
 ### Patch Changes
 
-- [#2225](https://github.com/udecode/plate/pull/2225) by [@TomMorane](https://github.com/TomMorane) – fix: hotkey
+- [#2225](https://github.com/sewellstephens/late/pull/2225) by [@TomMorane](https://github.com/TomMorane) – fix: hotkey
 
 ## 19.5.0
 
 ### Minor Changes
 
-- [#2202](https://github.com/udecode/plate/pull/2202) by [@zbeyens](https://github.com/zbeyens) – Replace onMouseDown by onClick. Add aria-label.
+- [#2202](https://github.com/sewellstephens/late/pull/2202) by [@zbeyens](https://github.com/zbeyens) – Replace onMouseDown by onClick. Add aria-label.
 
 ## 19.4.4
 
@@ -238,7 +238,7 @@
 
 ### Patch Changes
 
-- [#2104](https://github.com/udecode/plate/pull/2104) by [@zbeyens](https://github.com/zbeyens) – Fixes #2103
+- [#2104](https://github.com/sewellstephens/late/pull/2104) by [@zbeyens](https://github.com/zbeyens) – Fixes #2103
 
 ## 19.0.1
 
@@ -246,7 +246,7 @@
 
 ### Patch Changes
 
-- [#2097](https://github.com/udecode/plate/pull/2097) by [@zbeyens](https://github.com/zbeyens) –
+- [#2097](https://github.com/sewellstephens/late/pull/2097) by [@zbeyens](https://github.com/zbeyens) –
   - Fixes #2050
 
 ## 18.15.0
@@ -255,5 +255,5 @@
 
 ### Minor Changes
 
-- [#1829](https://github.com/udecode/plate/pull/1829) by [@osamatanveer](https://github.com/osamatanveer) –
+- [#1829](https://github.com/sewellstephens/late/pull/1829) by [@osamatanveer](https://github.com/osamatanveer) –
   - new plugin: comments

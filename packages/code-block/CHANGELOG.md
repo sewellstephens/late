@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - `createCodeBlockPlugin` -> `CodeBlockPlugin`
   - NEW `CodeLinePlugin`
   - NEW `CodeSyntaxPlugin`
@@ -14,7 +14,7 @@
 
 ### Patch Changes
 
-- [#3457](https://github.com/udecode/plate/pull/3457) by [@nklhtv](https://github.com/nklhtv) – Use editor.blockFactory to create default elements
+- [#3457](https://github.com/sewellstephens/late/pull/3457) by [@nklhtv](https://github.com/nklhtv) – Use editor.blockFactory to create default elements
 
 ## 36.0.0
 
@@ -22,7 +22,7 @@
 
 ### Major Changes
 
-- [#3282](https://github.com/udecode/plate/pull/3282) by [@12joan](https://github.com/12joan) – Make the dependency on prismjs optional
+- [#3282](https://github.com/sewellstephens/late/pull/3282) by [@12joan](https://github.com/12joan) – Make the dependency on prismjs optional
 
   New usage:
 
@@ -48,13 +48,13 @@
 
 ### Patch Changes
 
-- [#3241](https://github.com/udecode/plate/pull/3241) by [@felixfeng33](https://github.com/felixfeng33) – Fix select all
+- [#3241](https://github.com/sewellstephens/late/pull/3241) by [@felixfeng33](https://github.com/felixfeng33) – Fix select all
 
 ## 33.0.2
 
 ### Patch Changes
 
-- [#3187](https://github.com/udecode/plate/pull/3187) by [@zbeyens](https://github.com/zbeyens) – Fix types
+- [#3187](https://github.com/sewellstephens/late/pull/3187) by [@zbeyens](https://github.com/zbeyens) – Fix types
 
 ## 33.0.0
 
@@ -64,31 +64,31 @@
 
 ### Patch Changes
 
-- [#3101](https://github.com/udecode/plate/pull/3101) by [@natamox](https://github.com/natamox) – fix: Pasting Slate fragments doesn't work when the selection includes a code block
+- [#3101](https://github.com/sewellstephens/late/pull/3101) by [@natamox](https://github.com/natamox) – fix: Pasting Slate fragments doesn't work when the selection includes a code block
 
 ## 31.0.0
 
 ### Minor Changes
 
-- [#3040](https://github.com/udecode/plate/pull/3040) by [@zbeyens](https://github.com/zbeyens) – Updated minor dependencies
+- [#3040](https://github.com/sewellstephens/late/pull/3040) by [@zbeyens](https://github.com/zbeyens) – Updated minor dependencies
 
 ## 30.7.0
 
 ### Minor Changes
 
-- [#2989](https://github.com/udecode/plate/pull/2989) by [@vodkaslime](https://github.com/vodkaslime) – feat: `useToggleCodeBlockButton`
+- [#2989](https://github.com/sewellstephens/late/pull/2989) by [@vodkaslime](https://github.com/vodkaslime) – feat: `useToggleCodeBlockButton`
 
 ## 30.5.3
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/udecode/plate/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.5.2
 
 ### Patch Changes
 
-- [#2961](https://github.com/udecode/plate/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -118,13 +118,13 @@
 
 ### Patch Changes
 
-- [#2693](https://github.com/udecode/plate/pull/2693) by [@zbeyens](https://github.com/zbeyens) – Fix "Named export 'Token' not found.
+- [#2693](https://github.com/sewellstephens/late/pull/2693) by [@zbeyens](https://github.com/zbeyens) – Fix "Named export 'Token' not found.
 
 ## 24.4.0
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -162,7 +162,7 @@
 
 ### Minor Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – New exports:
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – New exports:
   - `useCodeBlockElement`
   - `useCodeBlockSelectElement`
   - `useCodeSyntaxLeaf`
@@ -201,7 +201,7 @@
 
 ### Patch Changes
 
-- [#2183](https://github.com/udecode/plate/pull/2183) by [@12joan](https://github.com/12joan) – Ignore defaultPrevented keydown event
+- [#2183](https://github.com/sewellstephens/late/pull/2183) by [@12joan](https://github.com/12joan) – Ignore defaultPrevented keydown event
 
 ## 19.4.2
 
@@ -209,11 +209,11 @@
 
 ### Minor Changes
 
-- [#2167](https://github.com/udecode/plate/pull/2167) by [@12joan](https://github.com/12joan) – Add isCodeBlockEmpty and isSelectionAtCodeBlockStart queries for use with the reset node plugin
+- [#2167](https://github.com/sewellstephens/late/pull/2167) by [@12joan](https://github.com/12joan) – Add isCodeBlockEmpty and isSelectionAtCodeBlockStart queries for use with the reset node plugin
 
 ### Patch Changes
 
-- [#2163](https://github.com/udecode/plate/pull/2163) by [@12joan](https://github.com/12joan) – Various fixes relating to code block
+- [#2163](https://github.com/sewellstephens/late/pull/2163) by [@12joan](https://github.com/12joan) – Various fixes relating to code block
 
 ## 19.2.0
 
@@ -235,13 +235,13 @@
 
 ### Patch Changes
 
-- [#1991](https://github.com/udecode/plate/pull/1991) by [@zbeyens](https://github.com/zbeyens) – fix
+- [#1991](https://github.com/sewellstephens/late/pull/1991) by [@zbeyens](https://github.com/zbeyens) – fix
 
 ## 18.9.2
 
 ### Patch Changes
 
-- [#1911](https://github.com/udecode/plate/pull/1911) by [@charrondev](https://github.com/charrondev) – Ensure children of code blocks are always normalized into code lines
+- [#1911](https://github.com/sewellstephens/late/pull/1911) by [@charrondev](https://github.com/charrondev) – Ensure children of code blocks are always normalized into code lines
 
 ## 18.9.0
 
@@ -263,7 +263,7 @@
 
 ### Major Changes
 
-- [#1871](https://github.com/udecode/plate/pull/1871) by [@zbeyens](https://github.com/zbeyens) –
+- [#1871](https://github.com/sewellstephens/late/pull/1871) by [@zbeyens](https://github.com/zbeyens) –
   - Removed these imports because of build errors:
     - `prismjs/components/prism-django`
     - `prismjs/components/prism-ejs`
@@ -309,7 +309,7 @@
 
 ### Minor Changes
 
-- [#1560](https://github.com/udecode/plate/pull/1560) by [@zbeyens](https://github.com/zbeyens) –
+- [#1560](https://github.com/sewellstephens/late/pull/1560) by [@zbeyens](https://github.com/zbeyens) –
   - fix: tab / untab when composing with IME
   - update peerDeps:
     - `"slate": ">=0.78.0"`
@@ -349,7 +349,7 @@
 
 ### Patch Changes
 
-- [#1420](https://github.com/udecode/plate/pull/1420) by [@nemanja-tosic](https://github.com/nemanja-tosic) – Fix code block syntax highlight
+- [#1420](https://github.com/sewellstephens/late/pull/1420) by [@nemanja-tosic](https://github.com/nemanja-tosic) – Fix code block syntax highlight
 
 ## 10.1.2
 
@@ -357,7 +357,7 @@
 
 ### Patch Changes
 
-- [#1388](https://github.com/udecode/plate/pull/1388) by [@zbeyens](https://github.com/zbeyens) – fix for docs only: use `Array.from` instead of destructuring generators
+- [#1388](https://github.com/sewellstephens/late/pull/1388) by [@zbeyens](https://github.com/zbeyens) – fix for docs only: use `Array.from` instead of destructuring generators
 
 ## 10.1.0
 
@@ -369,7 +369,7 @@
 
 ### Patch Changes
 
-- [#1358](https://github.com/udecode/plate/pull/1358) by [@jyc5131](https://github.com/jyc5131) – fix: "decorateCodeLine don't check the path of nodeEntry" when adding a code block
+- [#1358](https://github.com/sewellstephens/late/pull/1358) by [@jyc5131](https://github.com/jyc5131) – fix: "decorateCodeLine don't check the path of nodeEntry" when adding a code block
 
 ## 9.2.1
 
@@ -377,15 +377,15 @@
 
 ### Patch Changes
 
-- [#1338](https://github.com/udecode/plate/pull/1338) by [@zbeyens](https://github.com/zbeyens) – Swap ast and html plugin order
+- [#1338](https://github.com/sewellstephens/late/pull/1338) by [@zbeyens](https://github.com/zbeyens) – Swap ast and html plugin order
 
-- [#1334](https://github.com/udecode/plate/pull/1334) by [@Pedrobusou](https://github.com/Pedrobusou) – prevent extra nodes from being copy pasted
+- [#1334](https://github.com/sewellstephens/late/pull/1334) by [@Pedrobusou](https://github.com/Pedrobusou) – prevent extra nodes from being copy pasted
 
 ## 9.0.0
 
 ### Minor Changes
 
-- [#1303](https://github.com/udecode/plate/pull/1303) by [@zbeyens](https://github.com/zbeyens) –
+- [#1303](https://github.com/sewellstephens/late/pull/1303) by [@zbeyens](https://github.com/zbeyens) –
   - `deserializeHtml`:
     - added a rule: `<p>` nodes with `fontFamily: 'Consolas'`
 
@@ -397,7 +397,7 @@
 
 ### Major Changes
 
-- [#1234](https://github.com/udecode/plate/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Removed:
+- [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Removed:
   - `getCodeBlockPluginOptions` for `getPlugin`
   - `getCodeLinePluginOptions` for `getPlugin`
 
@@ -421,15 +421,15 @@
 
 ### Patch Changes
 
-- [#1154](https://github.com/udecode/plate/pull/1154) by [@zbeyens](https://github.com/zbeyens) – fix: `codeBlock` is undefined
+- [#1154](https://github.com/sewellstephens/late/pull/1154) by [@zbeyens](https://github.com/zbeyens) – fix: `codeBlock` is undefined
 
 ## 5.3.5
 
 ### Patch Changes
 
-- [#1148](https://github.com/udecode/plate/pull/1148) [`25dcad65`](https://github.com/udecode/plate/commit/25dcad654b8297a50c905cc427a59e68c0ff8093) Thanks [@nemanja-tosic](https://github.com/nemanja-tosic)! - Limit disabling deserialization only when selection in code line.
+- [#1148](https://github.com/sewellstephens/late/pull/1148) [`25dcad65`](https://github.com/sewellstephens/late/commit/25dcad654b8297a50c905cc427a59e68c0ff8093) Thanks [@nemanja-tosic](https://github.com/nemanja-tosic)! - Limit disabling deserialization only when selection in code line.
 
-- Updated dependencies [[`a6bf8c5e`](https://github.com/udecode/plate/commit/a6bf8c5e6897c6ab443e0ac3d69a30befeaddadf)]:
+- Updated dependencies [[`a6bf8c5e`](https://github.com/sewellstephens/late/commit/a6bf8c5e6897c6ab443e0ac3d69a30befeaddadf)]:
   - @sewellstephens/plate-common@5.3.5
   - @sewellstephens/plate-ast-serializer@5.3.5
   - @sewellstephens/plate-html-serializer@5.3.5
@@ -438,9 +438,9 @@
 
 ### Patch Changes
 
-- [#1101](https://github.com/udecode/plate/pull/1101) [`9b61b9d5`](https://github.com/udecode/plate/commit/9b61b9d5a631c9b0e14dfd081f70a633a3c0b436) Thanks [@nemanja-tosic](https://github.com/nemanja-tosic)! - Strong typing of code block options, refactor options usage to use concrete code block/code line types.
+- [#1101](https://github.com/sewellstephens/late/pull/1101) [`9b61b9d5`](https://github.com/sewellstephens/late/commit/9b61b9d5a631c9b0e14dfd081f70a633a3c0b436) Thanks [@nemanja-tosic](https://github.com/nemanja-tosic)! - Strong typing of code block options, refactor options usage to use concrete code block/code line types.
 
-- [#1101](https://github.com/udecode/plate/pull/1101) [`a574a753`](https://github.com/udecode/plate/commit/a574a7537f7a4a25bb6a527a08ad6698da1dc7b1) Thanks [@nemanja-tosic](https://github.com/nemanja-tosic)! - Fix code block paste when selection is expanded.
+- [#1101](https://github.com/sewellstephens/late/pull/1101) [`a574a753`](https://github.com/sewellstephens/late/commit/a574a7537f7a4a25bb6a527a08ad6698da1dc7b1) Thanks [@nemanja-tosic](https://github.com/nemanja-tosic)! - Fix code block paste when selection is expanded.
 
 - Updated dependencies []:
   - @sewellstephens/plate-ast-serializer@5.3.4
@@ -450,9 +450,9 @@
 
 ### Patch Changes
 
-- [#1136](https://github.com/udecode/plate/pull/1136) [`8aec270f`](https://github.com/udecode/plate/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118) Thanks [@dylans](https://github.com/dylans)! - allow disabling deserializer by paste target
+- [#1136](https://github.com/sewellstephens/late/pull/1136) [`8aec270f`](https://github.com/sewellstephens/late/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118) Thanks [@dylans](https://github.com/dylans)! - allow disabling deserializer by paste target
 
-- Updated dependencies [[`8aec270f`](https://github.com/udecode/plate/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118)]:
+- Updated dependencies [[`8aec270f`](https://github.com/sewellstephens/late/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118)]:
   - @sewellstephens/plate-core@5.3.1
   - @sewellstephens/plate-ast-serializer@5.3.1
   - @sewellstephens/plate-html-serializer@5.3.1
@@ -462,9 +462,9 @@
 
 ### Patch Changes
 
-- [#1131](https://github.com/udecode/plate/pull/1131) [`5c68eb04`](https://github.com/udecode/plate/commit/5c68eb04b5f528d08d45a4f994ef8c1d7924ab33) Thanks [@bensquire](https://github.com/bensquire)! - Adds language class to codeblock <code> element, this enable language specifix syntax highlighting.
+- [#1131](https://github.com/sewellstephens/late/pull/1131) [`5c68eb04`](https://github.com/sewellstephens/late/commit/5c68eb04b5f528d08d45a4f994ef8c1d7924ab33) Thanks [@bensquire](https://github.com/bensquire)! - Adds language class to codeblock <code> element, this enable language specifix syntax highlighting.
 
-- Updated dependencies [[`7ee21356`](https://github.com/udecode/plate/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e)]:
+- Updated dependencies [[`7ee21356`](https://github.com/sewellstephens/late/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e)]:
   - @sewellstephens/plate-core@5.3.0
   - @sewellstephens/plate-common@5.3.0
 
@@ -472,23 +472,23 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`503956fd`](https://github.com/udecode/plate/commit/503956fd9f71253249b3ad699b81c1c465351b0a)]:
+- Updated dependencies [[`503956fd`](https://github.com/sewellstephens/late/commit/503956fd9f71253249b3ad699b81c1c465351b0a)]:
   - @sewellstephens/plate-common@5.1.0
 
 ## 4.4.0
 
 ### Patch Changes
 
-- [#1090](https://github.com/udecode/plate/pull/1090) [`7c32d4ef`](https://github.com/udecode/plate/commit/7c32d4efc0e84f6e2878473a3dd0efad3740ba9e) Thanks [@dylans](https://github.com/dylans)! - Add configuration options for code-block syntax highlighting
+- [#1090](https://github.com/sewellstephens/late/pull/1090) [`7c32d4ef`](https://github.com/sewellstephens/late/commit/7c32d4efc0e84f6e2878473a3dd0efad3740ba9e) Thanks [@dylans](https://github.com/dylans)! - Add configuration options for code-block syntax highlighting
 
-- Updated dependencies [[`b22c06aa`](https://github.com/udecode/plate/commit/b22c06aad1cfed08069dadc7ec39bcbfb1d0af37)]:
+- Updated dependencies [[`b22c06aa`](https://github.com/sewellstephens/late/commit/b22c06aad1cfed08069dadc7ec39bcbfb1d0af37)]:
   - @sewellstephens/plate-common@4.4.0
 
 ## 4.3.7
 
 ### Patch Changes
 
-- Updated dependencies [[`58f6fb53`](https://github.com/udecode/plate/commit/58f6fb53bf45a2e0509f4aca617aa21356952fca)]:
+- Updated dependencies [[`58f6fb53`](https://github.com/sewellstephens/late/commit/58f6fb53bf45a2e0509f4aca617aa21356952fca)]:
   - @sewellstephens/plate-core@4.3.7
   - @sewellstephens/plate-common@4.3.7
 
@@ -496,25 +496,25 @@
 
 ### Patch Changes
 
-- [#1081](https://github.com/udecode/plate/pull/1081) [`8525af01`](https://github.com/udecode/plate/commit/8525af01b2ca705665bad3ada73b8e906620dad8) Thanks [@dylans](https://github.com/dylans)! - Fix check for language attribute for syntax highlighting
+- [#1081](https://github.com/sewellstephens/late/pull/1081) [`8525af01`](https://github.com/sewellstephens/late/commit/8525af01b2ca705665bad3ada73b8e906620dad8) Thanks [@dylans](https://github.com/dylans)! - Fix check for language attribute for syntax highlighting
 
 ## 4.3.1
 
 ### Patch Changes
 
-- [#1072](https://github.com/udecode/plate/pull/1072) [`a692c078`](https://github.com/udecode/plate/commit/a692c078f9386ebb63aea9cb704decf554b07e8e) Thanks [@nemanja-tosic](https://github.com/nemanja-tosic)! - Pasting into a code block always adds codelines. All non code blocks are converted to text.
+- [#1072](https://github.com/sewellstephens/late/pull/1072) [`a692c078`](https://github.com/sewellstephens/late/commit/a692c078f9386ebb63aea9cb704decf554b07e8e) Thanks [@nemanja-tosic](https://github.com/nemanja-tosic)! - Pasting into a code block always adds codelines. All non code blocks are converted to text.
 
 ## 4.3.0
 
 ### Minor Changes
 
-- [#1055](https://github.com/udecode/plate/pull/1055) [`7b892a59`](https://github.com/udecode/plate/commit/7b892a59f27bdaa81c90097534c411cc80b92e8a) Thanks [@dylans](https://github.com/dylans)! - changes:
+- [#1055](https://github.com/sewellstephens/late/pull/1055) [`7b892a59`](https://github.com/sewellstephens/late/commit/7b892a59f27bdaa81c90097534c411cc80b92e8a) Thanks [@dylans](https://github.com/dylans)! - changes:
   - enable syntax highlighting for `code_block`
   - new prop to `code_block` node: `lang?: string`
 
 ### Patch Changes
 
-- Updated dependencies [[`6af469cd`](https://github.com/udecode/plate/commit/6af469cd5ac310e831eb8a99a71eba73bde62fc6)]:
+- Updated dependencies [[`6af469cd`](https://github.com/sewellstephens/late/commit/6af469cd5ac310e831eb8a99a71eba73bde62fc6)]:
   - @sewellstephens/plate-core@4.3.0
   - @sewellstephens/plate-common@4.3.0
 
@@ -522,7 +522,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`f1da7267`](https://github.com/udecode/plate/commit/f1da7267d46d94e207f4477f73e42b63736a9085), [`35caf35d`](https://github.com/udecode/plate/commit/35caf35d48fff851518648ff66e64a4268dcc97c)]:
+- Updated dependencies [[`f1da7267`](https://github.com/sewellstephens/late/commit/f1da7267d46d94e207f4477f73e42b63736a9085), [`35caf35d`](https://github.com/sewellstephens/late/commit/35caf35d48fff851518648ff66e64a4268dcc97c)]:
   - @sewellstephens/plate-common@3.4.0
   - @sewellstephens/plate-core@3.4.0
 
@@ -530,11 +530,11 @@
 
 ### Minor Changes
 
-- [#995](https://github.com/udecode/plate/pull/995) [`58387c6d`](https://github.com/udecode/plate/commit/58387c6d34e86be7880999b40a9105b6178f4ce4) Thanks [@dylans](https://github.com/dylans)! - update slate dependencies and peerDependencies to 0.66.\*
+- [#995](https://github.com/sewellstephens/late/pull/995) [`58387c6d`](https://github.com/sewellstephens/late/commit/58387c6d34e86be7880999b40a9105b6178f4ce4) Thanks [@dylans](https://github.com/dylans)! - update slate dependencies and peerDependencies to 0.66.\*
 
 ### Patch Changes
 
-- Updated dependencies [[`58387c6d`](https://github.com/udecode/plate/commit/58387c6d34e86be7880999b40a9105b6178f4ce4)]:
+- Updated dependencies [[`58387c6d`](https://github.com/sewellstephens/late/commit/58387c6d34e86be7880999b40a9105b6178f4ce4)]:
   - @sewellstephens/plate-common@3.2.0
   - @sewellstephens/plate-core@3.2.0
 
@@ -542,37 +542,37 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`f6c58134`](https://github.com/udecode/plate/commit/f6c581347cc5877b7afa0774ef1ad78ad227564e)]:
+- Updated dependencies [[`f6c58134`](https://github.com/sewellstephens/late/commit/f6c581347cc5877b7afa0774ef1ad78ad227564e)]:
   - @sewellstephens/plate-common@3.1.3
 
 ## 2.0.0
 
 ### Patch Changes
 
-- Updated dependencies [[`ec4d5b7b`](https://github.com/udecode/plate/commit/ec4d5b7bd01b6fd21ba14a28f782c143d32c7532)]:
+- Updated dependencies [[`ec4d5b7b`](https://github.com/sewellstephens/late/commit/ec4d5b7bd01b6fd21ba14a28f782c143d32c7532)]:
   - @sewellstephens/plate-common@2.0.0
 
 ## 1.1.6
 
 ### Patch Changes
 
-- [#918](https://github.com/udecode/plate/pull/918) [`7d045d8d`](https://github.com/udecode/plate/commit/7d045d8db39515d4574c5313cc97287486c5866b) Thanks [@zbeyens](https://github.com/zbeyens)! - add `slate-history` as a peerDep
+- [#918](https://github.com/sewellstephens/late/pull/918) [`7d045d8d`](https://github.com/sewellstephens/late/commit/7d045d8db39515d4574c5313cc97287486c5866b) Thanks [@zbeyens](https://github.com/zbeyens)! - add `slate-history` as a peerDep
 
-- Updated dependencies [[`7d045d8d`](https://github.com/udecode/plate/commit/7d045d8db39515d4574c5313cc97287486c5866b)]:
+- Updated dependencies [[`7d045d8d`](https://github.com/sewellstephens/late/commit/7d045d8db39515d4574c5313cc97287486c5866b)]:
   - @sewellstephens/plate-common@1.1.6
 
 ## 1.0.0
 
 ### Major Changes
 
-🎉 The **Slate Plugins** project has evolved to **Plate** 🎉
+🎉 The **Slate Plugins** project has evolved to **Late** 🎉
 
 To migrate, install `@sewellstephens/plate[-x]` then find and replace all
 occurrences of:
 
 - `slate-plugins` to `plate`
-- `SlatePlugins` to `Plate`
-- `SlatePlugin` to `PlatePlugin`
+- `SlatePlugins` to `Late`
+- `SlatePlugin` to `LatePlugin`
 
 ## 1.0.0-next.61
 

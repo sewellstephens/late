@@ -1,10 +1,10 @@
-# Plate horizontal rule plugin
+# Late horizontal rule plugin
 
-This package implements the horizontal rule plugin for Plate.
+This package implements the horizontal rule plugin for Late.
 
 ## Documentation
 
-Check out [Horizontal Rule](https://platejs.org/docs/horizontal-rule).
+Check out [Horizontal Rule](https://sewellstephens.github.io/late/docs/horizontal-rule).
 
 ## License
 

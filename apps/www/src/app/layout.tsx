@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     shortcut: '/favicon-16x16.png',
   },
   keywords: [
-    'Plate',
+    'Late',
     'Slate',
     'editor',
     'wysiwyg',

@@ -10,7 +10,7 @@ import {
 
 import type { WithYjsOptions } from './withTYjs';
 
-import { withPlateYjs } from './withPlateYjs';
+import { withLateYjs } from './withLateYjs';
 
 export type YjsPluginOptions<
   TCursorData extends UnknownObject = UnknownObject,
@@ -39,7 +39,7 @@ export type YjsPluginOptions<
 export type YjsConfig = PluginConfig<'yjs', YjsPluginOptions>;
 
 export const YjsPlugin = createTSlatePlugin<YjsConfig>({
-  extendEditor: withPlateYjs,
+  extendEditor: withLateYjs,
   key: 'yjs',
   options: {
     isConnected: false,

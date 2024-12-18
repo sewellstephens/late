@@ -1,6 +1,6 @@
-import { createTPlatePlugin } from '../plugin';
+import { createTLatePlugin } from '../plugin';
 
-export const PlateApiPlugin = createTPlatePlugin({
+export const LateApiPlugin = createTLatePlugin({
   dependencies: ['debug'],
   key: 'plateApi',
 }).extendEditorApi(({ editor }) => ({

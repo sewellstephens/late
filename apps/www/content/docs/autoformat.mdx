@@ -216,7 +216,7 @@ If true, insert the triggering character after autoformatting.
 </APIItem>
 <APIItem
   name="query"
-  type="(editor: PlateEditor, options: AutoformatQueryOptions) => boolean"
+  type="(editor: LateEditor, options: AutoformatQueryOptions) => boolean"
   optional
 >
 
@@ -273,13 +273,13 @@ the selected block.
 - **Default:** `false`
 
 </APIItem>
-<APIItem name="preFormat" type="(editor: PlateEditor) => void" optional>
+<APIItem name="preFormat" type="(editor: LateEditor) => void" optional>
 
 Function called just before `format`. Generally used to reset the selected
 block.
 
 </APIItem>
-<APIItem name="format" type="(editor: PlateEditor) => void" optional>
+<APIItem name="format" type="(editor: LateEditor) => void" optional>
 
 Custom formatting function.
 
@@ -323,7 +323,7 @@ The mode is 'text'.
 A pattern to match for the autoformat rule to apply.
 
 </APIItem>
-<APIItem name="format" type="string | string[] | ((editor: PlateEditor, options: GetMatchPointsReturnType) => void)">
+<APIItem name="format" type="string | string[] | ((editor: LateEditor, options: GetMatchPointsReturnType) => void)">
 
 The matched text is replaced by that string, the matched texts are replaced by these strings, or a function called when there is a match.
 

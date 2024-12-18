@@ -2,7 +2,7 @@
 
 import type { SlateEditor } from '@sewellstephens/plate-common';
 
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
 import { getListItemEntry } from './getListItemEntry';
@@ -44,7 +44,7 @@ describe('when the cursor is in a list item paragraph', () => {
   ) as any;
 
   it('should be', () => {
-    const editor = createPlateEditor({ editor: input });
+    const editor = createLateEditor({ editor: input });
 
     const res = getListItemEntry(editor);
 
@@ -95,7 +95,7 @@ describe('when the cursor is in a nested list item paragraph', () => {
   ) as any;
 
   it('should be', () => {
-    const editor = createPlateEditor({ editor: input });
+    const editor = createLateEditor({ editor: input });
 
     const res = getListItemEntry(editor);
 
@@ -163,7 +163,7 @@ describe('when the selection range includes root list item', () => {
   ) as any;
 
   it('should be', () => {
-    const editor = createPlateEditor({ editor: input });
+    const editor = createLateEditor({ editor: input });
 
     const res = getListItemEntry(editor);
 
@@ -189,7 +189,7 @@ describe('when the cursor is not in a list item', () => {
   ) as any as SlateEditor;
 
   it('should be', () => {
-    const editor = createPlateEditor({ editor: input });
+    const editor = createLateEditor({ editor: input });
 
     const res = getListItemEntry(editor);
 

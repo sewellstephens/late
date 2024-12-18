@@ -1,12 +1,12 @@
 import type { SlateEditor } from '../../editor';
 
-import { createPlateEditor } from '../../../react';
+import { createLateEditor } from '../../../react';
 
 describe('LengthPlugin', () => {
   let editor: SlateEditor;
 
   const createEditorWithLength = (maxLength: number) => {
-    return createPlateEditor({
+    return createLateEditor({
       autoSelect: true,
       maxLength,
     });
@@ -70,7 +70,7 @@ describe('LengthPlugin', () => {
 
   describe('when maxLength is not set', () => {
     it('should not limit text input', () => {
-      editor = createPlateEditor({
+      editor = createLateEditor({
         autoSelect: true,
       });
       editor.insertText(

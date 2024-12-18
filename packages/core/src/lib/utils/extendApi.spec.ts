@@ -1,4 +1,4 @@
-import { createPlateEditor } from '../../react';
+import { createLateEditor } from '../../react';
 import {
   type PluginConfig,
   createSlatePlugin,
@@ -11,7 +11,7 @@ describe('extendEditorApi method', () => {
     let api1: any;
     let pluginApi1: any;
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [
         createSlatePlugin({
           key: 'testPlugin',
@@ -62,7 +62,7 @@ describe('extendEditorApi method', () => {
       })
     );
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [furtherExtendedPlugin],
     });
 
@@ -101,7 +101,7 @@ describe('extendEditorApi method', () => {
         anotherMethod: () => api.sampleMethod(1) + options.baseValue,
       }));
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [extendedPlugin],
     });
 
@@ -129,7 +129,7 @@ describe('extendEditorApi method', () => {
         method3: () => (api as any).method1() + (api as any).method2(),
       }));
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [extendedPlugin],
     });
 
@@ -155,7 +155,7 @@ describe('extendEditorApi method', () => {
         method3: () => api.method1() + api.method2(),
       }));
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [
         testPlugin,
         createSlatePlugin({
@@ -184,7 +184,7 @@ describe('extendEditorApi method', () => {
         method3: () => api.method1() + api.method2(),
       }));
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [
         testPlugin,
         createSlatePlugin({ key: 'another' }).extendEditorApi(({ editor }) => {
@@ -219,7 +219,7 @@ describe('extendEditorApi method', () => {
       };
     });
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [basePlugin, overridePlugin],
     });
 
@@ -239,7 +239,7 @@ describe('extendEditorApi method', () => {
         },
       }));
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [basePlugin],
     });
 
@@ -277,7 +277,7 @@ describe('extendEditorApi method', () => {
       method: () => 'plugin3',
     }));
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [plugin1, plugin3],
     });
 
@@ -326,7 +326,7 @@ describe('extendEditorApi method', () => {
       };
     });
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [basePlugin, overridePlugin],
     });
 
@@ -377,7 +377,7 @@ describe('extendApi method', () => {
         pluginMethod: () => 'plugin',
       }));
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [testPlugin],
     });
 
@@ -402,7 +402,7 @@ describe('extendApi method', () => {
         method3: () => api.testPlugin.method1() + api.testPlugin.method2(),
       }));
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [testPlugin],
     });
 
@@ -421,7 +421,7 @@ describe('extendApi method', () => {
       getValue: () => getOptions().baseValue,
     }));
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [testPlugin],
     });
 
@@ -439,7 +439,7 @@ describe('extendApi method', () => {
         pluginMethod: () => api.globalMethod() * 2,
       }));
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [testPlugin],
     });
 
@@ -459,7 +459,7 @@ describe('extendApi method', () => {
       method: () => 'plugin2',
     }));
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [plugin1, plugin2],
     });
 
@@ -484,7 +484,7 @@ describe('extendApi method', () => {
       };
     });
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [basePlugin, overridePlugin],
     });
 
@@ -510,7 +510,7 @@ describe('extendApi method', () => {
           `${api.globalMethod()}-${api.testPlugin.pluginMethod()}`,
       }));
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [testPlugin],
     });
 
@@ -532,7 +532,7 @@ describe('extendTransforms method', () => {
         pluginTransform: () => 'plugin',
       }));
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [testPlugin],
     });
 
@@ -558,7 +558,7 @@ describe('extendTransforms method', () => {
           tf.testPlugin.transform1() + tf.testPlugin.transform2(),
       }));
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [testPlugin],
     });
 
@@ -581,7 +581,7 @@ describe('extendTransforms method', () => {
         pluginTransform: () => tf.globalTransform() * 2,
       }));
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [testPlugin],
     });
 

@@ -17,7 +17,7 @@ Extend the editor using `withTriggerCombobox` and specify default values for the
 ```ts
 import { withTriggerCombobox } from '@sewellstephens/plate-combobox';
 
-const MyPlugin = createPlatePlugin({
+const MyPlugin = createLatePlugin({
   // ...
   extendEditor: withTriggerCombobox,
   options: {
@@ -37,10 +37,10 @@ const MyPlugin = createPlatePlugin({
 Define your input element as an inline void element. It's often useful to do this inside a nested plugin.
 
 ```ts
-const MyPlugin = createPlatePlugin({
+const MyPlugin = createLatePlugin({
   // ...
   plugins: [
-    createPlatePlugin({
+    createLatePlugin({
       key: 'input',
       node: {
         isElement: true,
@@ -73,7 +73,7 @@ The input element component can be built using [Inline Combobox](/docs/component
   Only trigger the combobox if the char before the trigger character matches a regular expression. For example, `/^\s?$/` matches beginning of the line or a space.
 </APIItem>
 
-<APIItem name="triggerQuery" type="(editor: PlateEditor) => boolean" optional>
+<APIItem name="triggerQuery" type="(editor: LateEditor) => boolean" optional>
   A query function to enable the behavior.
 </APIItem>
 

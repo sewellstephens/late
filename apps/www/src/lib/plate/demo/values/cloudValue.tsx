@@ -6,9 +6,9 @@ jsx;
 
 export const cloudValue: any = (
   <fragment>
-    <hh2>☁️ Plate Cloud Uploads - Images and Attachments</hh2>
+    <hh2>☁️ Late Cloud Uploads - Images and Attachments</hh2>
     <hp>
-      Plate Cloud is Plate's official cloud upload service with support for
+      Late Cloud is Late's official cloud upload service with support for
       attachments, images and image resizing. Includes server-side image
       resizing which delivers optimized images to each user. Supports high DPI
       files for retina devices and smaller files for faster delivery for

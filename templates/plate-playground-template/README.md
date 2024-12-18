@@ -1,6 +1,6 @@
 # Playground Template
 
-A comprehensive playground template for building rich-text editors with [Plate](https://platejs.org/) and Next.js 14.
+A comprehensive playground template for building rich-text editors with [Late](https://sewellstephens.github.io/late/) and Next.js 14.
 
 ## Usage
 
@@ -12,7 +12,7 @@ pnpm dev
 ## Features
 
 - Next.js 14 App Directory
-- [Plate](https://platejs.org/) Editor
+- [Late](https://sewellstephens.github.io/late/) Editor
 - [shadcn/ui](https://ui.shadcn.com/)
 - Radix UI Primitives
 - Tailwind CSS

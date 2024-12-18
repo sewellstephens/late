@@ -1,10 +1,10 @@
 /** @jsx jsx */
 
-import type { PlateEditor } from '@sewellstephens/plate-common/react';
+import type { LateEditor } from '@sewellstephens/plate-common/react';
 
 import { jsx } from '@sewellstephens/plate-test-utils';
 
-import { createPlateTestEditor } from '../../../core/src/react/__tests__/createPlateTestEditor';
+import { createLateTestEditor } from '../../../core/src/react/__tests__/createLateTestEditor';
 import { DatePlugin } from './DatePlugin';
 
 jsx;
@@ -22,7 +22,7 @@ describe('On keydown', () => {
           <htext>test</htext>
         </hp>
       </editor>
-    ) as any as PlateEditor;
+    ) as any as LateEditor;
 
     const output = (
       <editor>
@@ -35,9 +35,9 @@ describe('On keydown', () => {
           <htext>test</htext>
         </hp>
       </editor>
-    ) as any as PlateEditor;
+    ) as any as LateEditor;
 
-    const [editor, { triggerKeyboardEvent }] = await createPlateTestEditor({
+    const [editor, { triggerKeyboardEvent }] = await createLateTestEditor({
       editor: input,
       plugins: [DatePlugin],
     });
@@ -59,7 +59,7 @@ describe('On keydown', () => {
           <htext>test</htext>
         </hp>
       </editor>
-    ) as any as PlateEditor;
+    ) as any as LateEditor;
 
     const output = (
       <editor>
@@ -72,9 +72,9 @@ describe('On keydown', () => {
           <htext>test</htext>
         </hp>
       </editor>
-    ) as any as PlateEditor;
+    ) as any as LateEditor;
 
-    const [editor, { triggerKeyboardEvent }] = await createPlateTestEditor({
+    const [editor, { triggerKeyboardEvent }] = await createLateTestEditor({
       editor: input,
       plugins: [DatePlugin],
     });
@@ -100,7 +100,7 @@ describe('On keydown', () => {
           <htext>test</htext>
         </hp>
       </editor>
-    ) as any as PlateEditor;
+    ) as any as LateEditor;
 
     const output = (
       <editor>
@@ -118,9 +118,9 @@ describe('On keydown', () => {
           <htext>test</htext>
         </hp>
       </editor>
-    ) as any as PlateEditor;
+    ) as any as LateEditor;
 
-    const [editor, { triggerKeyboardEvent }] = await createPlateTestEditor({
+    const [editor, { triggerKeyboardEvent }] = await createLateTestEditor({
       editor: input,
       plugins: [DatePlugin],
     });

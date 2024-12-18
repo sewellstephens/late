@@ -1,10 +1,10 @@
-# Plate highlight plugin
+# Late highlight plugin
 
-This package implements the text highlight plugin for Plate.
+This package implements the text highlight plugin for Late.
 
 ## Documentation
 
-Check out [Highlight](https://platejs.org/docs/highlight).
+Check out [Highlight](https://sewellstephens.github.io/late/docs/highlight).
 
 ## License
 

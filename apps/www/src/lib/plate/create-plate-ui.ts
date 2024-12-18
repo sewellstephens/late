@@ -20,8 +20,8 @@ import { CommentsPlugin } from '@sewellstephens/plate-comments/react';
 import { ParagraphPlugin } from '@sewellstephens/plate-common';
 import {
   type NodeComponent,
-  PlateElement,
-  PlateLeaf,
+  LateElement,
+  LateLeaf,
 } from '@sewellstephens/plate-common/react';
 import { DatePlugin } from '@sewellstephens/plate-date';
 import { EmojiInputPlugin } from '@sewellstephens/plate-emoji';
@@ -88,13 +88,13 @@ import { TodoListElement } from '@/registry/default/plate-ui/todo-list-element';
 import { ToggleElement } from '@/registry/default/plate-ui/toggle-element';
 import { withDraggables } from '@/registry/default/plate-ui/with-draggables';
 
-export const createPlateUI = ({
+export const createLateUI = ({
   draggable,
   placeholder,
 }: { draggable?: boolean; placeholder?: boolean } = {}) => {
   let components: Record<string, NodeComponent> = {
     [BlockquotePlugin.key]: BlockquoteElement,
-    [BoldPlugin.key]: withProps(PlateLeaf, { as: 'strong' }),
+    [BoldPlugin.key]: withProps(LateLeaf, { as: 'strong' }),
     [BulletedListPlugin.key]: withProps(ListElement, { variant: 'ul' }),
     [CodeBlockPlugin.key]: CodeBlockElement,
     [CodeLinePlugin.key]: CodeLineElement,
@@ -116,26 +116,26 @@ export const createPlateUI = ({
     [HighlightPlugin.key]: HighlightLeaf,
     [HorizontalRulePlugin.key]: HrElement,
     [ImagePlugin.key]: ImageElement,
-    [ItalicPlugin.key]: withProps(PlateLeaf, { as: 'em' }),
+    [ItalicPlugin.key]: withProps(LateLeaf, { as: 'em' }),
     [KbdPlugin.key]: KbdLeaf,
     [LinkPlugin.key]: LinkElement,
-    [ListItemPlugin.key]: withProps(PlateElement, { as: 'li' }),
+    [ListItemPlugin.key]: withProps(LateElement, { as: 'li' }),
     [MediaEmbedPlugin.key]: MediaEmbedElement,
     [MentionInputPlugin.key]: MentionInputElement,
     [MentionPlugin.key]: MentionElement,
     [NumberedListPlugin.key]: withProps(ListElement, { variant: 'ol' }),
     [ParagraphPlugin.key]: ParagraphElement,
     [SlashInputPlugin.key]: SlashInputElement,
-    [StrikethroughPlugin.key]: withProps(PlateLeaf, { as: 's' }),
-    [SubscriptPlugin.key]: withProps(PlateLeaf, { as: 'sub' }),
-    [SuperscriptPlugin.key]: withProps(PlateLeaf, { as: 'sup' }),
+    [StrikethroughPlugin.key]: withProps(LateLeaf, { as: 's' }),
+    [SubscriptPlugin.key]: withProps(LateLeaf, { as: 'sub' }),
+    [SuperscriptPlugin.key]: withProps(LateLeaf, { as: 'sup' }),
     [TableCellHeaderPlugin.key]: TableCellHeaderElement,
     [TableCellPlugin.key]: TableCellElement,
     [TablePlugin.key]: TableElement,
     [TableRowPlugin.key]: TableRowElement,
     [TodoListPlugin.key]: TodoListElement,
     [TogglePlugin.key]: ToggleElement,
-    [UnderlinePlugin.key]: withProps(PlateLeaf, { as: 'u' }),
+    [UnderlinePlugin.key]: withProps(LateLeaf, { as: 'u' }),
   };
 
   if (placeholder) {

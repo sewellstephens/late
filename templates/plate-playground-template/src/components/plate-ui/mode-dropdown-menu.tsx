@@ -4,7 +4,7 @@ import {
   focusEditor,
   useEditorReadOnly,
   useEditorRef,
-  usePlateStore,
+  useLateStore,
 } from '@sewellstephens/plate-common';
 
 import { Icons } from '@/components/icons';
@@ -21,7 +21,7 @@ import { ToolbarButton } from './toolbar';
 
 export function ModeDropdownMenu(props: DropdownMenuProps) {
   const editor = useEditorRef();
-  const setReadOnly = usePlateStore().set.readOnly();
+  const setReadOnly = useLateStore().set.readOnly();
   const readOnly = useEditorReadOnly();
   const openState = useOpenState();
 

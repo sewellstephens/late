@@ -1,8 +1,8 @@
-import type { PlateRenderElementProps } from '@sewellstephens/plate-common/react';
+import type { LateRenderElementProps } from '@sewellstephens/plate-common/react';
 import type { TIndentElement } from '@sewellstephens/plate-indent';
 
 export const FireMarker = (
-  props: Omit<PlateRenderElementProps, 'children'>
+  props: Omit<LateRenderElementProps, 'children'>
 ) => {
   const { element } = props;
 
@@ -15,7 +15,7 @@ export const FireMarker = (
   );
 };
 
-export const FireLiComponent = (props: PlateRenderElementProps) => {
+export const FireLiComponent = (props: LateRenderElementProps) => {
   const { children } = props;
 
   return <span>{children}</span>;

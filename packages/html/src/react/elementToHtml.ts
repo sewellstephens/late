@@ -4,8 +4,8 @@ import type { TRenderElementProps } from '@sewellstephens/slate-react';
 
 import { getEditorPlugin, pipeInjectNodeProps } from '@sewellstephens/plate-common';
 import {
-  type PlateEditor,
-  type PlateProps,
+  type LateEditor,
+  type LateProps,
   pluginRenderElement,
 } from '@sewellstephens/plate-common/react';
 import { decode } from 'html-entities';
@@ -15,7 +15,7 @@ import { createElementWithSlate } from './utils/createElementWithSlate';
 import { renderToStaticMarkup } from './utils/renderToStaticMarkupClient';
 
 export const elementToHtml = (
-  editor: PlateEditor,
+  editor: LateEditor,
   {
     dndWrapper,
     plateProps,
@@ -23,7 +23,7 @@ export const elementToHtml = (
     props,
   }: {
     dndWrapper?: React.ComponentClass | React.FC | string;
-    plateProps?: Partial<PlateProps>;
+    plateProps?: Partial<LateProps>;
     preserveClassNames?: string[];
     props: TRenderElementProps;
   }

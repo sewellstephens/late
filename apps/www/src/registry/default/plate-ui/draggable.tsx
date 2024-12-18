@@ -7,7 +7,7 @@ import type { DropTargetMonitor } from 'react-dnd';
 
 import { cn, withRef } from '@sewellstephens/cn';
 import {
-  type PlateElementProps,
+  type LateElementProps,
   useEditorRef,
 } from '@sewellstephens/plate-common/react';
 import {
@@ -27,7 +27,7 @@ import {
 } from './tooltip';
 
 export interface DraggableProps
-  extends PlateElementProps,
+  extends LateElementProps,
     ClassNames<{
       /** Block. */
       block: string;

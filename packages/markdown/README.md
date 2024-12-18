@@ -1,11 +1,11 @@
-# Plate MD serializer plugin
+# Late MD serializer plugin
 
-This package implements the Markdown serializer for Plate.
+This package implements the Markdown serializer for Late.
 
 ## Documentation
 
 Check out
-[Serializing Markdown](https://platejs.org/docs/markdown).
+[Serializing Markdown](https://sewellstephens.github.io/late/docs/markdown).
 
 ## License
 

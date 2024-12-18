@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
 import {
-  createPlateEditor,
+  createLateEditor,
   getEditorPlugin,
 } from '@sewellstephens/plate-common/react';
 import { jsx } from '@sewellstephens/plate-test-utils';
@@ -33,7 +33,7 @@ const output = (
 
 it('should be', () => {
   onKeyDownExitBreak({
-    ...getEditorPlugin(createPlateEditor({ editor: input }), ExitBreakPlugin),
+    ...getEditorPlugin(createLateEditor({ editor: input }), ExitBreakPlugin),
     event,
   });
   expect(input.children).toEqual(output.children);

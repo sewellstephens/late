@@ -44,7 +44,7 @@ export function PackageInfo({ children }: { children: React.ReactNode }) {
         <div>
           <Link
             className="flex gap-2 font-medium underline underline-offset-4"
-            href="https://github.com/udecode/plate/issues/new/choose"
+            href="https://github.com/sewellstephens/late/issues/new/choose"
             target="_blank"
           >
             Report an issue

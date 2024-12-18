@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-description: A quick tutorial to get you up and running with Plate.
+description: A quick tutorial to get you up and running with Late.
 ---
 
 <Callout className="my-4">
@@ -13,10 +13,10 @@ description: A quick tutorial to get you up and running with Plate.
 
 You can choose one of the following templates to get started:
 
-| Option                                                                                                             | NextJS | Tailwind | Plate | Plugins |
+| Option                                                                                                             | NextJS | Tailwind | Late | Plugins |
 | ------------------------------------------------------------------------------------------------------------------ | ------ | -------- | ----- | ------- |
-| <Link target="_blank" href="https://github.com/udecode/plate-playground-template">Plate playground template</Link> | ✅     | ✅       | ✅    | ✅      |
-| <Link target="_blank" href="https://github.com/udecode/plate-template">Plate minimal template</Link>               | ✅     | ✅       | ✅    |         |
+| <Link target="_blank" href="https://github.com/sewellstephens/late-playground-template">Late playground template</Link> | ✅     | ✅       | ✅    | ✅      |
+| <Link target="_blank" href="https://github.com/sewellstephens/late-template">Late minimal template</Link>               | ✅     | ✅       | ✅    |         |
 | <Link target="_blank" href="/docs/components/installation/next">NextJS template</Link>                             | ✅     | ✅       |       |         |
 
 For an existing project, jump to the next step.
@@ -40,32 +40,32 @@ npm install @sewellstephens/plate slate slate-react slate-history slate-hyperscr
 Let's start with a minimal editor setup.
 
 ```tsx showLineNumbers {4,7-9}
-import { usePlateEditor, Plate, PlateContent } from '@sewellstephens/plate-common/react';
+import { useLateEditor, Late, LateContent } from '@sewellstephens/plate-common/react';
 
 export default function BasicEditor() {
-  const editor = usePlateEditor();
+  const editor = useLateEditor();
 
   return (
-    <Plate editor={editor}>
-      <PlateContent placeholder="Type..." />
-    </Plate>
+    <Late editor={editor}>
+      <LateContent placeholder="Type..." />
+    </Late>
   );
 }
 ```
 
-`Plate` manages the editor state and `PlateContent` renders the editor content.
+`Late` manages the editor state and `LateContent` renders the editor content.
 
 <ComponentPreview name="basic-editor-default-demo" padding="md" />
 
 ### Styling
 
-Let's give our editor some styles: [Editor](/docs/components/editor) is a styled version of `PlateContent`.
+Let's give our editor some styles: [Editor](/docs/components/editor) is a styled version of `LateContent`.
 
 <ComponentPreview name="basic-editor-styling-demo" padding="md" />
 
 <Callout className="mt-4">
   **Note**: `Editor` is just an example of a styled editor using Tailwind. You
-  can create your own styled version of `PlateContent`.
+  can create your own styled version of `LateContent`.
   <ComponentSource name="editor" />
 </Callout>
 
@@ -88,20 +88,20 @@ const value = [
 ];
 
 export default function BasicEditor() {
-  const editor = usePlateEditor({
+  const editor = useLateEditor({
     value,
   });
 
   return (
-    <Plate editor={editor}>
-      <PlateContent />
-    </Plate>
+    <Late editor={editor}>
+      <LateContent />
+    </Late>
   );
 }
 ```
 
 <Callout className="mt-4">
-  **Note**: Plate uses the **`type`** property to enable plugins to render nodes
+  **Note**: Late uses the **`type`** property to enable plugins to render nodes
   by type.
 </Callout>
 
@@ -115,7 +115,7 @@ At this stage, it's crucial to monitor editor modifications in order to store th
 // ...
 
 export default function BasicEditor() {
-  const editor = usePlateEditor({
+  const editor = useLateEditor({
     value,
     onChange: (newValue) => {
       // save newValue...
@@ -123,9 +123,9 @@ export default function BasicEditor() {
   });
 
   return (
-    <Plate editor={editor}>
-      <PlateContent />
-    </Plate>
+    <Late editor={editor}>
+      <LateContent />
+    </Late>
   );
 }
 ```
@@ -153,7 +153,7 @@ const value = [
 ];
 
 export default function BasicEditor() {
-  const editor = usePlateEditor({
+  const editor = useLateEditor({
     value,
     plugins: [
       HeadingPlugin,
@@ -167,9 +167,9 @@ export default function BasicEditor() {
   });
 
   return (
-    <Plate editor={editor}>
-      <PlateContent />
-    </Plate>
+    <Late editor={editor}>
+      <LateContent />
+    </Late>
   );
 }
 ```
@@ -180,18 +180,18 @@ The plugins are functioning correctly. However, since we haven't specified any c
 
 <Callout className="mt-4">
   **Note**: You don't need to add core plugins such as **`ReactPlugin`**,
-  **`HistoryPlugin`** and **`ParagraphPlugin`** as **`usePlateEditor`** already does it.
+  **`HistoryPlugin`** and **`ParagraphPlugin`** as **`useLateEditor`** already does it.
 </Callout>
 
 ### Components
 
 <Callout className="mt-4">
-  **Note**: Plate plugins are packaged unstyled, implying that you have complete
+  **Note**: Late plugins are packaged unstyled, implying that you have complete
   control over markup and styling, hence you can integrate your own design
-  system or [Plate UI](/docs/components). If using the latter, use our <Link href="/?builder=true" target="_blank">interactive builder</Link> to pick your components.
+  system or [Late UI](/docs/components). If using the latter, use our <Link href="/?builder=true" target="_blank">interactive builder</Link> to pick your components.
 </Callout>
 
-To plug-in all the components in one place, we can use the **`override.components`** option in **`usePlateEditor`**:
+To plug-in all the components in one place, we can use the **`override.components`** option in **`useLateEditor`**:
 
 ```tsx showLineNumbers {14,20-22}
 // ...
@@ -200,10 +200,10 @@ To plug-in all the components in one place, we can use the **`override.component
 import Prism from 'prismjs';
 
 // This is a local file, you will need to create this file in your project
-import { createPlateUI } from '@/lib/create-plate-ui';
+import { createLateUI } from '@/lib/create-plate-ui';
 
 export default function BasicEditor() {
-  const editor = usePlateEditor({
+  const editor = useLateEditor({
     plugins: [
       HeadingPlugin,
       BlockquotePlugin,
@@ -214,14 +214,14 @@ export default function BasicEditor() {
       CodePlugin,
     ],
     override: {
-      components: createPlateUI(),
+      components: createLateUI(),
     },
   });
 
   return (
-    <Plate editor={editor}>
-      <PlateContent />
-    </Plate>
+    <Late editor={editor}>
+      <LateContent />
+    </Late>
   );
 }
 ```

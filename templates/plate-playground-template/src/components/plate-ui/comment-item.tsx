@@ -13,7 +13,7 @@ import { CommentMoreDropdown } from './comment-more-dropdown';
 import { CommentResolveButton } from './comment-resolve-button';
 import { CommentValue } from './comment-value';
 
-type PlateCommentProps = {
+type LateCommentProps = {
   commentId: string;
 };
 
@@ -58,7 +58,7 @@ function CommentItemContent() {
   );
 }
 
-export function CommentItem({ commentId }: PlateCommentProps) {
+export function CommentItem({ commentId }: LateCommentProps) {
   const comment = useCommentById(commentId);
   if (!comment) return null;
 

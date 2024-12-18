@@ -1,10 +1,10 @@
 import React from 'react';
 import { cn, withRef } from '@sewellstephens/cn';
-import { getHandler, PlateElement } from '@sewellstephens/plate-common';
+import { getHandler, LateElement } from '@sewellstephens/plate-common';
 import { useFocused, useSelected } from 'slate-react';
 
 export const MentionInputElement = withRef<
-  typeof PlateElement,
+  typeof LateElement,
   {
     onClick?: (mentionNode: any) => void;
   }
@@ -15,7 +15,7 @@ export const MentionInputElement = withRef<
   const focused = useFocused();
 
   return (
-    <PlateElement
+    <LateElement
       ref={ref}
       asChild
       data-slate-value={element.value}
@@ -28,6 +28,6 @@ export const MentionInputElement = withRef<
       {...props}
     >
       <span>{children}</span>
-    </PlateElement>
+    </LateElement>
   );
 });

@@ -1,5 +1,5 @@
 import { insertNode } from '@sewellstephens/plate-common';
-import { createPlatePlugin } from '@sewellstephens/plate-common/react';
+import { createLatePlugin } from '@sewellstephens/plate-common/react';
 import Defer from 'p-defer';
 
 import type { UploadError, UploadSuccess } from '../upload';
@@ -7,7 +7,7 @@ import type { TCloudAttachmentElement } from './types';
 
 import { CloudPlugin, type FileEvent, type SuccessEvent } from '../cloud';
 
-export const CloudAttachmentPlugin = createPlatePlugin({
+export const CloudAttachmentPlugin = createLatePlugin({
   dependencies: ['cloud'],
   key: 'cloud_attachment',
   node: { isElement: true, isVoid: true },

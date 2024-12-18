@@ -6,9 +6,9 @@ import { isDefined } from '@sewellstephens/utils';
 import omit from 'lodash/omit.js';
 import { useDeepCompareMemo } from 'use-deep-compare';
 
-import type { PlateProps } from '../components';
+import type { LateProps } from '../components';
 
-import { useEditorRef, usePlateSelectors } from '../stores';
+import { useEditorRef, useLateSelectors } from '../stores';
 import { DOM_HANDLERS } from '../utils/dom-attributes';
 import { pipeDecorate } from '../utils/pipeDecorate';
 import { pipeHandler } from '../utils/pipeHandler';
@@ -17,12 +17,12 @@ import { pipeRenderLeaf } from '../utils/pipeRenderLeaf';
 
 export const useEditableProps = (
   editableProps: Omit<TEditableProps, 'decorate'> &
-    Pick<PlateProps, 'decorate'> = {}
+    Pick<LateProps, 'decorate'> = {}
 ): TEditableProps => {
   const { id } = editableProps;
 
   const editor = useEditorRef(id);
-  const selectors = usePlateSelectors(id);
+  const selectors = useLateSelectors(id);
   const versionDecorate = selectors.versionDecorate();
   const readOnly = selectors.readOnly();
   const storeDecorate = selectors.decorate();

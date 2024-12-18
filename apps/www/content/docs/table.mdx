@@ -206,7 +206,7 @@ Inserts a row into the table at the current selection or a specified row path.
 Deletes the column containing the selected cell in a table.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
 </APIParameters>
@@ -216,7 +216,7 @@ Deletes the column containing the selected cell in a table.
 Deletes the row containing the selected cell in a table.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
 </APIParameters>
@@ -226,7 +226,7 @@ Deletes the row containing the selected cell in a table.
 Deletes the entire table.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
 </APIParameters>
@@ -280,7 +280,7 @@ Gets the node entry of the cell in the previous row, given the current row's pat
 Get the plugin cell types.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
 </APIParameters>
@@ -298,7 +298,7 @@ Get the plugin cell types.
 Returns an empty cell node for a table.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="CreateCellOptions">
@@ -339,7 +339,7 @@ The cell node.
 Creates an empty row node with the specified number of columns.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="GetEmptyRowNodeOptions" optional>
@@ -370,7 +370,7 @@ The row node.
 ### getEmptyTableNode
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="GetEmptyTableNodeOptions" optional>
@@ -406,7 +406,7 @@ The table node.
 Gets the cell to the left of the current cell in a table.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="options" type="object" optional>
@@ -482,7 +482,7 @@ Gets the previous cell in the table.
 Gets the table node above the current selection.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="options" type="GetAboveNodeOptions" optional></APIItem>
@@ -539,7 +539,7 @@ The column index of the cell node.
 Gets the table, row, and cell node entries based on the current selection or a specified location.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="object" optional>
@@ -577,7 +577,7 @@ The location where the table cell is located.
 Gets the sub table above the anchor and focus positions based on the specified format (tables or cells).
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="GetTableGridAboveOptions" optional>
@@ -602,7 +602,7 @@ The format of the sub table to retrieve.
 Gets the sub table between two cell paths within a given range.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="GetTableGridByRangeOptions" optional>
@@ -677,7 +677,7 @@ The row index of the cell node.
 Gets the cell above the current cell in the table.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="at" type="Path" optional>
@@ -699,7 +699,7 @@ The cell node entry.
 Inserts a table at the current selection if there is no existing table in the editor. Selects the start of the inserted table.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="getEmptyTableNodeOptions" type="GetEmptyTableNodeOptions" optional>
@@ -734,7 +734,7 @@ The options for inserting the table nodes.
 Inserts a column into the table at the current selection or a specified cell path.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="options" type="object" optional>
@@ -766,7 +766,7 @@ Inserts a column into the table at the current selection or a specified cell pat
 Inserts a row into the table at the current selection or a specified row path.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="options" type="object" optional>
@@ -798,7 +798,7 @@ Inserts a row into the table at the current selection or a specified row path.
 Checks if the border of a table cell or the table itself is hidden based on the specified border direction.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="border" type="'top' | 'left' | 'bottom' | 'right'">
@@ -819,7 +819,7 @@ Checks if the border of a table cell or the table itself is hidden based on the 
 Moves the selection by cell unit within a table.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="options" type="object" optional>
@@ -856,7 +856,7 @@ Moves the selection by cell unit within a table.
 Overrides the new selection if the previous selection and the new one are in different cells.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="newSelection" type="TRange | null" optional>
@@ -869,7 +869,7 @@ Overrides the new selection if the previous selection and the new one are in dif
 Sets the size of the specified border in a table cell.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="size" type="number">
@@ -967,7 +967,7 @@ Handles the keyboard events for tables.
   <APIItem name="editor" type="E">
     The editor instance.
   </APIItem>
-  <APIItem name="plugin" type="PlatePlugin">
+  <APIItem name="plugin" type="LatePlugin">
     The plate plugin.
   </APIItem>
 </APIParameters>
@@ -1009,7 +1009,7 @@ If inserting a table:
   <APIItem name="editor" type="E">
     The editor instance.
   </APIItem>
-  <APIItem name="plugin" type="PlatePlugin">
+  <APIItem name="plugin" type="LatePlugin">
     The plate plugin.
   </APIItem>
 </APIParameters>
@@ -1024,7 +1024,7 @@ If the selection is expanded:
   <APIItem name="editor" type="E">
     The editor instance.
   </APIItem>
-  <APIItem name="plugin" type="PlatePlugin">
+  <APIItem name="plugin" type="LatePlugin">
     The plate plugin.
   </APIItem>
 </APIParameters>
@@ -1088,7 +1088,7 @@ Enhance the editor instance with table-related functionality by applying the fol
   <APIItem name="editor" type="E">
     The editor instance.
   </APIItem>
-  <APIItem name="plugin" type="PlatePlugin">
+  <APIItem name="plugin" type="LatePlugin">
     The plate plugin.
   </APIItem>
 </APIParameters>
@@ -1171,7 +1171,7 @@ Whether the left resize handle is hidden.
 Gets the `onSelectTableBorder` handler for a table cell element.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="selectedCells" type="TElement[] | null">

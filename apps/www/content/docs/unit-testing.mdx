@@ -1,9 +1,9 @@
 ---
-title: Unit Testing Plate
-description: Learn how to unit test Plate editor and plugins.
+title: Unit Testing Late
+description: Learn how to unit test Late editor and plugins.
 ---
 
-This guide outlines best practices for unit testing Plate plugins and components using `@sewellstephens/plate-test-utils`.
+This guide outlines best practices for unit testing Late plugins and components using `@sewellstephens/plate-test-utils`.
 
 ## Installation
 
@@ -38,7 +38,7 @@ const input = (
       Hello<cursor /> world
     </hp>
   </editor>
-) as any as PlateEditor;
+) as any as LateEditor;
 ```
 
 Node elements like `<hp />`, `<hul />`, `<hli />` represent different types of nodes.
@@ -49,7 +49,7 @@ Special elements like `<cursor />`, `<anchor />`, and `<focus />` represent sele
 
 1. Create an input state
 2. Define the expected output state
-3. Use `createPlateEditor` or `createPlateTestEditor` to set up the editor
+3. Use `createLateEditor` or `createLateTestEditor` to set up the editor
 4. Apply the transform(s)
 5. Assert the editor's new state
 
@@ -65,7 +65,7 @@ it('should use custom hotkey for bold', async () => {
         <focus />
       </hp>
     </editor>
-  ) as any as PlateEditor;
+  ) as any as LateEditor;
 
   const output = (
     <editor>
@@ -73,9 +73,9 @@ it('should use custom hotkey for bold', async () => {
         Hello <htext bold>world</htext>
       </hp>
     </editor>
-  ) as any as PlateEditor;
+  ) as any as LateEditor;
 
-  const [editor, { triggerKeyboardEvent }] = await createPlateTestEditor({
+  const [editor, { triggerKeyboardEvent }] = await createLateTestEditor({
     editor: input,
     plugins: [
       BoldPlugin.configure({
@@ -108,7 +108,7 @@ it('should collapse selection on backspace', async () => {
         He<anchor />llo wor<focus />ld
       </hp>
     </editor>
-  ) as any as PlateEditor;
+  ) as any as LateEditor;
 
   const output = (
     <editor>
@@ -116,9 +116,9 @@ it('should collapse selection on backspace', async () => {
         He<cursor />ld
       </hp>
     </editor>
-  ) as any as PlateEditor;
+  ) as any as LateEditor;
 
-  const [editor] = await createPlateTestEditor({
+  const [editor] = await createLateTestEditor({
     editor: input,
   });
 
@@ -131,7 +131,7 @@ it('should collapse selection on backspace', async () => {
 
 ## Testing Key Events
 
-Use `triggerKeyboardEvent` from `createPlateTestEditor`:
+Use `triggerKeyboardEvent` from `createLateTestEditor`:
 
 ```typescript
 it('should extend selection on shift+ArrowRight', async () => {
@@ -141,7 +141,7 @@ it('should extend selection on shift+ArrowRight', async () => {
         Hello <cursor />world
       </hp>
     </editor>
-  ) as any as PlateEditor;
+  ) as any as LateEditor;
 
   const output = (
     <editor>
@@ -149,9 +149,9 @@ it('should extend selection on shift+ArrowRight', async () => {
         Hello <anchor />wor<focus />ld
       </hp>
     </editor>
-  ) as any as PlateEditor;
+  ) as any as LateEditor;
 
-  const [editor, { triggerKeyboardEvent }] = await createPlateTestEditor({
+  const [editor, { triggerKeyboardEvent }] = await createLateTestEditor({
     editor: input,
   });
 
@@ -181,7 +181,7 @@ describe('Table plugin', () => {
           </htr>
         </htable>
       </editor>
-    ) as any as PlateEditor;
+    ) as any as LateEditor;
 
     const output = (
       <editor>
@@ -198,9 +198,9 @@ describe('Table plugin', () => {
           </htr>
         </htable>
       </editor>
-    ) as any as PlateEditor;
+    ) as any as LateEditor;
 
-    const [editor, { triggerKeyboardEvent }] = await createPlateTestEditor({
+    const [editor, { triggerKeyboardEvent }] = await createLateTestEditor({
       editor: input,
       plugins: [TablePlugin],
     });
@@ -227,7 +227,7 @@ it('should use custom hotkey for bold', async () => {
         Hello <cursor />world
       </hp>
     </editor>
-  ) as any as PlateEditor;
+  ) as any as LateEditor;
 
   const output = (
     <editor>
@@ -235,9 +235,9 @@ it('should use custom hotkey for bold', async () => {
         Hello <htext bold>world</htext>
       </hp>
     </editor>
-  ) as any as PlateEditor;
+  ) as any as LateEditor;
 
-  const [editor, { triggerKeyboardEvent }] = await createPlateTestEditor({
+  const [editor, { triggerKeyboardEvent }] = await createLateTestEditor({
     editor: input,
     plugins: [
       BoldPlugin.configure({
@@ -259,4 +259,4 @@ it('should use custom hotkey for bold', async () => {
 
 ## Mocking vs. Real Transforms
 
-While mocking can be useful for isolating specific behaviors, Plate tests often assess actual editor children and selection after transforms. This approach ensures that plugins work correctly with the entire editor state.
+While mocking can be useful for isolating specific behaviors, Late tests often assess actual editor children and selection after transforms. This approach ensures that plugins work correctly with the entire editor state.

@@ -4,7 +4,7 @@
   ],
   "files": [
     {
-      "content": "'use client';\n\nimport React from 'react';\n\nimport { withRef } from '@sewellstephens/cn';\nimport { PlateElement } from '@sewellstephens/plate-common/react';\n\nexport const CodeLineElement = withRef<typeof PlateElement>((props, ref) => (\n  <PlateElement ref={ref} {...props} />\n));\n",
+      "content": "'use client';\n\nimport React from 'react';\n\nimport { withRef } from '@sewellstephens/cn';\nimport { LateElement } from '@sewellstephens/plate-common/react';\n\nexport const CodeLineElement = withRef<typeof LateElement>((props, ref) => (\n  <LateElement ref={ref} {...props} />\n));\n",
       "name": "code-line-element.tsx"
     }
   ],

@@ -4,23 +4,23 @@ import type { JotaiStore } from 'jotai-x';
 
 import { atom, createStore } from 'jotai';
 
-import type { PlateEditor } from '../../editor/PlateEditor';
-import type { PlateStoreState } from './PlateStore';
+import type { LateEditor } from '../../editor/LateEditor';
+import type { LateStoreState } from './LateStore';
 
 import { createAtomStore } from '../../libs';
-import { createPlateFallbackEditor } from '../../utils';
+import { createLateFallbackEditor } from '../../utils';
 import {
-  usePlateControllerEditorStore,
-  usePlateControllerExists,
+  useLateControllerEditorStore,
+  useLateControllerExists,
 } from '../plate-controller';
 
 export const PLATE_SCOPE = 'plate';
 
 export const GLOBAL_PLATE_SCOPE = Symbol('global-plate');
 
-export const createPlateStore = <E extends PlateEditor = PlateEditor>({
+export const createLateStore = <E extends LateEditor = LateEditor>({
   decorate = null,
-  editor = createPlateFallbackEditor() as E,
+  editor = createLateFallbackEditor() as E,
   id,
   isMounted = false,
   onChange = null,
@@ -35,7 +35,7 @@ export const createPlateStore = <E extends PlateEditor = PlateEditor>({
   versionSelection = 1,
   versionValue = 1,
   ...state
-}: Partial<PlateStoreState<E>> = {}) =>
+}: Partial<LateStoreState<E>> = {}) =>
   createAtomStore(
     {
       decorate,
@@ -53,7 +53,7 @@ export const createPlateStore = <E extends PlateEditor = PlateEditor>({
       versionSelection,
       versionValue,
       ...state,
-    } as PlateStoreState<E>,
+    } as LateStoreState<E>,
     {
       extend: (atoms) => ({
         trackedEditor: atom((get) => ({
@@ -74,45 +74,45 @@ export const createPlateStore = <E extends PlateEditor = PlateEditor>({
   );
 
 export const {
-  PlateProvider: PlateStoreProvider,
+  LateProvider: LateStoreProvider,
   plateStore,
-  usePlateStore,
-} = createPlateStore();
+  useLateStore,
+} = createLateStore();
 
-export interface UsePlateEditorStoreOptions {
+export interface UseLateEditorStoreOptions {
   debugHookName?: string;
 }
 
-export const usePlateEditorStore = (
+export const useLateEditorStore = (
   id?: string,
-  { debugHookName = 'usePlateEditorStore' }: UsePlateEditorStoreOptions = {}
+  { debugHookName = 'useLateEditorStore' }: UseLateEditorStoreOptions = {}
 ): JotaiStore => {
-  // Try to fetch the store from a Plate provider
-  const localStore = usePlateStore(id).store({ warnIfNoStore: false }) ?? null;
+  // Try to fetch the store from a Late provider
+  const localStore = useLateStore(id).store({ warnIfNoStore: false }) ?? null;
 
   /**
    * To preserve hook order, only use `localStore` if it was present on first
-   * render. This lets us call `usePlateControllerEditorStore` conditionally.
+   * render. This lets us call `useLateControllerEditorStore` conditionally.
    */
   const [localStoreExists] = React.useState(!!localStore);
 
-  // If no store was found, try to fetch the store from a PlateController
+  // If no store was found, try to fetch the store from a LateController
   const store = localStoreExists
     ? localStore
     : // eslint-disable-next-line react-hooks/rules-of-hooks
-      usePlateControllerEditorStore(id);
+      useLateControllerEditorStore(id);
 
   /**
    * If we still have no store, there are two possibilities.
    *
-   * Case 1: There is neither a Plate nor a PlateController above us in the
+   * Case 1: There is neither a Late nor a LateController above us in the
    * tree. In this case, throw an error, since calling the hook will never
    * work.
    *
-   * Case 2: There is a PlateController, but it has no active editor. In this
+   * Case 2: There is a LateController, but it has no active editor. In this
    * case, return a fallback store until an editor becomes active.
    */
-  const plateControllerExists = usePlateControllerExists();
+  const plateControllerExists = useLateControllerExists();
   const fallbackStore = React.useMemo(() => createStore(), []);
 
   if (!store) {
@@ -121,45 +121,45 @@ export const usePlateEditorStore = (
     }
 
     throw new Error(
-      `${debugHookName} must be used inside a Plate or PlateController`
+      `${debugHookName} must be used inside a Late or LateController`
     );
   }
 
   return store;
 };
 
-export const usePlateSelectors = (
+export const useLateSelectors = (
   id?: string,
-  options?: UsePlateEditorStoreOptions
+  options?: UseLateEditorStoreOptions
 ) => {
-  const store = usePlateEditorStore(id, {
-    debugHookName: 'usePlateSelectors',
+  const store = useLateEditorStore(id, {
+    debugHookName: 'useLateSelectors',
     ...options,
   });
 
-  return usePlateStore({ store }).get;
+  return useLateStore({ store }).get;
 };
 
-export const usePlateActions = (
+export const useLateActions = (
   id?: string,
-  options?: UsePlateEditorStoreOptions
+  options?: UseLateEditorStoreOptions
 ) => {
-  const store = usePlateEditorStore(id, {
-    debugHookName: 'usePlateActions',
+  const store = useLateEditorStore(id, {
+    debugHookName: 'useLateActions',
     ...options,
   });
 
-  return usePlateStore({ store }).set;
+  return useLateStore({ store }).set;
 };
 
-export const usePlateStates = (
+export const useLateStates = (
   id?: string,
-  options?: UsePlateEditorStoreOptions
+  options?: UseLateEditorStoreOptions
 ) => {
-  const store = usePlateEditorStore(id, {
-    debugHookName: 'usePlateStates',
+  const store = useLateEditorStore(id, {
+    debugHookName: 'useLateStates',
     ...options,
   });
 
-  return usePlateStore({ store }).use;
+  return useLateStore({ store }).use;
 };

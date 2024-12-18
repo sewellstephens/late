@@ -1,23 +1,23 @@
 ---
-title: Plate Core
+title: Late Core
 description: API reference for @sewellstephens/plate-core.
 ---
 
 ## API
 
-### createPlateEditor
+### createLateEditor
 
-Generates a new instance of a `PlateEditor`, initialized with a set of plugins and their configurations.
+Generates a new instance of a `LateEditor`, initialized with a set of plugins and their configurations.
 
 <APIParameters>
-  <APIItem name="options" type="CreatePlateEditorOptions<V, E>">
-    Options for creating the Plate editor.
+  <APIItem name="options" type="CreateLateEditorOptions<V, E>">
+    Options for creating the Late editor.
     <APISubList>
       <APISubListItem parent="options" name="id" type="any" optional>
         Unique identifier for the editor.
       </APISubListItem>
       <APISubListItem parent="options" name="editor" type="E" optional>
-        Initial editor without `withPlate`.
+        Initial editor without `withLate`.
       </APISubListItem>
       <APISubListItem parent="options" name="plugins" type="P[]" optional>
         An array of editor plugins.
@@ -42,7 +42,7 @@ Generates a new instance of a `PlateEditor`, initialized with a set of plugins a
         When `true`, it will normalize the initial `value` passed to the `editor`.
         - **Default:** `false`
       </APISubListItem>
-      <APISubListItem parent="options" name="rootPlugin" type="(plugin: AnyPlatePlugin) => AnyPlatePlugin" optional>
+      <APISubListItem parent="options" name="rootPlugin" type="(plugin: AnyLatePlugin) => AnyLatePlugin" optional>
         Function to configure the root plugin.
       </APISubListItem>
       <APISubListItem parent="options" name="api" type="object" optional>
@@ -89,75 +89,75 @@ Generates a new instance of a `PlateEditor`, initialized with a set of plugins a
 </APIParameters>
 
 <APIReturns>
-  An instance of `PlateEditor` with the specified plugins and settings applied.
+  An instance of `LateEditor` with the specified plugins and settings applied.
 </APIReturns>
 
 For more details on editor configuration, refer to the [Editor Configuration](/docs/editor) guide.
 
-### createPlatePlugin
+### createLatePlugin
 
-Creates a new Plate plugin with the given configuration, supporting extension, nested plugin manipulation, and runtime configuration.
+Creates a new Late plugin with the given configuration, supporting extension, nested plugin manipulation, and runtime configuration.
 
 <APIParameters>
-  <APIItem name="config" type="PlatePluginConfig<K, O, A, T> | ((editor: PlateEditor) => PlatePluginConfig<K, O, A, T>)">
+  <APIItem name="config" type="LatePluginConfig<K, O, A, T> | ((editor: LateEditor) => LatePluginConfig<K, O, A, T>)">
     The configuration object for the plugin, or a function that returns the configuration. If a function is provided, it will be executed when the plugin is resolved with the editor.
 
-    For details on the `PlatePluginConfig` type, refer to the [PlatePlugin API](/docs/api/core/plate-plugin#plugin-properties).
+    For details on the `LatePluginConfig` type, refer to the [LatePlugin API](/docs/api/core/plate-plugin#plugin-properties).
   </APIItem>
 </APIParameters>
 
 <APIReturns>
-  A new `PlatePlugin<PluginConfig<K, O, A, T>>` instance.
+  A new `LatePlugin<PluginConfig<K, O, A, T>>` instance.
 </APIReturns>
 
-### createTPlatePlugin
+### createTLatePlugin
 
-Explicitly typed version of `createPlatePlugin`.
+Explicitly typed version of `createLatePlugin`.
 
 <APIParameters>
-  <APIItem name="config" type="TPlatePluginConfig<C> | ((editor: PlateEditor) => TPlatePluginConfig<C>)">
+  <APIItem name="config" type="TLatePluginConfig<C> | ((editor: LateEditor) => TLatePluginConfig<C>)">
     The configuration object for the plugin, or a function that returns the configuration. This version requires an explicit type parameter `C` extending `AnyPluginConfig`.
 
-    For details on the `TPlatePluginConfig` type, refer to the [PlatePlugin API](/docs/api/core/plate-plugin#plugin-properties).
+    For details on the `TLatePluginConfig` type, refer to the [LatePlugin API](/docs/api/core/plate-plugin#plugin-properties).
   </APIItem>
 </APIParameters>
 
 <APIReturns>
-  A new `PlatePlugin<C>` instance.
+  A new `LatePlugin<C>` instance.
 </APIReturns>
 
-### toPlatePlugin
+### toLatePlugin
 
-Extends a SlatePlugin to create a React PlatePlugin.
+Extends a SlatePlugin to create a React LatePlugin.
 
 <APIParameters>
   <APIItem name="basePlugin" type="SlatePlugin<C>">
     The base SlatePlugin to be extended.
   </APIItem>
-  <APIItem name="extendConfig" type="PlatePluginConfig<C, EO, EA, ET> | ((ctx: PlatePluginContext<C>) => PlatePluginConfig<C, EO, EA, ET>)" optional>
-    A function or object that provides the extension configuration. If a function, it receives the plugin context and should return a partial PlatePlugin. If an object, it should be a partial PlatePlugin configuration.
+  <APIItem name="extendConfig" type="LatePluginConfig<C, EO, EA, ET> | ((ctx: LatePluginContext<C>) => LatePluginConfig<C, EO, EA, ET>)" optional>
+    A function or object that provides the extension configuration. If a function, it receives the plugin context and should return a partial LatePlugin. If an object, it should be a partial LatePlugin configuration.
   </APIItem>
 </APIParameters>
 
 <APIReturns>
-  A new `PlatePlugin` that combines the base SlatePlugin functionality with React-specific features defined in the extension configuration.
+  A new `LatePlugin` that combines the base SlatePlugin functionality with React-specific features defined in the extension configuration.
 </APIReturns>
 
-### toTPlatePlugin
+### toTLatePlugin
 
-Explicitly typed version of `toPlatePlugin`.
+Explicitly typed version of `toLatePlugin`.
 
 <APIParameters>
   <APIItem name="basePlugin" type="SlatePlugin<TContext>">
     The base SlatePlugin to be extended.
   </APIItem>
-  <APIItem name="extendConfig" type="ExtendPluginConfig<C> | ((ctx: PlatePluginContext<TContext>) => ExtendPluginConfig<C>)" optional>
+  <APIItem name="extendConfig" type="ExtendPluginConfig<C> | ((ctx: LatePluginContext<TContext>) => ExtendPluginConfig<C>)" optional>
     A function or object that provides the extension configuration. This version requires explicit type parameters for both the base plugin configuration (`TContext`) and the extension configuration (`C`).
   </APIItem>
 </APIParameters>
 a
 <APIReturns>
-  A new `PlatePlugin` with precise type control.
+  A new `LatePlugin` with precise type control.
 </APIReturns>
 
 ### useEditorPlugin
@@ -171,27 +171,27 @@ Get editor and plugin context.
 </APIParameters>
 
 <APIReturns>
-  A `PlatePluginContext` object containing:
+  A `LatePluginContext` object containing:
   <APISubList>
-    <APISubListItem parent="PlatePluginContext" name="editor" type="PlateEditor">
+    <APISubListItem parent="LatePluginContext" name="editor" type="LateEditor">
       The current editor instance.
     </APISubListItem>
-    <APISubListItem parent="PlatePluginContext" name="plugin" type="PlatePlugin">
+    <APISubListItem parent="LatePluginContext" name="plugin" type="LatePlugin">
       The plugin instance.
     </APISubListItem>
-    <APISubListItem parent="PlatePluginContext" name="getOption" type="function">
+    <APISubListItem parent="LatePluginContext" name="getOption" type="function">
       Function to get a specific option value.
     </APISubListItem>
-    <APISubListItem parent="PlatePluginContext" name="getOptions" type="function">
+    <APISubListItem parent="LatePluginContext" name="getOptions" type="function">
       Function to get all options for the plugin.
     </APISubListItem>
-    <APISubListItem parent="PlatePluginContext" name="setOption" type="function">
+    <APISubListItem parent="LatePluginContext" name="setOption" type="function">
       Function to set a specific option value.
     </APISubListItem>
-    <APISubListItem parent="PlatePluginContext" name="setOptions" type="function">
+    <APISubListItem parent="LatePluginContext" name="setOptions" type="function">
       Function to set multiple options.
     </APISubListItem>
-    <APISubListItem parent="PlatePluginContext" name="useOption" type="function">
+    <APISubListItem parent="LatePluginContext" name="useOption" type="function">
       Hook to subscribe to a specific option value in a React component.
     </APISubListItem>
   </APISubList>
@@ -207,7 +207,7 @@ Get the Slate editor reference without re-rendering.
   </APIItem>
 </APIParameters>
 <APIReturns>
-  A `PlateEditor` object, which is the Slate editor.
+  A `LateEditor` object, which is the Slate editor.
 </APIReturns>
 
 ### useEditorSelector
@@ -215,7 +215,7 @@ Get the Slate editor reference without re-rendering.
 Subscribe to a specific property of the editor.
 
 <APIParameters>
-  <APIItem name="selector" type="(editor: PlateEditor<V>, prev?: T) => T">
+  <APIItem name="selector" type="(editor: LateEditor<V>, prev?: T) => T">
     The selector function.
   </APIItem>
   <APIItem name="deps" type="DependencyList">
@@ -246,7 +246,7 @@ Get the Slate editor reference with re-rendering.
   </APIItem>
 </APIParameters>
 <APIReturns>
-  A `PlateEditor` object, which is the Slate editor.
+  A `LateEditor` object, which is the Slate editor.
 </APIReturns>
 
 ### useEditorReadOnly
@@ -345,5 +345,5 @@ Provides paragraph formatting functionality.
 ### EventEditorPlugin
 Manages editor events such as focus and blur.
 
-### PlateApiPlugin
-Provides the core API for Plate editor functionality.
+### LateApiPlugin
+Provides the core API for Late editor functionality.

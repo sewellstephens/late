@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { cn, withProps, withRef } from '@sewellstephens/cn';
-import { PlateElement } from '@sewellstephens/plate-common/react';
+import { LateElement } from '@sewellstephens/plate-common/react';
 import {
   useTableCellElement,
   useTableCellElementResizable,
@@ -12,7 +12,7 @@ import {
 import { ResizeHandle } from './resizable';
 
 export const TableCellElement = withRef<
-  typeof PlateElement,
+  typeof LateElement,
   {
     hideBorder?: boolean;
     isHeader?: boolean;
@@ -45,7 +45,7 @@ export const TableCellElement = withRef<
   const Cell = isHeader ? 'th' : 'td';
 
   return (
-    <PlateElement
+    <LateElement
       asChild
       className={cn(
         'relative h-full overflow-visible border-none bg-background p-0',
@@ -132,7 +132,7 @@ export const TableCellElement = withRef<
           </div>
         )}
       </Cell>
-    </PlateElement>
+    </LateElement>
   );
 });
 

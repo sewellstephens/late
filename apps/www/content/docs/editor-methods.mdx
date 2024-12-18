@@ -1,15 +1,15 @@
 ---
 title: Editor Methods
-description: Explore the various methods available for interacting with and customizing the Plate editor.
+description: Explore the various methods available for interacting with and customizing the Late editor.
 ---
 
-This guide covers the various methods available on the Plate editor instance.
+This guide covers the various methods available on the Late editor instance.
 
 ## Accessing the Editor
 
 How you access the editor instance depends on the context in which you need it.
 
-### Below Plate
+### Below Late
 
 Use one of these hooks:
 
@@ -51,18 +51,18 @@ const MyComponent = () => {
 - Using `useEditorState` will cause your component to re-render every time the user presses a key or changes the selection.
 - This may cause performance issues for large documents, or when re-rendering is particularly expensive.
 
-### Outside Plate
+### Outside Late
 
-To access the editor outside the `Plate` component or work with multiple editors, use the `PlateController` component:
+To access the editor outside the `Late` component or work with multiple editors, use the `LateController` component:
 
 ```ts
-import { PlateController } from '@sewellstephens/plate-common/react';
+import { LateController } from '@sewellstephens/plate-common/react';
 
 const App = () => (
-  <PlateController>
+  <LateController>
     <Toolbar />
     <MyEditor />
-  </PlateController>
+  </LateController>
 );
 
 const Toolbar = () => {
@@ -72,20 +72,20 @@ const Toolbar = () => {
 };
 ```
 
-`PlateController` manages active editors:
-- The first mounted editor is active by default (override with `primary={false}` on `Plate`).
+`LateController` manages active editors:
+- The first mounted editor is active by default (override with `primary={false}` on `Late`).
 - Focus changes the active editor.
 - An editor remains active until another is focused or it unmounts.
 
-Hooks like `useEditorRef` and `useEditorSelector` work with the active editor inside `PlateController`. If no editor is active, they return a fallback editor, which:
+Hooks like `useEditorRef` and `useEditorSelector` work with the active editor inside `LateController`. If no editor is active, they return a fallback editor, which:
 - Provides default values for queries.
 - Cannot be mutated.
 - Throws errors on state-changing operations.
 
 Fallback editor scenarios:
-- No mounted `Plate` components.
-- All `Plate` components are non-primary.
-- During `PlateContent` mounting.
+- No mounted `Late` components.
+- All `Late` components are non-primary.
+- During `LateContent` mounting.
 
 You can check if any editor is mounted using `useEditorMounted`:
 
@@ -229,12 +229,12 @@ Get the <Link href="https://github.com/udecode/zustand-x">zustand-x</Link> store
 const store = editor.useOptionsStore(FindReplacePlugin);
 ```
 
-## Plate Store
+## Late Store
 
-### setPlateState
+### setLateState
 
-Update the global Plate state:
+Update the global Late state:
 
 ```ts
-editor.setPlateState('readOnly', true);
+editor.setLateState('readOnly', true);
 ```

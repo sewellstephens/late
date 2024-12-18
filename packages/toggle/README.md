@@ -1,11 +1,11 @@
-# Plate toggle plugin
+# Late toggle plugin
 
-This package implements the toggle plugin for Plate.
+This package implements the toggle plugin for Late.
 It's similar to the indent list plugin, in that it relies on the indent of siblings.
 
 ## Documentation
 
-Check out [Toggle](https://platejs.org/docs/toggle).
+Check out [Toggle](https://sewellstephens.github.io/late/docs/toggle).
 
 ## Ideas to improve this plugin
 

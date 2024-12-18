@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { cn, withRef } from '@sewellstephens/cn';
-import { PlateElement } from '@sewellstephens/plate-common/react';
+import { LateElement } from '@sewellstephens/plate-common/react';
 import { useFocused, useSelected } from 'slate-react';
 
-export const HrElement = withRef<typeof PlateElement>(
+export const HrElement = withRef<typeof LateElement>(
   ({ className, nodeProps, ...props }, ref) => {
     const { children } = props;
 
@@ -12,7 +12,7 @@ export const HrElement = withRef<typeof PlateElement>(
     const focused = useFocused();
 
     return (
-      <PlateElement ref={ref} {...props}>
+      <LateElement ref={ref} {...props}>
         <div className="py-6" contentEditable={false}>
           <hr
             {...nodeProps}
@@ -24,7 +24,7 @@ export const HrElement = withRef<typeof PlateElement>(
           />
         </div>
         {children}
-      </PlateElement>
+      </LateElement>
     );
   }
 );

@@ -1,8 +1,8 @@
-import { createPlatePlugin } from '../../plugin';
+import { createLatePlugin } from '../../plugin';
 import { eventEditorActions, eventEditorSelectors } from './EventEditorStore';
 import { BLUR_EDITOR_EVENT, FOCUS_EDITOR_EVENT } from './useFocusEditorEvents';
 
-export const EventEditorPlugin = createPlatePlugin({
+export const EventEditorPlugin = createLatePlugin({
   handlers: {
     onBlur: ({ editor }) => {
       const focus = eventEditorSelectors.focus();

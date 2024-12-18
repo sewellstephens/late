@@ -3,7 +3,7 @@
 import type { SlateEditor } from '@sewellstephens/plate-common';
 
 import { ParagraphPlugin } from '@sewellstephens/plate-common';
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { createDataTransfer, jsx } from '@sewellstephens/plate-test-utils';
 
 import { CodeBlockPlugin } from '../react/CodeBlockPlugin';
@@ -13,7 +13,7 @@ jsx;
 const editorTest = (input: any, data: DataTransfer, expected: any) => {
   const plugins = [ParagraphPlugin, CodeBlockPlugin];
 
-  const editor = createPlateEditor({
+  const editor = createLateEditor({
     editor: input,
     plugins,
   });

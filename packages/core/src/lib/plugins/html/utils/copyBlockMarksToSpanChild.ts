@@ -4,7 +4,7 @@ import { traverseHtmlElements } from './traverseHtmlElements';
 
 /**
  * Set HTML blocks mark styles to a new child span element if any. This allows
- * Plate to use block marks.
+ * Late to use block marks.
  */
 export const copyBlockMarksToSpanChild = (rootNode: Node) => {
   traverseHtmlElements(rootNode, (element) => {

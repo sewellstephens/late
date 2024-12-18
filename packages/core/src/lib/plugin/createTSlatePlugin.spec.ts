@@ -1,7 +1,7 @@
 import type { NodeComponent } from '../../react';
 import type { PluginConfig } from './BasePlugin';
 
-import { createTPlatePlugin } from '../../react/plugin/createPlatePlugin';
+import { createTLatePlugin } from '../../react/plugin/createLatePlugin';
 import { resolveCreatePluginTest, resolvePluginTest } from '../utils';
 import { createTSlatePlugin } from './createSlatePlugin';
 
@@ -17,7 +17,7 @@ describe('createTSlatePlugin', () => {
     }
 
     const basePlugin = resolvePluginTest(
-      createTPlatePlugin<PluginConfig<'testPlugin', TestOptions, TestApi>>({
+      createTLatePlugin<PluginConfig<'testPlugin', TestOptions, TestApi>>({
         key: 'testPlugin',
         node: { type: 'test' },
         options: {

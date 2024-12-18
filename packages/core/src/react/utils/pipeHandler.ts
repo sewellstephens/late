@@ -2,7 +2,7 @@ import type React from 'react';
 
 import type { TEditableProps } from '@sewellstephens/slate-react';
 
-import type { PlateEditor } from '../editor/PlateEditor';
+import type { LateEditor } from '../editor/LateEditor';
 import type { DOMHandlers } from '../plugin/DOMHandlers';
 
 import { getEditorPlugin } from '../plugin/getEditorPlugin';
@@ -72,7 +72,7 @@ export const isEventHandled = <
  *   including slate internal handler.
  */
 export const pipeHandler = <K extends keyof DOMHandlers>(
-  editor: PlateEditor,
+  editor: LateEditor,
   {
     editableProps,
     handlerKey,

@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - `createMediaPlugin` -> `MediaPlugin`
   - `FloatingMediaUrlInput`, `submitFloatingMedia` rename option `pluginKey` -> `plugin`
   - `insertMediaEmbed` remove `key` option
@@ -13,25 +13,25 @@
 
 ### Patch Changes
 
-- [#3446](https://github.com/udecode/plate/pull/3446) by [@felixfeng33](https://github.com/felixfeng33) – fix: typo `insertFilePlaceholer` => `insertFilePlaceholder`.
+- [#3446](https://github.com/sewellstephens/late/pull/3446) by [@felixfeng33](https://github.com/felixfeng33) – fix: typo `insertFilePlaceholer` => `insertFilePlaceholder`.
 
 ## 36.2.2
 
 ### Patch Changes
 
-- [#3380](https://github.com/udecode/plate/pull/3380) by [@Tassil0](https://github.com/Tassil0) – feat: `parseTwitterUrl` accept x.com
+- [#3380](https://github.com/sewellstephens/late/pull/3380) by [@Tassil0](https://github.com/Tassil0) – feat: `parseTwitterUrl` accept x.com
 
 ## 36.2.0
 
 ### Minor Changes
 
-- [#3384](https://github.com/udecode/plate/pull/3384) by [@12joan](https://github.com/12joan) – Remove default `align` from `useMediaState`, allowing components to choose their own default `align`
+- [#3384](https://github.com/sewellstephens/late/pull/3384) by [@12joan](https://github.com/12joan) – Remove default `align` from `useMediaState`, allowing components to choose their own default `align`
 
 ## 36.0.10
 
 ### Patch Changes
 
-- [`1bc0971774fbfb770780c9bdb94746a6f0f196a0`](https://github.com/udecode/plate/commit/1bc0971774fbfb770780c9bdb94746a6f0f196a0) by [@12joan](https://github.com/12joan) –
+- [`1bc0971774fbfb770780c9bdb94746a6f0f196a0`](https://github.com/sewellstephens/late/commit/1bc0971774fbfb770780c9bdb94746a6f0f196a0) by [@12joan](https://github.com/12joan) –
   - Require the `url` property returned from URL parsers passed to `useMediaState` to be a valid URL and have protocol `https:` or `http:`, if present.
   - In the return value of `useMediaState`, rename `url` to `unsafeUrl` to indicate that it has not been sanitised.
 
@@ -41,25 +41,25 @@
 
 ### Minor Changes
 
-- [#3289](https://github.com/udecode/plate/pull/3289) by [@felixfeng33](https://github.com/felixfeng33) – Add image preview
+- [#3289](https://github.com/sewellstephens/late/pull/3289) by [@felixfeng33](https://github.com/felixfeng33) – Add image preview
 
 ## 34.0.2
 
 ### Patch Changes
 
-- [#3253](https://github.com/udecode/plate/pull/3253) by [@hakimLyon](https://github.com/hakimLyon) – Fix: useMediaState
+- [#3253](https://github.com/sewellstephens/late/pull/3253) by [@hakimLyon](https://github.com/hakimLyon) – Fix: useMediaState
 
 ## 34.0.0
 
 ### Minor Changes
 
-- [#3241](https://github.com/udecode/plate/pull/3241) by [@felixfeng33](https://github.com/felixfeng33) – Add plugins: `mediaPlaceholder`, `video`,`audio` and `file`
+- [#3241](https://github.com/sewellstephens/late/pull/3241) by [@felixfeng33](https://github.com/felixfeng33) – Add plugins: `mediaPlaceholder`, `video`,`audio` and `file`
 
 ## 33.0.2
 
 ### Patch Changes
 
-- [#3187](https://github.com/udecode/plate/pull/3187) by [@zbeyens](https://github.com/zbeyens) – Fix types
+- [#3187](https://github.com/sewellstephens/late/pull/3187) by [@zbeyens](https://github.com/zbeyens) – Fix types
 
 ## 33.0.0
 
@@ -71,7 +71,7 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/udecode/plate/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -93,7 +93,7 @@
 
 ### Patch Changes
 
-- [#2763](https://github.com/udecode/plate/pull/2763) by [@12joan](https://github.com/12joan) – Update Zustood imports
+- [#2763](https://github.com/sewellstephens/late/pull/2763) by [@12joan](https://github.com/12joan) – Update Zustood imports
 
 ## 25.0.1
 
@@ -101,7 +101,7 @@
 
 ### Patch Changes
 
-- [#2719](https://github.com/udecode/plate/pull/2719) by [@12joan](https://github.com/12joan) – Pass additional options given to insertMedia to insertImage or insertMediaEmbed
+- [#2719](https://github.com/sewellstephens/late/pull/2719) by [@12joan](https://github.com/12joan) – Pass additional options given to insertMedia to insertImage or insertMediaEmbed
 
 ## 24.5.2
 
@@ -109,7 +109,7 @@
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -143,7 +143,7 @@
 
 ### Major Changes
 
-- [#2537](https://github.com/udecode/plate/pull/2537) by [@haydencarlson](https://github.com/haydencarlson) – `MediaEmbedElement` is now more headless with a smaller bundle size.
+- [#2537](https://github.com/sewellstephens/late/pull/2537) by [@haydencarlson](https://github.com/haydencarlson) – `MediaEmbedElement` is now more headless with a smaller bundle size.
   Update the following components:
 
   - `npx @sewellstephens/plate-ui@latest add media-embed-element`
@@ -178,12 +178,12 @@
 
 ### Major Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
   - `MediaEmbed`
 
 ### Minor Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – New exports:
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – New exports:
   - `insertMedia`
   - `useMediaState`
   - `useMediaToolbarButton`
@@ -208,7 +208,7 @@
 
 ### Patch Changes
 
-- [#2366](https://github.com/udecode/plate/pull/2366) by [@zbeyens](https://github.com/zbeyens) –
+- [#2366](https://github.com/sewellstephens/late/pull/2366) by [@zbeyens](https://github.com/zbeyens) –
   - Fix freeze on image upload: This patch adds a check to ensure the given URL is valid before parsing and extracting video data using `js-video-url-parser` in the `parseVideoUrl` function.
   - Fix insert CSV: This patch modifies the logic in the `withImageUpload` function to ensure that it processes file uploads only if there is no plaintext present.
 
@@ -220,13 +220,13 @@
 
 ### Minor Changes
 
-- [#2311](https://github.com/udecode/plate/pull/2311) by [@haydencarlson](https://github.com/haydencarlson) – Added options for twitter embeds
+- [#2311](https://github.com/sewellstephens/late/pull/2311) by [@haydencarlson](https://github.com/haydencarlson) – Added options for twitter embeds
 
 ## 20.5.0
 
 ### Minor Changes
 
-- [#2302](https://github.com/udecode/plate/pull/2302) by [@zbeyens](https://github.com/zbeyens) –
+- [#2302](https://github.com/sewellstephens/late/pull/2302) by [@zbeyens](https://github.com/zbeyens) –
   - Remove depedency on `re-resizable` in favor of new `@sewellstephens/resizable` package.
 
 ## 20.4.0
@@ -235,7 +235,7 @@
 
 ### Patch Changes
 
-- [#2285](https://github.com/udecode/plate/pull/2285) by [@12joan](https://github.com/12joan) – Ignore `defaultPrevented` keydown events
+- [#2285](https://github.com/sewellstephens/late/pull/2285) by [@12joan](https://github.com/12joan) – Ignore `defaultPrevented` keydown events
 
 ## 20.0.0
 
@@ -243,9 +243,9 @@
 
 ### Patch Changes
 
-- [#2225](https://github.com/udecode/plate/pull/2225) by [@TomMorane](https://github.com/TomMorane) – fix: hotkey
+- [#2225](https://github.com/sewellstephens/late/pull/2225) by [@TomMorane](https://github.com/TomMorane) – fix: hotkey
 
-- [#2220](https://github.com/udecode/plate/pull/2220) by [@TomMorane](https://github.com/TomMorane) – fix: Cannot read properties of null (reading 'toString') when image width is null
+- [#2220](https://github.com/sewellstephens/late/pull/2220) by [@TomMorane](https://github.com/TomMorane) – fix: Cannot read properties of null (reading 'toString') when image width is null
 
 ## 19.5.0
 
@@ -271,7 +271,7 @@
 
 ### Patch Changes
 
-- [`37a3c03`](https://github.com/udecode/plate/commit/37a3c038a4ac298a12013a9ba46dacfa57415e4f) by [@zbeyens](https://github.com/zbeyens) –
+- [`37a3c03`](https://github.com/sewellstephens/late/commit/37a3c038a4ac298a12013a9ba46dacfa57415e4f) by [@zbeyens](https://github.com/zbeyens) –
   - fix: `parseTwitterUrl` undefined check on `url`
 
 ## 18.13.0
@@ -300,7 +300,7 @@
 
 ### Minor Changes
 
-- [#1832](https://github.com/udecode/plate/pull/1832) by [@zbeyens](https://github.com/zbeyens) –
+- [#1832](https://github.com/sewellstephens/late/pull/1832) by [@zbeyens](https://github.com/zbeyens) –
   - Fixes https://github.com/udecode/editor-protocol/issues/79
   - new option `disableCaption`
   - image and media-embed plugins use `getWithSelectionCaption`
@@ -317,13 +317,13 @@
 
 ### Patch Changes
 
-- [#1754](https://github.com/udecode/plate/pull/1754) by [@haydencarlson](https://github.com/haydencarlson) – Fixed twitter embed loading when using multiple plate instances
+- [#1754](https://github.com/sewellstephens/late/pull/1754) by [@haydencarlson](https://github.com/haydencarlson) – Fixed twitter embed loading when using multiple plate instances
 
 ## 16.0.0
 
 ### Major Changes
 
-- [#1721](https://github.com/udecode/plate/pull/1721) by [@zbeyens](https://github.com/zbeyens) –
+- [#1721](https://github.com/sewellstephens/late/pull/1721) by [@zbeyens](https://github.com/zbeyens) –
   - removed:
     - `useImageElement` for `useElement`
     - `MediaEmbedUrlInput` for `FloatingMediaUrlInput`
@@ -337,7 +337,7 @@
 
 ### Minor Changes
 
-- [#1721](https://github.com/udecode/plate/pull/1721) by [@zbeyens](https://github.com/zbeyens) –
+- [#1721](https://github.com/sewellstephens/late/pull/1721) by [@zbeyens](https://github.com/zbeyens) –
 
   - `createMediaEmbedPlugin` default options:
 

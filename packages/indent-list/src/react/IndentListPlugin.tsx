@@ -1,8 +1,8 @@
 import type { ExtendConfig } from '@sewellstephens/plate-common';
 
 import {
-  type PlateRenderElementProps,
-  toTPlatePlugin,
+  type LateRenderElementProps,
+  toTLatePlugin,
 } from '@sewellstephens/plate-common/react';
 
 import {
@@ -19,8 +19,8 @@ export type IndentListConfig = ExtendConfig<
       string,
       {
         isOrdered?: boolean;
-        liComponent?: React.FC<PlateRenderElementProps>;
-        markerComponent?: React.FC<Omit<PlateRenderElementProps, 'children'>>;
+        liComponent?: React.FC<LateRenderElementProps>;
+        markerComponent?: React.FC<Omit<LateRenderElementProps, 'children'>>;
         type: string;
       }
     >;
@@ -28,7 +28,7 @@ export type IndentListConfig = ExtendConfig<
 >;
 
 /** Enables support for indented lists with React-specific features. */
-export const IndentListPlugin = toTPlatePlugin<IndentListConfig>(
+export const IndentListPlugin = toTLatePlugin<IndentListConfig>(
   BaseIndentListPlugin,
   {
     handlers: {

@@ -19,7 +19,7 @@ import {
   useEditorRef,
   useEditorSelector,
   useEventEditorSelectors,
-  usePlateSelectors,
+  useLateSelectors,
 } from '@sewellstephens/plate-common';
 import { createVirtualRef } from '@sewellstephens/plate-floating';
 
@@ -116,7 +116,7 @@ export function Combobox({
     (editor) => !!editor.selection,
     []
   );
-  const editorId = usePlateSelectors().id();
+  const editorId = useLateSelectors().id();
 
   useEffect(() => {
     comboboxActions.setComboboxById({

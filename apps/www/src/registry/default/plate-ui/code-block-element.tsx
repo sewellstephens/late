@@ -4,19 +4,19 @@ import React from 'react';
 
 import { cn, withRef } from '@sewellstephens/cn';
 import { useCodeBlockElementState } from '@sewellstephens/plate-code-block/react';
-import { PlateElement } from '@sewellstephens/plate-common/react';
+import { LateElement } from '@sewellstephens/plate-common/react';
 
 import { CodeBlockCombobox } from './code-block-combobox';
 
 import './code-block-element.css';
 
-export const CodeBlockElement = withRef<typeof PlateElement>(
+export const CodeBlockElement = withRef<typeof LateElement>(
   ({ children, className, ...props }, ref) => {
     const { element } = props;
     const state = useCodeBlockElementState({ element });
 
     return (
-      <PlateElement
+      <LateElement
         className={cn('relative py-1', state.className, className)}
         ref={ref}
         {...props}
@@ -33,7 +33,7 @@ export const CodeBlockElement = withRef<typeof PlateElement>(
             <CodeBlockCombobox />
           </div>
         )}
-      </PlateElement>
+      </LateElement>
     );
   }
 );

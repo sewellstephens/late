@@ -7,7 +7,7 @@ description: Copy paste from HTML to Slate.
 
 <PackageInfo>
 
-Many Plate plugins include HTML deserialization rules. These rules define how HTML elements and styles are mapped to Plate's node types and attributes.
+Many Late plugins include HTML deserialization rules. These rules define how HTML elements and styles are mapped to Late's node types and attributes.
 
 </PackageInfo>
 
@@ -85,7 +85,7 @@ Here's a comprehensive list of plugins that support HTML deserialization, along 
 
 Plugins can define various properties to control HTML deserialization:
 
-- `parse`: A function to parse an HTML element into a Plate node
+- `parse`: A function to parse an HTML element into a Late node
 - `query`: A function that determines if the deserializer should be applied
 - `rules`: An array of rule objects that define valid HTML elements and attributes
 - `isElement`: Indicates if the plugin deserializes elements
@@ -184,14 +184,14 @@ import { HtmlReactPlugin } from '@sewellstephens/plate-html/react';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 
-const editor = createPlateEditor({ 
+const editor = createLateEditor({ 
   plugins: [
     HtmlReactPlugin
     // all plugins that you want to serialize
   ],
   override: {
     // do not forget to add your custom components, otherwise it won't work
-    components: createPlateUI(),
+    components: createLateUI(),
   },
 });
 

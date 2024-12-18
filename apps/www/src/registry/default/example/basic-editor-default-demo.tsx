@@ -1,17 +1,17 @@
 import React from 'react';
 
 import {
-  Plate,
-  PlateContent,
-  usePlateEditor,
+  Late,
+  LateContent,
+  useLateEditor,
 } from '@sewellstephens/plate-common/react';
 
 export default function BasicEditorDefaultDemo() {
-  const editor = usePlateEditor();
+  const editor = useLateEditor();
 
   return (
-    <Plate editor={editor}>
-      <PlateContent placeholder="Type..." />
-    </Plate>
+    <Late editor={editor}>
+      <LateContent placeholder="Type..." />
+    </Late>
   );
 }

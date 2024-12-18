@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - Remove `onKeyDownToggleElement`, use shortcuts instead.
   - Remove `onKeyDownToggleMark`, use shortcuts instead.
 
@@ -24,19 +24,19 @@
 
 ### Minor Changes
 
-- [#3339](https://github.com/udecode/plate/pull/3339) by [@felixfeng33](https://github.com/felixfeng33) – Add `blockSelectedIds`,`hasBlockSelected`,`isBlockSelected` utils.
+- [#3339](https://github.com/sewellstephens/late/pull/3339) by [@felixfeng33](https://github.com/felixfeng33) – Add `blockSelectedIds`,`hasBlockSelected`,`isBlockSelected` utils.
 
 ## 35.3.2
 
 ### Patch Changes
 
-- [#3333](https://github.com/udecode/plate/pull/3333) by [@yf-yang](https://github.com/yf-yang) – fix: omit plate properties from createNodeHOC props
+- [#3333](https://github.com/sewellstephens/late/pull/3333) by [@yf-yang](https://github.com/yf-yang) – fix: omit plate properties from createNodeHOC props
 
 ## 34.0.5
 
 ### Patch Changes
 
-- [`1b6917cb95947779d161db2302078280245c91b3`](https://github.com/udecode/plate/commit/1b6917cb95947779d161db2302078280245c91b3) by [@felixfeng33](https://github.com/felixfeng33) – Check if the user has installed selection plugin for `addSelectedRow`.
+- [`1b6917cb95947779d161db2302078280245c91b3`](https://github.com/sewellstephens/late/commit/1b6917cb95947779d161db2302078280245c91b3) by [@felixfeng33](https://github.com/felixfeng33) – Check if the user has installed selection plugin for `addSelectedRow`.
 
 ## 34.0.4
 
@@ -44,7 +44,7 @@
 
 ### Patch Changes
 
-- [#3133](https://github.com/udecode/plate/pull/3133) by [@PaulSinghDev](https://github.com/PaulSinghDev) – `useFormInputProps`: Generic form input props inside an editor
+- [#3133](https://github.com/sewellstephens/late/pull/3133) by [@PaulSinghDev](https://github.com/PaulSinghDev) – `useFormInputProps`: Generic form input props inside an editor
 
 ## 34.0.1
 
@@ -52,13 +52,13 @@
 
 ### Minor Changes
 
-- [#3241](https://github.com/udecode/plate/pull/3241) by [@felixfeng33](https://github.com/felixfeng33) – Add `addSelectedRow` which depends on `blockSelection` plugin
+- [#3241](https://github.com/sewellstephens/late/pull/3241) by [@felixfeng33](https://github.com/felixfeng33) – Add `addSelectedRow` which depends on `blockSelection` plugin
 
 ## 33.0.4
 
 ### Patch Changes
 
-- [#3199](https://github.com/udecode/plate/pull/3199) by [@zbeyens](https://github.com/zbeyens) – Fix `PlateElementProps` type
+- [#3199](https://github.com/sewellstephens/late/pull/3199) by [@zbeyens](https://github.com/zbeyens) – Fix `LateElementProps` type
 
 ## 33.0.3
 
@@ -70,7 +70,7 @@
 
 ### Minor Changes
 
-- [#3155](https://github.com/udecode/plate/pull/3155) by [@felixfeng33](https://github.com/felixfeng33) – Move `moveSelectionByOffset` from `@sewellstephens/plate-mention` to `@sewellstephens/plate-utils`
+- [#3155](https://github.com/sewellstephens/late/pull/3155) by [@felixfeng33](https://github.com/felixfeng33) – Move `moveSelectionByOffset` from `@sewellstephens/plate-mention` to `@sewellstephens/plate-utils`
 
 ## 31.3.2
 
@@ -90,7 +90,7 @@
 
 ### Major Changes
 
-- [#2829](https://github.com/udecode/plate/pull/2829) by [@zbeyens](https://github.com/zbeyens) –
+- [#2829](https://github.com/sewellstephens/late/pull/2829) by [@zbeyens](https://github.com/zbeyens) –
   - Moved `withProps` to `@sewellstephens/cn`
   - Moved `PortalBody`, `Text`, `Box`, `createPrimitiveComponent`, `createSlotComponent`, `withProviders` to `@sewellstephens/react-utils`
   - Removed `getRootProps` (unused)
@@ -99,7 +99,7 @@
 
 ### Patch Changes
 
-- [#2816](https://github.com/udecode/plate/pull/2816) by [@12joan](https://github.com/12joan) –
+- [#2816](https://github.com/sewellstephens/late/pull/2816) by [@12joan](https://github.com/12joan) –
   - Replace `useEdtiorState` with `useEditorSelector`
 
 ## 27.0.3
@@ -114,13 +114,13 @@
 
 ### Patch Changes
 
-- [#2708](https://github.com/udecode/plate/pull/2708) by [@12joan](https://github.com/12joan) – Do not re-render placeholder on every editor change
+- [#2708](https://github.com/sewellstephens/late/pull/2708) by [@12joan](https://github.com/12joan) – Do not re-render placeholder on every editor change
 
 ## 24.4.0
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -146,9 +146,9 @@
 
 ### Minor Changes
 
-- [#2593](https://github.com/udecode/plate/pull/2593) by [@zbeyens](https://github.com/zbeyens) –
+- [#2593](https://github.com/sewellstephens/late/pull/2593) by [@zbeyens](https://github.com/zbeyens) –
   - New prop in `createPrimitiveComponent`: `setProps` where the first parameter is the props returned by the "props hook". Returned attributes are passed to the component. You can use this prop to merge or override all props.
-  - Plate components `className` and `style` props are now merged with the "props hook" ones if defined. To override instead of merging, use `setProps`.
+  - Late components `className` and `style` props are now merged with the "props hook" ones if defined. To override instead of merging, use `setProps`.
 
 ## 23.6.0
 
@@ -164,7 +164,7 @@
 
 ### Major Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Upgraded peer dependencies:
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Upgraded peer dependencies:
   - `slate-react: >=0.95.0`
     Removed:
   - `useElementPrpos`
@@ -174,9 +174,9 @@
 
 ### Minor Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – New components:
-  - `PlateElement`: Headless element component
-  - `PlateLeaf`: Headless leaf component
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – New components:
+  - `LateElement`: Headless element component
+  - `LateLeaf`: Headless leaf component
   - `Box`: Slot div component
   - `Text`: Slot text component
   - `PortalBody`
@@ -187,7 +187,7 @@
     New functions:
   - `getRootProps`
   - `createSlotComponent`: Merges its props onto its immediate child. https://www.radix-ui.com/docs/primitives/utilities/slot
-  - `createPrimitiveComponent`: Primitive component factory used by most Plate components. It uses hooks for managing state and props, and forwards references to child components.
+  - `createPrimitiveComponent`: Primitive component factory used by most Late components. It uses hooks for managing state and props, and forwards references to child components.
     Component props:
   - `asChild`: If true, the component will be rendered as a `Slot` {@link https://www.radix-ui.com/docs/primitives/utilities/slot}.
   - `options`: Options passed to the state hook.
@@ -229,6 +229,6 @@
 
 ### Patch Changes
 
-- [#2285](https://github.com/udecode/plate/pull/2285) by [@12joan](https://github.com/12joan) – Ignore `defaultPrevented` keydown events
+- [#2285](https://github.com/sewellstephens/late/pull/2285) by [@12joan](https://github.com/12joan) – Ignore `defaultPrevented` keydown events
 
 ## 20.0.0

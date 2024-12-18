@@ -2,7 +2,7 @@ import { BlockquotePlugin } from '@sewellstephens/plate-block-quote/react';
 import { CodeBlockPlugin } from '@sewellstephens/plate-code-block/react';
 import {
   ParagraphPlugin,
-  createPlatePlugin,
+  createLatePlugin,
 } from '@sewellstephens/plate-common/react';
 import { HeadingPlugin } from '@sewellstephens/plate-heading/react';
 
@@ -14,7 +14,7 @@ import { HeadingPlugin } from '@sewellstephens/plate-heading/react';
  * - Heading
  * - Paragraph
  */
-export const BasicElementsPlugin = createPlatePlugin({
+export const BasicElementsPlugin = createLatePlugin({
   key: 'basicElements',
   plugins: [BlockquotePlugin, CodeBlockPlugin, HeadingPlugin, ParagraphPlugin],
 });

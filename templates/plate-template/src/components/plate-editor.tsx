@@ -1,6 +1,6 @@
 'use client';
 
-import { createPlugins, Plate } from '@sewellstephens/plate-common';
+import { createPlugins, Late } from '@sewellstephens/plate-common';
 
 import { Editor } from '@/components/plate-ui/editor';
 
@@ -16,10 +16,10 @@ const initialValue = [
   },
 ];
 
-export function PlateEditor() {
+export function LateEditor() {
   return (
-    <Plate plugins={plugins} initialValue={initialValue}>
+    <Late plugins={plugins} initialValue={initialValue}>
       <Editor placeholder="Type your message here." />
-    </Plate>
+    </Late>
   );
 }

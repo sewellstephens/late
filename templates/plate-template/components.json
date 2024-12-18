@@ -1,5 +1,5 @@
 {
-  "$schema": "https://platejs.org/schema.json",
+  "$schema": "https://sewellstephens.github.io/late/schema.json",
   "style": "default",
   "rsc": true,
   "tailwind": {

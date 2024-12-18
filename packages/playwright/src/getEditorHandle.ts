@@ -1,12 +1,12 @@
 import type { Locator, Page } from '@playwright/test';
-import type { PlateEditor } from '@sewellstephens/plate-common/react';
+import type { LateEditor } from '@sewellstephens/plate-common/react';
 
 import type { EditorHandle } from './types';
 
 import { getEditable } from './getEditable';
 import { getAdapter } from './internal/getAdapter';
 
-export const getEditorHandle = async <E extends PlateEditor = PlateEditor>(
+export const getEditorHandle = async <E extends LateEditor = LateEditor>(
   page: Page,
   editable?: Locator
 ): Promise<EditorHandle<E>> => {
@@ -51,7 +51,7 @@ export const getEditorHandle = async <E extends PlateEditor = PlateEditor>(
 
       if (!editor) {
         throw new Error(
-          'getEditorHandle: could not get the editor instance for the editable. Ensure that <PlatePlaywrightAdapter /> is rendered as a child of the Plate editor.'
+          'getEditorHandle: could not get the editor instance for the editable. Ensure that <LatePlaywrightAdapter /> is rendered as a child of the Late editor.'
         );
       }
 

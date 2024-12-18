@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { withRef, withVariants } from '@sewellstephens/cn';
-import { PlateElement } from '@sewellstephens/plate-common/react';
+import { LateElement } from '@sewellstephens/plate-common/react';
 import { cva } from 'class-variance-authority';
 
 const headingVariants = cva('', {
@@ -21,7 +21,7 @@ const headingVariants = cva('', {
   },
 });
 
-const HeadingElementVariants = withVariants(PlateElement, headingVariants, [
+const HeadingElementVariants = withVariants(LateElement, headingVariants, [
   'isFirstBlock',
   'variant',
 ]);

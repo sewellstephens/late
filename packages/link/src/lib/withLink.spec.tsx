@@ -1,6 +1,6 @@
 /** @jsx jsx */
 
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
 import { LinkPlugin } from './LinkPlugin';
@@ -28,7 +28,7 @@ jsx;
 const url = 'http://google.com';
 
 const createEditor = (editor: any) =>
-  createPlateEditor({
+  createLateEditor({
     editor,
     plugins: [LinkPlugin],
   });
@@ -393,7 +393,7 @@ describe('withLink', () => {
         ) as any;
 
         it('should insert link', () => {
-          const editor = createPlateEditor({
+          const editor = createLateEditor({
             editor: input,
             plugins: [
               LinkPlugin.configure({
@@ -501,7 +501,7 @@ describe('withLink', () => {
 
       it('should insert link', () => {
         const createModifiedEditor = (editor: any) =>
-          createPlateEditor({
+          createLateEditor({
             editor,
             plugins: [
               LinkPlugin.configure({

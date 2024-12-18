@@ -4,14 +4,14 @@ import type { TEditableProps } from '@sewellstephens/slate-react';
 
 import { DefaultElement } from 'slate-react';
 
-import type { PlateEditor } from '../editor/PlateEditor';
+import type { LateEditor } from '../editor/LateEditor';
 
 import { pipeInjectNodeProps } from '../../lib';
 import { type RenderElement, pluginRenderElement } from './pluginRenderElement';
 
 /** @see {@link RenderElement} */
 export const pipeRenderElement = (
-  editor: PlateEditor,
+  editor: LateEditor,
   renderElementProp?: TEditableProps['renderElement']
 ): TEditableProps['renderElement'] => {
   const renderElements: RenderElement[] = [];

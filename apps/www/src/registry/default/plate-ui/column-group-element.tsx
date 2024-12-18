@@ -4,7 +4,7 @@ import type { TColumnElement } from '@sewellstephens/plate-layout';
 
 import { cn, withRef } from '@sewellstephens/cn';
 import {
-  PlateElement,
+  LateElement,
   useElement,
   useRemoveNodeButton,
 } from '@sewellstephens/plate-common/react';
@@ -21,14 +21,14 @@ import { Button } from './button';
 import { Popover, PopoverAnchor, PopoverContent } from './popover';
 import { Separator } from './separator';
 
-export const ColumnGroupElement = withRef<typeof PlateElement>(
+export const ColumnGroupElement = withRef<typeof LateElement>(
   ({ children, className, ...props }, ref) => {
     return (
-      <PlateElement className={cn(className, 'my-2')} ref={ref} {...props}>
+      <LateElement className={cn(className, 'my-2')} ref={ref} {...props}>
         <ColumnFloatingToolbar>
           <div className={cn('flex size-full gap-4 rounded')}>{children}</div>
         </ColumnFloatingToolbar>
-      </PlateElement>
+      </LateElement>
     );
   }
 );

@@ -41,13 +41,13 @@ import type {
   SlatePluginContext,
   WithAnyKey,
 } from '../../lib';
-import type { PlateEditor } from '../editor/PlateEditor';
+import type { LateEditor } from '../editor/LateEditor';
 import type { DOMHandlers } from './DOMHandlers';
-import type { PlateRenderElementProps } from './PlateRenderElementProps';
-import type { PlateRenderLeafProps } from './PlateRenderLeafProps';
+import type { LateRenderElementProps } from './LateRenderElementProps';
+import type { LateRenderLeafProps } from './LateRenderLeafProps';
 
-/** The `PlatePlugin` interface is a React interface for all plugins. */
-export type PlatePlugin<C extends AnyPluginConfig = PluginConfig> = {
+/** The `LatePlugin` interface is a React interface for all plugins. */
+export type LatePlugin<C extends AnyPluginConfig = PluginConfig> = {
   /**
    * Handlers called whenever the corresponding event occurs in the editor.
    * Event handlers can return a boolean flag to specify whether the event can
@@ -73,15 +73,15 @@ export type PlatePlugin<C extends AnyPluginConfig = PluginConfig> = {
      * `HtmlPlugin.key` plugin. Differs from `override.plugins` as this is not
      * overriding any plugin.
      */
-    plugins?: Record<string, Partial<EditorPlatePlugin<AnyPluginConfig>>>;
+    plugins?: Record<string, Partial<EditorLatePlugin<AnyPluginConfig>>>;
 
     /**
      * A function that returns a plugin config to be injected into other plugins
      * `inject.plugins` specified by targetPlugins.
      */
     targetPluginToInject?: (
-      ctx: { targetPlugin: string } & PlatePluginContext<C>
-    ) => Partial<PlatePlugin<AnyPluginConfig>>;
+      ctx: { targetPlugin: string } & LatePluginContext<C>
+    ) => Partial<LatePlugin<AnyPluginConfig>>;
   }>;
 
   node: {
@@ -96,8 +96,8 @@ export type PlatePlugin<C extends AnyPluginConfig = PluginConfig> = {
     /** Replace plugin {@link NodeComponent} by key. */
     components?: Record<string, NodeComponent>;
 
-    /** Extend {@link PlatePlugin} by key. */
-    plugins?: Record<string, Partial<EditorPlatePlugin<AnyPluginConfig>>>;
+    /** Extend {@link LatePlugin} by key. */
+    plugins?: Record<string, Partial<EditorLatePlugin<AnyPluginConfig>>>;
   };
 
   /** @see {@link Parser} */
@@ -180,48 +180,48 @@ export type PlatePlugin<C extends AnyPluginConfig = PluginConfig> = {
 
     /** Normalize initial value before passing it into the editor. */
     normalizeInitialValue?: (
-      ctx: { value: Value } & PlatePluginContext<WithAnyKey<C>>
+      ctx: { value: Value } & LatePluginContext<WithAnyKey<C>>
     ) => Value;
 
     /** @see {@link UseHooks} */
     useHooks?: UseHooks<WithAnyKey<C>>;
   }> &
-  PlatePluginMethods<C>;
+  LatePluginMethods<C>;
 
-export type PlatePluginMethods<C extends AnyPluginConfig = PluginConfig> = {
-  __apiExtensions: ((ctx: PlatePluginContext<AnyPluginConfig>) => any)[];
-  __configuration: ((ctx: PlatePluginContext<AnyPluginConfig>) => any) | null;
-  __extensions: ((ctx: PlatePluginContext<AnyPluginConfig>) => any)[];
-  __optionExtensions: ((ctx: PlatePluginContext<AnyPluginConfig>) => any)[];
+export type LatePluginMethods<C extends AnyPluginConfig = PluginConfig> = {
+  __apiExtensions: ((ctx: LatePluginContext<AnyPluginConfig>) => any)[];
+  __configuration: ((ctx: LatePluginContext<AnyPluginConfig>) => any) | null;
+  __extensions: ((ctx: LatePluginContext<AnyPluginConfig>) => any)[];
+  __optionExtensions: ((ctx: LatePluginContext<AnyPluginConfig>) => any)[];
   __resolved?: boolean;
 
   configure: (
     config:
       | ((
-          ctx: PlatePluginContext<C>
-        ) => PlatePluginConfig<
+          ctx: LatePluginContext<C>
+        ) => LatePluginConfig<
           C['key'],
           InferOptions<C>,
           InferApi<C>,
           InferTransforms<C>
         >)
-      | PlatePluginConfig<
+      | LatePluginConfig<
           C['key'],
           InferOptions<C>,
           InferApi<C>,
           InferTransforms<C>
         >
-  ) => PlatePlugin<C>;
+  ) => LatePlugin<C>;
 
-  configurePlugin: <P extends AnyPlatePlugin | AnySlatePlugin>(
+  configurePlugin: <P extends AnyLatePlugin | AnySlatePlugin>(
     plugin: Partial<P>,
     config:
       | ((
-          ctx: P extends AnyPlatePlugin
-            ? PlatePluginContext<P>
+          ctx: P extends AnyLatePlugin
+            ? LatePluginContext<P>
             : SlatePluginContext<P>
-        ) => P extends AnyPlatePlugin
-          ? PlatePluginConfig<
+        ) => P extends AnyLatePlugin
+          ? LatePluginConfig<
               any,
               InferOptions<P>,
               InferApi<P>,
@@ -233,8 +233,8 @@ export type PlatePluginMethods<C extends AnyPluginConfig = PluginConfig> = {
               InferApi<P>,
               InferTransforms<P>
             >)
-      | (P extends AnyPlatePlugin
-          ? PlatePluginConfig<
+      | (P extends AnyLatePlugin
+          ? LatePluginConfig<
               any,
               InferOptions<P>,
               InferApi<P>,
@@ -246,15 +246,15 @@ export type PlatePluginMethods<C extends AnyPluginConfig = PluginConfig> = {
               InferApi<P>,
               InferTransforms<P>
             >)
-  ) => PlatePlugin<C>;
+  ) => LatePlugin<C>;
 
-  create: () => PlatePlugin<C>;
+  create: () => LatePlugin<C>;
 
   extend: <EO = {}, EA = {}, ET = {}>(
     extendConfig:
       | ((
-          ctx: PlatePluginContext<C>
-        ) => PlatePluginConfig<
+          ctx: LatePluginContext<C>
+        ) => LatePluginConfig<
           C['key'],
           InferOptions<C>,
           InferApi<C>,
@@ -263,7 +263,7 @@ export type PlatePluginMethods<C extends AnyPluginConfig = PluginConfig> = {
           EA,
           ET
         >)
-      | PlatePluginConfig<
+      | LatePluginConfig<
           C['key'],
           InferOptions<C>,
           InferApi<C>,
@@ -272,7 +272,7 @@ export type PlatePluginMethods<C extends AnyPluginConfig = PluginConfig> = {
           EA,
           ET
         >
-  ) => PlatePlugin<
+  ) => LatePlugin<
     PluginConfig<
       C['key'],
       EO & InferOptions<C>,
@@ -284,8 +284,8 @@ export type PlatePluginMethods<C extends AnyPluginConfig = PluginConfig> = {
   extendApi: <
     EA extends Record<string, (...args: any[]) => any> = Record<string, never>,
   >(
-    extension: (ctx: PlatePluginContext<C>) => EA
-  ) => PlatePlugin<
+    extension: (ctx: LatePluginContext<C>) => EA
+  ) => LatePlugin<
     PluginConfig<
       C['key'],
       InferOptions<C>,
@@ -333,7 +333,7 @@ export type PlatePluginMethods<C extends AnyPluginConfig = PluginConfig> = {
       ((...args: any[]) => any) | Record<string, (...args: any[]) => any>
     > = Record<string, never>,
   >(
-    extension: (ctx: PlatePluginContext<C>) => {
+    extension: (ctx: LatePluginContext<C>) => {
       [K in keyof InferApi<C>]?: InferApi<C>[K] extends (...args: any[]) => any
         ? (...args: Parameters<InferApi<C>[K]>) => ReturnType<InferApi<C>[K]>
         : InferApi<C>[K] extends Record<string, (...args: any[]) => any>
@@ -344,7 +344,7 @@ export type PlatePluginMethods<C extends AnyPluginConfig = PluginConfig> = {
             }
           : never;
     } & EA
-  ) => PlatePlugin<
+  ) => LatePlugin<
     PluginConfig<
       C['key'],
       InferOptions<C>,
@@ -367,7 +367,7 @@ export type PlatePluginMethods<C extends AnyPluginConfig = PluginConfig> = {
       ((...args: any[]) => any) | Record<string, (...args: any[]) => any>
     > = Record<string, never>,
   >(
-    extension: (ctx: PlatePluginContext<C>) => {
+    extension: (ctx: LatePluginContext<C>) => {
       [K in keyof InferTransforms<C>]?: InferTransforms<C>[K] extends (
         ...args: any[]
       ) => any
@@ -382,7 +382,7 @@ export type PlatePluginMethods<C extends AnyPluginConfig = PluginConfig> = {
             }
           : never;
     } & ET
-  ) => PlatePlugin<
+  ) => LatePlugin<
     PluginConfig<
       C['key'],
       InferOptions<C>,
@@ -402,8 +402,8 @@ export type PlatePluginMethods<C extends AnyPluginConfig = PluginConfig> = {
   extendOptions: <
     EO extends Record<string, (...args: any[]) => any> = Record<string, never>,
   >(
-    extension: (ctx: PlatePluginContext<C>) => EO
-  ) => PlatePlugin<
+    extension: (ctx: LatePluginContext<C>) => EO
+  ) => LatePlugin<
     PluginConfig<
       C['key'],
       EO & InferOptions<C>,
@@ -413,7 +413,7 @@ export type PlatePluginMethods<C extends AnyPluginConfig = PluginConfig> = {
   >;
 
   extendPlugin: <
-    P extends AnyPlatePlugin | AnySlatePlugin,
+    P extends AnyLatePlugin | AnySlatePlugin,
     EO = {},
     EA = {},
     ET = {},
@@ -421,11 +421,11 @@ export type PlatePluginMethods<C extends AnyPluginConfig = PluginConfig> = {
     plugin: Partial<P>,
     extendConfig:
       | ((
-          ctx: P extends AnyPlatePlugin
-            ? PlatePluginContext<P>
+          ctx: P extends AnyLatePlugin
+            ? LatePluginContext<P>
             : SlatePluginContext<P>
-        ) => P extends AnyPlatePlugin
-          ? PlatePluginConfig<
+        ) => P extends AnyLatePlugin
+          ? LatePluginConfig<
               any,
               InferOptions<P>,
               InferApi<P>,
@@ -443,8 +443,8 @@ export type PlatePluginMethods<C extends AnyPluginConfig = PluginConfig> = {
               EA,
               ET
             >)
-      | (P extends AnyPlatePlugin
-          ? PlatePluginConfig<
+      | (P extends AnyLatePlugin
+          ? LatePluginConfig<
               any,
               InferOptions<P>,
               InferApi<P>,
@@ -462,13 +462,13 @@ export type PlatePluginMethods<C extends AnyPluginConfig = PluginConfig> = {
               EA,
               ET
             >)
-  ) => PlatePlugin<C>;
+  ) => LatePlugin<C>;
 
   extendTransforms: <
     ET extends Record<string, (...args: any[]) => any> = Record<string, never>,
   >(
-    extension: (ctx: PlatePluginContext<C>) => ET
-  ) => PlatePlugin<
+    extension: (ctx: LatePluginContext<C>) => ET
+  ) => LatePlugin<
     PluginConfig<
       C['key'],
       InferOptions<C>,
@@ -484,10 +484,10 @@ export type PlatePluginMethods<C extends AnyPluginConfig = PluginConfig> = {
    * @returns A new instance of the plugin with the updated
    *   {@link NodeComponent}.
    */
-  withComponent: (component: NodeComponent) => PlatePlugin<C>;
+  withComponent: (component: NodeComponent) => LatePlugin<C>;
 };
 
-export type PlatePluginConfig<
+export type LatePluginConfig<
   K extends string = any,
   O = {},
   A = {},
@@ -498,45 +498,45 @@ export type PlatePluginConfig<
 > = Partial<
   {
     api: EA;
-    node: Partial<PlatePlugin<PluginConfig<K, O, A, T>>['node']>;
+    node: Partial<LatePlugin<PluginConfig<K, O, A, T>>['node']>;
     options: EO;
     transforms: ET;
   } & Omit<
-    PlatePlugin<PluginConfig<K, Partial<O>, A, T>>,
+    LatePlugin<PluginConfig<K, Partial<O>, A, T>>,
     | 'api'
     | 'node'
     | 'optionsStore'
     | 'transforms'
     | 'useOptionsStore'
-    | keyof PlatePluginMethods
+    | keyof LatePluginMethods
   >
 >;
 
 // -----------------------------------------------------------------------------
 
-export type AnyPlatePlugin = PlatePlugin<AnyPluginConfig>;
+export type AnyLatePlugin = LatePlugin<AnyPluginConfig>;
 
-export type PlatePlugins = AnyPlatePlugin[];
+export type LatePlugins = AnyLatePlugin[];
 
-export type EditorPlatePlugin<C extends AnyPluginConfig = PluginConfig> = Omit<
-  PlatePlugin<C>,
-  'override' | 'plugins' | keyof PlatePluginMethods
+export type EditorLatePlugin<C extends AnyPluginConfig = PluginConfig> = Omit<
+  LatePlugin<C>,
+  'override' | 'plugins' | keyof LatePluginMethods
 >;
 
-export type AnyEditorPlatePlugin = EditorPlatePlugin<AnyPluginConfig>;
+export type AnyEditorLatePlugin = EditorLatePlugin<AnyPluginConfig>;
 
 export type InferConfig<P> = P extends
-  | PlatePlugin<infer C>
+  | LatePlugin<infer C>
   | SlatePlugin<infer C>
   ? C
   : never;
 
-export type PlatePluginContext<
+export type LatePluginContext<
   C extends AnyPluginConfig = PluginConfig,
-  E extends PlateEditor = PlateEditor,
+  E extends LateEditor = LateEditor,
 > = {
   editor: E;
-  plugin: EditorPlatePlugin<C>;
+  plugin: EditorLatePlugin<C>;
 
   useOption: {
     <
@@ -563,7 +563,7 @@ export type PlatePluginContext<
 export type Parser<C extends AnyPluginConfig = PluginConfig> = {
   /** Deserialize data to fragment */
   deserialize?: (
-    options: ParserOptions & PlatePluginContext<C>
+    options: ParserOptions & LatePluginContext<C>
   ) => TDescendant[] | undefined;
 
   /** Format to get data. Example data types are text/plain and text/uri-list. */
@@ -580,42 +580,42 @@ export type Parser<C extends AnyPluginConfig = PluginConfig> = {
    * @returns If true, the next handlers will be skipped.
    */
   preInsert?: (
-    options: { fragment: TDescendant[] } & ParserOptions & PlatePluginContext<C>
+    options: { fragment: TDescendant[] } & ParserOptions & LatePluginContext<C>
   ) => HandlerReturnType;
 
   /** Query to skip this plugin. */
-  query?: (options: ParserOptions & PlatePluginContext<C>) => boolean;
+  query?: (options: ParserOptions & LatePluginContext<C>) => boolean;
 
   /** Transform the inserted data. */
-  transformData?: (options: ParserOptions & PlatePluginContext<C>) => string;
+  transformData?: (options: ParserOptions & LatePluginContext<C>) => string;
 
   /** Transform the fragment to insert. */
   transformFragment?: (
-    options: { fragment: TDescendant[] } & ParserOptions & PlatePluginContext<C>
+    options: { fragment: TDescendant[] } & ParserOptions & LatePluginContext<C>
   ) => TDescendant[];
 };
 
-/** Plate plugin overriding the `editor` methods. Naming convention is `with*`. */
+/** Late plugin overriding the `editor` methods. Naming convention is `with*`. */
 export type ExtendEditor<C extends AnyPluginConfig = PluginConfig> = (
-  ctx: PlatePluginContext<C>
-) => PlateEditor;
+  ctx: LatePluginContext<C>
+) => LateEditor;
 
 export type TransformOptions<C extends AnyPluginConfig = PluginConfig> =
-  BaseTransformOptions & PlatePluginContext<C>;
+  BaseTransformOptions & LatePluginContext<C>;
 
 // -----------------------------------------------------------------------------
 
 export type Deserializer<C extends AnyPluginConfig = PluginConfig> = {
   parse?: (
-    options: { element: any } & PlatePluginContext<C>
+    options: { element: any } & LatePluginContext<C>
   ) => Partial<TDescendant> | undefined | void;
 
-  query?: (options: { element: any } & PlatePluginContext<C>) => boolean;
+  query?: (options: { element: any } & LatePluginContext<C>) => boolean;
 } & BaseDeserializer;
 
 export type Serializer<C extends AnyPluginConfig = PluginConfig> = {
-  parser?: (options: { node: TDescendant } & PlatePluginContext<C>) => any;
-  query?: (options: { node: TDescendant } & PlatePluginContext<C>) => boolean;
+  parser?: (options: { node: TDescendant } & LatePluginContext<C>) => any;
+  query?: (options: { node: TDescendant } & LatePluginContext<C>) => boolean;
 } & BaseSerializer;
 
 export type HtmlDeserializer<C extends AnyPluginConfig = PluginConfig> = {
@@ -623,45 +623,45 @@ export type HtmlDeserializer<C extends AnyPluginConfig = PluginConfig> = {
     options: {
       element: HTMLElement;
       node: AnyObject;
-    } & PlatePluginContext<C>
+    } & LatePluginContext<C>
   ) => Partial<TDescendant> | undefined | void;
   query?: (
-    options: { element: HTMLElement } & PlatePluginContext<C>
+    options: { element: HTMLElement } & LatePluginContext<C>
   ) => boolean;
 } & BaseHtmlDeserializer;
 
 export type HtmlSerializer<C extends AnyPluginConfig = PluginConfig> = {
-  parse?: (options: { node: TDescendant } & PlatePluginContext<C>) => string;
-  query?: (options: { node: TDescendant } & PlatePluginContext<C>) => boolean;
+  parse?: (options: { node: TDescendant } & LatePluginContext<C>) => string;
+  query?: (options: { node: TDescendant } & LatePluginContext<C>) => boolean;
 };
 
 export type HtmlReactSerializer<C extends AnyPluginConfig = PluginConfig> = {
   parse?: React.FC<
-    PlateRenderElementProps<TElement, C> & PlateRenderLeafProps<TText, C>
+    LateRenderElementProps<TElement, C> & LateRenderLeafProps<TText, C>
   >;
 
-  query?: (options: PlateRenderElementProps) => boolean;
+  query?: (options: LateRenderElementProps) => boolean;
 };
 
 // -----------------------------------------------------------------------------
 
 /**
- * Property used by Plate to decorate editor ranges. If the function returns
+ * Property used by Late to decorate editor ranges. If the function returns
  * undefined then no ranges are modified. If the function returns an array the
  * returned ranges are merged with the ranges called by other plugins.
  */
 export type Decorate<C extends AnyPluginConfig = PluginConfig> = (
-  ctx: { entry: TNodeEntry } & PlatePluginContext<C>
+  ctx: { entry: TNodeEntry } & LatePluginContext<C>
 ) => TRange[] | undefined;
 
-/** Properties used by Plate to inject props into any {@link NodeComponent}. */
+/** Properties used by Late to inject props into any {@link NodeComponent}. */
 export type InjectNodeProps<C extends AnyPluginConfig = PluginConfig> = {
   /** Whether to inject the props. If true, overrides all other checks. */
   query?: (
     options: {
       nodeProps: GetInjectNodePropsOptions;
     } & NonNullable<NonNullable<InjectNodeProps>> &
-      PlatePluginContext<C>
+      LatePluginContext<C>
   ) => boolean;
 
   /**
@@ -705,20 +705,20 @@ export type InjectNodeProps<C extends AnyPluginConfig = PluginConfig> = {
 export type NodeComponent<T = any> = React.FC<T>;
 
 /**
- * Property used by Plate to override node `component` props. If function, its
+ * Property used by Late to override node `component` props. If function, its
  * returning value will be shallow merged to the old props, with the old props
  * as parameter. If object, its value will be shallow merged to the old props.
  */
 export type NodeProps<C extends AnyPluginConfig = PluginConfig> =
   | ((
-      props: PlateRenderElementProps<TElement, C> &
-        PlateRenderLeafProps<TText, C>
+      props: LateRenderElementProps<TElement, C> &
+        LateRenderLeafProps<TText, C>
     ) => AnyObject | undefined)
   | AnyObject;
 
 /** Hook called when the editor is initialized. */
 export type UseHooks<C extends AnyPluginConfig = PluginConfig> = (
-  ctx: PlatePluginContext<C>
+  ctx: LatePluginContext<C>
 ) => void;
 
 export type EditableSiblingComponent = (
@@ -727,13 +727,13 @@ export type EditableSiblingComponent = (
 
 export interface NodeWrapperComponentProps<
   C extends AnyPluginConfig = PluginConfig,
-> extends PlateRenderElementProps<TElement, C> {
+> extends LateRenderElementProps<TElement, C> {
   key: string;
 }
 
 export type NodeWrapperComponentReturnType<
   C extends AnyPluginConfig = PluginConfig,
-> = React.FC<PlateRenderElementProps<TElement, C>> | undefined;
+> = React.FC<LateRenderElementProps<TElement, C>> | undefined;
 
 export type NodeWrapperComponent<C extends AnyPluginConfig = PluginConfig> = (
   props: NodeWrapperComponentProps<C>
@@ -746,12 +746,12 @@ export type NodeWrapperComponent<C extends AnyPluginConfig = PluginConfig> = (
  * @see {@link SlatePropsOnChange}
  */
 export type OnChange<C extends AnyPluginConfig = PluginConfig> = (
-  ctx: { value: Value } & PlatePluginContext<C>
+  ctx: { value: Value } & LatePluginContext<C>
 ) => HandlerReturnType;
 
 export type Shortcut = {
   handler?: (ctx: {
-    editor: PlateEditor;
+    editor: LateEditor;
     event: KeyboardEvent;
     eventDetails: HotkeysEvent;
   }) => void;

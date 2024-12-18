@@ -2,7 +2,7 @@ import type { TNodeEntry } from '@sewellstephens/slate';
 import type { TEditableProps } from '@sewellstephens/slate-react';
 import type { Range } from 'slate';
 
-import type { PlateEditor } from '../editor/PlateEditor';
+import type { LateEditor } from '../editor/LateEditor';
 
 import { getEditorPlugin } from '../plugin';
 
@@ -11,9 +11,9 @@ import { getEditorPlugin } from '../plugin';
  * Optimization: return undefined if empty list so Editable uses a memo.
  */
 export const pipeDecorate = (
-  editor: PlateEditor,
+  editor: LateEditor,
   decorateProp?:
-    | ((ctx: { editor: PlateEditor; entry: TNodeEntry }) => Range[] | undefined)
+    | ((ctx: { editor: LateEditor; entry: TNodeEntry }) => Range[] | undefined)
     | null
 ): TEditableProps['decorate'] => {
   const relevantPlugins = editor.pluginList.filter((plugin) => plugin.decorate);

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import type { PlateRenderElementProps } from '@sewellstephens/plate-core/react';
+import type { LateRenderElementProps } from '@sewellstephens/plate-core/react';
 
 export const createNodeHOC =
   <T,>(HOC: React.FC<T>) =>
-  (Component: any, props: Omit<T, keyof PlateRenderElementProps>) =>
-    function hoc(childrenProps: PlateRenderElementProps) {
+  (Component: any, props: Omit<T, keyof LateRenderElementProps>) =>
+    function hoc(childrenProps: LateRenderElementProps) {
       return (
         <HOC {...({ ...childrenProps, ...props } as T)}>
           <Component {...childrenProps} />

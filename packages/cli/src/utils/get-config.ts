@@ -27,7 +27,7 @@ export const DEFAULT_TAILWIND_CONFIG = 'tailwind.config.js';
 
 export const DEFAULT_TAILWIND_BASE_COLOR = 'slate';
 
-const explorerPlateComponents = cosmiconfig('components', {
+const explorerLateComponents = cosmiconfig('components', {
   searchPlaces: ['plate-components.json'],
 });
 const explorerComponents = cosmiconfig('components', {
@@ -108,7 +108,7 @@ export async function getRawConfig(cwd: string): Promise<RawConfig | null> {
   let filename = 'plate-components';
 
   try {
-    let configResult = await explorerPlateComponents.search(cwd);
+    let configResult = await explorerLateComponents.search(cwd);
 
     if (!configResult) {
       filename = 'components';

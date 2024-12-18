@@ -4,10 +4,10 @@ import { HighlightPlugin } from '@sewellstephens/plate-highlight';
 import { KbdPlugin } from '@sewellstephens/plate-kbd';
 
 import { serializeHtml } from '../../react/serializeHtml';
-import { createPlateUIEditor } from '../create-plate-ui-editor';
+import { createLateUIEditor } from '../create-plate-ui-editor';
 
 const plugins = [BasicMarksPlugin, HighlightPlugin, KbdPlugin];
-const editor = createPlateUIEditor({ plugins });
+const editor = createLateUIEditor({ plugins });
 
 it('serialize bold to html', () => {
   expect(

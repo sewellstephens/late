@@ -1,10 +1,10 @@
-import { findEventRange, PlatePlugin } from '@sewellstephens/plate-common';
+import { findEventRange, LatePlugin } from '@sewellstephens/plate-common';
 
 import { cursorStore } from '@/components/plate-ui/cursor-overlay';
 
 export const KEY_DRAG_OVER_CURSOR = 'dragOverCursor';
 
-export const dragOverCursorPlugin: PlatePlugin = {
+export const dragOverCursorPlugin: LatePlugin = {
   key: KEY_DRAG_OVER_CURSOR,
   handlers: {
     onDragOver: ({ editor, event }) => {

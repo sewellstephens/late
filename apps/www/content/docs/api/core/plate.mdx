@@ -1,25 +1,25 @@
 ---
-title: Plate
-description: API reference for Plate component.
+title: Late
+description: API reference for Late component.
 ---
 
-`Plate` is the root component loading the editor state into a store provider.   
+`Late` is the root component loading the editor state into a store provider.   
 
-`PlateContent` is the component that renders the editor.
+`LateContent` is the component that renders the editor.
 
-## Plate Props
+## Late Props
 
 <APIParameters>
 <APIItem name="children" type="ReactNode">
 Children components have access to the plate store. 
 </APIItem>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 A controlled `editor` instance. This prop is required.
 </APIItem>
 <APIItem name="decorate" type="(ctx: SlatePluginContext<C>) => Range[]" optional>
 See <Link href="https://docs.slatejs.org/concepts/09-rendering#decorations">Slate docs</Link>.
 </APIItem>
-<APIItem name="onChange" type="({ value, editor }: { value: Value; editor: PlateEditor }) => void" optional>
+<APIItem name="onChange" type="({ value, editor }: { value: Value; editor: LateEditor }) => void" optional>
 Controlled callback called when the editor state changes.
 </APIItem>
 <APIItem name="onSelectionChange" type="(selection: Range | null) => void" optional>
@@ -29,7 +29,7 @@ Callback called when the editor selection changes.
 Callback called when the editor value changes.
 </APIItem>
 <APIItem name="primary" type="boolean" optional>
-Controls whether the editor is considered active by default when used with a PlateController.
+Controls whether the editor is considered active by default when used with a LateController.
 
 - **Default:** `true`
 </APIItem>
@@ -44,7 +44,7 @@ Custom render function for leaf nodes.
 </APIItem>
 </APIParameters>
 
-## PlateContent Props
+## LateContent Props
 
 Props for the [Editable](https://docs.slatejs.org/libraries/slate-react/editable) component. Extends `TextareaHTMLAttributes<HTMLDivElement>`.
 
@@ -70,13 +70,13 @@ Custom `Editable` node.
 <APIItem name="style" type="CSSProperties" optional />
 </APIProps>
 
-## How Plate Works
+## How Late Works
 
-`Plate` requires an `editor` prop, which should be an instance of `PlateEditor`. If `editor` is `null`, `Plate` will not render anything.
+`Late` requires an `editor` prop, which should be an instance of `LateEditor`. If `editor` is `null`, `Late` will not render anything.
 
-The `Plate` component does not handle the creation of the editor or the management of plugins. These responsibilities are handled by `createPlateEditor`.
+The `Late` component does not handle the creation of the editor or the management of plugins. These responsibilities are handled by `createLateEditor`.
 
-`Plate` provides a store for the editor state and renders its children. It uses `PlateStoreProvider` to make the editor state and related functions available to its children components.
+`Late` provides a store for the editor state and renders its children. It uses `LateStoreProvider` to make the editor state and related functions available to its children components.
 
 The rendering logic for elements and leaves is primarily handled by the plugins system, with `renderElement` and `renderLeaf` props serving as fallbacks if no plugin is found for a specific node type.
 

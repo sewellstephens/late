@@ -7,12 +7,12 @@ import {
   CloudImagePlugin,
   CloudPlugin,
 } from '@sewellstephens/plate-cloud';
-import { Plate } from '@sewellstephens/plate-common/react';
-import { usePlateEditor } from '@sewellstephens/plate-core/react';
+import { Late } from '@sewellstephens/plate-common/react';
+import { useLateEditor } from '@sewellstephens/plate-core/react';
 
 import { uploadStoreInitialValue } from '@/plate/demo/cloud/uploadStoreInitialValue';
 import { editableProps } from '@/plate/demo/editableProps';
-import { PlateUI } from '@/plate/demo/plate-ui';
+import { LateUI } from '@/plate/demo/plate-ui';
 import { cloudValue } from '@/plate/demo/values/cloudValue';
 import { CloudAttachmentElement } from '@/registry/default/plate-ui/cloud-attachment-element';
 import { CloudImageElement } from '@/registry/default/plate-ui/cloud-image-element';
@@ -21,8 +21,8 @@ import { Editor } from '@/registry/default/plate-ui/editor';
 import { FixedToolbar } from '@/registry/default/plate-ui/fixed-toolbar';
 
 export default function CloudDemo() {
-  const editor = usePlateEditor({
-    override: { components: PlateUI },
+  const editor = useLateEditor({
+    override: { components: LateUI },
     plugins: [
       BasicElementsPlugin,
       BasicMarksPlugin,
@@ -47,12 +47,12 @@ export default function CloudDemo() {
   });
 
   return (
-    <Plate editor={editor}>
+    <Late editor={editor}>
       <FixedToolbar>
         <CloudToolbarButtons />
       </FixedToolbar>
 
       <Editor className="mt-2" {...editableProps} />
-    </Plate>
+    </Late>
   );
 }

@@ -1,4 +1,4 @@
-import { Key, toPlatePlugin } from '@sewellstephens/plate-common/react';
+import { Key, toLatePlugin } from '@sewellstephens/plate-common/react';
 
 import {
   CodeBlockPlugin as BaseCodeBlockPlugin,
@@ -7,12 +7,12 @@ import {
 } from '../lib/CodeBlockPlugin';
 import { onKeyDownCodeBlock } from './onKeyDownCodeBlock';
 
-export const CodeLinePlugin = toPlatePlugin(BaseCodeLinePlugin);
+export const CodeLinePlugin = toLatePlugin(BaseCodeLinePlugin);
 
-export const CodeSyntaxPlugin = toPlatePlugin(BaseCodeSyntaxPlugin);
+export const CodeSyntaxPlugin = toLatePlugin(BaseCodeSyntaxPlugin);
 
 /** Enables support for pre-formatted code blocks. */
-export const CodeBlockPlugin = toPlatePlugin(BaseCodeBlockPlugin, {
+export const CodeBlockPlugin = toLatePlugin(BaseCodeBlockPlugin, {
   handlers: {
     onKeyDown: onKeyDownCodeBlock,
   },

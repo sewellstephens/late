@@ -2,11 +2,11 @@
   "name": "@sewellstephens/",
   "version": "22.0.0",
   "bugs": {
-    "url": "https://github.com/udecode/plate/issues"
+    "url": "https://github.com/sewellstephens/late/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/udecode/plate.git"
+    "url": "https://github.com/sewellstephens/late.git"
   },
   "license": "MIT",
   "sideEffects": false,

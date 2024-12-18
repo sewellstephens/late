@@ -23,7 +23,7 @@ import { ImagePlugin, MediaEmbedPlugin } from '@sewellstephens/plate-media';
 import { TablePlugin } from '@sewellstephens/plate-table';
 import { getHtmlDocument, jsx } from '@sewellstephens/plate-test-utils';
 
-import { createPlateEditor } from '../../../../react';
+import { createLateEditor } from '../../../../react';
 import { ParagraphPlugin } from '../../paragraph';
 import { deserializeHtml } from './deserializeHtml';
 import { deserializeHtmlElement } from './deserializeHtmlElement';
@@ -39,7 +39,7 @@ describe('when collapseWhitespace is false', () => {
   const expectedOutput = [{ text: 'test \n code' }];
 
   it('should have the break line', () => {
-    const convertedDocumentFragment = deserializeHtml(createPlateEditor(), {
+    const convertedDocumentFragment = deserializeHtml(createLateEditor(), {
       collapseWhiteSpace: false,
       element,
     });
@@ -60,7 +60,7 @@ describe('when element is a div', () => {
 
   it('should be a fragment of text', () => {
     expect(
-      deserializeHtml(createPlateEditor(), {
+      deserializeHtml(createLateEditor(), {
         element,
       })
     ).toEqual(output);
@@ -78,7 +78,7 @@ describe('when element is 2 p', () => {
   it('should be a fragment of 2 paragraph nodes', () => {
     expect(
       deserializeHtml(
-        createPlateEditor({
+        createLateEditor({
           plugins: [ParagraphPlugin],
         }),
         {
@@ -101,7 +101,7 @@ describe('when html is a text without tags', () => {
 
   it('should be a fragment of text', () => {
     expect(
-      deserializeHtml(createPlateEditor(), {
+      deserializeHtml(createLateEditor(), {
         element,
       })
     ).toEqual(output);
@@ -198,7 +198,7 @@ describe('when deserializing all plugins', () => {
   it('should be', () => {
     expect(
       deserializeHtmlElement(
-        createPlateEditor({
+        createLateEditor({
           plugins: [
             BlockquotePlugin,
             HeadingPlugin.configure({ options: { levels: 1 } }),

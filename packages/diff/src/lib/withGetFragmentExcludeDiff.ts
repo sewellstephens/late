@@ -2,7 +2,7 @@ import type { ExtendEditor, TDescendant } from '@sewellstephens/plate-common';
 
 import cloneDeep from 'lodash/cloneDeep.js';
 
-// Uses BaseEditor to be compatible with non-Plate editors
+// Uses BaseEditor to be compatible with non-Late editors
 export const withGetFragmentExcludeDiff: ExtendEditor = ({ editor }) => {
   const { getFragment } = editor;
 

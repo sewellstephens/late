@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - `createCloudPlugin` -> `CloudPlugin`
 
 ## 36.0.0
@@ -15,7 +15,7 @@
 
 ### Patch Changes
 
-- [#3187](https://github.com/udecode/plate/pull/3187) by [@zbeyens](https://github.com/zbeyens) – Fix types
+- [#3187](https://github.com/sewellstephens/late/pull/3187) by [@zbeyens](https://github.com/zbeyens) – Fix types
 
 ## 33.0.0
 
@@ -27,19 +27,19 @@
 
 ### Patch Changes
 
-- [#3003](https://github.com/udecode/plate/pull/3003) by [@Lenghak](https://github.com/Lenghak) – fix: #3002
+- [#3003](https://github.com/sewellstephens/late/pull/3003) by [@Lenghak](https://github.com/Lenghak) – fix: #3002
 
 ## 30.5.3
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/udecode/plate/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.5.2
 
 ### Patch Changes
 
-- [#2961](https://github.com/udecode/plate/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -61,7 +61,7 @@
 
 ### Patch Changes
 
-- [#2763](https://github.com/udecode/plate/pull/2763) by [@12joan](https://github.com/12joan) – Update Zustood imports
+- [#2763](https://github.com/sewellstephens/late/pull/2763) by [@12joan](https://github.com/12joan) – Update Zustood imports
 
 ## 25.0.1
 
@@ -73,7 +73,7 @@
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -111,7 +111,7 @@
 
 ### Minor Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – New exports:
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – New exports:
   - `generateSrcAndSrcSet`
   - `useCloudAttachmentElementState`
   - `useCloudImageElementState`
@@ -142,7 +142,7 @@
 
 ### Minor Changes
 
-- [#2254](https://github.com/udecode/plate/pull/2254) by [@thesunny](https://github.com/thesunny) – Add options to set `minResizeWidth` and `maxResizeWidth` to `CloudImagePlugin`.
+- [#2254](https://github.com/sewellstephens/late/pull/2254) by [@thesunny](https://github.com/thesunny) – Add options to set `minResizeWidth` and `maxResizeWidth` to `CloudImagePlugin`.
 
   ```typescript
       createCloudImagePlugin({
@@ -181,23 +181,23 @@
 
 ### Patch Changes
 
-- [#1829](https://github.com/udecode/plate/pull/1829) by [@osamatanveer](https://github.com/osamatanveer) –
+- [#1829](https://github.com/sewellstephens/late/pull/1829) by [@osamatanveer](https://github.com/osamatanveer) –
   - vendor: remove `nanoid` from deps
 
 ## 18.10.2
 
 ### Patch Changes
 
-- [#1995](https://github.com/udecode/plate/pull/1995) by [@zbeyens](https://github.com/zbeyens) – fix build
+- [#1995](https://github.com/sewellstephens/late/pull/1995) by [@zbeyens](https://github.com/zbeyens) – fix build
 
 ## 18.10.1
 
 ### Patch Changes
 
-- [#1991](https://github.com/udecode/plate/pull/1991) by [@zbeyens](https://github.com/zbeyens) – fix
+- [#1991](https://github.com/sewellstephens/late/pull/1991) by [@zbeyens](https://github.com/zbeyens) – fix
 
 ## 18.10.0
 
 ### Minor Changes
 
-- [`2c3c403`](https://github.com/udecode/plate/commit/2c3c403bfab1063d590bb9d2476ba308f8390a44) by [@zbeyens](https://github.com/zbeyens) – Cloud plugins
+- [`2c3c403`](https://github.com/sewellstephens/late/commit/2c3c403bfab1063d590bb9d2476ba308f8390a44) by [@zbeyens](https://github.com/zbeyens) – Cloud plugins

@@ -4,13 +4,13 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - `createIndentListPlugin` -> `IndentListPlugin`
   - Rename `injectIndentListComponent` to `renderIndentListBelowNodes`
   - Replace `normalizeIndentList` with `withNormalizeIndentList`
   - Replace `deleteBackwardIndentList` with `withDeleteBackwardIndentList`
   - Replace `insertBreakIndentList` with `withInsertBreakIndentList`
-  - Remove types: `LiFC` (use `PlateRenderElementProps`), `MarkerFC` (use `Omit<PlateRenderElementProps, 'children'>`)
+  - Remove types: `LiFC` (use `LateRenderElementProps`), `MarkerFC` (use `Omit<LateRenderElementProps, 'children'>`)
 
 ## 36.5.2
 
@@ -18,13 +18,13 @@
 
 ### Patch Changes
 
-- [#3395](https://github.com/udecode/plate/pull/3395) by [@tomdyqin](https://github.com/tomdyqin) – fix: missing `getSiblingIndentListOptions`
+- [#3395](https://github.com/sewellstephens/late/pull/3395) by [@tomdyqin](https://github.com/tomdyqin) – fix: missing `getSiblingIndentListOptions`
 
 ## 36.0.1
 
 ### Patch Changes
 
-- [#3341](https://github.com/udecode/plate/pull/3341) by [@felixfeng33](https://github.com/felixfeng33) – Fix(#3340): When working on an indent list todo item with a text child, pressing enter while the cursor is located inside the text creates an additional empty todo list item inside list and after that creates an item with the splitted text
+- [#3341](https://github.com/sewellstephens/late/pull/3341) by [@felixfeng33](https://github.com/felixfeng33) – Fix(#3340): When working on an indent list todo item with a text child, pressing enter while the cursor is located inside the text creates an additional empty todo list item inside list and after that creates an item with the splitted text
 
 ## 36.0.0
 
@@ -32,7 +32,7 @@
 
 ### Patch Changes
 
-- [#3241](https://github.com/udecode/plate/pull/3241) by [@felixfeng33](https://github.com/felixfeng33) – Add `toggleIndentListByPath`, add `indentList` options
+- [#3241](https://github.com/sewellstephens/late/pull/3241) by [@felixfeng33](https://github.com/felixfeng33) – Add `toggleIndentListByPath`, add `indentList` options
 
 ## 33.0.3
 
@@ -44,7 +44,7 @@
 
 ### Patch Changes
 
-- [#3164](https://github.com/udecode/plate/pull/3164) by [@felixfeng33](https://github.com/felixfeng33) – Fix: clicking the checkbox removing the focus
+- [#3164](https://github.com/sewellstephens/late/pull/3164) by [@felixfeng33](https://github.com/felixfeng33) – Fix: clicking the checkbox removing the focus
 
 ## 32.0.0
 
@@ -52,25 +52,25 @@
 
 ### Patch Changes
 
-- [#3140](https://github.com/udecode/plate/pull/3140) by [@felixfeng33](https://github.com/felixfeng33) – The behivor abnormal when deleting back to empty list item or quote
+- [#3140](https://github.com/sewellstephens/late/pull/3140) by [@felixfeng33](https://github.com/felixfeng33) – The behivor abnormal when deleting back to empty list item or quote
 
 ## 31.4.0
 
 ### Patch Changes
 
-- [#3118](https://github.com/udecode/plate/pull/3118) by [@felixfeng33](https://github.com/felixfeng33) – Missing exports
+- [#3118](https://github.com/sewellstephens/late/pull/3118) by [@felixfeng33](https://github.com/felixfeng33) – Missing exports
 
 ## 31.2.2
 
 ### Patch Changes
 
-- [#3077](https://github.com/udecode/plate/pull/3077) by [@felixfeng33](https://github.com/felixfeng33) – Fix ordered list regression.
+- [#3077](https://github.com/sewellstephens/late/pull/3077) by [@felixfeng33](https://github.com/felixfeng33) – Fix ordered list regression.
 
 ## 31.2.0
 
 ### Minor Changes
 
-- [#3073](https://github.com/udecode/plate/pull/3073) by [@felixfeng33](https://github.com/felixfeng33) – Add listStyleTypes option to custom indent list
+- [#3073](https://github.com/sewellstephens/late/pull/3073) by [@felixfeng33](https://github.com/felixfeng33) – Add listStyleTypes option to custom indent list
 
 ## 31.1.3
 
@@ -78,19 +78,19 @@
 
 ### Patch Changes
 
-- [#3067](https://github.com/udecode/plate/pull/3067) by [@felixfeng33](https://github.com/felixfeng33) – remove data-slate-void
+- [#3067](https://github.com/sewellstephens/late/pull/3067) by [@felixfeng33](https://github.com/felixfeng33) – remove data-slate-void
 
 ## 31.1.1
 
 ### Patch Changes
 
-- [#3066](https://github.com/udecode/plate/pull/3066) by [@felixfeng33](https://github.com/felixfeng33) – fix pressing Arrow Up the cursor abnormal
+- [#3066](https://github.com/sewellstephens/late/pull/3066) by [@felixfeng33](https://github.com/felixfeng33) – fix pressing Arrow Up the cursor abnormal
 
 ## 31.1.0
 
 ### Minor Changes
 
-- [#3058](https://github.com/udecode/plate/pull/3058) by [@felixfeng33](https://github.com/felixfeng33) – Feature: todo lists
+- [#3058](https://github.com/sewellstephens/late/pull/3058) by [@felixfeng33](https://github.com/felixfeng33) – Feature: todo lists
 
 ## 31.0.0
 
@@ -98,13 +98,13 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/udecode/plate/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.5.2
 
 ### Patch Changes
 
-- [#2961](https://github.com/udecode/plate/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -114,7 +114,7 @@
 
 ### Patch Changes
 
-- [#2873](https://github.com/udecode/plate/pull/2873) by [@zbeyens](https://github.com/zbeyens) – fix someIndentList: handle the case when editor.selection is null
+- [#2873](https://github.com/sewellstephens/late/pull/2873) by [@zbeyens](https://github.com/zbeyens) – fix someIndentList: handle the case when editor.selection is null
 
 ## 30.0.0
 
@@ -128,7 +128,7 @@
 
 ### Patch Changes
 
-- [#2816](https://github.com/udecode/plate/pull/2816) by [@12joan](https://github.com/12joan) –
+- [#2816](https://github.com/sewellstephens/late/pull/2816) by [@12joan](https://github.com/12joan) –
   - Replace `useEdtiorState` with `useEditorSelector`
 
 ## 27.0.3
@@ -145,7 +145,7 @@
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -187,7 +187,7 @@
 
 ### Minor Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – New exports:
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – New exports:
   - `someIndentList`
   - `useIndentListToolbarButton`
 
@@ -215,7 +215,7 @@
 
 ### Patch Changes
 
-- [#2285](https://github.com/udecode/plate/pull/2285) by [@12joan](https://github.com/12joan) – Ignore `defaultPrevented` keydown events
+- [#2285](https://github.com/sewellstephens/late/pull/2285) by [@12joan](https://github.com/12joan) – Ignore `defaultPrevented` keydown events
 
 ## 20.0.0
 
@@ -253,7 +253,7 @@
 
 ### Minor Changes
 
-- [#1960](https://github.com/udecode/plate/pull/1960) by [@zbeyens](https://github.com/zbeyens) –
+- [#1960](https://github.com/sewellstephens/late/pull/1960) by [@zbeyens](https://github.com/zbeyens) –
   - Now supports pasting google docs lists
   - New option: `getListStyleType`: Map html element to list style type.
 
@@ -261,7 +261,7 @@
 
 ### Minor Changes
 
-- [#1959](https://github.com/udecode/plate/pull/1959) by [@zbeyens](https://github.com/zbeyens) –
+- [#1959](https://github.com/sewellstephens/late/pull/1959) by [@zbeyens](https://github.com/zbeyens) –
   - Now supports pasting google docs lists
   - New option: `getListStyleType`: Map html element to list style type.
 
@@ -269,7 +269,7 @@
 
 ### Minor Changes
 
-- [#1931](https://github.com/udecode/plate/pull/1931) by [@zbeyens](https://github.com/zbeyens) – Handle `Enter` key to outdent if empty.
+- [#1931](https://github.com/sewellstephens/late/pull/1931) by [@zbeyens](https://github.com/zbeyens) – Handle `Enter` key to outdent if empty.
 
 ## 18.2.0
 
@@ -277,13 +277,13 @@
 
 ### Patch Changes
 
-- [#1918](https://github.com/udecode/plate/pull/1918) by [@zbeyens](https://github.com/zbeyens) – Fix indent 0
+- [#1918](https://github.com/sewellstephens/late/pull/1918) by [@zbeyens](https://github.com/zbeyens) – Fix indent 0
 
 ## 18.1.2
 
 ### Patch Changes
 
-- [#1915](https://github.com/udecode/plate/pull/1915) by [@zbeyens](https://github.com/zbeyens) – fix: support indent 0
+- [#1915](https://github.com/sewellstephens/late/pull/1915) by [@zbeyens](https://github.com/zbeyens) – fix: support indent 0
 
 ## 18.1.1
 
@@ -301,7 +301,7 @@
 
 ### Minor Changes
 
-- [#1850](https://github.com/udecode/plate/pull/1850) by [@bokuweb](https://github.com/bokuweb) – New prop: `listRestart` - if set, force `listStart` to be `listRestart` instead of the previous `listStart + 1`
+- [#1850](https://github.com/sewellstephens/late/pull/1850) by [@bokuweb](https://github.com/bokuweb) – New prop: `listRestart` - if set, force `listStart` to be `listRestart` instead of the previous `listStart + 1`
 
 ## 16.6.1
 
@@ -379,7 +379,7 @@
 
 ### Patch Changes
 
-- [#1467](https://github.com/udecode/plate/pull/1467) by [@zbeyens](https://github.com/zbeyens) –
+- [#1467](https://github.com/sewellstephens/late/pull/1467) by [@zbeyens](https://github.com/zbeyens) –
   - fix indent `listStart` normalization
   - fix `toggleIndentList`
   - fix normalization on `merge_node` and `set_node` ops
@@ -388,7 +388,7 @@
 
 ### Minor Changes
 
-- [#1465](https://github.com/udecode/plate/pull/1465) by [@zbeyens](https://github.com/zbeyens) –
+- [#1465](https://github.com/sewellstephens/late/pull/1465) by [@zbeyens](https://github.com/zbeyens) –
   - indent-list plugin:
     - new option: `getSiblingIndentListOptions` which is used by normalizers to get list siblings (e.g. for `listStart`).
     - normalizer handling a few more cases
@@ -415,7 +415,7 @@
 
 ### Minor Changes
 
-- [#1373](https://github.com/udecode/plate/pull/1373) by [@zbeyens](https://github.com/zbeyens) – Docx deserializer supports more indent list styles: DecimalLeadingZero, LowerRoman, UpperRoman, UpperAlpha
+- [#1373](https://github.com/sewellstephens/late/pull/1373) by [@zbeyens](https://github.com/zbeyens) – Docx deserializer supports more indent list styles: DecimalLeadingZero, LowerRoman, UpperRoman, UpperAlpha
 
 ## 9.3.1
 
@@ -435,9 +435,9 @@
 
 ### Major Changes
 
-- [#1234](https://github.com/udecode/plate/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Removed:
+- [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Removed:
 
-  - `IndentListPluginOptions` for `PlatePlugin`
+  - `IndentListPluginOptions` for `LatePlugin`
 
   Rename:
 
@@ -451,4 +451,4 @@
 
 ### Minor Changes
 
-- [#1190](https://github.com/udecode/plate/pull/1190) by [@zbeyens](https://github.com/zbeyens) – new package: `@sewellstephens/plate-indent-list`
+- [#1190](https://github.com/sewellstephens/late/pull/1190) by [@zbeyens](https://github.com/zbeyens) – new package: `@sewellstephens/plate-indent-list`

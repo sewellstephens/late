@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - Peer dependencies updated
 
 ## 36.0.0
@@ -15,7 +15,7 @@
 
 ### Patch Changes
 
-- [#3187](https://github.com/udecode/plate/pull/3187) by [@zbeyens](https://github.com/zbeyens) – Fix types
+- [#3187](https://github.com/sewellstephens/late/pull/3187) by [@zbeyens](https://github.com/zbeyens) – Fix types
 
 ## 33.0.0
 
@@ -27,7 +27,7 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/udecode/plate/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -45,7 +45,7 @@
 
 ### Patch Changes
 
-- [#2816](https://github.com/udecode/plate/pull/2816) by [@12joan](https://github.com/12joan) –
+- [#2816](https://github.com/sewellstephens/late/pull/2816) by [@12joan](https://github.com/12joan) –
   - Remove `{ fn: ... }` workaround for jotai stores that contain functions
 
 ## 27.0.3
@@ -54,7 +54,7 @@
 
 ### Major Changes
 
-- [#2763](https://github.com/udecode/plate/pull/2763) by [@12joan](https://github.com/12joan) –
+- [#2763](https://github.com/sewellstephens/late/pull/2763) by [@12joan](https://github.com/12joan) –
   - Migrate store to jotai@2
   - Resizable components must now be wrapped inside a `ResizableProvider`
 
@@ -62,7 +62,7 @@
 
 ### Patch Changes
 
-- [#2781](https://github.com/udecode/plate/pull/2781) by [@dimaanj](https://github.com/dimaanj) – Add initial size for resize handle
+- [#2781](https://github.com/sewellstephens/late/pull/2781) by [@dimaanj](https://github.com/dimaanj) – Add initial size for resize handle
 
 ## 25.0.1
 
@@ -74,7 +74,7 @@
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -108,14 +108,14 @@
 
 ### Patch Changes
 
-- [#2555](https://github.com/udecode/plate/pull/2555) by [@zbeyens](https://github.com/zbeyens) – Major changes missing from 23.0.0:
+- [#2555](https://github.com/sewellstephens/late/pull/2555) by [@zbeyens](https://github.com/zbeyens) – Major changes missing from 23.0.0:
   - `ResizeHandleOptions`: removed `style`, `width`, `startMargin`, `endMargin`, `zIndex`.
 
 ## 23.0.0
 
 ### Major Changes
 
-- [#2541](https://github.com/udecode/plate/pull/2541) by [@zbeyens](https://github.com/zbeyens) –
+- [#2541](https://github.com/sewellstephens/late/pull/2541) by [@zbeyens](https://github.com/zbeyens) –
   - Package renamed to `@sewellstephens/plate-resizable`.
   - `ResizeHandle` is now fully headless: no style is applied by default. Add your own `Resizable`, `ResizeHandle` components:
     - `npx @sewellstephens/plate-ui@latest add resizable`
@@ -136,7 +136,7 @@
 
 ### Minor Changes
 
-- [#2425](https://github.com/udecode/plate/pull/2425) by [@Nmarinsiruela](https://github.com/Nmarinsiruela) – Added touch events to Resizable
+- [#2425](https://github.com/sewellstephens/late/pull/2425) by [@Nmarinsiruela](https://github.com/Nmarinsiruela) – Added touch events to Resizable
 
   We were lacking touch-related events on `ResizeHandle.tsx`. That made it so that mobile users will not be able to resize an element.
   With the addition of the functions, this functionality should be available as it was prior to the latest major bump.
@@ -158,4 +158,4 @@
 
 ### Patch Changes
 
-- [#2324](https://github.com/udecode/plate/pull/2324) by [@dylans](https://github.com/dylans) – Add missing peer dependencies to `@sewellstephens/resizable`
+- [#2324](https://github.com/sewellstephens/late/pull/2324) by [@dylans](https://github.com/dylans) – Add missing peer dependencies to `@sewellstephens/resizable`

@@ -6,11 +6,11 @@ import { mergeWithoutArray } from '../../internal/mergeWithoutArray';
 import { createSlatePlugin, getEditorPlugin } from '../plugin';
 
 /**
- * Resolves and finalizes a plugin configuration for use in a Plate editor.
+ * Resolves and finalizes a plugin configuration for use in a Late editor.
  *
  * This function processes a given plugin configuration, applying any extensions
  * and resolving nested plugins. It prepares the plugin for integration into the
- * Plate editor system by:
+ * Late editor system by:
  *
  * 1. Applying all stored extensions to the plugin
  * 2. Recursively resolving any nested plugins

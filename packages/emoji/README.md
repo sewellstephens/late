@@ -1,10 +1,10 @@
-# Plate emoji plugin
+# Late emoji plugin
 
-This package implements the emoji plugin for Plate.
+This package implements the emoji plugin for Late.
 
 ## Documentation
 
-Check out [Emoji](https://platejs.org/docs/emoji).
+Check out [Emoji](https://sewellstephens.github.io/late/docs/emoji).
 
 ## License
 

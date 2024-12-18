@@ -2,7 +2,7 @@
 
 import type { SlateEditor } from '@sewellstephens/plate-common';
 
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
 import { TablePlugin } from '../../react';
@@ -13,7 +13,7 @@ jsx;
 const createTablePluginWithOptions = () => TablePlugin;
 
 const createEditorInstance = (input: any) => {
-  return createPlateEditor({
+  return createLateEditor({
     editor: input,
     plugins: [createTablePluginWithOptions()],
   });

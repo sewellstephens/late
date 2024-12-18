@@ -1,9 +1,9 @@
 import React from 'react';
 import { withRef } from '@sewellstephens/cn';
-import { PlateElement } from '@sewellstephens/plate-common';
+import { LateElement } from '@sewellstephens/plate-common';
 import { useExcalidrawElement } from '@sewellstephens/plate-excalidraw';
 
-export const ExcalidrawElement = withRef<typeof PlateElement>(
+export const ExcalidrawElement = withRef<typeof LateElement>(
   ({ nodeProps, ...props }, ref) => {
     const { children, element } = props;
 
@@ -12,7 +12,7 @@ export const ExcalidrawElement = withRef<typeof PlateElement>(
     });
 
     return (
-      <PlateElement ref={ref} {...props}>
+      <LateElement ref={ref} {...props}>
         <div contentEditable={false}>
           <div className="h-[600px]">
             {Excalidraw && (
@@ -21,7 +21,7 @@ export const ExcalidrawElement = withRef<typeof PlateElement>(
           </div>
         </div>
         {children}
-      </PlateElement>
+      </LateElement>
     );
   }
 );

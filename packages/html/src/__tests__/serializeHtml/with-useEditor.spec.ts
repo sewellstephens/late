@@ -7,7 +7,7 @@ import {
 } from '@sewellstephens/plate-list';
 
 import { serializeHtml } from '../../react/serializeHtml';
-import { createPlateUIEditor } from '../create-plate-ui-editor';
+import { createLateUIEditor } from '../create-plate-ui-editor';
 
 it('serialize elements using useSlateStatic', () => {
   const plugins = [
@@ -22,7 +22,7 @@ it('serialize elements using useSlateStatic', () => {
         node: { type: 'unordered-list' },
       }),
   ];
-  const editor = createPlateUIEditor({ plugins });
+  const editor = createLateUIEditor({ plugins });
   const render = serializeHtml(editor, {
     nodes: [
       {

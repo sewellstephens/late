@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - `createMentionPlugin` -> `MentionPlugin`
   - NEW `MentionInputPlugin`
   - Remove `createMentionNode` option, override `api.insert.mention` instead
@@ -17,13 +17,13 @@
 
 ### Patch Changes
 
-- [#3251](https://github.com/udecode/plate/pull/3251) by [@felixfeng33](https://github.com/felixfeng33) – fix: import types form `@sewellstephens/common` instead of `@sewellstephens/common/server`
+- [#3251](https://github.com/sewellstephens/late/pull/3251) by [@felixfeng33](https://github.com/felixfeng33) – fix: import types form `@sewellstephens/common` instead of `@sewellstephens/common/server`
 
 ## 34.0.0
 
 ### Major Changes
 
-- [#3168](https://github.com/udecode/plate/pull/3168) by [@12joan](https://github.com/12joan) –
+- [#3168](https://github.com/sewellstephens/late/pull/3168) by [@12joan](https://github.com/12joan) –
   - Now uses the reworked combobox package
   - `MentionInputPlugin.key` is now an inline void element, and combobox functionality must now be handled in the component
   - Plugin options:
@@ -45,13 +45,13 @@
 
 ### Minor Changes
 
-- [#3155](https://github.com/udecode/plate/pull/3155) by [@felixfeng33](https://github.com/felixfeng33) – Move `moveSelectionByOffset` from `@sewellstephens/plate-mention` to `@sewellstephens/plate-utils`
+- [#3155](https://github.com/sewellstephens/late/pull/3155) by [@felixfeng33](https://github.com/felixfeng33) – Move `moveSelectionByOffset` from `@sewellstephens/plate-mention` to `@sewellstephens/plate-utils`
 
 ## 31.3.5
 
 ### Patch Changes
 
-- [#3107](https://github.com/udecode/plate/pull/3107) by [@natamox](https://github.com/natamox) – Fixed issue where undoing empty mentions or non-existent users caused system crashes.
+- [#3107](https://github.com/sewellstephens/late/pull/3107) by [@natamox](https://github.com/natamox) – Fixed issue where undoing empty mentions or non-existent users caused system crashes.
 
 ## 31.0.0
 
@@ -59,7 +59,7 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/udecode/plate/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.5.2
 
@@ -91,7 +91,7 @@
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -117,7 +117,7 @@
 
 ### Patch Changes
 
-- [#2619](https://github.com/udecode/plate/pull/2619) by [@OliverWales](https://github.com/OliverWales) – Remove mention inputs from editor on blur
+- [#2619](https://github.com/sewellstephens/late/pull/2619) by [@OliverWales](https://github.com/OliverWales) – Remove mention inputs from editor on blur
 
 ## 23.7.0
 
@@ -131,7 +131,7 @@
 
 ### Minor Changes
 
-- [#2542](https://github.com/udecode/plate/pull/2542) by [@cacosandon](https://github.com/cacosandon) – Add `triggerPreviousCharPattern` option to mention plugin.
+- [#2542](https://github.com/sewellstephens/late/pull/2542) by [@cacosandon](https://github.com/cacosandon) – Add `triggerPreviousCharPattern` option to mention plugin.
 
 ## 22.0.2
 
@@ -149,7 +149,7 @@
 
 ### Patch Changes
 
-- [#2430](https://github.com/udecode/plate/pull/2430) by [@bojangles-m](https://github.com/bojangles-m) – Render an empty node tag at block start
+- [#2430](https://github.com/sewellstephens/late/pull/2430) by [@bojangles-m](https://github.com/bojangles-m) – Render an empty node tag at block start
 
 ## 21.3.2
 
@@ -167,7 +167,7 @@
 
 ### Patch Changes
 
-- [#2317](https://github.com/udecode/plate/pull/2317) by [@santialbo](https://github.com/santialbo) – Get right mention input type when overriden
+- [#2317](https://github.com/sewellstephens/late/pull/2317) by [@santialbo](https://github.com/santialbo) – Get right mention input type when overriden
 
 ## 20.4.0
 
@@ -189,7 +189,7 @@
 
 ### Patch Changes
 
-- [#2166](https://github.com/udecode/plate/pull/2166) by [@OliverWales](https://github.com/OliverWales) – Add `query` option to mention plugin
+- [#2166](https://github.com/sewellstephens/late/pull/2166) by [@OliverWales](https://github.com/OliverWales) – Add `query` option to mention plugin
 
 ## 19.2.0
 
@@ -211,7 +211,7 @@
 
 ### Patch Changes
 
-- [#1999](https://github.com/udecode/plate/pull/1999) by [@O4epegb](https://github.com/O4epegb) – Fix mention espace keydown handler: it always prevents default on Escape but it should only happen when there is a mention input
+- [#1999](https://github.com/sewellstephens/late/pull/1999) by [@O4epegb](https://github.com/O4epegb) – Fix mention espace keydown handler: it always prevents default on Escape but it should only happen when there is a mention input
 
 ## 18.9.0
 
@@ -271,7 +271,7 @@
 
 ### Patch Changes
 
-- [#1622](https://github.com/udecode/plate/pull/1622) by [@nemanja-tosic](https://github.com/nemanja-tosic) – Pass search to createMentionNode as metadata
+- [#1622](https://github.com/sewellstephens/late/pull/1622) by [@nemanja-tosic](https://github.com/nemanja-tosic) – Pass search to createMentionNode as metadata
 
 ## 13.4.1
 
@@ -279,11 +279,11 @@
 
 ### Minor Changes
 
-- [#1615](https://github.com/udecode/plate/pull/1615) by [@nemanja-tosic](https://github.com/nemanja-tosic) – Add support for pasting into mentions
+- [#1615](https://github.com/sewellstephens/late/pull/1615) by [@nemanja-tosic](https://github.com/nemanja-tosic) – Add support for pasting into mentions
 
 ### Patch Changes
 
-- [#1619](https://github.com/udecode/plate/pull/1619) by [@nemanja-tosic](https://github.com/nemanja-tosic) – Merge lines, strip whitespaces
+- [#1619](https://github.com/sewellstephens/late/pull/1619) by [@nemanja-tosic](https://github.com/nemanja-tosic) – Merge lines, strip whitespaces
 
 ## 13.1.0
 
@@ -319,7 +319,7 @@
 
 ### Patch Changes
 
-- [#1461](https://github.com/udecode/plate/pull/1461) by [@karthikcodes6](https://github.com/karthikcodes6) – adds current mention creationId to fix opening the mention in multiple sessions
+- [#1461](https://github.com/sewellstephens/late/pull/1461) by [@karthikcodes6](https://github.com/karthikcodes6) – adds current mention creationId to fix opening the mention in multiple sessions
 
 ## 10.4.2
 
@@ -335,7 +335,7 @@
 
 ### Minor Changes
 
-- [#1397](https://github.com/udecode/plate/pull/1397) by [@fakedarren](https://github.com/fakedarren) – Improvements to mentions behaviours:
+- [#1397](https://github.com/sewellstephens/late/pull/1397) by [@fakedarren](https://github.com/fakedarren) – Improvements to mentions behaviours:
 
   - pressing 'esc' will take you out of the mentions flow
   - improve undo behavior (fixes #1284, #1285)
@@ -369,7 +369,7 @@
 
 ### Major Changes
 
-- [#1234](https://github.com/udecode/plate/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Removed:
+- [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Removed:
   - `getMentionInputPluginOptions` for `getPlugin`
   - `getMentionInputType` for `getPluginType`
   - `COMBOBOX_TRIGGER_MENTION`
@@ -380,7 +380,7 @@
 
 ### Patch Changes
 
-- [#1201](https://github.com/udecode/plate/pull/1201) by [@zbeyens](https://github.com/zbeyens) – breaking changes (v7):
+- [#1201](https://github.com/sewellstephens/late/pull/1201) by [@zbeyens](https://github.com/zbeyens) – breaking changes (v7):
 
   - `getMentionOnSelectItem`:
     - is now using plugin options
@@ -400,7 +400,7 @@
 
 ### Minor Changes
 
-- [#1168](https://github.com/udecode/plate/pull/1168) by [@nemanja-tosic](https://github.com/nemanja-tosic) – Inline mention proposal element instead of using whatever comes after a trigger.
+- [#1168](https://github.com/sewellstephens/late/pull/1168) by [@nemanja-tosic](https://github.com/nemanja-tosic) – Inline mention proposal element instead of using whatever comes after a trigger.
 
 ## 6.4.1
 
@@ -418,7 +418,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`a6bf8c5e`](https://github.com/udecode/plate/commit/a6bf8c5e6897c6ab443e0ac3d69a30befeaddadf)]:
+- Updated dependencies [[`a6bf8c5e`](https://github.com/sewellstephens/late/commit/a6bf8c5e6897c6ab443e0ac3d69a30befeaddadf)]:
   - @sewellstephens/plate-common@5.3.5
   - @sewellstephens/plate-combobox@5.3.5
 
@@ -426,7 +426,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`8aec270f`](https://github.com/udecode/plate/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118)]:
+- Updated dependencies [[`8aec270f`](https://github.com/sewellstephens/late/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118)]:
   - @sewellstephens/plate-core@5.3.1
   - @sewellstephens/plate-common@5.3.1
   - @sewellstephens/plate-combobox@5.3.1
@@ -435,7 +435,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`7ee21356`](https://github.com/udecode/plate/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e)]:
+- Updated dependencies [[`7ee21356`](https://github.com/sewellstephens/late/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e)]:
   - @sewellstephens/plate-core@5.3.0
   - @sewellstephens/plate-common@5.3.0
   - @sewellstephens/plate-combobox@5.3.0
@@ -444,48 +444,48 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`25b359a2`](https://github.com/udecode/plate/commit/25b359a23df79bc3b5f710fe9f58c4b549c72e75)]:
+- Updated dependencies [[`25b359a2`](https://github.com/sewellstephens/late/commit/25b359a23df79bc3b5f710fe9f58c4b549c72e75)]:
   - @sewellstephens/plate-combobox@5.2.3
 
 ## 5.2.2
 
 ### Patch Changes
 
-- Updated dependencies [[`b8f2f97b`](https://github.com/udecode/plate/commit/b8f2f97be28db3f0eb4e8e5222dabe5aa0c2fb3b)]:
+- Updated dependencies [[`b8f2f97b`](https://github.com/sewellstephens/late/commit/b8f2f97be28db3f0eb4e8e5222dabe5aa0c2fb3b)]:
   - @sewellstephens/plate-combobox@5.2.2
 
 ## 5.2.1
 
 ### Patch Changes
 
-- [#1117](https://github.com/udecode/plate/pull/1117) [`07d4df63`](https://github.com/udecode/plate/commit/07d4df63f8358cdf9dd34242e4ffb4eb5e4c4e73) Thanks [@dylans](https://github.com/dylans)! - changes:
+- [#1117](https://github.com/sewellstephens/late/pull/1117) [`07d4df63`](https://github.com/sewellstephens/late/commit/07d4df63f8358cdf9dd34242e4ffb4eb5e4c4e73) Thanks [@dylans](https://github.com/dylans)! - changes:
   - customizable `createMentionNode`
   - missing default for `id`
-- Updated dependencies [[`882308a8`](https://github.com/udecode/plate/commit/882308a81a5ed18669c8209d8b74d3fca76a4dd2)]:
+- Updated dependencies [[`882308a8`](https://github.com/sewellstephens/late/commit/882308a81a5ed18669c8209d8b74d3fca76a4dd2)]:
   - @sewellstephens/plate-combobox@5.2.1
 
 ## 5.2.0
 
 ### Minor Changes
 
-- [#1116](https://github.com/udecode/plate/pull/1116) [`86837955`](https://github.com/udecode/plate/commit/86837955ebcdf7d93e10cdcfe3a97181611500bf) Thanks [@dylans](https://github.com/dylans)! - mention, reintroduce insertSpaceAfterMention, decouple id from pluginKey
+- [#1116](https://github.com/sewellstephens/late/pull/1116) [`86837955`](https://github.com/sewellstephens/late/commit/86837955ebcdf7d93e10cdcfe3a97181611500bf) Thanks [@dylans](https://github.com/dylans)! - mention, reintroduce insertSpaceAfterMention, decouple id from pluginKey
 
 ### Patch Changes
 
-- [#1112](https://github.com/udecode/plate/pull/1112) [`9910a511`](https://github.com/udecode/plate/commit/9910a511998649641e3938f3569eed1ded711842) Thanks [@dylans](https://github.com/dylans)! - `Mention`: `getMentionOnSelectItem` now receives an optional pluginKey
+- [#1112](https://github.com/sewellstephens/late/pull/1112) [`9910a511`](https://github.com/sewellstephens/late/commit/9910a511998649641e3938f3569eed1ded711842) Thanks [@dylans](https://github.com/dylans)! - `Mention`: `getMentionOnSelectItem` now receives an optional pluginKey
 
 ## 5.1.1
 
 ### Patch Changes
 
-- Updated dependencies [[`73ca0d4e`](https://github.com/udecode/plate/commit/73ca0d4ef46c77423926721a6e14dc09cd45e45a)]:
+- Updated dependencies [[`73ca0d4e`](https://github.com/sewellstephens/late/commit/73ca0d4ef46c77423926721a6e14dc09cd45e45a)]:
   - @sewellstephens/plate-combobox@5.1.1
 
 ## 5.1.0
 
 ### Patch Changes
 
-- Updated dependencies [[`503956fd`](https://github.com/udecode/plate/commit/503956fd9f71253249b3ad699b81c1c465351b0a)]:
+- Updated dependencies [[`503956fd`](https://github.com/sewellstephens/late/commit/503956fd9f71253249b3ad699b81c1c465351b0a)]:
   - @sewellstephens/plate-common@5.1.0
   - @sewellstephens/plate-combobox@5.1.0
 
@@ -500,7 +500,7 @@
 
 ### Major Changes
 
-- [#1086](https://github.com/udecode/plate/pull/1086) [`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8) Thanks [@zbeyens](https://github.com/zbeyens)! - The mention plugin is now using the combobox.
+- [#1086](https://github.com/sewellstephens/late/pull/1086) [`9a091446`](https://github.com/sewellstephens/late/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8) Thanks [@zbeyens](https://github.com/zbeyens)! - The mention plugin is now using the combobox.
   - removed `useMentionPlugin` in favor of `createMentionPlugin`
     - migration: replace `useMentionPlugin().plugin` by `createMentionPlugin()`
   - removed options:
@@ -531,28 +531,28 @@
 
 ### Minor Changes
 
-- [#1086](https://github.com/udecode/plate/pull/1086) [`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8) Thanks [@zbeyens](https://github.com/zbeyens)! - feat:
+- [#1086](https://github.com/sewellstephens/late/pull/1086) [`9a091446`](https://github.com/sewellstephens/late/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8) Thanks [@zbeyens](https://github.com/zbeyens)! - feat:
   - dependency: `"@sewellstephens/plate-combobox": "4.4.0"`
   - defaults: `COMBOBOX_TRIGGER_MENTION = '@'`
   - `getMentionOnSelectItem`
 
 ### Patch Changes
 
-- Updated dependencies [[`9a091446`](https://github.com/udecode/plate/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8)]:
+- Updated dependencies [[`9a091446`](https://github.com/sewellstephens/late/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8)]:
   - @sewellstephens/plate-combobox@5.0.0
 
 ## 4.4.0
 
 ### Patch Changes
 
-- Updated dependencies [[`b22c06aa`](https://github.com/udecode/plate/commit/b22c06aad1cfed08069dadc7ec39bcbfb1d0af37)]:
+- Updated dependencies [[`b22c06aa`](https://github.com/sewellstephens/late/commit/b22c06aad1cfed08069dadc7ec39bcbfb1d0af37)]:
   - @sewellstephens/plate-common@4.4.0
 
 ## 4.3.7
 
 ### Patch Changes
 
-- Updated dependencies [[`58f6fb53`](https://github.com/udecode/plate/commit/58f6fb53bf45a2e0509f4aca617aa21356952fca)]:
+- Updated dependencies [[`58f6fb53`](https://github.com/sewellstephens/late/commit/58f6fb53bf45a2e0509f4aca617aa21356952fca)]:
   - @sewellstephens/plate-core@4.3.7
   - @sewellstephens/plate-common@4.3.7
 
@@ -560,7 +560,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`6af469cd`](https://github.com/udecode/plate/commit/6af469cd5ac310e831eb8a99a71eba73bde62fc6)]:
+- Updated dependencies [[`6af469cd`](https://github.com/sewellstephens/late/commit/6af469cd5ac310e831eb8a99a71eba73bde62fc6)]:
   - @sewellstephens/plate-core@4.3.0
   - @sewellstephens/plate-common@4.3.0
 
@@ -568,7 +568,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`f1da7267`](https://github.com/udecode/plate/commit/f1da7267d46d94e207f4477f73e42b63736a9085), [`35caf35d`](https://github.com/udecode/plate/commit/35caf35d48fff851518648ff66e64a4268dcc97c)]:
+- Updated dependencies [[`f1da7267`](https://github.com/sewellstephens/late/commit/f1da7267d46d94e207f4477f73e42b63736a9085), [`35caf35d`](https://github.com/sewellstephens/late/commit/35caf35d48fff851518648ff66e64a4268dcc97c)]:
   - @sewellstephens/plate-common@3.4.0
   - @sewellstephens/plate-core@3.4.0
 
@@ -576,11 +576,11 @@
 
 ### Minor Changes
 
-- [#995](https://github.com/udecode/plate/pull/995) [`58387c6d`](https://github.com/udecode/plate/commit/58387c6d34e86be7880999b40a9105b6178f4ce4) Thanks [@dylans](https://github.com/dylans)! - update slate dependencies and peerDependencies to 0.66.\*
+- [#995](https://github.com/sewellstephens/late/pull/995) [`58387c6d`](https://github.com/sewellstephens/late/commit/58387c6d34e86be7880999b40a9105b6178f4ce4) Thanks [@dylans](https://github.com/dylans)! - update slate dependencies and peerDependencies to 0.66.\*
 
 ### Patch Changes
 
-- Updated dependencies [[`58387c6d`](https://github.com/udecode/plate/commit/58387c6d34e86be7880999b40a9105b6178f4ce4)]:
+- Updated dependencies [[`58387c6d`](https://github.com/sewellstephens/late/commit/58387c6d34e86be7880999b40a9105b6178f4ce4)]:
   - @sewellstephens/plate-common@3.2.0
   - @sewellstephens/plate-core@3.2.0
 
@@ -588,43 +588,43 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`f6c58134`](https://github.com/udecode/plate/commit/f6c581347cc5877b7afa0774ef1ad78ad227564e)]:
+- Updated dependencies [[`f6c58134`](https://github.com/sewellstephens/late/commit/f6c581347cc5877b7afa0774ef1ad78ad227564e)]:
   - @sewellstephens/plate-common@3.1.3
 
 ## 2.0.0
 
 ### Patch Changes
 
-- Updated dependencies [[`ec4d5b7b`](https://github.com/udecode/plate/commit/ec4d5b7bd01b6fd21ba14a28f782c143d32c7532)]:
+- Updated dependencies [[`ec4d5b7b`](https://github.com/sewellstephens/late/commit/ec4d5b7bd01b6fd21ba14a28f782c143d32c7532)]:
   - @sewellstephens/plate-common@2.0.0
 
 ## 1.1.7
 
 ### Patch Changes
 
-- [#920](https://github.com/udecode/plate/pull/920) [`10064d24`](https://github.com/udecode/plate/commit/10064d24dde293768452abb7c853dc75cbde2c78) Thanks [@zbeyens](https://github.com/zbeyens)! - add `slate-history` as a peerDep
+- [#920](https://github.com/sewellstephens/late/pull/920) [`10064d24`](https://github.com/sewellstephens/late/commit/10064d24dde293768452abb7c853dc75cbde2c78) Thanks [@zbeyens](https://github.com/zbeyens)! - add `slate-history` as a peerDep
 
 ## 1.1.6
 
 ### Patch Changes
 
-- [#918](https://github.com/udecode/plate/pull/918) [`7d045d8d`](https://github.com/udecode/plate/commit/7d045d8db39515d4574c5313cc97287486c5866b) Thanks [@zbeyens](https://github.com/zbeyens)! - add `slate-history` as a peerDep
+- [#918](https://github.com/sewellstephens/late/pull/918) [`7d045d8d`](https://github.com/sewellstephens/late/commit/7d045d8db39515d4574c5313cc97287486c5866b) Thanks [@zbeyens](https://github.com/zbeyens)! - add `slate-history` as a peerDep
 
-- Updated dependencies [[`7d045d8d`](https://github.com/udecode/plate/commit/7d045d8db39515d4574c5313cc97287486c5866b)]:
+- Updated dependencies [[`7d045d8d`](https://github.com/sewellstephens/late/commit/7d045d8db39515d4574c5313cc97287486c5866b)]:
   - @sewellstephens/plate-common@1.1.6
 
 ## 1.0.0
 
 ### Major Changes
 
-🎉 The **Slate Plugins** project has evolved to **Plate** 🎉
+🎉 The **Slate Plugins** project has evolved to **Late** 🎉
 
 To migrate, install `@sewellstephens/plate[-x]` then find and replace all
 occurrences of:
 
 - `slate-plugins` to `plate`
-- `SlatePlugins` to `Plate`
-- `SlatePlugin` to `PlatePlugin`
+- `SlatePlugins` to `Late`
+- `SlatePlugin` to `LatePlugin`
 
 ## 1.0.0-next.61
 

@@ -2,7 +2,7 @@
   "name": "www",
   "version": "0.0.1",
   "private": true,
-  "description": "A simple NextJS app with Plate",
+  "description": "A simple NextJS app with Late",
   "type": "module",
   "scripts": {
     "prebuild": "yarn build:contentlayer",

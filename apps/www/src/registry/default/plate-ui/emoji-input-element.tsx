@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 
 import { withRef } from '@sewellstephens/cn';
-import { PlateElement } from '@sewellstephens/plate-common/react';
+import { LateElement } from '@sewellstephens/plate-common/react';
 import { EmojiInlineIndexSearch, insertEmoji } from '@sewellstephens/plate-emoji';
 
 import { useDebounce } from '@/hooks/use-debounce';
@@ -14,7 +14,7 @@ import {
   InlineComboboxItem,
 } from './inline-combobox';
 
-export const EmojiInputElement = withRef<typeof PlateElement>(
+export const EmojiInputElement = withRef<typeof LateElement>(
   ({ className, ...props }, ref) => {
     const { children, editor, element } = props;
     const [value, setValue] = useState('');
@@ -30,7 +30,7 @@ export const EmojiInputElement = withRef<typeof PlateElement>(
     }, [debouncedValue]);
 
     return (
-      <PlateElement
+      <LateElement
         as="span"
         data-slate-value={element.value}
         ref={ref}
@@ -64,7 +64,7 @@ export const EmojiInputElement = withRef<typeof PlateElement>(
         </InlineCombobox>
 
         {children}
-      </PlateElement>
+      </LateElement>
     );
   }
 );

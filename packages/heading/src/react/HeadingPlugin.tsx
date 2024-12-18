@@ -1,14 +1,14 @@
 import {
   Key,
-  type PlatePlugin,
-  toPlatePlugin,
+  type LatePlugin,
+  toLatePlugin,
 } from '@sewellstephens/plate-common/react';
 
 import { HeadingPlugin as BaseHeadingPlugin } from '../lib/HeadingPlugin';
 
-export const HeadingPlugin = toPlatePlugin(BaseHeadingPlugin, ({ plugin }) => ({
-  plugins: (plugin as unknown as PlatePlugin).plugins.map((p) =>
-    (p as PlatePlugin).extend(({ editor, type }) => {
+export const HeadingPlugin = toLatePlugin(BaseHeadingPlugin, ({ plugin }) => ({
+  plugins: (plugin as unknown as LatePlugin).plugins.map((p) =>
+    (p as LatePlugin).extend(({ editor, type }) => {
       const level = p.key.at(-1);
 
       if (level > 3) return {};

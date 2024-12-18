@@ -6,19 +6,19 @@ import { SoftBreakPlugin } from '@sewellstephens/plate-break/react';
 import { type Value, createSlatePlugin, isInline } from '@sewellstephens/plate-common';
 import {
   ParagraphPlugin,
-  createPlatePlugin,
-  toPlatePlugin,
+  createLatePlugin,
+  toLatePlugin,
 } from '@sewellstephens/plate-common/react';
 import {
-  Plate,
-  PlateContent,
-  PlateElement,
-  type PlateElementProps,
-  PlateLeaf,
-  type PlateLeafProps,
-  type PlateProps,
-  createPlateEditor,
-  usePlateEditor,
+  Late,
+  LateContent,
+  LateElement,
+  type LateElementProps,
+  LateLeaf,
+  type LateLeafProps,
+  type LateProps,
+  createLateEditor,
+  useLateEditor,
 } from '@sewellstephens/plate-common/react';
 import {
   type DiffOperation,
@@ -29,15 +29,15 @@ import {
 import { cloneDeep } from 'lodash';
 import { useSelected } from 'slate-react';
 
-import { PlateUI } from '@/lib/plate/demo/plate-ui';
+import { LateUI } from '@/lib/plate/demo/plate-ui';
 import { Button } from '@/registry/default/plate-ui/button';
 
-const InlinePlugin = createPlatePlugin({
+const InlinePlugin = createLatePlugin({
   key: 'inline',
   node: { isElement: true, isInline: true },
 });
 
-const InlineVoidPlugin = createPlatePlugin({
+const InlineVoidPlugin = createLatePlugin({
   key: 'inline-void',
   node: { isElement: true, isInline: true, isVoid: true },
 });
@@ -90,23 +90,23 @@ const describeUpdate = ({ newProperties, properties }: DiffUpdate) => {
   return descriptionParts.join('\n');
 };
 
-const InlineElement = ({ children, ...props }: PlateElementProps) => {
+const InlineElement = ({ children, ...props }: LateElementProps) => {
   return (
-    <PlateElement
+    <LateElement
       {...props}
       as="span"
       className="rounded-sm bg-slate-200/50 p-1"
     >
       {children}
-    </PlateElement>
+    </LateElement>
   );
 };
 
-const InlineVoidElement = ({ children, ...props }: PlateElementProps) => {
+const InlineVoidElement = ({ children, ...props }: LateElementProps) => {
   const selected = useSelected();
 
   return (
-    <PlateElement {...props} as="span">
+    <LateElement {...props} as="span">
       <span
         className={cn(
           'rounded-sm bg-slate-200/50 p-1',
@@ -117,11 +117,11 @@ const InlineVoidElement = ({ children, ...props }: PlateElementProps) => {
         Inline void
       </span>
       {children}
-    </PlateElement>
+    </LateElement>
   );
 };
 
-const DiffPlugin = toPlatePlugin(
+const DiffPlugin = toLatePlugin(
   createSlatePlugin({
     extendEditor: withGetFragmentExcludeDiff,
     key: 'diff',
@@ -165,7 +165,7 @@ const DiffPlugin = toPlatePlugin(
   }
 );
 
-function DiffLeaf({ children, ...props }: PlateLeafProps) {
+function DiffLeaf({ children, ...props }: LateLeafProps) {
   const diffOperation = props.leaf.diffOperation as DiffOperation;
 
   const Component = (
@@ -177,7 +177,7 @@ function DiffLeaf({ children, ...props }: PlateLeafProps) {
   )[diffOperation.type];
 
   return (
-    <PlateLeaf {...props} asChild>
+    <LateLeaf {...props} asChild>
       <Component
         className={diffOperationColors[diffOperation.type]}
         title={
@@ -188,7 +188,7 @@ function DiffLeaf({ children, ...props }: PlateLeafProps) {
       >
         {children}
       </Component>
-    </PlateLeaf>
+    </LateLeaf>
   );
 }
 
@@ -232,11 +232,11 @@ const plugins = [
   SoftBreakPlugin,
 ];
 
-function VersionHistoryPlate(props: Omit<PlateProps, 'children'>) {
+function VersionHistoryLate(props: Omit<LateProps, 'children'>) {
   return (
-    <Plate {...props}>
-      <PlateContent className="rounded-md border p-3" />
-    </Plate>
+    <Late {...props}>
+      <LateContent className="rounded-md border p-3" />
+    </Late>
   );
 }
 
@@ -247,7 +247,7 @@ interface DiffProps {
 
 function Diff({ current, previous }: DiffProps) {
   const diffValue = React.useMemo(() => {
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins,
     });
 
@@ -257,9 +257,9 @@ function Diff({ current, previous }: DiffProps) {
     }) as Value;
   }, [previous, current]);
 
-  const editor = usePlateEditor(
+  const editor = useLateEditor(
     {
-      override: { components: PlateUI },
+      override: { components: LateUI },
       plugins,
       value: diffValue,
     },
@@ -268,7 +268,7 @@ function Diff({ current, previous }: DiffProps) {
 
   return (
     <>
-      <VersionHistoryPlate
+      <VersionHistoryLate
         editor={editor}
         key={JSON.stringify(diffValue)}
         readOnly
@@ -294,15 +294,15 @@ export default function VersionHistoryDemo() {
     setRevisions([...revisions, value]);
   };
 
-  const editor = usePlateEditor({
-    override: { components: PlateUI },
+  const editor = useLateEditor({
+    override: { components: LateUI },
     plugins,
     value: initialValue,
   });
 
-  const editorRevision = usePlateEditor(
+  const editorRevision = useLateEditor(
     {
-      override: { components: PlateUI },
+      override: { components: LateUI },
       plugins,
       value: selectedRevisionValue,
     },
@@ -313,7 +313,7 @@ export default function VersionHistoryDemo() {
     <div className="flex flex-col gap-3 p-3">
       <Button onClick={saveRevision}>Save revision</Button>
 
-      <VersionHistoryPlate
+      <VersionHistoryLate
         editor={editor}
         onChange={({ value }) => setValue(value)}
       />
@@ -335,7 +335,7 @@ export default function VersionHistoryDemo() {
       <div className="grid gap-3 md:grid-cols-2">
         <div>
           <h2>Revision {selectedRevisionIndex + 1}</h2>
-          <VersionHistoryPlate
+          <VersionHistoryLate
             editor={editorRevision}
             key={selectedRevisionIndex}
             readOnly

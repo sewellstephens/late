@@ -2,7 +2,7 @@
 
 import type { SlateEditor } from '@sewellstephens/plate-common';
 
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
 import { isCodeBlockEmpty } from './isCodeBlockEmpty';
@@ -25,7 +25,7 @@ describe('isCodeBlockEmpty', () => {
       </editor>
     ) as any as SlateEditor;
 
-    expect(isCodeBlockEmpty(createPlateEditor({ editor: input }))).toBe(false);
+    expect(isCodeBlockEmpty(createLateEditor({ editor: input }))).toBe(false);
   });
 
   it('should be false when in a code block with multiple lines', () => {
@@ -43,7 +43,7 @@ describe('isCodeBlockEmpty', () => {
       </editor>
     ) as any as SlateEditor;
 
-    expect(isCodeBlockEmpty(createPlateEditor({ editor: input }))).toBe(false);
+    expect(isCodeBlockEmpty(createLateEditor({ editor: input }))).toBe(false);
   });
 
   it('should be false when in a non-empty code line', () => {
@@ -58,7 +58,7 @@ describe('isCodeBlockEmpty', () => {
       </editor>
     ) as any as SlateEditor;
 
-    expect(isCodeBlockEmpty(createPlateEditor({ editor: input }))).toBe(false);
+    expect(isCodeBlockEmpty(createLateEditor({ editor: input }))).toBe(false);
   });
 
   it('should be true when in an empty code line', () => {
@@ -73,6 +73,6 @@ describe('isCodeBlockEmpty', () => {
       </editor>
     ) as any as SlateEditor;
 
-    expect(isCodeBlockEmpty(createPlateEditor({ editor: input }))).toBe(true);
+    expect(isCodeBlockEmpty(createLateEditor({ editor: input }))).toBe(true);
   });
 });

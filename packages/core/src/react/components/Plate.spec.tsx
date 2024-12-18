@@ -6,29 +6,29 @@ import { type Value, isBlock, setNodes } from '@sewellstephens/slate';
 import isEqual from 'lodash/isEqual';
 import memoize from 'lodash/memoize';
 
-import type { PlatePlugins } from '../plugin';
+import type { LatePlugins } from '../plugin';
 
 import { type SlatePlugins, createSlatePlugin } from '../../lib';
-import { createPlateEditor, usePlateEditor } from '../editor';
-import { createPlatePlugin } from '../plugin/createPlatePlugin';
+import { createLateEditor, useLateEditor } from '../editor';
+import { createLatePlugin } from '../plugin/createLatePlugin';
 import {
-  PlateController,
+  LateController,
   useEditorRef,
   useEditorValue,
-  usePlateEditorStore,
-  usePlateSelectors,
+  useLateEditorStore,
+  useLateSelectors,
 } from '../stores';
-import { Plate } from './Plate';
-import { PlateContent } from './PlateContent';
+import { Late } from './Late';
+import { LateContent } from './LateContent';
 
-describe('Plate', () => {
+describe('Late', () => {
   describe('useEditorRef()', () => {
     describe('when editor is defined', () => {
       it('should be initialValue', async () => {
-        const editor = createPlateEditor();
+        const editor = createLateEditor();
 
         const wrapper = ({ children }: any) => (
-          <Plate editor={editor}>{children}</Plate>
+          <Late editor={editor}>{children}</Late>
         );
         const { result } = renderHook(() => useEditorRef(), {
           wrapper,
@@ -40,13 +40,13 @@ describe('Plate', () => {
 
     describe('when editor is not defined', () => {
       it('should be default', async () => {
-        const editor1 = createPlateEditor({ id: 'test1' });
-        const editor2 = createPlateEditor({ id: 'test2' });
+        const editor1 = createLateEditor({ id: 'test1' });
+        const editor2 = createLateEditor({ id: 'test2' });
 
         const wrapper = ({ children }: any) => (
-          <Plate editor={editor1}>
-            <Plate editor={editor2}>{children}</Plate>
-          </Plate>
+          <Late editor={editor1}>
+            <Late editor={editor2}>{children}</Late>
+          </Late>
         );
 
         const { result } = renderHook(() => useEditorRef(), {
@@ -59,13 +59,13 @@ describe('Plate', () => {
 
     describe('when id is defined', () => {
       it('should be id', async () => {
-        const editor1 = createPlateEditor({ id: 'test1' });
-        const editor2 = createPlateEditor({ id: 'test2' });
+        const editor1 = createLateEditor({ id: 'test1' });
+        const editor2 = createLateEditor({ id: 'test2' });
 
         const wrapper = ({ children }: any) => (
-          <Plate editor={editor1}>
-            <Plate editor={editor2}>{children}</Plate>
-          </Plate>
+          <Late editor={editor1}>
+            <Late editor={editor2}>{children}</Late>
+          </Late>
         );
 
         const { result: result1 } = renderHook(() => useEditorRef('test1'), {
@@ -87,10 +87,10 @@ describe('Plate', () => {
         const initialValue: Value = [
           { children: [{ text: 'test' }], type: 'p' },
         ];
-        const editor = createPlateEditor({ value: initialValue });
+        const editor = createLateEditor({ value: initialValue });
 
         const wrapper = ({ children }: any) => (
-          <Plate editor={editor}>{children}</Plate>
+          <Late editor={editor}>{children}</Late>
         );
         const { result } = renderHook(() => useEditorValue(), {
           wrapper,
@@ -102,11 +102,11 @@ describe('Plate', () => {
 
     describe('when editor with children is defined', () => {
       it('should be editor.children', async () => {
-        const editor = createPlateEditor();
+        const editor = createLateEditor();
         editor.children = [{ children: [{ text: 'value' }], type: 'p' }];
 
         const wrapper = ({ children }: any) => (
-          <Plate editor={editor}>{children}</Plate>
+          <Late editor={editor}>{children}</Late>
         );
         const { result } = renderHook(() => useEditorValue(), {
           wrapper,
@@ -118,10 +118,10 @@ describe('Plate', () => {
 
     describe('when editor without children is defined', () => {
       it('should be default', async () => {
-        const editor = createPlateEditor();
+        const editor = createLateEditor();
 
         const wrapper = ({ children }: any) => (
-          <Plate editor={editor}>{children}</Plate>
+          <Late editor={editor}>{children}</Late>
         );
         const { result } = renderHook(() => useEditorValue(), {
           wrapper,
@@ -132,18 +132,18 @@ describe('Plate', () => {
     });
   });
 
-  describe('usePlateSelectors().editor().plugins', () => {
+  describe('useLateSelectors().editor().plugins', () => {
     describe('when plugins is updated', () => {
       it('should be updated', () => {
-        const editor = createPlateEditor({
+        const editor = createLateEditor({
           plugins: [createSlatePlugin({ key: 'test' })],
         });
 
         const wrapper = ({ children, editor }: any) => (
-          <Plate editor={editor}>{children}</Plate>
+          <Late editor={editor}>{children}</Late>
         );
         const { rerender, result } = renderHook(
-          () => usePlateSelectors().editor().pluginList,
+          () => useLateSelectors().editor().pluginList,
           {
             initialProps: {
               editor,
@@ -154,7 +154,7 @@ describe('Plate', () => {
 
         expect(result.current.at(-1)!.key).toBe('test');
 
-        editor.pluginList = [createPlatePlugin({ key: 'test2' }) as any];
+        editor.pluginList = [createLatePlugin({ key: 'test2' }) as any];
 
         rerender({
           editor,
@@ -166,14 +166,14 @@ describe('Plate', () => {
 
     it('should use plugins from editor', () => {
       const _plugins = [createSlatePlugin({ key: 'test' })];
-      const editor = createPlateEditor({ plugins: _plugins });
+      const editor = createLateEditor({ plugins: _plugins });
 
       const wrapper = ({ children }: any) => (
-        <Plate editor={editor}>{children}</Plate>
+        <Late editor={editor}>{children}</Late>
       );
 
       const { result } = renderHook(
-        () => usePlateSelectors().editor().pluginList,
+        () => useLateSelectors().editor().pluginList,
         {
           wrapper,
         }
@@ -184,17 +184,17 @@ describe('Plate', () => {
   });
 
   describe('when id updates', () => {
-    it('should remount Plate', () => {
+    it('should remount Late', () => {
       const _plugins1 = [createSlatePlugin({ key: 'test1' })];
       const _plugins2 = [createSlatePlugin({ key: 'test2' })];
-      const editor1 = createPlateEditor({ id: '1', plugins: _plugins1 });
-      const editor2 = createPlateEditor({ id: '2', plugins: _plugins2 });
+      const editor1 = createLateEditor({ id: '1', plugins: _plugins1 });
+      const editor2 = createLateEditor({ id: '2', plugins: _plugins2 });
 
       const wrapper = ({ children, editor }: any) => (
-        <Plate editor={editor}>{children}</Plate>
+        <Late editor={editor}>{children}</Late>
       );
       const { rerender, result } = renderHook(
-        ({ editor }) => usePlateSelectors(editor.id).editor().pluginList,
+        ({ editor }) => useLateSelectors(editor.id).editor().pluginList,
         {
           initialProps: { editor: editor1 },
           wrapper,
@@ -209,15 +209,15 @@ describe('Plate', () => {
     });
   });
 
-  describe('usePlateSelectors().editor().id', () => {
-    describe('when Plate has an id', () => {
+  describe('useLateSelectors().editor().id', () => {
+    describe('when Late has an id', () => {
       it('should be editor id', async () => {
-        const editor = createPlateEditor({ id: 'test' });
+        const editor = createLateEditor({ id: 'test' });
 
         const wrapper = ({ children }: any) => (
-          <Plate editor={editor}>{children}</Plate>
+          <Late editor={editor}>{children}</Late>
         );
-        const { result } = renderHook(() => usePlateSelectors().editor().id, {
+        const { result } = renderHook(() => useLateSelectors().editor().id, {
           wrapper,
         });
 
@@ -225,14 +225,14 @@ describe('Plate', () => {
       });
     });
 
-    describe('when Plate without id > Plate with id', () => {
+    describe('when Late without id > Late with id', () => {
       it('should be the closest one', () => {
         const wrapper = ({ children }: any) => (
-          <Plate editor={createPlateEditor()}>
-            <Plate editor={createPlateEditor({ id: 'test' })}>{children}</Plate>
-          </Plate>
+          <Late editor={createLateEditor()}>
+            <Late editor={createLateEditor({ id: 'test' })}>{children}</Late>
+          </Late>
         );
-        const { result } = renderHook(() => usePlateSelectors().editor().id, {
+        const { result } = renderHook(() => useLateSelectors().editor().id, {
           wrapper,
         });
 
@@ -240,15 +240,15 @@ describe('Plate', () => {
       });
     });
 
-    describe('when Plate with id > Plate without id > select id', () => {
+    describe('when Late with id > Late without id > select id', () => {
       it('should be that id', () => {
         const wrapper = ({ children }: any) => (
-          <Plate editor={createPlateEditor({ id: 'test' })}>
-            <Plate editor={createPlateEditor()}>{children}</Plate>
-          </Plate>
+          <Late editor={createLateEditor({ id: 'test' })}>
+            <Late editor={createLateEditor()}>{children}</Late>
+          </Late>
         );
         const { result } = renderHook(
-          () => usePlateSelectors('test').editor().id,
+          () => useLateSelectors('test').editor().id,
           {
             wrapper,
           }
@@ -258,14 +258,14 @@ describe('Plate', () => {
       });
     });
 
-    describe('when Plate has an editor', () => {
+    describe('when Late has an editor', () => {
       it('should be editor id', async () => {
-        const editor = createPlateEditor({ id: 'test' });
+        const editor = createLateEditor({ id: 'test' });
 
         const wrapper = ({ children }: any) => (
-          <Plate editor={editor}>{children}</Plate>
+          <Late editor={editor}>{children}</Late>
         );
-        const { result } = renderHook(() => usePlateSelectors().editor().id, {
+        const { result } = renderHook(() => useLateSelectors().editor().id, {
           wrapper,
         });
 
@@ -274,24 +274,24 @@ describe('Plate', () => {
     });
   });
 
-  describe('usePlateEditorStore', () => {
+  describe('useLateEditorStore', () => {
     const getStore = (wrapper: any) =>
-      renderHook(() => usePlateEditorStore(), { wrapper }).result.current;
+      renderHook(() => useLateEditorStore(), { wrapper }).result.current;
 
     const getId = (wrapper: any) =>
-      renderHook(() => usePlateSelectors().editor().id, { wrapper }).result
+      renderHook(() => useLateSelectors().editor().id, { wrapper }).result
         .current;
 
     const getIsFallback = (wrapper: any) =>
       renderHook(() => useEditorRef().isFallback, { wrapper }).result.current;
 
-    describe('when Plate exists', () => {
+    describe('when Late exists', () => {
       describe('when editor is defined', () => {
         it('returns the store', async () => {
-          const editor = createPlateEditor({ id: 'test' });
+          const editor = createLateEditor({ id: 'test' });
 
           const wrapper = ({ children }: any) => (
-            <Plate editor={editor}>{children}</Plate>
+            <Late editor={editor}>{children}</Late>
           );
           expect(getStore(wrapper)).toBeDefined();
           expect(getId(wrapper)).toBe('test');
@@ -301,10 +301,10 @@ describe('Plate', () => {
 
       describe('when editor is not defined', () => {
         it('returns the store', async () => {
-          const editor = createPlateEditor({ id: 'test' });
+          const editor = createLateEditor({ id: 'test' });
 
           const wrapper = ({ children }: any) => (
-            <Plate editor={editor}>{children}</Plate>
+            <Late editor={editor}>{children}</Late>
           );
           expect(getStore(wrapper)).toBeDefined();
           expect(getId(wrapper)).toBe('test');
@@ -313,38 +313,38 @@ describe('Plate', () => {
       });
     });
 
-    describe('when Plate does not exist', () => {
-      describe('when PlateController exists', () => {
-        describe('when PlateController returns a store', () => {
+    describe('when Late does not exist', () => {
+      describe('when LateController exists', () => {
+        describe('when LateController returns a store', () => {
           it('returns the store', () => {
             const EXPECTED_STORE = 'expected store' as any;
 
             const wrapper = ({ children }: any) => (
-              <PlateController
+              <LateController
                 activeId="test"
                 editorStores={{
                   test: EXPECTED_STORE,
                 }}
               >
                 {children}
-              </PlateController>
+              </LateController>
             );
 
             expect(getStore(wrapper)).toBe(EXPECTED_STORE);
           });
         });
 
-        describe('when PlateController returns null', () => {
+        describe('when LateController returns null', () => {
           it('returns the fallback store', () => {
             const wrapper = ({ children }: any) => (
-              <PlateController
+              <LateController
                 activeId="test"
                 editorStores={{
                   test: null,
                 }}
               >
                 {children}
-              </PlateController>
+              </LateController>
             );
 
             expect(getStore(wrapper)).toBeDefined();
@@ -353,7 +353,7 @@ describe('Plate', () => {
         });
       });
 
-      describe('when PlateController does not exist', () => {
+      describe('when LateController does not exist', () => {
         it('throws an error', () => {
           const wrapper = ({ children }: any) => <>{children}</>;
           expect(() => getStore(wrapper)).toThrow();
@@ -387,15 +387,15 @@ describe('Plate', () => {
         ]
       )();
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins,
         value: [{ children: [{ text: '' }] }] as any,
       });
 
       render(
-        <Plate editor={editor}>
-          <PlateContent />
-        </Plate>
+        <Late editor={editor}>
+          <LateContent />
+        </Late>
       );
 
       expect(fn).not.toHaveBeenCalled();
@@ -408,8 +408,8 @@ describe('Plate', () => {
 
   describe('when render aboveSlate renders null', () => {
     it('should not normalize editor children', () => {
-      const plugins: PlatePlugins = [
-        createPlatePlugin({
+      const plugins: LatePlugins = [
+        createLatePlugin({
           key: 'a',
           render: {
             aboveSlate: () => {
@@ -419,22 +419,22 @@ describe('Plate', () => {
         }),
       ];
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins,
         value: [{} as any],
       });
 
       expect(() =>
         render(
-          <Plate editor={editor}>
-            <PlateContent />
-          </Plate>
+          <Late editor={editor}>
+            <LateContent />
+          </Late>
         )
       ).not.toThrow();
     });
   });
 
-  describe('Plate remounting', () => {
+  describe('Late remounting', () => {
     it('should remount when editor is recreated', () => {
       let mountCount = 0;
 
@@ -447,13 +447,13 @@ describe('Plate', () => {
       };
 
       const TestComponent = ({ dep }: { dep: number }) => {
-        const editor = usePlateEditor({ id: 'test' }, [dep]);
+        const editor = useLateEditor({ id: 'test' }, [dep]);
 
         return (
-          <Plate editor={editor}>
-            <PlateContent />
+          <Late editor={editor}>
+            <LateContent />
             <MountCounter />
-          </Plate>
+          </Late>
         );
       };
 

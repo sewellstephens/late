@@ -30,7 +30,7 @@ export const withInsertBreakIndentList: ExtendEditor<IndentListConfig> = ({
     if (
       !isDefined(node[IndentListPlugin.key]) ||
       node[IndentListPlugin.key] !== INDENT_LIST_KEYS.todo ||
-      // https://github.com/udecode/plate/issues/3340
+      // https://github.com/sewellstephens/late/issues/3340
       isExpanded(editor.selection) ||
       !isEndPoint(editor, editor.selection?.focus, nodeEntry[1])
     )

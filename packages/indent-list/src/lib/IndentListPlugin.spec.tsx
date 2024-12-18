@@ -4,7 +4,7 @@ import { AlignPlugin } from '@sewellstephens/plate-alignment';
 import { BasicElementsPlugin } from '@sewellstephens/plate-basic-elements';
 import { BasicMarksPlugin } from '@sewellstephens/plate-basic-marks';
 import { ParagraphPlugin } from '@sewellstephens/plate-common';
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { DocxPlugin } from '@sewellstephens/plate-docx';
 import { HEADING_KEYS } from '@sewellstephens/plate-heading';
 import { HorizontalRulePlugin } from '@sewellstephens/plate-horizontal-rule';
@@ -38,7 +38,7 @@ const createClipboardData = (html: string, rtf?: string): DataTransfer =>
 
 describe('when insertData disc and decimal from gdocs', () => {
   it('should ', () => {
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: (
         <editor>
           <hp>

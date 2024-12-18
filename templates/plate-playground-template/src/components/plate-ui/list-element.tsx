@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRef, withVariants } from '@sewellstephens/cn';
-import { PlateElement } from '@sewellstephens/plate-common';
+import { LateElement } from '@sewellstephens/plate-common';
 import { cva } from 'class-variance-authority';
 
 const listVariants = cva('m-0 ps-6', {
@@ -12,7 +12,7 @@ const listVariants = cva('m-0 ps-6', {
   },
 });
 
-const ListElementVariants = withVariants(PlateElement, listVariants, [
+const ListElementVariants = withVariants(LateElement, listVariants, [
   'variant',
 ]);
 

@@ -228,7 +228,7 @@ export default function InstallationTab() {
         cnImports.length > 0
           ? `import { ${cnImports} } from '@sewellstephens/cn';\n`
           : ''
-      }import { createPlateEditor, Plate${hasEditor ? '' : ', PlateContent'}${
+      }import { createLateEditor, Late${hasEditor ? '' : ', LateContent'}${
         plateImports.length > 0 ? ', ' + plateImports : ''
       } } from '@sewellstephens/plate-common/react';`,
       ...importsGroups,
@@ -309,7 +309,7 @@ export default function InstallationTab() {
   const hasPlaceholder = components.some((comp) => comp.id === 'placeholder');
 
   const usageCode = [
-    'const editor = createPlateEditor({',
+    'const editor = createLateEditor({',
     '  plugins: [',
     pluginsCode.join('\n'),
     '  ],',
@@ -375,7 +375,7 @@ export default function InstallationTab() {
     addLine(`<DndProvider backend={HTML5Backend}>`, true);
   }
 
-  addLine(`<Plate editor={editor}>`, true);
+  addLine(`<Late editor={editor}>`, true);
 
   if (hasFixedToolbar) {
     addLine(`<FixedToolbar>`, true);
@@ -388,7 +388,7 @@ export default function InstallationTab() {
     addLine(``);
   }
 
-  addLine(`<${hasEditor ? 'Editor' : 'PlateContent'} />`);
+  addLine(`<${hasEditor ? 'Editor' : 'LateContent'} />`);
 
   if (hasFloatingToolbar) {
     addLine(``);
@@ -407,7 +407,7 @@ export default function InstallationTab() {
     addLine(`<CommentsPopover />`);
   }
 
-  addLine(`</Plate>`, false, true);
+  addLine(`</Late>`, false, true);
 
   if (hasDnd) {
     addLine(`</DndProvider>`, false, true);
@@ -417,7 +417,7 @@ export default function InstallationTab() {
   }
 
   const plateCode = [
-    `export function PlateEditor() {`,
+    `export function LateEditor() {`,
     `  return (`,
     `    ${jsxCode.join('\n    ')}`,
     `  );`,
@@ -445,7 +445,7 @@ export default function InstallationTab() {
       </Typography.P>
 
       <Steps>
-        <Step>Install Plate</Step>
+        <Step>Install Late</Step>
         <RadioGroup
           onValueChange={(value) => {
             setIsManual(value === 'manual');
@@ -470,13 +470,13 @@ export default function InstallationTab() {
                 `npm install @sewellstephens/plate-common`,
               ].join('\n')}
             >
-              Install the peer dependencies and Plate:
+              Install the peer dependencies and Late:
             </InstallationCode>
             {someComponents && (
               <p className="mt-4">
                 Next,{' '}
                 <Link href="/docs/components/installation" target="_blank">
-                  install Plate UI
+                  install Late UI
                 </Link>
                 .
               </p>
@@ -486,7 +486,7 @@ export default function InstallationTab() {
           <div className="mt-6">
             Use{' '}
             <Link
-              href="https://github.com/udecode/plate-template"
+              href="https://github.com/sewellstephens/late-template"
               target="_blank"
             >
               this template

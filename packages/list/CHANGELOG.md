@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - `createListPlugin` -> `ListPlugin`
   - NEW `BulletedListPlugin`
   - NEW `NumberedListPlugin`
@@ -30,13 +30,13 @@
 
 ### Patch Changes
 
-- [#3194](https://github.com/udecode/plate/pull/3194) by [@KorovinQuantori](https://github.com/KorovinQuantori) – Export plugin keys for easier access plugin options by key
+- [#3194](https://github.com/sewellstephens/late/pull/3194) by [@KorovinQuantori](https://github.com/KorovinQuantori) – Export plugin keys for easier access plugin options by key
 
 ## 33.0.2
 
 ### Patch Changes
 
-- [#3187](https://github.com/udecode/plate/pull/3187) by [@zbeyens](https://github.com/zbeyens) – Fix types
+- [#3187](https://github.com/sewellstephens/late/pull/3187) by [@zbeyens](https://github.com/zbeyens) – Fix types
 
 ## 33.0.0
 
@@ -46,7 +46,7 @@
 
 ### Patch Changes
 
-- [#3070](https://github.com/udecode/plate/pull/3070) by [@zbeyens](https://github.com/zbeyens) – Fixes #3069
+- [#3070](https://github.com/sewellstephens/late/pull/3070) by [@zbeyens](https://github.com/zbeyens) – Fixes #3069
   Fixes #2397
 
 ## 31.0.0
@@ -55,7 +55,7 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/udecode/plate/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -73,7 +73,7 @@
 
 ### Patch Changes
 
-- [#2816](https://github.com/udecode/plate/pull/2816) by [@12joan](https://github.com/12joan) –
+- [#2816](https://github.com/sewellstephens/late/pull/2816) by [@12joan](https://github.com/12joan) –
   - Replace `useEdtiorState` with `useEditorSelector`
 
 ## 27.0.3
@@ -90,7 +90,7 @@
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -116,7 +116,7 @@
 
 ### Patch Changes
 
-- [#2597](https://github.com/udecode/plate/pull/2597) by [@nicktrn](https://github.com/nicktrn) – Prevent `deleteBackward` and `deleteForward` from creating empty nodes when merging sibling list items with multiple children
+- [#2597](https://github.com/sewellstephens/late/pull/2597) by [@nicktrn](https://github.com/nicktrn) – Prevent `deleteBackward` and `deleteForward` from creating empty nodes when merging sibling list items with multiple children
 
 ## 23.7.0
 
@@ -130,7 +130,7 @@
 
 ### Patch Changes
 
-- [#2559](https://github.com/udecode/plate/pull/2559) by [@dimaanj](https://github.com/dimaanj) –
+- [#2559](https://github.com/sewellstephens/late/pull/2559) by [@dimaanj](https://github.com/dimaanj) –
   - list plugin: call `deleteFragmentList` only if in a list
 
 ## 22.0.2
@@ -159,7 +159,7 @@
 
 ### Minor Changes
 
-- [#2351](https://github.com/udecode/plate/pull/2351) by [@almeraikhi](https://github.com/almeraikhi) – Enables the developer to enable or disable the checkbox state inheritance when creating a new todo list item.
+- [#2351](https://github.com/sewellstephens/late/pull/2351) by [@almeraikhi](https://github.com/almeraikhi) – Enables the developer to enable or disable the checkbox state inheritance when creating a new todo list item.
 
   The option is configurable for when a line break is inserted from the start of the node or the end of the node.
 
@@ -196,7 +196,7 @@
 
 ### Patch Changes
 
-- [#2180](https://github.com/udecode/plate/pull/2180) by [@12joan](https://github.com/12joan) – Ignore defaultPrevented keydown event
+- [#2180](https://github.com/sewellstephens/late/pull/2180) by [@12joan](https://github.com/12joan) – Ignore defaultPrevented keydown event
 
 ## 19.2.0
 
@@ -206,7 +206,7 @@
 
 ### Patch Changes
 
-- [#2141](https://github.com/udecode/plate/pull/2141) by [@12joan](https://github.com/12joan) – Fix crash when deleting line ending in \n
+- [#2141](https://github.com/sewellstephens/late/pull/2141) by [@12joan](https://github.com/12joan) – Fix crash when deleting line ending in \n
 
 ## 19.0.3
 
@@ -222,7 +222,7 @@
 
 ### Patch Changes
 
-- [#1986](https://github.com/udecode/plate/pull/1986) by [@charrondev](https://github.com/charrondev) – Fix Tab and Shift+Tab adjust selection ranges with the list plugin.
+- [#1986](https://github.com/sewellstephens/late/pull/1986) by [@charrondev](https://github.com/charrondev) – Fix Tab and Shift+Tab adjust selection ranges with the list plugin.
 
 ## 18.9.0
 
@@ -248,7 +248,7 @@
 
 ### Patch Changes
 
-- [#1842](https://github.com/udecode/plate/pull/1842) by [@zbeyens](https://github.com/zbeyens) – `moveListItems` should return a boolean (whether it has been moved)
+- [#1842](https://github.com/sewellstephens/late/pull/1842) by [@zbeyens](https://github.com/zbeyens) – `moveListItems` should return a boolean (whether it has been moved)
 
 ## 16.5.0
 
@@ -256,13 +256,13 @@
 
 ### Patch Changes
 
-- [#1816](https://github.com/udecode/plate/pull/1816) by [@zbeyens](https://github.com/zbeyens) – Fixes #1817
+- [#1816](https://github.com/sewellstephens/late/pull/1816) by [@zbeyens](https://github.com/zbeyens) – Fixes #1817
 
 ## 16.4.1
 
 ### Patch Changes
 
-- [#1804](https://github.com/udecode/plate/pull/1804) by [@zbeyens](https://github.com/zbeyens) – Fixes #1803
+- [#1804](https://github.com/sewellstephens/late/pull/1804) by [@zbeyens](https://github.com/zbeyens) – Fixes #1803
 
 ## 16.3.0
 
@@ -278,7 +278,7 @@
 
 ### Patch Changes
 
-- [#1728](https://github.com/udecode/plate/pull/1728) by [@dylans](https://github.com/dylans) – Retain order of blocks when converting to a list
+- [#1728](https://github.com/sewellstephens/late/pull/1728) by [@dylans](https://github.com/dylans) – Retain order of blocks when converting to a list
 
 ## 15.0.3
 
@@ -288,7 +288,7 @@
 
 ### Patch Changes
 
-- [#1693](https://github.com/udecode/plate/pull/1693) by [@zbeyens](https://github.com/zbeyens) – fix: list plugin was preventing default event even when selection was not containing any list node
+- [#1693](https://github.com/sewellstephens/late/pull/1693) by [@zbeyens](https://github.com/zbeyens) – fix: list plugin was preventing default event even when selection was not containing any list node
 
 ## 14.4.2
 
@@ -296,13 +296,13 @@
 
 ### Minor Changes
 
-- [#1676](https://github.com/udecode/plate/pull/1676) by [@zakishaheen](https://github.com/zakishaheen) – Allow escape unindent of the first element of a list
+- [#1676](https://github.com/sewellstephens/late/pull/1676) by [@zakishaheen](https://github.com/zakishaheen) – Allow escape unindent of the first element of a list
 
 ## 14.1.0
 
 ### Minor Changes
 
-- [#1663](https://github.com/udecode/plate/pull/1663) by [@zakishaheen](https://github.com/zakishaheen) – Allow un-indenting top level list items
+- [#1663](https://github.com/sewellstephens/late/pull/1663) by [@zakishaheen](https://github.com/zakishaheen) – Allow un-indenting top level list items
 
 ## 14.0.2
 
@@ -310,13 +310,13 @@
 
 ### Minor Changes
 
-- [#1642](https://github.com/udecode/plate/pull/1642) by [@zakishaheen](https://github.com/zakishaheen) – Improved list item indentation when selection spans across different elements
+- [#1642](https://github.com/sewellstephens/late/pull/1642) by [@zakishaheen](https://github.com/zakishaheen) – Improved list item indentation when selection spans across different elements
 
 ## 13.8.0
 
 ### Patch Changes
 
-- [#1651](https://github.com/udecode/plate/pull/1651) by [@davisg123](https://github.com/davisg123) – Some types of nested lists are not unwrapped completely
+- [#1651](https://github.com/sewellstephens/late/pull/1651) by [@davisg123](https://github.com/davisg123) – Some types of nested lists are not unwrapped completely
 
 ## 13.7.0
 
@@ -324,7 +324,7 @@
 
 ### Patch Changes
 
-- [`42c5ed1`](https://github.com/udecode/plate/commit/42c5ed1a15dfecb7e64fc39ba328c16733472112) by [@zbeyens](https://github.com/zbeyens) – Toggling a nested list that includes paragraph content should toggle all nested list elements
+- [`42c5ed1`](https://github.com/sewellstephens/late/commit/42c5ed1a15dfecb7e64fc39ba328c16733472112) by [@zbeyens](https://github.com/zbeyens) – Toggling a nested list that includes paragraph content should toggle all nested list elements
 
 ## 13.5.0
 
@@ -332,7 +332,7 @@
 
 ### Patch Changes
 
-- [#1607](https://github.com/udecode/plate/pull/1607) by [@dylans](https://github.com/dylans) – Fix list deleteBackward with custom type
+- [#1607](https://github.com/sewellstephens/late/pull/1607) by [@dylans](https://github.com/dylans) – Fix list deleteBackward with custom type
 
 ## 13.1.0
 
@@ -342,7 +342,7 @@
 
 ### Minor Changes
 
-- [#1560](https://github.com/udecode/plate/pull/1560) by [@zbeyens](https://github.com/zbeyens) –
+- [#1560](https://github.com/sewellstephens/late/pull/1560) by [@zbeyens](https://github.com/zbeyens) –
   - fix: tab / untab when composing with IME
   - update peerDeps:
     - `"slate": ">=0.78.0"`
@@ -386,13 +386,13 @@
 
 ### Patch Changes
 
-- [#1388](https://github.com/udecode/plate/pull/1388) by [@zbeyens](https://github.com/zbeyens) – fix for docs only: use `Array.from` instead of destructuring generators
+- [#1388](https://github.com/sewellstephens/late/pull/1388) by [@zbeyens](https://github.com/zbeyens) – fix for docs only: use `Array.from` instead of destructuring generators
 
 ## 10.1.0
 
 ### Minor Changes
 
-- [#1386](https://github.com/udecode/plate/pull/1386) by [@fakedarren](https://github.com/fakedarren) – Improvements to list behaviours:
+- [#1386](https://github.com/sewellstephens/late/pull/1386) by [@fakedarren](https://github.com/fakedarren) – Improvements to list behaviours:
 
   - copy/paste of lis into existing lists
   - behaviour of browser autocorrection
@@ -411,7 +411,7 @@
 
 ### Patch Changes
 
-- [#1336](https://github.com/udecode/plate/pull/1336) by [@fondation451](https://github.com/fondation451) – Copy/paste inside a list now works properly with pasting text:
+- [#1336](https://github.com/sewellstephens/late/pull/1336) by [@fondation451](https://github.com/fondation451) – Copy/paste inside a list now works properly with pasting text:
   The text was not pasted at all.
   For other kind of nodes like "p", there were pasted but inside the same bullet.
 
@@ -445,9 +445,9 @@
 
 ### Patch Changes
 
-- [#1146](https://github.com/udecode/plate/pull/1146) [`3718c6d1`](https://github.com/udecode/plate/commit/3718c6d1abe1af8a94b41e9debef0cb5301d051c) Thanks [@ghingis](https://github.com/ghingis)! - fix: list toggle when selection is inside a single block
+- [#1146](https://github.com/sewellstephens/late/pull/1146) [`3718c6d1`](https://github.com/sewellstephens/late/commit/3718c6d1abe1af8a94b41e9debef0cb5301d051c) Thanks [@ghingis](https://github.com/ghingis)! - fix: list toggle when selection is inside a single block
 
-- Updated dependencies [[`a6bf8c5e`](https://github.com/udecode/plate/commit/a6bf8c5e6897c6ab443e0ac3d69a30befeaddadf)]:
+- Updated dependencies [[`a6bf8c5e`](https://github.com/sewellstephens/late/commit/a6bf8c5e6897c6ab443e0ac3d69a30befeaddadf)]:
   - @sewellstephens/plate-common@5.3.5
   - @sewellstephens/plate-reset-node@5.3.5
 
@@ -455,7 +455,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`8aec270f`](https://github.com/udecode/plate/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118)]:
+- Updated dependencies [[`8aec270f`](https://github.com/sewellstephens/late/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118)]:
   - @sewellstephens/plate-core@5.3.1
   - @sewellstephens/plate-common@5.3.1
   - @sewellstephens/plate-reset-node@5.3.1
@@ -464,7 +464,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`7ee21356`](https://github.com/udecode/plate/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e)]:
+- Updated dependencies [[`7ee21356`](https://github.com/sewellstephens/late/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e)]:
   - @sewellstephens/plate-core@5.3.0
   - @sewellstephens/plate-common@5.3.0
   - @sewellstephens/plate-reset-node@5.3.0
@@ -473,11 +473,11 @@
 
 ### Minor Changes
 
-- [#1105](https://github.com/udecode/plate/pull/1105) [`503956fd`](https://github.com/udecode/plate/commit/503956fd9f71253249b3ad699b81c1c465351b0a) Thanks [@aj-foster](https://github.com/aj-foster)! - Unwrap list item only if selection is at start of list item, not any block
+- [#1105](https://github.com/sewellstephens/late/pull/1105) [`503956fd`](https://github.com/sewellstephens/late/commit/503956fd9f71253249b3ad699b81c1c465351b0a) Thanks [@aj-foster](https://github.com/aj-foster)! - Unwrap list item only if selection is at start of list item, not any block
 
 ### Patch Changes
 
-- Updated dependencies [[`503956fd`](https://github.com/udecode/plate/commit/503956fd9f71253249b3ad699b81c1c465351b0a)]:
+- Updated dependencies [[`503956fd`](https://github.com/sewellstephens/late/commit/503956fd9f71253249b3ad699b81c1c465351b0a)]:
   - @sewellstephens/plate-common@5.1.0
   - @sewellstephens/plate-reset-node@5.1.0
 
@@ -485,9 +485,9 @@
 
 ### Patch Changes
 
-- [#1098](https://github.com/udecode/plate/pull/1098) [`c353b008`](https://github.com/udecode/plate/commit/c353b0085804fa9099f0c18405ca01b0b25da03a) Thanks [@djagya](https://github.com/djagya)! - Respect validLiChildrenTypes by keeping valid block elements as direct li children
+- [#1098](https://github.com/sewellstephens/late/pull/1098) [`c353b008`](https://github.com/sewellstephens/late/commit/c353b0085804fa9099f0c18405ca01b0b25da03a) Thanks [@djagya](https://github.com/djagya)! - Respect validLiChildrenTypes by keeping valid block elements as direct li children
 
-- Updated dependencies [[`b22c06aa`](https://github.com/udecode/plate/commit/b22c06aad1cfed08069dadc7ec39bcbfb1d0af37)]:
+- Updated dependencies [[`b22c06aa`](https://github.com/sewellstephens/late/commit/b22c06aad1cfed08069dadc7ec39bcbfb1d0af37)]:
   - @sewellstephens/plate-common@4.4.0
   - @sewellstephens/plate-reset-node@4.4.0
 
@@ -495,7 +495,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`58f6fb53`](https://github.com/udecode/plate/commit/58f6fb53bf45a2e0509f4aca617aa21356952fca)]:
+- Updated dependencies [[`58f6fb53`](https://github.com/sewellstephens/late/commit/58f6fb53bf45a2e0509f4aca617aa21356952fca)]:
   - @sewellstephens/plate-core@4.3.7
   - @sewellstephens/plate-common@4.3.7
   - @sewellstephens/plate-reset-node@4.3.7
@@ -504,7 +504,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`6af469cd`](https://github.com/udecode/plate/commit/6af469cd5ac310e831eb8a99a71eba73bde62fc6)]:
+- Updated dependencies [[`6af469cd`](https://github.com/sewellstephens/late/commit/6af469cd5ac310e831eb8a99a71eba73bde62fc6)]:
   - @sewellstephens/plate-core@4.3.0
   - @sewellstephens/plate-common@4.3.0
   - @sewellstephens/plate-reset-node@4.3.0
@@ -513,13 +513,13 @@
 
 ### Minor Changes
 
-- [#1058](https://github.com/udecode/plate/pull/1058) [`6fe49e22`](https://github.com/udecode/plate/commit/6fe49e22e51b5fbec8695629e77ab149d80ce4cb) Thanks [@ghingis](https://github.com/ghingis)! - Normalizer:
+- [#1058](https://github.com/sewellstephens/late/pull/1058) [`6fe49e22`](https://github.com/sewellstephens/late/commit/6fe49e22e51b5fbec8695629e77ab149d80ce4cb) Thanks [@ghingis](https://github.com/ghingis)! - Normalizer:
   - now merges lists with the same type next to each other
   - if a list has no lic and it has children it moves those childrens up a level
 
 ### Patch Changes
 
-- [#1058](https://github.com/udecode/plate/pull/1058) [`87cca4a0`](https://github.com/udecode/plate/commit/87cca4a0894b512a8257257570952e827924c13b) Thanks [@ghingis](https://github.com/ghingis)! - fix:
+- [#1058](https://github.com/sewellstephens/late/pull/1058) [`87cca4a0`](https://github.com/sewellstephens/late/commit/87cca4a0894b512a8257257570952e827924c13b) Thanks [@ghingis](https://github.com/ghingis)! - fix:
   - `toggleList` works as expected
   - `moveListItemDown` wrap transformations in `withoutNormalizing` (it caused a pathing issue since the normalization would remove the created empty list)
 
@@ -527,19 +527,19 @@
 
 ### Minor Changes
 
-- [#1028](https://github.com/udecode/plate/pull/1028) [`eb30aa5d`](https://github.com/udecode/plate/commit/eb30aa5d355abb81bc3e8577fedb3800e1b056aa) Thanks [@ghingis](https://github.com/ghingis)! - feat: handle more `deleteForward` edge case scenarios
+- [#1028](https://github.com/sewellstephens/late/pull/1028) [`eb30aa5d`](https://github.com/sewellstephens/late/commit/eb30aa5d355abb81bc3e8577fedb3800e1b056aa) Thanks [@ghingis](https://github.com/ghingis)! - feat: handle more `deleteForward` edge case scenarios
 
 ## 3.5.1
 
 ### Patch Changes
 
-- [#1044](https://github.com/udecode/plate/pull/1044) [`b758cfb6`](https://github.com/udecode/plate/commit/b758cfb6ea955ab4d054c0873ab632aaf1c3e866) Thanks [@djagya](https://github.com/djagya)! - fix: normalize direct child nested list ul -> ul
+- [#1044](https://github.com/sewellstephens/late/pull/1044) [`b758cfb6`](https://github.com/sewellstephens/late/commit/b758cfb6ea955ab4d054c0873ab632aaf1c3e866) Thanks [@djagya](https://github.com/djagya)! - fix: normalize direct child nested list ul -> ul
 
 ## 3.4.0
 
 ### Patch Changes
 
-- Updated dependencies [[`f1da7267`](https://github.com/udecode/plate/commit/f1da7267d46d94e207f4477f73e42b63736a9085), [`35caf35d`](https://github.com/udecode/plate/commit/35caf35d48fff851518648ff66e64a4268dcc97c)]:
+- Updated dependencies [[`f1da7267`](https://github.com/sewellstephens/late/commit/f1da7267d46d94e207f4477f73e42b63736a9085), [`35caf35d`](https://github.com/sewellstephens/late/commit/35caf35d48fff851518648ff66e64a4268dcc97c)]:
   - @sewellstephens/plate-common@3.4.0
   - @sewellstephens/plate-core@3.4.0
   - @sewellstephens/plate-reset-node@3.4.0
@@ -548,17 +548,17 @@
 
 ### Patch Changes
 
-- [#1015](https://github.com/udecode/plate/pull/1015) [`baddeb11`](https://github.com/udecode/plate/commit/baddeb117c1a13451f7f4da271ea441fafe3c02d) Thanks [@ericyip](https://github.com/ericyip)! - Fix first LIC normalize on paste
+- [#1015](https://github.com/sewellstephens/late/pull/1015) [`baddeb11`](https://github.com/sewellstephens/late/commit/baddeb117c1a13451f7f4da271ea441fafe3c02d) Thanks [@ericyip](https://github.com/ericyip)! - Fix first LIC normalize on paste
 
 ## 3.2.0
 
 ### Minor Changes
 
-- [#995](https://github.com/udecode/plate/pull/995) [`58387c6d`](https://github.com/udecode/plate/commit/58387c6d34e86be7880999b40a9105b6178f4ce4) Thanks [@dylans](https://github.com/dylans)! - update slate dependencies and peerDependencies to 0.66.\*
+- [#995](https://github.com/sewellstephens/late/pull/995) [`58387c6d`](https://github.com/sewellstephens/late/commit/58387c6d34e86be7880999b40a9105b6178f4ce4) Thanks [@dylans](https://github.com/dylans)! - update slate dependencies and peerDependencies to 0.66.\*
 
 ### Patch Changes
 
-- Updated dependencies [[`58387c6d`](https://github.com/udecode/plate/commit/58387c6d34e86be7880999b40a9105b6178f4ce4)]:
+- Updated dependencies [[`58387c6d`](https://github.com/sewellstephens/late/commit/58387c6d34e86be7880999b40a9105b6178f4ce4)]:
   - @sewellstephens/plate-common@3.2.0
   - @sewellstephens/plate-core@3.2.0
   - @sewellstephens/plate-reset-node@3.2.0
@@ -567,9 +567,9 @@
 
 ### Patch Changes
 
-- [`d73b22d0`](https://github.com/udecode/plate/commit/d73b22d03a0fc270265cbd1bdecfcc4adc70b9d8) Thanks [@zbeyens](https://github.com/zbeyens)! - Fix list delete forward
+- [`d73b22d0`](https://github.com/sewellstephens/late/commit/d73b22d03a0fc270265cbd1bdecfcc4adc70b9d8) Thanks [@zbeyens](https://github.com/zbeyens)! - Fix list delete forward
 
-- Updated dependencies [[`f6c58134`](https://github.com/udecode/plate/commit/f6c581347cc5877b7afa0774ef1ad78ad227564e)]:
+- Updated dependencies [[`f6c58134`](https://github.com/sewellstephens/late/commit/f6c581347cc5877b7afa0774ef1ad78ad227564e)]:
   - @sewellstephens/plate-common@3.1.3
   - @sewellstephens/plate-reset-node@3.1.3
 
@@ -577,19 +577,19 @@
 
 ### Patch Changes
 
-- [#990](https://github.com/udecode/plate/pull/990) [`2906a0a4`](https://github.com/udecode/plate/commit/2906a0a45fa00b38a1e71ed8e3c57203f429db4d) Thanks [@nemanja-tosic](https://github.com/nemanja-tosic)! - Fix nested list paste
+- [#990](https://github.com/sewellstephens/late/pull/990) [`2906a0a4`](https://github.com/sewellstephens/late/commit/2906a0a45fa00b38a1e71ed8e3c57203f429db4d) Thanks [@nemanja-tosic](https://github.com/nemanja-tosic)! - Fix nested list paste
 
 ## 3.0.4
 
 ### Patch Changes
 
-- [#971](https://github.com/udecode/plate/pull/971) [`46398095`](https://github.com/udecode/plate/commit/4639809567e4c96d58912c2a16e74948474d4547) Thanks [@vimtor](https://github.com/vimtor)! - List plugin was preventing all tab key strokes without checking if a list item was being selected. Fix: Don't prevent tab if list is not selected.
+- [#971](https://github.com/sewellstephens/late/pull/971) [`46398095`](https://github.com/sewellstephens/late/commit/4639809567e4c96d58912c2a16e74948474d4547) Thanks [@vimtor](https://github.com/vimtor)! - List plugin was preventing all tab key strokes without checking if a list item was being selected. Fix: Don't prevent tab if list is not selected.
 
 ## 2.0.0
 
 ### Patch Changes
 
-- Updated dependencies [[`ec4d5b7b`](https://github.com/udecode/plate/commit/ec4d5b7bd01b6fd21ba14a28f782c143d32c7532)]:
+- Updated dependencies [[`ec4d5b7b`](https://github.com/sewellstephens/late/commit/ec4d5b7bd01b6fd21ba14a28f782c143d32c7532)]:
   - @sewellstephens/plate-common@2.0.0
   - @sewellstephens/plate-reset-node@2.0.0
 
@@ -597,7 +597,7 @@
 
 ### Patch Changes
 
-- [#927](https://github.com/udecode/plate/pull/927) [`a3825e35`](https://github.com/udecode/plate/commit/a3825e3556e9980b8cce39d454aa4d3c8ea78586) Thanks [@zbeyens](https://github.com/zbeyens)! - partial fix pasting into lists, if the selection is in `li`:
+- [#927](https://github.com/sewellstephens/late/pull/927) [`a3825e35`](https://github.com/sewellstephens/late/commit/a3825e3556e9980b8cce39d454aa4d3c8ea78586) Thanks [@zbeyens](https://github.com/zbeyens)! - partial fix pasting into lists, if the selection is in `li`:
   - `preInsert`: override the default (do not run `setNodes`)
   - filter out `ul` and `ol` from the fragment to paste only `li`
   - override `insertFragment` by `insertNodes`. Note that it implies that the first fragment node children will not be merged into the selected `li`.
@@ -606,9 +606,9 @@
 
 ### Patch Changes
 
-- [#918](https://github.com/udecode/plate/pull/918) [`7d045d8d`](https://github.com/udecode/plate/commit/7d045d8db39515d4574c5313cc97287486c5866b) Thanks [@zbeyens](https://github.com/zbeyens)! - add `slate-history` as a peerDep
+- [#918](https://github.com/sewellstephens/late/pull/918) [`7d045d8d`](https://github.com/sewellstephens/late/commit/7d045d8db39515d4574c5313cc97287486c5866b) Thanks [@zbeyens](https://github.com/zbeyens)! - add `slate-history` as a peerDep
 
-- Updated dependencies [[`7d045d8d`](https://github.com/udecode/plate/commit/7d045d8db39515d4574c5313cc97287486c5866b)]:
+- Updated dependencies [[`7d045d8d`](https://github.com/sewellstephens/late/commit/7d045d8db39515d4574c5313cc97287486c5866b)]:
   - @sewellstephens/plate-common@1.1.6
   - @sewellstephens/plate-reset-node@1.1.6
 
@@ -616,14 +616,14 @@
 
 ### Major Changes
 
-🎉 The **Slate Plugins** project has evolved to **Plate** 🎉
+🎉 The **Slate Plugins** project has evolved to **Late** 🎉
 
 To migrate, install `@sewellstephens/plate[-x]` then find and replace all
 occurrences of:
 
 - `slate-plugins` to `plate`
-- `SlatePlugins` to `Plate`
-- `SlatePlugin` to `PlatePlugin`
+- `SlatePlugins` to `Late`
+- `SlatePlugin` to `LatePlugin`
 
 ## 1.0.0-next.61
 

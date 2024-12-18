@@ -2,9 +2,9 @@ import type { AnyObject } from '@sewellstephens/utils';
 
 import { clsx } from 'clsx';
 
-import type { PlateEditor } from '../editor';
-import type { AnyEditorPlatePlugin } from '../plugin/PlatePlugin';
-import type { PlateRenderNodeProps } from '../plugin/PlateRenderNodeProps';
+import type { LateEditor } from '../editor';
+import type { AnyEditorLatePlugin } from '../plugin/LatePlugin';
+import type { LateRenderNodeProps } from '../plugin/LateRenderNodeProps';
 
 import { getSlateClass } from '../../lib';
 import { getEditorPlugin } from '../plugin';
@@ -20,10 +20,10 @@ export const getRenderNodeProps = ({
   props,
 }: {
   attributes?: AnyObject;
-  editor: PlateEditor;
-  plugin: AnyEditorPlatePlugin;
-  props: PlateRenderNodeProps;
-}): PlateRenderNodeProps => {
+  editor: LateEditor;
+  plugin: AnyEditorLatePlugin;
+  props: LateRenderNodeProps;
+}): LateRenderNodeProps => {
   let newProps: AnyObject = {};
 
   if (plugin.node.props) {

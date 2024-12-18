@@ -1,5 +1,5 @@
 import * as portiveClient from '@portive/client';
-import { createPlatePlugin } from '@sewellstephens/plate-common/react';
+import { createLatePlugin } from '@sewellstephens/plate-common/react';
 import Defer from 'p-defer';
 
 import type { UploadError, UploadSuccess } from '../upload';
@@ -13,7 +13,7 @@ import {
   type SuccessEvent,
 } from '../cloud';
 
-export const CloudImagePlugin = createPlatePlugin({
+export const CloudImagePlugin = createLatePlugin({
   dependencies: ['cloud'],
   key: 'cloud_image',
   node: { isElement: true, isVoid: true },

@@ -1,14 +1,14 @@
 import {
-  type UsePlateEditorStoreOptions,
-  usePlateSelectors,
-} from '../createPlateStore';
+  type UseLateEditorStoreOptions,
+  useLateSelectors,
+} from '../createLateStore';
 
 /** Get the editor selection (deeply memoized). */
 export const useEditorSelection = (
   id?: string,
-  options: UsePlateEditorStoreOptions = {}
+  options: UseLateEditorStoreOptions = {}
 ) =>
-  usePlateSelectors(id, {
+  useLateSelectors(id, {
     debugHookName: 'useEditorSelection',
     ...options,
   }).trackedSelection().selection;

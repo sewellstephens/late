@@ -16,7 +16,7 @@ import {
   stylesSchema,
 } from './schema';
 
-const baseUrl = process.env.COMPONENTS_REGISTRY_URL ?? 'https://platejs.org';
+const baseUrl = process.env.COMPONENTS_REGISTRY_URL ?? 'https://sewellstephens.github.io/late';
 const agent = process.env.https_proxy
   ? new HttpsProxyAgent(process.env.https_proxy)
   : undefined;

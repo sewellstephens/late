@@ -1,8 +1,8 @@
-import { Key, toPlatePlugin } from '@sewellstephens/plate-common/react';
+import { Key, toLatePlugin } from '@sewellstephens/plate-common/react';
 
 import { CodePlugin as BaseCodePlugin } from '../lib/CodePlugin';
 
-export const CodePlugin = toPlatePlugin(BaseCodePlugin, ({ editor, type }) => ({
+export const CodePlugin = toLatePlugin(BaseCodePlugin, ({ editor, type }) => ({
   shortcuts: {
     toggleCode: {
       handler: () => {

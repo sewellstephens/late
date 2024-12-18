@@ -1,16 +1,16 @@
 import type { AnyPluginConfig, PluginConfig, WithRequiredKey } from '../../lib';
-import type { PlateEditor } from '../editor/PlateEditor';
-import type { PlatePlugin } from './PlatePlugin';
+import type { LateEditor } from '../editor/LateEditor';
+import type { LatePlugin } from './LatePlugin';
 
-import { createPlatePlugin } from './createPlatePlugin';
+import { createLatePlugin } from './createLatePlugin';
 
 /** Get editor plugin by key or plugin object. */
 export function getPlugin<C extends AnyPluginConfig = PluginConfig>(
-  editor: PlateEditor,
+  editor: LateEditor,
   plugin: WithRequiredKey<C>
-): C extends { node: any } ? C : PlatePlugin<C> {
+): C extends { node: any } ? C : LatePlugin<C> {
   return (
     (editor.plugins[plugin.key] as any) ??
-    createPlatePlugin({ key: plugin.key })
+    createLatePlugin({ key: plugin.key })
   );
 }

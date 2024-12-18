@@ -1,14 +1,14 @@
 import {
-  type UsePlateEditorStoreOptions,
-  usePlateSelectors,
-} from '../createPlateStore';
+  type UseLateEditorStoreOptions,
+  useLateSelectors,
+} from '../createLateStore';
 
 /** Version incremented on value change. */
 export const useValueVersion = (
   id?: string,
-  options: UsePlateEditorStoreOptions = {}
+  options: UseLateEditorStoreOptions = {}
 ) => {
-  return usePlateSelectors(id, {
+  return useLateSelectors(id, {
     debugHookName: 'useValueVersion',
     ...options,
   }).versionValue();

@@ -1,10 +1,10 @@
-# Plate list plugin
+# Late list plugin
 
-This package implements the list plugin for Plate.
+This package implements the list plugin for Late.
 
 ## Documentation
 
-Check out [List](https://platejs.org/docs/list).
+Check out [List](https://sewellstephens.github.io/late/docs/list).
 
 ## License
 

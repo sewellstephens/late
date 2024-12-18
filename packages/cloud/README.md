@@ -1,4 +1,4 @@
-# Plate Cloud Plugins
+# Late Cloud Plugins
 
 This packages adds the official cloud plugin to provide upload services with support for attachments, images and image resizing. This is done in partnership with Portive. Includes server-side image resizing which delivers optimized images to each user. Supports high DPI files for retina devices and smaller files for faster delivery for non-high DPI devices.
 
@@ -17,7 +17,7 @@ Includes:
 
 ## Documentation
 
-- Check out [Plate Cloud](https://platejs.org/docs/guides/cloud).
+- Check out [Late Cloud](https://sewellstephens.github.io/late/docs/guides/cloud).
 
 ## License
 

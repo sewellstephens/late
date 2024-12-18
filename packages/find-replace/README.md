@@ -1,10 +1,10 @@
-# Plate find and replace plugin
+# Late find and replace plugin
 
-This package implements the find and replace plugin for Plate.
+This package implements the find and replace plugin for Late.
 
 ## Documentation
 
-Check out [Find & Replace](https://platejs.org/docs/find-replace).
+Check out [Find & Replace](https://sewellstephens.github.io/late/docs/find-replace).
 
 ## License
 

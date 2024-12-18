@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) – Types:
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) – Types:
 
   - Replace `V extends Value` with `E extends TEditor` for improved type inference
 
@@ -12,13 +12,13 @@
 
 ### Patch Changes
 
-- [#3426](https://github.com/udecode/plate/pull/3426) by [@yf-yang](https://github.com/yf-yang) – feat: `getPointBeforeLocation` - Add `matchByRegex` option
+- [#3426](https://github.com/sewellstephens/late/pull/3426) by [@yf-yang](https://github.com/yf-yang) – feat: `getPointBeforeLocation` - Add `matchByRegex` option
 
 ## 36.3.4
 
 ### Patch Changes
 
-- [#3408](https://github.com/udecode/plate/pull/3408) by [@yf-yang](https://github.com/yf-yang) – add removeOptions to replaceNode
+- [#3408](https://github.com/sewellstephens/late/pull/3408) by [@yf-yang](https://github.com/yf-yang) – add removeOptions to replaceNode
 
 ## 36.0.6
 
@@ -26,13 +26,13 @@
 
 ### Patch Changes
 
-- [#3262](https://github.com/udecode/plate/pull/3262) by [@felixfeng33](https://github.com/felixfeng33) – fix getAncestorNode cann't get the first node.
+- [#3262](https://github.com/sewellstephens/late/pull/3262) by [@felixfeng33](https://github.com/felixfeng33) – fix getAncestorNode cann't get the first node.
 
 ## 34.0.0
 
 ### Minor Changes
 
-- [#3241](https://github.com/udecode/plate/pull/3241) by [@felixfeng33](https://github.com/felixfeng33) – Add new queries `getAncestorNode` and `getNodesRange`
+- [#3241](https://github.com/sewellstephens/late/pull/3241) by [@felixfeng33](https://github.com/felixfeng33) – Add new queries `getAncestorNode` and `getNodesRange`
 
 ## 32.0.1
 
@@ -40,7 +40,7 @@
 
 ### Patch Changes
 
-- [#3086](https://github.com/udecode/plate/pull/3086) by [@felixfeng33](https://github.com/felixfeng33) – `toggleMark` use `editor.removeMark`
+- [#3086](https://github.com/sewellstephens/late/pull/3086) by [@felixfeng33](https://github.com/felixfeng33) – `toggleMark` use `editor.removeMark`
 
 ## 31.0.0
 
@@ -60,13 +60,13 @@
 
 ### Minor Changes
 
-- [`18f9778c`](https://github.com/udecode/plate/commit/18f9778cda9450cd99a71c47ab0767b64813db1a) by [@zbeyens](https://github.com/zbeyens) – Add replaceNode
+- [`18f9778c`](https://github.com/sewellstephens/late/commit/18f9778cda9450cd99a71c47ab0767b64813db1a) by [@zbeyens](https://github.com/zbeyens) – Add replaceNode
 
 ## 24.0.0
 
 ### Minor Changes
 
-- [#2629](https://github.com/udecode/plate/pull/2629) by [@zbeyens](https://github.com/zbeyens) –
+- [#2629](https://github.com/sewellstephens/late/pull/2629) by [@zbeyens](https://github.com/zbeyens) –
   - Add `isEditorEmpty` query. Whether the editor is empty. An editor is empty if it has only one empty element.
 
 ## 23.7.4
@@ -75,7 +75,7 @@
 
 ### Patch Changes
 
-- [`f44dbd3`](https://github.com/udecode/plate/commit/f44dbd3f322a828753da31ec28576587e63ea047) by [@zbeyens](https://github.com/zbeyens) – v22
+- [`f44dbd3`](https://github.com/sewellstephens/late/commit/f44dbd3f322a828753da31ec28576587e63ea047) by [@zbeyens](https://github.com/zbeyens) – v22
 
 ## 21.4.1
 

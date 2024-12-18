@@ -1,4 +1,4 @@
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 
 import {
   HeadingPlugin,
@@ -9,7 +9,7 @@ import { HEADING_LEVELS } from './constants';
 describe('HeadingPlugin', () => {
   describe('when using default options', () => {
     it('should create plugins for all 6 heading levels', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [HeadingPlugin],
       });
 
@@ -27,7 +27,7 @@ describe('HeadingPlugin', () => {
     });
 
     it('should set hotkeys for the first 3 heading levels', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [HeadingPlugin],
       });
 
@@ -49,7 +49,7 @@ describe('HeadingPlugin', () => {
 
   describe('when configuring custom levels', () => {
     it('should create plugins only for specified levels', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [
           HeadingPlugin.configure({
             options: { levels: [1, 3, 5] },
@@ -70,7 +70,7 @@ describe('HeadingPlugin', () => {
 
   describe('when using a single level', () => {
     it('should create a plugin only for the specified level', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [
           HeadingPlugin.configure({
             options: { levels: 2 },
@@ -85,7 +85,7 @@ describe('HeadingPlugin', () => {
 
   describe('nested plugins', () => {
     it('should have correct structure and properties', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [HeadingPlugin],
       });
 
@@ -105,7 +105,7 @@ describe('HeadingPlugin', () => {
 describe('HeadingPluginReact', () => {
   describe('when using default options', () => {
     it('should create plugins for all 6 heading levels', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [ReactHeadingPlugin],
       });
 
@@ -123,7 +123,7 @@ describe('HeadingPluginReact', () => {
     });
 
     it('should set hotkeys for the first 3 heading levels', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [ReactHeadingPlugin],
       });
 
@@ -145,7 +145,7 @@ describe('HeadingPluginReact', () => {
 
   describe('when configuring custom levels', () => {
     it('should create plugins only for specified levels', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [
           ReactHeadingPlugin.configure({
             options: { levels: [1, 3, 5] },
@@ -164,7 +164,7 @@ describe('HeadingPluginReact', () => {
     });
 
     it('should set hotkeys only for levels less than 4', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [
           ReactHeadingPlugin.configure({
             options: { levels: [1, 3, 5] },
@@ -182,7 +182,7 @@ describe('HeadingPluginReact', () => {
 
   describe('nested plugins', () => {
     it('should have correct structure and properties', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [ReactHeadingPlugin],
       });
 

@@ -26,7 +26,7 @@ import type {
 } from './BasePlugin';
 import type { HandlerReturnType } from './HandlerReturnType';
 
-/** The `PlatePlugin` interface is a base interface for all plugins. */
+/** The `LatePlugin` interface is a base interface for all plugins. */
 export type SlatePlugin<C extends AnyPluginConfig = PluginConfig> = {
   handlers: Nullable<{}>;
   inject: Nullable<{
@@ -333,7 +333,7 @@ export type Parser<C extends AnyPluginConfig = PluginConfig> = {
   ) => TDescendant[];
 };
 
-/** Plate plugin overriding the `editor` methods. Naming convention is `with*`. */
+/** Late plugin overriding the `editor` methods. Naming convention is `with*`. */
 export type ExtendEditor<C extends AnyPluginConfig = PluginConfig> = (
   ctx: SlatePluginContext<C>
 ) => SlateEditor;
@@ -382,7 +382,7 @@ export type HtmlSerializer<C extends AnyPluginConfig = PluginConfig> = {
 // -----------------------------------------------------------------------------
 
 /**
- * Property used by Plate to decorate editor ranges. If the function returns
+ * Property used by Late to decorate editor ranges. If the function returns
  * undefined then no ranges are modified. If the function returns an array the
  * returned ranges are merged with the ranges called by other plugins.
  */

@@ -30,7 +30,7 @@ describe('onKeyDownSelection', () => {
   //     </editor>
   //   ) as any;
   //
-  //   const [editor, { triggerKeyboardEvent }] = await createPlateTestEditor({
+  //   const [editor, { triggerKeyboardEvent }] = await createLateTestEditor({
   //     editor: input,
   //     plugins: [BlockSelectionPlugin],
   //   });
@@ -56,7 +56,7 @@ describe('onKeyDownSelection', () => {
   //     </editor>
   //   ) as any;
   //
-  //   const [editor, { triggerKeyboardEvent }] = await createPlateTestEditor({
+  //   const [editor, { triggerKeyboardEvent }] = await createLateTestEditor({
   //     editor: input,
   //     plugins: [BlockSelectionPlugin],
   //   });

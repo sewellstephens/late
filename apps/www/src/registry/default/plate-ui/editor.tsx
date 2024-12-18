@@ -1,10 +1,10 @@
 import React from 'react';
 
-import type { PlateContentProps } from '@sewellstephens/plate-common/react';
+import type { LateContentProps } from '@sewellstephens/plate-common/react';
 import type { VariantProps } from 'class-variance-authority';
 
 import { cn } from '@sewellstephens/cn';
-import { PlateContent } from '@sewellstephens/plate-common/react';
+import { LateContent } from '@sewellstephens/plate-common/react';
 import { cva } from 'class-variance-authority';
 
 const editorVariants = cva(
@@ -44,7 +44,7 @@ const editorVariants = cva(
   }
 );
 
-export type EditorProps = PlateContentProps &
+export type EditorProps = LateContentProps &
   VariantProps<typeof editorVariants>;
 
 const Editor = React.forwardRef<HTMLDivElement, EditorProps>(
@@ -63,7 +63,7 @@ const Editor = React.forwardRef<HTMLDivElement, EditorProps>(
   ) => {
     return (
       <div className="relative w-full" ref={ref}>
-        <PlateContent
+        <LateContent
           aria-disabled={disabled}
           className={cn(
             editorVariants({

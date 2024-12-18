@@ -10,13 +10,13 @@
 
 ### Patch Changes
 
-- [#2841](https://github.com/udecode/plate/pull/2841) by [@zbeyens](https://github.com/zbeyens) – Fix `withCn`, `withProps` and `withVariants` component type errors in strict mode
+- [#2841](https://github.com/sewellstephens/late/pull/2841) by [@zbeyens](https://github.com/zbeyens) – Fix `withCn`, `withProps` and `withVariants` component type errors in strict mode
 
 ## 29.0.0
 
 ### Minor Changes
 
-- [#2829](https://github.com/udecode/plate/pull/2829) by [@zbeyens](https://github.com/zbeyens) – New package
+- [#2829](https://github.com/sewellstephens/late/pull/2829) by [@zbeyens](https://github.com/zbeyens) – New package
 
   - `cn`: utility function to conditionally join classNames
   - `withCn`: Set default `className` to a component using `cn`

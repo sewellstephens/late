@@ -2,7 +2,7 @@ import React from 'react';
 
 import type { ClassNames, UnknownObject } from '@sewellstephens/plate-common';
 
-import { usePlateSelectors } from '@sewellstephens/plate-common/react';
+import { useLateSelectors } from '@sewellstephens/plate-common/react';
 
 import type {
   CursorData,
@@ -108,7 +108,7 @@ export function CursorOverlayContent<
 export function CursorOverlay<
   TCursorData extends UnknownObject = UnknownObject,
 >(props: CursorOverlayProps<TCursorData>) {
-  const isMounted = usePlateSelectors().isMounted();
+  const isMounted = useLateSelectors().isMounted();
 
   if (!isMounted) return null;
 

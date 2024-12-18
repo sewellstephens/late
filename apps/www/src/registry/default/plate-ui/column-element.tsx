@@ -3,18 +3,18 @@ import React from 'react';
 import type { TColumnElement } from '@sewellstephens/plate-layout';
 
 import { cn, withRef } from '@sewellstephens/cn';
-import { PlateElement, useElement, withHOC } from '@sewellstephens/plate-common/react';
+import { LateElement, useElement, withHOC } from '@sewellstephens/plate-common/react';
 import { ResizableProvider } from '@sewellstephens/plate-resizable';
 import { useReadOnly } from 'slate-react';
 
 export const ColumnElement = withHOC(
   ResizableProvider,
-  withRef<typeof PlateElement>(({ children, className, ...props }, ref) => {
+  withRef<typeof LateElement>(({ children, className, ...props }, ref) => {
     const readOnly = useReadOnly();
     const { width } = useElement<TColumnElement>();
 
     return (
-      <PlateElement
+      <LateElement
         className={cn(
           className,
           !readOnly && 'rounded-lg border border-dashed p-1.5'
@@ -24,7 +24,7 @@ export const ColumnElement = withHOC(
         {...props}
       >
         {children}
-      </PlateElement>
+      </LateElement>
     );
   })
 );

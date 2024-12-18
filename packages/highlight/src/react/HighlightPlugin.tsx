@@ -1,8 +1,8 @@
-import { Key, toPlatePlugin } from '@sewellstephens/plate-common/react';
+import { Key, toLatePlugin } from '@sewellstephens/plate-common/react';
 
 import { HighlightPlugin as BaseHighlightPlugin } from '../lib/HighlightPlugin';
 
-export const HighlightPlugin = toPlatePlugin(
+export const HighlightPlugin = toLatePlugin(
   BaseHighlightPlugin,
   ({ editor, type }) => ({
     shortcuts: {

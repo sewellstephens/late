@@ -1,6 +1,6 @@
 import type { PluginConfig } from '@sewellstephens/plate-common';
 
-import { createTPlatePlugin } from '@sewellstephens/plate-common/react';
+import { createTLatePlugin } from '@sewellstephens/plate-common/react';
 
 export type BlockContextMenuConfig = PluginConfig<
   'blockContextMenu',
@@ -28,7 +28,7 @@ export type BlockContextMenuApi = {
 };
 
 export const BlockContextMenuPlugin =
-  createTPlatePlugin<BlockContextMenuConfig>({
+  createTLatePlugin<BlockContextMenuConfig>({
     key: 'blockContextMenu',
     options: {
       action: { group: null, value: null },

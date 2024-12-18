@@ -2,7 +2,7 @@
 
 import type { SlateEditor } from '@sewellstephens/plate-common';
 
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
 import { ListPlugin } from '../react';
@@ -34,7 +34,7 @@ describe('p (empty) + list when selection not in list', () => {
       </editor>
     ) as any as SlateEditor;
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: input,
       plugins: [ListPlugin],
     });
@@ -67,7 +67,7 @@ describe('p /w text + list when selection not in list', () => {
       </editor>
     ) as any as SlateEditor;
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: input,
       plugins: [ListPlugin],
     });
@@ -106,7 +106,7 @@ describe('p /w text + list when selection not in list', () => {
       </editor>
     ) as any as SlateEditor;
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: input,
       plugins: [ListPlugin],
     });
@@ -161,7 +161,7 @@ describe('p /w text + list when selection not in list', () => {
       </editor>
     ) as any as SlateEditor;
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: input,
       plugins: [ListPlugin],
     });
@@ -217,7 +217,7 @@ describe('list + list when selection is at the end of the first list', () => {
       </editor>
     ) as any as SlateEditor;
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: input,
       plugins: [ListPlugin],
     });
@@ -265,7 +265,7 @@ describe('list where second item has multiple children', () => {
       </editor>
     ) as any as SlateEditor;
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: input,
       plugins: [ListPlugin],
     });
@@ -325,7 +325,7 @@ describe('list + sublist where second item has multiple children', () => {
       </editor>
     ) as any as SlateEditor;
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: input,
       plugins: [ListPlugin],
     });

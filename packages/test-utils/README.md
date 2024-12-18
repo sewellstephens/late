@@ -1,6 +1,6 @@
-# Plate test utilities
+# Late test utilities
 
-This package implements the test utilities for Plate.
+This package implements the test utilities for Late.
 
 ## License
 

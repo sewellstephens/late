@@ -1,5 +1,5 @@
 import React, { CSSProperties } from 'react';
-import { PlateElementProps } from '@sewellstephens/plate-common';
+import { LateElementProps } from '@sewellstephens/plate-common';
 import { useFocused, useSelected } from 'slate-react';
 
 const boxStyle: CSSProperties = {
@@ -17,7 +17,7 @@ const selectedBoxStyle: CSSProperties = {
   border: '2px solid blue',
 };
 
-export function TabbableElement({ attributes, children }: PlateElementProps) {
+export function TabbableElement({ attributes, children }: LateElementProps) {
   const selected = useSelected();
   const focused = useFocused();
 

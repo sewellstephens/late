@@ -3,15 +3,15 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import { createSlatePlugin } from '../../lib';
-import { Plate, PlateContent } from '../components';
-import { createPlateEditor } from '../editor';
+import { Late, LateContent } from '../components';
+import { createLateEditor } from '../editor';
 
 describe('useEditableProps', () => {
   describe('default', () => {
     it('should trigger decorate only once', () => {
       const decorate = jest.fn();
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [
           createSlatePlugin({
             decorate: () => {
@@ -25,9 +25,9 @@ describe('useEditableProps', () => {
       });
 
       render(
-        <Plate editor={editor}>
-          <PlateContent />
-        </Plate>
+        <Late editor={editor}>
+          <LateContent />
+        </Late>
       );
 
       expect(decorate).toHaveBeenCalledTimes(3);
@@ -38,7 +38,7 @@ describe('useEditableProps', () => {
   //   it('should trigger decorate twice', () => {
   //     const decorate = jest.fn();
   //
-  //     const plugins: PlatePluginList = [
+  //     const plugins: LatePluginList = [
   //       {
   //         key: 'a',
   //         decorate: () => {
@@ -55,17 +55,17 @@ describe('useEditableProps', () => {
   //     }
   //
   //     const wrapper = ({ children }: any) => (
-  //       <Plate plugins={plugins}><A />{children}</Plate>
+  //       <Late plugins={plugins}><A />{children}</Late>
   //     );
   //
   //     const { result } = renderHook(() => useEditorValue(), {
   //       wrapper,
   //     });
   //
-  //     render(<Plate plugins={plugins} />);
+  //     render(<Late plugins={plugins} />);
   //
   //     act(() => {
-  //       getPlateActions().redecorate();
+  //       getLateActions().redecorate();
   //     });
   //
   //     expect(decorate).toBeCalledTimes(6);

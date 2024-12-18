@@ -5,38 +5,38 @@ import { buildTestHarness } from 'slate-test-utils';
 
 import type { AnyPluginConfig, InferPlugins } from '../../lib';
 
-import { PlateTest } from '../components/PlateTest';
+import { LateTest } from '../components/LateTest';
 import {
-  type CreatePlateEditorOptions,
-  type PlateCorePlugin,
-  type TPlateEditor,
-  createPlateEditor,
+  type CreateLateEditorOptions,
+  type LateCorePlugin,
+  type TLateEditor,
+  createLateEditor,
 } from '../editor';
 
 /**
  * `buildTestHarness` where:
  *
- * - `Component`: `PlateTest`
- * - `editor`: `createPlateEditor`
+ * - `Component`: `LateTest`
+ * - `editor`: `createLateEditor`
  */
-export const createPlateTestEditor = async <
+export const createLateTestEditor = async <
   V extends Value = Value,
-  P extends AnyPluginConfig = PlateCorePlugin,
+  P extends AnyPluginConfig = LateCorePlugin,
 >(
-  options: CreatePlateEditorOptions<V, P>,
+  options: CreateLateEditorOptions<V, P>,
   buildTestHarnessOptions?: Omit<
     Parameters<ReturnType<typeof buildTestHarness>>[0],
     'editor'
   >
 ): Promise<
   [
-    TPlateEditor<V, InferPlugins<P[]>>,
+    TLateEditor<V, InferPlugins<P[]>>,
     RenderEditorReturnTuple[1],
     RenderEditorReturnTuple[2],
   ]
 > => {
-  return buildTestHarness(PlateTest)({
-    editor: createPlateEditor(options),
+  return buildTestHarness(LateTest)({
+    editor: createLateEditor(options),
     ...buildTestHarnessOptions,
   }) as any;
 };

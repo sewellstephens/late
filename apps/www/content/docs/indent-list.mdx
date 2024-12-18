@@ -69,7 +69,7 @@ const plugins = [
   </APIItem>
   <APIItem
     name="renderIndentListBelowNodes"
-    type="(editor: PlateEditor) => React.ReactNode"
+    type="(editor: LateEditor) => React.ReactNode"
     optional
   >
     A function to render components below indent list nodes.
@@ -81,7 +81,7 @@ const plugins = [
 ### getNextIndentList
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="entry" type="ElementEntryOf">
@@ -106,7 +106,7 @@ const plugins = [
 Gets the previous sibling entry with an indent list.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="entry" type="ElementEntryOf">
@@ -131,7 +131,7 @@ Gets the previous sibling entry with an indent list.
 Increases the indentation of the selected blocks.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="IndentListOptions" optional>
@@ -160,7 +160,7 @@ The list style type to use.
 Decreases the indentation of the selected blocks.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="IndentListOptions" optional>
@@ -189,7 +189,7 @@ The list style type to use.
 Checks if some of the selected blocks have a specific list style type.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="type" type="string">
@@ -202,7 +202,7 @@ Checks if some of the selected blocks have a specific list style type.
 Toggles the indent list.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="IndentListOptions">

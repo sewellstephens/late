@@ -1,4 +1,4 @@
-import type { PlateRenderElementProps } from '@sewellstephens/plate-common/react';
+import type { LateRenderElementProps } from '@sewellstephens/plate-common/react';
 
 import { cn } from '@sewellstephens/cn';
 import {
@@ -10,7 +10,7 @@ import { Checkbox } from './checkbox';
 
 export const TodoMarker = ({
   element,
-}: Omit<PlateRenderElementProps, 'children'>) => {
+}: Omit<LateRenderElementProps, 'children'>) => {
   const state = useIndentTodoListElementState({ element });
   const { checkboxProps } = useIndentTodoListElement(state);
 
@@ -24,7 +24,7 @@ export const TodoMarker = ({
   );
 };
 
-export const TodoLi = (props: PlateRenderElementProps) => {
+export const TodoLi = (props: LateRenderElementProps) => {
   const { children, element } = props;
 
   return (

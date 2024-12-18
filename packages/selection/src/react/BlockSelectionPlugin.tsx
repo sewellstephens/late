@@ -6,7 +6,7 @@ import {
   type TNodeEntry,
   getNodeEntries,
 } from '@sewellstephens/plate-common';
-import { createTPlatePlugin } from '@sewellstephens/plate-common/react';
+import { createTLatePlugin } from '@sewellstephens/plate-common/react';
 
 import type { ChangedElements, PartialSelectionOptions } from '../internal';
 
@@ -52,7 +52,7 @@ export type BlockSelectionApi = {
   unselect: () => void;
 };
 
-export const BlockSelectionPlugin = createTPlatePlugin<BlockSelectionConfig>({
+export const BlockSelectionPlugin = createTLatePlugin<BlockSelectionConfig>({
   handlers: {
     onChange: onChangeBlockSelection,
     onKeyDown: onKeyDownSelection,

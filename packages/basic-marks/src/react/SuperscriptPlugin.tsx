@@ -1,9 +1,9 @@
-import { Key, toPlatePlugin } from '@sewellstephens/plate-common/react';
+import { Key, toLatePlugin } from '@sewellstephens/plate-common/react';
 
 import { SuperscriptPlugin as BaseSuperscriptPlugin } from '../lib/SuperscriptPlugin';
 import { SubscriptPlugin } from './SubscriptPlugin';
 
-export const SuperscriptPlugin = toPlatePlugin(
+export const SuperscriptPlugin = toLatePlugin(
   BaseSuperscriptPlugin,
   ({ editor, type }) => ({
     shortcuts: {

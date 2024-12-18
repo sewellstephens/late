@@ -1,22 +1,22 @@
 import React from 'react';
 
 import { cn, withRef } from '@sewellstephens/cn';
-import { PlateElement } from '@sewellstephens/plate-common/react';
+import { LateElement } from '@sewellstephens/plate-common/react';
 
 export const TableRowElement = withRef<
-  typeof PlateElement,
+  typeof LateElement,
   {
     hideBorder?: boolean;
   }
 >(({ children, hideBorder, ...props }, ref) => {
   return (
-    <PlateElement
+    <LateElement
       asChild
       className={cn('h-full', hideBorder && 'border-none')}
       ref={ref}
       {...props}
     >
       <tr>{children}</tr>
-    </PlateElement>
+    </LateElement>
   );
 });

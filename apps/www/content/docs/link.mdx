@@ -186,7 +186,7 @@ On keyboard shortcut or toolbar mousedown, this function is called to get the li
 Inserts a link node into the editor.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="createLinkNodeOptions" type="CreateLinkNodeOptions"></APIItem>
@@ -203,7 +203,7 @@ Inserts a link if the URL is valid, closes the floating link, and focuses the ed
 - Focus editor.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
 </APIParameters>
@@ -221,7 +221,7 @@ Returns `true` if the link was inserted.
 Triggers the floating link.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="object">
@@ -239,7 +239,7 @@ The editor instance.
 Triggers the floating link edit.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
 </APIParameters>
@@ -264,7 +264,7 @@ Do not trigger when:
 - Selection has a link node.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="object">
@@ -285,7 +285,7 @@ The editor instance.
 Unwraps a link node.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="options" type="UnwrapNodesOptions" optional>
@@ -315,7 +315,7 @@ Then:
 - If `text` is defined and not empty, replace the link text with the new `text`.
 
 <APIParameters>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 The editor instance.
 </APIItem>
 <APIItem name="options" type="UpsertLinkOptions">
@@ -372,7 +372,7 @@ If `true`, skips URL validation.
 If the text is different from the link above text, replaces the link children with a new text node. The new text node has the same marks as the first text node in the link.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="options" type="UpsertLinkOptions" optional>
@@ -389,7 +389,7 @@ If the text is different from the link above text, replaces the link children wi
 Validates a URL based on the plugin options.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="url" type="string">
@@ -406,7 +406,7 @@ Validates a URL based on the plugin options.
 Wrap a link node with split.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="options" type="WrapLinkOptions">

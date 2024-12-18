@@ -248,7 +248,7 @@ export const editorValueMock = [
   //     },
   //   ],
   //   type: 'img',
-  //   url: 'https://platejs.org/og.png',
+  //   url: 'https://sewellstephens.github.io/late/og.png',
   // },
   {
     children: [

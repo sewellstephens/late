@@ -1,10 +1,10 @@
-# Plate link plugin
+# Late link plugin
 
-This package implements the link plugin for Plate.
+This package implements the link plugin for Late.
 
 ## Documentation
 
-Check out [Link](https://platejs.org/docs/link).
+Check out [Link](https://sewellstephens.github.io/late/docs/link).
 
 ## License
 

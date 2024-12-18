@@ -1,10 +1,10 @@
-# Plate
+# Late
 
-This package bundles Plate core, plugins and UI for a quick start.
+This package bundles Late core, plugins and UI for a quick start.
 
 ## Documentation
 
-Check out [Playground](https://platejs.org/docs/playground).
+Check out [Playground](https://sewellstephens.github.io/late/docs/playground).
 
 ## License
 

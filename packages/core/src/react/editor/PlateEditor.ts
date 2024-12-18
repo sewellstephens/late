@@ -12,35 +12,35 @@ import type {
   WithRequiredKey,
 } from '../../lib';
 import type {
-  AnyEditorPlatePlugin,
-  EditorPlatePlugin,
+  AnyEditorLatePlugin,
+  EditorLatePlugin,
   Shortcuts,
-} from '../plugin/PlatePlugin';
-import type { EXPOSED_STORE_KEYS, PlateStoreState } from '../stores';
-import type { PlateCorePlugin } from './withPlate';
+} from '../plugin/LatePlugin';
+import type { EXPOSED_STORE_KEYS, LateStoreState } from '../stores';
+import type { LateCorePlugin } from './withLate';
 
-export type PlateEditor = {
-  api: UnionToIntersection<InferApi<PlateCorePlugin>>;
+export type LateEditor = {
+  api: UnionToIntersection<InferApi<LateCorePlugin>>;
 
   getPlugin: <C extends AnyPluginConfig = PluginConfig>(
     plugin: WithRequiredKey<C>
-  ) => C extends { node: any } ? C : EditorPlatePlugin<C>;
+  ) => C extends { node: any } ? C : EditorLatePlugin<C>;
 
-  pluginList: AnyEditorPlatePlugin[];
+  pluginList: AnyEditorLatePlugin[];
 
-  plugins: Record<string, AnyEditorPlatePlugin>;
+  plugins: Record<string, AnyEditorLatePlugin>;
 
-  setPlateState: <K extends (typeof EXPOSED_STORE_KEYS)[number]>(
+  setLateState: <K extends (typeof EXPOSED_STORE_KEYS)[number]>(
     optionKey: K,
-    value: PlateStoreState[K]
+    value: LateStoreState[K]
   ) => void;
 
   shortcuts: Shortcuts;
 
   // Alias for transforms
-  tf: PlateEditor['transforms'];
+  tf: LateEditor['transforms'];
 
-  transforms: UnionToIntersection<InferTransforms<PlateCorePlugin>>;
+  transforms: UnionToIntersection<InferTransforms<LateCorePlugin>>;
 
   useOption: {
     <
@@ -74,14 +74,14 @@ export type PlateEditor = {
   };
 } & BaseEditor;
 
-export type TPlateEditor<
+export type TLateEditor<
   V extends Value = Value,
-  P extends AnyPluginConfig = PlateCorePlugin,
+  P extends AnyPluginConfig = LateCorePlugin,
 > = {
-  api: UnionToIntersection<InferApi<P | PlateCorePlugin>>;
+  api: UnionToIntersection<InferApi<P | LateCorePlugin>>;
   children: V;
   pluginList: P[];
   plugins: { [K in P['key']]: Extract<P, { key: K }> };
-  tf: UnionToIntersection<InferTransforms<P | PlateCorePlugin>>;
-  transforms: UnionToIntersection<InferTransforms<P | PlateCorePlugin>>;
-} & PlateEditor;
+  tf: UnionToIntersection<InferTransforms<P | LateCorePlugin>>;
+  transforms: UnionToIntersection<InferTransforms<P | LateCorePlugin>>;
+} & LateEditor;

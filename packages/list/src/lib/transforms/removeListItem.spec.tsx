@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
 import { type SlateEditor, findNode } from '@sewellstephens/plate-common';
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
 import { removeListItem } from './removeListItem';
@@ -87,7 +87,7 @@ const output = (
 ) as any as SlateEditor;
 
 it('should', () => {
-  const editor = createPlateEditor({ editor: input });
+  const editor = createLateEditor({ editor: input });
 
   const list = findNode(input, { match: { id: '1' } }) as any;
   const listItem = findNode(input, { match: { id: '13' } }) as any;

@@ -1,18 +1,18 @@
 ---
 title: Editor Configuration
-description: Learn how to configure and customize the Plate editor.
+description: Learn how to configure and customize the Late editor.
 ---
 
-This guide covers the configuration options for the Plate editor, including basic setup, plugin management, and advanced configuration techniques.
+This guide covers the configuration options for the Late editor, including basic setup, plugin management, and advanced configuration techniques.
 
 ## Basic Editor Configuration
 
-To create a basic Plate editor, you can use the `createPlateEditor` function, or `usePlateEditor` in a React component:
+To create a basic Late editor, you can use the `createLateEditor` function, or `useLateEditor` in a React component:
 
 ```ts
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [ParagraphPlugin, HeadingPlugin],
 });
 ```
@@ -22,12 +22,12 @@ const editor = createPlateEditor({
 Set the initial content of the editor:
 
 ```ts
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [ParagraphPlugin],
   value: [
     {
       type: 'p',
-      children: [{ text: 'Hello, Plate!' }],
+      children: [{ text: 'Hello, Late!' }],
     },
   ],
 });
@@ -38,7 +38,7 @@ const editor = createPlateEditor({
 You can add plugins to your editor by including them in the `plugins` array:
 
 ```ts
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [ParagraphPlugin, HeadingPlugin, ListPlugin],
 });
 ```
@@ -48,7 +48,7 @@ const editor = createPlateEditor({
 Set the maximum length of the editor:
 
 ```ts
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [ParagraphPlugin],
   maxLength: 100,
 });
@@ -61,7 +61,7 @@ const editor = createPlateEditor({
 Set a custom id for the editor:
 
 ```ts
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [ParagraphPlugin],
   id: 'my-custom-editor-id',
 });
@@ -74,7 +74,7 @@ If defined, you should always pass the `id` as the first argument in any editor 
 Control whether the editor should normalize its content on initialization:
 
 ```ts
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [ParagraphPlugin],
   shouldNormalizeEditor: true,
 });
@@ -85,7 +85,7 @@ const editor = createPlateEditor({
 Configure the editor to automatically select a range:
 
 ```ts
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [ParagraphPlugin],
   autoSelect: 'end', // or 'start', or true
 });
@@ -98,7 +98,7 @@ This is not the same as auto-focus: you can select text without focusing the edi
 Override default components for plugins:
 
 ```ts
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [ParagraphPlugin, HeadingPlugin],
   override: {
     components: {
@@ -114,7 +114,7 @@ const editor = createPlateEditor({
 Override specific plugin configurations:
 
 ```ts
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [ParagraphPlugin, HeadingPlugin],
   override: {
     plugins: {
@@ -133,7 +133,7 @@ const editor = createPlateEditor({
 Disable specific plugins:
 
 ```ts
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [ParagraphPlugin, HeadingPlugin, ListPlugin],
   override: {
     enabled: {
@@ -148,12 +148,12 @@ const editor = createPlateEditor({
 You can override core plugins or previously defined plugins by adding a plugin with the same key. The last plugin with a given key wins:
 
 ```ts
-const CustomParagraphPlugin = createPlatePlugin({
+const CustomParagraphPlugin = createLatePlugin({
   key: 'p',
   // Custom implementation
 });
 
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [ParagraphPlugin, CustomParagraphPlugin],
 });
 ```
@@ -163,7 +163,7 @@ const editor = createPlateEditor({
 From the root plugin, you can configure any plugin:
 
 ```ts
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [ParagraphPlugin, HeadingPlugin],
   rootPlugin: (plugin) =>
     plugin.configurePlugin(LengthPlugin, {
@@ -176,12 +176,12 @@ const editor = createPlateEditor({
 
 ## Typed Editor
 
-`createPlateEditor` will automatically infer the types for your editor from the value and the plugins you pass in. For explicit type creation, you can use `createTPlateEditor`:
+`createLateEditor` will automatically infer the types for your editor from the value and the plugins you pass in. For explicit type creation, you can use `createTLateEditor`:
 
 ### Plugins Type
 
 ```ts
-const editor = createTPlateEditor<Value, typeof TablePlugin | typeof LinkPlugin>({
+const editor = createTLateEditor<Value, typeof TablePlugin | typeof LinkPlugin>({
   plugins: [TablePlugin, LinkPlugin],
 });
 
@@ -195,7 +195,7 @@ For more complex editors, you can define your types in a separate file (e.g., `p
 
 ```ts
 import type { TElement, TText } from '@sewellstephens/plate-common';
-import type { TPlateEditor } from '@sewellstephens/plate-common/react';
+import type { TLateEditor } from '@sewellstephens/plate-common/react';
 
 // Define custom element types
 interface ParagraphElement extends TElement {
@@ -222,23 +222,23 @@ export type MyRootBlock = ParagraphElement | ImageElement;
 export type MyValue = MyRootBlock[];
 
 // Define the custom editor type
-export type MyEditor = TPlateEditor<MyValue, typeof TablePlugin | typeof LinkPlugin>;
+export type MyEditor = TLateEditor<MyValue, typeof TablePlugin | typeof LinkPlugin>;
 
 export const useMyEditorRef = () => useEditorRef<MyEditor>();
 
 // Usage
 const value: MyValue = [{
   type: 'p',
-  children: [{ text: 'Hello, Plate!' }],
+  children: [{ text: 'Hello, Late!' }],
 }]
 
-const editorInferred = createPlateEditor({
+const editorInferred = createLateEditor({
   plugins: [TablePlugin, LinkPlugin],
   value,
 });
 
 // or 
-const editorExplicit = createTPlateEditor<MyValue, typeof TablePlugin | typeof LinkPlugin>({
+const editorExplicit = createTLateEditor<MyValue, typeof TablePlugin | typeof LinkPlugin>({
   plugins: [TablePlugin, LinkPlugin],
   value,
 });

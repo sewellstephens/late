@@ -1,8 +1,8 @@
-import { Key, toPlatePlugin } from '@sewellstephens/plate-common/react';
+import { Key, toLatePlugin } from '@sewellstephens/plate-common/react';
 
 import { ItalicPlugin as BaseItalicPlugin } from '../lib/ItalicPlugin';
 
-export const ItalicPlugin = toPlatePlugin(
+export const ItalicPlugin = toLatePlugin(
   BaseItalicPlugin,
   ({ editor, type }) => ({
     shortcuts: {

@@ -4,7 +4,7 @@ import type { SlateEditor } from '@sewellstephens/plate-common';
 
 import { createSlatePlugin } from '@sewellstephens/plate-common';
 import { ParagraphPlugin } from '@sewellstephens/plate-common';
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
 import { CodeBlockPlugin } from './CodeBlockPlugin';
@@ -33,7 +33,7 @@ describe('code block deserialization', () => {
         </editor>
       ) as any as SlateEditor;
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins: [
           ParagraphPlugin,
@@ -76,7 +76,7 @@ describe('code block deserialization', () => {
         </editor>
       ) as any as SlateEditor;
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins: [ParagraphPlugin, CodeBlockPlugin],
       });
@@ -116,7 +116,7 @@ describe('code block deserialization', () => {
         </editor>
       ) as any as SlateEditor;
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins: [ParagraphPlugin, CodeBlockPlugin],
       });

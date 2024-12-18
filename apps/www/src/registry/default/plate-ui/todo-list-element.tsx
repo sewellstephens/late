@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { cn, withRef } from '@sewellstephens/cn';
-import { PlateElement } from '@sewellstephens/plate-common/react';
+import { LateElement } from '@sewellstephens/plate-common/react';
 import {
   useTodoListElement,
   useTodoListElementState,
@@ -9,14 +9,14 @@ import {
 
 import { Checkbox } from './checkbox';
 
-export const TodoListElement = withRef<typeof PlateElement>(
+export const TodoListElement = withRef<typeof LateElement>(
   ({ children, className, ...props }, ref) => {
     const { element } = props;
     const state = useTodoListElementState({ element });
     const { checkboxProps } = useTodoListElement(state);
 
     return (
-      <PlateElement
+      <LateElement
         className={cn('flex flex-row py-1', className)}
         ref={ref}
         {...props}
@@ -37,7 +37,7 @@ export const TodoListElement = withRef<typeof PlateElement>(
         >
           {children}
         </span>
-      </PlateElement>
+      </LateElement>
     );
   }
 );

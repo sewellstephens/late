@@ -3,23 +3,23 @@ import React from 'react';
 import type { TText } from '@sewellstephens/slate';
 
 import {
-  type AnyPlatePlugin,
-  type PlateRenderLeafProps,
+  type AnyLatePlugin,
+  type LateRenderLeafProps,
   omitPluginContext,
 } from '@sewellstephens/plate-core/react';
 import { Text, type TextProps, useComposedRef } from '@sewellstephens/react-utils';
 import { clsx } from 'clsx';
 
-export type PlateLeafProps<
+export type LateLeafProps<
   T extends TText = TText,
-  P extends AnyPlatePlugin = AnyPlatePlugin,
+  P extends AnyLatePlugin = AnyLatePlugin,
 > = {
-  /** Get HTML attributes from Slate leaf. Alternative to `PlatePlugin.props`. */
+  /** Get HTML attributes from Slate leaf. Alternative to `LatePlugin.props`. */
   leafToAttributes?: (leaf: T) => any;
-} & PlateRenderLeafProps<T, P> &
+} & LateRenderLeafProps<T, P> &
   TextProps;
 
-export const usePlateLeaf = (props: PlateLeafProps) => {
+export const useLateLeaf = (props: LateLeafProps) => {
   const { attributes, leaf, leafToAttributes, nodeProps, text, ...rootProps } =
     omitPluginContext(props);
 
@@ -36,19 +36,19 @@ export const usePlateLeaf = (props: PlateLeafProps) => {
 };
 
 /** Headless leaf component. */
-const PlateLeaf = React.forwardRef<HTMLSpanElement, PlateLeafProps>(
-  (props: PlateLeafProps, ref) => {
-    const { props: rootProps, ref: rootRef } = usePlateLeaf({ ...props, ref });
+const LateLeaf = React.forwardRef<HTMLSpanElement, LateLeafProps>(
+  (props: LateLeafProps, ref) => {
+    const { props: rootProps, ref: rootRef } = useLateLeaf({ ...props, ref });
 
     return <Text {...rootProps} ref={rootRef} />;
   }
-) as (<N extends TText = TText, P extends AnyPlatePlugin = AnyPlatePlugin>({
+) as (<N extends TText = TText, P extends AnyLatePlugin = AnyLatePlugin>({
   className,
   ...props
-}: PlateLeafProps<N, P> &
+}: LateLeafProps<N, P> &
   React.RefAttributes<HTMLSpanElement>) => React.ReactElement) & {
   displayName?: string;
 };
-PlateLeaf.displayName = 'PlateLeaf';
+LateLeaf.displayName = 'LateLeaf';
 
-export { PlateLeaf };
+export { LateLeaf };

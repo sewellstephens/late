@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - `createIndentPlugin` -> `IndentPlugin`
 
 ## 36.0.0
@@ -15,7 +15,7 @@
 
 ### Patch Changes
 
-- [#3187](https://github.com/udecode/plate/pull/3187) by [@zbeyens](https://github.com/zbeyens) – Fix types
+- [#3187](https://github.com/sewellstephens/late/pull/3187) by [@zbeyens](https://github.com/zbeyens) – Fix types
 
 ## 33.0.0
 
@@ -25,7 +25,7 @@
 
 ### Minor Changes
 
-- [#3058](https://github.com/udecode/plate/pull/3058) by [@felixfeng33](https://github.com/felixfeng33) – Feature: todo lists
+- [#3058](https://github.com/sewellstephens/late/pull/3058) by [@felixfeng33](https://github.com/felixfeng33) – Feature: todo lists
 
 ## 31.0.0
 
@@ -33,13 +33,13 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/udecode/plate/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.5.2
 
 ### Patch Changes
 
-- [#2961](https://github.com/udecode/plate/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -69,7 +69,7 @@
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -107,7 +107,7 @@
 
 ### Minor Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – New exports:
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – New exports:
   - `useIndentButton`
   - `useOutdentButton`
 
@@ -135,7 +135,7 @@
 
 ### Patch Changes
 
-- [#2285](https://github.com/udecode/plate/pull/2285) by [@12joan](https://github.com/12joan) – Ignore `defaultPrevented` keydown events
+- [#2285](https://github.com/sewellstephens/late/pull/2285) by [@12joan](https://github.com/12joan) – Ignore `defaultPrevented` keydown events
 
 ## 20.0.0
 
@@ -173,7 +173,7 @@
 
 ### Patch Changes
 
-- [#1931](https://github.com/udecode/plate/pull/1931) by [@zbeyens](https://github.com/zbeyens) – Fix: `toggleIndentList` should indent only the lowest block (nested case).
+- [#1931](https://github.com/sewellstephens/late/pull/1931) by [@zbeyens](https://github.com/zbeyens) – Fix: `toggleIndentList` should indent only the lowest block (nested case).
 
 ## 18.2.0
 
@@ -193,7 +193,7 @@
 
 ### Minor Changes
 
-- [#1850](https://github.com/udecode/plate/pull/1850) by [@bokuweb](https://github.com/bokuweb) – New prop: `listRestart` - if set, force `listStart` to be `listRestart` instead of the previous `listStart + 1`
+- [#1850](https://github.com/sewellstephens/late/pull/1850) by [@bokuweb](https://github.com/bokuweb) – New prop: `listRestart` - if set, force `listStart` to be `listRestart` instead of the previous `listStart + 1`
 
 ## 16.5.0
 
@@ -233,7 +233,7 @@
 
 ### Minor Changes
 
-- [#1560](https://github.com/udecode/plate/pull/1560) by [@zbeyens](https://github.com/zbeyens) –
+- [#1560](https://github.com/sewellstephens/late/pull/1560) by [@zbeyens](https://github.com/zbeyens) –
   - fix: tab / untab when composing with IME
   - update peerDeps:
     - `"slate": ">=0.78.0"`
@@ -277,7 +277,7 @@
 
 ### Patch Changes
 
-- [#1388](https://github.com/udecode/plate/pull/1388) by [@zbeyens](https://github.com/zbeyens) – fix for docs only: use `Array.from` instead of destructuring generators
+- [#1388](https://github.com/sewellstephens/late/pull/1388) by [@zbeyens](https://github.com/zbeyens) – fix for docs only: use `Array.from` instead of destructuring generators
 
 ## 10.1.0
 
@@ -287,7 +287,7 @@
 
 ### Minor Changes
 
-- [#1373](https://github.com/udecode/plate/pull/1373) by [@zbeyens](https://github.com/zbeyens) – Docx deserializer supports more indent list styles: DecimalLeadingZero, LowerRoman, UpperRoman, UpperAlpha
+- [#1373](https://github.com/sewellstephens/late/pull/1373) by [@zbeyens](https://github.com/zbeyens) – Docx deserializer supports more indent list styles: DecimalLeadingZero, LowerRoman, UpperRoman, UpperAlpha
 
 ## 9.3.1
 
@@ -295,7 +295,7 @@
 
 ### Minor Changes
 
-- [#1364](https://github.com/udecode/plate/pull/1364) by [@zbeyens](https://github.com/zbeyens) – Feat: new textIndent plugin + docx deserializer support
+- [#1364](https://github.com/sewellstephens/late/pull/1364) by [@zbeyens](https://github.com/zbeyens) – Feat: new textIndent plugin + docx deserializer support
 
 ## 9.2.1
 
@@ -317,7 +317,7 @@
 
 ### Major Changes
 
-- [#1190](https://github.com/udecode/plate/pull/1190) by [@zbeyens](https://github.com/zbeyens) –
+- [#1190](https://github.com/sewellstephens/late/pull/1190) by [@zbeyens](https://github.com/zbeyens) –
   - removed `getIndentOverrideProps()` in favor of `getOverrideProps(KEY_INDENT)`
   - rename `onKeyDownHandler` to `getIndentOnKeyDown()`
   - `IndentPluginOptions`
@@ -327,7 +327,7 @@
 
 ### Minor Changes
 
-- [#1190](https://github.com/udecode/plate/pull/1190) by [@zbeyens](https://github.com/zbeyens) –
+- [#1190](https://github.com/sewellstephens/late/pull/1190) by [@zbeyens](https://github.com/zbeyens) –
   - `setIndent` new options: `SetIndentOptions`
 
 ## 6.4.1
@@ -336,7 +336,7 @@
 
 ### Minor Changes
 
-- [#1184](https://github.com/udecode/plate/pull/1184) by [@ghingis](https://github.com/ghingis) – `classNames` plugin option now fits `getElementOverrideProps` API:
+- [#1184](https://github.com/sewellstephens/late/pull/1184) by [@ghingis](https://github.com/ghingis) – `classNames` plugin option now fits `getElementOverrideProps` API:
 
   ```ts
   // before
@@ -359,9 +359,9 @@
 
 ### Patch Changes
 
-- [#1184](https://github.com/udecode/plate/pull/1184) by [@ghingis](https://github.com/ghingis) – now uses `getElementOverrideProps` / `getLeafOverrideProps`
+- [#1184](https://github.com/sewellstephens/late/pull/1184) by [@ghingis](https://github.com/ghingis) – now uses `getElementOverrideProps` / `getLeafOverrideProps`
 
-- [#1183](https://github.com/udecode/plate/pull/1183) by [@zbeyens](https://github.com/zbeyens) – fix import
+- [#1183](https://github.com/sewellstephens/late/pull/1183) by [@zbeyens](https://github.com/zbeyens) – fix import
 
 ## 6.3.0
 
@@ -369,7 +369,7 @@
 
 ### Minor Changes
 
-- [#1163](https://github.com/udecode/plate/pull/1163) by [@ghingis](https://github.com/ghingis) – feat: keyboard support to indent / outdent (Tab / Shift+Tab)
+- [#1163](https://github.com/sewellstephens/late/pull/1163) by [@ghingis](https://github.com/ghingis) – feat: keyboard support to indent / outdent (Tab / Shift+Tab)
 
 ## 6.1.0
 
@@ -379,16 +379,16 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`a6bf8c5e`](https://github.com/udecode/plate/commit/a6bf8c5e6897c6ab443e0ac3d69a30befeaddadf)]:
+- Updated dependencies [[`a6bf8c5e`](https://github.com/sewellstephens/late/commit/a6bf8c5e6897c6ab443e0ac3d69a30befeaddadf)]:
   - @sewellstephens/plate-common@5.3.5
 
 ## 5.3.1
 
 ### Patch Changes
 
-- [#1137](https://github.com/udecode/plate/pull/1137) [`2c50679e`](https://github.com/udecode/plate/commit/2c50679efb5f9dfdfae0a7b34ab77d2d7120ad6a) Thanks [@zbeyens](https://github.com/zbeyens)! - `setIndent` uses `Array.from(x)` instead of `[...x]`
+- [#1137](https://github.com/sewellstephens/late/pull/1137) [`2c50679e`](https://github.com/sewellstephens/late/commit/2c50679efb5f9dfdfae0a7b34ab77d2d7120ad6a) Thanks [@zbeyens](https://github.com/zbeyens)! - `setIndent` uses `Array.from(x)` instead of `[...x]`
 
-- Updated dependencies [[`8aec270f`](https://github.com/udecode/plate/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118)]:
+- Updated dependencies [[`8aec270f`](https://github.com/sewellstephens/late/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118)]:
   - @sewellstephens/plate-core@5.3.1
   - @sewellstephens/plate-common@5.3.1
 
@@ -396,10 +396,10 @@
 
 ### Minor Changes
 
-- [#1126](https://github.com/udecode/plate/pull/1126) [`7ee21356`](https://github.com/udecode/plate/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e) Thanks [@zbeyens](https://github.com/zbeyens)! - new package
+- [#1126](https://github.com/sewellstephens/late/pull/1126) [`7ee21356`](https://github.com/sewellstephens/late/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e) Thanks [@zbeyens](https://github.com/zbeyens)! - new package
 
 ### Patch Changes
 
-- Updated dependencies [[`7ee21356`](https://github.com/udecode/plate/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e)]:
+- Updated dependencies [[`7ee21356`](https://github.com/sewellstephens/late/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e)]:
   - @sewellstephens/plate-core@5.3.0
   - @sewellstephens/plate-common@5.3.0

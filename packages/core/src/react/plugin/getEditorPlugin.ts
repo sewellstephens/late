@@ -1,9 +1,9 @@
-import type { PlateEditor } from '../editor';
+import type { LateEditor } from '../editor';
 import type {
   InferConfig,
-  PlatePlugin,
-  PlatePluginContext,
-} from './PlatePlugin';
+  LatePlugin,
+  LatePluginContext,
+} from './LatePlugin';
 
 import {
   type AnyPluginConfig,
@@ -12,11 +12,11 @@ import {
 } from '../../lib';
 
 export function getEditorPlugin<
-  P extends AnyPluginConfig | PlatePlugin<AnyPluginConfig>,
+  P extends AnyPluginConfig | LatePlugin<AnyPluginConfig>,
 >(
-  editor: PlateEditor,
+  editor: LateEditor,
   plugin: WithRequiredKey<P>
-): PlatePluginContext<InferConfig<P> extends never ? P : InferConfig<P>> {
+): LatePluginContext<InferConfig<P> extends never ? P : InferConfig<P>> {
   return {
     ...(getBaseEditorPlugin(editor, plugin) as any),
     useOption: (key: any, ...args: any) =>

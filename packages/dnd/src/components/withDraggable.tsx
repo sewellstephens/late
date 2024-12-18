@@ -1,7 +1,7 @@
 import React from 'react';
 
 import type { AnyObject } from '@sewellstephens/plate-common';
-import type { PlateRenderElementProps } from '@sewellstephens/plate-common/react';
+import type { LateRenderElementProps } from '@sewellstephens/plate-common/react';
 
 import {
   type WithDraggableOptions,
@@ -14,7 +14,7 @@ export const withDraggable = <T extends AnyObject = AnyObject>(
   options?: WithDraggableOptions<T>
 ) =>
   // eslint-disable-next-line react/display-name
-  React.forwardRef<HTMLDivElement, PlateRenderElementProps>((props, ref) => {
+  React.forwardRef<HTMLDivElement, LateRenderElementProps>((props, ref) => {
     const { disabled, draggableProps } = useWithDraggable({
       ...options,
       ...props,

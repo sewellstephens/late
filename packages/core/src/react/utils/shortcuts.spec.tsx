@@ -3,11 +3,11 @@
 import { BoldPlugin } from '@sewellstephens/plate-basic-marks/react';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
-import { createPlateTestEditor } from '../__tests__/createPlateTestEditor';
+import { createLateTestEditor } from '../__tests__/createLateTestEditor';
 
 jsx;
-import { type PlateEditor, createPlateEditor } from '../editor';
-import { createPlatePlugin } from '../plugin';
+import { type LateEditor, createLateEditor } from '../editor';
+import { createLatePlugin } from '../plugin';
 
 it('should use custom hotkey for bold', async () => {
   const input = (
@@ -18,7 +18,7 @@ it('should use custom hotkey for bold', async () => {
         <focus />
       </hp>
     </editor>
-  ) as any as PlateEditor;
+  ) as any as LateEditor;
 
   const output = (
     <editor>
@@ -26,9 +26,9 @@ it('should use custom hotkey for bold', async () => {
         Hello <htext bold>world</htext>
       </hp>
     </editor>
-  ) as any as PlateEditor;
+  ) as any as LateEditor;
 
-  const [editor, { triggerKeyboardEvent }] = await createPlateTestEditor({
+  const [editor, { triggerKeyboardEvent }] = await createLateTestEditor({
     editor: input,
     plugins: [
       BoldPlugin.configure({
@@ -50,7 +50,7 @@ it('should use custom hotkey for bold', async () => {
 
 describe('extend method with shortcuts', () => {
   it('should add new shortcuts to a plugin', () => {
-    const testPlugin = createPlatePlugin({
+    const testPlugin = createLatePlugin({
       key: 'testPlugin',
       shortcuts: {
         bold: {
@@ -67,7 +67,7 @@ describe('extend method with shortcuts', () => {
       },
     });
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [testPlugin],
     });
 
@@ -79,7 +79,7 @@ describe('extend method with shortcuts', () => {
     const originalCallback = jest.fn();
     const newCallback = jest.fn();
 
-    const testPlugin = createPlatePlugin({
+    const testPlugin = createLatePlugin({
       key: 'testPlugin',
       shortcuts: {
         bold: {
@@ -96,7 +96,7 @@ describe('extend method with shortcuts', () => {
       },
     });
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [testPlugin],
     });
 
@@ -114,7 +114,7 @@ describe('extend method with shortcuts', () => {
     const originalCallback = jest.fn();
     const newCallback = jest.fn();
 
-    const testPlugin = createPlatePlugin({
+    const testPlugin = createLatePlugin({
       key: 'testPlugin',
       shortcuts: {
         bold: {
@@ -130,7 +130,7 @@ describe('extend method with shortcuts', () => {
       },
     });
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [testPlugin],
     });
 
@@ -138,7 +138,7 @@ describe('extend method with shortcuts', () => {
   });
 
   it('should allow removing shortcuts by setting them to null', () => {
-    const testPlugin = createPlatePlugin({
+    const testPlugin = createLatePlugin({
       key: 'testPlugin',
       shortcuts: {
         bold: {
@@ -156,7 +156,7 @@ describe('extend method with shortcuts', () => {
       },
     });
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [testPlugin],
     });
 
@@ -165,7 +165,7 @@ describe('extend method with shortcuts', () => {
   });
 
   it('should allow extending shortcuts using a function', () => {
-    const testPlugin = createPlatePlugin({
+    const testPlugin = createLatePlugin({
       key: 'testPlugin',
       shortcuts: {
         bold: {
@@ -183,7 +183,7 @@ describe('extend method with shortcuts', () => {
       },
     }));
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [testPlugin],
     });
 
@@ -192,7 +192,7 @@ describe('extend method with shortcuts', () => {
   });
 
   it('should respect hotkey priority when resolving conflicting shortcuts', () => {
-    const lowPriorityHotkeyPlugin = createPlatePlugin({
+    const lowPriorityHotkeyPlugin = createLatePlugin({
       key: 'lowPriorityHotkey',
       shortcuts: {
         bold: {
@@ -208,7 +208,7 @@ describe('extend method with shortcuts', () => {
       },
     });
 
-    const highPriorityHotkeyPlugin = createPlatePlugin({
+    const highPriorityHotkeyPlugin = createLatePlugin({
       key: 'highPriorityHotkey',
       shortcuts: {
         bold: {
@@ -219,7 +219,7 @@ describe('extend method with shortcuts', () => {
       },
     });
 
-    const defaultPriorityHotkeyPlugin = createPlatePlugin({
+    const defaultPriorityHotkeyPlugin = createLatePlugin({
       key: 'defaultPriorityHotkey',
       shortcuts: {
         bold: {
@@ -235,7 +235,7 @@ describe('extend method with shortcuts', () => {
       },
     });
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [
         defaultPriorityHotkeyPlugin,
         highPriorityHotkeyPlugin,
@@ -248,7 +248,7 @@ describe('extend method with shortcuts', () => {
   });
 
   it('should use the last defined hotkey when priorities are equal', () => {
-    const firstPlugin = createPlatePlugin({
+    const firstPlugin = createLatePlugin({
       key: 'firstPlugin',
       shortcuts: {
         bold: {
@@ -259,7 +259,7 @@ describe('extend method with shortcuts', () => {
       },
     });
 
-    const secondPlugin = createPlatePlugin({
+    const secondPlugin = createLatePlugin({
       key: 'secondPlugin',
       shortcuts: {
         bold: {
@@ -270,7 +270,7 @@ describe('extend method with shortcuts', () => {
       },
     });
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [firstPlugin, secondPlugin],
     });
 
@@ -278,7 +278,7 @@ describe('extend method with shortcuts', () => {
   });
 
   it('should prioritize root plugin shortcuts over other plugins', () => {
-    const lowPriorityPlugin = createPlatePlugin({
+    const lowPriorityPlugin = createLatePlugin({
       key: 'lowPriority',
       shortcuts: {
         bold: {
@@ -288,7 +288,7 @@ describe('extend method with shortcuts', () => {
       },
     });
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [lowPriorityPlugin],
       shortcuts: {
         bold: {
@@ -304,7 +304,7 @@ describe('extend method with shortcuts', () => {
 
 describe('shortcut priority and plugin interaction', () => {
   it('should prioritize shortcut-specific priority over plugin priority', () => {
-    const lowPriorityPlugin = createPlatePlugin({
+    const lowPriorityPlugin = createLatePlugin({
       key: 'lowPriority',
       priority: 50,
       shortcuts: {
@@ -316,7 +316,7 @@ describe('shortcut priority and plugin interaction', () => {
       },
     });
 
-    const highPriorityPlugin = createPlatePlugin({
+    const highPriorityPlugin = createLatePlugin({
       key: 'highPriority',
       priority: 150,
       shortcuts: {
@@ -328,7 +328,7 @@ describe('shortcut priority and plugin interaction', () => {
       },
     });
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [lowPriorityPlugin, highPriorityPlugin],
     });
 
@@ -336,7 +336,7 @@ describe('shortcut priority and plugin interaction', () => {
   });
 
   it('should use plugin priority when shortcut priority is not specified', () => {
-    const lowPriorityPlugin = createPlatePlugin({
+    const lowPriorityPlugin = createLatePlugin({
       key: 'lowPriority',
       priority: 50,
       shortcuts: {
@@ -348,7 +348,7 @@ describe('shortcut priority and plugin interaction', () => {
       },
     });
 
-    const highPriorityPlugin = createPlatePlugin({
+    const highPriorityPlugin = createLatePlugin({
       key: 'highPriority',
       priority: 150,
       shortcuts: {
@@ -360,7 +360,7 @@ describe('shortcut priority and plugin interaction', () => {
       },
     });
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [lowPriorityPlugin, highPriorityPlugin],
     });
 
@@ -368,7 +368,7 @@ describe('shortcut priority and plugin interaction', () => {
   });
 
   it('should handle multiple shortcuts with different priorities', () => {
-    const testPlugin = createPlatePlugin({
+    const testPlugin = createLatePlugin({
       key: 'testPlugin',
       priority: 100,
       shortcuts: {
@@ -390,7 +390,7 @@ describe('shortcut priority and plugin interaction', () => {
       },
     });
 
-    const overridePlugin = createPlatePlugin({
+    const overridePlugin = createLatePlugin({
       key: 'overridePlugin',
       priority: 120,
       shortcuts: {
@@ -412,7 +412,7 @@ describe('shortcut priority and plugin interaction', () => {
       },
     });
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [testPlugin, overridePlugin],
     });
 
@@ -422,7 +422,7 @@ describe('shortcut priority and plugin interaction', () => {
   });
 
   it('should handle root plugin shortcuts with different priorities', () => {
-    const testPlugin = createPlatePlugin({
+    const testPlugin = createLatePlugin({
       key: 'testPlugin',
       priority: 100,
       shortcuts: {
@@ -437,7 +437,7 @@ describe('shortcut priority and plugin interaction', () => {
       },
     });
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [testPlugin],
       shortcuts: {
         bold: {

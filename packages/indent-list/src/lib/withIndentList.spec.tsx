@@ -2,7 +2,7 @@
 
 import type { SlateEditor } from '@sewellstephens/plate-common';
 
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { IndentPlugin } from '@sewellstephens/plate-indent';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
@@ -41,7 +41,7 @@ describe('normalizeIndentList', () => {
         </editor>
       ) as any as SlateEditor;
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins: [IndentListPlugin, IndentPlugin],
         shouldNormalizeEditor: true,

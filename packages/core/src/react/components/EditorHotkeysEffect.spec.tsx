@@ -3,7 +3,7 @@ import React, { useRef } from 'react';
 import { act, render } from '@testing-library/react';
 import { useHotkeys } from '@sewellstephens/react-hotkeys';
 
-import { createPlateEditor } from '../editor';
+import { createLateEditor } from '../editor';
 import { useEditorRef } from '../stores';
 import { EditorHotkeysEffect } from './EditorHotkeysEffect';
 
@@ -34,7 +34,7 @@ describe('EditorHotkeysEffect', () => {
   const hotkeyCallback = jest.fn();
 
   beforeEach(() => {
-    editor = createPlateEditor({
+    editor = createLateEditor({
       shortcuts: {
         'mod+b': {
           handler: hotkeyCallback,

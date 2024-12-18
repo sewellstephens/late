@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) – Types:
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) – Types:
 
   - Remove `TReactEditor` type, as it's now integrated into the main `TEditor` type in `@sewellstephens/slate`. Use `TEditor` instead.
   - Replace `V extends Value` with `E extends TEditor` for improved type inference
@@ -16,7 +16,7 @@
 
 ### Patch Changes
 
-- [#3346](https://github.com/udecode/plate/pull/3346) by [@yf-yang](https://github.com/yf-yang) – feat: expose onValueChange and onSelectionChange from Slate component, following https://github.com/ianstormtaylor/slate/pull/5526
+- [#3346](https://github.com/sewellstephens/late/pull/3346) by [@yf-yang](https://github.com/yf-yang) – feat: expose onValueChange and onSelectionChange from Slate component, following https://github.com/ianstormtaylor/slate/pull/5526
 
 ## 33.0.0
 
@@ -34,7 +34,7 @@
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -50,7 +50,7 @@
 
 ### Minor Changes
 
-- [#2629](https://github.com/udecode/plate/pull/2629) by [@zbeyens](https://github.com/zbeyens) –
+- [#2629](https://github.com/sewellstephens/late/pull/2629) by [@zbeyens](https://github.com/zbeyens) –
   - Add `focusEditorEdge` transform. Focus the editor at the start or end of the document.
 
 ## 23.7.4
@@ -61,7 +61,7 @@
 
 ### Patch Changes
 
-- [`cc893ea`](https://github.com/udecode/plate/commit/cc893ea408c3d9abcef5b67cb00fa2b93a5686fe) by [@zbeyens](https://github.com/zbeyens) – Upgraded peer dep `"slate-react": ">=0.95.0"` (patch to v22).
+- [`cc893ea`](https://github.com/sewellstephens/late/commit/cc893ea408c3d9abcef5b67cb00fa2b93a5686fe) by [@zbeyens](https://github.com/zbeyens) – Upgraded peer dep `"slate-react": ">=0.95.0"` (patch to v22).
 
 ## 21.4.1
 

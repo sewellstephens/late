@@ -3,7 +3,7 @@ import { getEmptyImage } from 'react-dnd-html5-backend';
 
 import type { DropTargetMonitor } from 'react-dnd';
 
-import { type PlateEditor, useEditorRef } from '@sewellstephens/plate-common/react';
+import { type LateEditor, useEditorRef } from '@sewellstephens/plate-common/react';
 
 import type { DragItemNode, DropLineDirection } from '../types';
 
@@ -16,7 +16,7 @@ export interface UseDndNodeOptions
   drag?: UseDragNodeOptions;
   drop?: UseDropNodeOptions;
   onDropHandler?: (
-    editor: PlateEditor,
+    editor: LateEditor,
     props: {
       dragItem: DragItemNode;
       id: string;

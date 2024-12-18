@@ -3,7 +3,7 @@
 import type { SlateEditor, TDescendant } from '@sewellstephens/plate-common';
 
 import { ParagraphPlugin } from '@sewellstephens/plate-common';
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
 import { CodeBlockPlugin } from '../react/CodeBlockPlugin';
@@ -11,7 +11,7 @@ import { CodeBlockPlugin } from '../react/CodeBlockPlugin';
 jsx;
 
 const editorTest = (input: any, fragment: any, expected: any) => {
-  const editor = createPlateEditor({
+  const editor = createLateEditor({
     editor: input,
     plugins: [ParagraphPlugin, CodeBlockPlugin],
   });

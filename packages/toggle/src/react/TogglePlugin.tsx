@@ -1,6 +1,6 @@
 import type { ExtendConfig } from '@sewellstephens/plate-common';
 
-import { toTPlatePlugin } from '@sewellstephens/plate-common/react';
+import { toTLatePlugin } from '@sewellstephens/plate-common/react';
 
 import type { buildToggleIndex } from './toggleIndexAtom';
 
@@ -20,7 +20,7 @@ export type ToggleConfig = ExtendConfig<
 >;
 
 /** Enables support for toggleable elements in the editor. */
-export const TogglePlugin = toTPlatePlugin<ToggleConfig>(BaseTogglePlugin, {
+export const TogglePlugin = toTLatePlugin<ToggleConfig>(BaseTogglePlugin, {
   extendEditor: withToggle as any,
   options: {
     toggleIndex: new Map(),

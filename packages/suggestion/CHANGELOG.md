@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - `createSuggestionPlugin` -> `SuggestionPlugin`
   - Move `suggestionStore` to `SuggestionPlugin`
   - Remove `SuggestionProvider` and its hooks
@@ -33,7 +33,7 @@
 
 ### Patch Changes
 
-- [#3187](https://github.com/udecode/plate/pull/3187) by [@zbeyens](https://github.com/zbeyens) – Fix types
+- [#3187](https://github.com/sewellstephens/late/pull/3187) by [@zbeyens](https://github.com/zbeyens) – Fix types
 
 ## 33.0.0
 
@@ -53,7 +53,7 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/udecode/plate/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.5.2
 
@@ -61,7 +61,7 @@
 
 ### Minor Changes
 
-- [#2945](https://github.com/udecode/plate/pull/2945) by [@12joan](https://github.com/12joan) – Refactor `slateDiff` into `@sewellstephens/plate-diff` and add `diffToSuggestions` instead
+- [#2945](https://github.com/sewellstephens/late/pull/2945) by [@12joan](https://github.com/12joan) – Refactor `slateDiff` into `@sewellstephens/plate-diff` and add `diffToSuggestions` instead
 
 ## 30.4.5
 
@@ -69,25 +69,25 @@
 
 ### Patch Changes
 
-- [#2935](https://github.com/udecode/plate/pull/2935) by [@zbeyens](https://github.com/zbeyens) – fix lodash import
+- [#2935](https://github.com/sewellstephens/late/pull/2935) by [@zbeyens](https://github.com/zbeyens) – fix lodash import
 
 ## 30.4.2
 
 ### Patch Changes
 
-- [#2933](https://github.com/udecode/plate/pull/2933) by [@zbeyens](https://github.com/zbeyens) – fix slateTextDiff
+- [#2933](https://github.com/sewellstephens/late/pull/2933) by [@zbeyens](https://github.com/zbeyens) – fix slateTextDiff
 
 ## 30.4.1
 
 ### Patch Changes
 
-- [#2930](https://github.com/udecode/plate/pull/2930) by [@zbeyens](https://github.com/zbeyens) – fork diff-match-patch to fix ESM import
+- [#2930](https://github.com/sewellstephens/late/pull/2930) by [@zbeyens](https://github.com/zbeyens) – fork diff-match-patch to fix ESM import
 
 ## 30.4.0
 
 ### Minor Changes
 
-- [#2900](https://github.com/udecode/plate/pull/2900) by [@zbeyens](https://github.com/zbeyens) – slate-diff
+- [#2900](https://github.com/sewellstephens/late/pull/2900) by [@zbeyens](https://github.com/zbeyens) – slate-diff
 
 ## 30.1.2
 
@@ -107,7 +107,7 @@
 
 ### Patch Changes
 
-- [#2763](https://github.com/udecode/plate/pull/2763) by [@12joan](https://github.com/12joan) –
+- [#2763](https://github.com/sewellstephens/late/pull/2763) by [@12joan](https://github.com/12joan) –
   - Migrate store to jotai@2
 
 ## 25.0.1
@@ -120,7 +120,7 @@
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -168,13 +168,13 @@
 
 ### Patch Changes
 
-- [#2412](https://github.com/udecode/plate/pull/2412) by [@zbeyens](https://github.com/zbeyens) – 🐛 fix imports
+- [#2412](https://github.com/sewellstephens/late/pull/2412) by [@zbeyens](https://github.com/zbeyens) – 🐛 fix imports
 
 ## 21.3.0
 
 ### Minor Changes
 
-- [#2410](https://github.com/udecode/plate/pull/2410) by [@zbeyens](https://github.com/zbeyens) – ✨ Suggestion plugin
+- [#2410](https://github.com/sewellstephens/late/pull/2410) by [@zbeyens](https://github.com/zbeyens) – ✨ Suggestion plugin
 
 ## 21.1.5
 

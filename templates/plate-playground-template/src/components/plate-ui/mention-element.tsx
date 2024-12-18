@@ -2,14 +2,14 @@ import React from 'react';
 import { cn, withRef } from '@sewellstephens/cn';
 import {
   getHandler,
-  PlateElement,
+  LateElement,
   useElement,
 } from '@sewellstephens/plate-common/react';
 import { TMentionElement } from '@sewellstephens/plate-mention';
 import { useFocused, useSelected } from 'slate-react';
 
 export const MentionElement = withRef<
-  typeof PlateElement,
+  typeof LateElement,
   {
     prefix?: string;
     onClick?: (mentionNode: any) => void;
@@ -21,7 +21,7 @@ export const MentionElement = withRef<
   const focused = useFocused();
 
   return (
-    <PlateElement
+    <LateElement
       ref={ref}
       className={cn(
         'inline-block cursor-pointer rounded-md bg-muted px-1.5 py-0.5 align-baseline text-sm font-medium',
@@ -39,6 +39,6 @@ export const MentionElement = withRef<
       {prefix}
       {renderLabel ? renderLabel(element) : element.value}
       {children}
-    </PlateElement>
+    </LateElement>
   );
 });

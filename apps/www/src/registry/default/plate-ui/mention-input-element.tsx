@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { cn, withRef } from '@sewellstephens/cn';
-import { PlateElement } from '@sewellstephens/plate-common/react';
+import { LateElement } from '@sewellstephens/plate-common/react';
 import { getMentionOnSelectItem } from '@sewellstephens/plate-mention';
 
 import { MENTIONABLES } from '@/lib/plate/demo/values/mentionables';
@@ -16,13 +16,13 @@ import {
 
 const onSelectItem = getMentionOnSelectItem();
 
-export const MentionInputElement = withRef<typeof PlateElement>(
+export const MentionInputElement = withRef<typeof LateElement>(
   ({ className, ...props }, ref) => {
     const { children, editor, element } = props;
     const [search, setSearch] = useState('');
 
     return (
-      <PlateElement
+      <LateElement
         as="span"
         data-slate-value={element.value}
         ref={ref}
@@ -60,7 +60,7 @@ export const MentionInputElement = withRef<typeof PlateElement>(
         </InlineCombobox>
 
         {children}
-      </PlateElement>
+      </LateElement>
     );
   }
 );

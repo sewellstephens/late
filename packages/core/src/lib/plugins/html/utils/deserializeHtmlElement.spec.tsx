@@ -6,7 +6,7 @@ import { ImagePlugin } from '@sewellstephens/plate-media';
 import { TablePlugin } from '@sewellstephens/plate-table';
 import { getHtmlDocument, jsx } from '@sewellstephens/plate-test-utils';
 
-import { createPlateEditor } from '../../../../react';
+import { createLateEditor } from '../../../../react';
 import { createSlatePlugin } from '../../../plugin';
 import { ParagraphPlugin } from '../../paragraph';
 import { deserializeHtmlElement } from './deserializeHtmlElement';
@@ -28,7 +28,7 @@ describe('when element has class and attribute, and plugin has deserialize type,
   it('should have type and attribute', () => {
     expect(
       deserializeHtmlElement(
-        createPlateEditor({
+        createLateEditor({
           plugins: [
             createSlatePlugin({
               key: 'a',
@@ -81,7 +81,7 @@ describe('when plugin has deserialize attributeNames', () => {
   it('should have "attributes" field', () => {
     expect(
       deserializeHtmlElement(
-        createPlateEditor({
+        createLateEditor({
           plugins: [TablePlugin],
         }),
         element
@@ -103,7 +103,7 @@ describe('when element has a comment node', () => {
   it('should ignore the comment node', () => {
     expect(
       deserializeHtmlElement(
-        createPlateEditor({
+        createLateEditor({
           plugins: [],
         }),
         element
@@ -123,7 +123,7 @@ describe('when element has pre without child', () => {
   ) as any;
 
   it('should ignore pre', () => {
-    expect(deserializeHtmlElement(createPlateEditor(), element)).toEqual(
+    expect(deserializeHtmlElement(createLateEditor(), element)).toEqual(
       output.children
     );
   });
@@ -142,7 +142,7 @@ describe('when there is no plugins', () => {
   it('should not deserialize the tags without plugins', () => {
     expect(
       deserializeHtmlElement(
-        createPlateEditor({
+        createLateEditor({
           plugins: [],
         }),
         element
@@ -154,7 +154,7 @@ describe('when there is no plugins', () => {
 describe('when plugin has deserializer.attributeNames', () => {
   const html = `<html><body><img alt="removed" src="https://i.imgur.com/removed.png" /></body></html>`;
 
-  const editor = createPlateEditor({
+  const editor = createLateEditor({
     plugins: [
       ImagePlugin.extend({
         parsers: {
@@ -189,7 +189,7 @@ describe('when plugin has deserializer.attributeNames', () => {
 describe('when plugin has deserializer.parse', () => {
   const html = `<html><body><p><a href="http://google.com" target="_blank">a</a></p></body></html>`;
 
-  const editor = createPlateEditor({
+  const editor = createLateEditor({
     plugins: [
       ParagraphPlugin,
       LinkPlugin.extend(() => ({
@@ -228,7 +228,7 @@ describe('when plugin has deserializer.parse', () => {
 describe('when plugin has deserializer.rules.validNodeName', () => {
   const html = `<html><body><p><b>strong</b></p></body></html>`;
 
-  const editor = createPlateEditor({
+  const editor = createLateEditor({
     plugins: [
       ParagraphPlugin,
       BoldPlugin.extend({

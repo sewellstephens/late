@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - `createDndPlugin` -> `DndPlugin`
   - Remove `editor.isDragging`, use `editor.getOptions(DndPlugin).isDragging` instead
   - Move `dndStore` to `DndPlugin`
@@ -13,7 +13,7 @@
 
 ### Patch Changes
 
-- [#3366](https://github.com/udecode/plate/pull/3366) by [@zbeyens](https://github.com/zbeyens) – Remove `getNodesRange`, import it from `@sewellstephens/plate-common` instead
+- [#3366](https://github.com/sewellstephens/late/pull/3366) by [@zbeyens](https://github.com/zbeyens) – Remove `getNodesRange`, import it from `@sewellstephens/plate-common` instead
 
 ## 36.0.0
 
@@ -21,7 +21,7 @@
 
 ### Minor Changes
 
-- [#3241](https://github.com/udecode/plate/pull/3241) by [@felixfeng33](https://github.com/felixfeng33) – Add selection after dragging ends.
+- [#3241](https://github.com/sewellstephens/late/pull/3241) by [@felixfeng33](https://github.com/felixfeng33) – Add selection after dragging ends.
 
 ## 33.0.0
 
@@ -31,7 +31,7 @@
 
 ### Patch Changes
 
-- [#3078](https://github.com/udecode/plate/pull/3078) by [@zbeyens](https://github.com/zbeyens) – Fix `handleRef` type
+- [#3078](https://github.com/sewellstephens/late/pull/3078) by [@zbeyens](https://github.com/zbeyens) – Fix `handleRef` type
 
 ## 31.0.0
 
@@ -39,13 +39,13 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/udecode/plate/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.5.2
 
 ### Patch Changes
 
-- [#2961](https://github.com/udecode/plate/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -67,7 +67,7 @@
 
 ### Patch Changes
 
-- [#2763](https://github.com/udecode/plate/pull/2763) by [@12joan](https://github.com/12joan) – Update Zustood imports
+- [#2763](https://github.com/sewellstephens/late/pull/2763) by [@12joan](https://github.com/12joan) – Update Zustood imports
 
 ## 25.0.1
 
@@ -77,13 +77,13 @@
 
 ### Patch Changes
 
-- [#2708](https://github.com/udecode/plate/pull/2708) by [@12joan](https://github.com/12joan) – Reduce performance overhead of draggable component
+- [#2708](https://github.com/sewellstephens/late/pull/2708) by [@12joan](https://github.com/12joan) – Reduce performance overhead of draggable component
 
 ## 24.4.0
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -121,7 +121,7 @@
 
 ### Major Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
   - `Draggable`
   - `DraggableBlock`
   - `DraggableBlockToolbar`
@@ -147,7 +147,7 @@
 
 ### Patch Changes
 
-- [#2357](https://github.com/udecode/plate/pull/2357) by [@zbeyens](https://github.com/zbeyens) – fix: add delay to DnD scroller
+- [#2357](https://github.com/sewellstephens/late/pull/2357) by [@zbeyens](https://github.com/zbeyens) – fix: add delay to DnD scroller
 
 ## 21.0.0
 
@@ -159,7 +159,7 @@
 
 ### Patch Changes
 
-- [#2328](https://github.com/udecode/plate/pull/2328) by [@reinvanimschoot](https://github.com/reinvanimschoot) –
+- [#2328](https://github.com/sewellstephens/late/pull/2328) by [@reinvanimschoot](https://github.com/reinvanimschoot) –
   - add an **optional** `onDropHandler` to the `draggableProps` property. This handler takes the same arguments as the `drop`function in the `useDropNode` hook and should return `boolean`.If the function returns `true`, the default onDropNode behavior will not be called since it would be considered handled. If the function returns `false`, the default onDropNode will be triggered.
   - add an `editorId` property to the `dragItem` property so there is always a reference to the editor from which the item was dragged. This allows for better support and more control when working with nested editors.
 
@@ -171,4 +171,4 @@
 
 ### Minor Changes
 
-- [#2237](https://github.com/udecode/plate/pull/2237) by [@TomMorane](https://github.com/TomMorane) – New package extracting unstyled logic from `@sewellstephens/plate-ui-dnd`
+- [#2237](https://github.com/sewellstephens/late/pull/2237) by [@TomMorane](https://github.com/TomMorane) – New package extracting unstyled logic from `@sewellstephens/plate-ui-dnd`

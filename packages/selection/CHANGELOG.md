@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - Rename `createSelectionPlugin` to `BlockSelectionPlugin`
   - Remove `isNodeBlockSelected`, `isBlockSelected`, `hasBlockSelected`, `useBlockSelected` functions
     - Use `editor.getOptions(BlockSelectionPlugin)` or `editor.useOptions(BlockSelectionPlugin)` instead
@@ -27,43 +27,43 @@
 
 ### Patch Changes
 
-- [#3440](https://github.com/udecode/plate/pull/3440) by [@felixfeng33](https://github.com/felixfeng33) – Add test to `onKeyDownSelection`
+- [#3440](https://github.com/sewellstephens/late/pull/3440) by [@felixfeng33](https://github.com/felixfeng33) – Add test to `onKeyDownSelection`
 
 ## 36.4.1
 
 ### Patch Changes
 
-- [#3437](https://github.com/udecode/plate/pull/3437) by [@felixfeng33](https://github.com/felixfeng33) – Add default `selectionContainerClass`
+- [#3437](https://github.com/sewellstephens/late/pull/3437) by [@felixfeng33](https://github.com/felixfeng33) – Add default `selectionContainerClass`
 
 ## 36.1.0
 
 ### Minor Changes
 
-- [`6cced55ed14d02832ceb62e347d399479b358867`](https://github.com/udecode/plate/commit/6cced55ed14d02832ceb62e347d399479b358867) by [@felixfeng33](https://github.com/felixfeng33) – Remove the no longer used option `selectedColor`.
+- [`6cced55ed14d02832ceb62e347d399479b358867`](https://github.com/sewellstephens/late/commit/6cced55ed14d02832ceb62e347d399479b358867) by [@felixfeng33](https://github.com/felixfeng33) – Remove the no longer used option `selectedColor`.
 
 ## 36.0.8
 
 ### Patch Changes
 
-- [#3366](https://github.com/udecode/plate/pull/3366) by [@zbeyens](https://github.com/zbeyens) – Rename `isBlockSelected` to `isNodeBlockSelected`
+- [#3366](https://github.com/sewellstephens/late/pull/3366) by [@zbeyens](https://github.com/zbeyens) – Rename `isBlockSelected` to `isNodeBlockSelected`
 
 ## 36.0.0
 
 ### Patch Changes
 
-- [#3339](https://github.com/udecode/plate/pull/3339) by [@felixfeng33](https://github.com/felixfeng33) – Replace `addSelectedRow` with `blockSelectionStore` to add to the editor.
+- [#3339](https://github.com/sewellstephens/late/pull/3339) by [@felixfeng33](https://github.com/felixfeng33) – Replace `addSelectedRow` with `blockSelectionStore` to add to the editor.
 
 ## 35.3.0
 
 ### Minor Changes
 
-- [#3329](https://github.com/udecode/plate/pull/3329) by [@felixfeng33](https://github.com/felixfeng33) – Custom scrolling element option
+- [#3329](https://github.com/sewellstephens/late/pull/3329) by [@felixfeng33](https://github.com/felixfeng33) – Custom scrolling element option
 
 ## 34.1.0
 
 ### Patch Changes
 
-- [#3289](https://github.com/udecode/plate/pull/3289) by [@felixfeng33](https://github.com/felixfeng33) – Fix: can't close menu in production build
+- [#3289](https://github.com/sewellstephens/late/pull/3289) by [@felixfeng33](https://github.com/felixfeng33) – Fix: can't close menu in production build
 
 ## 34.0.0
 
@@ -71,7 +71,7 @@
 
 Breaking change: The `selectedColor` option for `BlockSelectable` has been deprecated. Please use `useBlockSelected` to customize the style of each node component.
 
-- [#3241](https://github.com/udecode/plate/pull/3241) by [@felixfeng33](https://github.com/felixfeng33) – Add logic for the `block-context-menu` and improved the user experience for `block-selection`, such as interactions related to keyboard shortcuts, bug fixes.Starting from this version, a single Cmd+A will no longer select the entire document but will select the entire block instead. Double Cmd+A will use the blockSelection plugin to select all blocks. To disable this behavior, pass handlers: { onKeyDown: null }.
+- [#3241](https://github.com/sewellstephens/late/pull/3241) by [@felixfeng33](https://github.com/felixfeng33) – Add logic for the `block-context-menu` and improved the user experience for `block-selection`, such as interactions related to keyboard shortcuts, bug fixes.Starting from this version, a single Cmd+A will no longer select the entire document but will select the entire block instead. Double Cmd+A will use the blockSelection plugin to select all blocks. To disable this behavior, pass handlers: { onKeyDown: null }.
 
 ## 33.0.0
 
@@ -83,7 +83,7 @@ Breaking change: The `selectedColor` option for `BlockSelectable` has been depre
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/udecode/plate/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -105,7 +105,7 @@ Breaking change: The `selectedColor` option for `BlockSelectable` has been depre
 
 ### Patch Changes
 
-- [#2763](https://github.com/udecode/plate/pull/2763) by [@12joan](https://github.com/12joan) – Update Zustood imports
+- [#2763](https://github.com/sewellstephens/late/pull/2763) by [@12joan](https://github.com/12joan) – Update Zustood imports
 
 ## 25.0.1
 
@@ -117,7 +117,7 @@ Breaking change: The `selectedColor` option for `BlockSelectable` has been depre
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -169,7 +169,7 @@ Breaking change: The `selectedColor` option for `BlockSelectable` has been depre
 
 ### Patch Changes
 
-- [#2384](https://github.com/udecode/plate/pull/2384) by [@zbeyens](https://github.com/zbeyens) – Fixes #2321
+- [#2384](https://github.com/sewellstephens/late/pull/2384) by [@zbeyens](https://github.com/zbeyens) – Fixes #2321
 
 ## 21.0.0
 
@@ -201,7 +201,7 @@ Breaking change: The `selectedColor` option for `BlockSelectable` has been depre
 
 ### Patch Changes
 
-- [#2117](https://github.com/udecode/plate/pull/2117) by [@OliverWales](https://github.com/OliverWales) – Fixes #2117
+- [#2117](https://github.com/sewellstephens/late/pull/2117) by [@OliverWales](https://github.com/OliverWales) – Fixes #2117
 
 ## 19.0.3
 
@@ -215,7 +215,7 @@ Breaking change: The `selectedColor` option for `BlockSelectable` has been depre
 
 ### Patch Changes
 
-- [#2090](https://github.com/udecode/plate/pull/2090) by [@OliverWales](https://github.com/OliverWales) – Respect editor read-only state in block selection hooks
+- [#2090](https://github.com/sewellstephens/late/pull/2090) by [@OliverWales](https://github.com/OliverWales) – Respect editor read-only state in block selection hooks
 
 ## 18.13.0
 
@@ -229,7 +229,7 @@ Breaking change: The `selectedColor` option for `BlockSelectable` has been depre
 
 ### Minor Changes
 
-- [#1947](https://github.com/udecode/plate/pull/1947) by [@zbeyens](https://github.com/zbeyens) –
+- [#1947](https://github.com/sewellstephens/late/pull/1947) by [@zbeyens](https://github.com/zbeyens) –
   - new dep: `copy-to-clipboard`
   - `blockSelectionStore`
     - new state: `isSelecting` - can be true even with no block selected
@@ -252,11 +252,11 @@ Breaking change: The `selectedColor` option for `BlockSelectable` has been depre
 
 ### Patch Changes
 
-- [#1928](https://github.com/udecode/plate/pull/1928) by [@zbeyens](https://github.com/zbeyens) – `SelectionArea` props:
+- [#1928](https://github.com/sewellstephens/late/pull/1928) by [@zbeyens](https://github.com/zbeyens) – `SelectionArea` props:
 
   - new prop: `getBoundaries` to customize `boundaries`
 
-- [#1929](https://github.com/udecode/plate/pull/1929) by [@zbeyens](https://github.com/zbeyens) – Types: `BlockStartArea` `placement` and `size` props are now optional
+- [#1929](https://github.com/sewellstephens/late/pull/1929) by [@zbeyens](https://github.com/zbeyens) – Types: `BlockStartArea` `placement` and `size` props are now optional
 
 ## 18.2.0
 
@@ -274,10 +274,10 @@ Breaking change: The `selectedColor` option for `BlockSelectable` has been depre
 
 ### Patch Changes
 
-- [#1862](https://github.com/udecode/plate/pull/1862) by [@zbeyens](https://github.com/zbeyens) – fix: support string ids on selectable blocks
+- [#1862](https://github.com/sewellstephens/late/pull/1862) by [@zbeyens](https://github.com/zbeyens) – fix: support string ids on selectable blocks
 
 ## 16.8.0
 
 ### Minor Changes
 
-- [#1856](https://github.com/udecode/plate/pull/1856) by [@zbeyens](https://github.com/zbeyens) – New plugin: Block Selection
+- [#1856](https://github.com/sewellstephens/late/pull/1856) by [@zbeyens](https://github.com/zbeyens) – New plugin: Block Selection

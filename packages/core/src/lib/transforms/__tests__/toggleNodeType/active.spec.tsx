@@ -4,7 +4,7 @@ import { jsx } from '@sewellstephens/plate-test-utils';
 
 import type { SlateEditor } from '../../../editor';
 
-import { createPlateEditor } from '../../../../react';
+import { createLateEditor } from '../../../../react';
 
 jsx;
 
@@ -27,7 +27,7 @@ const output = (
 ) as any;
 
 it('should be', () => {
-  const editor = createPlateEditor({ editor: input });
+  const editor = createLateEditor({ editor: input });
   editor.tf.toggle.block({ type: 'blockquote' });
 
   expect(editor.children).toEqual(output.children);

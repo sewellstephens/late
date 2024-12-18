@@ -1,5 +1,5 @@
-import { usePlateSelectors } from '../createPlateStore';
+import { useLateSelectors } from '../createLateStore';
 
-/** Get the closest `Plate` id. */
+/** Get the closest `Late` id. */
 export const useEditorId = (): string =>
-  usePlateSelectors(undefined, { debugHookName: 'useEditorId' }).editor().id;
+  useLateSelectors(undefined, { debugHookName: 'useEditorId' }).editor().id;

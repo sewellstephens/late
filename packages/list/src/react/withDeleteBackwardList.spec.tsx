@@ -2,7 +2,7 @@
 
 import type { SlateEditor } from '@sewellstephens/plate-common';
 
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
 import { ListPlugin } from './ListPlugin';
@@ -35,7 +35,7 @@ describe('li > lic * 2 with selection at second child start', () => {
       </editor>
     ) as any as SlateEditor;
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: input,
       plugins: [ListPlugin],
     });
@@ -75,7 +75,7 @@ describe('li with selection at start', () => {
       </editor>
     ) as any as SlateEditor;
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: input,
       plugins: [ListPlugin],
     });
@@ -135,7 +135,7 @@ describe('list + sublist where second item has multiple children', () => {
       </editor>
     ) as any as SlateEditor;
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: input,
       plugins: [ListPlugin],
     });

@@ -3,7 +3,7 @@ import {
   type OmitFirst,
   bindFirst,
 } from '@sewellstephens/plate-common';
-import { toTPlatePlugin } from '@sewellstephens/plate-common/react';
+import { toTLatePlugin } from '@sewellstephens/plate-common/react';
 
 import {
   type LinkConfig as BaseLinkConfig,
@@ -50,7 +50,7 @@ export type LinkSelectors = {
 };
 
 /** Enables support for hyperlinks. */
-export const LinkPlugin = toTPlatePlugin<LinkConfig>(BaseLinkPlugin, {
+export const LinkPlugin = toTLatePlugin<LinkConfig>(BaseLinkPlugin, {
   options: {
     defaultLinkAttributes: {},
     isEditing: false,

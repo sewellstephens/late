@@ -6,7 +6,7 @@ import {
   UnderlinePlugin,
 } from '@sewellstephens/plate-basic-marks';
 import {
-  createPlateEditor,
+  createLateEditor,
   getEditorPlugin,
 } from '@sewellstephens/plate-common/react';
 import { jsx } from '@sewellstephens/plate-test-utils';
@@ -37,7 +37,7 @@ const output = (
 
 describe('when trigger is defined', () => {
   it('should autoformat', () => {
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [
         AutoformatPlugin.configure({
           options: {
@@ -82,7 +82,7 @@ describe('when undo is enabled', () => {
       </fragment>
     ) as any;
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [
         AutoformatPlugin.configure({
           options: {
@@ -134,7 +134,7 @@ describe('when undo is disabled', () => {
       </fragment>
     ) as any;
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [
         AutoformatPlugin.configure({
           options: {

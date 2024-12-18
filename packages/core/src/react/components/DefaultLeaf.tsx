@@ -1,6 +1,6 @@
 import React from 'react';
 
-import type { PlateRenderLeafProps } from '../plugin/PlateRenderLeafProps';
+import type { LateRenderLeafProps } from '../plugin/LateRenderLeafProps';
 
 export function DefaultLeaf({
   attributes,
@@ -10,7 +10,7 @@ export function DefaultLeaf({
   nodeProps,
   text,
   ...props
-}: PlateRenderLeafProps) {
+}: LateRenderLeafProps) {
   return (
     <span {...attributes} {...props}>
       {children}

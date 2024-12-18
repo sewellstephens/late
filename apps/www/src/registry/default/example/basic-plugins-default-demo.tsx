@@ -11,7 +11,7 @@ import {
 } from '@sewellstephens/plate-basic-marks/react';
 import { BlockquotePlugin } from '@sewellstephens/plate-block-quote/react';
 import { CodeBlockPlugin } from '@sewellstephens/plate-code-block/react';
-import { Plate, usePlateEditor } from '@sewellstephens/plate-common/react';
+import { Late, useLateEditor } from '@sewellstephens/plate-common/react';
 import { HeadingPlugin } from '@sewellstephens/plate-heading/react';
 
 import {
@@ -27,7 +27,7 @@ import { basicEditorValue } from './basic-plugins-components-demo';
 
 export default function BasicPluginsDefaultDemo() {
   const [debugValue, setDebugValue] = useState<Value>(basicEditorValue);
-  const editor = usePlateEditor({
+  const editor = useLateEditor({
     plugins: [
       BlockquotePlugin,
       CodeBlockPlugin,
@@ -42,7 +42,7 @@ export default function BasicPluginsDefaultDemo() {
   });
 
   return (
-    <Plate
+    <Late
       editor={editor}
       onChange={({ value }) => {
         setDebugValue(value);
@@ -57,6 +57,6 @@ export default function BasicPluginsDefaultDemo() {
           <AccordionContent>{JSON.stringify(debugValue)}</AccordionContent>
         </AccordionItem>
       </Accordion>
-    </Plate>
+    </Late>
   );
 }

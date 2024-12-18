@@ -1,10 +1,10 @@
-# Plate line height plugin
+# Late line height plugin
 
-This package implements the line height plugin for Plate.
+This package implements the line height plugin for Late.
 
 ## Documentation
 
-Check out [Line height](https://platejs.org/docs/line-height).
+Check out [Line height](https://sewellstephens.github.io/late/docs/line-height).
 
 ## License
 

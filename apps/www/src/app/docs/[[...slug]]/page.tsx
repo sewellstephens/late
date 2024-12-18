@@ -96,7 +96,7 @@ export default async function DocPage({ params }: DocPageProps) {
   //     packageInfo.gzip = gzip;
   //   }
   //   packageInfo.source =
-  //     'https://github.com/udecode/plate/tree/main/packages/' +
+  //     'https://github.com/sewellstephens/late/tree/main/packages/' +
   //     pkg.sourcePath +
   //     '/src';
   //   packageInfo.npm = 'https://www.npmjs.com/package/@sewellstephens/' + pkg.name;

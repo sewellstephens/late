@@ -4,7 +4,7 @@ import type { SlateEditor } from '@sewellstephens/plate-common';
 import type { TDescendant } from '@sewellstephens/slate';
 import type { Range } from 'slate';
 
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { LinkPlugin } from '@sewellstephens/plate-link';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
@@ -28,7 +28,7 @@ const input = (
 const output: TDescendant[] = [];
 
 it('should be', () => {
-  const editor = createPlateEditor({
+  const editor = createLateEditor({
     editor: input,
     plugins: [LinkPlugin],
   });

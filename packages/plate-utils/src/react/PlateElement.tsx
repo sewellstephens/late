@@ -3,23 +3,23 @@ import React from 'react';
 import type { TElement } from '@sewellstephens/slate';
 
 import {
-  type AnyPlatePlugin,
-  type PlateRenderElementProps,
+  type AnyLatePlugin,
+  type LateRenderElementProps,
   omitPluginContext,
 } from '@sewellstephens/plate-core/react';
 import { Box, type BoxProps, useComposedRef } from '@sewellstephens/react-utils';
 import { clsx } from 'clsx';
 
-export type PlateElementProps<
+export type LateElementProps<
   N extends TElement = TElement,
-  P extends AnyPlatePlugin = AnyPlatePlugin,
+  P extends AnyLatePlugin = AnyLatePlugin,
 > = {
-  /** Get HTML attributes from Slate element. Alternative to `PlatePlugin.props`. */
+  /** Get HTML attributes from Slate element. Alternative to `LatePlugin.props`. */
   elementToAttributes?: (element: N) => any;
 } & BoxProps &
-  PlateRenderElementProps<N, P>;
+  LateRenderElementProps<N, P>;
 
-export const usePlateElement = (props: PlateElementProps) => {
+export const useLateElement = (props: LateElementProps) => {
   const { attributes, element, elementToAttributes, nodeProps, ...rootProps } =
     omitPluginContext(props);
 
@@ -36,9 +36,9 @@ export const usePlateElement = (props: PlateElementProps) => {
 };
 
 /** Headless element component. */
-const PlateElement = React.forwardRef<HTMLDivElement, PlateElementProps>(
-  (props: PlateElementProps, ref) => {
-    const { props: rootProps, ref: rootRef } = usePlateElement({
+const LateElement = React.forwardRef<HTMLDivElement, LateElementProps>(
+  (props: LateElementProps, ref) => {
+    const { props: rootProps, ref: rootRef } = useLateElement({
       ...props,
       ref,
     });
@@ -47,10 +47,10 @@ const PlateElement = React.forwardRef<HTMLDivElement, PlateElementProps>(
   }
 ) as (<
   N extends TElement = TElement,
-  P extends AnyPlatePlugin = AnyPlatePlugin,
+  P extends AnyLatePlugin = AnyLatePlugin,
 >(
-  props: PlateElementProps<N, P> & React.RefAttributes<HTMLDivElement>
+  props: LateElementProps<N, P> & React.RefAttributes<HTMLDivElement>
 ) => React.ReactElement) & { displayName?: string };
-PlateElement.displayName = 'PlateElement';
+LateElement.displayName = 'LateElement';
 
-export { PlateElement };
+export { LateElement };

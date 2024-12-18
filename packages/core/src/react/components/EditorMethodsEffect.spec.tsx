@@ -4,19 +4,19 @@ import { render } from '@testing-library/react';
 import { renderHook } from '@testing-library/react-hooks';
 import { act } from 'react-dom/test-utils';
 
-import { createPlateEditor } from '../editor';
-import { usePlateStore } from '../stores';
-import { Plate } from './Plate';
-import { PlateContent } from './PlateContent';
+import { createLateEditor } from '../editor';
+import { useLateStore } from '../stores';
+import { Late } from './Late';
+import { LateContent } from './LateContent';
 
 describe('EditorMethodsEffect and redecorate', () => {
   it('should set redecorate method on editor', () => {
-    const editor = createPlateEditor();
+    const editor = createLateEditor();
 
     const wrapper = () => (
-      <Plate editor={editor}>
-        <PlateContent />
-      </Plate>
+      <Late editor={editor}>
+        <LateContent />
+      </Late>
     );
 
     renderHook(() => null, { wrapper });
@@ -27,12 +27,12 @@ describe('EditorMethodsEffect and redecorate', () => {
   // it('should trigger decorate when redecorate is called', () => {
   //   const decorate = jest.fn(() => []);
   //   const plugins = [createSlatePlugin({ decorate, key: 'test' })];
-  //   const editor = createPlateEditor({ plugins });
+  //   const editor = createLateEditor({ plugins });
   //
   //   const wrapper = () => (
-  //     <Plate decorate={decorate} editor={editor}>
-  //       <PlateContent />
-  //     </Plate>
+  //     <Late decorate={decorate} editor={editor}>
+  //       <LateContent />
+  //     </Late>
   //   );
   //
   //   const { result } = renderHook(() => useRedecorate(), { wrapper });
@@ -45,18 +45,18 @@ describe('EditorMethodsEffect and redecorate', () => {
   // });
 
   // it('should increment versionDecorate when redecorate is called', () => {
-  //   const editor = createPlateEditor();
+  //   const editor = createLateEditor();
   //
   //   const wrapper = () => (
-  //     <Plate editor={editor}>
-  //       <PlateContent />
-  //     </Plate>
+  //     <Late editor={editor}>
+  //       <LateContent />
+  //     </Late>
   //   );
   //
   //   const { result: redecorateFn } = renderHook(() => useRedecorate(), {
   //     wrapper,
   //   });
-  //   const { result: selectorsResult } = renderHook(() => usePlateSelectors(), {
+  //   const { result: selectorsResult } = renderHook(() => useLateSelectors(), {
   //     wrapper,
   //   });
   //
@@ -69,53 +69,53 @@ describe('EditorMethodsEffect and redecorate', () => {
   //   expect(selectorsResult.current.versionDecorate()).toBe(initialVersion + 1);
   // });
 
-  it('should set setPlateState on editor', () => {
-    const editor = createPlateEditor();
+  it('should set setLateState on editor', () => {
+    const editor = createLateEditor();
 
     const wrapper = () => (
-      <Plate editor={editor}>
-        <PlateContent />
-      </Plate>
+      <Late editor={editor}>
+        <LateContent />
+      </Late>
     );
 
     renderHook(() => null, { wrapper });
 
-    expect(editor.setPlateState).toBeDefined();
+    expect(editor.setLateState).toBeDefined();
   });
 
-  it('should set setPlateState on editor', () => {
-    const editor = createPlateEditor();
+  it('should set setLateState on editor', () => {
+    const editor = createLateEditor();
 
     const wrapper = ({ children }: { children: React.ReactNode }) => (
-      <Plate editor={editor}>
-        <PlateContent />
+      <Late editor={editor}>
+        <LateContent />
         {children}
-      </Plate>
+      </Late>
     );
 
     renderHook(() => null, { wrapper });
 
-    expect(editor.setPlateState).toBeDefined();
+    expect(editor.setLateState).toBeDefined();
   });
 
-  it('should update allowed keys using setPlateState', () => {
-    const editor = createPlateEditor();
+  it('should update allowed keys using setLateState', () => {
+    const editor = createLateEditor();
 
     const TestComponent = () => {
-      const readOnly = usePlateStore().get.readOnly();
+      const readOnly = useLateStore().get.readOnly();
 
       return <div data-testid="readOnly">{readOnly ? 'true' : 'false'}</div>;
     };
 
     const { getByTestId } = render(
-      <Plate editor={editor}>
-        <PlateContent />
+      <Late editor={editor}>
+        <LateContent />
         <TestComponent />
-      </Plate>
+      </Late>
     );
 
     act(() => {
-      editor.setPlateState('readOnly', true);
+      editor.setLateState('readOnly', true);
     });
 
     expect(getByTestId('readOnly')).toHaveTextContent('true');

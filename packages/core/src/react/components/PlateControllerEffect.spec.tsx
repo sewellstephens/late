@@ -3,15 +3,15 @@ import React from 'react';
 import { act, render, renderHook } from '@testing-library/react';
 import { useFocused } from 'slate-react';
 
-import { createPlateEditor } from '../editor';
-import { PlateController, usePlateControllerSelectors } from '../stores';
-import { Plate } from './Plate';
-import { PlateControllerEffect } from './PlateControllerEffect';
+import { createLateEditor } from '../editor';
+import { LateController, useLateControllerSelectors } from '../stores';
+import { Late } from './Late';
+import { LateControllerEffect } from './LateControllerEffect';
 
-const DebugPlateController = () => {
-  const editorStores = usePlateControllerSelectors().editorStores();
-  const activeId = usePlateControllerSelectors().activeId();
-  const primaryEditorIds = usePlateControllerSelectors().primaryEditorIds();
+const DebugLateController = () => {
+  const editorStores = useLateControllerSelectors().editorStores();
+  const activeId = useLateControllerSelectors().activeId();
+  const primaryEditorIds = useLateControllerSelectors().primaryEditorIds();
 
   return (
     <div>
@@ -28,7 +28,7 @@ const DebugPlateController = () => {
   );
 };
 
-const UnmountablePlate = ({
+const UnmountableLate = ({
   children,
   initialMounted = true,
 }: {
@@ -40,7 +40,7 @@ const UnmountablePlate = ({
   return (
     <div>
       <button onClick={() => setMounted(!mounted)} type="button">
-        {mounted ? 'unmountPlate' : 'mountPlate'}
+        {mounted ? 'unmountLate' : 'mountLate'}
       </button>
       {mounted && children}
     </div>
@@ -99,30 +99,30 @@ describe('ControlledFocusedContext', () => {
   });
 });
 
-describe('PlateControllerEffect', () => {
-  describe('when PlateController exists', () => {
+describe('LateControllerEffect', () => {
+  describe('when LateController exists', () => {
     describe('when a non-primary editor mounts and unmounts', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         id: 'test',
       });
 
       const children = (
-        <PlateController>
-          <UnmountablePlate>
-            <Plate editor={editor} primary={false}>
-              <PlateControllerEffect />
-            </Plate>
-          </UnmountablePlate>
-          <DebugPlateController />
-        </PlateController>
+        <LateController>
+          <UnmountableLate>
+            <Late editor={editor} primary={false}>
+              <LateControllerEffect />
+            </Late>
+          </UnmountableLate>
+          <DebugLateController />
+        </LateController>
       );
 
       it('registers and unregisters the store', () => {
         const { getByText } = render(children);
         expect(getByText('test: non-null')).toBeInTheDocument();
-        act(() => getByText('unmountPlate').click());
+        act(() => getByText('unmountLate').click());
         expect(getByText('test: null')).toBeInTheDocument();
-        act(() => getByText('mountPlate').click());
+        act(() => getByText('mountLate').click());
         expect(getByText('test: non-null')).toBeInTheDocument();
       });
 
@@ -134,19 +134,19 @@ describe('PlateControllerEffect', () => {
 
     describe('when the editor is focused', () => {
       it('becomes active', () => {
-        const editor = createPlateEditor({
+        const editor = createLateEditor({
           id: 'test',
         });
 
         const { getByText } = render(
-          <PlateController>
-            <Plate editor={editor}>
+          <LateController>
+            <Late editor={editor}>
               <ControlledFocusedContext>
-                <PlateControllerEffect />
+                <LateControllerEffect />
               </ControlledFocusedContext>
-            </Plate>
-            <DebugPlateController />
-          </PlateController>
+            </Late>
+            <DebugLateController />
+          </LateController>
         );
 
         expect(getByText('activeId: null')).toBeInTheDocument();
@@ -159,37 +159,37 @@ describe('PlateControllerEffect', () => {
   describe('when a primary editor mounts and unmounts', () => {
     it('appends and removes the id from primaryEditorIds', () => {
       const { getByText, queryByText } = render(
-        <PlateController primaryEditorIds={['1', '2']}>
-          <UnmountablePlate initialMounted={false}>
-            <Plate editor={createPlateEditor({ id: '3' })} primary={true}>
-              <PlateControllerEffect />
-            </Plate>
-          </UnmountablePlate>
-          <DebugPlateController />
-        </PlateController>
+        <LateController primaryEditorIds={['1', '2']}>
+          <UnmountableLate initialMounted={false}>
+            <Late editor={createLateEditor({ id: '3' })} primary={true}>
+              <LateControllerEffect />
+            </Late>
+          </UnmountableLate>
+          <DebugLateController />
+        </LateController>
       );
 
       expect(queryByText('primaryEditorId: 1')).toBeInTheDocument();
       expect(queryByText('primaryEditorId: 2')).toBeInTheDocument();
       expect(queryByText('primaryEditorId: 3')).not.toBeInTheDocument();
-      act(() => getByText('mountPlate').click());
+      act(() => getByText('mountLate').click());
       expect(queryByText('primaryEditorId: 1')).toBeInTheDocument();
       expect(queryByText('primaryEditorId: 2')).toBeInTheDocument();
       expect(queryByText('primaryEditorId: 3')).toBeInTheDocument();
-      act(() => getByText('unmountPlate').click());
+      act(() => getByText('unmountLate').click());
       expect(queryByText('primaryEditorId: 1')).toBeInTheDocument();
       expect(queryByText('primaryEditorId: 2')).toBeInTheDocument();
       expect(queryByText('primaryEditorId: 3')).not.toBeInTheDocument();
     });
   });
 
-  describe('when PlateController does not exist', () => {
+  describe('when LateController does not exist', () => {
     it('does not throw an error', () => {
       const { getByText } = render(
-        <Plate editor={createPlateEditor()}>
-          <PlateControllerEffect />
+        <Late editor={createLateEditor()}>
+          <LateControllerEffect />
           <p>No error</p>
-        </Plate>
+        </Late>
       );
 
       expect(getByText('No error')).toBeInTheDocument();

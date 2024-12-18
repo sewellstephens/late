@@ -1,13 +1,13 @@
 import React from 'react';
 
-import type { PlateEditor } from '../editor/PlateEditor';
-import type { AnyEditorPlatePlugin } from '../plugin/PlatePlugin';
-import type { PlateRenderLeafProps } from '../plugin/PlateRenderLeafProps';
+import type { LateEditor } from '../editor/LateEditor';
+import type { AnyEditorLatePlugin } from '../plugin/LatePlugin';
+import type { LateRenderLeafProps } from '../plugin/LateRenderLeafProps';
 
 import { DefaultLeaf } from '../components/DefaultLeaf';
 import { getRenderNodeProps } from './getRenderNodeProps';
 
-export type RenderLeaf = (props: PlateRenderLeafProps) => React.ReactElement;
+export type RenderLeaf = (props: LateRenderLeafProps) => React.ReactElement;
 
 /**
  * Get a `Editable.renderLeaf` handler for `plugin.node.type`. If the type is
@@ -15,8 +15,8 @@ export type RenderLeaf = (props: PlateRenderLeafProps) => React.ReactElement;
  * `children`.
  */
 export const pluginRenderLeaf = (
-  editor: PlateEditor,
-  plugin: AnyEditorPlatePlugin
+  editor: LateEditor,
+  plugin: AnyEditorLatePlugin
 ): RenderLeaf =>
   function render(nodeProps) {
     const {

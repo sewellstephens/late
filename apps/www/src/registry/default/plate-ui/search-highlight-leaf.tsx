@@ -1,4 +1,4 @@
 import { withCn } from '@sewellstephens/cn';
-import { PlateLeaf } from '@sewellstephens/plate-common/react';
+import { LateLeaf } from '@sewellstephens/plate-common/react';
 
-export const SearchHighlightLeaf = withCn(PlateLeaf, 'bg-yellow-100');
+export const SearchHighlightLeaf = withCn(LateLeaf, 'bg-yellow-100');

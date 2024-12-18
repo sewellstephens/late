@@ -1,15 +1,15 @@
 import React from 'react';
 import { cn, withRef } from '@sewellstephens/cn';
-import { PlateElement, useElement } from '@sewellstephens/plate-common/react';
+import { LateElement, useElement } from '@sewellstephens/plate-common/react';
 import { TLinkElement, useLink } from '@sewellstephens/plate-link';
 
-export const LinkElement = withRef<typeof PlateElement>(
+export const LinkElement = withRef<typeof LateElement>(
   ({ className, children, ...props }, ref) => {
     const element = useElement<TLinkElement>();
     const { props: linkProps } = useLink({ element });
 
     return (
-      <PlateElement
+      <LateElement
         ref={ref}
         asChild
         className={cn(
@@ -20,7 +20,7 @@ export const LinkElement = withRef<typeof PlateElement>(
         {...props}
       >
         <a>{children}</a>
-      </PlateElement>
+      </LateElement>
     );
   }
 );

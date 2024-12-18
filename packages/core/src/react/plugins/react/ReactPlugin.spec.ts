@@ -1,8 +1,8 @@
 import { focusEditorEdge, isEditorFocused } from '@sewellstephens/slate-react';
 
-import type { PlateEditor } from '../../editor/PlateEditor';
+import type { LateEditor } from '../../editor/LateEditor';
 
-import { createPlateEditor } from '../../../react';
+import { createLateEditor } from '../../../react';
 
 // Mock the slate-react functions
 jest.mock('@sewellstephens/slate-react', () => ({
@@ -11,10 +11,10 @@ jest.mock('@sewellstephens/slate-react', () => ({
 }));
 
 describe('ReactPlugin', () => {
-  let editor: PlateEditor;
+  let editor: LateEditor;
 
   beforeEach(() => {
-    editor = createPlateEditor();
+    editor = createLateEditor();
 
     // Reset mocks
     (isEditorFocused as jest.Mock).mockReset();

@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
 import { findNode } from '@sewellstephens/plate-common';
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
 import { isListNested } from './isListNested';
@@ -31,7 +31,7 @@ describe('when the list is nested', () => {
   ) as any;
 
   it('should be', () => {
-    const editor = createPlateEditor({ editor: input });
+    const editor = createLateEditor({ editor: input });
 
     const list = findNode(editor, { match: { id: '21' } });
 
@@ -51,7 +51,7 @@ describe('when the list is not nested', () => {
   ) as any;
 
   it('should be', () => {
-    const editor = createPlateEditor({ editor: input });
+    const editor = createLateEditor({ editor: input });
 
     const list = findNode(editor, { match: { id: '1' } });
 

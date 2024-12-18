@@ -1,4 +1,4 @@
-import type { ExtendEditor, NodeComponent, PlatePlugin } from './PlatePlugin';
+import type { ExtendEditor, NodeComponent, LatePlugin } from './LatePlugin';
 
 import {
   type ExtendConfig,
@@ -8,8 +8,8 @@ import {
   createTSlatePlugin,
   resolvePluginTest,
 } from '../../lib';
-import { createPlateEditor } from '../editor';
-import { toPlatePlugin, toTPlatePlugin } from './toPlatePlugin';
+import { createLateEditor } from '../editor';
+import { toLatePlugin, toTLatePlugin } from './toLatePlugin';
 
 type CodeBlockConfig = PluginConfig<
   'code_block',
@@ -34,7 +34,7 @@ type CodeBlockConfig2 = {
   options: { hotkey: string | string[] };
 } & CodeBlockConfig;
 
-describe('toPlatePlugin', () => {
+describe('toLatePlugin', () => {
   const BaseParagraphPlugin = createSlatePlugin({
     key: 'p',
     node: { isElement: true },
@@ -55,7 +55,7 @@ describe('toPlatePlugin', () => {
   const MockAboveComponent: NodeComponent = () => null;
 
   it('should extend a SlatePlugin with React-specific properties and API', () => {
-    const ParagraphPlugin = toPlatePlugin(BaseParagraphPlugin, {
+    const ParagraphPlugin = toLatePlugin(BaseParagraphPlugin, {
       handlers: { onKeyDown: () => true },
       options: { hotkey: ['mod+opt+0', 'mod+shift+0'] },
       render: { aboveEditable: MockAboveComponent, node: MockComponent },
@@ -63,7 +63,7 @@ describe('toPlatePlugin', () => {
       someApiMethod: () => 'API method result',
     }));
 
-    const editor = createPlateEditor({ plugins: [ParagraphPlugin] });
+    const editor = createLateEditor({ plugins: [ParagraphPlugin] });
     const resolvedPlugin = editor.plugins.p;
 
     expect(resolvedPlugin.render.node).toBe(MockComponent);
@@ -78,7 +78,7 @@ describe('toPlatePlugin', () => {
   });
 
   it('should extend with a function configuration', () => {
-    const ParagraphPlugin = toPlatePlugin(
+    const ParagraphPlugin = toLatePlugin(
       BaseParagraphPlugin,
       ({ editor }) => ({
         options: { editorId: editor.id },
@@ -88,7 +88,7 @@ describe('toPlatePlugin', () => {
       getEditorId: () => editor.id,
     }));
 
-    const editor = createPlateEditor({ plugins: [ParagraphPlugin] });
+    const editor = createLateEditor({ plugins: [ParagraphPlugin] });
     const resolvedPlugin = editor.plugins.p;
 
     expect(resolvedPlugin.render.node).toBe(MockComponent);
@@ -101,7 +101,7 @@ describe('toPlatePlugin', () => {
     const mockOnKeyDown = jest.fn();
     const mockOnChange = jest.fn();
 
-    const ParagraphPlugin = toPlatePlugin(BaseParagraphPlugin, {
+    const ParagraphPlugin = toLatePlugin(BaseParagraphPlugin, {
       handlers: {
         onChange: mockOnChange,
         onKeyDown: mockOnKeyDown,
@@ -110,7 +110,7 @@ describe('toPlatePlugin', () => {
       customMethod: () => 'custom result',
     }));
 
-    const editor = createPlateEditor({ plugins: [ParagraphPlugin] });
+    const editor = createLateEditor({ plugins: [ParagraphPlugin] });
     const resolvedPlugin = editor.plugins.p;
 
     expect(resolvedPlugin.handlers).toHaveProperty('onKeyDown', mockOnKeyDown);
@@ -122,19 +122,19 @@ describe('toPlatePlugin', () => {
     const NonExistentPlugin = { key: 'nonexistent' };
 
     expect(() => {
-      toPlatePlugin(NonExistentPlugin as any, {
+      toLatePlugin(NonExistentPlugin as any, {
         render: { node: MockComponent },
       });
     }).toThrow();
   });
 
-  // Type checks for toPlatePlugin
+  // Type checks for toLatePlugin
   it('should have correct types', () => {
     type TestConfig = PluginConfig<'test', { foo: string }>;
     type ExtendedConfig = PluginConfig<'test', { baz: number; foo: string }>;
 
     const basePlugin: SlatePlugin<TestConfig> = createTSlatePlugin();
-    const extended: PlatePlugin<ExtendedConfig> = toPlatePlugin(basePlugin, {
+    const extended: LatePlugin<ExtendedConfig> = toLatePlugin(basePlugin, {
       options: { baz: 123 },
     });
 
@@ -144,8 +144,8 @@ describe('toPlatePlugin', () => {
   });
 });
 
-describe('toPlatePlugin type tests', () => {
-  it('should work with CodeBlockConfig for toPlatePlugin', () => {
+describe('toLatePlugin type tests', () => {
+  it('should work with CodeBlockConfig for toLatePlugin', () => {
     const BaseCodeBlockPlugin = createTSlatePlugin<CodeBlockConfig>({
       key: 'code_block',
       options: { syntax: true, syntaxPopularFirst: false },
@@ -156,7 +156,7 @@ describe('toPlatePlugin type tests', () => {
       toggleSyntax: () => {},
     }));
 
-    const CodeBlockPlugin = toPlatePlugin(BaseCodeBlockPlugin, {
+    const CodeBlockPlugin = toLatePlugin(BaseCodeBlockPlugin, {
       extendEditor: ({ api, editor }) => {
         api.plugin.getSyntaxState();
         // @ts-expect-error
@@ -184,7 +184,7 @@ describe('toPlatePlugin type tests', () => {
         },
       });
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [CodeBlockPlugin],
     });
 
@@ -226,7 +226,7 @@ describe('toPlatePlugin type tests', () => {
       options: { syntax: true, syntaxPopularFirst: false },
     });
 
-    const CodeBlockPlugin = toPlatePlugin(
+    const CodeBlockPlugin = toLatePlugin(
       BaseCodeBlockPlugin,
       ({ getOptions }) => {
         // Type check: should have access to base options
@@ -240,7 +240,7 @@ describe('toPlatePlugin type tests', () => {
     );
 
     expect(
-      createPlateEditor({ plugins: [CodeBlockPlugin] }).getOptions(
+      createLateEditor({ plugins: [CodeBlockPlugin] }).getOptions(
         CodeBlockPlugin
       )
     ).toEqual({
@@ -264,7 +264,7 @@ describe('toPlatePlugin type tests', () => {
       options: { bar: 0, foo: 'initial' },
     });
 
-    const ExtendedPlugin = toPlatePlugin(BasePlugin, {
+    const ExtendedPlugin = toLatePlugin(BasePlugin, {
       options: { bar: 42 },
     });
 
@@ -288,7 +288,7 @@ describe('toPlatePlugin type tests', () => {
       options: { foo: 'initial' },
     });
 
-    const ExtendedPlugin = toPlatePlugin<BaseConfig, { bar: number }>(
+    const ExtendedPlugin = toLatePlugin<BaseConfig, { bar: number }>(
       BasePlugin,
       {
         options: { bar: 42 },
@@ -305,7 +305,7 @@ describe('toPlatePlugin type tests', () => {
     options.foo;
     options.bar;
 
-    const ExtendedTPlugin = toTPlatePlugin<ExtendedConfig>(BasePlugin, {
+    const ExtendedTPlugin = toTLatePlugin<ExtendedConfig>(BasePlugin, {
       options: { bar: 42 },
     });
 
@@ -321,9 +321,9 @@ describe('toPlatePlugin type tests', () => {
   });
 });
 
-// Type tests for toTPlatePlugin
-describe('toTPlatePlugin type tests', () => {
-  it('should work with CodeBlockConfig for toTPlatePlugin', () => {
+// Type tests for toTLatePlugin
+describe('toTLatePlugin type tests', () => {
+  it('should work with CodeBlockConfig for toTLatePlugin', () => {
     type ExtendEditor2 = ExtendEditor<CodeBlockConfig2>;
 
     const BaseCodeBlockPlugin = createTSlatePlugin<CodeBlockConfig>({
@@ -336,7 +336,7 @@ describe('toTPlatePlugin type tests', () => {
       toggleSyntax: () => {},
     }));
 
-    const CodeBlockPlugin = toTPlatePlugin<CodeBlockConfig2, CodeBlockConfig>(
+    const CodeBlockPlugin = toTLatePlugin<CodeBlockConfig2, CodeBlockConfig>(
       BaseCodeBlockPlugin,
       {
         options: {
@@ -360,7 +360,7 @@ describe('toTPlatePlugin type tests', () => {
         },
       });
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [CodeBlockPlugin],
     });
 
@@ -408,7 +408,7 @@ describe('toTPlatePlugin type tests', () => {
       options: { syntax: true, syntaxPopularFirst: false },
     });
 
-    const CodeBlockPlugin2 = toTPlatePlugin<CodeBlockConfig2, CodeBlockConfig>(
+    const CodeBlockPlugin2 = toTLatePlugin<CodeBlockConfig2, CodeBlockConfig>(
       BaseCodeBlockPlugin,
       ({ getOptions }) => {
         // @ts-expect-error
@@ -422,7 +422,7 @@ describe('toTPlatePlugin type tests', () => {
     );
 
     expect(
-      createPlateEditor({ plugins: [CodeBlockPlugin2] }).getOptions(
+      createLateEditor({ plugins: [CodeBlockPlugin2] }).getOptions(
         CodeBlockPlugin2
       )
     ).toEqual({
@@ -433,7 +433,7 @@ describe('toTPlatePlugin type tests', () => {
   });
 });
 
-describe('toPlatePlugin with extendPlugin', () => {
+describe('toLatePlugin with extendPlugin', () => {
   it('should correctly type extendPlugin with SlatePlugin', () => {
     type BaseConfig = PluginConfig<'base', { foo: string }>;
     type ChildConfig = PluginConfig<
@@ -453,7 +453,7 @@ describe('toPlatePlugin with extendPlugin', () => {
         options: { bar: 42 },
       });
 
-    const ExtendedPlugin = toPlatePlugin(BasePlugin, {
+    const ExtendedPlugin = toLatePlugin(BasePlugin, {
       plugins: [ChildPlugin],
     })
       .extendPlugin(ChildPlugin, {
@@ -470,7 +470,7 @@ describe('toPlatePlugin with extendPlugin', () => {
     options.bar;
   });
 
-  it('should correctly type extendPlugin with PlatePlugin', () => {
+  it('should correctly type extendPlugin with LatePlugin', () => {
     type BaseConfig = PluginConfig<'base', { foo: string }>;
     type ChildConfig = PluginConfig<'child', { bar: number }>;
 
@@ -479,7 +479,7 @@ describe('toPlatePlugin with extendPlugin', () => {
       options: { foo: 'initial' },
     });
 
-    const ChildPlatePlugin: PlatePlugin<ChildConfig> = toPlatePlugin(
+    const ChildLatePlugin: LatePlugin<ChildConfig> = toLatePlugin(
       createTSlatePlugin<ChildConfig>({
         key: 'child',
         options: { bar: 42 },
@@ -489,14 +489,14 @@ describe('toPlatePlugin with extendPlugin', () => {
       }
     );
 
-    const ExtendedPlugin = toPlatePlugin(BasePlugin, {
-      plugins: [ChildPlatePlugin],
+    const ExtendedPlugin = toLatePlugin(BasePlugin, {
+      plugins: [ChildLatePlugin],
     })
-      .extendPlugin(ChildPlatePlugin, {
+      .extendPlugin(ChildLatePlugin, {
         options: { bar: 100 },
         render: { node: () => null }, // Modify a React-specific property
       })
-      .configurePlugin(ChildPlatePlugin, () => ({
+      .configurePlugin(ChildLatePlugin, () => ({
         options: { bar: 100 },
       }));
 
@@ -508,7 +508,7 @@ describe('toPlatePlugin with extendPlugin', () => {
   });
 });
 
-describe('toPlatePlugin with direct merge for object configs', () => {
+describe('toLatePlugin with direct merge for object configs', () => {
   it('should directly merge object configs without pushing to __extensions', () => {
     type LinkConfig = PluginConfig<
       'link',
@@ -532,7 +532,7 @@ describe('toPlatePlugin with direct merge for object configs', () => {
       },
     }));
 
-    const LinkPlugin = toPlatePlugin(BaseLinkPlugin, {
+    const LinkPlugin = toLatePlugin(BaseLinkPlugin, {
       options: {
         allowedSchemes: ['http', 'https', 'mailto'],
       },
@@ -556,7 +556,7 @@ describe('toPlatePlugin with direct merge for object configs', () => {
       key: 'testPlugin',
     });
 
-    const plugin = toPlatePlugin(basePlugin);
+    const plugin = toLatePlugin(basePlugin);
 
     const pluginWithNewComponent = plugin.withComponent(NewComponent);
     const resolvedPlugin = resolvePluginTest(pluginWithNewComponent);

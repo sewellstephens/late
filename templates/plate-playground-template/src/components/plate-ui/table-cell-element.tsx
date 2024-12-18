@@ -1,6 +1,6 @@
 import React from 'react';
 import { cn, withProps, withRef } from '@sewellstephens/cn';
-import { PlateElement } from '@sewellstephens/plate-common';
+import { LateElement } from '@sewellstephens/plate-common';
 import {
   useTableCellElement,
   useTableCellElementResizable,
@@ -11,7 +11,7 @@ import {
 import { ResizeHandle } from './resizable';
 
 export const TableCellElement = withRef<
-  typeof PlateElement,
+  typeof LateElement,
   {
     hideBorder?: boolean;
     isHeader?: boolean;
@@ -44,7 +44,7 @@ export const TableCellElement = withRef<
   const Cell = isHeader ? 'th' : 'td';
 
   return (
-    <PlateElement
+    <LateElement
       ref={ref}
       asChild
       className={cn(
@@ -131,7 +131,7 @@ export const TableCellElement = withRef<
           </div>
         )}
       </Cell>
-    </PlateElement>
+    </LateElement>
   );
 });
 TableCellElement.displayName = 'TableCellElement';

@@ -1,9 +1,9 @@
 import { Key } from '@sewellstephens/react-hotkeys';
 
 import { ParagraphPlugin as BaseParagraphPlugin } from '../../../lib';
-import { toPlatePlugin } from '../../plugin/toPlatePlugin';
+import { toLatePlugin } from '../../plugin/toLatePlugin';
 
-export const ParagraphPlugin = toPlatePlugin(
+export const ParagraphPlugin = toLatePlugin(
   BaseParagraphPlugin,
   ({ editor, type }) => ({
     shortcuts: {

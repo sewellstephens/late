@@ -12,7 +12,7 @@ export const siteConfig = {
   ],
   links: {
     twitter: 'https://twitter.com/zbeyens',
-    github: 'https://github.com/udecode/plate',
-    docs: 'https://platejs.org',
+    github: 'https://github.com/sewellstephens/late',
+    docs: 'https://sewellstephens.github.io/late',
   },
 };

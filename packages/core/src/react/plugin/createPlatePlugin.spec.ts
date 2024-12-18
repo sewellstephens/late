@@ -1,12 +1,12 @@
-import type { NodeComponent } from './PlatePlugin';
+import type { NodeComponent } from './LatePlugin';
 
 import { type PluginConfig, resolvePluginTest } from '../../lib';
-import { createPlatePlugin } from './createPlatePlugin';
+import { createLatePlugin } from './createLatePlugin';
 
 describe('withComponent method', () => {
   it('should set the component for the plugin', () => {
     const MockComponent: NodeComponent = () => null;
-    const basePlugin = createPlatePlugin({ key: 'testPlugin' });
+    const basePlugin = createLatePlugin({ key: 'testPlugin' });
 
     const pluginWithComponent = basePlugin.withComponent(MockComponent);
     const resolvedPlugin = resolvePluginTest(pluginWithComponent);
@@ -18,7 +18,7 @@ describe('withComponent method', () => {
     const OriginalComponent: NodeComponent = () => null;
     const NewComponent: NodeComponent = () => null;
 
-    const basePlugin = createPlatePlugin({
+    const basePlugin = createLatePlugin({
       key: 'testPlugin',
       render: { node: OriginalComponent },
     });
@@ -42,7 +42,7 @@ describe('withComponent method', () => {
       }
     >;
 
-    createPlatePlugin({
+    createLatePlugin({
       key: 'code_block',
       options: { syntax: true, syntaxPopularFirst: false },
     })

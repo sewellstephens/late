@@ -1,9 +1,9 @@
-import { toPlatePlugin } from '@sewellstephens/plate-common/react';
+import { toLatePlugin } from '@sewellstephens/plate-common/react';
 
 import { SingleLinePlugin as BaseSingleLinePlugin } from '../../lib/single-line/SingleLinePlugin';
 import { onKeyDownSingleLine } from './onKeyDownSingleLine';
 
-export const SingleLinePlugin = toPlatePlugin(BaseSingleLinePlugin, {
+export const SingleLinePlugin = toLatePlugin(BaseSingleLinePlugin, {
   handlers: {
     onKeyDown: onKeyDownSingleLine,
   },

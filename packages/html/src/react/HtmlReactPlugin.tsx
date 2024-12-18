@@ -1,9 +1,9 @@
 import { bindFirst } from '@sewellstephens/plate-common';
-import { createPlatePlugin } from '@sewellstephens/plate-common/react';
+import { createLatePlugin } from '@sewellstephens/plate-common/react';
 
 import { serializeHtml } from './serializeHtml';
 
-export const HtmlReactPlugin = createPlatePlugin({
+export const HtmlReactPlugin = createLatePlugin({
   key: 'htmlReact',
 }).extendApi(({ editor }) => ({
   serialize: bindFirst(serializeHtml, editor),

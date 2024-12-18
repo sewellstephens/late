@@ -2,7 +2,7 @@
 
 import { ParagraphPlugin } from '@sewellstephens/plate-common';
 import { getEditorPlugin } from '@sewellstephens/plate-common/react';
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import * as isHotkey from '@sewellstephens/plate-core';
 import { IndentPlugin } from '@sewellstephens/plate-indent';
 import { jsx } from '@sewellstephens/plate-test-utils';
@@ -33,7 +33,7 @@ describe('when indented list and empty', () => {
     ) as any;
 
     const event = new KeyboardEvent('keydown', { key: 'Enter' }) as any;
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: input,
       plugins: [ParagraphPlugin, IndentPlugin, IndentListPlugin],
     });
@@ -82,7 +82,7 @@ describe('when indented and empty but not list', () => {
     ) as any;
 
     const event = new KeyboardEvent('keydown', { key: 'Enter' }) as any;
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: input,
       plugins: [ParagraphPlugin, IndentPlugin, IndentListPlugin],
     });

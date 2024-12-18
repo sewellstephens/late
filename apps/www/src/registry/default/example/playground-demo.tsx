@@ -26,8 +26,8 @@ import { CodeBlockPlugin } from '@sewellstephens/plate-code-block/react';
 import { CommentsPlugin } from '@sewellstephens/plate-comments/react';
 import {
   ParagraphPlugin,
-  Plate,
-  usePlateEditor,
+  Late,
+  useLateEditor,
 } from '@sewellstephens/plate-common/react';
 import { DatePlugin } from '@sewellstephens/plate-date';
 import { DndPlugin } from '@sewellstephens/plate-dnd';
@@ -69,7 +69,7 @@ import { settingsStore } from '@/components/context/settings-store';
 import { PlaygroundFixedToolbarButtons } from '@/components/plate-ui/playground-fixed-toolbar-buttons';
 import { PlaygroundFloatingToolbarButtons } from '@/components/plate-ui/playground-floating-toolbar-buttons';
 import { getAutoformatOptions } from '@/lib/plate/demo/plugins/autoformatOptions';
-import { createPlateUI } from '@/plate/create-plate-ui';
+import { createLateUI } from '@/plate/create-plate-ui';
 import { editableProps } from '@/plate/demo/editableProps';
 import { isEnabled } from '@/plate/demo/is-enabled';
 import { DragOverCursorPlugin } from '@/plate/demo/plugins/DragOverCursorPlugin';
@@ -107,11 +107,11 @@ export const usePlaygroundEditor = (id: any = '', scrollSelector?: string) => {
 
   const editorId = id || 'playground-' + key;
 
-  return usePlateEditor(
+  return useLateEditor(
     {
       id: editorId,
       override: {
-        components: createPlateUI({
+        components: createLateUI({
           draggable: isEnabled('dnd', id),
           placeholder: isEnabled('placeholder', id),
         }),
@@ -331,7 +331,7 @@ export default function PlaygroundDemo({
   return (
     <DndProvider backend={HTML5Backend}>
       <div className="relative">
-        <Plate editor={editor}>
+        <Late editor={editor}>
           {enabled['fixed-toolbar'] && (
             <FixedToolbar className="no-scrollbar">
               {enabled['fixed-toolbar-buttons'] && (
@@ -390,7 +390,7 @@ export default function PlaygroundDemo({
               <CommentsPopover />
             )}
           </div>
-        </Plate>
+        </Late>
       </div>
     </DndProvider>
   );

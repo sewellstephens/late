@@ -1,9 +1,9 @@
 ---
 title: Playwright Testing
-description: Learn how to write Playwright tests that integrate with Plate.
+description: Learn how to write Playwright tests that integrate with Late.
 ---
 
-[Playwright](https://playwright.dev/) enables end-to-end testing in headless browsers. This guide covers integrating Playwright with Plate using `@sewellstephens/plate-playwright`.
+[Playwright](https://playwright.dev/) enables end-to-end testing in headless browsers. This guide covers integrating Playwright with Late using `@sewellstephens/plate-playwright`.
 
 ## Setup
 
@@ -22,7 +22,7 @@ npm install @sewellstephens/plate-playwright playwright
 In order for your Playwright tests to access and interact with the editor, you'll need to add `PlaywrightPlugin` to your editor:
 
 ```tsx
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [
     // other plugins...
     PlaywrightPlugin.configure({ enabled: process.env.NODE_ENV === 'test' }),
@@ -38,13 +38,13 @@ This exposes various utilities on `window.platePlaywrightAdapter`.
 
 **What is an editor handle?**
 
-Most Playwright test code runs in a non-browser environment. Interacting with a Plate editor requires running JavaScript inside the browser context using Playwright's `evaluate` and `evaluateHandle` [APIs](https://playwright.dev/docs/evaluating).
+Most Playwright test code runs in a non-browser environment. Interacting with a Late editor requires running JavaScript inside the browser context using Playwright's `evaluate` and `evaluateHandle` [APIs](https://playwright.dev/docs/evaluating).
 
-A [handle](https://playwright.dev/docs/handles) references a JavaScript object within the browser. The editor handle refers to the `editor` instance of your Plate editor (`JSHandle<PlateEditor>`).
+A [handle](https://playwright.dev/docs/handles) references a JavaScript object within the browser. The editor handle refers to the `editor` instance of your Late editor (`JSHandle<LateEditor>`).
 
 </Callout>
 
-In your Playwright test, get the editor handle before interacting with Plate:
+In your Playwright test, get the editor handle before interacting with Late:
 
 ```ts
 const editorHandle = await getEditorHandle(page);
@@ -160,7 +160,7 @@ await editorHandle.evaluate((editor) => {
 
 ### getEditorHandle
 
-Gets a handle to the Plate editor instance.
+Gets a handle to the Late editor instance.
 
 <APIParameters>
 <APIItem name="page" type="Page">
@@ -173,7 +173,7 @@ A locator for the editable element. If not provided, it will look for the first 
 
 <APIReturns>
 <APIItem type="EditorHandle">
-A handle to the Plate editor instance.
+A handle to the Late editor instance.
 </APIItem>
 </APIReturns>
 
@@ -186,7 +186,7 @@ Retrieves a node at the specified path.
 The Playwright page object.
 </APIItem>
 <APIItem name="editorHandle" type="EditorHandle">
-The handle to the Plate editor instance.
+The handle to the Late editor instance.
 </APIItem>
 <APIItem name="path" type="Path">
 The path to the node.
@@ -208,7 +208,7 @@ Gets the DOM node for a Slate node at the given path.
 The Playwright page object.
 </APIItem>
 <APIItem name="editorHandle" type="EditorHandle">
-The handle to the Plate editor instance.
+The handle to the Late editor instance.
 </APIItem>
 <APIItem name="path" type="Path">
 The path to the node.
@@ -230,7 +230,7 @@ Simulates a click on the node at the specified path.
 The Playwright page object.
 </APIItem>
 <APIItem name="editorHandle" type="EditorHandle">
-The handle to the Plate editor instance.
+The handle to the Late editor instance.
 </APIItem>
 <APIItem name="path" type="Path">
 The path to the node to click.
@@ -246,7 +246,7 @@ Retrieves the current editor selection.
 The Playwright page object.
 </APIItem>
 <APIItem name="editorHandle" type="EditorHandle">
-The handle to the Plate editor instance.
+The handle to the Late editor instance.
 </APIItem>
 </APIParameters>
 
@@ -265,7 +265,7 @@ Sets the editor selection to the specified range.
 The Playwright page object.
 </APIItem>
 <APIItem name="editorHandle" type="EditorHandle">
-The handle to the Plate editor instance.
+The handle to the Late editor instance.
 </APIItem>
 <APIItem name="at" type="Location">
 The location to set the selection.
@@ -281,7 +281,7 @@ Gets the type of the node at the specified path.
 The Playwright page object.
 </APIItem>
 <APIItem name="editorHandle" type="EditorHandle">
-The handle to the Plate editor instance.
+The handle to the Late editor instance.
 </APIItem>
 <APIItem name="path" type="Path">
 The path to the node.

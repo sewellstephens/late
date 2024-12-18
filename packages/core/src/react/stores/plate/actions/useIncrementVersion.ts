@@ -1,20 +1,20 @@
 import React from 'react';
 
-import type { PlateChangeKey } from '../PlateStore';
+import type { LateChangeKey } from '../LateStore';
 
 import {
-  type UsePlateEditorStoreOptions,
-  usePlateActions,
-} from '../createPlateStore';
+  type UseLateEditorStoreOptions,
+  useLateActions,
+} from '../createLateStore';
 
 export const useIncrementVersion = (
-  key: PlateChangeKey,
+  key: LateChangeKey,
   id?: string,
-  options: UsePlateEditorStoreOptions = {}
+  options: UseLateEditorStoreOptions = {}
 ) => {
   const previousVersionRef = React.useRef(1);
 
-  const set = usePlateActions(id, {
+  const set = useLateActions(id, {
     debugHookName: 'useIncrementVersion',
     ...options,
   })[key]();

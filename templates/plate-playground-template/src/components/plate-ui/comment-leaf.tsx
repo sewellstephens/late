@@ -7,12 +7,12 @@ import {
   useCommentLeaf,
   useCommentLeafState,
 } from '@sewellstephens/plate-comments';
-import { PlateLeaf, PlateLeafProps, Value } from '@sewellstephens/plate-common';
+import { LateLeaf, LateLeafProps, Value } from '@sewellstephens/plate-common';
 
 export function CommentLeaf({
   className,
   ...props
-}: PlateLeafProps<Value, TCommentText>) {
+}: LateLeafProps<Value, TCommentText>) {
   const { children, nodeProps, leaf } = props;
 
   const state = useCommentLeafState({ leaf });
@@ -29,7 +29,7 @@ export function CommentLeaf({
   }
 
   return (
-    <PlateLeaf
+    <LateLeaf
       {...props}
       className={cn(
         'border-b-2 border-b-primary/40',
@@ -42,6 +42,6 @@ export function CommentLeaf({
       }}
     >
       {aboveChildren}
-    </PlateLeaf>
+    </LateLeaf>
   );
 }

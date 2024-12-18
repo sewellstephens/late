@@ -3,7 +3,7 @@
  */
 
 export * from './YjsPlugin';
-export * from './withPlateYjs';
+export * from './withLateYjs';
 export * from './withTCursors';
 export * from './withTYHistory';
 export * from './withTYjs';

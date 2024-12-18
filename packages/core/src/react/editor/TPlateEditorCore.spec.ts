@@ -7,10 +7,10 @@ import {
   createSlatePlugin,
   someHtmlElement,
 } from '@sewellstephens/plate-core';
-import { createPlateEditor, withPlate } from '@sewellstephens/plate-core/react';
+import { createLateEditor, withLate } from '@sewellstephens/plate-core/react';
 import { LinkPlugin } from '@sewellstephens/plate-link/react';
 
-describe('TPlateEditor core package', () => {
+describe('TLateEditor core package', () => {
   const MyCustomPlugin = createSlatePlugin({
     api: { myCustomMethod: () => {} },
     key: 'myCustom',
@@ -63,7 +63,7 @@ describe('TPlateEditor core package', () => {
     });
 
     it('should have DebugPlugin methods with default generics', () => {
-      const editor = createPlateEditor();
+      const editor = createLateEditor();
 
       expect(editor.api.debug).toBeDefined();
       expect(editor.api.debug.log).toBeInstanceOf(Function);
@@ -87,7 +87,7 @@ describe('TPlateEditor core package', () => {
       // @ts-expect-error
       slateEditor.api.createBulletedList;
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [DebugPlugin, TextFormattingPlugin, ImagePlugin, LinkPlugin],
       });
 
@@ -100,7 +100,7 @@ describe('TPlateEditor core package', () => {
     });
 
     it('should work extending a plugin', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [
           LinkPlugin.extend({
             parsers: {
@@ -124,12 +124,12 @@ describe('TPlateEditor core package', () => {
 
   describe('Custom Plugins', () => {
     it('should infer single and multiple plugin types correctly', () => {
-      const singlePluginEditor = createPlateEditor({
+      const singlePluginEditor = createLateEditor({
         plugins: [MyCustomPlugin],
       });
       expect(singlePluginEditor.api.myCustomMethod).toBeInstanceOf(Function);
 
-      const multiPluginEditor = createPlateEditor({
+      const multiPluginEditor = createLateEditor({
         plugins: [TextFormattingPlugin, ListPlugin, TablePlugin],
       });
       expect(multiPluginEditor.api.bold).toBeInstanceOf(Function);
@@ -140,8 +140,8 @@ describe('TPlateEditor core package', () => {
       multiPluginEditor.api.nonExistentMethod;
     });
 
-    it('should work with createPlateEditor', () => {
-      const editor = createPlateEditor({
+    it('should work with createLateEditor', () => {
+      const editor = createLateEditor({
         plugins: [MyCustomPlugin, ListPlugin, ImagePlugin],
       });
 
@@ -155,11 +155,11 @@ describe('TPlateEditor core package', () => {
 
     it('should allow extending editor with new plugins', () => {
       const plugins = [TextFormattingPlugin, ListPlugin];
-      const editor1 = createPlateEditor({
+      const editor1 = createLateEditor({
         plugins,
       });
 
-      const editor = withPlate<
+      const editor = withLate<
         Value,
         InferPlugins<typeof plugins> | typeof TablePlugin
       >(editor1, {
@@ -183,7 +183,7 @@ describe('TPlateEditor core package', () => {
         key: 'overlapping',
       });
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [TextFormattingPlugin, OverlappingPlugin, ImagePlugin],
       });
 
@@ -219,7 +219,7 @@ describe('TPlateEditor core package', () => {
     });
 
     it('should work with specific plugin types', () => {
-      const editor = createPlateEditor<Value, typeof BoldPlugin>({
+      const editor = createLateEditor<Value, typeof BoldPlugin>({
         plugins: [BoldPlugin],
       });
 

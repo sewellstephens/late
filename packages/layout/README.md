@@ -1,1 +1,1 @@
-# Plate Column plugin
+# Late Column plugin

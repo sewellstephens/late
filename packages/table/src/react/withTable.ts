@@ -1,4 +1,4 @@
-import type { ExtendEditor, PlateEditor } from '@sewellstephens/plate-common/react';
+import type { ExtendEditor, LateEditor } from '@sewellstephens/plate-common/react';
 
 import { type TableConfig, withNormalizeTable } from '../lib';
 import { withDeleteTable } from './withDeleteTable';
@@ -10,7 +10,7 @@ import { withSelectionTable } from './withSelectionTable';
 import { withSetFragmentDataTable } from './withSetFragmentDataTable';
 
 export const withTable: ExtendEditor<TableConfig> = ({ editor, ...ctx }) => {
-  editor = withNormalizeTable({ editor, ...ctx } as any) as PlateEditor;
+  editor = withNormalizeTable({ editor, ...ctx } as any) as LateEditor;
   editor = withDeleteTable({ editor, ...ctx });
   editor = withGetFragmentTable({ editor, ...ctx });
   editor = withInsertFragmentTable({ editor, ...ctx });

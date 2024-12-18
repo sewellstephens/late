@@ -1,5 +1,5 @@
-const packageJsonPlate = require('@sewellstephens/plate/package.json');
-const packageJsonPlateCore = require('@sewellstephens/plate-core/package.json');
+const packageJsonLate = require('@sewellstephens/plate/package.json');
+const packageJsonLateCore = require('@sewellstephens/plate-core/package.json');
 
 module.exports = (_plop) => {
   /** @type {import('plop').NodePlopAPI} */
@@ -24,8 +24,8 @@ module.exports = (_plop) => {
       },
       {
         data: {
-          coreVersion: packageJsonPlateCore.version,
-          plateVersion: packageJsonPlate.version,
+          coreVersion: packageJsonLateCore.version,
+          plateVersion: packageJsonLate.version,
         },
         path: '../../packages/{{name}}/package.json',
         templateFile: 'templates/package/package.json.hbs',
@@ -40,7 +40,7 @@ module.exports = (_plop) => {
         type: 'input',
       },
       {
-        default: 'Plate plugin',
+        default: 'Late plugin',
         message: 'Package description',
         name: 'description',
         type: 'input',

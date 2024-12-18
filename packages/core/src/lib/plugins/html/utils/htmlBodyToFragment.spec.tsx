@@ -2,7 +2,7 @@
 
 import { jsx } from '@sewellstephens/plate-test-utils';
 
-import { ParagraphPlugin, createPlateEditor } from '../../../../react';
+import { ParagraphPlugin, createLateEditor } from '../../../../react';
 import { htmlBodyToFragment } from './htmlBodyToFragment';
 import { parseHtmlElement } from './parseHtmlElement';
 
@@ -23,7 +23,7 @@ describe('when element is a body', () => {
 
     expect(
       htmlBodyToFragment(
-        createPlateEditor({ plugins: [ParagraphPlugin] }),
+        createLateEditor({ plugins: [ParagraphPlugin] }),
         body
       )
     ).toEqual(output);
@@ -36,7 +36,7 @@ describe('when element is not a body', () => {
   it('should be undefined', () => {
     expect(
       htmlBodyToFragment(
-        createPlateEditor(),
+        createLateEditor(),
         parseHtmlElement(`<div>test</div>`)
       )
     ).toEqual(output);

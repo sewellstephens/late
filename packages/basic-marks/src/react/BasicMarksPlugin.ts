@@ -1,4 +1,4 @@
-import { toPlatePlugin } from '@sewellstephens/plate-common/react';
+import { toLatePlugin } from '@sewellstephens/plate-common/react';
 
 import { BasicMarksPlugin as BaseBasicMarksPlugin } from '../lib/BasicMarksPlugin';
 import { BoldPlugin } from './BoldPlugin';
@@ -20,7 +20,7 @@ import { UnderlinePlugin } from './UnderlinePlugin';
  * - Superscript
  * - Underline
  */
-export const BasicMarksPlugin = toPlatePlugin(BaseBasicMarksPlugin, {
+export const BasicMarksPlugin = toLatePlugin(BaseBasicMarksPlugin, {
   plugins: [
     BoldPlugin,
     CodePlugin,

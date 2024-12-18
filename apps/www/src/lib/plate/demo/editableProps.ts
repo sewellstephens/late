@@ -1,6 +1,6 @@
-import type { PlateContentProps } from '@sewellstephens/plate-common/react';
+import type { LateContentProps } from '@sewellstephens/plate-common/react';
 
-export const editableProps: PlateContentProps = {
+export const editableProps: LateContentProps = {
   autoFocus: false,
   placeholder: 'Type…',
   spellCheck: false,

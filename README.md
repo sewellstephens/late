@@ -1,6 +1,6 @@
 ## Late
 
-A fork of [plate](https://github.com/udecode/plate) with some changes.
+A fork of [plate](https://github.com/sewellstephens/late) with some changes.
 
 ### Changes
 

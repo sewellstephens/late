@@ -1,12 +1,12 @@
 /* eslint-disable jest/no-conditional-expect */
-import { createPlateEditor } from '../../../react';
+import { createLateEditor } from '../../../react';
 import { createSlatePlugin } from '../../plugin';
-import { DebugPlugin, PlateError } from './DebugPlugin';
+import { DebugPlugin, LateError } from './DebugPlugin';
 
 describe('DebugPlugin', () => {
   it('should create an editor with combined plugin APIs', () => {
     const mockLogger = jest.fn();
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [
         DebugPlugin.configure({
           options: {
@@ -41,7 +41,7 @@ describe('DebugPlugin', () => {
     const warnLogger = jest.fn();
     const logLogger = jest.fn();
     const infoLogger = jest.fn();
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [
         DebugPlugin.configure({
           options: {
@@ -66,25 +66,25 @@ describe('DebugPlugin', () => {
   });
 
   it('should throw errors when throwErrors is true', () => {
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [DebugPlugin],
     });
 
     expect(() => {
       editor.api.debug.error('Test error', 'TEST_ERROR');
-    }).toThrow(PlateError);
+    }).toThrow(LateError);
 
     try {
       editor.api.debug.error('Test error', 'TEST_ERROR', { foo: 'bar' });
     } catch (error) {
-      expect(error).toBeInstanceOf(PlateError);
-      expect((error as PlateError).message).toBe('[TEST_ERROR] Test error');
-      expect((error as PlateError).type).toBe('TEST_ERROR');
+      expect(error).toBeInstanceOf(LateError);
+      expect((error as LateError).message).toBe('[TEST_ERROR] Test error');
+      expect((error as LateError).type).toBe('TEST_ERROR');
     }
   });
 
   it('should not throw errors when throwErrors is false', () => {
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [
         DebugPlugin.configure({
           options: {
@@ -101,7 +101,7 @@ describe('DebugPlugin', () => {
 
   it('should not log in production mode', () => {
     const mockLogger = jest.fn();
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [
         DebugPlugin.configure({
           options: {

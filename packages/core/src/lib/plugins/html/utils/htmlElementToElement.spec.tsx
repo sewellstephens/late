@@ -4,7 +4,7 @@
 import { jsx } from '@sewellstephens/plate-test-utils';
 
 import { ParagraphPlugin } from '../../../../react';
-import { createPlateEditor } from '../../../../react/editor/withPlate';
+import { createLateEditor } from '../../../../react/editor/withLate';
 import { htmlElementToElement } from './htmlElementToElement';
 import { parseHtmlElement } from './parseHtmlElement';
 
@@ -20,7 +20,7 @@ describe('when deserializing p > test', () => {
   it('should be', () => {
     expect(
       htmlElementToElement(
-        createPlateEditor({
+        createLateEditor({
           plugins: [ParagraphPlugin],
         }),
         parseHtmlElement(`<p>test</p>`)

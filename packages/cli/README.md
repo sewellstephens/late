@@ -36,7 +36,7 @@ npx @sewellstephens/plate-ui@latest add
 
 ## Documentation
 
-Visit https://platejs.org/docs to view the documentation.
+Visit https://sewellstephens.github.io/late/docs to view the documentation.
 
 ## License
 

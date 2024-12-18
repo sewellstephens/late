@@ -2,17 +2,17 @@
 
 import { cn, withRef } from '@sewellstephens/cn';
 import { setNodes } from '@sewellstephens/plate-common';
-import { PlateElement, findNodePath } from '@sewellstephens/plate-common/react';
+import { LateElement, findNodePath } from '@sewellstephens/plate-common/react';
 
 import { Calendar } from './calendar';
 import { Popover, PopoverContent, PopoverTrigger } from './popover';
 
-export const DateElement = withRef<typeof PlateElement>(
+export const DateElement = withRef<typeof LateElement>(
   ({ children, className, ...props }, ref) => {
     const { editor, element } = props;
 
     return (
-      <PlateElement
+      <LateElement
         className={cn('inline-block', className)}
         contentEditable={false}
         ref={ref}
@@ -77,7 +77,7 @@ export const DateElement = withRef<typeof PlateElement>(
           </PopoverContent>
         </Popover>
         {children}
-      </PlateElement>
+      </LateElement>
     );
   }
 );

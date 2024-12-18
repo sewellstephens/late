@@ -5,12 +5,12 @@ import type {
   HandlerReturnType,
   PluginConfig,
 } from '../../lib';
-import type { PlatePluginContext } from './PlatePlugin';
+import type { LatePluginContext } from './LatePlugin';
 
 export type DOMHandler<C extends AnyPluginConfig = PluginConfig, EV = {}> = (
   ctx: {
     event: EV;
-  } & PlatePluginContext<C>
+  } & LatePluginContext<C>
 ) => HandlerReturnType;
 
 export interface DOMHandlers<C extends AnyPluginConfig = PluginConfig> {

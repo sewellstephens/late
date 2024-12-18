@@ -3,7 +3,7 @@ import {
   type OmitFirst,
   bindFirst,
 } from '@sewellstephens/plate-common';
-import { Key, toPlatePlugin } from '@sewellstephens/plate-common/react';
+import { Key, toLatePlugin } from '@sewellstephens/plate-common/react';
 
 import {
   type CommentsConfig as BaseCommentsConfig,
@@ -24,7 +24,7 @@ export type CommentsConfig = ExtendConfig<
 >;
 
 /** Enables support for comments in the editor. */
-export const CommentsPlugin = toPlatePlugin(BaseCommentsPlugin, {
+export const CommentsPlugin = toLatePlugin(BaseCommentsPlugin, {
   shortcuts: {
     toggleComment: {
       keys: [[Key.Mod, Key.Shift, 'm']],

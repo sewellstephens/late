@@ -1,7 +1,7 @@
 import {
-  type UsePlateEditorStoreOptions,
-  usePlateSelectors,
-} from '../createPlateStore';
+  type UseLateEditorStoreOptions,
+  useLateSelectors,
+} from '../createLateStore';
 
 /**
  * Whether the editor is read-only. You can also use `useReadOnly` from
@@ -9,9 +9,9 @@ import {
  */
 export const useEditorReadOnly = (
   id?: string,
-  options: UsePlateEditorStoreOptions = {}
+  options: UseLateEditorStoreOptions = {}
 ): boolean => {
-  return !!usePlateSelectors(id, {
+  return !!useLateSelectors(id, {
     debugHookName: 'useEditorReadOnly',
     ...options,
   }).readOnly();

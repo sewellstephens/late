@@ -4,7 +4,7 @@ import type { TEditor } from '@sewellstephens/plate-common';
 import type { Path } from 'slate';
 
 import {
-  type PlateRenderElementProps,
+  type LateRenderElementProps,
   findNodePath,
 } from '@sewellstephens/plate-common/react';
 import { useReadOnly } from 'slate-react';
@@ -33,7 +33,7 @@ export const useWithDraggable = <T = any>({
   element,
   filter,
   level = 0,
-}: PlateRenderElementProps & WithDraggableOptions<T>) => {
+}: LateRenderElementProps & WithDraggableOptions<T>) => {
   const readOnly = useReadOnly();
   const path = React.useMemo(
     () => findNodePath(editor, element),

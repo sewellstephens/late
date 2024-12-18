@@ -2,7 +2,7 @@ import React from 'react';
 
 import { renderHook } from '@testing-library/react-hooks';
 
-import { Plate, createPlateEditor, useEditorValue } from '../../react';
+import { Late, createLateEditor, useEditorValue } from '../../react';
 import { createSlatePlugin } from '../plugin';
 
 describe('pipeNormalizeInitialValue', () => {
@@ -18,15 +18,15 @@ describe('pipeNormalizeInitialValue', () => {
 
   const plugins = [createTestPlugin('a'), createTestPlugin('b')];
 
-  describe('when children is passed to createPlateEditor', () => {
+  describe('when children is passed to createLateEditor', () => {
     it('should normalize the initial value once', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins,
         value: [{ children: [{ text: '' }], count: 0, type: 'p' }],
       });
 
       const wrapper = ({ children }: any) => (
-        <Plate editor={editor}>{children}</Plate>
+        <Late editor={editor}>{children}</Late>
       );
 
       const { result } = renderHook(() => useEditorValue(), {
@@ -39,15 +39,15 @@ describe('pipeNormalizeInitialValue', () => {
     });
   });
 
-  describe('when initialValue was previously passed to Plate', () => {
+  describe('when initialValue was previously passed to Late', () => {
     it('should normalize the initial value once', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins,
         value: [{ children: [{ text: '' }], count: 0, type: 'p' }],
       });
 
       const wrapper = ({ children }: any) => (
-        <Plate editor={editor}>{children}</Plate>
+        <Late editor={editor}>{children}</Late>
       );
 
       const { result } = renderHook(() => useEditorValue(), {
@@ -62,13 +62,13 @@ describe('pipeNormalizeInitialValue', () => {
 
   describe('when both children and initialValue were previously provided', () => {
     it('should use children and normalize it once', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins,
         value: [{ children: [{ text: '' }], count: 0, type: 'p' }],
       });
 
       const wrapper = ({ children }: any) => (
-        <Plate editor={editor}>{children}</Plate>
+        <Late editor={editor}>{children}</Late>
       );
 
       const { result } = renderHook(() => useEditorValue(), {
@@ -83,12 +83,12 @@ describe('pipeNormalizeInitialValue', () => {
 
   describe('when no initial value is provided', () => {
     it('should not normalize', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins,
       });
 
       const wrapper = ({ children }: any) => (
-        <Plate editor={editor}>{children}</Plate>
+        <Late editor={editor}>{children}</Late>
       );
 
       const { result } = renderHook(() => useEditorValue(), {
@@ -99,19 +99,19 @@ describe('pipeNormalizeInitialValue', () => {
     });
   });
 
-  describe('withPlate', () => {
+  describe('withLate', () => {
     describe('children handling', () => {
       it('should use provided children', () => {
         const children = [
           { children: [{ text: 'Test' }], count: 0, type: 'p' },
         ];
-        const editor = createPlateEditor({
+        const editor = createLateEditor({
           plugins,
           value: children,
         });
 
         const wrapper = ({ children }: any) => (
-          <Plate editor={editor}>{children}</Plate>
+          <Late editor={editor}>{children}</Late>
         );
 
         const { result } = renderHook(() => useEditorValue(), {
@@ -124,13 +124,13 @@ describe('pipeNormalizeInitialValue', () => {
       });
 
       it('should use create.value when children is empty', () => {
-        const editor = createPlateEditor({
+        const editor = createLateEditor({
           plugins,
           value: [{ children: [{ text: 'Factory' }], count: 0, type: 'p' }],
         });
 
         const wrapper = ({ children }: any) => (
-          <Plate editor={editor}>{children}</Plate>
+          <Late editor={editor}>{children}</Late>
         );
 
         const { result } = renderHook(() => useEditorValue(), {
@@ -149,7 +149,7 @@ describe('pipeNormalizeInitialValue', () => {
           anchor: { offset: 0, path: [0, 0] },
           focus: { offset: 1, path: [0, 0] },
         };
-        const editor = createPlateEditor({
+        const editor = createLateEditor({
           plugins,
           selection,
         });
@@ -158,7 +158,7 @@ describe('pipeNormalizeInitialValue', () => {
       });
 
       it('should auto-select start when autoSelect is "start"', () => {
-        const editor = createPlateEditor({
+        const editor = createLateEditor({
           autoSelect: 'start',
           plugins,
           value: [{ children: [{ text: 'Test' }], type: 'p' }],
@@ -171,7 +171,7 @@ describe('pipeNormalizeInitialValue', () => {
       });
 
       it('should auto-select end when autoSelect is true', () => {
-        const editor = createPlateEditor({
+        const editor = createLateEditor({
           autoSelect: true,
           plugins,
           value: [{ children: [{ text: 'Test' }], type: 'p' }],

@@ -30,7 +30,7 @@ npm install @sewellstephens/plate-markdown
 ```tsx
 import { MarkdownPlugin } from '@sewellstephens/plate-markdown';
 
-const editor = createPlateEditor({ 
+const editor = createLateEditor({ 
   plugins: [
     // ...otherPlugins,
     MarkdownPlugin,
@@ -45,7 +45,7 @@ const value = editor.api.markdown.deserialize('**Hello world!**');
 Currently supported plugins: paragraph, link, list, heading, italic, bold and code.
 
 ```tsx
-const editor = createPlateEditor({ 
+const editor = createLateEditor({ 
   value,
   plugins: [
     // ...otherPlugins,

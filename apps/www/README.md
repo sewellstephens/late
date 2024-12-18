@@ -1,6 +1,6 @@
 # Documentation
 
-This is the documentation for the Plate project.
+This is the documentation for the Late project.
 
 ## Usage
 

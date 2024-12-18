@@ -8,7 +8,7 @@ import { jsx } from '@sewellstephens/plate-test-utils';
 
 import type { SlateEditor } from '../../editor';
 
-import { createPlateEditor } from '../../../react';
+import { createLateEditor } from '../../../react';
 import { ParagraphPlugin } from '../paragraph';
 
 jsx;
@@ -54,7 +54,7 @@ describe('when inserting html', () => {
 
       const plugins = [HeadingPlugin];
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins,
       });
@@ -86,7 +86,7 @@ describe('when inserting html', () => {
 
       const plugins = [HeadingPlugin];
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins,
       });
@@ -119,7 +119,7 @@ describe('when inserting html', () => {
 
     const plugins = [ParagraphPlugin];
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: input,
       plugins,
     });
@@ -161,7 +161,7 @@ describe('when inserting empty html', () => {
   it('should do nothing', () => {
     const plugins = [BoldPlugin];
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: input,
       plugins,
     });
@@ -201,7 +201,7 @@ describe('when inserting an iframe without src', () => {
   it('should do nothing', () => {
     const plugins = [MediaEmbedPlugin];
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: input,
       plugins,
     });
@@ -244,7 +244,7 @@ describe('when inserting link with href', () => {
   it('should insert the link with url', () => {
     const plugins = [ParagraphPlugin, LinkPlugin];
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: input,
       plugins,
     });
@@ -281,7 +281,7 @@ describe('when inserting plain text', () => {
   it('should run default insert', () => {
     jest.spyOn(JSON, 'parse').mockReturnValue(<fragment>inserted</fragment>);
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: input,
       plugins: [],
     });

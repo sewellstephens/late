@@ -1,12 +1,12 @@
 import React from 'react';
 
-import type { UsePlateEditorStoreOptions } from '../createPlateStore';
+import type { UseLateEditorStoreOptions } from '../createLateStore';
 
 import { useIncrementVersion } from './useIncrementVersion';
 
 export const useRedecorate = (
   id?: string,
-  options: UsePlateEditorStoreOptions = {}
+  options: UseLateEditorStoreOptions = {}
 ) => {
   const updateDecorate = useIncrementVersion('versionDecorate', id, {
     debugHookName: 'useRedecorate',

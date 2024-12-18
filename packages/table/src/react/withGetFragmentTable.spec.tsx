@@ -2,7 +2,7 @@
 
 import type { SlateEditor } from '@sewellstephens/plate-common';
 
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
 import { TablePlugin } from '.';
@@ -35,7 +35,7 @@ describe('withGetFragmentTable', () => {
         </editor>
       ) as any as SlateEditor;
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins: [TablePlugin],
       });
@@ -72,7 +72,7 @@ describe('withGetFragmentTable', () => {
         </editor>
       ) as any as SlateEditor;
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins: [TablePlugin],
       });

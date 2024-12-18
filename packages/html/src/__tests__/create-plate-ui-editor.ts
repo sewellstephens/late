@@ -1,20 +1,20 @@
 import type { AnyPluginConfig, Value } from '@sewellstephens/plate-common';
 
 import {
-  type CreatePlateEditorOptions,
-  type PlateCorePlugin,
-  createPlateEditor,
+  type CreateLateEditorOptions,
+  type LateCorePlugin,
+  createLateEditor,
 } from '@sewellstephens/plate-common/react';
-import { createPlateUI } from 'www/src/lib/plate/create-plate-ui';
+import { createLateUI } from 'www/src/lib/plate/create-plate-ui';
 
 /** Create a plate editor with default UI. */
-export const createPlateUIEditor = <
+export const createLateUIEditor = <
   V extends Value = Value,
-  P extends AnyPluginConfig = PlateCorePlugin,
->({ override, ...options }: CreatePlateEditorOptions<V, P> = {}) =>
-  createPlateEditor<V, P>({
+  P extends AnyPluginConfig = LateCorePlugin,
+>({ override, ...options }: CreateLateEditorOptions<V, P> = {}) =>
+  createLateEditor<V, P>({
     ...options,
     override: {
-      components: createPlateUI(override?.components),
+      components: createLateUI(override?.components),
     },
   });

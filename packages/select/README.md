@@ -1,11 +1,11 @@
-# Plate select plugins
+# Late select plugins
 
-This package implements the select on backspace plugin for Plate. It allows
+This package implements the select on backspace plugin for Late. It allows
 setting a list of element types to select on backspace.
 
 ## Documentation
 
-Check out [Playground](https://platejs.org/docs/playground).
+Check out [Playground](https://sewellstephens.github.io/late/docs/playground).
 
 ## License
 

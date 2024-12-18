@@ -1,4 +1,4 @@
-import { toPlatePlugin } from '@sewellstephens/plate-common/react';
+import { toLatePlugin } from '@sewellstephens/plate-common/react';
 
 import {
   AudioPlugin as BaseAudioPlugin,
@@ -8,12 +8,12 @@ import {
   VideoPlugin as BaseVideoPlugin,
 } from '../lib';
 
-export const ImagePlugin = toPlatePlugin(BaseImagePlugin);
+export const ImagePlugin = toLatePlugin(BaseImagePlugin);
 
-export const MediaEmbedPlugin = toPlatePlugin(BaseMediaEmbedPlugin);
+export const MediaEmbedPlugin = toLatePlugin(BaseMediaEmbedPlugin);
 
-export const AudioPlugin = toPlatePlugin(BaseAudioPlugin);
+export const AudioPlugin = toLatePlugin(BaseAudioPlugin);
 
-export const FilePlugin = toPlatePlugin(BaseFilePlugin);
+export const FilePlugin = toLatePlugin(BaseFilePlugin);
 
-export const VideoPlugin = toPlatePlugin(BaseVideoPlugin);
+export const VideoPlugin = toLatePlugin(BaseVideoPlugin);

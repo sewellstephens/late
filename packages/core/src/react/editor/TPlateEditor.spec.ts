@@ -4,9 +4,9 @@ import type { InferPlugins } from '../../lib/editor/SlateEditor';
 
 import { createSlatePlugin } from '../../lib/plugin';
 import { DebugPlugin, someHtmlElement } from '../../lib/plugins';
-import { createPlateEditor, withPlate } from '../index';
+import { createLateEditor, withLate } from '../index';
 
-describe('TPlateEditor', () => {
+describe('TLateEditor', () => {
   const MyCustomPlugin = createSlatePlugin({
     api: { myCustomMethod: () => {} },
     key: 'myCustom',
@@ -46,7 +46,7 @@ describe('TPlateEditor', () => {
 
   describe('Core Plugins', () => {
     it('should have DebugPlugin methods with default generics', () => {
-      const editor = withPlate(createTEditor());
+      const editor = withLate(createTEditor());
 
       expect(editor.api.debug).toBeDefined();
       expect(editor.api.debug.log).toBeInstanceOf(Function);
@@ -59,7 +59,7 @@ describe('TPlateEditor', () => {
     });
 
     it('should work with a mix of core and custom plugins', () => {
-      const editor = withPlate(createTEditor(), {
+      const editor = withLate(createTEditor(), {
         plugins: [DebugPlugin, TextFormattingPlugin, ImagePlugin],
       });
 
@@ -74,12 +74,12 @@ describe('TPlateEditor', () => {
 
   describe('Custom Plugins', () => {
     it('should infer single and multiple plugin types correctly', () => {
-      const singlePluginEditor = withPlate(createTEditor(), {
+      const singlePluginEditor = withLate(createTEditor(), {
         plugins: [MyCustomPlugin],
       });
       expect(singlePluginEditor.api.myCustomMethod).toBeInstanceOf(Function);
 
-      const multiPluginEditor = withPlate(createTEditor(), {
+      const multiPluginEditor = withLate(createTEditor(), {
         plugins: [TextFormattingPlugin, ListPlugin, TablePlugin],
       });
       expect(multiPluginEditor.api.bold).toBeInstanceOf(Function);
@@ -90,8 +90,8 @@ describe('TPlateEditor', () => {
       multiPluginEditor.api.nonExistentMethod;
     });
 
-    it('should work with createPlateEditor', () => {
-      const editor = createPlateEditor({
+    it('should work with createLateEditor', () => {
+      const editor = createLateEditor({
         plugins: [MyCustomPlugin, ListPlugin, ImagePlugin],
       });
 
@@ -105,11 +105,11 @@ describe('TPlateEditor', () => {
 
     it('should allow extending editor with new plugins', () => {
       const plugins = [TextFormattingPlugin, ListPlugin];
-      const editor1 = withPlate(createTEditor(), {
+      const editor1 = withLate(createTEditor(), {
         plugins,
       });
 
-      const editor = withPlate<
+      const editor = withLate<
         Value,
         InferPlugins<typeof plugins> | typeof TablePlugin
       >(editor1, {
@@ -133,7 +133,7 @@ describe('TPlateEditor', () => {
         key: 'overlapping',
       });
 
-      const editor = withPlate(createTEditor(), {
+      const editor = withLate(createTEditor(), {
         plugins: [TextFormattingPlugin, OverlappingPlugin, ImagePlugin],
       });
 
@@ -169,7 +169,7 @@ describe('TPlateEditor', () => {
     });
 
     it('should work with specific plugin types', () => {
-      const editor = createPlateEditor<Value, typeof BoldPlugin>({
+      const editor = createLateEditor<Value, typeof BoldPlugin>({
         plugins: [BoldPlugin],
       });
 

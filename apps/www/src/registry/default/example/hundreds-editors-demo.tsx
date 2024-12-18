@@ -2,27 +2,27 @@ import React from 'react';
 
 import { BasicElementsPlugin } from '@sewellstephens/plate-basic-elements/react';
 import { BasicMarksPlugin } from '@sewellstephens/plate-basic-marks/react';
-import { Plate, usePlateEditor } from '@sewellstephens/plate-common/react';
+import { Late, useLateEditor } from '@sewellstephens/plate-common/react';
 
 import { editableProps } from '@/plate/demo/editableProps';
-import { PlateUI } from '@/plate/demo/plate-ui';
+import { LateUI } from '@/plate/demo/plate-ui';
 import { createMultiEditorsValue } from '@/plate/demo/values/createMultiEditorsValue';
 import { Editor } from '@/registry/default/plate-ui/editor';
 
 const values = createMultiEditorsValue();
 
-function WithPlate({ id, value }: any) {
-  const editor = usePlateEditor({
+function WithLate({ id, value }: any) {
+  const editor = useLateEditor({
     id,
-    override: { components: PlateUI },
+    override: { components: LateUI },
     plugins: [BasicElementsPlugin, BasicMarksPlugin],
     value,
   });
 
   return (
-    <Plate editor={editor}>
+    <Late editor={editor}>
       <Editor {...editableProps} />
-    </Plate>
+    </Late>
   );
 }
 
@@ -35,7 +35,7 @@ function WithPlate({ id, value }: any) {
 //   }
 // }
 
-// function WithoutPlate({ initialValue }: any) {
+// function WithoutLate({ initialValue }: any) {
 //   const [value, setValue] = useState(initialValue);
 //   const renderElement = useCallback((p) => <Element {...p} />, []);
 //   const editor = useMemo(() => withReact(createEditor() as ReactEditor), []);
@@ -58,8 +58,8 @@ export default function HundredsEditorsDemo() {
         return (
           <div className="p-10" key={idx}>
             <h3 className="mb-2 font-semibold">#{idx + 1}</h3>
-            <WithPlate id={idx + 1} value={value} />
-            {/* <WithoutPlate initialValue={initialValue} id={idx} /> */}
+            <WithLate id={idx + 1} value={value} />
+            {/* <WithoutLate initialValue={initialValue} id={idx} /> */}
           </div>
         );
       })}

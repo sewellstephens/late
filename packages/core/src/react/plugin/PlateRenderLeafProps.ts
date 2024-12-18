@@ -2,10 +2,10 @@ import type { TText } from '@sewellstephens/slate';
 import type { TRenderLeafProps } from '@sewellstephens/slate-react';
 
 import type { AnyPluginConfig, PluginConfig } from '../../lib';
-import type { PlateRenderNodeProps } from './PlateRenderNodeProps';
+import type { LateRenderNodeProps } from './LateRenderNodeProps';
 
-/** Leaf props passed by Plate */
-export type PlateRenderLeafProps<
+/** Leaf props passed by Late */
+export type LateRenderLeafProps<
   N extends TText = TText,
   C extends AnyPluginConfig = PluginConfig,
-> = PlateRenderNodeProps<C> & TRenderLeafProps<N>;
+> = LateRenderNodeProps<C> & TRenderLeafProps<N>;

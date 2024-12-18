@@ -4,7 +4,7 @@ import { LinkPlugin } from '@sewellstephens/plate-link/react';
 import { ImagePlugin } from '@sewellstephens/plate-media';
 
 import { serializeHtml } from '../../react/serializeHtml';
-import { createPlateUIEditor } from '../create-plate-ui-editor';
+import { createLateUIEditor } from '../create-plate-ui-editor';
 
 it('serialize link to html with attributes', () => {
   const plugins = [
@@ -20,7 +20,7 @@ it('serialize link to html with attributes', () => {
 
   expect(
     serializeHtml(
-      createPlateUIEditor({
+      createLateUIEditor({
         plugins,
       }),
       {
@@ -53,7 +53,7 @@ it('serialize image with alt to html', () => {
 
   expect(
     htmlStringToDOMNode(
-      serializeHtml(createPlateUIEditor({ plugins }), {
+      serializeHtml(createLateUIEditor({ plugins }), {
         nodes: [element],
       })
     ).querySelectorAll('img')[0].outerHTML

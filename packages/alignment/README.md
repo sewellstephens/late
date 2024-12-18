@@ -1,7 +1,8 @@
-# Plate alignment
+# Late alignment
 
-Visit https://platejs.org/docs/alignment to view the documentation.
+Visit https://sewellstephens.github.io/late/docs/alignment to view the documentation.
 
 ## License
 
 [MIT](../../LICENSE)
+

@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
 import {
-  createPlateEditor,
+  createLateEditor,
   getEditorPlugin,
 } from '@sewellstephens/plate-common/react';
 import * as isHotkey from '@sewellstephens/plate-core';
@@ -39,7 +39,7 @@ it('should be', () => {
   jest.spyOn(isHotkey, 'isHotkey').mockReturnValue(true);
   onKeyDownExitBreak({
     ...getEditorPlugin(
-      createPlateEditor({ editor: input }),
+      createLateEditor({ editor: input }),
       ExitBreakPlugin.configure({
         options: {
           rules: [

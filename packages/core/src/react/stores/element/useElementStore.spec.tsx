@@ -4,16 +4,16 @@ import type { TElement } from '@sewellstephens/slate';
 
 import { act, render } from '@testing-library/react';
 
-import { Plate } from '../../components';
-import { createPlateEditor } from '../../editor';
+import { Late } from '../../components';
+import { createLateEditor } from '../../editor';
 import { useElement } from './useElement';
 import { ElementProvider } from './useElementStore';
 
 describe('ElementProvider', () => {
-  const PlateWrapper = ({ children }: { children: React.ReactNode }) => {
-    const editor = createPlateEditor();
+  const LateWrapper = ({ children }: { children: React.ReactNode }) => {
+    const editor = createLateEditor();
 
-    return <Plate editor={editor}>{children}</Plate>;
+    return <Late editor={editor}>{children}</Late>;
   };
 
   interface TNameElement extends TElement {
@@ -129,7 +129,7 @@ describe('ElementProvider', () => {
 
   it('returns the first ancestor matching the element type', () => {
     const { getByText } = render(
-      <PlateWrapper>
+      <LateWrapper>
         <NameElementProvider name="John">
           <AgeElementProvider age={20}>
             <NameElementProvider name="Jane">
@@ -141,7 +141,7 @@ describe('ElementProvider', () => {
             </NameElementProvider>
           </AgeElementProvider>
         </NameElementProvider>
-      </PlateWrapper>
+      </LateWrapper>
     );
 
     expect(getByText('Name: Jane')).toBeInTheDocument();
@@ -151,13 +151,13 @@ describe('ElementProvider', () => {
 
   it('returns the first ancestor of any type if given type does not match', () => {
     const { getByText } = render(
-      <PlateWrapper>
+      <LateWrapper>
         <NameElementProvider name="John">
           <NameElementProvider name="Jane">
             <TypeConsumer label="Type: " type="age" />
           </NameElementProvider>
         </NameElementProvider>
-      </PlateWrapper>
+      </LateWrapper>
     );
 
     expect(getByText('Type: name')).toBeInTheDocument();
@@ -165,7 +165,7 @@ describe('ElementProvider', () => {
 
   it('propagates updated elements to consumers', () => {
     const { getByText } = render(
-      <PlateWrapper>
+      <LateWrapper>
         <UpdatingAgeElementProvider
           buttonLabel="updateAge1"
           increment={10}
@@ -180,7 +180,7 @@ describe('ElementProvider', () => {
             <AgeElementConsumer label="Age 2: " />
           </UpdatingAgeElementProvider>
         </UpdatingAgeElementProvider>
-      </PlateWrapper>
+      </LateWrapper>
     );
 
     expect(getByText('Age 1: 20')).toBeInTheDocument();
@@ -204,9 +204,9 @@ describe('ElementProvider', () => {
 
   it('returns empty object if no ancestor exists', () => {
     const { getByText } = render(
-      <PlateWrapper>
+      <LateWrapper>
         <JsonConsumer />
-      </PlateWrapper>
+      </LateWrapper>
     );
     expect(getByText('{}')).toBeInTheDocument();
   });

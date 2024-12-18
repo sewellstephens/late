@@ -6,7 +6,7 @@ import {
   atom,
   plateStore,
   useEditorPlugin,
-  usePlateStore,
+  useLateStore,
 } from '@sewellstephens/plate-common/react';
 import { IndentPlugin, type TIndentElement } from '@sewellstephens/plate-indent';
 
@@ -66,11 +66,11 @@ export const useIsVisible = (elementId: string) => {
     [elementId, openIds]
   );
 
-  return usePlateStore().get.atom(isVisibleAtom);
+  return useLateStore().get.atom(isVisibleAtom);
 };
 
 export const toggleIndexAtom = atom((get) =>
   buildToggleIndex(get(editorAtom).editor.children as TIndentElement[])
 );
 
-export const useToggleIndex = () => usePlateStore().get.atom(toggleIndexAtom);
+export const useToggleIndex = () => useLateStore().get.atom(toggleIndexAtom);

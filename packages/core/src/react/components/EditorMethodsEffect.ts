@@ -3,7 +3,7 @@ import React from 'react';
 import {
   EXPOSED_STORE_KEYS,
   useEditorRef,
-  usePlateStore,
+  useLateStore,
   useRedecorate,
 } from '../stores';
 
@@ -11,7 +11,7 @@ export const EditorMethodsEffect = ({ id }: { id?: string }) => {
   const editor = useEditorRef(id);
   const redecorate = useRedecorate(id);
 
-  const plateStore = usePlateStore(id);
+  const plateStore = useLateStore(id);
 
   // Must be in a scope where hooks can be called.
   const storeSetters = Object.fromEntries(
@@ -27,7 +27,7 @@ export const EditorMethodsEffect = ({ id }: { id?: string }) => {
   React.useEffect(() => {
     editor.api.redecorate = redecorate;
 
-    editor.setPlateState = (optionKey, value) => {
+    editor.setLateState = (optionKey, value) => {
       const setter = memorizedStoreSetters;
 
       setter[optionKey]?.(value);

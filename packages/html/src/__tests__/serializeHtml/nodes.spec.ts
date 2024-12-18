@@ -4,11 +4,11 @@ import { ParagraphPlugin } from '@sewellstephens/plate-common';
 import { ListPlugin } from '@sewellstephens/plate-list';
 
 import { serializeHtml } from '../../react/serializeHtml';
-import { createPlateUIEditor } from '../create-plate-ui-editor';
+import { createLateUIEditor } from '../create-plate-ui-editor';
 
 it('serialize complex example list with paragraphs to html', () => {
   const plugins = [ItalicPlugin, BoldPlugin, ParagraphPlugin, ListPlugin];
-  const editor = createPlateUIEditor({ plugins });
+  const editor = createLateUIEditor({ plugins });
 
   const render = htmlStringToDOMNode(
     serializeHtml(editor, {
@@ -82,7 +82,7 @@ it('serialize complex example list with paragraphs to html', () => {
 
 it('serialize complex example with no type on top level node to html', () => {
   const plugins = [ItalicPlugin, BoldPlugin, ParagraphPlugin, ListPlugin];
-  const editor = createPlateUIEditor({ plugins });
+  const editor = createLateUIEditor({ plugins });
 
   const render = serializeHtml(editor, {
     nodes: [
@@ -121,7 +121,7 @@ it('serialize complex example with no type on top level node to html', () => {
 
 it('serialize complex example with multiple no types on top level node to html', () => {
   const plugins = [ItalicPlugin, BoldPlugin, ParagraphPlugin, ListPlugin];
-  const editor = createPlateUIEditor({ plugins });
+  const editor = createLateUIEditor({ plugins });
 
   const render = serializeHtml(editor, {
     nodes: [
@@ -163,7 +163,7 @@ it('serialize complex example with multiple no types on top level node to html',
 
 it('serialize string with %', () => {
   const plugins = [ParagraphPlugin];
-  const editor = createPlateUIEditor({ plugins });
+  const editor = createLateUIEditor({ plugins });
 
   const render = serializeHtml(editor, {
     nodes: [

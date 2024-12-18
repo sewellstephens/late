@@ -1,4 +1,4 @@
-# Interact with a Plate editor from inside a Playwright test
+# Interact with a Late editor from inside a Playwright test
 
 ## License
 

@@ -1,14 +1,14 @@
 import { useEffect } from 'react';
 
 import { getNode } from '@sewellstephens/plate-common';
-import { type PlateEditor, useEditorRef } from '@sewellstephens/plate-common/react';
+import { type LateEditor, useEditorRef } from '@sewellstephens/plate-common/react';
 import { toDOMNode } from '@sewellstephens/plate-common/react';
 
-import type { TPlatePlaywrightAdapter } from './types';
+import type { TLatePlaywrightAdapter } from './types';
 
-const EDITABLE_TO_EDITOR = new WeakMap<HTMLElement, PlateEditor>();
+const EDITABLE_TO_EDITOR = new WeakMap<HTMLElement, LateEditor>();
 
-const platePlaywrightAdapter: TPlatePlaywrightAdapter = {
+const platePlaywrightAdapter: TLatePlaywrightAdapter = {
   EDITABLE_TO_EDITOR,
   getNode,
   toDOMNode,

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { render } from '@testing-library/react';
 
-import { createPlateEditor } from '../editor/withPlate';
+import { createLateEditor } from '../editor/withLate';
 import { pipeRenderLeaf } from './pipeRenderLeaf';
 
 const attributes = {
@@ -13,7 +13,7 @@ const attributes = {
 const text = { text: 'test' };
 
 it('should render the default leaf', () => {
-  const Leaf = pipeRenderLeaf(createPlateEditor({ plugins: [] }))!;
+  const Leaf = pipeRenderLeaf(createLateEditor({ plugins: [] }))!;
 
   const { getByTestId } = render(
     <Leaf attributes={attributes} leaf={text} text={text}>

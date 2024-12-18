@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import type { PlateEditor } from '../../editor/PlateEditor';
+import type { LateEditor } from '../../editor/LateEditor';
 
 export const FOCUS_EDITOR_EVENT = 'focus-editor-event';
 
@@ -11,7 +11,7 @@ export const useFocusEditorEvents = ({
   onEditorBlur,
   onEditorFocus,
 }: {
-  editorRef: PlateEditor | null;
+  editorRef: LateEditor | null;
   onEditorBlur?: () => void;
   onEditorFocus?: () => void;
 }) => {

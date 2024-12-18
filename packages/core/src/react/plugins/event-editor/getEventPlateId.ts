@@ -1,6 +1,6 @@
 import { eventEditorSelectors } from './EventEditorStore';
 
-export const getEventPlateId = (id?: string) => {
+export const getEventLateId = (id?: string) => {
   if (id) return id;
 
   const focus = eventEditorSelectors.focus();

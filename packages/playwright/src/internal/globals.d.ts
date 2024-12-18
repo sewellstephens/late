@@ -1,7 +1,7 @@
-import type { TPlatePlaywrightAdapter } from './types';
+import type { TLatePlaywrightAdapter } from './types';
 
 declare global {
   interface Window {
-    platePlaywrightAdapter?: TPlatePlaywrightAdapter;
+    platePlaywrightAdapter?: TLatePlaywrightAdapter;
   }
 }

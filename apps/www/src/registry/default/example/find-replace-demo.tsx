@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 
 import { BasicElementsPlugin } from '@sewellstephens/plate-basic-elements/react';
 import { BasicMarksPlugin } from '@sewellstephens/plate-basic-marks/react';
-import { Plate } from '@sewellstephens/plate-common/react';
-import { usePlateEditor } from '@sewellstephens/plate-core/react';
+import { Late } from '@sewellstephens/plate-common/react';
+import { useLateEditor } from '@sewellstephens/plate-core/react';
 import { FindReplacePlugin } from '@sewellstephens/plate-find-replace';
 
 import { Icons } from '@/components/icons';
 import { editableProps } from '@/plate/demo/editableProps';
-import { PlateUI } from '@/plate/demo/plate-ui';
+import { LateUI } from '@/plate/demo/plate-ui';
 import { findReplaceValue } from '@/plate/demo/values/findReplaceValue';
 import { Editor } from '@/registry/default/plate-ui/editor';
 import { FixedToolbar } from '@/registry/default/plate-ui/fixed-toolbar';
@@ -63,10 +63,10 @@ export function SearchHighlightToolbar({
 export default function FindReplaceDemo() {
   const [search, setSearch] = useState('');
 
-  const editor = usePlateEditor(
+  const editor = useLateEditor(
     {
       override: {
-        components: PlateUI,
+        components: LateUI,
       },
       plugins: [
         BasicElementsPlugin,
@@ -82,9 +82,9 @@ export default function FindReplaceDemo() {
     <>
       <SearchHighlightToolbar icon={Icons.search} setSearch={setSearch} />
 
-      <Plate editor={editor}>
+      <Late editor={editor}>
         <Editor {...editableProps} />
-      </Plate>
+      </Late>
     </>
   );
 }

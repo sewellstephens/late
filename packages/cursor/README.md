@@ -1,11 +1,11 @@
-# Plate Cursor Overlay
+# Late Cursor Overlay
 
-This package implements a cursor overlay for Plate.
+This package implements a cursor overlay for Late.
 
 ## Documentation
 
 Check out
-[Cursor Overlay](https://platejs.org/docs/components/cursor-overlay).
+[Cursor Overlay](https://sewellstephens.github.io/late/docs/components/cursor-overlay).
 
 ## License
 

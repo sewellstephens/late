@@ -1,6 +1,6 @@
-import type { AnyPlatePlugin, PlatePluginContext } from './PlatePlugin';
+import type { AnyLatePlugin, LatePluginContext } from './LatePlugin';
 
-export const omitPluginContext = <T extends PlatePluginContext<AnyPlatePlugin>>(
+export const omitPluginContext = <T extends LatePluginContext<AnyLatePlugin>>(
   ctx: T
 ) => {
   const {

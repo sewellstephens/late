@@ -6,9 +6,9 @@ import {
   getStartPoint,
 } from '@sewellstephens/slate';
 
-import { ParagraphPlugin, PlateApiPlugin, ReactPlugin } from '../../react';
-import { withPlate } from '../../react/editor/withPlate';
-import { createPlatePlugin } from '../../react/plugin/createPlatePlugin';
+import { ParagraphPlugin, LateApiPlugin, ReactPlugin } from '../../react';
+import { withLate } from '../../react/editor/withLate';
+import { createLatePlugin } from '../../react/plugin/createLatePlugin';
 import { getPlugin } from '../../react/plugin/getPlugin';
 import { EventEditorPlugin } from '../../react/plugins/event-editor/EventEditorPlugin';
 import {
@@ -39,13 +39,13 @@ const coreKeys = [
   AstPlugin.key,
   ParagraphPlugin.key,
   EventEditorPlugin.key,
-  PlateApiPlugin.key,
+  LateApiPlugin.key,
 ];
 
-describe('withPlate', () => {
+describe('withLate', () => {
   describe('when default plugins', () => {
     it('should have core plugins', () => {
-      const editor = withPlate(createTEditor(), { id: '1' });
+      const editor = withLate(createTEditor(), { id: '1' });
 
       expect(editor.id).toBe('1');
       expect(editor.history).toBeDefined();
@@ -67,7 +67,7 @@ describe('withPlate', () => {
   describe('when plugins is an array', () => {
     it('should add custom plugins to core plugins', () => {
       const customPlugin = createSlatePlugin({ key: 'custom' });
-      const editor = withPlate(createTEditor(), {
+      const editor = withLate(createTEditor(), {
         id: '1',
         plugins: [customPlugin],
       });
@@ -82,7 +82,7 @@ describe('withPlate', () => {
 
   describe('when plugins is an empty array', () => {
     it('should only have core plugins', () => {
-      const editor = withPlate<Value, SlatePlugin>(createTEditor(), {
+      const editor = withLate<Value, SlatePlugin>(createTEditor(), {
         id: '1',
         plugins: [],
       });
@@ -104,7 +104,7 @@ describe('withPlate', () => {
         ],
       });
 
-      const editor = withPlate(createTEditor(), {
+      const editor = withLate(createTEditor(), {
         id: '1',
         plugins: [
           parentPlugin
@@ -141,7 +141,7 @@ describe('withPlate', () => {
       const HeadingPlugin = createSlatePlugin({ key: 'h1' });
       const customComponent = () => null;
 
-      const editor = withPlate(createTEditor(), {
+      const editor = withLate(createTEditor(), {
         id: '1',
         override: {
           components: {
@@ -158,14 +158,14 @@ describe('withPlate', () => {
     it('should respect priority when overriding existing components', () => {
       const originalComponent = () => null;
       const overrideComponent = () => null;
-      const HeadingPlugin = createPlatePlugin({
+      const HeadingPlugin = createLatePlugin({
         key: 'h1',
         priority: 100,
         render: { node: originalComponent },
       });
 
       // Test with low priority override
-      let editor = withPlate(createTEditor(), {
+      let editor = withLate(createTEditor(), {
         id: '1',
         plugins: [HeadingPlugin],
       });
@@ -174,7 +174,7 @@ describe('withPlate', () => {
       expect(h1Plugin.render.node).toBe(originalComponent);
 
       // Test with high priority override
-      editor = withPlate(createTEditor(), {
+      editor = withLate(createTEditor(), {
         id: '1',
         override: {
           components: {
@@ -196,7 +196,7 @@ describe('withPlate', () => {
         node: { type: 'originalType' },
       });
 
-      const editor = withPlate(createTEditor(), {
+      const editor = withLate(createTEditor(), {
         id: '1',
         override: {
           plugins: {
@@ -220,7 +220,7 @@ describe('withPlate', () => {
         node: { type: 'additional' },
       });
 
-      const editor = withPlate(createTEditor(), {
+      const editor = withLate(createTEditor(), {
         id: '1',
         plugins: [ParagraphPlugin, ReactPlugin, additionalPlugin],
       });
@@ -271,7 +271,7 @@ describe('withPlate', () => {
         createSlatePlugin({ key: 'history' }),
       ];
 
-      const editor = withPlate(existingEditor, { id: '1' });
+      const editor = withLate(existingEditor, { id: '1' });
 
       const pluginKeys = editor.pluginList.map((plugin) => plugin.key);
       expect(pluginKeys.filter((key) => key === 'dom')).toHaveLength(1);
@@ -285,7 +285,7 @@ describe('withPlate', () => {
         createSlatePlugin({ key: 'history' }),
       ];
 
-      const editor = withPlate(existingEditor, { id: '1' });
+      const editor = withLate(existingEditor, { id: '1' });
 
       const pluginKeys = editor.pluginList.map((plugin) => plugin.key);
       coreKeys.forEach((key) => {
@@ -302,7 +302,7 @@ describe('withPlate', () => {
         customPlugin,
       ];
 
-      const editor = withPlate(existingEditor, { id: '1' });
+      const editor = withLate(existingEditor, { id: '1' });
 
       expect(editor.pluginList.map((plugin) => plugin.key)).not.toContain(
         'custom'
@@ -312,7 +312,7 @@ describe('withPlate', () => {
 
   describe('when using override.enabled', () => {
     it('should disable specified core plugins', () => {
-      const editor = withPlate(createTEditor(), {
+      const editor = withLate(createTEditor(), {
         id: '1',
         override: {
           enabled: {
@@ -332,7 +332,7 @@ describe('withPlate', () => {
       const customPlugin1 = createSlatePlugin({ key: 'custom1' });
       const customPlugin2 = createSlatePlugin({ key: 'custom2' });
 
-      const editor = withPlate(createTEditor(), {
+      const editor = withLate(createTEditor(), {
         id: '1',
         override: {
           enabled: {
@@ -348,7 +348,7 @@ describe('withPlate', () => {
     });
 
     it('should not affect plugins not specified in override.enabled', () => {
-      const editor = withPlate(createTEditor(), {
+      const editor = withLate(createTEditor(), {
         id: '1',
         override: {
           enabled: {

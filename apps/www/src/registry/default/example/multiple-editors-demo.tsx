@@ -2,13 +2,13 @@ import React from 'react';
 
 import { BasicElementsPlugin } from '@sewellstephens/plate-basic-elements/react';
 import { BasicMarksPlugin } from '@sewellstephens/plate-basic-marks/react';
-import { Plate, usePlateEditor } from '@sewellstephens/plate-common/react';
+import { Late, useLateEditor } from '@sewellstephens/plate-common/react';
 import { HorizontalRulePlugin } from '@sewellstephens/plate-horizontal-rule/react';
 import { ImagePlugin } from '@sewellstephens/plate-media/react';
 import { SelectOnBackspacePlugin } from '@sewellstephens/plate-select';
 
 import { PlaygroundTurnIntoDropdownMenu } from '@/components/plate-ui/playground-turn-into-dropdown-menu';
-import { PlateUI } from '@/plate/demo/plate-ui';
+import { LateUI } from '@/plate/demo/plate-ui';
 import { basicElementsValue } from '@/plate/demo/values/basicElementsValue';
 import { basicMarksValue } from '@/plate/demo/values/basicMarksValue';
 import { imageValue } from '@/plate/demo/values/mediaValue';
@@ -17,22 +17,22 @@ import { FixedToolbar } from '@/registry/default/plate-ui/fixed-toolbar';
 import { Separator } from '@/registry/default/plate-ui/separator';
 
 export default function MultipleEditorsDemo() {
-  const editor = usePlateEditor({
-    override: { components: PlateUI },
+  const editor = useLateEditor({
+    override: { components: LateUI },
     plugins: [BasicElementsPlugin, BasicMarksPlugin],
     value: basicElementsValue,
   });
 
-  const editorMarks = usePlateEditor({
+  const editorMarks = useLateEditor({
     id: 'marks',
-    override: { components: PlateUI },
+    override: { components: LateUI },
     plugins: [BasicElementsPlugin, BasicMarksPlugin],
     value: basicMarksValue,
   });
 
-  const editorImage = usePlateEditor({
+  const editorImage = useLateEditor({
     id: 'marks',
-    override: { components: PlateUI },
+    override: { components: LateUI },
     plugins: [
       BasicElementsPlugin,
       BasicMarksPlugin,
@@ -49,9 +49,9 @@ export default function MultipleEditorsDemo() {
   });
 
   return (
-    <Plate editor={editor}>
-      <Plate editor={editorMarks}>
-        <Plate editor={editorImage}>
+    <Late editor={editor}>
+      <Late editor={editorMarks}>
+        <Late editor={editorImage}>
           <FixedToolbar>
             <PlaygroundTurnIntoDropdownMenu />
           </FixedToolbar>
@@ -63,8 +63,8 @@ export default function MultipleEditorsDemo() {
             <Separator />
             <Editor id="image" />
           </div>
-        </Plate>
-      </Plate>
-    </Plate>
+        </Late>
+      </Late>
+    </Late>
   );
 }

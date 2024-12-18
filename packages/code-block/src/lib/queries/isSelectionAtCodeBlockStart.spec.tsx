@@ -2,7 +2,7 @@
 
 import type { SlateEditor } from '@sewellstephens/plate-common';
 
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
 import { isSelectionAtCodeBlockStart } from './isSelectionAtCodeBlockStart';
@@ -26,7 +26,7 @@ describe('isSelectionAtCodeBlockStart', () => {
     ) as any as SlateEditor;
 
     expect(
-      isSelectionAtCodeBlockStart(createPlateEditor({ editor: input }))
+      isSelectionAtCodeBlockStart(createLateEditor({ editor: input }))
     ).toBe(false);
   });
 
@@ -46,7 +46,7 @@ describe('isSelectionAtCodeBlockStart', () => {
     ) as any as SlateEditor;
 
     expect(
-      isSelectionAtCodeBlockStart(createPlateEditor({ editor: input }))
+      isSelectionAtCodeBlockStart(createLateEditor({ editor: input }))
     ).toBe(false);
   });
 
@@ -63,7 +63,7 @@ describe('isSelectionAtCodeBlockStart', () => {
     ) as any as SlateEditor;
 
     expect(
-      isSelectionAtCodeBlockStart(createPlateEditor({ editor: input }))
+      isSelectionAtCodeBlockStart(createLateEditor({ editor: input }))
     ).toBe(false);
   });
 
@@ -81,7 +81,7 @@ describe('isSelectionAtCodeBlockStart', () => {
     ) as any as SlateEditor;
 
     expect(
-      isSelectionAtCodeBlockStart(createPlateEditor({ editor: input }))
+      isSelectionAtCodeBlockStart(createLateEditor({ editor: input }))
     ).toBe(true);
   });
 });

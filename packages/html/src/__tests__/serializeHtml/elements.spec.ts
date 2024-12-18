@@ -3,7 +3,7 @@ import { BlockquotePlugin } from '@sewellstephens/plate-block-quote';
 import { CaptionPlugin } from '@sewellstephens/plate-caption/react';
 import { htmlStringToDOMNode } from '@sewellstephens/plate-common';
 import { ParagraphPlugin } from '@sewellstephens/plate-common';
-import { toPlatePlugin } from '@sewellstephens/plate-core/react';
+import { toLatePlugin } from '@sewellstephens/plate-core/react';
 import { HeadingPlugin } from '@sewellstephens/plate-heading';
 import { LinkPlugin } from '@sewellstephens/plate-link/react';
 import { ListPlugin } from '@sewellstephens/plate-list';
@@ -11,10 +11,10 @@ import { ImagePlugin } from '@sewellstephens/plate-media';
 import { TablePlugin } from '@sewellstephens/plate-table';
 
 import { serializeHtml } from '../../react/serializeHtml';
-import { createPlateUIEditor } from '../create-plate-ui-editor';
+import { createLateUIEditor } from '../create-plate-ui-editor';
 
 it('serialize list to html', () => {
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins: [ListPlugin],
   });
 
@@ -41,7 +41,7 @@ it('serialize list to html', () => {
 });
 
 it('serialize link to html', () => {
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins: [LinkPlugin],
   });
 
@@ -63,7 +63,7 @@ it('serialize link to html', () => {
 });
 
 it('serialize blockquote to html', () => {
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins: [BlockquotePlugin],
   });
 
@@ -82,7 +82,7 @@ it('serialize blockquote to html', () => {
 });
 
 it('serialize blockquote to html, without trimming whitespace', () => {
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins: [BlockquotePlugin],
   });
 
@@ -103,7 +103,7 @@ it('serialize blockquote to html, without trimming whitespace', () => {
 });
 
 it('serialize headings to html', () => {
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins: [HeadingPlugin],
   });
 
@@ -131,7 +131,7 @@ it('serialize headings to html', () => {
 });
 
 it('serialize paragraph to html', () => {
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins: [ParagraphPlugin],
   });
 
@@ -150,7 +150,7 @@ it('serialize paragraph to html', () => {
 });
 
 it('serialize image to html', () => {
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins: [ImagePlugin, CaptionPlugin],
   });
 
@@ -170,7 +170,7 @@ it('serialize image to html', () => {
 });
 
 it('serialize table to html', () => {
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins: [TablePlugin],
   });
 
@@ -217,7 +217,7 @@ it('serialize table to html', () => {
 });
 
 it('serialize align style to html', () => {
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins: [ParagraphPlugin, AlignPlugin],
   });
 
@@ -239,12 +239,12 @@ it('serialize align style to html', () => {
 it('serialize align className to html', () => {
   const plugins = [
     ParagraphPlugin,
-    toPlatePlugin(AlignPlugin, {
+    toLatePlugin(AlignPlugin, {
       node: { props: { classNames: { center: 'slate-align-center' } } },
     }),
   ];
 
-  const editor = createPlateUIEditor({
+  const editor = createLateUIEditor({
     plugins,
   });
 
@@ -265,7 +265,7 @@ it('serialize align className to html', () => {
 
 it('serialize image and paragraph to html', () => {
   const plugins = [ParagraphPlugin, ImagePlugin, CaptionPlugin];
-  const render = serializeHtml(createPlateUIEditor({ plugins }), {
+  const render = serializeHtml(createLateUIEditor({ plugins }), {
     nodes: [
       {
         children: [{ text: 'I am centered text!' }],

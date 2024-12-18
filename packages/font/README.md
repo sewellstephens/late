@@ -1,4 +1,4 @@
-# Plate font plugins
+# Late font plugins
 
 This package implements the following font plugins:
 
@@ -7,7 +7,7 @@ This package implements the following font plugins:
 
 ## Documentation
 
-Check out [Font](https://platejs.org/docs/font).
+Check out [Font](https://sewellstephens.github.io/late/docs/font).
 
 ## License
 

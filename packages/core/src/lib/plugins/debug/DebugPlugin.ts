@@ -12,13 +12,13 @@ export type DebugErrorType =
   | 'USE_ELEMENT_CONTEXT'
   | ({} & string);
 
-export class PlateError extends Error {
+export class LateError extends Error {
   constructor(
     message: string,
     public type: DebugErrorType = 'DEFAULT'
   ) {
     super(`[${type}] ${message}`);
-    this.name = 'PlateError';
+    this.name = 'LateError';
   }
 }
 
@@ -57,7 +57,7 @@ export const DebugPlugin = createTSlatePlugin<DebugConfig>({
     if (logLevels.indexOf(level) <= logLevels.indexOf(options.logLevel!)) {
       if (level === 'error' && options.throwErrors) {
         const error =
-          message instanceof Error ? message : new PlateError(message, type);
+          message instanceof Error ? message : new LateError(message, type);
 
         throw error;
       } else {

@@ -39,7 +39,7 @@ type TSlatePluginConfig<C extends AnyPluginConfig = PluginConfig> = Omit<
 >;
 
 /**
- * Creates a new Plate plugin with the given configuration.
+ * Creates a new Late plugin with the given configuration.
  *
  * @remarks
  *   - The plugin's key is required and specified by the K generic.
@@ -79,7 +79,7 @@ type TSlatePluginConfig<C extends AnyPluginConfig = PluginConfig> = Omit<
  * @template S - The type of the plugin storage.
  * @param {Partial<SlatePlugin<K, O, A, T>>} config - The configuration object
  *   for the plugin.
- * @returns {SlatePlugin<K, O, A, T>} A new Plate plugin instance with the
+ * @returns {SlatePlugin<K, O, A, T>} A new Late plugin instance with the
  *   following properties and methods:
  *
  *   - All properties from the input config, merged with default values.

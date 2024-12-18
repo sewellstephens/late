@@ -1,6 +1,6 @@
 import { CodeBlockPlugin } from '@sewellstephens/plate-code-block/react';
 import { isSelectionAtBlockStart, someNode } from '@sewellstephens/plate-common';
-import { createPlatePlugin } from '@sewellstephens/plate-common/react';
+import { createLatePlugin } from '@sewellstephens/plate-common/react';
 import { IndentListPlugin } from '@sewellstephens/plate-indent-list/react';
 import { ListItemPlugin } from '@sewellstephens/plate-list/react';
 import { TabbablePlugin } from '@sewellstephens/plate-tabbable';
@@ -10,7 +10,7 @@ import { TabbableElement } from './TabbableElement';
 
 export const tabbablePlugin = TabbablePlugin.extend({
   plugins: [
-    createPlatePlugin({
+    createLatePlugin({
       key: 'tabbable_element',
       node: { component: TabbableElement, isElement: true, isVoid: true },
     }),

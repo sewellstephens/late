@@ -4,7 +4,7 @@ import { PopoverAnchor } from '@radix-ui/react-popover';
 import { cn, withRef } from '@sewellstephens/cn';
 import {
   isSelectionExpanded,
-  PlateElement,
+  LateElement,
   useEditorRef,
   useEditorSelector,
   useElement,
@@ -197,7 +197,7 @@ export const TableFloatingToolbar = withRef<typeof PopoverContent>(
 
 export const TableElement = withHOC(
   TableProvider,
-  withRef<typeof PlateElement>(({ className, children, ...props }, ref) => {
+  withRef<typeof LateElement>(({ className, children, ...props }, ref) => {
     const { colSizes, isSelectingCell, minColumnWidth, marginLeft } =
       useTableElementState();
     const { props: tableProps, colGroupProps } = useTableElement();
@@ -205,7 +205,7 @@ export const TableElement = withHOC(
     return (
       <TableFloatingToolbar>
         <div style={{ paddingLeft: marginLeft }}>
-          <PlateElement
+          <LateElement
             ref={ref}
             asChild
             className={cn(
@@ -231,7 +231,7 @@ export const TableElement = withHOC(
 
               <tbody className="min-w-full">{children}</tbody>
             </table>
-          </PlateElement>
+          </LateElement>
         </div>
       </TableFloatingToolbar>
     );

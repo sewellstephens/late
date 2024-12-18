@@ -1,11 +1,11 @@
-# Plate headings plugin
+# Late headings plugin
 
-This package implements the headings plugin for Plate.
+This package implements the headings plugin for Late.
 
 ## Documentation
 
 Check out
-[Basic Elements](https://platejs.org/docs/basic-elements).
+[Basic Elements](https://sewellstephens.github.io/late/docs/basic-elements).
 
 ## License
 

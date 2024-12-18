@@ -2,14 +2,14 @@ import React from 'react';
 
 import type { TEditableProps } from '@sewellstephens/slate-react';
 
-import type { PlateEditor } from '../editor/PlateEditor';
+import type { LateEditor } from '../editor/LateEditor';
 
-import { PlateStoreProvider, type PlateStoreState } from '../stores';
+import { LateStoreProvider, type LateStoreState } from '../stores';
 
-export interface PlateProps<E extends PlateEditor = PlateEditor>
+export interface LateProps<E extends LateEditor = LateEditor>
   extends Partial<
     Pick<
-      PlateStoreState<E>,
+      LateStoreState<E>,
       | 'decorate'
       | 'onChange'
       | 'onSelectionChange'
@@ -27,7 +27,7 @@ export interface PlateProps<E extends PlateEditor = PlateEditor>
   renderLeaf?: TEditableProps['renderLeaf'];
 }
 
-function PlateInner({
+function LateInner({
   children,
   decorate,
   editor,
@@ -38,9 +38,9 @@ function PlateInner({
   readOnly,
   renderElement,
   renderLeaf,
-}: PlateProps) {
+}: LateProps) {
   return (
-    <PlateStoreProvider
+    <LateStoreProvider
       decorate={decorate}
       editor={editor!}
       onChange={onChange}
@@ -53,14 +53,14 @@ function PlateInner({
       scope={editor!.id}
     >
       {children}
-    </PlateStoreProvider>
+    </LateStoreProvider>
   );
 }
 
-export function Plate<E extends PlateEditor = PlateEditor>(
-  props: PlateProps<E>
+export function Late<E extends LateEditor = LateEditor>(
+  props: LateProps<E>
 ) {
   if (!props.editor) return null;
 
-  return <PlateInner key={props.editor.key} {...(props as any)} />;
+  return <LateInner key={props.editor.key} {...(props as any)} />;
 }

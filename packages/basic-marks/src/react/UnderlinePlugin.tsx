@@ -1,8 +1,8 @@
-import { Key, toPlatePlugin } from '@sewellstephens/plate-common/react';
+import { Key, toLatePlugin } from '@sewellstephens/plate-common/react';
 
 import { UnderlinePlugin as BaseUnderlinePlugin } from '../lib/UnderlinePlugin';
 
-export const UnderlinePlugin = toPlatePlugin(
+export const UnderlinePlugin = toLatePlugin(
   BaseUnderlinePlugin,
   ({ editor, type }) => ({
     shortcuts: {

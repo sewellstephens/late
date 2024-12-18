@@ -1,8 +1,8 @@
-# Plate utils
+# Late utils
 
 ## Documentation
 
-Visit https://platejs.org/docs/api/utils to view the documentation.
+Visit https://sewellstephens.github.io/late/docs/api/utils to view the documentation.
 
 ## License
 

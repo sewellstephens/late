@@ -1,8 +1,8 @@
-import { Key, toPlatePlugin } from '@sewellstephens/plate-common/react';
+import { Key, toLatePlugin } from '@sewellstephens/plate-common/react';
 
 import { StrikethroughPlugin as BaseStrikethroughPlugin } from '../lib/StrikethroughPlugin';
 
-export const StrikethroughPlugin = toPlatePlugin(
+export const StrikethroughPlugin = toLatePlugin(
   BaseStrikethroughPlugin,
   ({ editor, type }) => ({
     shortcuts: {

@@ -1,11 +1,11 @@
-# Plate excalidraw plugin
+# Late excalidraw plugin
 
-This package implements the excalidraw plugin for Plate.
+This package implements the excalidraw plugin for Late.
 
 ## Documentation
 
 Check out
-[Excalidraw](https://platejs.org/docs/excalidraw).
+[Excalidraw](https://sewellstephens.github.io/late/docs/excalidraw).
 
 ## License
 

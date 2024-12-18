@@ -1,6 +1,6 @@
-# Plate floating UI
+# Late floating UI
 
-This package implements the floating UI for Plate.
+This package implements the floating UI for Late.
 
 ## Documentation
 

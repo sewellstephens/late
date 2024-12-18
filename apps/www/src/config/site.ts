@@ -3,13 +3,13 @@ export const siteConfig = {
   description: 'The rich-text editor framework for React.',
   links: {
     discord: 'https://discord.gg/mAZRuBzGM3',
-    github: 'https://github.com/udecode/plate',
+    github: 'https://github.com/sewellstephens/late',
     profile: 'https://github.com/zbeyens',
     twitter: 'https://twitter.com/zbeyens',
   },
-  name: 'Plate',
-  ogImage: 'https://platejs.org/og.png',
-  url: 'https://platejs.org',
+  name: 'Late',
+  ogImage: 'https://sewellstephens.github.io/late/og.png',
+  url: 'https://sewellstephens.github.io/late',
 };
 
 export type SiteConfig = typeof siteConfig;

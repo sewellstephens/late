@@ -4,7 +4,7 @@
 
 - Breaking Change: The `selectedColor` option for `BlockSelectable` has been deprecated. Please use `useBlockSelected` to customize the style of each node component.
 
-- [#3241](https://github.com/udecode/plate/pull/3241) by [@felixfeng33](https://github.com/felixfeng33) – Add logic for the `block-context-menu` and improved the user experience for `block-selection`, such as interactions related to keyboard shortcuts, bug fixes.
+- [#3241](https://github.com/sewellstephens/late/pull/3241) by [@felixfeng33](https://github.com/felixfeng33) – Add logic for the `block-context-menu` and improved the user experience for `block-selection`, such as interactions related to keyboard shortcuts, bug fixes.
 - Starting from this version, a single Cmd+A will no longer select the entire document but will select the entire block instead. Double Cmd+A will use the blockSelection plugin to select all blocks. To disable this behavior, pass handlers: { onKeyDown: null }.
 
 # 33.0.0
@@ -13,7 +13,7 @@
 
 ### Major Changes
 
-- [#3125](https://github.com/udecode/plate/pull/3125) by [@zbeyens](https://github.com/zbeyens) –
+- [#3125](https://github.com/sewellstephens/late/pull/3125) by [@zbeyens](https://github.com/zbeyens) –
   - `serializeMd`: remove `nodes` option. `editor.children` is now serialized
 
 # 32.0.0
@@ -30,7 +30,7 @@ None (CI release issue)
 
 ### Major Changes
 
-- [#2867](https://github.com/udecode/plate/pull/2867) by [@12joan](https://github.com/12joan) – Fix: in v28, `TableProvider` was incorrectly shared by all tables in the editor. `TableProvider` must now be rendered as part of `TableElement`.
+- [#2867](https://github.com/sewellstephens/late/pull/2867) by [@12joan](https://github.com/12joan) – Fix: in v28, `TableProvider` was incorrectly shared by all tables in the editor. `TableProvider` must now be rendered as part of `TableElement`.
 
 # 29.0.0
 
@@ -38,7 +38,7 @@ None (CI release issue)
 
 ### Major Changes
 
-- [#2829](https://github.com/udecode/plate/pull/2829) by [@zbeyens](https://github.com/zbeyens) –
+- [#2829](https://github.com/sewellstephens/late/pull/2829) by [@zbeyens](https://github.com/zbeyens) –
   - Moved `withProps` to `@sewellstephens/cn`
   - Moved `PortalBody`, `Text`, `Box`, `createPrimitiveComponent`, `createSlotComponent`, `withProviders` to `@sewellstephens/react-utils`
   - Removed `getRootProps` (unused)
@@ -49,9 +49,9 @@ None (CI release issue)
 
 ### Major Changes
 
-- [`822f6f56b`](https://github.com/udecode/plate/commit/822f6f56be526a6e26f904b9e767c0bc09f1e28b) by [@12joan](https://github.com/12joan) –
+- [`822f6f56b`](https://github.com/sewellstephens/late/commit/822f6f56be526a6e26f904b9e767c0bc09f1e28b) by [@12joan](https://github.com/12joan) –
   - Remove `{ fn: ... }` workaround for jotai stores that contain functions
-  - Breaking change: `usePlateSelectors`, `usePlateActions` and `usePlateStates` no longer accept generic type arguments. If custom types are required, cast the resulting values at the point of use, or use hooks like `useEditorRef` that still provide generics.
+  - Breaking change: `useLateSelectors`, `useLateActions` and `useLateStates` no longer accept generic type arguments. If custom types are required, cast the resulting values at the point of use, or use hooks like `useEditorRef` that still provide generics.
 
 # 27.0.0
 
@@ -59,7 +59,7 @@ None (CI release issue)
 
 ### Major Changes
 
-- [#2763](https://github.com/udecode/plate/pull/2763) by [@12joan](https://github.com/12joan) –
+- [#2763](https://github.com/sewellstephens/late/pull/2763) by [@12joan](https://github.com/12joan) –
   - Migrate store to `jotai@2`
   - Revert the breaking changes to `@sewellstephens/plate-comments` made in 26.0.0
 
@@ -67,7 +67,7 @@ None (CI release issue)
 
 ### Major Changes
 
-- [#2763](https://github.com/udecode/plate/pull/2763) by [@12joan](https://github.com/12joan) –
+- [#2763](https://github.com/sewellstephens/late/pull/2763) by [@12joan](https://github.com/12joan) –
   - Migrate store from `jotai@1` to `jotai@2`
     - New dependency: `jotai-x`. See <https://github.com/udecode/jotai-x>
     - Accessing a store without an explicit provider component is no longer supported. Attempting to do so will result in a warning in the console: `Tried to access jotai store '${storeName}' outside of a matching provider.`
@@ -77,13 +77,13 @@ None (CI release issue)
     - `StateActions` -> `ZustandStateActions`
     - `StoreApi` -> `ZustandStoreApi`
     - `createStore` -> `createZustandStore`
-    - Note that these exports are deprecated and should not be used in new code. They may be removed in a future version of Plate.
+    - Note that these exports are deprecated and should not be used in new code. They may be removed in a future version of Late.
 
 ## @sewellstephens/plate-resizable@27.0.0
 
 ### Major Changes
 
-- [#2763](https://github.com/udecode/plate/pull/2763) by [@12joan](https://github.com/12joan) –
+- [#2763](https://github.com/sewellstephens/late/pull/2763) by [@12joan](https://github.com/12joan) –
   - Migrate store to `jotai@2`
   - Resizable components must now be wrapped inside a `ResizableProvider`
 
@@ -93,7 +93,7 @@ None (CI release issue)
 
 ### Major Changes
 
-- [#2760](https://github.com/udecode/plate/pull/2760) by [@12joan](https://github.com/12joan) –
+- [#2760](https://github.com/sewellstephens/late/pull/2760) by [@12joan](https://github.com/12joan) –
   - Renamed the `comments` prop on CommentsProvider to `initialComments` to reflect the fact that updating its value after the initial render has no effect
   - Removed the following props from CommentsProvider, since they represent the internal state of the comments plugin and should not be controlled externally:
     - `activeCommentId`
@@ -111,7 +111,7 @@ None (CI release issue)
 
 ### Major Changes
 
-- [#2733](https://github.com/udecode/plate/pull/2733) by [@dimaanj](https://github.com/dimaanj) –
+- [#2733](https://github.com/sewellstephens/late/pull/2733) by [@dimaanj](https://github.com/dimaanj) –
   - [Breaking] `serializeHtml`: replaced option `slateProps` by `plateProps`.
 
 # 25.0.1
@@ -120,14 +120,14 @@ None (CI release issue)
 
 ### Major Changes
 
-- [#2729](https://github.com/udecode/plate/pull/2729) by [@12joan](https://github.com/12joan) – **This is a breaking change meant to be part of v25, hence the patch.**
+- [#2729](https://github.com/sewellstephens/late/pull/2729) by [@12joan](https://github.com/12joan) – **This is a breaking change meant to be part of v25, hence the patch.**
   On `deserializeHtml`, replace `stripWhitespace` with `collapseWhiteSpace`, defaulting to true. The `collapseWhiteSpace` option aims to parse white space in HTML according to the HTML specification, ensuring greater accuracy when pasting HTML from browsers.
 
 ## @sewellstephens/plate-comments@25.0.0
 
 ### Major Changes
 
-- [#2725](https://github.com/udecode/plate/pull/2725) by [@EandrewJones](https://github.com/EandrewJones) – Remove `useCommentValue`, which was redundant with the hooks applied automatically in `CommentEditTextarea.tsx`.
+- [#2725](https://github.com/sewellstephens/late/pull/2725) by [@EandrewJones](https://github.com/EandrewJones) – Remove `useCommentValue`, which was redundant with the hooks applied automatically in `CommentEditTextarea.tsx`.
 
 # 24.0.0
 
@@ -135,36 +135,36 @@ None (CI release issue)
 
 ### Major Changes
 
-- [#2629](https://github.com/udecode/plate/pull/2629) by [@zbeyens](https://github.com/zbeyens) –
+- [#2629](https://github.com/sewellstephens/late/pull/2629) by [@zbeyens](https://github.com/zbeyens) –
 
-  - [**Breaking**] Rename `Plate` to `PlateContent`.
-  - [**Breaking**] Rename `PlateProvider` to `Plate`.
-  - [**Breaking**] Rendering `PlateContent` is now required in `Plate`. This allows you to choose where to render the editor next to other components like toolbar. Example:
+  - [**Breaking**] Rename `Late` to `LateContent`.
+  - [**Breaking**] Rename `LateProvider` to `Late`.
+  - [**Breaking**] Rendering `LateContent` is now required in `Late`. This allows you to choose where to render the editor next to other components like toolbar. Example:
 
   ```tsx
   // Before
-  <Plate />
+  <Late />
   // or
-  <PlateProvider>
-    <Plate />
-  </PlateProvider>
+  <LateProvider>
+    <Late />
+  </LateProvider>
 
   // After
-  <Plate>
-    <PlateContent />
-  </Plate>
+  <Late>
+    <LateContent />
+  </Late>
   ```
 
-  - [**Breaking**] Remove provider props such as `plugins` from `PlateContent`. These props should be passed to `Plate`.
-  - [**Breaking**] Remove `editableProps` prop from `PlateContent`. Move these as`PlateContent` props.
-  - [**Breaking**] Remove `children` prop from `PlateContent`. Render instead these components after `PlateContent`.
-  - [**Breaking**] Remove `firstChildren` prop from `PlateContent`. Render instead these components before `PlateContent`.
-  - [**Breaking**] Remove `editableRef` prop from `PlateContent`. Use `ref` instead.
-  - [**Breaking**] Remove `withPlateProvider`.
-  - [**Breaking**] Rename `usePlateEditorRef` to `useEditorRef`.
-  - [**Breaking**] Rename `usePlateEditorState` to `useEditorState`.
-  - [**Breaking**] Rename `usePlateReadOnly` to `useEditorReadOnly`. This hook can be used below `Plate` while `useReadOnly` can only be used in node components.
-  - [**Breaking**] Rename `usePlateSelection` to `useEditorSelection`.
+  - [**Breaking**] Remove provider props such as `plugins` from `LateContent`. These props should be passed to `Late`.
+  - [**Breaking**] Remove `editableProps` prop from `LateContent`. Move these as`LateContent` props.
+  - [**Breaking**] Remove `children` prop from `LateContent`. Render instead these components after `LateContent`.
+  - [**Breaking**] Remove `firstChildren` prop from `LateContent`. Render instead these components before `LateContent`.
+  - [**Breaking**] Remove `editableRef` prop from `LateContent`. Use `ref` instead.
+  - [**Breaking**] Remove `withLateProvider`.
+  - [**Breaking**] Rename `useLateEditorRef` to `useEditorRef`.
+  - [**Breaking**] Rename `useLateEditorState` to `useEditorState`.
+  - [**Breaking**] Rename `useLateReadOnly` to `useEditorReadOnly`. This hook can be used below `Late` while `useReadOnly` can only be used in node components.
+  - [**Breaking**] Rename `useLateSelection` to `useEditorSelection`.
   - [**Breaking**] Rename store attributes `keyDecorate`, `keyEditor` and `keySelection` to `versionDecorate`, `versionEditor` and `versionSelection`. These are now numbers incremented on each change.
   - [**Breaking**] Rename store attribute `isRendered` to `isMounted`.
 
@@ -174,7 +174,7 @@ None (CI release issue)
 
 ### Major Changes
 
-- [#2537](https://github.com/udecode/plate/pull/2537) by [@haydencarlson](https://github.com/haydencarlson) – `MediaEmbedElement` is now more headless with a smaller bundle size.
+- [#2537](https://github.com/sewellstephens/late/pull/2537) by [@haydencarlson](https://github.com/haydencarlson) – `MediaEmbedElement` is now more headless with a smaller bundle size.
   Update the following components:
 
   - `npx @sewellstephens/plate-ui@latest add media-embed-element`
@@ -205,7 +205,7 @@ None (CI release issue)
 
 ### Major Changes
 
-- [#2541](https://github.com/udecode/plate/pull/2541) by [@zbeyens](https://github.com/zbeyens) –
+- [#2541](https://github.com/sewellstephens/late/pull/2541) by [@zbeyens](https://github.com/zbeyens) –
   - Package renamed to `@sewellstephens/plate-resizable`.
   - `ResizeHandle` is now fully headless: no style is applied by default. Add your own `Resizable`, `ResizeHandle` components:
     - `npx @sewellstephens/plate-ui@latest add resizable`
@@ -224,18 +224,18 @@ Headless UI.
 
 ### Major Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – This package is now a CLI to generate components. Install it as a dev dependency. See <https://platejs.org/docs/components/cli>.
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – This package is now a CLI to generate components. Install it as a dev dependency. See <https://sewellstephens.github.io/late/docs/components/cli>.
 
 Migration:
 
-- [Manual installation](https://platejs.org/docs/components/installation/manual).
-- For each unresolved import not listed in the following major changes (components from `@sewellstephens/plate-ui-x`), generate the component using the [CLI](https://platejs.org/docs/components/cli).
+- [Manual installation](https://sewellstephens.github.io/late/docs/components/installation/manual).
+- For each unresolved import not listed in the following major changes (components from `@sewellstephens/plate-ui-x`), generate the component using the [CLI](https://sewellstephens.github.io/late/docs/components/cli).
 
 ## @sewellstephens/plate-comments@22.0.0
 
 ### Major Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
   - `AccountCircleIcon`
   - `CheckIcon`
   - `MoreVertIcon`
@@ -246,13 +246,13 @@ Migration:
   - `CommentLinkDialogCloseButton`
   - `CommentLinkDialogCopyLink`
   - `CommentLinkDialogInput`
-  - `PlateCommentLeaf` for `useCommentLeafState`
+  - `LateCommentLeaf` for `useCommentLeafState`
 
 ## @sewellstephens/plate-dnd@22.0.0
 
 ### Major Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
   - `Draggable`
   - `DraggableBlock`
   - `DraggableBlockToolbar`
@@ -266,7 +266,7 @@ Migration:
 
 ### Major Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
   - `FloatingLink`
   - `FloatingLinkEditButton`
   - `FloatingLinkTextInput`
@@ -281,15 +281,15 @@ Migration:
 
 ### Major Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
   - `MediaEmbed`
 
 ## @sewellstephens/plate@22.0.0
 
 ### Major Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Plate 2.0 – Headless UI.
-  Read the docs about the new UI pattern: <https://platejs.org/docs/components>.
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Late 2.0 – Headless UI.
+  Read the docs about the new UI pattern: <https://sewellstephens.github.io/late/docs/components>.
 
   - Removed `@sewellstephens/plate-ui` dependency.
   - Removed `@sewellstephens/plate-emoji` dependency. You can install it separately.
@@ -340,7 +340,7 @@ Migration:
 
 ### Major Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Upgraded peer dependencies:
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Upgraded peer dependencies:
   - `slate-react: >=0.95.0`
     Removed:
   - `useElementPrpos`
@@ -352,7 +352,7 @@ Migration:
 
 ### Major Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
   - `TableCellElement`
   - `TableCellElementResizableWrapper`
   - `TableCellElementRoot`
@@ -377,7 +377,7 @@ Migration:
 
 ### Major Changes
 
-- [#2369](https://github.com/udecode/plate/pull/2369) by [@zbeyens](https://github.com/zbeyens) – Support `slate@0.94.0`, `slate-react@0.94.0` and `slate-history@0.93.0` by upgrading the peer dependencies.
+- [#2369](https://github.com/sewellstephens/late/pull/2369) by [@zbeyens](https://github.com/zbeyens) – Support `slate@0.94.0`, `slate-react@0.94.0` and `slate-history@0.93.0` by upgrading the peer dependencies.
 
 # 20.0.0
 
@@ -385,12 +385,12 @@ Migration:
 
 ### Major Changes
 
-- [`0077402`](https://github.com/udecode/plate/commit/00774029236d37737abdadf49b074e613e290792) by [@zbeyens](https://github.com/zbeyens) –
+- [`0077402`](https://github.com/sewellstephens/late/commit/00774029236d37737abdadf49b074e613e290792) by [@zbeyens](https://github.com/zbeyens) –
   - This package has been split into multiple packages for separation of concerns and decoupled versioning:
     - `@sewellstephens/utils` is a collection of miscellaneous utilities. Can be used by any project.
     - `@sewellstephens/slate` is a collection of `slate` experimental features and bug fixes that may be moved into `slate` one day. It's essentially composed of the generic types. Can be used by vanilla `slate` consumers without plate.
     - `@sewellstephens/slate-react` is a collection of `slate-react` experimental features and bug fixes that that may be moved into `slate-react` one day. It's essentially composed of the generic types. Can be used by vanilla `slate-react` consumers without plate.
-    - `@sewellstephens/plate-core` is the minimalistic core of plate. It essentially includes `Plate`, `PlateProvider` and their dependencies. Note this package is not dependent on the `*-utils` packages.
+    - `@sewellstephens/plate-core` is the minimalistic core of plate. It essentially includes `Late`, `LateProvider` and their dependencies. Note this package is not dependent on the `*-utils` packages.
     - `@sewellstephens/slate-utils` is a collection of utils depending on `@sewellstephens/slate`. Can be used by vanilla `slate` consumers without plate.
     - `@sewellstephens/plate-utils` is a collection of utils depending on `@sewellstephens/slate-react` and `@sewellstephens/plate-core`
     - `@sewellstephens/plate-common` re-exports the 6 previous packages and is a dependency of all the other packages. It's basically replacing `@udecore/plate-core` as a bundle.
@@ -403,7 +403,7 @@ Migration:
 
 ### Major Changes
 
-- [#2240](https://github.com/udecode/plate/pull/2240) by [@OliverWales](https://github.com/OliverWales) –
+- [#2240](https://github.com/sewellstephens/late/pull/2240) by [@OliverWales](https://github.com/OliverWales) –
   - Add `allowedSchemes` plugin option
     - Any URL schemes other than `http(s)`, `mailto` and `tel` must be added to `allowedSchemes`, otherwise they will not be included in links
 
@@ -411,7 +411,7 @@ Migration:
 
 ### Major Changes
 
-- [#2251](https://github.com/udecode/plate/pull/2251) by [@zbeyens](https://github.com/zbeyens) –
+- [#2251](https://github.com/sewellstephens/late/pull/2251) by [@zbeyens](https://github.com/zbeyens) –
   - `TablePlugin` option `disableUnsetSingleColSize` has been renamed and inverted into `enableUnsetSingleColSize`. New default is disabled. **Migration**:
     - if using `disableUnsetSingleColSize: true`, the option can be removed
     - if using `disableUnsetSingleColSize: false`, use `enableUnsetSingleColSize: true`
@@ -421,7 +421,7 @@ Migration:
 
 ### Major Changes
 
-- [#2237](https://github.com/udecode/plate/pull/2237) by [@tmorane](https://github.com/tmorane) – Unstyled logic has been moved to `@sewellstephens/plate-dnd`
+- [#2237](https://github.com/sewellstephens/late/pull/2237) by [@tmorane](https://github.com/tmorane) – Unstyled logic has been moved to `@sewellstephens/plate-dnd`
 
   ```ts
   // before
@@ -431,10 +431,10 @@ Migration:
   import { createDndPlugin } from '@sewellstephens/plate-dnd';
   ```
 
-  Only `withPlateDraggable`, `withPlateDraggables` and `PlateDraggable` are left in `@sewellstephens/plate-ui-dnd`.
+  Only `withLateDraggable`, `withLateDraggables` and `LateDraggable` are left in `@sewellstephens/plate-ui-dnd`.
   Renamed:
 
-  - `withDraggables` -> `withPlateDraggables`. In the second parameter, draggable props options have been moved under `draggableProps`:
+  - `withDraggables` -> `withLateDraggables`. In the second parameter, draggable props options have been moved under `draggableProps`:
 
   ```tsx
   // before
@@ -456,17 +456,17 @@ Migration:
 
 ### Major Changes
 
-- [#2251](https://github.com/udecode/plate/pull/2251) by [@zbeyens](https://github.com/zbeyens) – Headless components and hooks moved to `@sewellstephens/plate-table`, so the following components have been renamed:
-  - `TableElement` -> `PlateTableElement`
+- [#2251](https://github.com/sewellstephens/late/pull/2251) by [@zbeyens](https://github.com/zbeyens) – Headless components and hooks moved to `@sewellstephens/plate-table`, so the following components have been renamed:
+  - `TableElement` -> `LateTableElement`
     - removed table border to set it at the cell level
     - `margin-left: 1px` to support cell borders
     - if all columns have a fixed size, the table will have a dynamic width instead of always 100%
-  - `TableRowElement` -> `PlateTableRowElement`
-  - `TableCellElement` -> `PlateTableCellElement`
+  - `TableRowElement` -> `LateTableRowElement`
+  - `TableCellElement` -> `LateTableCellElement`
     - removed td border in favor of td::before. The latter is responsible of having the border and the selected background color.
     - z-index: td is 0, td::before is 10, td::before in selected state is 20, handle is 30, handle resize is 40.
     - removed `selectedCell` div in favor of `::before`
-  - `TablePopover` -> `PlateTablePopover`
+  - `TablePopover` -> `LateTablePopover`
     Styled props have been removed.
 
 # 19.0.0
@@ -475,7 +475,7 @@ Migration:
 
 ### Major Changes
 
-- [#2097](https://github.com/udecode/plate/pull/2097) by [@zbeyens](https://github.com/zbeyens) –
+- [#2097](https://github.com/sewellstephens/late/pull/2097) by [@zbeyens](https://github.com/zbeyens) –
   - upgrade deps, including typescript support for the new editor methods:
   ```json
   // from
@@ -492,7 +492,7 @@ Migration:
 
 ### Major Changes
 
-- [#2097](https://github.com/udecode/plate/pull/2097) by [@zbeyens](https://github.com/zbeyens) –
+- [#2097](https://github.com/sewellstephens/late/pull/2097) by [@zbeyens](https://github.com/zbeyens) –
   - due to esm issues, dnd plugin is not part of plate package anymore. To use it, install `@sewellstephens/plate-ui-dnd`
   ```ts
   // before
@@ -518,7 +518,7 @@ Migration:
 
 ### Major Changes
 
-- [#1889](https://github.com/udecode/plate/pull/1889) by [@zbeyens](https://github.com/zbeyens) –
+- [#1889](https://github.com/sewellstephens/late/pull/1889) by [@zbeyens](https://github.com/zbeyens) –
   - `@sewellstephens/plate-selection` package moved out from `@sewellstephens/plate` because of <https://github.com/Simonwep/selection/issues/124>
   - Migration:
     - If not using `createBlockSelectionPlugin`, no migration is needed.
@@ -530,90 +530,90 @@ Migration:
 
 ### Major Changes
 
-- [#1871](https://github.com/udecode/plate/pull/1871) by [@zbeyens](https://github.com/zbeyens) –
+- [#1871](https://github.com/sewellstephens/late/pull/1871) by [@zbeyens](https://github.com/zbeyens) –
 
-  - `usePlateStore`:
-    - Plate no longer has a global store containing all the editor states (zustand). Each editor store is now defined in a React context tree ([jotai](https://github.com/pmndrs/jotai)). If you need to access all the editor states at once (as you could do before), you'll need to build that layer yourself.
-    - Plate store is now accessible only below `PlateProvider` or `Plate` (provider-less mode). It means it's no longer accessible outside of a Plate React tree. If you have such use-case, you'll need to build your own layer to share the state between your components.
-    - You can nest many `PlateProvider` with different scopes (`id` prop). Default scope is `PLATE_SCOPE`
+  - `useLateStore`:
+    - Late no longer has a global store containing all the editor states (zustand). Each editor store is now defined in a React context tree ([jotai](https://github.com/pmndrs/jotai)). If you need to access all the editor states at once (as you could do before), you'll need to build that layer yourself.
+    - Late store is now accessible only below `LateProvider` or `Late` (provider-less mode). It means it's no longer accessible outside of a Late React tree. If you have such use-case, you'll need to build your own layer to share the state between your components.
+    - You can nest many `LateProvider` with different scopes (`id` prop). Default scope is `PLATE_SCOPE`
     - Hook usage:
-      - `const value = usePlateSelectors(id).value()`
-      - `const setValue = usePlateActions(id).value()`
-      - `const [value, setValue] = usePlateStates(id).value()`
+      - `const value = useLateSelectors(id).value()`
+      - `const setValue = useLateActions(id).value()`
+      - `const [value, setValue] = useLateStates(id).value()`
     - removed from the store:
       - `editableProps`, use the props instead
       - `enabled`, use conditional rendering instead
       - `isReady`, no point anymore as it's now directly ready
-    - `useEventPlateId` is still used to get the last focused editor id.
+    - `useEventLateId` is still used to get the last focused editor id.
     - Functions are stored in an object `{ fn: <here> }`
-      - `const setOnChange = usePlateActions(id).onChange()`
+      - `const setOnChange = useLateActions(id).onChange()`
       - `setOnChange({ fn: newOnChange })`
-  - `Plate`
-    - if rendered below `PlateProvider`, it will render `PlateSlate > PlateEditable`
-    - if rendered without `PlateProvider`, it will render `PlateProvider > PlateSlate > PlateEditable`
+  - `Late`
+    - if rendered below `LateProvider`, it will render `LateSlate > LateEditable`
+    - if rendered without `LateProvider`, it will render `LateProvider > LateSlate > LateEditable`
     - default `id` is no longer `main`, it's now `PLATE_SCOPE`
-  - `PlateProvider`
+  - `LateProvider`
     - Each provider has an optional `scope`, so you can have multiple providers in the same React tree and use the plate hooks with the corresponding `scope`.
-    - Plate effects are now run in `PlateProvider`
+    - Late effects are now run in `LateProvider`
       - `initialValue, value, editor, normalizeInitialValue, normalizeEditor` are no longer defined in an effect (SSR support)
     - Props:
-      - now extends the previous `Plate` props
-      - if using `PlateProvider`, set the provider props on it instead of `Plate`. `Plate` would only need `editableProps` and `PlateEditableExtendedProps`
-      - if not using it, set the provider props on `Plate`
+      - now extends the previous `Late` props
+      - if using `LateProvider`, set the provider props on it instead of `Late`. `Late` would only need `editableProps` and `LateEditableExtendedProps`
+      - if not using it, set the provider props on `Late`
 
   ```tsx
   // Before
-  <PlateProvider>
+  <LateProvider>
     <Toolbar>
       <AlignToolbarButtons />
     </Toolbar>
 
-    <Plate<MyValue> editableProps={editableProps} <MyValue> initialValue={alignValue} plugins={plugins} />
-  </PlateProvider>
+    <Late<MyValue> editableProps={editableProps} <MyValue> initialValue={alignValue} plugins={plugins} />
+  </LateProvider>
 
   // After
-  <PlateProvider<MyValue> initialValue={alignValue} plugins={plugins}>
+  <LateProvider<MyValue> initialValue={alignValue} plugins={plugins}>
     <Toolbar>
       <AlignToolbarButtons />
     </Toolbar>
 
-    <Plate<MyValue> editableProps={editableProps} />
-  </PlateProvider>
+    <Late<MyValue> editableProps={editableProps} />
+  </LateProvider>
 
   // After (provider-less mode)
-  <Plate<MyValue> editableProps={editableProps} initialValue={alignValue} plugins={plugins} />
+  <Late<MyValue> editableProps={editableProps} initialValue={alignValue} plugins={plugins} />
   ```
 
   - types:
     - store `editor` is no longer nullable
     - store `value` is no longer nullable
-    - `id` type is now `PlateId`
+    - `id` type is now `LateId`
   - renamed:
     - `SCOPE_PLATE` to `PLATE_SCOPE`
-    - `getEventEditorId` to `getEventPlateId`
-    - `getPlateActions().resetEditor` to `useResetPlateEditor()`
+    - `getEventEditorId` to `getEventLateId`
+    - `getLateActions().resetEditor` to `useResetLateEditor()`
   - removed:
     - `plateIdAtom`
-    - `usePlateId` for `usePlateSelectors().id()`
-    - `EditablePlugins` for `PlateEditable`
+    - `useLateId` for `useLateSelectors().id()`
+    - `EditablePlugins` for `LateEditable`
     - `SlateChildren`
-    - `PlateEventProvider` for `PlateProvider`
-    - `withPlateEventProvider` for `withPlateProvider`
-    - `usePlate`
-    - `usePlatesStoreEffect`
-    - `useEventEditorId` for `useEventPlateId`
-    - `platesStore, platesActions, platesSelectors, usePlatesSelectors`
-    - `getPlateActions` for `usePlateActions`
-    - `getPlateSelectors` for `usePlateSelectors`
-    - `getPlateEditorRef` for `usePlateEditorRef`
-    - `getPlateStore, usePlateStore`
-    - `EditorId` for `PlateId`
+    - `LateEventProvider` for `LateProvider`
+    - `withLateEventProvider` for `withLateProvider`
+    - `useLate`
+    - `useLatesStoreEffect`
+    - `useEventEditorId` for `useEventLateId`
+    - `platesStore, platesActions, platesSelectors, useLatesSelectors`
+    - `getLateActions` for `useLateActions`
+    - `getLateSelectors` for `useLateSelectors`
+    - `getLateEditorRef` for `useLateEditorRef`
+    - `getLateStore, useLateStore`
+    - `EditorId` for `LateId`
 
 ## @sewellstephens/plate-code-block@17.0.0
 
 ### Major Changes
 
-- [#1871](https://github.com/udecode/plate/pull/1871) by [@zbeyens](https://github.com/zbeyens) –
+- [#1871](https://github.com/sewellstephens/late/pull/1871) by [@zbeyens](https://github.com/zbeyens) –
   - Removed these imports because of build errors:
     - `prismjs/components/prism-django`
     - `prismjs/components/prism-ejs`
@@ -623,8 +623,8 @@ Migration:
 
 ### Major Changes
 
-- [#1871](https://github.com/udecode/plate/pull/1871) by [@zbeyens](https://github.com/zbeyens) –
-  - Removed `[ELEMENT_CODE_BLOCK]: CodeBlockElement` from Plate UI. You can define it in your app.
+- [#1871](https://github.com/sewellstephens/late/pull/1871) by [@zbeyens](https://github.com/zbeyens) –
+  - Removed `[ELEMENT_CODE_BLOCK]: CodeBlockElement` from Late UI. You can define it in your app.
 
 # 16.0.0
 
@@ -634,14 +634,14 @@ Migration:
 
 ### Major Changes
 
-- [#1721](https://github.com/udecode/plate/pull/1721) by [@zbeyens](https://github.com/zbeyens) –
+- [#1721](https://github.com/sewellstephens/late/pull/1721) by [@zbeyens](https://github.com/zbeyens) –
   - deprecate `@sewellstephens/plate-image` and `@sewellstephens/plate-media-embed`, those got merged into `@sewellstephens/plate-media`
 
 ## @sewellstephens/plate-media@16.0.0
 
 ### Major Changes
 
-- [#1721](https://github.com/udecode/plate/pull/1721) by [@zbeyens](https://github.com/zbeyens) –
+- [#1721](https://github.com/sewellstephens/late/pull/1721) by [@zbeyens](https://github.com/zbeyens) –
   - removed:
     - `useImageElement` for `useElement`
     - `MediaEmbedUrlInput` for `FloatingMediaUrlInput`
@@ -657,9 +657,9 @@ Migration:
 
 ### Major Changes
 
-- [#1721](https://github.com/udecode/plate/pull/1721) by [@zbeyens](https://github.com/zbeyens) –
+- [#1721](https://github.com/sewellstephens/late/pull/1721) by [@zbeyens](https://github.com/zbeyens) –
 - `TableElementBase` props:
-  - replace `onRenderContainer` by `floatingOptions` or by replacing `ELEMENT_TABLE` in the `createPlateUI` function.
+  - replace `onRenderContainer` by `floatingOptions` or by replacing `ELEMENT_TABLE` in the `createLateUI` function.
 - `TablePopover` is now a floating instead of tippy
 - deps:
   - replaced `plate-ui-popover` by `plate-floating`
@@ -668,7 +668,7 @@ Migration:
 
 ### Major Changes
 
-- [#1721](https://github.com/udecode/plate/pull/1721) by [@zbeyens](https://github.com/zbeyens) –
+- [#1721](https://github.com/sewellstephens/late/pull/1721) by [@zbeyens](https://github.com/zbeyens) –
 - deprecate `@sewellstephens/plate-ui-popover` for `@sewellstephens/plate-floating`
 
 # 15.0.0
@@ -677,7 +677,7 @@ Migration:
 
 ### Major Changes
 
-- [#1677](https://github.com/udecode/plate/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
+- [#1677](https://github.com/sewellstephens/late/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
   - deps:
     - replaced `@sewellstephens/plate-ui-popper` by `@sewellstephens/plate-floating`
   - `comboboxStore`:
@@ -688,7 +688,7 @@ Migration:
 
 ### Major Changes
 
-- [#1677](https://github.com/udecode/plate/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
+- [#1677](https://github.com/sewellstephens/late/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
   - `createLinkPlugin`
     - removed `onKeyDownLink` for floating link
     - removed `hotkey` for `triggerFloatingLinkHotkeys`
@@ -702,7 +702,7 @@ Migration:
 
 ### Major Changes
 
-- [#1677](https://github.com/udecode/plate/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
+- [#1677](https://github.com/sewellstephens/late/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
 - remove `addRow` for `insertTableRow`
 - remove `addColumn` for `insertTableColumn`
 
@@ -710,14 +710,14 @@ Migration:
 
 ### Major Changes
 
-- [#1677](https://github.com/udecode/plate/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
+- [#1677](https://github.com/sewellstephens/late/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
   - remove `@sewellstephens/plate-ui-popper` dep for `@sewellstephens/plate-floating`
 
 ## @sewellstephens/plate-ui-button@15.0.0
 
 ### Major Changes
 
-- [#1677](https://github.com/udecode/plate/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
+- [#1677](https://github.com/sewellstephens/late/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
   - moved `Button` to `@sewellstephens/plate-button`
   - `Button` is now unstyled
 
@@ -725,14 +725,14 @@ Migration:
 
 ### Major Changes
 
-- [#1677](https://github.com/udecode/plate/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
+- [#1677](https://github.com/sewellstephens/late/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
 - deprecated, use instead `@sewellstephens/plate-floating`
 
 ## @sewellstephens/plate-ui-toolbar@15.0.0
 
 ### Major Changes
 
-- [#1677](https://github.com/udecode/plate/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
+- [#1677](https://github.com/sewellstephens/late/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
 - remove `@sewellstephens/plate-ui-popper` and `react-popper` deps for `@sewellstephens/plate-floating`
 - `BalloonToolbarProps`:
   - removed `popperOptions` for `floatingOptions`
@@ -744,7 +744,7 @@ Migration:
 
 ### Major Changes
 
-- [#1633](https://github.com/udecode/plate/pull/1633) by [@tjramage](https://github.com/tjramage) – Moved `serializeHtml` and its utils to `@sewellstephens/plate-serializer-html` as it has a new dependency: [html-entities](https://www.npmjs.com/package/html-entities).
+- [#1633](https://github.com/sewellstephens/late/pull/1633) by [@tjramage](https://github.com/tjramage) – Moved `serializeHtml` and its utils to `@sewellstephens/plate-serializer-html` as it has a new dependency: [html-entities](https://www.npmjs.com/package/html-entities).
   - If you're using `@sewellstephens/plate`, no migration is needed
   - Otherwise, import it from `@sewellstephens/plate-serializer-html`
 
@@ -754,7 +754,7 @@ Migration:
 
 ### Major Changes
 
-- `Plate` children are now rendered as last children of `Slate` (previously first children). To reproduce the previous behavior, move `children` to `firstChildren`
+- `Late` children are now rendered as last children of `Slate` (previously first children). To reproduce the previous behavior, move `children` to `firstChildren`
 
 ## @sewellstephens/plate@13.0.0
 
@@ -762,7 +762,7 @@ Migration:
 
 ### Major Changes
 
-- [#1585](https://github.com/udecode/plate/pull/1585) by [@zbeyens](https://github.com/zbeyens) – Removed `@sewellstephens/plate-juice` from `@sewellstephens/plate`. Install it if using `@sewellstephens/plate-serializer-docx`:
+- [#1585](https://github.com/sewellstephens/late/pull/1585) by [@zbeyens](https://github.com/zbeyens) – Removed `@sewellstephens/plate-juice` from `@sewellstephens/plate`. Install it if using `@sewellstephens/plate-serializer-docx`:
   ```bash
   yarn install @sewellstephens/plate-juice
   ```
@@ -775,7 +775,7 @@ Migration:
 
 ### Major Changes
 
-- [#1585](https://github.com/udecode/plate/pull/1585) by [@zbeyens](https://github.com/zbeyens) – Moved `react-dnd react-dnd-html5-backend` deps to peer-dependencies. Install these if using `@sewellstephens/plate-ui-dnd`:
+- [#1585](https://github.com/sewellstephens/late/pull/1585) by [@zbeyens](https://github.com/zbeyens) – Moved `react-dnd react-dnd-html5-backend` deps to peer-dependencies. Install these if using `@sewellstephens/plate-ui-dnd`:
   ```bash
   yarn install react-dnd react-dnd-html5-backend
   ```
@@ -786,7 +786,7 @@ Migration:
 
 ### Major Changes
 
-- [#1579](https://github.com/udecode/plate/pull/1579) by [@zbeyens](https://github.com/zbeyens) – renamed:
+- [#1579](https://github.com/sewellstephens/late/pull/1579) by [@zbeyens](https://github.com/zbeyens) – renamed:
 - `useDndBlock` options:
   - `blockRef` -> `nodeRef`
   - `removePreview` -> `preview.disable`
@@ -820,7 +820,7 @@ Migration:
 
 ### Major Changes
 
-- [#1500](https://github.com/udecode/plate/pull/1500) by [@zbeyens](https://github.com/zbeyens) – Thanks @ianstormtaylor for the initial work on https://github.com/ianstormtaylor/slate/pull/4177.
+- [#1500](https://github.com/sewellstephens/late/pull/1500) by [@zbeyens](https://github.com/zbeyens) – Thanks @ianstormtaylor for the initial work on https://github.com/ianstormtaylor/slate/pull/4177.
 
   This release includes major changes to plate and slate types:
 
@@ -830,7 +830,7 @@ Migration:
 
 **Define your custom types**
 
-- Follow https://platejs.org/docs/typescript example.
+- Follow https://sewellstephens.github.io/late/docs/typescript example.
 
 **Slate types**
 
@@ -851,18 +851,18 @@ Those Slate types should be replaced by the new types:
 
 Those Slate functions should be replaced by the new typed ones:
 
-- As the new editor type is not matching the slate ones, all `Transforms`, `Editor`, `Node`, `Element`, `Text`, `HistoryEditor`, `ReactEditor` functions should be replaced: The whole API has been typed into Plate core. See https://github.com/udecode/plate/packages/core/src/slate
+- As the new editor type is not matching the slate ones, all `Transforms`, `Editor`, `Node`, `Element`, `Text`, `HistoryEditor`, `ReactEditor` functions should be replaced: The whole API has been typed into Late core. See https://github.com/sewellstephens/late/packages/core/src/slate
 - `createEditor` -> `createTEditor`
 - `withReact` -> `withTReact`
 - `withHistory` -> `withTHistory`
 
 **Generic types**
 
-- `<T = {}>` could be used to extend the editor type. It is now replaced by `<E extends PlateEditor<V> = PlateEditor<V>>` to customize the whole editor type.
-- When the plugin type is customizable, these generics are used: `<P = PluginOptions, V extends Value = Value, E extends PlateEditor<V> = PlateEditor<V>>`, where `P` is the plugin options type.
-- `Editor` functions are using `<V extends Value>` generic, where `V` can be a custom editor value type used in `PlateEditor<V>`.
+- `<T = {}>` could be used to extend the editor type. It is now replaced by `<E extends LateEditor<V> = LateEditor<V>>` to customize the whole editor type.
+- When the plugin type is customizable, these generics are used: `<P = PluginOptions, V extends Value = Value, E extends LateEditor<V> = LateEditor<V>>`, where `P` is the plugin options type.
+- `Editor` functions are using `<V extends Value>` generic, where `V` can be a custom editor value type used in `LateEditor<V>`.
 - `Editor` functions returning a node are using `<N extends ENode<V>, V extends Value = Value>` generics, where `N` can be a custom returned node type.
-- `Editor` callbacks (e.g. a plugin option) are using `<V extends Value = Value, E extends PlateEditor<V> = PlateEditor<V>>` generics, where `E` can be a custom editor type.
+- `Editor` callbacks (e.g. a plugin option) are using `<V extends Value = Value, E extends LateEditor<V> = LateEditor<V>>` generics, where `E` can be a custom editor type.
 - `Node` functions returning a node are using `<N extends Node, R extends TNode = TNode>` generics.
 - These generics are used by `<V extends Value, K extends keyof EMarks<V>>`: `getMarks`, `isMarkActive`, `removeMark`, `setMarks`, `ToggleMarkPlugin`, `addMark`, `removeEditorMark`
 - `WithOverride` is a special type case as it can return a new editor type:
@@ -870,21 +870,21 @@ Those Slate functions should be replaced by the new typed ones:
   ```tsx
   // before
   export type WithOverride<T = {}, P = {}> = (
-    editor: PlateEditor<T>,
-    plugin: WithPlatePlugin<T, P>
-  ) => PlateEditor<T>;
+    editor: LateEditor<T>,
+    plugin: WithLatePlugin<T, P>
+  ) => LateEditor<T>;
 
   // after - where E is the Editor type (input), and EE is the Extended Editor type (output)
   export type WithOverride<
     P = PluginOptions,
     V extends Value = Value,
-    E extends PlateEditor<V> = PlateEditor<V>,
+    E extends LateEditor<V> = LateEditor<V>,
     EE extends E = E,
-  > = (editor: E, plugin: WithPlatePlugin<P, V, E>) => EE;
+  > = (editor: E, plugin: WithLatePlugin<P, V, E>) => EE;
   ```
 
 - `type TEditor<V extends Value>`
-- `type PlateEditor<V extends Value>`
+- `type LateEditor<V extends Value>`
 
 **Renamed functions**
 
@@ -950,54 +950,54 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
 
 ### Major Changes
 
-- [#1377](https://github.com/udecode/plate/pull/1377) by [@zbeyens](https://github.com/zbeyens) – Before, `BalloonToolbar` could be outside `Plate`. Now, `BallonToolbar` should be a child of `Plate` to support multiple editors.
+- [#1377](https://github.com/sewellstephens/late/pull/1377) by [@zbeyens](https://github.com/zbeyens) – Before, `BalloonToolbar` could be outside `Late`. Now, `BallonToolbar` should be a child of `Late` to support multiple editors.
 
 # 9.0.0
 
 ## @sewellstephens/plate-core@9.0.0
 
-- [#1303](https://github.com/udecode/plate/pull/1303) by [@zbeyens](https://github.com/zbeyens) –
-  - `Plate`
-    - `editor` prop can now be fully controlled: Plate is not applying `withPlate` on it anymore
-  - `PlatePlugin.deserializeHtml`
+- [#1303](https://github.com/sewellstephens/late/pull/1303) by [@zbeyens](https://github.com/zbeyens) –
+  - `Late`
+    - `editor` prop can now be fully controlled: Late is not applying `withLate` on it anymore
+  - `LatePlugin.deserializeHtml`
     - can't be an array anymore
     - moved `validAttribute`, `validClassName`, `validNodeName`, `validStyle` to `deserializeHtml.rules` property
   - renamed `plateStore` to `platesStore`
   - `platesStore` is now a zustood store
   - `eventEditorStore` is now a zustood store
-  - `getPlateId` now gets the last editor id if not focused or blurred
-    - used by `usePlateEditorRef` and `usePlateEditorState`
+  - `getLateId` now gets the last editor id if not focused or blurred
+    - used by `useLateEditorRef` and `useLateEditorState`
   - removed:
-    - `usePlateEnabled` for `usePlateSelectors(id).enabled()`
-    - `usePlateValue` for `usePlateSelectors(id).value()`
-    - `usePlateActions`:
-      - `resetEditor` for `getPlateActions(id).resetEditor()`
+    - `useLateEnabled` for `useLateSelectors(id).enabled()`
+    - `useLateValue` for `useLateSelectors(id).value()`
+    - `useLateActions`:
+      - `resetEditor` for `getLateActions(id).resetEditor()`
       - `clearState` for `platesActions.unset()`
       - `setInitialState` for `platesActions.set(id)`
-      - `setEditor` for `getPlateActions(id).editor(value)`
-      - `setEnabled` for `getPlateActions(id).enabled(value)`
-      - `setValue` for `getPlateActions(id).value(value)`
-    - `getPlateState`
-    - `usePlateState`
-    - `usePlateKey`
+      - `setEditor` for `getLateActions(id).editor(value)`
+      - `setEnabled` for `getLateActions(id).enabled(value)`
+      - `setValue` for `getLateActions(id).value(value)`
+    - `getLateState`
+    - `useLateState`
+    - `useLateKey`
 
 ## @sewellstephens/plate@9.0.0
 
-- [#1303](https://github.com/udecode/plate/pull/1303) by [@zbeyens](https://github.com/zbeyens) –
+- [#1303](https://github.com/sewellstephens/late/pull/1303) by [@zbeyens](https://github.com/zbeyens) –
 - renamed `plate-x-ui` to `plate-ui-x`: all packages depending on `styled-components` has `plate-ui` prefix
 - renamed `plate-x-serializer` to `plate-serializer-x`
 - is now exporting only these (new) packages:
   - `@sewellstephens/plate-headless`: all unstyled packages
   - `@sewellstephens/plate-ui`: all styled packages
-- renamed `PlateState` to `PlateStoreState`
+- renamed `LateState` to `LateStoreState`
 
 # 8.0.0
 
 ## @sewellstephens/plate-indent-list@8.0.0
 
-- [#1234](https://github.com/udecode/plate/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Removed:
+- [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Removed:
 
-  - `IndentListPluginOptions` for `PlatePlugin`
+  - `IndentListPluginOptions` for `LatePlugin`
 
   Rename:
 
@@ -1005,15 +1005,15 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
 
 ## @sewellstephens/plate-core@8.0.0
 
-- [#1234](https://github.com/udecode/plate/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Breaking changes:
+- [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Breaking changes:
 
-  ### `Plate`
+  ### `Late`
 
   - removed `components` prop:
 
   ```tsx
   // Before
-  <Plate plugins={plugins} components={components} />;
+  <Late plugins={plugins} components={components} />;
 
   // After
   // option 1: use the plugin factory
@@ -1030,14 +1030,14 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
     },
   });
 
-  <Plate plugins={plugins} />;
+  <Late plugins={plugins} />;
   ```
 
   - removed `options` prop:
 
   ```tsx
   // Before
-  <Plate plugins={plugins} options={options} />;
+  <Late plugins={plugins} options={options} />;
 
   // After
   // option 1: use the plugin factory
@@ -1056,10 +1056,10 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
     },
   });
 
-  <Plate plugins={plugins} />;
+  <Late plugins={plugins} />;
   ```
 
-  ### `PlatePlugin`
+  ### `LatePlugin`
 
   - `key`
     - replacing `pluginKey`
@@ -1068,12 +1068,12 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
 
   ```tsx
   // Before
-  export type X<T = {}> = (editor: PlateEditor<T>) => Y;
+  export type X<T = {}> = (editor: LateEditor<T>) => Y;
 
   // After
   export type X<T = {}, P = {}> = (
-    editor: PlateEditor<T>,
-    plugin: WithPlatePlugin<T, P>
+    editor: LateEditor<T>,
+    plugin: WithLatePlugin<T, P>
   ) => Y;
   ```
 
@@ -1081,7 +1081,7 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
 
   ```ts
   type SerializeHtml = RenderFunction<
-    PlateRenderElementProps | PlateRenderLeafProps
+    LateRenderElementProps | LateRenderLeafProps
   >;
   ```
 
@@ -1195,9 +1195,9 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
 
   Renamed:
 
-  - `getPlatePluginType` to `getPluginType`
+  - `getLatePluginType` to `getPluginType`
   - `getEditorOptions` to `getPlugins`
-  - `getPlatePluginOptions` to `getPlugin`
+  - `getLatePluginOptions` to `getPlugin`
   - `pipeOverrideProps` to `pipeInjectProps`
   - `getOverrideProps` to `pluginInjectProps`
   - `serializeHTMLFromNodes` to `serializeHtml`
@@ -1215,25 +1215,25 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
 
   Removed:
 
-  - `usePlateKeys`, `getPlateKeys`
-  - `usePlateOptions` for `getPlugin`
-  - `getPlateSelection` for `getPlateEditorRef().selection`
+  - `useLateKeys`, `getLateKeys`
+  - `useLateOptions` for `getPlugin`
+  - `getLateSelection` for `getLateEditorRef().selection`
   - `flatMapByKey`
   - `getEditableRenderElement` and `getRenderElement` for `pipeRenderElement` and `pluginRenderElement`
   - `getEditableRenderLeaf` and `getRenderLeaf` for `pipeRenderLeaf` and `pluginRenderLeaf`
   - `getInlineTypes`
   - `getVoidTypes`
-  - `getPlatePluginTypes`
-  - `getPlatePluginWithOverrides`
-  - `mapPlatePluginKeysToOptions`
-  - `withDeserializeX` for `PlatePlugin.editor.insertData`
+  - `getLatePluginTypes`
+  - `getLatePluginWithOverrides`
+  - `mapLatePluginKeysToOptions`
+  - `withDeserializeX` for `LatePlugin.editor.insertData`
 
   Changed types:
 
-  - `PlateEditor`:
+  - `LateEditor`:
     - removed `options` for `pluginsByKey`
   - `WithOverride` is not returning an extended editor anymore (input and output editors are assumed to be the same types for simplicity).
-  - `PlateState`
+  - `LateState`
     - renamed `keyChange` to `keyEditor`
     - removed `plugins` for `editor.plugins`
     - removed `pluginKeys`
@@ -1249,68 +1249,68 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
 
   Removed types:
 
-  - `PlatePluginOptions`:
-    - `type` to `PlatePlugin.type`
-    - `component` to `PlatePlugin.component`
-    - `deserialize` to `PlatePlugin.deserializeHtml`
-    - `getNodeProps` to `PlatePlugin.props.nodeProps`
+  - `LatePluginOptions`:
+    - `type` to `LatePlugin.type`
+    - `component` to `LatePlugin.component`
+    - `deserialize` to `LatePlugin.deserializeHtml`
+    - `getNodeProps` to `LatePlugin.props.nodeProps`
     - `hotkey` to `HotkeyPlugin`
     - `clear` to `ToggleMarkPlugin`
     - `defaultType` is hardcoded to `p.type`
-  - `OverrideProps` for `PlatePlugin.inject.props`
-  - `Serialize` for `PlatePlugin.serializeHtml`
+  - `OverrideProps` for `LatePlugin.inject.props`
+  - `Serialize` for `LatePlugin.serializeHtml`
   - `NodeProps` for `AnyObject`
   - `OnKeyDownElementOptions` for `HotkeyPlugin`
   - `OnKeyDownMarkOptions` for `ToggleMarkPlugin`
   - `WithInlineVoidOptions`
-  - `GetNodeProps` for `PlatePluginProps`
-  - `DeserializeOptions`, `GetLeafDeserializerOptions`, `GetElementDeserializerOptions`, `GetNodeDeserializerOptions`, `GetNodeDeserializerRule`, `DeserializeNode` for `PlatePlugin.deserializeHtml`
-  - `PlateOptions`
+  - `GetNodeProps` for `LatePluginProps`
+  - `DeserializeOptions`, `GetLeafDeserializerOptions`, `GetElementDeserializerOptions`, `GetNodeDeserializerOptions`, `GetNodeDeserializerRule`, `DeserializeNode` for `LatePlugin.deserializeHtml`
+  - `LateOptions`
   - `RenderNodeOptions`
   - `DeserializedHTMLElement`
 
 ## @sewellstephens/plate-find-replace@8.0.0
 
-- [#1234](https://github.com/udecode/plate/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Removed:
+- [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Removed:
   - `useFindReplacePlugin` for `createFindReplacePlugin`
 
 ## @sewellstephens/plate-alignment@8.0.0
 
-- [#1234](https://github.com/udecode/plate/pull/1234) by [@zbeyens](https://github.com/zbeyens) –
+- [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) –
   - `setAlign`
     - moved param 3 to param 2 as `setNodesOptions`
 
 ## @sewellstephens/plate-basic-elements@8.0.0
 
-- [#1234](https://github.com/udecode/plate/pull/1234) by [@zbeyens](https://github.com/zbeyens) –
+- [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) –
   - renamed `createBasicElementPlugins` to `createBasicElementsPlugin`
 
 ## @sewellstephens/plate-code-block@8.0.0
 
-- [#1234](https://github.com/udecode/plate/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Removed:
+- [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Removed:
   - `getCodeBlockPluginOptions` for `getPlugin`
   - `getCodeLinePluginOptions` for `getPlugin`
 
 ## @sewellstephens/plate-heading@8.0.0
 
-- [#1234](https://github.com/udecode/plate/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Renamed:
+- [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Renamed:
   - `HeadingPluginOptions` to `HeadingsPlugin`
 
 ## @sewellstephens/plate-mention@8.0.0
 
-- [#1234](https://github.com/udecode/plate/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Removed:
+- [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Removed:
   - `getMentionInputPluginOptions` for `getPlugin`
   - `getMentionInputType` for `getPluginType`
   - `COMBOBOX_TRIGGER_MENTION`
 
 ## @sewellstephens/plate-basic-marks@8.0.0
 
-- [#1234](https://github.com/udecode/plate/pull/1234) by [@zbeyens](https://github.com/zbeyens) –
+- [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) –
   - renamed `createBasicMarkPlugins` to `createBasicMarksPlugin`
 
 ## @sewellstephens/plate@8.0.0
 
-- [#1234](https://github.com/udecode/plate/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Breaking changes:
+- [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Breaking changes:
 
   - all plugins options are now defined in the plugin itself
   - plugins which now have nested plugins instead of array:
@@ -1323,17 +1323,17 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
 
   Removed:
 
-  - `createEditorPlugins` for `createPlateEditor` (without components) and `createPlateEditorUI` (with Plate components)
-  - `createPlateOptions` for `createPlugins`
+  - `createEditorPlugins` for `createLateEditor` (without components) and `createLateEditorUI` (with Late components)
+  - `createLateOptions` for `createPlugins`
   - all `DEFAULTS_X`: these are defined in the plugins
   - all `getXDeserialize`: these are defined in the plugins
   - all `WithXOptions` for extended plugins
   - all `getXRenderElement`
-  - some plugin option types are removed for `PlatePlugin`
+  - some plugin option types are removed for `LatePlugin`
 
   Renamed:
 
-  - `createPlateComponents` to `createPlateUI`
+  - `createLateComponents` to `createLateUI`
   - all `getXY` handlers to `yX` (e.g. `getXOnKeyDown` to `onKeyDownX`)
   - all `XPluginOptions` to `XPlugin`
   - all `pluginKey` parameter to `key` except in components
@@ -1356,13 +1356,13 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
 
 ## @sewellstephens/plate-serializer-csv@8.0.0
 
-- [#1234](https://github.com/udecode/plate/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Renamed:
+- [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Renamed:
   - `createDeserializeCSVPlugin` to `createDeserializeCsvPlugin`
   - `deserializeCSV` to `deserializeCsv`
 
 ## @sewellstephens/plate-serializer-md@8.0.0
 
-- [#1234](https://github.com/udecode/plate/pull/1234) by [@zbeyens](https://github.com/zbeyens) –
+- [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) –
 
   - `createDeserializeMdPlugin`:
     - is now disabled if there is html data in the data transfer.
@@ -1377,27 +1377,27 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
 ## `@sewellstephens/plate-core`
 
 - renamed:
-  - `SPEditor` to `PEditor` (note that `PlateEditor` is the new default)
-  - `SPRenderNodeProps` to `PlateRenderNodeProps`
-  - `SPRenderElementProps` to `PlateRenderElementProps`
-  - `SPRenderLeafProps` to `PlateRenderLeafProps`
-  - `useEventEditorId` to `usePlateEventId`
-  - `useStoreEditorOptions` to `usePlateOptions`
-  - `useStoreEditorRef` to `usePlateEditorRef`
-  - `useStoreEditorSelection` to `usePlateSelection`
-  - `useStoreEditorState` to `usePlateEditorState`
-  - `useStoreEditorValue` to `usePlateValue`
-  - `useStoreEnabled` to `usePlateEnabled`
-  - `useStorePlate` to `usePlatePlugins`
-  - `useStorePlatePluginKeys` to `usePlateKeys`
-  - `useStoreState` to `usePlateState`
-- `getPlateId`: Get the last focused editor id, else get the last blurred editor id, else get the first editor id, else `null`
-- `getPlateState`:
+  - `SPEditor` to `PEditor` (note that `LateEditor` is the new default)
+  - `SPRenderNodeProps` to `LateRenderNodeProps`
+  - `SPRenderElementProps` to `LateRenderElementProps`
+  - `SPRenderLeafProps` to `LateRenderLeafProps`
+  - `useEventEditorId` to `useLateEventId`
+  - `useStoreEditorOptions` to `useLateOptions`
+  - `useStoreEditorRef` to `useLateEditorRef`
+  - `useStoreEditorSelection` to `useLateSelection`
+  - `useStoreEditorState` to `useLateEditorState`
+  - `useStoreEditorValue` to `useLateValue`
+  - `useStoreEnabled` to `useLateEnabled`
+  - `useStoreLate` to `useLatePlugins`
+  - `useStoreLatePluginKeys` to `useLateKeys`
+  - `useStoreState` to `useLateState`
+- `getLateId`: Get the last focused editor id, else get the last blurred editor id, else get the first editor id, else `null`
+- `getLateState`:
   - removed first parameter `state`
-  - previously when giving no parameter, it was returning the first editor. Now it's returning the editor with id = `getPlateId()`. It means `useEventEditorId('focus')` is no longer needed for
-    - `usePlateEditorRef`
-    - `usePlateEditorState`
-    - `usePlateX`...
+  - previously when giving no parameter, it was returning the first editor. Now it's returning the editor with id = `getLateId()`. It means `useEventEditorId('focus')` is no longer needed for
+    - `useLateEditorRef`
+    - `useLateEditorState`
+    - `useLateX`...
 
 ## `@sewellstephens/plate-alignment`
 

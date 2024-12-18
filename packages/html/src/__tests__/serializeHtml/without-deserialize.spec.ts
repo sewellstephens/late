@@ -1,7 +1,7 @@
 import { ParagraphPlugin } from '@sewellstephens/plate-common/react';
 
 import { serializeHtml } from '../../react/serializeHtml';
-import { createPlateUIEditor } from '../create-plate-ui-editor';
+import { createLateUIEditor } from '../create-plate-ui-editor';
 
 describe('when there is no deserializer', () => {
   it('not serialize', () => {
@@ -15,7 +15,7 @@ describe('when there is no deserializer', () => {
 
     expect(
       serializeHtml(
-        createPlateUIEditor({
+        createLateUIEditor({
           plugins: [plugin],
         }),
         {

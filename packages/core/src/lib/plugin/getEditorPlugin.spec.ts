@@ -2,7 +2,7 @@ import type { SlateEditor } from '../editor';
 import type { PluginConfig } from './BasePlugin';
 import type { AnySlatePlugin, SlatePluginContext } from './SlatePlugin';
 
-import { createPlateEditor } from '../../react';
+import { createLateEditor } from '../../react';
 import { createSlatePlugin, createTSlatePlugin } from './createSlatePlugin';
 import { getEditorPlugin } from './getEditorPlugin';
 
@@ -19,7 +19,7 @@ describe('getEditorPlugin', () => {
       },
     });
 
-    editor = createPlateEditor({
+    editor = createLateEditor({
       plugins: [testPlugin],
     });
   });

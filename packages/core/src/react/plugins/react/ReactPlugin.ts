@@ -1,11 +1,11 @@
 import { focusEditorEdge, isEditorFocused } from '@sewellstephens/slate-react';
 
 import { createSlatePlugin } from '../../../lib';
-import { withPlateReact } from './withPlateReact';
+import { withLateReact } from './withLateReact';
 
 /** @see {@link withReact} */
 export const ReactPlugin = createSlatePlugin({
-  extendEditor: withPlateReact,
+  extendEditor: withLateReact,
   key: 'dom',
 }).extendEditorApi(({ editor }) => {
   const { reset } = editor.api;

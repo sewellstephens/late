@@ -2,7 +2,7 @@
 
 import { jsx } from '@sewellstephens/plate-test-utils';
 
-import { createPlateEditor } from '../../../react';
+import { createLateEditor } from '../../../react';
 
 jsx;
 
@@ -28,7 +28,7 @@ describe('delete marked text at block start', () => {
       </editor>
     ) as any;
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: input,
     });
 
@@ -58,7 +58,7 @@ describe('delete marked text at block start', () => {
       </editor>
     ) as any;
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: input,
     });
 
@@ -88,7 +88,7 @@ describe('delete marked text at block start', () => {
       </editor>
     ) as any;
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       editor: input,
     });
 

@@ -3,7 +3,7 @@ import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import { Tweet } from 'react-tweet';
 
 import { cn, withRef } from '@sewellstephens/cn';
-import { PlateElement, withHOC } from '@sewellstephens/plate-common/react';
+import { LateElement, withHOC } from '@sewellstephens/plate-common/react';
 import { parseTwitterUrl, parseVideoUrl } from '@sewellstephens/plate-media';
 import { MediaEmbedPlugin, useMediaState } from '@sewellstephens/plate-media/react';
 import { ResizableProvider, useResizableStore } from '@sewellstephens/plate-resizable';
@@ -18,7 +18,7 @@ import {
 
 export const MediaEmbedElement = withHOC(
   ResizableProvider,
-  withRef<typeof PlateElement>(({ children, className, ...props }, ref) => {
+  withRef<typeof LateElement>(({ children, className, ...props }, ref) => {
     const {
       align = 'center',
       embed,
@@ -36,7 +36,7 @@ export const MediaEmbedElement = withHOC(
 
     return (
       <MediaPopover plugin={MediaEmbedPlugin}>
-        <PlateElement
+        <LateElement
           className={cn('relative py-2.5', className)}
           ref={ref}
           {...props}
@@ -126,7 +126,7 @@ export const MediaEmbedElement = withHOC(
           </figure>
 
           {children}
-        </PlateElement>
+        </LateElement>
       </MediaPopover>
     );
   })

@@ -1,30 +1,30 @@
 ---
 title: Store
-description: API reference for Plate store.
+description: API reference for Late store.
 ---
 
-`Plate` is using <Link href="https://github.com/pmndrs/jotai">jotai</Link> to store the state of the editor.
+`Late` is using <Link href="https://github.com/pmndrs/jotai">jotai</Link> to store the state of the editor.
 
 <Callout className="my-4">
   **Note**: To use the store hooks in a component, it needs to be rendered
-  inside `Plate`.
+  inside `Late`.
 </Callout>
 
-## Plate Store
+## Late Store
 
 ### State
 
-The PlateStoreState object stores the state of the Plate editor. It contains information about the editor's ID, its current value, its plugins, and other settings.
+The LateStoreState object stores the state of the Late editor. It contains information about the editor's ID, its current value, its plugins, and other settings.
 
 <APIAttributes>
-<APIItem name="editor" type="PlateEditor">
+<APIItem name="editor" type="LateEditor">
 Slate editor reference.
 
-- **Default:** `createPlateFallbackEditor()`
+- **Default:** `createLateFallbackEditor()`
 </APIItem>
 
 <APIItem name="id" type="string">
-A unique ID used as a provider scope. Use it if you have multiple `Plate` in the same React tree.
+A unique ID used as a provider scope. Use it if you have multiple `Late` in the same React tree.
 
 - **Default:** random id
 </APIItem>
@@ -33,7 +33,7 @@ A unique ID used as a provider scope. Use it if you have multiple `Plate` in the
 Function used to decorate ranges in the editor.
 
 ``ts
-(options: { editor: PlateEditor; entry: TNodeEntry }) => Range[]
+(options: { editor: LateEditor; entry: TNodeEntry }) => Range[]
 ``
 </APIItem>
 
@@ -45,7 +45,7 @@ Whether `Editable` is rendered so slate DOM is resolvable.
 Controlled callback called when the editor state changes.
 
 ``ts
-(options: { editor: PlateEditor; value: ValueOf<PlateEditor> }) => void
+(options: { editor: LateEditor; value: ValueOf<LateEditor> }) => void
 ``
 </APIItem>
 
@@ -53,7 +53,7 @@ Controlled callback called when the editor state changes.
 Controlled callback called when the editor.selection changes.
 
 ``ts
-(options: { editor: PlateEditor; selection: TSelection }) => void
+(options: { editor: LateEditor; selection: TSelection }) => void
 ``
 </APIItem>
 
@@ -61,12 +61,12 @@ Controlled callback called when the editor.selection changes.
 Controlled callback called when the editor.children changes.
 
 ``ts
-(options: { editor: PlateEditor; value: ValueOf<PlateEditor> }) => void
+(options: { editor: LateEditor; value: ValueOf<LateEditor> }) => void
 ``
 </APIItem>
 
 <APIItem name="primary" type="boolean" optional>
-Whether the editor is primary. If no editor is active, then PlateController will use the first-mounted primary editor.
+Whether the editor is primary. If no editor is active, then LateController will use the first-mounted primary editor.
 
 - **Default:** `true`
 </APIItem>
@@ -102,7 +102,7 @@ Version incremented on each editor.children change.
 
 ## Exposed Store Keys
 
-The following store keys are exposed in `editor.setPlateState`:
+The following store keys are exposed in `editor.setLateState`:
 
 - `readOnly`
 - `onChange`
@@ -112,16 +112,16 @@ The following store keys are exposed in `editor.setPlateState`:
 
 ## Selectors
 
-Use `usePlateSelectors(id).<state property>()` when you need to subscribe to a value.
+Use `useLateSelectors(id).<state property>()` when you need to subscribe to a value.
 
-- **Example:** `const value = usePlateSelectors(id).value()` will subscribe to `value` changes.
+- **Example:** `const value = useLateSelectors(id).value()` will subscribe to `value` changes.
 - It's using <Link href="https://jotai.org/docs/utils/use-atom-value">useAtomValue</Link> under the hood.
 
 ## Actions
 
-Use `usePlateStates(id).<state property>()` when you need both the value and the setter of a store property.
+Use `useLateStates(id).<state property>()` when you need both the value and the setter of a store property.
 
-- **Example:** `const [value, setValue] = usePlateStates(id).value()`
+- **Example:** `const [value, setValue] = useLateStates(id).value()`
 - It's using <Link href="https://jotai.org/docs/basics/primitives#use-atom">useAtom</Link> under the hood.
 
 ### `useRedecorate`
@@ -136,10 +136,10 @@ Redecorate the editor.
 
 ## Event Editor Store
 
-This store is an object whose property keys are event names (e.g. `'focus'`) and whose property values are [editor IDs](Plate#id).
+This store is an object whose property keys are event names (e.g. `'focus'`) and whose property values are [editor IDs](Late#id).
 
 - This is useful when having [multiple editors](multiple-editors) and get one based on DOM events (e.g. the last focused editor).
-- One of the core plugins of [Plate](Plate) will store the following events.
+- One of the core plugins of [Late](Late) will store the following events.
 
 ### State
 
@@ -170,7 +170,7 @@ Hook selectors.
 - **Example:** `useEventEditorSelectors().focus()` will get the
   last focused editor ID.
 
-### `useEventPlateId`
+### `useEventLateId`
 
 Get the last event editor ID.
 

@@ -1,7 +1,7 @@
 import { BasicElementsPlugin } from '@sewellstephens/plate-basic-elements';
 import { LinkPlugin } from '@sewellstephens/plate-link';
 
-import { createPlateEditor } from '../../react';
+import { createLateEditor } from '../../react';
 import {
   type PluginConfig,
   createSlatePlugin,
@@ -143,7 +143,7 @@ describe('createSlatePlugin', () => {
 
   describe('when extendPlugin nested', () => {
     it('should be', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [
           createSlatePlugin({
             key: 'a',
@@ -225,7 +225,7 @@ describe('createSlatePlugin', () => {
         },
       }));
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [extendedPlugin],
       });
 
@@ -239,7 +239,7 @@ describe('createSlatePlugin', () => {
 
   describe('extendPlugin for nested plugins', () => {
     it('should correctly extend a nested plugin', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [
           createSlatePlugin({
             key: 'parent',
@@ -497,7 +497,7 @@ describe('createSlatePlugin', () => {
 
   describe('when default plugin has extend and we override a function at the root', () => {
     it('should be', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [
           LinkPlugin.extend(() => ({
             parsers: {
@@ -523,7 +523,7 @@ describe('createSlatePlugin', () => {
 
   describe('when nested plugin + extend + new extendPlugin', () => {
     it('should be', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [
           createSlatePlugin({
             key: 'a',
@@ -599,7 +599,7 @@ describe('createSlatePlugin', () => {
 
   describe('when extendPlugin a cousin plugin', () => {
     it('should extend a plugin at the same level', () => {
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [
           createSlatePlugin({
             key: 'parent1',
@@ -786,7 +786,7 @@ describe('createSlatePlugin', () => {
             },
           });
 
-        const editor = createPlateEditor({
+        const editor = createLateEditor({
           plugins: [configuredPlugin],
         });
 

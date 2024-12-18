@@ -63,7 +63,7 @@ Update the import paths to match your project setup.
 
 ## Usage
 
-To use the Draggables component in your Plate editor, follow these steps:
+To use the Draggables component in your Late editor, follow these steps:
 
 1. Import the necessary plugins and components:
 
@@ -72,35 +72,35 @@ import { DndPlugin } from '@sewellstephens/plate-dnd';
 import { NodeIdPlugin } from '@sewellstephens/plate-node-id';
 
 // local imports
-import { createPlateUI } from '@/lib/plate/create-plate-ui';
+import { createLateUI } from '@/lib/plate/create-plate-ui';
 import { withDraggables } from './withDraggables';
 ```
 
 2. Create the editor with these plugins and use `withDraggables` to add a drag button next to each block:
 
 ```tsx
-const plugins = createPlateEditor({
+const plugins = createLateEditor({
   plugins: [
     // ...otherPlugins,
     NodeIdPlugin,
     DndPlugin.configure({ options: { enableScroller: true } }),
   ],
   override: {
-    components: withDraggables(createPlateUI()),
+    components: withDraggables(createLateUI()),
   }
 });
 ```
 
-3. Wrap your `Plate` component with the `DndProvider` from `react-dnd`:
+3. Wrap your `Late` component with the `DndProvider` from `react-dnd`:
 
 ```tsx
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 
 <DndProvider backend={HTML5Backend}>
-  <Plate editor={editor}>
-    <PlateContent />
-  </Plate>
+  <Late editor={editor}>
+    <LateContent />
+  </Late>
 </DndProvider>
 ```
 

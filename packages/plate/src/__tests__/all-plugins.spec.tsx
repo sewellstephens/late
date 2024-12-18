@@ -8,9 +8,9 @@ import { BasicMarksPlugin } from '@sewellstephens/plate-basic-marks';
 import { BlockquotePlugin } from '@sewellstephens/plate-block-quote';
 import { ExitBreakPlugin, SoftBreakPlugin } from '@sewellstephens/plate-break';
 import {
-  Plate,
-  PlateContent,
-  usePlateEditor,
+  Late,
+  LateContent,
+  useLateEditor,
 } from '@sewellstephens/plate-common/react';
 import { HeadingPlugin } from '@sewellstephens/plate-heading';
 import { HighlightPlugin } from '@sewellstephens/plate-highlight';
@@ -25,8 +25,8 @@ import { SelectOnBackspacePlugin } from '@sewellstephens/plate-select';
 import { TablePlugin } from '@sewellstephens/plate-table';
 import { TrailingBlockPlugin } from '@sewellstephens/plate-trailing-block';
 
-function PlateContainer() {
-  const editor = usePlateEditor({
+function LateContainer() {
+  const editor = useLateEditor({
     plugins: [
       BlockquotePlugin,
       TodoListPlugin,
@@ -54,15 +54,15 @@ function PlateContainer() {
   });
 
   return (
-    <Plate editor={editor}>
-      <PlateContent />
-    </Plate>
+    <Late editor={editor}>
+      <LateContent />
+    </Late>
   );
 }
 
 describe('when all plugins', () => {
   it('should render', () => {
-    render(<PlateContainer />);
+    render(<LateContainer />);
 
     expect(1).toBe(1);
   });

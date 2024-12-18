@@ -1,6 +1,6 @@
 import type React from 'react';
 
-import type { PlateEditor, PlateProps } from '@sewellstephens/plate-common/react';
+import type { LateEditor, LateProps } from '@sewellstephens/plate-common/react';
 
 import { type TDescendant, isText } from '@sewellstephens/plate-common';
 import { encode } from 'html-entities';
@@ -13,7 +13,7 @@ import { leafToHtml } from './leafToHtml';
 
 /** Convert Slate Nodes into HTML string. */
 export const serializeHtml = (
-  editor: PlateEditor,
+  editor: LateEditor,
   {
     convertNewLinesToHtmlBr = false,
     dndWrapper,
@@ -37,7 +37,7 @@ export const serializeHtml = (
     nodes: TDescendant[];
 
     /** Slate props to provide if the rendering depends on plate/slate hooks */
-    plateProps?: Omit<Partial<PlateProps>, 'editor'>;
+    plateProps?: Omit<Partial<LateProps>, 'editor'>;
 
     /** List of className prefixes to preserve from being stripped out */
     preserveClassNames?: string[];

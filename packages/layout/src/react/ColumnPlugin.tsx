@@ -1,4 +1,4 @@
-import { toPlatePlugin } from '@sewellstephens/plate-common/react';
+import { toLatePlugin } from '@sewellstephens/plate-common/react';
 
 import {
   ColumnItemPlugin as BaseColumnItemPlugin,
@@ -6,10 +6,10 @@ import {
 } from '../lib';
 import { onKeyDownColumn } from './onKeyDownColumn';
 
-export const ColumnItemPlugin = toPlatePlugin(BaseColumnItemPlugin);
+export const ColumnItemPlugin = toLatePlugin(BaseColumnItemPlugin);
 
 /** Enables support for columns with React-specific features. */
-export const ColumnPlugin = toPlatePlugin(BaseColumnPlugin, {
+export const ColumnPlugin = toLatePlugin(BaseColumnPlugin, {
   handlers: {
     onKeyDown: onKeyDownColumn,
   },

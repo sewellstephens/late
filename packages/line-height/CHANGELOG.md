@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - `createLineHeightPlugin` -> `LineHeightPlugin`
 
 ## 36.0.0
@@ -21,13 +21,13 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/udecode/plate/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.5.2
 
 ### Patch Changes
 
-- [#2961](https://github.com/udecode/plate/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -45,7 +45,7 @@
 
 ### Patch Changes
 
-- [#2816](https://github.com/udecode/plate/pull/2816) by [@12joan](https://github.com/12joan) –
+- [#2816](https://github.com/sewellstephens/late/pull/2816) by [@12joan](https://github.com/12joan) –
   - Replace `useEdtiorState` with `useEditorSelector`
 
 ## 27.0.3
@@ -62,7 +62,7 @@
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -88,7 +88,7 @@
 
 ### Patch Changes
 
-- [#2618](https://github.com/udecode/plate/pull/2618) by [@zbeyens](https://github.com/zbeyens) – `useLineHeightDropdownMenuState`:
+- [#2618](https://github.com/sewellstephens/late/pull/2618) by [@zbeyens](https://github.com/zbeyens) – `useLineHeightDropdownMenuState`:
   - fix: get line height from the block above instead of the top one.
   - fix: return undefined if the selection is expanded as selection may contain blocks with multiple line height values.
 
@@ -262,14 +262,14 @@
 
 ### Minor Changes
 
-- [#1303](https://github.com/udecode/plate/pull/1303) by [@zbeyens](https://github.com/zbeyens) –
+- [#1303](https://github.com/sewellstephens/late/pull/1303) by [@zbeyens](https://github.com/zbeyens) –
   - inject `deserializeHtml.getNode` to set `lineHeight` if `el.style.lineHeight` is defined
 
 ## 8.3.0
 
 ### Minor Changes
 
-- [#1266](https://github.com/udecode/plate/pull/1266) by [@zbeyens](https://github.com/zbeyens) –
+- [#1266](https://github.com/sewellstephens/late/pull/1266) by [@zbeyens](https://github.com/zbeyens) –
   - remove default `validNodeValues`
 
 ## 8.1.0
@@ -284,7 +284,7 @@
 
 ### Major Changes
 
-- [#1190](https://github.com/udecode/plate/pull/1190) by [@zbeyens](https://github.com/zbeyens) –
+- [#1190](https://github.com/sewellstephens/late/pull/1190) by [@zbeyens](https://github.com/zbeyens) –
   - `setLineHeight`: option `lineHeight` renamed to `value`
   - removed `getLineHeightOverrideProps` in favor of `getOverrideProps(KEY_LINE_HEIGHT)`
 
@@ -294,8 +294,8 @@
 
 ### Minor Changes
 
-- [#1176](https://github.com/udecode/plate/pull/1176) by [@ghingis](https://github.com/ghingis) – new packages: `line-height` and `line-height-ui`
+- [#1176](https://github.com/sewellstephens/late/pull/1176) by [@ghingis](https://github.com/ghingis) – new packages: `line-height` and `line-height-ui`
 
 ### Patch Changes
 
-- [#1184](https://github.com/udecode/plate/pull/1184) by [@ghingis](https://github.com/ghingis) – now uses `getElementOverrideProps` / `getLeafOverrideProps`
+- [#1184](https://github.com/sewellstephens/late/pull/1184) by [@ghingis](https://github.com/ghingis) – now uses `getElementOverrideProps` / `getLeafOverrideProps`

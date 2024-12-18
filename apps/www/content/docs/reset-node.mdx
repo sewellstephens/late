@@ -90,10 +90,10 @@ The default type to which the node should be reset.
 <APISubListItem parent="rules" name="types" type="string[]">
 The types of nodes where the rule applies.
 </APISubListItem>
-<APISubListItem parent="rules" name="predicate" type="(editor: PlateEditor) => boolean">
+<APISubListItem parent="rules" name="predicate" type="(editor: LateEditor) => boolean">
 An additional condition to the rule which should be a function taking the editor state and returning a boolean.
 </APISubListItem>
-<APISubListItem parent="rules" name="onReset" type="(editor: PlateEditor) => void" optional>
+<APISubListItem parent="rules" name="onReset" type="(editor: LateEditor) => void" optional>
 A callback function that is called when the reset operation is performed.
 </APISubListItem>
 </APISubList>

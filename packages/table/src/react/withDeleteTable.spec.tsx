@@ -3,8 +3,8 @@
 import type { SlateEditor } from '@sewellstephens/plate-common';
 
 import {
-  type PlateEditor,
-  createPlateEditor,
+  type LateEditor,
+  createLateEditor,
   getEditorPlugin,
 } from '@sewellstephens/plate-common/react';
 import { jsx } from '@sewellstephens/plate-test-utils';
@@ -53,10 +53,10 @@ describe('withDeleteTable', () => {
           </htable>
           <hp>a</hp>
         </editor>
-      ) as any as PlateEditor;
+      ) as any as LateEditor;
 
       const plugin = TablePlugin;
-      let editor = createPlateEditor({
+      let editor = createLateEditor({
         editor: input,
         plugins: [plugin],
       });
@@ -112,7 +112,7 @@ describe('withDeleteTable', () => {
       ) as any as SlateEditor;
 
       const plugin = TablePlugin;
-      let editor = createPlateEditor({
+      let editor = createLateEditor({
         editor: input,
         plugins: [plugin],
       });
@@ -188,7 +188,7 @@ describe('withDeleteTable', () => {
       ) as any as SlateEditor;
 
       const plugin = TablePlugin;
-      editor = createPlateEditor({
+      editor = createLateEditor({
         editor: input,
         plugins: [plugin],
       });

@@ -1,7 +1,7 @@
 import React, { type ComponentType, type SVGProps } from 'react';
 
 import { withRef } from '@sewellstephens/cn';
-import { type PlateEditor, PlateElement } from '@sewellstephens/plate-common/react';
+import { type LateEditor, LateElement } from '@sewellstephens/plate-common/react';
 import { DatePlugin } from '@sewellstephens/plate-date';
 import { HEADING_KEYS } from '@sewellstephens/plate-heading';
 import { ListStyleType, toggleIndentList } from '@sewellstephens/plate-indent-list';
@@ -18,7 +18,7 @@ import {
 
 interface SlashCommandRule {
   icon: ComponentType<SVGProps<SVGSVGElement>>;
-  onSelect: (editor: PlateEditor) => void;
+  onSelect: (editor: LateEditor) => void;
   value: string;
   keywords?: string[];
 }
@@ -75,12 +75,12 @@ const rules: SlashCommandRule[] = [
   },
 ];
 
-export const SlashInputElement = withRef<typeof PlateElement>(
+export const SlashInputElement = withRef<typeof LateElement>(
   ({ className, ...props }, ref) => {
     const { children, editor, element } = props;
 
     return (
-      <PlateElement
+      <LateElement
         as="span"
         data-slate-value={element.value}
         ref={ref}
@@ -109,7 +109,7 @@ export const SlashInputElement = withRef<typeof PlateElement>(
         </InlineCombobox>
 
         {children}
-      </PlateElement>
+      </LateElement>
     );
   }
 );

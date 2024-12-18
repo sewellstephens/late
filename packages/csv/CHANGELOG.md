@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - `createDeserializeCsvPlugin` -> `CsvPlugin`
 
 ## 36.5.8
@@ -35,7 +35,7 @@
 
 ### Patch Changes
 
-- [#3125](https://github.com/udecode/plate/pull/3125) by [@zbeyens](https://github.com/zbeyens) –
+- [#3125](https://github.com/sewellstephens/late/pull/3125) by [@zbeyens](https://github.com/zbeyens) –
   - Remove `@sewellstephens/plate-table` dependency.
 
 ## 32.0.2
@@ -56,7 +56,7 @@
 
 ### Minor Changes
 
-- [#3040](https://github.com/udecode/plate/pull/3040) by [@zbeyens](https://github.com/zbeyens) – Updated minor dependencies
+- [#3040](https://github.com/sewellstephens/late/pull/3040) by [@zbeyens](https://github.com/zbeyens) – Updated minor dependencies
 
 ## 30.9.4
 
@@ -70,7 +70,7 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/udecode/plate/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -122,7 +122,7 @@
 
 ### Patch Changes
 
-- [#2696](https://github.com/udecode/plate/pull/2696) by [@zbeyens](https://github.com/zbeyens) – Fix: Named export 'parse' not found.
+- [#2696](https://github.com/sewellstephens/late/pull/2696) by [@zbeyens](https://github.com/zbeyens) – Fix: Named export 'parse' not found.
 
 ## 24.4.2
 
@@ -130,7 +130,7 @@
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -196,7 +196,7 @@
 
 ### Minor Changes
 
-- [#2374](https://github.com/udecode/plate/pull/2374) by [@12joan](https://github.com/12joan) –
+- [#2374](https://github.com/sewellstephens/late/pull/2374) by [@12joan](https://github.com/12joan) –
   - Make papaparse options customisable using `parseOptions` plugin option.
     ```ts
       createDeserializeCsvPlugin({
@@ -349,7 +349,7 @@
 
 ### Patch Changes
 
-- [#1500](https://github.com/udecode/plate/pull/1500) by [@zbeyens](https://github.com/zbeyens) – updated deps:
+- [#1500](https://github.com/sewellstephens/late/pull/1500) by [@zbeyens](https://github.com/zbeyens) – updated deps:
   ```bash
   "papaparse": "^5.3.2"
   ```
@@ -404,7 +404,7 @@
 
 ### Major Changes
 
-- [#1234](https://github.com/udecode/plate/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Renamed:
+- [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Renamed:
   - `createDeserializeCSVPlugin` to `createDeserializeCsvPlugin`
   - `deserializeCSV` to `deserializeCsv`
 
@@ -430,7 +430,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`a6bf8c5e`](https://github.com/udecode/plate/commit/a6bf8c5e6897c6ab443e0ac3d69a30befeaddadf)]:
+- Updated dependencies [[`a6bf8c5e`](https://github.com/sewellstephens/late/commit/a6bf8c5e6897c6ab443e0ac3d69a30befeaddadf)]:
   - @sewellstephens/plate-common@5.3.5
   - @sewellstephens/plate-table@5.3.5
   - @sewellstephens/plate-serializer@5.3.5
@@ -439,16 +439,16 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`f45ed8cf`](https://github.com/udecode/plate/commit/f45ed8cff140a604169bfa0d042447a8fd0236ed)]:
+- Updated dependencies [[`f45ed8cf`](https://github.com/sewellstephens/late/commit/f45ed8cff140a604169bfa0d042447a8fd0236ed)]:
   - @sewellstephens/plate-serializer@5.3.4
 
 ## 5.3.1
 
 ### Patch Changes
 
-- [#1136](https://github.com/udecode/plate/pull/1136) [`8aec270f`](https://github.com/udecode/plate/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118) Thanks [@dylans](https://github.com/dylans)! - allow disabling deserializer by paste target
+- [#1136](https://github.com/sewellstephens/late/pull/1136) [`8aec270f`](https://github.com/sewellstephens/late/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118) Thanks [@dylans](https://github.com/dylans)! - allow disabling deserializer by paste target
 
-- Updated dependencies [[`8aec270f`](https://github.com/udecode/plate/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118)]:
+- Updated dependencies [[`8aec270f`](https://github.com/sewellstephens/late/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118)]:
   - @sewellstephens/plate-core@5.3.1
   - @sewellstephens/plate-serializer@5.3.1
   - @sewellstephens/plate-common@5.3.1
@@ -458,7 +458,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`7ee21356`](https://github.com/udecode/plate/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e)]:
+- Updated dependencies [[`7ee21356`](https://github.com/sewellstephens/late/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e)]:
   - @sewellstephens/plate-core@5.3.0
   - @sewellstephens/plate-common@5.3.0
   - @sewellstephens/plate-table@5.3.0
@@ -468,7 +468,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`503956fd`](https://github.com/udecode/plate/commit/503956fd9f71253249b3ad699b81c1c465351b0a)]:
+- Updated dependencies [[`503956fd`](https://github.com/sewellstephens/late/commit/503956fd9f71253249b3ad699b81c1c465351b0a)]:
   - @sewellstephens/plate-common@5.1.0
   - @sewellstephens/plate-table@5.1.0
   - @sewellstephens/plate-serializer@5.1.0
@@ -477,7 +477,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`b22c06aa`](https://github.com/udecode/plate/commit/b22c06aad1cfed08069dadc7ec39bcbfb1d0af37)]:
+- Updated dependencies [[`b22c06aa`](https://github.com/sewellstephens/late/commit/b22c06aad1cfed08069dadc7ec39bcbfb1d0af37)]:
   - @sewellstephens/plate-common@4.4.0
   - @sewellstephens/plate-table@4.4.0
   - @sewellstephens/plate-serializer@4.4.0
@@ -486,7 +486,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`58f6fb53`](https://github.com/udecode/plate/commit/58f6fb53bf45a2e0509f4aca617aa21356952fca)]:
+- Updated dependencies [[`58f6fb53`](https://github.com/sewellstephens/late/commit/58f6fb53bf45a2e0509f4aca617aa21356952fca)]:
   - @sewellstephens/plate-core@4.3.7
   - @sewellstephens/plate-common@4.3.7
   - @sewellstephens/plate-table@4.3.7
@@ -496,7 +496,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`6af469cd`](https://github.com/udecode/plate/commit/6af469cd5ac310e831eb8a99a71eba73bde62fc6)]:
+- Updated dependencies [[`6af469cd`](https://github.com/sewellstephens/late/commit/6af469cd5ac310e831eb8a99a71eba73bde62fc6)]:
   - @sewellstephens/plate-core@4.3.0
   - @sewellstephens/plate-common@4.3.0
   - @sewellstephens/plate-table@4.3.0
@@ -506,14 +506,14 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`0db393e1`](https://github.com/udecode/plate/commit/0db393e1cebec792c89a633cb8929a0786943713)]:
+- Updated dependencies [[`0db393e1`](https://github.com/sewellstephens/late/commit/0db393e1cebec792c89a633cb8929a0786943713)]:
   - @sewellstephens/plate-serializer@3.5.1
 
 ## 3.4.0
 
 ### Patch Changes
 
-- Updated dependencies [[`f1da7267`](https://github.com/udecode/plate/commit/f1da7267d46d94e207f4477f73e42b63736a9085), [`35caf35d`](https://github.com/udecode/plate/commit/35caf35d48fff851518648ff66e64a4268dcc97c)]:
+- Updated dependencies [[`f1da7267`](https://github.com/sewellstephens/late/commit/f1da7267d46d94e207f4477f73e42b63736a9085), [`35caf35d`](https://github.com/sewellstephens/late/commit/35caf35d48fff851518648ff66e64a4268dcc97c)]:
   - @sewellstephens/plate-common@3.4.0
   - @sewellstephens/plate-core@3.4.0
   - @sewellstephens/plate-table@3.4.0
@@ -523,13 +523,13 @@
 
 ### Minor Changes
 
-- [#995](https://github.com/udecode/plate/pull/995) [`58387c6d`](https://github.com/udecode/plate/commit/58387c6d34e86be7880999b40a9105b6178f4ce4) Thanks [@dylans](https://github.com/dylans)! - update slate dependencies and peerDependencies to 0.66.\*
+- [#995](https://github.com/sewellstephens/late/pull/995) [`58387c6d`](https://github.com/sewellstephens/late/commit/58387c6d34e86be7880999b40a9105b6178f4ce4) Thanks [@dylans](https://github.com/dylans)! - update slate dependencies and peerDependencies to 0.66.\*
 
 ### Patch Changes
 
-- [#995](https://github.com/udecode/plate/pull/995) [`5eb42cdd`](https://github.com/udecode/plate/commit/5eb42cdd47db4fd41936420b86b0bf7df9a8aa09) Thanks [@dylans](https://github.com/dylans)! - update to slate 0.66.x
+- [#995](https://github.com/sewellstephens/late/pull/995) [`5eb42cdd`](https://github.com/sewellstephens/late/commit/5eb42cdd47db4fd41936420b86b0bf7df9a8aa09) Thanks [@dylans](https://github.com/dylans)! - update to slate 0.66.x
 
-- Updated dependencies [[`56b2551b`](https://github.com/udecode/plate/commit/56b2551b2fa5fab180b3c99551144667f99f7afc), [`3a590663`](https://github.com/udecode/plate/commit/3a5906637b008e85a6d907a7492a78fe9961bf34), [`58387c6d`](https://github.com/udecode/plate/commit/58387c6d34e86be7880999b40a9105b6178f4ce4), [`5eb42cdd`](https://github.com/udecode/plate/commit/5eb42cdd47db4fd41936420b86b0bf7df9a8aa09)]:
+- Updated dependencies [[`56b2551b`](https://github.com/sewellstephens/late/commit/56b2551b2fa5fab180b3c99551144667f99f7afc), [`3a590663`](https://github.com/sewellstephens/late/commit/3a5906637b008e85a6d907a7492a78fe9961bf34), [`58387c6d`](https://github.com/sewellstephens/late/commit/58387c6d34e86be7880999b40a9105b6178f4ce4), [`5eb42cdd`](https://github.com/sewellstephens/late/commit/5eb42cdd47db4fd41936420b86b0bf7df9a8aa09)]:
   - @sewellstephens/plate-table@3.2.0
   - @sewellstephens/plate-serializer@3.2.0
   - @sewellstephens/plate-common@3.2.0
@@ -539,7 +539,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`f6c58134`](https://github.com/udecode/plate/commit/f6c581347cc5877b7afa0774ef1ad78ad227564e)]:
+- Updated dependencies [[`f6c58134`](https://github.com/sewellstephens/late/commit/f6c581347cc5877b7afa0774ef1ad78ad227564e)]:
   - @sewellstephens/plate-common@3.1.3
   - @sewellstephens/plate-table@3.1.3
   - @sewellstephens/plate-serializer@3.1.3
@@ -548,28 +548,28 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`1244bcb7`](https://github.com/udecode/plate/commit/1244bcb748411e6291d635647c2053b115704eb9), [`5651aed7`](https://github.com/udecode/plate/commit/5651aed704d69af85e2dd7d6f850e8dcabcd45f4)]:
+- Updated dependencies [[`1244bcb7`](https://github.com/sewellstephens/late/commit/1244bcb748411e6291d635647c2053b115704eb9), [`5651aed7`](https://github.com/sewellstephens/late/commit/5651aed704d69af85e2dd7d6f850e8dcabcd45f4)]:
   - @sewellstephens/plate-table@3.1.2
 
 ## 3.0.2
 
 ### Patch Changes
 
-- Updated dependencies [[`83aaf31c`](https://github.com/udecode/plate/commit/83aaf31c02b24f388d1f178dcd4b80354ddab773)]:
+- Updated dependencies [[`83aaf31c`](https://github.com/sewellstephens/late/commit/83aaf31c02b24f388d1f178dcd4b80354ddab773)]:
   - @sewellstephens/plate-table@3.0.2
 
 ## 2.0.1
 
 ### Patch Changes
 
-- Updated dependencies [[`099a86fa`](https://github.com/udecode/plate/commit/099a86faede3b3acf7da6842a78e4fab76815073)]:
+- Updated dependencies [[`099a86fa`](https://github.com/sewellstephens/late/commit/099a86faede3b3acf7da6842a78e4fab76815073)]:
   - @sewellstephens/plate-table@2.0.1
 
 ## 2.0.0
 
 ### Patch Changes
 
-- Updated dependencies [[`ec4d5b7b`](https://github.com/udecode/plate/commit/ec4d5b7bd01b6fd21ba14a28f782c143d32c7532)]:
+- Updated dependencies [[`ec4d5b7b`](https://github.com/sewellstephens/late/commit/ec4d5b7bd01b6fd21ba14a28f782c143d32c7532)]:
   - @sewellstephens/plate-common@2.0.0
   - @sewellstephens/plate-table@2.0.0
   - @sewellstephens/plate-serializer@2.0.0
@@ -578,7 +578,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`7d045d8d`](https://github.com/udecode/plate/commit/7d045d8db39515d4574c5313cc97287486c5866b)]:
+- Updated dependencies [[`7d045d8d`](https://github.com/sewellstephens/late/commit/7d045d8db39515d4574c5313cc97287486c5866b)]:
   - @sewellstephens/plate-common@1.1.6
   - @sewellstephens/plate-table@1.1.6
   - @sewellstephens/plate-serializer@1.1.6
@@ -587,33 +587,33 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`f955b72c`](https://github.com/udecode/plate/commit/f955b72c0ab97e2e2ca54f17f9f8022f7d0f121b)]:
+- Updated dependencies [[`f955b72c`](https://github.com/sewellstephens/late/commit/f955b72c0ab97e2e2ca54f17f9f8022f7d0f121b)]:
   - @sewellstephens/plate-table@1.1.5
 
 ## 1.1.4
 
 ### Patch Changes
 
-- [#907](https://github.com/udecode/plate/pull/907) [`decc90d9`](https://github.com/udecode/plate/commit/decc90d984170d94ac8dbd0dc487a107d68d296d) Thanks [@dylans](https://github.com/dylans)! - add optional errorTolerance for csv deserializer detection
+- [#907](https://github.com/sewellstephens/late/pull/907) [`decc90d9`](https://github.com/sewellstephens/late/commit/decc90d984170d94ac8dbd0dc487a107d68d296d) Thanks [@dylans](https://github.com/dylans)! - add optional errorTolerance for csv deserializer detection
 
 ## 1.1.3
 
 ### Patch Changes
 
-- [#900](https://github.com/udecode/plate/pull/900) [`c5c73683`](https://github.com/udecode/plate/commit/c5c73683eb3b9c9a091fe1fa05113c9176f9b12a) Thanks [@dylans](https://github.com/dylans)! - Make sure there's at least a 2x2 table before treating text as csv
+- [#900](https://github.com/sewellstephens/late/pull/900) [`c5c73683`](https://github.com/sewellstephens/late/commit/c5c73683eb3b9c9a091fe1fa05113c9176f9b12a) Thanks [@dylans](https://github.com/dylans)! - Make sure there's at least a 2x2 table before treating text as csv
 
 ## 1.0.0
 
 ### Major Changes
 
-🎉 The **Slate Plugins** project has evolved to **Plate** 🎉
+🎉 The **Slate Plugins** project has evolved to **Late** 🎉
 
 To migrate, install `@sewellstephens/plate[-x]` then find and replace all
 occurrences of:
 
 - `slate-plugins` to `plate`
-- `SlatePlugins` to `Plate`
-- `SlatePlugin` to `PlatePlugin`
+- `SlatePlugins` to `Late`
+- `SlatePlugin` to `LatePlugin`
 
 ## 1.0.0-next.61
 

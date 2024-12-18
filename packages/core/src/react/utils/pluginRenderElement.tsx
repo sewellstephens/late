@@ -2,9 +2,9 @@ import React from 'react';
 
 import { DefaultElement } from 'slate-react';
 
-import type { PlateEditor } from '../editor/PlateEditor';
-import type { AnyEditorPlatePlugin } from '../plugin/PlatePlugin';
-import type { PlateRenderElementProps } from '../plugin/PlateRenderElementProps';
+import type { LateEditor } from '../editor/LateEditor';
+import type { AnyEditorLatePlugin } from '../plugin/LatePlugin';
+import type { LateRenderElementProps } from '../plugin/LateRenderElementProps';
 
 import { ElementProvider } from '../stores/element/useElementStore';
 import { getRenderNodeProps } from './getRenderNodeProps';
@@ -15,7 +15,7 @@ import { getRenderNodeProps } from './getRenderNodeProps';
  * element then that JSX element is rendered.
  */
 export type RenderElement = (
-  props: PlateRenderElementProps
+  props: LateRenderElementProps
 ) => React.ReactElement | undefined;
 
 /**
@@ -24,8 +24,8 @@ export type RenderElement = (
  * `undefined` so the pipeline can check the next plugin.
  */
 export const pluginRenderElement = (
-  editor: PlateEditor,
-  plugin: AnyEditorPlatePlugin
+  editor: LateEditor,
+  plugin: AnyEditorLatePlugin
 ): RenderElement =>
   function render(nodeProps) {
     const {

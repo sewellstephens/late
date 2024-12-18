@@ -33,7 +33,7 @@ npm install @sewellstephens/plate-comments
 ```tsx
 import { CommentsPlugin } from '@sewellstephens/plate-comments/react';
 
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [
     // ...otherPlugins,
     CommentsPlugin,
@@ -124,7 +124,7 @@ Resets the value of a new comment.
 Finds the comment node in the editor.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="options" type="FindNodeOptions" optional>
@@ -137,7 +137,7 @@ Finds the comment node in the editor.
 Finds the comment node in the editor by its ID.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="id" type="string">
@@ -190,7 +190,7 @@ Returns an array of comment keys present in the given node.
 Returns an array of node entries for comment nodes in the editor.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
 </APIParameters>
@@ -200,7 +200,7 @@ Returns an array of node entries for comment nodes in the editor.
 Returns an array of node entries for comment nodes with a specific ID in the editor.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="id" type="string">
@@ -213,7 +213,7 @@ Returns an array of node entries for comment nodes with a specific ID in the edi
 Calculates the position of a comment node relative to the editor.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="node" type="TCommentText">
@@ -283,7 +283,7 @@ Checks if a given node is a comment text node.
 Removes the comment mark from the editor.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
 </APIParameters>
@@ -293,7 +293,7 @@ Removes the comment mark from the editor.
 Unsets comment nodes with the specified ID from the editor.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="id" type="string">
@@ -374,7 +374,7 @@ A button component for deleting a comment.
   <APIItem name="activeCommentId" type="string">
     The ID of the active comment.
   </APIItem>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="id" type="string">

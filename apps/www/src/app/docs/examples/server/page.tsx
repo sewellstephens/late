@@ -65,7 +65,7 @@ import { basicMarksValue } from '@/plate/demo/values/basicMarksValue';
 
 export default function RSCPage() {
   const mockDoc = {
-    description: 'Use Plate in server environment',
+    description: 'Use Late in server environment',
     title: 'Server-Side',
     // ... other necessary properties
   };
@@ -237,9 +237,9 @@ export default function RSCPage() {
 
   return (
     <DocPageLayout doc={mockDoc} isUI={false} toc={[]}>
-      <H2>Using Plate in a Server Environment</H2>
+      <H2>Using Late in a Server Environment</H2>
       <P>
-        Plate can be utilized in server-side environments, enabling operations
+        Late can be utilized in server-side environments, enabling operations
         like content manipulation without a browser. This is particularly useful
         for scenarios such as generating static content, processing editor
         content on the server, or working with React Server Components.
@@ -247,7 +247,7 @@ export default function RSCPage() {
 
       <H3>Creating a Server-Side Editor</H3>
       <P>
-        To use Plate on the server, you can leverage the{' '}
+        To use Late on the server, you can leverage the{' '}
         <Code>createSlateEditor</Code>
         function. This allows you to create and manipulate Slate documents
         without a DOM environment.
@@ -255,7 +255,7 @@ export default function RSCPage() {
 
       <H3>Example: Generating Markdown in a React Server Component</H3>
       <P className="mb-8">
-        Here's the output of Plate{' '}
+        Here's the output of Late{' '}
         <Link href="/docs/markdown">
           generating Markdown from a Slate value
         </Link>{' '}

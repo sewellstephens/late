@@ -1,13 +1,13 @@
 ---
-title: Migrating from Slate to Plate
-description: Learn how to migrate from Slate to Plate.
+title: Migrating from Slate to Late
+description: Learn how to migrate from Slate to Late.
 ---
 
-Plate is built on top of Slate, so migrating from a pure Slate implementation to Plate is relatively straightforward. This guide will help you transition your Slate-based editor to Plate.
+Late is built on top of Slate, so migrating from a pure Slate implementation to Late is relatively straightforward. This guide will help you transition your Slate-based editor to Late.
 
-## 1. Install Plate
+## 1. Install Late
 
-First, install the necessary Plate packages. If you're new to Plate, you might want to start by reading the [Introduction](/docs/getting-started) to get an overview of the library.
+First, install the necessary Late packages. If you're new to Late, you might want to start by reading the [Introduction](/docs/getting-started) to get an overview of the library.
 
 ```bash
 npm install @sewellstephens/plate
@@ -15,7 +15,7 @@ npm install @sewellstephens/plate
 
 ## 2. Replace Slate Imports
 
-Replace your Slate imports with Plate imports. Plate re-exports most Slate types and functions:
+Replace your Slate imports with Late imports. Late re-exports most Slate types and functions:
 
 ```ts
 // Before
@@ -23,19 +23,19 @@ import { createEditor } from 'slate';
 import { Slate, Editable, withReact } from 'slate-react';
 
 // After
-import { createPlateEditor, Plate, PlateContent } from '@sewellstephens/plate/react';
+import { createLateEditor, Late, LateContent } from '@sewellstephens/plate/react';
 ```
 
-## 3. Create a Plate Editor
+## 3. Create a Late Editor
 
-Replace `createEditor`, `withHistory` and `withReact` with `createPlateEditor`:
+Replace `createEditor`, `withHistory` and `withReact` with `createLateEditor`:
 
 ```ts
 // Before
 const editor = useMemo(() => withReact(withHistory(createEditor()))), []);
 
 // After
-const editor = createPlateEditor({
+const editor = createLateEditor({
   value,
   plugins: [
     // Additional plugins here
@@ -47,7 +47,7 @@ For more details on editor configuration, check out the [Editor Configuration gu
 
 ## 4. Replace Slate and Editable Components
 
-Replace the `Slate` and `Editable` components with Plate's `Plate` component:
+Replace the `Slate` and `Editable` components with Late's `Late` component:
 
 ```tsx
 // Before
@@ -56,14 +56,14 @@ Replace the `Slate` and `Editable` components with Plate's `Plate` component:
 </Slate>
 
 // After
-<Plate editor={editor}>
-  <PlateContent className="p-4" />
-</Plate>
+<Late editor={editor}>
+  <LateContent className="p-4" />
+</Late>
 ```
 
 ## 5. Convert Custom Elements and Leaves
 
-For custom elements and leaves, create Plate plugins:
+For custom elements and leaves, create Late plugins:
 
 ```tsx
 // Before
@@ -76,24 +76,24 @@ const renderElement = useCallback(({ attributes, children, element }) => {
 }, []);
 
 // After
-import { withCn, type PlateElement } from '@sewellstephens/plate/react';
+import { withCn, type LateElement } from '@sewellstephens/plate/react';
 
-const ParagraphElement = withRef<typeof PlateElement>(
+const ParagraphElement = withRef<typeof LateElement>(
   ({ children, className, ...props }, ref) => {
     return (
-      <PlateElement
+      <LateElement
         asChild
         className={cn('py-1', className)}
         ref={ref}
         {...props}
       >
         <p>{children}</p>
-      </PlateElement>
+      </LateElement>
     );
   }
 );
 
-const ParagraphPlugin = createPlatePlugin({
+const ParagraphPlugin = createLatePlugin({
   key: 'p',
   node: {
     isElement: true,
@@ -105,9 +105,9 @@ const ParagraphPlugin = createPlatePlugin({
 
 Learn more about creating plugins in the [Plugin Configuration guide](/docs/plugin) and [Plugin Components guide](/docs/plugin-components).
 
-## 6. Convert Slate Plugins to Plate Plugins
+## 6. Convert Slate Plugins to Late Plugins
 
-If you have custom Slate plugins, convert them to Plate plugins:
+If you have custom Slate plugins, convert them to Late plugins:
 
 ```ts
 // Before
@@ -121,7 +121,7 @@ const withMyPlugin = (editor) => {
 };
 
 // After
-const MyPlugin = createPlatePlugin({
+const MyPlugin = createLatePlugin({
   key: 'myPlugin',
   extendEditor: ({ editor }) => {
     const { insertText } = editor;
@@ -138,7 +138,7 @@ For more information on working with the plugin context, see the [Plugin Context
 
 ## 7. Update Event Handlers
 
-Update your event handlers to use Plate's plugin system:
+Update your event handlers to use Late's plugin system:
 
 ```ts
 // Before
@@ -149,7 +149,7 @@ const onKeyDown = (event) => {
 };
 
 // After
-const TabPlugin = createPlatePlugin({
+const TabPlugin = createLatePlugin({
   key: 'tab',
   handlers: {
     onKeyDown: ({ editor, event }) => {
@@ -161,10 +161,10 @@ const TabPlugin = createPlatePlugin({
 });
 ```
 
-Alternatively, you can use Plate's powerful shortcuts system:
+Alternatively, you can use Late's powerful shortcuts system:
 
 ```ts
-const TabPlugin = createPlatePlugin({
+const TabPlugin = createLatePlugin({
   key: 'tab',
   shortcuts: {
     indent: {
@@ -179,23 +179,23 @@ const TabPlugin = createPlatePlugin({
 
 For more details on using shortcuts, check out the [Plugin Shortcuts guide](/docs/plugin-shortcuts).
 
-## 8. Adapt to Plate's API
+## 8. Adapt to Late's API
 
-Familiarize yourself with Plate's API and use its utilities and hooks:
+Familiarize yourself with Late's API and use its utilities and hooks:
 
 ```ts
-// Using Plate's transforms
+// Using Late's transforms
 editor.tf.toggle.mark({ key: 'bold' });
 
-// Using Plate's debug API
-editor.api.debug.log('Hello, Plate!');
+// Using Late's debug API
+editor.api.debug.log('Hello, Late!');
 ```
 
 For a comprehensive list of editor methods, see the [Editor Methods guide](/docs/editor-methods).
 
-## 9. Leverage Plate's Built-in Plugins
+## 9. Leverage Late's Built-in Plugins
 
-Plate comes with many built-in plugins that you can see in the sidebar. Use them to quickly add functionality:
+Late comes with many built-in plugins that you can see in the sidebar. Use them to quickly add functionality:
 
 ```ts
 import { BoldPlugin, ItalicPlugin, UnderlinePlugin } from '@sewellstephens/plate/react';
@@ -207,11 +207,11 @@ const plugins = [
   // ... other plugins
 ];
 
-const editor = createPlateEditor({ plugins });
+const editor = createLateEditor({ plugins });
 ```
 
 ## 10. Testing and Refinement
 
-After migrating, thoroughly test your editor to ensure all functionality works as expected. Refine and optimize your implementation using Plate's features and best practices.
+After migrating, thoroughly test your editor to ensure all functionality works as expected. Refine and optimize your implementation using Late's features and best practices.
 
 For debugging tips and strategies, check out our [Debugging guide](/docs/debugging).

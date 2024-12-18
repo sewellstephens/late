@@ -1,4 +1,4 @@
-import { toPlatePlugin } from '@sewellstephens/plate-common/react';
+import { toLatePlugin } from '@sewellstephens/plate-common/react';
 
 import {
   TableCellHeaderPlugin as BaseTableCellHeaderPlugin,
@@ -9,9 +9,9 @@ import {
 import { onKeyDownTable } from './onKeyDownTable';
 import { withTable } from './withTable';
 
-export const TableRowPlugin = toPlatePlugin(BaseTableRowPlugin);
+export const TableRowPlugin = toLatePlugin(BaseTableRowPlugin);
 
-export const TableCellPlugin = toPlatePlugin(BaseTableCellPlugin, {
+export const TableCellPlugin = toLatePlugin(BaseTableCellPlugin, {
   node: {
     props: ({ element }) => ({
       nodeProps: {
@@ -22,7 +22,7 @@ export const TableCellPlugin = toPlatePlugin(BaseTableCellPlugin, {
   },
 });
 
-export const TableCellHeaderPlugin = toPlatePlugin(BaseTableCellHeaderPlugin, {
+export const TableCellHeaderPlugin = toLatePlugin(BaseTableCellHeaderPlugin, {
   node: {
     props: ({ element }) => ({
       nodeProps: {
@@ -34,7 +34,7 @@ export const TableCellHeaderPlugin = toPlatePlugin(BaseTableCellHeaderPlugin, {
 });
 
 /** Enables support for tables with React-specific features. */
-export const TablePlugin = toPlatePlugin(BaseTablePlugin, {
+export const TablePlugin = toLatePlugin(BaseTablePlugin, {
   extendEditor: withTable,
   handlers: {
     onKeyDown: onKeyDownTable,

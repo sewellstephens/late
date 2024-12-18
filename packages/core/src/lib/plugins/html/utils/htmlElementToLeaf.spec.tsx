@@ -5,7 +5,7 @@ import { BoldPlugin, ItalicPlugin } from '@sewellstephens/plate-basic-marks';
 import { ListPlugin } from '@sewellstephens/plate-list';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
-import { createPlateEditor } from '../../../../react';
+import { createLateEditor } from '../../../../react';
 import { createSlatePlugin } from '../../../plugin';
 import { ParagraphPlugin } from '../../paragraph';
 import { htmlElementToLeaf } from './htmlElementToLeaf';
@@ -23,7 +23,7 @@ describe('when children is a text', () => {
   it('should set the mark on the text', () => {
     expect(
       htmlElementToLeaf(
-        createPlateEditor({
+        createLateEditor({
           plugins: [BoldPlugin],
         }),
         parseHtmlElement(`<strong>test</strong>`)
@@ -38,7 +38,7 @@ describe('when there is no plugins', () => {
   it('should do nothing', () => {
     expect(
       htmlElementToLeaf(
-        createPlateEditor({
+        createLateEditor({
           plugins: [createSlatePlugin({ key: 'a' })],
         }),
         parseHtmlElement(`<strong>test</strong>`)
@@ -62,7 +62,7 @@ describe('when there is a mark above multiple elements', () => {
   it('should set the mark to all children leaves', () => {
     expect(
       htmlElementToLeaf(
-        createPlateEditor({
+        createLateEditor({
           plugins: [ParagraphPlugin, ListPlugin, BoldPlugin, ItalicPlugin],
         }),
         parseHtmlElement(`<strong><li><p>test</p>test</li></strong>`)

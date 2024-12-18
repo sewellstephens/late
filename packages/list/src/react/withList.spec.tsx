@@ -3,7 +3,7 @@
 import type { SlateEditor } from '@sewellstephens/plate-common';
 
 import { ParagraphPlugin } from '@sewellstephens/plate-common';
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { LinkPlugin } from '@sewellstephens/plate-link';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
@@ -16,7 +16,7 @@ const testInsertText = (
   expected: any,
   listConfig: Parameters<typeof ListPlugin.configure>[0] = {}
 ) => {
-  const editor = createPlateEditor({
+  const editor = createLateEditor({
     editor: input,
     plugins: [ParagraphPlugin, ListPlugin.configure(listConfig), LinkPlugin],
   });
@@ -27,7 +27,7 @@ const testInsertText = (
 };
 
 const testDeleteBackward = (input: any, expected: any) => {
-  const editor = createPlateEditor({
+  const editor = createLateEditor({
     editor: input,
     plugins: [ParagraphPlugin, ListPlugin],
   });
@@ -38,7 +38,7 @@ const testDeleteBackward = (input: any, expected: any) => {
 };
 
 const testDeleteForward = (input: any, expected: any) => {
-  const editor = createPlateEditor({
+  const editor = createLateEditor({
     editor: input,
     plugins: [ParagraphPlugin, ListPlugin],
   });

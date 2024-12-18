@@ -1,13 +1,13 @@
 import {
-  type UsePlateEditorStoreOptions,
-  usePlateSelectors,
-} from '../createPlateStore';
+  type UseLateEditorStoreOptions,
+  useLateSelectors,
+} from '../createLateStore';
 
 export const useEditorMounted = (
   id?: string,
-  options: UsePlateEditorStoreOptions = {}
+  options: UseLateEditorStoreOptions = {}
 ): boolean => {
-  return !!usePlateSelectors(id, {
+  return !!useLateSelectors(id, {
     debugHookName: 'useEditorMounted',
     ...options,
   }).isMounted();

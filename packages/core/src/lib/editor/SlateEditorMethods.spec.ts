@@ -1,4 +1,4 @@
-import { createPlateEditor } from '../../react';
+import { createLateEditor } from '../../react';
 import { createSlatePlugin } from '../plugin';
 
 describe('getApi method', () => {
@@ -10,7 +10,7 @@ describe('getApi method', () => {
       testNumber: () => 42,
     }));
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [TestPlugin],
     });
 
@@ -32,7 +32,7 @@ describe('getApi method', () => {
       method1: () => 'plugin1',
     }));
 
-    const editor = createPlateEditor({
+    const editor = createLateEditor({
       plugins: [Plugin1],
     });
 
@@ -48,7 +48,7 @@ describe('getApi method', () => {
         options: { testOption: 'value' },
       });
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [TestPlugin],
       });
 
@@ -64,7 +64,7 @@ describe('getApi method', () => {
         options: { option1: 'value1' },
       });
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [Plugin1],
       });
 
@@ -80,7 +80,7 @@ describe('getApi method', () => {
         options: { testOption: 'value' },
       });
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [TestPlugin],
       });
 
@@ -95,7 +95,7 @@ describe('getApi method', () => {
         options: { option1: 'value1' },
       });
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         plugins: [Plugin1],
       });
 

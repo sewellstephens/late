@@ -3,23 +3,23 @@ import type { TEditableProps } from '@sewellstephens/slate-react';
 import type { Range } from 'slate';
 
 import type { Nullable } from '../../../lib';
-import type { PlateEditor } from '../../editor';
+import type { LateEditor } from '../../editor';
 
-export type PlateChangeKey =
+export type LateChangeKey =
   | 'versionDecorate'
   | 'versionEditor'
   | 'versionSelection';
 
-export type PlateStoreState<E extends PlateEditor = PlateEditor> = {
+export type LateStoreState<E extends LateEditor = LateEditor> = {
   /**
    * Slate editor reference.
    *
-   * @default createPlateFallbackEditor()
+   * @default createLateFallbackEditor()
    */
   editor: E;
 
   /**
-   * A unique id used as a provider scope. Use it if you have multiple `Plate`
+   * A unique id used as a provider scope. Use it if you have multiple `Late`
    * in the same React tree.
    *
    * @default random id
@@ -41,7 +41,7 @@ export type PlateStoreState<E extends PlateEditor = PlateEditor> = {
   onValueChange: (options: { editor: E; value: ValueOf<E> }) => void;
 
   /**
-   * Whether the editor is primary. If no editor is active, then PlateController
+   * Whether the editor is primary. If no editor is active, then LateController
    * will use the first-mounted primary editor.
    *
    * @default true

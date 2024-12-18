@@ -1,12 +1,12 @@
 ---
 title: Plugin Configuration
-description: How to configure and customize Plate plugins.
+description: How to configure and customize Late plugins.
 ---
 
-Plate plugins are highly configurable, allowing you to customize their behavior to suit your needs. This guide will walk you through the most common configuration options and how to use them.
+Late plugins are highly configurable, allowing you to customize their behavior to suit your needs. This guide will walk you through the most common configuration options and how to use them.
 
 - [Getting Started: Components](/docs/getting-started#components) - Instructions for adding plugins to your editor
-- [PlatePlugin API](/docs/api/core/plate-plugin) - The complete API reference for creating plugins
+- [LatePlugin API](/docs/api/core/plate-plugin) - The complete API reference for creating plugins
 
 ## Basic Plugin Configuration
 
@@ -15,7 +15,7 @@ Plate plugins are highly configurable, allowing you to customize their behavior 
 The most basic plugin configuration requires only a `key`:
 
 ```ts
-const MyPlugin = createPlatePlugin({
+const MyPlugin = createLatePlugin({
   key: 'minimal',
 });
 ```
@@ -44,7 +44,7 @@ Node plugins are used to define new types of nodes in your editor using the `nod
 To create a new type of element, use the `node.isElement` option:
 
 ```ts
-const ParagraphPlugin = createPlatePlugin({
+const ParagraphPlugin = createLatePlugin({
   key: 'p',
   node: {
     isElement: true,
@@ -56,7 +56,7 @@ const ParagraphPlugin = createPlatePlugin({
 You can associate a component with your element. See [Plugin Components](/docs/plugin-components) for more information.
 
 ```ts
-const ParagraphPlugin = createPlatePlugin({
+const ParagraphPlugin = createLatePlugin({
   key: 'p',
   node: {
     isElement: true,
@@ -71,7 +71,7 @@ const ParagraphPlugin = createPlatePlugin({
 For inline elements, void elements, or leaf nodes, use the appropriate node options:
 
 ```ts
-const LinkPlugin = createPlatePlugin({
+const LinkPlugin = createLatePlugin({
   key: 'link',
   node: {
     isElement: true,
@@ -80,7 +80,7 @@ const LinkPlugin = createPlatePlugin({
   },
 });
 
-const ImagePlugin = createPlatePlugin({
+const ImagePlugin = createLatePlugin({
   key: 'image',
   node: {
     isElement: true,
@@ -89,7 +89,7 @@ const ImagePlugin = createPlatePlugin({
   },
 });
 
-const BoldPlugin = createPlatePlugin({
+const BoldPlugin = createLatePlugin({
   key: 'bold',
   node: {
     isLeaf: true,
@@ -99,16 +99,16 @@ const BoldPlugin = createPlatePlugin({
 
 ## Behavioral Plugins
 
-Rather than render an element or a mark, you may want to customize the behavior of your editor. Various plugin options are available to modify the behavior of Plate.
+Rather than render an element or a mark, you may want to customize the behavior of your editor. Various plugin options are available to modify the behavior of Late.
 
 ### Event Handlers
 
-The recommended way to respond to user-generated events from inside a plugin is with the `handlers` plugin option. A handler should be a function that takes a `PlatePluginContext & { event }` object.
+The recommended way to respond to user-generated events from inside a plugin is with the `handlers` plugin option. A handler should be a function that takes a `LatePluginContext & { event }` object.
 
 The `onChange` handler, which is called when the editor value changes, is an exception to this rule; the context object includes the changed `value` instead of `event`.
 
 ```ts showLineNumbers
-const ExamplePlugin = createPlatePlugin({
+const ExamplePlugin = createLatePlugin({
   key: 'example',
   handlers: {
     onChange: ({ editor, value })  => {
@@ -126,7 +126,7 @@ const ExamplePlugin = createPlatePlugin({
 You may want to inject a class name or CSS property into any node having a certain property. For example, the following plugin sets the `textAlign` CSS property on paragraphs with an `align` property.
 
 ```ts showLineNumbers
-const AlignPlugin = createPlatePlugin({
+const AlignPlugin = createLatePlugin({
   key: 'align',
   inject: {
     nodeProps: {
@@ -171,7 +171,7 @@ Occasionally, you'll need to override the built-in editor methods provided by Sl
 One common application of this technique is to create custom <Link href="/docs/normalization">normalizers</Link>.
 
 ```ts showLineNumbers {20}
-const CustomNormalizerPlugin = createPlatePlugin({
+const CustomNormalizerPlugin = createLatePlugin({
   key: 'customNormalizer',
   extendEditor: ({ editor }) => {
     const { normalizeNode } = editor;
@@ -196,7 +196,7 @@ const CustomNormalizerPlugin = createPlatePlugin({
 Each plugin has its own store, which can be used to manage plugin-specific state.
 
 ```ts
-const MyPlugin = createPlatePlugin({
+const MyPlugin = createLatePlugin({
   key: 'myPlugin',
   options: {
     count: 0,
@@ -240,7 +240,7 @@ See more in [Plugin Context](/docs/plugin-context) and [Editor Methods](/docs/ed
 You can specify plugin dependencies using the `dependencies` property. This ensures that the required plugins are loaded before the current plugin.
 
 ```ts
-const MyPlugin = createPlatePlugin({
+const MyPlugin = createLatePlugin({
   key: 'myPlugin',
   dependencies: ['paragraphPlugin', 'listPlugin'],
 });
@@ -251,7 +251,7 @@ const MyPlugin = createPlatePlugin({
 The `enabled` property allows you to conditionally enable or disable a plugin:
 
 ```ts
-const MyPlugin = createPlatePlugin({
+const MyPlugin = createLatePlugin({
   key: 'myPlugin',
   enabled: true, // or false to disable
 });
@@ -259,14 +259,14 @@ const MyPlugin = createPlatePlugin({
 
 ### Nested Plugins
 
-Plate supports nested plugins, allowing you to create plugin hierarchies. Use the `plugins` property to define child plugins:
+Late supports nested plugins, allowing you to create plugin hierarchies. Use the `plugins` property to define child plugins:
 
 ```ts
-const ParentPlugin = createPlatePlugin({
+const ParentPlugin = createLatePlugin({
   key: 'parent',
   plugins: [
-    createPlatePlugin({ key: 'child1' }),
-    createPlatePlugin({ key: 'child2' }),
+    createLatePlugin({ key: 'child1' }),
+    createLatePlugin({ key: 'child2' }),
   ],
 });
 ```
@@ -276,12 +276,12 @@ const ParentPlugin = createPlatePlugin({
 The `priority` property determines the order in which plugins are registered and executed. Plugins with higher priority values are processed first:
 
 ```ts
-const HighPriorityPlugin = createPlatePlugin({
+const HighPriorityPlugin = createLatePlugin({
   key: 'highPriority',
   priority: 100,
 });
 
-const LowPriorityPlugin = createPlatePlugin({
+const LowPriorityPlugin = createLatePlugin({
   key: 'lowPriority',
   priority: 50,
 });
@@ -294,7 +294,7 @@ This is particularly useful when you need to ensure certain plugins are initiali
 The `parsers` property accepts string keys to build your own parsers:
 
 ```ts
-const MyPlugin = createPlatePlugin({
+const MyPlugin = createLatePlugin({
   key: 'myPlugin',
   parsers: {
     myCustomParser: {
@@ -315,11 +315,11 @@ Core plugins includes `html` and `htmlReact` parsers.
 
 Using above methods, plugin types are automatically inferred from the given configuration.
 
-If you need to pass an explicit type as generic, you can use `createTPlatePlugin`.
+If you need to pass an explicit type as generic, you can use `createTLatePlugin`.
 
-### Using createTPlatePlugin
+### Using createTLatePlugin
 
-The `createTPlatePlugin` function allows you to create a typed plugin:
+The `createTLatePlugin` function allows you to create a typed plugin:
 
 ```ts
 type CodeBlockConfig = PluginConfig<
@@ -342,7 +342,7 @@ type CodeBlockConfig = PluginConfig<
   }
 >;
 
-const CodeBlockPlugin = createTPlatePlugin<CodeBlockConfig>({
+const CodeBlockPlugin = createTLatePlugin<CodeBlockConfig>({
   key: 'code_block',
   options: { syntax: true, syntaxPopularFirst: false },
 }).extendEditorApi<CodeBlockConfig['api']>(() => ({
@@ -364,7 +364,7 @@ const CodeBlockPlugin = createTPlatePlugin<CodeBlockConfig>({
 When using typed plugins, you get full type checking and autocompletion ✨
 
 ```ts
-const editor = createPlateEditor({
+const editor = createLateEditor({
   plugins: [ExtendedCodeBlockPlugin],
 });
 
@@ -386,4 +386,4 @@ editor.tf.insert.codeBlock({ language: 'typescript' });
 
 ## See also
 
-See the [PlatePlugin API](/docs/api/core/plate-plugin) for more plugin options.
+See the [LatePlugin API](/docs/api/core/plate-plugin) for more plugin options.

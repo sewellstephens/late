@@ -1,6 +1,6 @@
 /** @jsx jsx */
 
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 import { jsx } from '@sewellstephens/plate-test-utils';
 
 import { getListRoot } from './getListRoot';
@@ -29,7 +29,7 @@ const listRoot = (
 const input = (<editor>{listRoot}</editor>) as any;
 
 it('should be', () => {
-  const sublist = getListRoot(createPlateEditor({ editor: input }));
+  const sublist = getListRoot(createLateEditor({ editor: input }));
 
   expect(sublist).toEqual([listRoot, [0]]);
 });

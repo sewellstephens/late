@@ -1,10 +1,10 @@
-# Plate comments plugin
+# Late comments plugin
 
-This package implements the comments plugin for Plate.
+This package implements the comments plugin for Late.
 
 ## Documentation
 
-Check out [comments](https://platejs.org/docs/comments).
+Check out [comments](https://sewellstephens.github.io/late/docs/comments).
 
 ## License
 

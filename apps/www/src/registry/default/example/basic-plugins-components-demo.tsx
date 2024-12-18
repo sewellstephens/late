@@ -8,16 +8,16 @@ import {
 } from '@sewellstephens/plate-basic-marks/react';
 import { BlockquotePlugin } from '@sewellstephens/plate-block-quote/react';
 import { CodeBlockPlugin } from '@sewellstephens/plate-code-block/react';
-import { Plate, usePlateEditor } from '@sewellstephens/plate-common/react';
+import { Late, useLateEditor } from '@sewellstephens/plate-common/react';
 import { HeadingPlugin } from '@sewellstephens/plate-heading/react';
 import Prism from 'prismjs';
 
-import { createPlateUI } from '@/lib/plate/create-plate-ui';
+import { createLateUI } from '@/lib/plate/create-plate-ui';
 import { Editor } from '@/registry/default/plate-ui/editor';
 
 export default function BasicPluginsComponentsDemo() {
-  const editor = usePlateEditor({
-    override: { components: createPlateUI() },
+  const editor = useLateEditor({
+    override: { components: createLateUI() },
     plugins: [
       BlockquotePlugin,
       CodeBlockPlugin.configure({ options: { prism: Prism } }),
@@ -32,9 +32,9 @@ export default function BasicPluginsComponentsDemo() {
   });
 
   return (
-    <Plate editor={editor}>
+    <Late editor={editor}>
       <Editor autoFocus={false} placeholder="Type..." spellCheck={false} />
-    </Plate>
+    </Late>
   );
 }
 

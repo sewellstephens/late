@@ -1,12 +1,12 @@
 import type { AnyObject } from '@sewellstephens/utils';
 
 import type { AnyPluginConfig, PluginConfig } from '../../lib';
-import type { PlatePluginContext } from './PlatePlugin';
+import type { LatePluginContext } from './LatePlugin';
 
-/** Node props passed by Plate */
-export type PlateRenderNodeProps<C extends AnyPluginConfig = PluginConfig> = {
+/** Node props passed by Late */
+export type LateRenderNodeProps<C extends AnyPluginConfig = PluginConfig> = {
   className?: string;
 
   /** @see {@link NodeProps} */
   nodeProps?: AnyObject;
-} & PlatePluginContext<C>;
+} & LatePluginContext<C>;

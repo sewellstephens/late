@@ -4,15 +4,15 @@ import * as Y from 'yjs';
 
 import type { YjsConfig } from './YjsPlugin';
 
-import { type PlateYjsEditorProps, withTCursors } from './withTCursors';
+import { type LateYjsEditorProps, withTCursors } from './withTCursors';
 import { withTYHistory } from './withTYHistory';
 import { withTYjs } from './withTYjs';
 
-export const withPlateYjs: ExtendEditor<YjsConfig> = ({
+export const withLateYjs: ExtendEditor<YjsConfig> = ({
   editor: e,
   getOptions,
 }) => {
-  const editor = e as unknown as PlateYjsEditorProps & SlateEditor;
+  const editor = e as unknown as LateYjsEditorProps & SlateEditor;
 
   // not reactive
   const { cursorOptions, disableCursors, provider, yjsOptions } = getOptions();

@@ -11,7 +11,7 @@ import { useEditorRef } from '../stores/plate';
  * - OnChange prop
  * - RenderAboveSlate
  */
-export function PlateSlate({
+export function LateSlate({
   children,
   id,
 }: {

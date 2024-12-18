@@ -6,16 +6,16 @@ import { useComposedRef } from '@sewellstephens/react-utils';
 import { Editable } from 'slate-react';
 
 import { useEditableProps } from '../hooks';
-import { type PlateStoreState, useEditorRef } from '../stores';
+import { type LateStoreState, useEditorRef } from '../stores';
 import { EditorHotkeysEffect } from './EditorHotkeysEffect';
 import { EditorMethodsEffect } from './EditorMethodsEffect';
 import { EditorRefEffect } from './EditorRefEffect';
 import { EditorStateEffect } from './EditorStateEffect';
-import { PlateControllerEffect } from './PlateControllerEffect';
-import { PlateSlate } from './PlateSlate';
+import { LateControllerEffect } from './LateControllerEffect';
+import { LateSlate } from './LateSlate';
 
-export type PlateContentProps = {
-  decorate?: PlateStoreState['decorate'];
+export type LateContentProps = {
+  decorate?: LateStoreState['decorate'];
   /** R enders the editable content. */
   renderEditable?: (editable: React.ReactElement) => React.ReactNode;
 } & Omit<TEditableProps, 'decorate'>;
@@ -32,15 +32,15 @@ export type PlateContentProps = {
  * - RenderLeaf prop
  * - UseHooks
  */
-const PlateContent = React.forwardRef(
-  ({ renderEditable, ...props }: PlateContentProps, ref) => {
+const LateContent = React.forwardRef(
+  ({ renderEditable, ...props }: LateContentProps, ref) => {
     const { id } = props;
 
     const editor = useEditorRef(id);
 
     if (!editor) {
       throw new Error(
-        'Editor not found. Please ensure that PlateContent is rendered below Plate.'
+        'Editor not found. Please ensure that LateContent is rendered below Late.'
       );
     }
 
@@ -90,7 +90,7 @@ const PlateContent = React.forwardRef(
         <EditorHotkeysEffect editableRef={editableRef} id={id} />
         <EditorStateEffect id={id} />
         <EditorRefEffect id={id} />
-        <PlateControllerEffect id={id} />
+        <LateControllerEffect id={id} />
 
         {afterEditable}
       </>
@@ -105,9 +105,9 @@ const PlateContent = React.forwardRef(
         aboveEditable = <AboveEditable>{aboveEditable}</AboveEditable>;
     });
 
-    return <PlateSlate id={id}>{aboveEditable}</PlateSlate>;
+    return <LateSlate id={id}>{aboveEditable}</LateSlate>;
   }
 );
-PlateContent.displayName = 'PlateContent';
+LateContent.displayName = 'LateContent';
 
-export { PlateContent };
+export { LateContent };

@@ -2,13 +2,13 @@
 
 import { getHtmlDocument, jsx } from '@sewellstephens/plate-test-utils';
 
-import { createPlateEditor } from '../../../../react';
+import { createLateEditor } from '../../../../react';
 import { deserializeHtmlNode } from './deserializeHtmlNode';
 
 jsx;
 
 describe('when element has a br', () => {
-  const editor = createPlateEditor({ plugins: [] });
+  const editor = createLateEditor({ plugins: [] });
 
   const html = `<html><body>test<br /></body></html>`;
   const element = getHtmlDocument(html).body;

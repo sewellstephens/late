@@ -1,10 +1,10 @@
-# Plate HTML serializer plugin
+# Late HTML serializer plugin
 
-This package implements the HTML serializer for Plate.
+This package implements the HTML serializer for Late.
 
 ## Documentation
 
-Check out [Serializing HTML](https://platejs.org/docs/html).
+Check out [Serializing HTML](https://sewellstephens.github.io/late/docs/html).
 
 ## License
 

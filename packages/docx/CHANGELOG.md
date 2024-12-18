@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - `createDeserializeDocxPlugin` -> `DocxPlugin`
 
 ## 36.5.8
@@ -65,7 +65,7 @@
 
 ### Patch Changes
 
-- [#3125](https://github.com/udecode/plate/pull/3125) by [@zbeyens](https://github.com/zbeyens) –
+- [#3125](https://github.com/sewellstephens/late/pull/3125) by [@zbeyens](https://github.com/zbeyens) –
   - Remove plugin dependencies.
 
 ## 32.0.2
@@ -102,7 +102,7 @@
 
 ### Minor Changes
 
-- [#3040](https://github.com/udecode/plate/pull/3040) by [@zbeyens](https://github.com/zbeyens) – Updated minor dependencies
+- [#3040](https://github.com/sewellstephens/late/pull/3040) by [@zbeyens](https://github.com/zbeyens) – Updated minor dependencies
 
 ## 30.9.4
 
@@ -116,7 +116,7 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/udecode/plate/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.5.2
 
@@ -164,7 +164,7 @@
 
 ### Patch Changes
 
-- [#2729](https://github.com/udecode/plate/pull/2729) by [@12joan](https://github.com/12joan) – Before sending DOCX HTML to be deserialized, wrap it in a `<div>` with `white-space: pre-wrap` to prevent white space from being collapsed.
+- [#2729](https://github.com/sewellstephens/late/pull/2729) by [@12joan](https://github.com/12joan) – Before sending DOCX HTML to be deserialized, wrap it in a `<div>` with `white-space: pre-wrap` to prevent white space from being collapsed.
 
 ## 25.0.0
 
@@ -176,13 +176,13 @@
 
 ### Patch Changes
 
-- [#2678](https://github.com/udecode/plate/pull/2678) by [@rcbevans](https://github.com/rcbevans) – Fixes #2677: CommonJS validator import in cleanDocXImageElements
+- [#2678](https://github.com/sewellstephens/late/pull/2678) by [@rcbevans](https://github.com/rcbevans) – Fixes #2677: CommonJS validator import in cleanDocXImageElements
 
 ## 24.4.0
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -422,7 +422,7 @@
 
 ### Patch Changes
 
-- [#1500](https://github.com/udecode/plate/pull/1500) by [@zbeyens](https://github.com/zbeyens) – updated deps:
+- [#1500](https://github.com/sewellstephens/late/pull/1500) by [@zbeyens](https://github.com/zbeyens) – updated deps:
   ```bash
   "validator": "^13.7.0"
   ```
@@ -463,7 +463,7 @@
 
 ### Minor Changes
 
-- [#1373](https://github.com/udecode/plate/pull/1373) by [@zbeyens](https://github.com/zbeyens) – Docx deserializer supports more indent list styles: DecimalLeadingZero, LowerRoman, UpperRoman, UpperAlpha
+- [#1373](https://github.com/sewellstephens/late/pull/1373) by [@zbeyens](https://github.com/zbeyens) – Docx deserializer supports more indent list styles: DecimalLeadingZero, LowerRoman, UpperRoman, UpperAlpha
 
 ## 9.3.1
 
@@ -471,7 +471,7 @@
 
 ### Minor Changes
 
-- [#1364](https://github.com/udecode/plate/pull/1364) by [@zbeyens](https://github.com/zbeyens) – Feat: new textIndent plugin + docx deserializer support
+- [#1364](https://github.com/sewellstephens/late/pull/1364) by [@zbeyens](https://github.com/zbeyens) – Feat: new textIndent plugin + docx deserializer support
 
 ## 9.2.1
 
@@ -485,14 +485,14 @@
 
 ### Minor Changes
 
-- [#1315](https://github.com/udecode/plate/pull/1315) by [@zbeyens](https://github.com/zbeyens) –
+- [#1315](https://github.com/sewellstephens/late/pull/1315) by [@zbeyens](https://github.com/zbeyens) –
   - handle `in` unit for indentation
 
 ## 9.0.0
 
 ### Minor Changes
 
-- [#1303](https://github.com/udecode/plate/pull/1303) by [@zbeyens](https://github.com/zbeyens) –
+- [#1303](https://github.com/sewellstephens/late/pull/1303) by [@zbeyens](https://github.com/zbeyens) –
   - moved many utils to `@sewellstephens/plate-core`
   - deserialize `textIndent` to indent list
   - changed indent step from `32` to `36`
@@ -501,7 +501,7 @@
 
 ### Minor Changes
 
-- [#1266](https://github.com/udecode/plate/pull/1266) by [@zbeyens](https://github.com/zbeyens) –
+- [#1266](https://github.com/sewellstephens/late/pull/1266) by [@zbeyens](https://github.com/zbeyens) –
   - deserialize line-height in paragraph and headers
   - deserialize tabs
   - deserialize block marks: copy block marks to a new span child
@@ -513,7 +513,7 @@
 
 ### Minor Changes
 
-- [#1252](https://github.com/udecode/plate/pull/1252) by [@zbeyens](https://github.com/zbeyens) –
+- [#1252](https://github.com/sewellstephens/late/pull/1252) by [@zbeyens](https://github.com/zbeyens) –
   - support text align for p, h1, h2, h3
   - support for list h1, h2, h3
 
@@ -521,7 +521,7 @@
 
 ### Patch Changes
 
-- [#1249](https://github.com/udecode/plate/pull/1249) by [@zbeyens](https://github.com/zbeyens) – Fix:
+- [#1249](https://github.com/sewellstephens/late/pull/1249) by [@zbeyens](https://github.com/zbeyens) – Fix:
   - convert docx `mso-spacerun: yes` to spaces
   - indent was not working with margin left values including a dot, e.g. `10.0pt`
   - docx italic style

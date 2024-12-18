@@ -1,7 +1,7 @@
 {
   "name": "@sewellstephens/plate-markdown",
   "version": "37.0.0",
-  "description": "Markdown serializer plugin for Plate",
+  "description": "Markdown serializer plugin for Late",
   "keywords": [
     "markdown",
     "md",
@@ -10,13 +10,13 @@
     "serializer",
     "slate"
   ],
-  "homepage": "https://platejs.org",
+  "homepage": "https://sewellstephens.github.io/late",
   "bugs": {
-    "url": "https://github.com/udecode/plate/issues"
+    "url": "https://github.com/sewellstephens/late/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/udecode/plate.git",
+    "url": "https://github.com/sewellstephens/late.git",
     "directory": "packages/markdown"
   },
   "license": "MIT",

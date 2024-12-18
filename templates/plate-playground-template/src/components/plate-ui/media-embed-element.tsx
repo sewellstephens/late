@@ -1,6 +1,6 @@
 import React from 'react';
 import { cn, withRef } from '@sewellstephens/cn';
-import { PlateElement, withHOC } from '@sewellstephens/plate-common';
+import { LateElement, withHOC } from '@sewellstephens/plate-common';
 import {
   ELEMENT_MEDIA_EMBED,
   parseTwitterUrl,
@@ -21,7 +21,7 @@ import {
 
 export const MediaEmbedElement = withHOC(
   ResizableProvider,
-  withRef<typeof PlateElement>(({ className, children, ...props }, ref) => {
+  withRef<typeof LateElement>(({ className, children, ...props }, ref) => {
     const {
       align = 'center',
       focused,
@@ -39,7 +39,7 @@ export const MediaEmbedElement = withHOC(
 
     return (
       <MediaPopover pluginKey={ELEMENT_MEDIA_EMBED}>
-        <PlateElement
+        <LateElement
           ref={ref}
           className={cn('relative py-2.5', className)}
           {...props}
@@ -129,7 +129,7 @@ export const MediaEmbedElement = withHOC(
           </figure>
 
           {children}
-        </PlateElement>
+        </LateElement>
       </MediaPopover>
     );
   })

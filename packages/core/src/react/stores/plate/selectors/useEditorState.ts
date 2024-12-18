@@ -1,16 +1,16 @@
-import type { PlateEditor } from '../../../editor/PlateEditor';
+import type { LateEditor } from '../../../editor/LateEditor';
 
 import {
-  type UsePlateEditorStoreOptions,
-  usePlateSelectors,
-} from '../createPlateStore';
+  type UseLateEditorStoreOptions,
+  useLateSelectors,
+} from '../createLateStore';
 
 /** Get editor state which is updated on editor change. */
-export const useEditorState = <E extends PlateEditor = PlateEditor>(
+export const useEditorState = <E extends LateEditor = LateEditor>(
   id?: string,
-  options: UsePlateEditorStoreOptions = {}
+  options: UseLateEditorStoreOptions = {}
 ): E => {
-  return usePlateSelectors(id, {
+  return useLateSelectors(id, {
     debugHookName: 'useEditorState',
     ...options,
   }).trackedEditor().editor;

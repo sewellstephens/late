@@ -99,7 +99,7 @@ insertTabbableEntries: (editor) => {
 ### TabbablePlugin
 
 <APIOptions>
-<APIItem name="query" type="(editor: PlateEditor<V>, event: KeyboardEvent) => boolean" optional>
+<APIItem name="query" type="(editor: LateEditor<V>, event: KeyboardEvent) => boolean" optional>
 Dynamically enables or disables the plugin. Returns `true` by default.
 
 - **Default:** **`() => true`**
@@ -111,7 +111,7 @@ Determines if the plugin adds its event listener to the document instead of the 
 - **Default:** **`false`**
 
 </APIItem>
-<APIItem name="insertTabbableEntries" type="(editor: PlateEditor<V>, event: KeyboardEvent) => TabbableEntry[]" optional>
+<APIItem name="insertTabbableEntries" type="(editor: LateEditor<V>, event: KeyboardEvent) => TabbableEntry[]" optional>
 Adds additional tabbable entries to the list of tabbable elements. Useful for adding tabbables that are not contained within the editor. It ignores `isTabbable`.
 
 - **Default:** **`() => []`**

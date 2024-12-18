@@ -13,8 +13,8 @@ import {
 } from '@sewellstephens/plate-common';
 import { ParagraphPlugin } from '@sewellstephens/plate-common';
 import {
-  createPlateEditor,
-  createTPlatePlugin,
+  createLateEditor,
+  createTLatePlugin,
   getEditorPlugin,
 } from '@sewellstephens/plate-common/react';
 import * as isHotkey from '@sewellstephens/plate-core';
@@ -44,7 +44,7 @@ describe('onKeyDownResetNode', () => {
       types: [BlockquotePlugin.key],
     };
 
-    const plugin = createTPlatePlugin<ResetNodeConfig>({
+    const plugin = createTLatePlugin<ResetNodeConfig>({
       options: {
         rules: [
           { ...blockquoteRule, ...enterRule },
@@ -72,7 +72,7 @@ describe('onKeyDownResetNode', () => {
         </editor>
       ) as any;
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins: [plugin],
       });
@@ -112,7 +112,7 @@ describe('onKeyDownResetNode', () => {
         </editor>
       ) as any;
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins: [plugin],
       });
@@ -137,7 +137,7 @@ describe('onKeyDownResetNode', () => {
       types: [CodeBlockPlugin.key],
     };
 
-    const plugin = createTPlatePlugin({
+    const plugin = createTLatePlugin({
       options: {
         rules: [
           {
@@ -175,7 +175,7 @@ describe('onKeyDownResetNode', () => {
         </editor>
       ) as any;
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins: [plugin],
       });
@@ -219,7 +219,7 @@ describe('onKeyDownResetNode', () => {
         </editor>
       ) as any;
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins: [plugin],
       });
@@ -259,7 +259,7 @@ describe('onKeyDownResetNode', () => {
         </editor>
       ) as any;
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins: [plugin],
       });
@@ -303,7 +303,7 @@ describe('onKeyDownResetNode', () => {
         </editor>
       ) as any;
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins: [plugin],
       });
@@ -328,7 +328,7 @@ describe('onKeyDownResetNode', () => {
       types: [ListItemPlugin.key],
     };
 
-    const plugin = createTPlatePlugin({
+    const plugin = createTLatePlugin({
       options: {
         rules: [
           { ...listRule, ...enterRule },
@@ -360,7 +360,7 @@ describe('onKeyDownResetNode', () => {
         </editor>
       ) as any;
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins: [plugin],
       });
@@ -408,7 +408,7 @@ describe('onKeyDownResetNode', () => {
         </editor>
       ) as any;
 
-      const editor = createPlateEditor({
+      const editor = createLateEditor({
         editor: input,
         plugins: [plugin],
       });

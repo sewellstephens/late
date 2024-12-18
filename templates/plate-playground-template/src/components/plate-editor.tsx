@@ -3,7 +3,7 @@
 import React, { useRef } from 'react';
 import { cn } from '@sewellstephens/cn';
 import { CommentsProvider } from '@sewellstephens/plate-comments';
-import { Plate } from '@sewellstephens/plate-common';
+import { Late } from '@sewellstephens/plate-common';
 import { ELEMENT_PARAGRAPH } from '@sewellstephens/plate-paragraph';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
@@ -20,7 +20,7 @@ import { FloatingToolbar } from '@/components/plate-ui/floating-toolbar';
 import { FloatingToolbarButtons } from '@/components/plate-ui/floating-toolbar-buttons';
 import { MentionCombobox } from '@/components/plate-ui/mention-combobox';
 
-export default function PlateEditor() {
+export default function LateEditor() {
   const containerRef = useRef(null);
 
   const initialValue = [
@@ -34,7 +34,7 @@ export default function PlateEditor() {
   return (
     <DndProvider backend={HTML5Backend}>
       <CommentsProvider users={commentsUsers} myUserId={myUserId}>
-        <Plate plugins={plugins} initialValue={initialValue}>
+        <Late plugins={plugins} initialValue={initialValue}>
           <div
             ref={containerRef}
             className={cn(
@@ -65,7 +65,7 @@ export default function PlateEditor() {
 
             <CursorOverlay containerRef={containerRef} />
           </div>
-        </Plate>
+        </Late>
       </CommentsProvider>
     </DndProvider>
   );

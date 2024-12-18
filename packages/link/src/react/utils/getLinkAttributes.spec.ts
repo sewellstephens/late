@@ -1,4 +1,4 @@
-import { createPlateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewellstephens/plate-common/react';
 
 import type { TLinkElement } from '../../lib/types';
 
@@ -17,7 +17,7 @@ const defaultOptions: Partial<LinkConfig['options']> = {
 };
 
 const createEditor = (options: Partial<LinkConfig['options']> = {}) =>
-  createPlateEditor({
+  createLateEditor({
     plugins: [
       LinkPlugin.configure({
         options: {

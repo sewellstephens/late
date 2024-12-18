@@ -1,19 +1,19 @@
 ---
-title: Plate Utils
+title: Late Utils
 description: API reference for @sewellstephens/plate-utils.
 ---
 
-`@sewellstephens/plate-utils` contains utility functions for Plate.
+`@sewellstephens/plate-utils` contains utility functions for Late.
 
 ## Components
 
-### PlateElement
+### LateElement
 
 Generic component for rendering an element.
 
 <APIAttributes>
 
-PlateElementProps.
+LateElementProps.
 
 <APIItem name="className" type="string" optional>
 The CSS class to apply to the component.
@@ -57,7 +57,7 @@ Necessary for rendering the node children.
 </APIItem>
 <APIItem name="elementToAttributes" type="(element: N) => any" optional>
 Get HTML attributes from Slate element. This is an alternative to
-`PlatePlugin.props`.
+`LatePlugin.props`.
 </APIItem>
 <APIItem name="as" type="React.ElementType" optional>
 The component type to render as.
@@ -70,13 +70,13 @@ If true, merges its props onto its immediate child.
 </APIItem>
 </APIAttributes>
 
-### PlateLeaf
+### LateLeaf
 
 Generic component for rendering a leaf.
 
 <APIAttributes>
 
-PlateLeafProps.
+LateLeafProps.
 
 <APIItem name="className" type="string" optional>
 The CSS class to apply to the component.
@@ -106,7 +106,7 @@ This is always set to `true`.
 </APISubList>
 </APIItem>
 <APIItem name="leafToAttributes" type="(leaf: N) => any" optional>
-Get HTML attributes from Slate leaf. This is an alternative to `PlatePlugin.props`.
+Get HTML attributes from Slate leaf. This is an alternative to `LatePlugin.props`.
 </APIItem>
 <APIItem name="as" type="React.ElementType" optional>
 The component type to render as.
@@ -191,7 +191,7 @@ Generates the state for a placeholder in an editor.
     Options to query the node. If defined, the placeholder is only shown if the
     node matches the query.
   </APIItem>
-  <APIItem name="element" type="PlateElementProps">
+  <APIItem name="element" type="LateElementProps">
     The element in which the placeholder is to be displayed.
   </APIItem>
 </APIParameters>
@@ -229,7 +229,7 @@ Generates the props for a button that, when clicked, removes a node from the edi
 Checks whether a node matches the provided type.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor<V>">
+  <APIItem name="editor" type="LateEditor<V>">
     The editor in which the node is present.
   </APIItem>
   <APIItem name="node" type="any">
@@ -252,7 +252,7 @@ Checks whether a node matches the provided type.
 Replaces the children of an editor with default blocks.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor<V>">
+  <APIItem name="editor" type="LateEditor<V>">
     The editor whose children are to be replaced.
   </APIItem>
   <APIItem
@@ -297,7 +297,7 @@ Selects an editor at a target location or an edge (start, end).
 Moves the selection by offset based on the keyboard arrow keys.
 
 <APIParameters>
-  <APIItem name="editor" type="PlateEditor">
+  <APIItem name="editor" type="LateEditor">
     The editor instance.
   </APIItem>
   <APIItem name="options" type="object" optional>

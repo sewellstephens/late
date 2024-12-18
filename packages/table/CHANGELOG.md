@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- [#3420](https://github.com/udecode/plate/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
+- [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
   - `createTablePlugin` -> `TablePlugin`
   - NEW `TableRowPlugin`, `TableCellPlugin`, `TableCellHeaderPlugin`
   - Replace `insertTableColumn` with `editor.insert.tableColumn`
@@ -16,37 +16,37 @@
 
 ### Patch Changes
 
-- [#3463](https://github.com/udecode/plate/pull/3463) by [@beeant0512](https://github.com/beeant0512) – fixed the judgment logic of deleting the last row of the table
+- [#3463](https://github.com/sewellstephens/late/pull/3463) by [@beeant0512](https://github.com/beeant0512) – fixed the judgment logic of deleting the last row of the table
 
 ## 36.5.7
 
 ### Patch Changes
 
-- [#3461](https://github.com/udecode/plate/pull/3461) by [@beeant0512](https://github.com/beeant0512) – fix delete last row will cause editor crash when `enableMerging: true`
+- [#3461](https://github.com/sewellstephens/late/pull/3461) by [@beeant0512](https://github.com/beeant0512) – fix delete last row will cause editor crash when `enableMerging: true`
 
 ## 36.3.8
 
 ### Patch Changes
 
-- [#3406](https://github.com/udecode/plate/pull/3406) by [@beeant0512](https://github.com/beeant0512) – fix: where total or num is a string
+- [#3406](https://github.com/sewellstephens/late/pull/3406) by [@beeant0512](https://github.com/beeant0512) – fix: where total or num is a string
 
 ## 36.3.5
 
 ### Patch Changes
 
-- [#3410](https://github.com/udecode/plate/pull/3410) by [@AHappyAtlas](https://github.com/AHappyAtlas) – Recalculate the split cells after unmerge
+- [#3410](https://github.com/sewellstephens/late/pull/3410) by [@AHappyAtlas](https://github.com/AHappyAtlas) – Recalculate the split cells after unmerge
 
 ## 36.3.1
 
 ### Patch Changes
 
-- [#3368](https://github.com/udecode/plate/pull/3368) by [@beeant0512](https://github.com/beeant0512) – fix table column count when first row has merged columns
+- [#3368](https://github.com/sewellstephens/late/pull/3368) by [@beeant0512](https://github.com/beeant0512) – fix table column count when first row has merged columns
 
 ## 36.2.0
 
 ### Patch Changes
 
-- [#3383](https://github.com/udecode/plate/pull/3383) by [@EvanSmith93](https://github.com/EvanSmith93) – Fix table header property and apply header to only the top row of new tables
+- [#3383](https://github.com/sewellstephens/late/pull/3383) by [@EvanSmith93](https://github.com/EvanSmith93) – Fix table header property and apply header to only the top row of new tables
 
 ## 36.0.0
 
@@ -54,13 +54,13 @@
 
 ### Minor Changes
 
-- [`a115f969d2032af53ea88c6add7d1dfa7cf3610f`](https://github.com/udecode/plate/commit/a115f969d2032af53ea88c6add7d1dfa7cf3610f) – Add `getCellChildren` option to `TablePlugin`
+- [`a115f969d2032af53ea88c6add7d1dfa7cf3610f`](https://github.com/sewellstephens/late/commit/a115f969d2032af53ea88c6add7d1dfa7cf3610f) – Add `getCellChildren` option to `TablePlugin`
 
 ## 35.1.0
 
 ### Minor Changes
 
-- [#3313](https://github.com/udecode/plate/pull/3313) by [@zbeyens](https://github.com/zbeyens) –
+- [#3313](https://github.com/sewellstephens/late/pull/3313) by [@zbeyens](https://github.com/zbeyens) –
   - Add `cellFactory` option to `TablePlugin`, called each time a cell is created. Default is `getEmptyCellNode`
   - Remove `newCellChildren` option from `TablePlugin`, use `cellFactory` instead
 
@@ -70,13 +70,13 @@
 
 ### Patch Changes
 
-- [#3222](https://github.com/udecode/plate/pull/3222) by [@dimaanj](https://github.com/dimaanj) – fix serializeHtml when overwriteByKey used
+- [#3222](https://github.com/sewellstephens/late/pull/3222) by [@dimaanj](https://github.com/dimaanj) – fix serializeHtml when overwriteByKey used
 
 ## 33.0.2
 
 ### Patch Changes
 
-- [#3187](https://github.com/udecode/plate/pull/3187) by [@zbeyens](https://github.com/zbeyens) – Fix types
+- [#3187](https://github.com/sewellstephens/late/pull/3187) by [@zbeyens](https://github.com/zbeyens) – Fix types
 
 ## 33.0.0
 
@@ -84,7 +84,7 @@
 
 ### Patch Changes
 
-- [#3172](https://github.com/udecode/plate/pull/3172) by [@KorovinQuantori](https://github.com/KorovinQuantori) – Add computeCellIndices fallback for table insert functions
+- [#3172](https://github.com/sewellstephens/late/pull/3172) by [@KorovinQuantori](https://github.com/KorovinQuantori) – Add computeCellIndices fallback for table insert functions
 
 ## 32.0.0
 
@@ -92,33 +92,33 @@
 
 ### Patch Changes
 
-- [#3138](https://github.com/udecode/plate/pull/3138) by [@felixfeng33](https://github.com/felixfeng33) – Fix: adding marks in a cell is applying to the whole cell
+- [#3138](https://github.com/sewellstephens/late/pull/3138) by [@felixfeng33](https://github.com/felixfeng33) – Fix: adding marks in a cell is applying to the whole cell
 
 ## 31.4.0
 
 ### Patch Changes
 
-- [#3118](https://github.com/udecode/plate/pull/3118) by [@felixfeng33](https://github.com/felixfeng33) – Missing exports
+- [#3118](https://github.com/sewellstephens/late/pull/3118) by [@felixfeng33](https://github.com/felixfeng33) – Missing exports
 
 ## 31.3.3
 
 ### Patch Changes
 
-- [#3090](https://github.com/udecode/plate/pull/3090) by [@felixfeng33](https://github.com/felixfeng33) – fix can not remove table column when selection is expanded
+- [#3090](https://github.com/sewellstephens/late/pull/3090) by [@felixfeng33](https://github.com/felixfeng33) – fix can not remove table column when selection is expanded
 
 ## 31.3.2
 
 ### Patch Changes
 
-- [#3086](https://github.com/udecode/plate/pull/3086) by [@felixfeng33](https://github.com/felixfeng33) – fix add/removeMark behavior When selection is aboving table.
+- [#3086](https://github.com/sewellstephens/late/pull/3086) by [@felixfeng33](https://github.com/felixfeng33) – fix add/removeMark behavior When selection is aboving table.
 
 ## 31.3.1
 
 ### Patch Changes
 
-- [#3037](https://github.com/udecode/plate/pull/3037) by [@KorovinQuantori](https://github.com/KorovinQuantori) – Hotfix: reset cell entries list when table is overflown
+- [#3037](https://github.com/sewellstephens/late/pull/3037) by [@KorovinQuantori](https://github.com/KorovinQuantori) – Hotfix: reset cell entries list when table is overflown
 
-- [#3083](https://github.com/udecode/plate/pull/3083) by [@KorovinQuantori](https://github.com/KorovinQuantori) – Use getRowSpan\getColSpan instead of pointing at `rowspan` and `colspan` fields directly
+- [#3083](https://github.com/sewellstephens/late/pull/3083) by [@KorovinQuantori](https://github.com/KorovinQuantori) – Use getRowSpan\getColSpan instead of pointing at `rowspan` and `colspan` fields directly
 
 ## 31.0.0
 
@@ -126,33 +126,33 @@
 
 ### Patch Changes
 
-- [#3037](https://github.com/udecode/plate/pull/3037) by [@KorovinQuantori](https://github.com/KorovinQuantori) – Hotfix: reset cell entries list when table is overflown
+- [#3037](https://github.com/sewellstephens/late/pull/3037) by [@KorovinQuantori](https://github.com/KorovinQuantori) – Hotfix: reset cell entries list when table is overflown
 
-- [#3034](https://github.com/udecode/plate/pull/3034) by [@KorovinQuantori](https://github.com/KorovinQuantori) – canMerge = true only if user selected more than one cell
+- [#3034](https://github.com/sewellstephens/late/pull/3034) by [@KorovinQuantori](https://github.com/KorovinQuantori) – canMerge = true only if user selected more than one cell
 
 ## 30.9.3
 
 ### Patch Changes
 
-- [#3029](https://github.com/udecode/plate/pull/3029) by [@KorovinQuantori](https://github.com/KorovinQuantori) – Ensure that table selection is always a valid sub-table
+- [#3029](https://github.com/sewellstephens/late/pull/3029) by [@KorovinQuantori](https://github.com/KorovinQuantori) – Ensure that table selection is always a valid sub-table
 
 ## 30.9.2
 
 ### Patch Changes
 
-- [#3026](https://github.com/udecode/plate/pull/3026) by [@KorovinQuantori](https://github.com/KorovinQuantori) – Copy rowSpan and colSpan properties of cell when set fragment data
+- [#3026](https://github.com/sewellstephens/late/pull/3026) by [@KorovinQuantori](https://github.com/KorovinQuantori) – Copy rowSpan and colSpan properties of cell when set fragment data
 
 ## 30.9.1
 
 ### Patch Changes
 
-- [#3013](https://github.com/udecode/plate/pull/3013) by [@adrwz](https://github.com/adrwz) – Set "not found" value to -1 instead of 0 for colIndex
+- [#3013](https://github.com/sewellstephens/late/pull/3013) by [@adrwz](https://github.com/adrwz) – Set "not found" value to -1 instead of 0 for colIndex
 
 ## 30.5.3
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/udecode/plate/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -162,23 +162,23 @@
 
 ### Patch Changes
 
-- [#2873](https://github.com/udecode/plate/pull/2873) by [@zbeyens](https://github.com/zbeyens) – Fix: merging empty cells should result into a single empty paragraph
+- [#2873](https://github.com/sewellstephens/late/pull/2873) by [@zbeyens](https://github.com/zbeyens) – Fix: merging empty cells should result into a single empty paragraph
 
 ## 30.0.0
 
 ### Major Changes
 
-- [#2867](https://github.com/udecode/plate/pull/2867) by [@12joan](https://github.com/12joan) – Fix: in v28, `TableProvider` was incorrectly shared by all tables in the editor. `TableProvider` must now be rendered as part of `TableElement`.
+- [#2867](https://github.com/sewellstephens/late/pull/2867) by [@12joan](https://github.com/12joan) – Fix: in v28, `TableProvider` was incorrectly shared by all tables in the editor. `TableProvider` must now be rendered as part of `TableElement`.
 
 ### Patch Changes
 
-- [#2867](https://github.com/udecode/plate/pull/2867) by [@12joan](https://github.com/12joan) – Fix: Row and column size overrides not being applied correctly
+- [#2867](https://github.com/sewellstephens/late/pull/2867) by [@12joan](https://github.com/12joan) – Fix: Row and column size overrides not being applied correctly
 
 ## 29.1.0
 
 ### Patch Changes
 
-- [#2860](https://github.com/udecode/plate/pull/2860) by [@johnrazeur](https://github.com/johnrazeur) – Remove unused code from withDeleteTable
+- [#2860](https://github.com/sewellstephens/late/pull/2860) by [@johnrazeur](https://github.com/johnrazeur) – Remove unused code from withDeleteTable
 
 ## 29.0.1
 
@@ -188,13 +188,13 @@
 
 ### Patch Changes
 
-- [#2833](https://github.com/udecode/plate/pull/2833) by [@AndreyMarchuk](https://github.com/AndreyMarchuk) – Fix lodash import
+- [#2833](https://github.com/sewellstephens/late/pull/2833) by [@AndreyMarchuk](https://github.com/AndreyMarchuk) – Fix lodash import
 
 ## 28.1.1
 
 ### Patch Changes
 
-- [#2832](https://github.com/udecode/plate/pull/2832) by [@dimaanj](https://github.com/dimaanj) –
+- [#2832](https://github.com/sewellstephens/late/pull/2832) by [@dimaanj](https://github.com/dimaanj) –
   - Fix: merge of header cells in table
   - Fix: #2831
 
@@ -202,7 +202,7 @@
 
 ### Patch Changes
 
-- [#2816](https://github.com/udecode/plate/pull/2816) by [@12joan](https://github.com/12joan) –
+- [#2816](https://github.com/sewellstephens/late/pull/2816) by [@12joan](https://github.com/12joan) –
   - Replace `useEdtiorState` with `useEditorSelector`
 
 ## 27.0.3
@@ -211,19 +211,19 @@
 
 ### Patch Changes
 
-- [#2808](https://github.com/udecode/plate/pull/2808) by [@zbeyens](https://github.com/zbeyens) – Fix merging cells inside nested tables using the relative paths.
+- [#2808](https://github.com/sewellstephens/late/pull/2808) by [@zbeyens](https://github.com/zbeyens) – Fix merging cells inside nested tables using the relative paths.
 
 ## 27.0.1
 
 ### Patch Changes
 
-- [#2806](https://github.com/udecode/plate/pull/2806) by [@zbeyens](https://github.com/zbeyens) – Types: `TTableCellElement['attributes']` is now optional
+- [#2806](https://github.com/sewellstephens/late/pull/2806) by [@zbeyens](https://github.com/zbeyens) – Types: `TTableCellElement['attributes']` is now optional
 
 ## 27.0.0
 
 ### Patch Changes
 
-- [#2763](https://github.com/udecode/plate/pull/2763) by [@12joan](https://github.com/12joan) –
+- [#2763](https://github.com/sewellstephens/late/pull/2763) by [@12joan](https://github.com/12joan) –
   - Migrate store to jotai@2
   - Render `TableProvider` above editable
 
@@ -233,37 +233,37 @@
 
 ### Patch Changes
 
-- [#2776](https://github.com/udecode/plate/pull/2776) by [@dimaanj](https://github.com/dimaanj) – Fix unmerging a single column
+- [#2776](https://github.com/sewellstephens/late/pull/2776) by [@dimaanj](https://github.com/dimaanj) – Fix unmerging a single column
 
 ## 26.0.3
 
 ### Patch Changes
 
-- [#2724](https://github.com/udecode/plate/pull/2724) by [@duckRabbitPy](https://github.com/duckRabbitPy) – Table row insertion: cells in a newly added row will now receive header styling only if they satisfy specific criteria:
+- [#2724](https://github.com/sewellstephens/late/pull/2724) by [@duckRabbitPy](https://github.com/duckRabbitPy) – Table row insertion: cells in a newly added row will now receive header styling only if they satisfy specific criteria:
 
   - Every cell in the column is a header cell,
   - The table contains more than one row, or
   - The column possesses a predefined header property.
 
-- [`0b5962d0`](https://github.com/udecode/plate/commit/0b5962d06d6121526e09ff8b3e164d358bbc881c) by [@zbeyens](https://github.com/zbeyens) – Fix: `useTableMergeState` should return false values when `enableMerging: false`
+- [`0b5962d0`](https://github.com/sewellstephens/late/commit/0b5962d06d6121526e09ff8b3e164d358bbc881c) by [@zbeyens](https://github.com/zbeyens) – Fix: `useTableMergeState` should return false values when `enableMerging: false`
 
 ## 26.0.2
 
 ### Patch Changes
 
-- [#2771](https://github.com/udecode/plate/pull/2771) by [@KorovinQuantori](https://github.com/KorovinQuantori) – Fixed table insertion inside text nodes
+- [#2771](https://github.com/sewellstephens/late/pull/2771) by [@KorovinQuantori](https://github.com/KorovinQuantori) – Fixed table insertion inside text nodes
 
 ## 26.0.1
 
 ### Patch Changes
 
-- [#2768](https://github.com/udecode/plate/pull/2768) by [@KorovinQuantori](https://github.com/KorovinQuantori) – Fixed copy behaviour, when not all table cells are filled with some nodes
+- [#2768](https://github.com/sewellstephens/late/pull/2768) by [@KorovinQuantori](https://github.com/KorovinQuantori) – Fixed copy behaviour, when not all table cells are filled with some nodes
 
 ## 26.0.0
 
 ### Minor Changes
 
-- [#2733](https://github.com/udecode/plate/pull/2733) by [@dimaanj](https://github.com/dimaanj) –
+- [#2733](https://github.com/sewellstephens/late/pull/2733) by [@dimaanj](https://github.com/dimaanj) –
   - Table plugin has now merging support. To enable it, use option `enableMerging: true`
 
 ## 25.0.1
@@ -276,13 +276,13 @@
 
 ### Patch Changes
 
-- [#2682](https://github.com/udecode/plate/pull/2682) by [@kristian-puccio](https://github.com/kristian-puccio) – newCellChildren is now passed as an option to insertTable or the plugin option is used
+- [#2682](https://github.com/sewellstephens/late/pull/2682) by [@kristian-puccio](https://github.com/kristian-puccio) – newCellChildren is now passed as an option to insertTable or the plugin option is used
 
 ## 24.4.0
 
 ### Minor Changes
 
-- [#2675](https://github.com/udecode/plate/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
+- [#2675](https://github.com/sewellstephens/late/pull/2675) by [@zbeyens](https://github.com/zbeyens) – Support slate-react 0.99.0
 
 ## 24.3.6
 
@@ -310,7 +310,7 @@
 
 ### Patch Changes
 
-- [#2594](https://github.com/udecode/plate/pull/2594) by [@OliverWales](https://github.com/OliverWales) – Fix column deletion early return
+- [#2594](https://github.com/sewellstephens/late/pull/2594) by [@OliverWales](https://github.com/OliverWales) – Fix column deletion early return
 
 ## 23.6.0
 
@@ -318,7 +318,7 @@
 
 ### Patch Changes
 
-- [#2581](https://github.com/udecode/plate/pull/2581) by [@OliverWales](https://github.com/OliverWales) – Modify insertTableRow and insertTableColumn to support header columns to preserve header columns if they exist + not blindly assume that it's a header row if the first cell in that row is a header cell.
+- [#2581](https://github.com/sewellstephens/late/pull/2581) by [@OliverWales](https://github.com/OliverWales) – Modify insertTableRow and insertTableColumn to support header columns to preserve header columns if they exist + not blindly assume that it's a header row if the first cell in that row is a header cell.
 
 ## 23.3.1
 
@@ -328,21 +328,21 @@
 
 ### Minor Changes
 
-- [#2557](https://github.com/udecode/plate/pull/2557) by [@zbeyens](https://github.com/zbeyens) – Add support of table cell background styles. To update the component, run:
+- [#2557](https://github.com/sewellstephens/late/pull/2557) by [@zbeyens](https://github.com/zbeyens) – Add support of table cell background styles. To update the component, run:
   ```bash
   npx @sewellstephens/plate-ui@latest add table-cell-element
   ```
 
 ### Patch Changes
 
-- [#2555](https://github.com/udecode/plate/pull/2555) by [@zbeyens](https://github.com/zbeyens) – Major changes missing from 23.0.0:
+- [#2555](https://github.com/sewellstephens/late/pull/2555) by [@zbeyens](https://github.com/zbeyens) – Major changes missing from 23.0.0:
   - Removed `TableCellElementResizable`. Use `useTableCellElementResizableState` and `useTableCellElementResizable` instead.
 
 ## 23.0.1
 
 ### Patch Changes
 
-- [#2550](https://github.com/udecode/plate/pull/2550) by [@zbeyens](https://github.com/zbeyens) – Fix cell selection in firefox
+- [#2550](https://github.com/sewellstephens/late/pull/2550) by [@zbeyens](https://github.com/zbeyens) – Fix cell selection in firefox
 
 ## 23.0.0
 
@@ -354,7 +354,7 @@
 
 ### Major Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
   - `TableCellElement`
   - `TableCellElementResizableWrapper`
   - `TableCellElementRoot`
@@ -375,13 +375,13 @@
 
 ### Minor Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – New hooks:
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – New hooks:
   - `useTableElement`
   - `useTableCellElement`
 
 ### Patch Changes
 
-- [#2471](https://github.com/udecode/plate/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Untab from first row cell should not throw anymore.
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Untab from first row cell should not throw anymore.
 
 ## 21.5.0
 
@@ -389,7 +389,7 @@
 
 ### Patch Changes
 
-- [#2461](https://github.com/udecode/plate/pull/2461) by [@dimaanj](https://github.com/dimaanj) – Support copy paste content of a single table cell.
+- [#2461](https://github.com/sewellstephens/late/pull/2461) by [@dimaanj](https://github.com/dimaanj) – Support copy paste content of a single table cell.
 
 ## 21.4.2
 
@@ -415,7 +415,7 @@
 
 ### Minor Changes
 
-- [#2302](https://github.com/udecode/plate/pull/2302) by [@zbeyens](https://github.com/zbeyens) –
+- [#2302](https://github.com/sewellstephens/late/pull/2302) by [@zbeyens](https://github.com/zbeyens) –
   - Table margin left resizing. Fixes #2301
   - Remove depedency on `re-resizable` in favor of new `@sewellstephens/resizable` package.
 
@@ -423,7 +423,7 @@
 
 ### Minor Changes
 
-- [#2289](https://github.com/udecode/plate/pull/2289) by [@zbeyens](https://github.com/zbeyens) – New queries:
+- [#2289](https://github.com/sewellstephens/late/pull/2289) by [@zbeyens](https://github.com/zbeyens) – New queries:
   - `getTableCellBorders`
   - `getLeftTableCell`
   - `getTopTableCell`
@@ -437,19 +437,19 @@
 
 ### Patch Changes
 
-- [#2285](https://github.com/udecode/plate/pull/2285) by [@12joan](https://github.com/12joan) – Ignore `defaultPrevented` keydown events
+- [#2285](https://github.com/sewellstephens/late/pull/2285) by [@12joan](https://github.com/12joan) – Ignore `defaultPrevented` keydown events
 
 ## 20.3.0
 
 ### Minor Changes
 
-- [#2276](https://github.com/udecode/plate/pull/2276) by [@12joan](https://github.com/12joan) – Table width is now preserved when resizing columns, except when resizing the last column
+- [#2276](https://github.com/sewellstephens/late/pull/2276) by [@12joan](https://github.com/12joan) – Table width is now preserved when resizing columns, except when resizing the last column
 
 ## 20.2.0
 
 ### Minor Changes
 
-- [#2273](https://github.com/udecode/plate/pull/2273) by [@12joan](https://github.com/12joan) –
+- [#2273](https://github.com/sewellstephens/late/pull/2273) by [@12joan](https://github.com/12joan) –
   - `TablePlugin` new option: `minColumnWidth` - Sets the minimum width a column can be resized to
   - `insertTableColumn` now shrinks columns if the new total width would exceed `initialTableWidth`
 
@@ -457,7 +457,7 @@
 
 ### Minor Changes
 
-- [#2270](https://github.com/udecode/plate/pull/2270) by [@12joan](https://github.com/12joan) –
+- [#2270](https://github.com/sewellstephens/late/pull/2270) by [@12joan](https://github.com/12joan) –
   - Make rows resizable in addition to columns
     - `TableCellElement.ResizableWrapper` no longer takes a `colIndex` prop
     - `TableCellElement.Resizable` now takes `stepX` and `stepY` as overrides for `step` to set the resize increments for the X and Y axes
@@ -467,7 +467,7 @@
 
 ### Major Changes
 
-- [#2251](https://github.com/udecode/plate/pull/2251) by [@zbeyens](https://github.com/zbeyens) –
+- [#2251](https://github.com/sewellstephens/late/pull/2251) by [@zbeyens](https://github.com/zbeyens) –
   - `TablePlugin` option `disableUnsetSingleColSize` has been renamed and inverted into `enableUnsetSingleColSize`. New default is disabled. **Migration**:
     - if using `disableUnsetSingleColSize: true`, the option can be removed
     - if using `disableUnsetSingleColSize: false`, use `enableUnsetSingleColSize: true`
@@ -475,7 +475,7 @@
 
 ### Minor Changes
 
-- [#2251](https://github.com/udecode/plate/pull/2251) by [@zbeyens](https://github.com/zbeyens) –
+- [#2251](https://github.com/sewellstephens/late/pull/2251) by [@zbeyens](https://github.com/zbeyens) –
   - `TablePlugin` new option: `initialTableWidth` – If defined, a normalizer will set each undefined table `colSizes` to this value divided by the number of columns. Merged cells not yet supported. If not defined, the table column sizes will stay to `auto`.
   - `insertTableColumn`: if option `initialTableWidth` is defined, the column size will be set to (a) the size of the next column if defined, (b) the size of the current column if it's the last one or (c) `initialTableWidth / colSizes.length`. If not defined, the column size stays to `auto`.
   - Headless UI:
@@ -497,7 +497,7 @@
 
 ### Patch Changes
 
-- [#2165](https://github.com/udecode/plate/pull/2165) by [@OliverWales](https://github.com/OliverWales) – Override setFragmentData for table range selections #2137
+- [#2165](https://github.com/sewellstephens/late/pull/2165) by [@OliverWales](https://github.com/OliverWales) – Override setFragmentData for table range selections #2137
 
 ## 19.2.0
 
@@ -507,7 +507,7 @@
 
 ### Patch Changes
 
-- [#2142](https://github.com/udecode/plate/pull/2142) by [@zbeyens](https://github.com/zbeyens) – fix: pass `deleteFragment` params
+- [#2142](https://github.com/sewellstephens/late/pull/2142) by [@zbeyens](https://github.com/zbeyens) – fix: pass `deleteFragment` params
 
 ## 19.0.3
 
@@ -521,14 +521,14 @@
 
 ### Patch Changes
 
-- [#1829](https://github.com/udecode/plate/pull/1829) by [@osamatanveer](https://github.com/osamatanveer) –
+- [#1829](https://github.com/sewellstephens/late/pull/1829) by [@osamatanveer](https://github.com/osamatanveer) –
   - fix import
 
 ## 18.11.0
 
 ### Patch Changes
 
-- [#2006](https://github.com/udecode/plate/pull/2006) by [@Raigen](https://github.com/Raigen) – `insertTableColumn`, `insertTableRow`: new option `at`
+- [#2006](https://github.com/sewellstephens/late/pull/2006) by [@Raigen](https://github.com/Raigen) – `insertTableColumn`, `insertTableRow`: new option `at`
 
 ## 18.9.0
 
@@ -542,7 +542,7 @@
 
 ### Patch Changes
 
-- [#1914](https://github.com/udecode/plate/pull/1914) by [@zbeyens](https://github.com/zbeyens) – fix: `deleteColumn` supports table with different row sizes
+- [#1914](https://github.com/sewellstephens/late/pull/1914) by [@zbeyens](https://github.com/zbeyens) – fix: `deleteColumn` supports table with different row sizes
 
 ## 18.1.1
 
@@ -560,30 +560,30 @@
 
 ### Minor Changes
 
-- [#1835](https://github.com/udecode/plate/pull/1835) by [@zbeyens](https://github.com/zbeyens) – New table plugin option: `disableUnsetSingleColSize`. Disable unsetting the first column width when the table has one column. Set it to true if you want to resize the table width when there is only one column. Keep it false if you have a full-width table.
+- [#1835](https://github.com/sewellstephens/late/pull/1835) by [@zbeyens](https://github.com/zbeyens) – New table plugin option: `disableUnsetSingleColSize`. Disable unsetting the first column width when the table has one column. Set it to true if you want to resize the table width when there is only one column. Keep it false if you have a full-width table.
 
 ## 16.5.0
 
 ### Patch Changes
 
-- [#1832](https://github.com/udecode/plate/pull/1832) by [@zbeyens](https://github.com/zbeyens) – Refactor: use `editor.currentKeyboardEvent`
+- [#1832](https://github.com/sewellstephens/late/pull/1832) by [@zbeyens](https://github.com/zbeyens) – Refactor: use `editor.currentKeyboardEvent`
 
 ## 16.4.2
 
 ### Patch Changes
 
-- [#1821](https://github.com/udecode/plate/pull/1821) by [@zbeyens](https://github.com/zbeyens) –
+- [#1821](https://github.com/sewellstephens/late/pull/1821) by [@zbeyens](https://github.com/zbeyens) –
 
   - Fixes #1356
   - Fixes #1359
 
-- [#1819](https://github.com/udecode/plate/pull/1819) by [@zbeyens](https://github.com/zbeyens) – Fix: https://github.com/udecode/editor-protocol/issues/76
+- [#1819](https://github.com/sewellstephens/late/pull/1819) by [@zbeyens](https://github.com/zbeyens) – Fix: https://github.com/udecode/editor-protocol/issues/76
 
 ## 16.3.0
 
 ### Minor Changes
 
-- [#1796](https://github.com/udecode/plate/pull/1796) by [@zbeyens](https://github.com/zbeyens) –
+- [#1796](https://github.com/sewellstephens/late/pull/1796) by [@zbeyens](https://github.com/zbeyens) –
   - Fixes #1795
   - Fixes #1794
   - Fixes #1793
@@ -602,7 +602,7 @@
 
 ### Minor Changes
 
-- [#1778](https://github.com/udecode/plate/pull/1778) by [@zbeyens](https://github.com/zbeyens) –
+- [#1778](https://github.com/sewellstephens/late/pull/1778) by [@zbeyens](https://github.com/zbeyens) –
   - on delete many cells:
     - replace cell children by a paragraph then reselect all the selected cells
   - on get fragment (copy):
@@ -637,7 +637,7 @@
 
 ### Major Changes
 
-- [#1677](https://github.com/udecode/plate/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
+- [#1677](https://github.com/sewellstephens/late/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
   - remove `addRow` for `insertTableRow`
   - remove `addColumn` for `insertTableColumn`
 
@@ -659,13 +659,13 @@
 
 ### Patch Changes
 
-- [#1604](https://github.com/udecode/plate/pull/1604) by [@zbeyens](https://github.com/zbeyens) – fix: table generics
+- [#1604](https://github.com/sewellstephens/late/pull/1604) by [@zbeyens](https://github.com/zbeyens) – fix: table generics
 
 ## 13.2.1
 
 ### Patch Changes
 
-- [#1600](https://github.com/udecode/plate/pull/1600) by [@dylans](https://github.com/dylans) – apply missing generic
+- [#1600](https://github.com/sewellstephens/late/pull/1600) by [@dylans](https://github.com/dylans) – apply missing generic
 
 ## 13.1.0
 
@@ -673,13 +673,13 @@
 
 ### Patch Changes
 
-- [#1573](https://github.com/udecode/plate/pull/1573) by [@zbeyens](https://github.com/zbeyens) – Table plugin: add `insertRow`, `insertColumn` options
+- [#1573](https://github.com/sewellstephens/late/pull/1573) by [@zbeyens](https://github.com/zbeyens) – Table plugin: add `insertRow`, `insertColumn` options
 
 ## 11.3.0
 
 ### Minor Changes
 
-- [#1569](https://github.com/udecode/plate/pull/1569) by [@zbeyens](https://github.com/zbeyens) –
+- [#1569](https://github.com/sewellstephens/late/pull/1569) by [@zbeyens](https://github.com/zbeyens) –
   - https://github.com/udecode/editor-protocol/issues/32
   - `addRow` deprecated in favor of `insertTableRow`
   - `addColumn` deprecated in favor of `insertTableColumn`
@@ -691,7 +691,7 @@
 
 ### Minor Changes
 
-- [#1560](https://github.com/udecode/plate/pull/1560) by [@zbeyens](https://github.com/zbeyens) –
+- [#1560](https://github.com/sewellstephens/late/pull/1560) by [@zbeyens](https://github.com/zbeyens) –
   - fix: tab / untab when composing with IME
   - update peerDeps:
     - `"slate": ">=0.78.0"`
@@ -699,20 +699,20 @@
 
 ### Patch Changes
 
-- [#1554](https://github.com/udecode/plate/pull/1554) by [@mrganser](https://github.com/mrganser) – fix onKeyDownTable so it only acts with Tab key when selection is within a table, so default or others handlers can work outside
+- [#1554](https://github.com/sewellstephens/late/pull/1554) by [@mrganser](https://github.com/mrganser) – fix onKeyDownTable so it only acts with Tab key when selection is within a table, so default or others handlers can work outside
 
 ## 11.1.1
 
 ### Patch Changes
 
-- [#1548](https://github.com/udecode/plate/pull/1548) by [@zbeyens](https://github.com/zbeyens) –
+- [#1548](https://github.com/sewellstephens/late/pull/1548) by [@zbeyens](https://github.com/zbeyens) –
   - fix arrow navigation inside table cell having a block (e.g. paragraph)
 
 ## 11.1.0
 
 ### Minor Changes
 
-- [#1546](https://github.com/udecode/plate/pull/1546) by [@zbeyens](https://github.com/zbeyens) –
+- [#1546](https://github.com/sewellstephens/late/pull/1546) by [@zbeyens](https://github.com/zbeyens) –
 
   - `getTableGridAbove`: Get sub table above anchor and focus
   - `getTableGridByRange`: Get sub table between 2 cell paths.
@@ -769,7 +769,7 @@
 
 ### Patch Changes
 
-- [#1494](https://github.com/udecode/plate/pull/1494) by [@woodpeng](https://github.com/woodpeng) – prevent tab key event in table propagate to editor
+- [#1494](https://github.com/sewellstephens/late/pull/1494) by [@woodpeng](https://github.com/woodpeng) – prevent tab key event in table propagate to editor
 
 ## 10.5.3
 
@@ -787,7 +787,7 @@
 
 ### Patch Changes
 
-- [#1429](https://github.com/udecode/plate/pull/1429) by [@zbeyens](https://github.com/zbeyens) – `TableElement`:
+- [#1429](https://github.com/sewellstephens/late/pull/1429) by [@zbeyens](https://github.com/zbeyens) – `TableElement`:
   - fix undefined case
   - fix warning "Unknown event handler property `onRenderContainer`. It will be ignored."
 
@@ -801,7 +801,7 @@
 
 ### Patch Changes
 
-- [#1388](https://github.com/udecode/plate/pull/1388) by [@zbeyens](https://github.com/zbeyens) – fix for docs only: use `Array.from` instead of destructuring generators
+- [#1388](https://github.com/sewellstephens/late/pull/1388) by [@zbeyens](https://github.com/zbeyens) – fix for docs only: use `Array.from` instead of destructuring generators
 
 ## 10.1.0
 
@@ -817,19 +817,19 @@
 
 ### Patch Changes
 
-- [#1334](https://github.com/udecode/plate/pull/1334) by [@Pedrobusou](https://github.com/Pedrobusou) – prevent extra nodes from being copy pasted
+- [#1334](https://github.com/sewellstephens/late/pull/1334) by [@Pedrobusou](https://github.com/Pedrobusou) – prevent extra nodes from being copy pasted
 
 ## 9.1.3
 
 ### Patch Changes
 
-- [#1331](https://github.com/udecode/plate/pull/1331) by [@Pedrobusou](https://github.com/Pedrobusou) – add missing getPluginType usage
+- [#1331](https://github.com/sewellstephens/late/pull/1331) by [@Pedrobusou](https://github.com/Pedrobusou) – add missing getPluginType usage
 
 ## 9.1.1
 
 ### Patch Changes
 
-- [#1322](https://github.com/udecode/plate/pull/1322) by [@sctang2020](https://github.com/sctang2020) – fix #1216, set cusor to first cell for newly created table
+- [#1322](https://github.com/sewellstephens/late/pull/1322) by [@sctang2020](https://github.com/sctang2020) – fix #1216, set cusor to first cell for newly created table
 
 ## 9.0.0
 
@@ -857,7 +857,7 @@
 
 ### Minor Changes
 
-- [#1161](https://github.com/udecode/plate/pull/1161) by [@zbeyens](https://github.com/zbeyens) – Added:
+- [#1161](https://github.com/sewellstephens/late/pull/1161) by [@zbeyens](https://github.com/zbeyens) – Added:
   - `getTableColumnCount`
   - `getTableColumnIndex`: Get table column index of a cell node.
   - `setTableColSize`
@@ -869,14 +869,14 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`a6bf8c5e`](https://github.com/udecode/plate/commit/a6bf8c5e6897c6ab443e0ac3d69a30befeaddadf)]:
+- Updated dependencies [[`a6bf8c5e`](https://github.com/sewellstephens/late/commit/a6bf8c5e6897c6ab443e0ac3d69a30befeaddadf)]:
   - @sewellstephens/plate-common@5.3.5
 
 ## 5.3.1
 
 ### Patch Changes
 
-- Updated dependencies [[`8aec270f`](https://github.com/udecode/plate/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118)]:
+- Updated dependencies [[`8aec270f`](https://github.com/sewellstephens/late/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118)]:
   - @sewellstephens/plate-core@5.3.1
   - @sewellstephens/plate-common@5.3.1
 
@@ -884,7 +884,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`7ee21356`](https://github.com/udecode/plate/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e)]:
+- Updated dependencies [[`7ee21356`](https://github.com/sewellstephens/late/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e)]:
   - @sewellstephens/plate-core@5.3.0
   - @sewellstephens/plate-common@5.3.0
 
@@ -892,21 +892,21 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`503956fd`](https://github.com/udecode/plate/commit/503956fd9f71253249b3ad699b81c1c465351b0a)]:
+- Updated dependencies [[`503956fd`](https://github.com/sewellstephens/late/commit/503956fd9f71253249b3ad699b81c1c465351b0a)]:
   - @sewellstephens/plate-common@5.1.0
 
 ## 4.4.0
 
 ### Patch Changes
 
-- Updated dependencies [[`b22c06aa`](https://github.com/udecode/plate/commit/b22c06aad1cfed08069dadc7ec39bcbfb1d0af37)]:
+- Updated dependencies [[`b22c06aa`](https://github.com/sewellstephens/late/commit/b22c06aad1cfed08069dadc7ec39bcbfb1d0af37)]:
   - @sewellstephens/plate-common@4.4.0
 
 ## 4.3.7
 
 ### Patch Changes
 
-- Updated dependencies [[`58f6fb53`](https://github.com/udecode/plate/commit/58f6fb53bf45a2e0509f4aca617aa21356952fca)]:
+- Updated dependencies [[`58f6fb53`](https://github.com/sewellstephens/late/commit/58f6fb53bf45a2e0509f4aca617aa21356952fca)]:
   - @sewellstephens/plate-core@4.3.7
   - @sewellstephens/plate-common@4.3.7
 
@@ -914,7 +914,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`6af469cd`](https://github.com/udecode/plate/commit/6af469cd5ac310e831eb8a99a71eba73bde62fc6)]:
+- Updated dependencies [[`6af469cd`](https://github.com/sewellstephens/late/commit/6af469cd5ac310e831eb8a99a71eba73bde62fc6)]:
   - @sewellstephens/plate-core@4.3.0
   - @sewellstephens/plate-common@4.3.0
 
@@ -922,7 +922,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`f1da7267`](https://github.com/udecode/plate/commit/f1da7267d46d94e207f4477f73e42b63736a9085), [`35caf35d`](https://github.com/udecode/plate/commit/35caf35d48fff851518648ff66e64a4268dcc97c)]:
+- Updated dependencies [[`f1da7267`](https://github.com/sewellstephens/late/commit/f1da7267d46d94e207f4477f73e42b63736a9085), [`35caf35d`](https://github.com/sewellstephens/late/commit/35caf35d48fff851518648ff66e64a4268dcc97c)]:
   - @sewellstephens/plate-common@3.4.0
   - @sewellstephens/plate-core@3.4.0
 
@@ -930,13 +930,13 @@
 
 ### Minor Changes
 
-- [#995](https://github.com/udecode/plate/pull/995) [`58387c6d`](https://github.com/udecode/plate/commit/58387c6d34e86be7880999b40a9105b6178f4ce4) Thanks [@dylans](https://github.com/dylans)! - update slate dependencies and peerDependencies to 0.66.\*
+- [#995](https://github.com/sewellstephens/late/pull/995) [`58387c6d`](https://github.com/sewellstephens/late/commit/58387c6d34e86be7880999b40a9105b6178f4ce4) Thanks [@dylans](https://github.com/dylans)! - update slate dependencies and peerDependencies to 0.66.\*
 
 ### Patch Changes
 
-- [#1006](https://github.com/udecode/plate/pull/1006) [`56b2551b`](https://github.com/udecode/plate/commit/56b2551b2fa5fab180b3c99551144667f99f7afc) Thanks [@tjramage](https://github.com/tjramage)! - Adds more natural default header option when inserting table columns
+- [#1006](https://github.com/sewellstephens/late/pull/1006) [`56b2551b`](https://github.com/sewellstephens/late/commit/56b2551b2fa5fab180b3c99551144667f99f7afc) Thanks [@tjramage](https://github.com/tjramage)! - Adds more natural default header option when inserting table columns
 
-- Updated dependencies [[`58387c6d`](https://github.com/udecode/plate/commit/58387c6d34e86be7880999b40a9105b6178f4ce4)]:
+- Updated dependencies [[`58387c6d`](https://github.com/sewellstephens/late/commit/58387c6d34e86be7880999b40a9105b6178f4ce4)]:
   - @sewellstephens/plate-common@3.2.0
   - @sewellstephens/plate-core@3.2.0
 
@@ -944,63 +944,63 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`f6c58134`](https://github.com/udecode/plate/commit/f6c581347cc5877b7afa0774ef1ad78ad227564e)]:
+- Updated dependencies [[`f6c58134`](https://github.com/sewellstephens/late/commit/f6c581347cc5877b7afa0774ef1ad78ad227564e)]:
   - @sewellstephens/plate-common@3.1.3
 
 ## 3.1.2
 
 ### Patch Changes
 
-- [#997](https://github.com/udecode/plate/pull/997) [`1244bcb7`](https://github.com/udecode/plate/commit/1244bcb748411e6291d635647c2053b115704eb9) Thanks [@z0al](https://github.com/z0al)! - fix(table): jump to next header cell on TAB
+- [#997](https://github.com/sewellstephens/late/pull/997) [`1244bcb7`](https://github.com/sewellstephens/late/commit/1244bcb748411e6291d635647c2053b115704eb9) Thanks [@z0al](https://github.com/z0al)! - fix(table): jump to next header cell on TAB
 
-- [#994](https://github.com/udecode/plate/pull/994) [`5651aed7`](https://github.com/udecode/plate/commit/5651aed704d69af85e2dd7d6f850e8dcabcd45f4) Thanks [@z0al](https://github.com/z0al)! - fix(table): only mark first row as table header
+- [#994](https://github.com/sewellstephens/late/pull/994) [`5651aed7`](https://github.com/sewellstephens/late/commit/5651aed704d69af85e2dd7d6f850e8dcabcd45f4) Thanks [@z0al](https://github.com/z0al)! - fix(table): only mark first row as table header
 
 ## 3.0.2
 
 ### Patch Changes
 
-- [#965](https://github.com/udecode/plate/pull/965) [`83aaf31c`](https://github.com/udecode/plate/commit/83aaf31c02b24f388d1f178dcd4b80354ddab773) Thanks [@dylans](https://github.com/dylans)! - insertTable was only inserting header cells
+- [#965](https://github.com/sewellstephens/late/pull/965) [`83aaf31c`](https://github.com/sewellstephens/late/commit/83aaf31c02b24f388d1f178dcd4b80354ddab773) Thanks [@dylans](https://github.com/dylans)! - insertTable was only inserting header cells
 
 ## 2.0.1
 
 ### Patch Changes
 
-- [#948](https://github.com/udecode/plate/pull/948) [`099a86fa`](https://github.com/udecode/plate/commit/099a86faede3b3acf7da6842a78e4fab76815073) Thanks [@dylans](https://github.com/dylans)! - some table cell calls were missing th check
+- [#948](https://github.com/sewellstephens/late/pull/948) [`099a86fa`](https://github.com/sewellstephens/late/commit/099a86faede3b3acf7da6842a78e4fab76815073) Thanks [@dylans](https://github.com/dylans)! - some table cell calls were missing th check
 
 ## 2.0.0
 
 ### Patch Changes
 
-- Updated dependencies [[`ec4d5b7b`](https://github.com/udecode/plate/commit/ec4d5b7bd01b6fd21ba14a28f782c143d32c7532)]:
+- Updated dependencies [[`ec4d5b7b`](https://github.com/sewellstephens/late/commit/ec4d5b7bd01b6fd21ba14a28f782c143d32c7532)]:
   - @sewellstephens/plate-common@2.0.0
 
 ## 1.1.6
 
 ### Patch Changes
 
-- [#918](https://github.com/udecode/plate/pull/918) [`7d045d8d`](https://github.com/udecode/plate/commit/7d045d8db39515d4574c5313cc97287486c5866b) Thanks [@zbeyens](https://github.com/zbeyens)! - add `slate-history` as a peerDep
+- [#918](https://github.com/sewellstephens/late/pull/918) [`7d045d8d`](https://github.com/sewellstephens/late/commit/7d045d8db39515d4574c5313cc97287486c5866b) Thanks [@zbeyens](https://github.com/zbeyens)! - add `slate-history` as a peerDep
 
-- Updated dependencies [[`7d045d8d`](https://github.com/udecode/plate/commit/7d045d8db39515d4574c5313cc97287486c5866b)]:
+- Updated dependencies [[`7d045d8d`](https://github.com/sewellstephens/late/commit/7d045d8db39515d4574c5313cc97287486c5866b)]:
   - @sewellstephens/plate-common@1.1.6
 
 ## 1.1.5
 
 ### Patch Changes
 
-- [#914](https://github.com/udecode/plate/pull/914) [`f955b72c`](https://github.com/udecode/plate/commit/f955b72c0ab97e2e2ca54f17f9f8022f7d0f121b) Thanks [@dylans](https://github.com/dylans)! - `deleteColumn` was not referring to TH and TD, but TD twice
+- [#914](https://github.com/sewellstephens/late/pull/914) [`f955b72c`](https://github.com/sewellstephens/late/commit/f955b72c0ab97e2e2ca54f17f9f8022f7d0f121b) Thanks [@dylans](https://github.com/dylans)! - `deleteColumn` was not referring to TH and TD, but TD twice
 
 ## 1.0.0
 
 ### Major Changes
 
-🎉 The **Slate Plugins** project has evolved to **Plate** 🎉
+🎉 The **Slate Plugins** project has evolved to **Late** 🎉
 
 To migrate, install `@sewellstephens/plate[-x]` then find and replace all
 occurrences of:
 
 - `slate-plugins` to `plate`
-- `SlatePlugins` to `Plate`
-- `SlatePlugin` to `PlatePlugin`
+- `SlatePlugins` to `Late`
+- `SlatePlugin` to `LatePlugin`
 
 ## 1.0.0-next.61
 

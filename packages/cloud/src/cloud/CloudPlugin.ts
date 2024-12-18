@@ -1,7 +1,7 @@
 import type { PluginConfig, Value } from '@sewellstephens/plate-common';
 
 import * as portiveClient from '@portive/client';
-import { createTPlatePlugin } from '@sewellstephens/plate-common/react';
+import { createTLatePlugin } from '@sewellstephens/plate-common/react';
 
 import type { Upload } from '../upload';
 import type { FinishUploadsOptions } from './types';
@@ -28,7 +28,7 @@ export type CloudConfig = PluginConfig<
   }
 >;
 
-export const CloudPlugin = createTPlatePlugin<CloudConfig>({
+export const CloudPlugin = createTLatePlugin<CloudConfig>({
   handlers: {
     onDrop: ({ editor, event }) => onDropCloud(editor, event),
     onPaste: ({ editor, event }) => onPasteCloud(editor, event),

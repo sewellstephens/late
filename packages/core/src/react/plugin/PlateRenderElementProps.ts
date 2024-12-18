@@ -2,10 +2,10 @@ import type { TElement } from '@sewellstephens/slate';
 import type { TRenderElementProps } from '@sewellstephens/slate-react';
 
 import type { AnyPluginConfig, PluginConfig } from '../../lib';
-import type { PlateRenderNodeProps } from './PlateRenderNodeProps';
+import type { LateRenderNodeProps } from './LateRenderNodeProps';
 
-/** Element props passed by Plate */
-export type PlateRenderElementProps<
+/** Element props passed by Late */
+export type LateRenderElementProps<
   N extends TElement = TElement,
   C extends AnyPluginConfig = PluginConfig,
-> = PlateRenderNodeProps<C> & TRenderElementProps<N>;
+> = LateRenderNodeProps<C> & TRenderElementProps<N>;

@@ -1,12 +1,12 @@
-# Plate autoformat plugin
+# Late autoformat plugin
 
-This package implements the autoformatting plugin for Plate. It allows
+This package implements the autoformatting plugin for Late. It allows
 styling text by typing sequences like **bold**.
 
 ## Documentation
 
 Check out
-[Autoformat](https://platejs.org/docs/autoformat).
+[Autoformat](https://sewellstephens.github.io/late/docs/autoformat).
 
 ## License
 
