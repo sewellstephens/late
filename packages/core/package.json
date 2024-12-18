@@ -1,6 +1,6 @@
 {
   "name": "@sewell_stephens/late-core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The core of Late – a plugin system for slate",
   "keywords": [
     "contentEditable",
