@@ -7,7 +7,7 @@ import {
   type TEditor,
   insertNodes,
   withoutNormalizing,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 import { removeNodeChildren } from './removeNodeChildren';
 

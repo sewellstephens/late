@@ -1,11 +1,11 @@
 import React from 'react';
-import { ComboboxItemProps } from '@sewellstephens/plate-combobox';
+import { ComboboxItemProps } from '@sewell_stephens/late-combobox';
 import {
   EmojiItemData,
   KEY_EMOJI,
   TEmojiCombobox,
   useEmojiComboboxState,
-} from '@sewellstephens/plate-emoji';
+} from '@sewell_stephens/late-emoji';
 
 import { Combobox } from './combobox';
 

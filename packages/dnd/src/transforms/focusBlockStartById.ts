@@ -1,7 +1,7 @@
-import type { TEditor } from '@sewellstephens/plate-common';
+import type { TEditor } from '@sewell_stephens/late-common';
 
-import { findNode, getStartPoint, select } from '@sewellstephens/plate-common';
-import { focusEditor } from '@sewellstephens/plate-common/react';
+import { findNode, getStartPoint, select } from '@sewell_stephens/late-common';
+import { focusEditor } from '@sewell_stephens/late-common/react';
 
 /** Select the start of a block by id and focus the editor. */
 export const focusBlockStartById = (editor: TEditor, id: string) => {

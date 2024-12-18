@@ -2,7 +2,7 @@ import {
   Key,
   type LatePlugin,
   toLatePlugin,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import { HeadingPlugin as BaseHeadingPlugin } from '../lib/HeadingPlugin';
 

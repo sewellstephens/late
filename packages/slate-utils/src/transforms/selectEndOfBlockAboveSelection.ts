@@ -1,6 +1,6 @@
 import type { Path } from 'slate';
 
-import { type TEditor, getEndPoint, select } from '@sewellstephens/slate';
+import { type TEditor, getEndPoint, select } from '@sewell_stephens/slate';
 
 import { getBlockAbove } from '../queries';
 

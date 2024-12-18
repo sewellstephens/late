@@ -1,5 +1,5 @@
 {
-  "name": "@sewellstephens/slate-react",
+  "name": "@sewell_stephens/slate-react",
   "version": "0.0.1",
   "description": "Slate extension",
   "keywords": [
@@ -42,9 +42,9 @@
     "typecheck": "yarn p:typecheck"
   },
   "dependencies": {
-    "@sewellstephens/react-utils": "^0.0.1",
-    "@sewellstephens/slate": "^0.0.1",
-    "@sewellstephens/utils": "^0.0.1"
+    "@sewell_stephens/react-utils": "^0.0.1",
+    "@sewell_stephens/slate": "^0.0.1",
+    "@sewell_stephens/utils": "^0.0.1"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -55,5 +55,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "3c69df6d17679bbabc43c4cff3370ae8c70ee466"
 }

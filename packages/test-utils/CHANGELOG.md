@@ -1,4 +1,4 @@
-# @sewellstephens/plate-test-utils
+# @sewell_stephens/late-test-utils
 
 ## 37.0.0
 
@@ -28,7 +28,7 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewell_stephens/late-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 24.3.2
 
@@ -89,7 +89,7 @@
 
 🎉 The **Slate Plugins** project has evolved to **Late** 🎉
 
-To migrate, install `@sewellstephens/plate[-x]` then find and replace all
+To migrate, install `@sewell_stephens/late[-x]` then find and replace all
 occurrences of:
 
 - `slate-plugins` to `plate`

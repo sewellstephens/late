@@ -1,11 +1,11 @@
-import type { KeyboardHandler } from '@sewellstephens/plate-common/react';
+import type { KeyboardHandler } from '@sewell_stephens/late-common/react';
 
 import {
   type TElement,
   getBlockAbove,
   isBlockAboveEmpty,
   isHotkey,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { outdentList } from '../lib';
 import { type IndentListConfig, IndentListPlugin } from './IndentListPlugin';

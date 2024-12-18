@@ -2,7 +2,7 @@
 
 import React, { type ReactNode, useState } from 'react';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 
 import { Separator } from '@/registry/default/plate-ui/separator';
 

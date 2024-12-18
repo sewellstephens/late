@@ -1,10 +1,10 @@
-import type { LateRenderElementProps } from '@sewellstephens/plate-common/react';
+import type { LateRenderElementProps } from '@sewell_stephens/late-common/react';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import {
   useIndentTodoListElement,
   useIndentTodoListElementState,
-} from '@sewellstephens/plate-indent-list/react';
+} from '@sewell_stephens/late-indent-list/react';
 
 import { Checkbox } from './checkbox';
 

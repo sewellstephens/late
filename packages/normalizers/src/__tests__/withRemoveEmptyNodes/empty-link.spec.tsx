@@ -1,10 +1,10 @@
 /** @jsx jsx */
 
-import type { SlateEditor } from '@sewellstephens/plate-common';
+import type { SlateEditor } from '@sewell_stephens/late-common';
 
-import { createSlateEditor } from '@sewellstephens/plate-common';
-import { LinkPlugin } from '@sewellstephens/plate-link';
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { createSlateEditor } from '@sewell_stephens/late-common';
+import { LinkPlugin } from '@sewell_stephens/late-link';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { RemoveEmptyNodesPlugin } from '../../lib/RemoveEmptyNodesPlugin';
 

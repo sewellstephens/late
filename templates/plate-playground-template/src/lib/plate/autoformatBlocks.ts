@@ -1,10 +1,10 @@
-import { AutoformatRule } from '@sewellstephens/plate-autoformat';
-import { ELEMENT_BLOCKQUOTE } from '@sewellstephens/plate-block-quote';
+import { AutoformatRule } from '@sewell_stephens/late-autoformat';
+import { ELEMENT_BLOCKQUOTE } from '@sewell_stephens/late-block-quote';
 import {
   ELEMENT_CODE_BLOCK,
   insertEmptyCodeBlock,
-} from '@sewellstephens/plate-code-block';
-import { ELEMENT_DEFAULT, insertNodes, setNodes } from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-code-block';
+import { ELEMENT_DEFAULT, insertNodes, setNodes } from '@sewell_stephens/late-common';
 import {
   ELEMENT_H1,
   ELEMENT_H2,
@@ -12,8 +12,8 @@ import {
   ELEMENT_H4,
   ELEMENT_H5,
   ELEMENT_H6,
-} from '@sewellstephens/plate-heading';
-import { ELEMENT_HR } from '@sewellstephens/plate-horizontal-rule';
+} from '@sewell_stephens/late-heading';
+import { ELEMENT_HR } from '@sewell_stephens/late-horizontal-rule';
 
 import { preFormat } from '@/lib/plate/autoformatUtils';
 

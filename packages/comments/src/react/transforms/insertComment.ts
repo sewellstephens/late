@@ -4,8 +4,8 @@ import {
   isText,
   nanoid,
   setNodes,
-} from '@sewellstephens/plate-common';
-import { deselectEditor } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common';
+import { deselectEditor } from '@sewell_stephens/late-common/react';
 
 import { CommentsPlugin, getCommentKey } from '../../lib';
 

@@ -3,7 +3,7 @@ import {
   type SlatePlugin,
   createSlatePlugin,
   createTSlatePlugin,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { HEADING_LEVELS } from './constants';
 

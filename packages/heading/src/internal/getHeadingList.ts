@@ -3,7 +3,7 @@ import {
   type TElement,
   getNodeEntries,
   getNodeString,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { Heading } from '../lib/types';
 

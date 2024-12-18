@@ -1,4 +1,4 @@
-import { type PluginConfig, createTSlatePlugin } from '@sewellstephens/plate-common';
+import { type PluginConfig, createTSlatePlugin } from '@sewell_stephens/late-common';
 
 export type TToggleElement = {
   type: typeof TogglePlugin.key;

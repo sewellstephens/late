@@ -1,11 +1,11 @@
 import { FC } from 'react';
-import { ELEMENT_BLOCKQUOTE } from '@sewellstephens/plate-block-quote';
-import { ELEMENT_CODE_BLOCK } from '@sewellstephens/plate-code-block';
-import { createNodesWithHOC } from '@sewellstephens/plate-common';
+import { ELEMENT_BLOCKQUOTE } from '@sewell_stephens/late-block-quote';
+import { ELEMENT_CODE_BLOCK } from '@sewell_stephens/late-code-block';
+import { createNodesWithHOC } from '@sewell_stephens/late-common';
 import {
   WithDraggableOptions,
   withDraggable as withDraggablePrimitive,
-} from '@sewellstephens/plate-dnd';
+} from '@sewell_stephens/late-dnd';
 import {
   ELEMENT_H1,
   ELEMENT_H2,
@@ -13,9 +13,9 @@ import {
   ELEMENT_H4,
   ELEMENT_H5,
   ELEMENT_H6,
-} from '@sewellstephens/plate-heading';
-import { ELEMENT_OL, ELEMENT_UL } from '@sewellstephens/plate-list';
-import { ELEMENT_PARAGRAPH } from '@sewellstephens/plate-paragraph';
+} from '@sewell_stephens/late-heading';
+import { ELEMENT_OL, ELEMENT_UL } from '@sewell_stephens/late-list';
+import { ELEMENT_PARAGRAPH } from '@sewell_stephens/late-paragraph';
 
 import { Draggable, DraggableProps } from './draggable';
 

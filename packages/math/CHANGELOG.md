@@ -1,4 +1,4 @@
-# @sewellstephens/plate-math
+# @sewell_stephens/late-math
 
 ## 37.0.0
 

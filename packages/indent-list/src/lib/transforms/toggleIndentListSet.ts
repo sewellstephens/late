@@ -1,4 +1,4 @@
-import type { TEditor, TNodeEntry } from '@sewellstephens/plate-common';
+import type { TEditor, TNodeEntry } from '@sewell_stephens/late-common';
 
 import { INDENT_LIST_KEYS, IndentListPlugin } from '../IndentListPlugin';
 import { ListStyleType } from '../types';

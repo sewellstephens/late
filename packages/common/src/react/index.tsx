@@ -1,8 +1,8 @@
-export * from '@sewellstephens/plate-core/react';
+export * from '@sewell_stephens/late-core/react';
 
-export * from '@sewellstephens/plate-utils/react';
+export * from '@sewell_stephens/late-utils/react';
 
-export * from '@sewellstephens/react-hotkeys';
-export * from '@sewellstephens/react-utils';
+export * from '@sewell_stephens/react-hotkeys';
+export * from '@sewell_stephens/react-utils';
 
-export * from '@sewellstephens/slate-react';
+export * from '@sewell_stephens/slate-react';

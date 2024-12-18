@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 
 import { act, render } from '@testing-library/react';
-import { useHotkeys } from '@sewellstephens/react-hotkeys';
+import { useHotkeys } from '@sewell_stephens/react-hotkeys';
 
 import { createLateEditor } from '../editor';
 import { useEditorRef } from '../stores';
@@ -13,8 +13,8 @@ jest.mock('../stores', () => ({
 }));
 
 // Mock the useHotkeys hook
-jest.mock('@sewellstephens/react-hotkeys', () => ({
-  ...jest.requireActual('@sewellstephens/react-hotkeys'),
+jest.mock('@sewell_stephens/react-hotkeys', () => ({
+  ...jest.requireActual('@sewell_stephens/react-hotkeys'),
   useHotkeys: jest.fn(),
 }));
 

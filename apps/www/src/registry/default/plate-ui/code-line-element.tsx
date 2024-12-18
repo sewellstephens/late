@@ -2,8 +2,8 @@
 
 import React from 'react';
 
-import { withRef } from '@sewellstephens/cn';
-import { LateElement } from '@sewellstephens/plate-common/react';
+import { withRef } from '@sewell_stephens/cn';
+import { LateElement } from '@sewell_stephens/late-common/react';
 
 export const CodeLineElement = withRef<typeof LateElement>((props, ref) => (
   <LateElement ref={ref} {...props} />

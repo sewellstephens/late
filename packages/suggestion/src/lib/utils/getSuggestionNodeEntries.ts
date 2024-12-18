@@ -2,7 +2,7 @@ import {
   type GetNodeEntriesOptions,
   type SlateEditor,
   getNodeEntries,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { TSuggestionText } from '../types';
 

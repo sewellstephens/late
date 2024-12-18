@@ -1,8 +1,8 @@
-import { cn, withCn, withVariants } from '@sewellstephens/cn';
+import { cn, withCn, withVariants } from '@sewell_stephens/cn';
 import {
   Caption as CaptionPrimitive,
   CaptionTextarea as CaptionTextareaPrimitive,
-} from '@sewellstephens/plate-caption';
+} from '@sewell_stephens/late-caption';
 import { cva } from 'class-variance-authority';
 
 const captionVariants = cva('max-w-full', {

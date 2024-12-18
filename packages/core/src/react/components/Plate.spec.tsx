@@ -2,7 +2,7 @@ import React from 'react';
 
 import { render } from '@testing-library/react';
 import { renderHook } from '@testing-library/react-hooks';
-import { type Value, isBlock, setNodes } from '@sewellstephens/slate';
+import { type Value, isBlock, setNodes } from '@sewell_stephens/slate';
 import isEqual from 'lodash/isEqual';
 import memoize from 'lodash/memoize';
 

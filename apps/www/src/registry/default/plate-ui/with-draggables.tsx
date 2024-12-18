@@ -1,29 +1,29 @@
 import type { FC } from 'react';
 
-import { BlockquotePlugin } from '@sewellstephens/plate-block-quote/react';
-import { CodeBlockPlugin } from '@sewellstephens/plate-code-block/react';
+import { BlockquotePlugin } from '@sewell_stephens/late-block-quote/react';
+import { CodeBlockPlugin } from '@sewell_stephens/late-code-block/react';
 import {
   ParagraphPlugin,
   createNodesWithHOC,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import {
   type WithDraggableOptions,
   withDraggable as withDraggablePrimitive,
-} from '@sewellstephens/plate-dnd';
-import { ExcalidrawPlugin } from '@sewellstephens/plate-excalidraw';
-import { HEADING_KEYS } from '@sewellstephens/plate-heading';
-import { ColumnPlugin } from '@sewellstephens/plate-layout';
+} from '@sewell_stephens/late-dnd';
+import { ExcalidrawPlugin } from '@sewell_stephens/late-excalidraw';
+import { HEADING_KEYS } from '@sewell_stephens/late-heading';
+import { ColumnPlugin } from '@sewell_stephens/late-layout';
 import {
   BulletedListPlugin,
   NumberedListPlugin,
-} from '@sewellstephens/plate-list/react';
+} from '@sewell_stephens/late-list/react';
 import {
   ImagePlugin,
   MediaEmbedPlugin,
   PlaceholderPlugin,
-} from '@sewellstephens/plate-media';
-import { TablePlugin } from '@sewellstephens/plate-table';
-import { TogglePlugin } from '@sewellstephens/plate-toggle';
+} from '@sewell_stephens/late-media';
+import { TablePlugin } from '@sewell_stephens/late-table';
+import { TogglePlugin } from '@sewell_stephens/late-toggle';
 
 import { Draggable, type DraggableProps } from './draggable';
 

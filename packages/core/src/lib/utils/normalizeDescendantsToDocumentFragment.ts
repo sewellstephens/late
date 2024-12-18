@@ -3,7 +3,7 @@ import {
   type TEditor,
   isElement,
   isText,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 import type { SlateEditor } from '../editor';
 

@@ -1,4 +1,4 @@
-import { isOlSymbol } from '@sewellstephens/plate-common';
+import { isOlSymbol } from '@sewell_stephens/late-common';
 
 import { getDocxListNode } from './getDocxListNode';
 

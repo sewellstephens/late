@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 
-import { isHotkey, setNodes } from '@sewellstephens/plate-common';
+import { isHotkey, setNodes } from '@sewell_stephens/late-common';
 import {
   findNodePath,
   useEditorRef,
   useEditorSelector,
   useElement,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import type { TInlineEquationElement } from '../../../lib/inline-equation/types';
 

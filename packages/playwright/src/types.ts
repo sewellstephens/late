@@ -1,6 +1,6 @@
 import type { JSHandle } from '@playwright/test';
-import type { getNode } from '@sewellstephens/plate-common';
-import type { LateEditor, toDOMNode } from '@sewellstephens/plate-common/react';
+import type { getNode } from '@sewell_stephens/late-common';
+import type { LateEditor, toDOMNode } from '@sewell_stephens/late-common/react';
 
 export interface TLatePlaywrightAdapter {
   EDITABLE_TO_EDITOR: WeakMap<HTMLElement, LateEditor>;

@@ -1,4 +1,4 @@
-import { type SlateEditor, findNode } from '@sewellstephens/plate-common';
+import { type SlateEditor, findNode } from '@sewell_stephens/late-common';
 
 import type { BorderDirection, TTableCellElement } from '../types';
 

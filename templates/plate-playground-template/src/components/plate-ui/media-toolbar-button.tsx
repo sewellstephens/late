@@ -1,10 +1,10 @@
 import React from 'react';
-import { withRef } from '@sewellstephens/cn';
+import { withRef } from '@sewell_stephens/cn';
 import {
   ELEMENT_IMAGE,
   ELEMENT_MEDIA_EMBED,
   useMediaToolbarButton,
-} from '@sewellstephens/plate-media';
+} from '@sewell_stephens/late-media';
 
 import { Icons } from '@/components/icons';
 

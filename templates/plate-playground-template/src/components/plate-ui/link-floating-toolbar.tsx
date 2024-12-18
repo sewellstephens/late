@@ -1,12 +1,12 @@
 'use client';
 
 import React from 'react';
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import {
   flip,
   offset,
   UseVirtualFloatingOptions,
-} from '@sewellstephens/plate-floating';
+} from '@sewell_stephens/late-floating';
 import {
   FloatingLinkUrlInput,
   LinkFloatingToolbarState,
@@ -15,7 +15,7 @@ import {
   useFloatingLinkEditState,
   useFloatingLinkInsert,
   useFloatingLinkInsertState,
-} from '@sewellstephens/plate-link';
+} from '@sewell_stephens/late-link';
 
 import { Icons } from '@/components/icons';
 

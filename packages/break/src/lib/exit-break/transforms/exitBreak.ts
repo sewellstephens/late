@@ -3,7 +3,7 @@ import {
   type SlateEditor,
   getPath,
   insertElements,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Path } from 'slate';
 
 import type { ExitBreakRule } from '../types';

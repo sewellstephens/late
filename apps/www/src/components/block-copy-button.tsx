@@ -4,7 +4,7 @@ import type { ComponentProps } from 'react';
 import * as React from 'react';
 
 import { CheckIcon, ClipboardIcon } from '@radix-ui/react-icons';
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 
 import { type Event, trackEvent } from '@/lib/events';
 import { Button } from '@/registry/default/plate-ui/button';

@@ -4,7 +4,7 @@ import {
   type SlateEditor,
   findNode,
   getAboveNode,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { TablePlugin, TableRowPlugin } from '../TablePlugin';
 import { getCellTypes } from '../utils';

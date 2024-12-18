@@ -1,6 +1,6 @@
 import type { Location, Range } from 'slate';
 
-import { type TEditor, getPoint } from '@sewellstephens/slate';
+import { type TEditor, getPoint } from '@sewell_stephens/slate';
 
 import {
   type PointBeforeOptions,

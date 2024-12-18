@@ -1,6 +1,6 @@
-import type { LateEditor } from '@sewellstephens/plate-common/react';
+import type { LateEditor } from '@sewell_stephens/late-common/react';
 
-import { sanitizeUrl } from '@sewellstephens/plate-common';
+import { sanitizeUrl } from '@sewell_stephens/late-common';
 
 import type { TLinkElement } from '../../lib/types';
 import type { LinkConfig } from '../LinkPlugin';

@@ -4,12 +4,12 @@ import {
   findNodePath,
   useEditorPlugin,
   useElement,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import {
   type ResizeEvent,
   type ResizeHandle,
   resizeLengthClampStatic,
-} from '@sewellstephens/plate-resizable';
+} from '@sewell_stephens/late-resizable';
 
 import type { TableCellElementState } from './useTableCellElementState';
 

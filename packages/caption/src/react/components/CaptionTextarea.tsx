@@ -8,14 +8,14 @@ import {
   getPointAfter,
   isHotkey,
   setNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import {
   createPrimitiveComponent,
   findNodePath,
   focusEditor,
   useEditorRef,
   useElement,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import { Path } from 'slate';
 import { useReadOnly } from 'slate-react';
 

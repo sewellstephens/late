@@ -2,7 +2,7 @@ import {
   type PluginConfig,
   type SlateEditor,
   createTSlatePlugin,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { Heading } from './types';
 

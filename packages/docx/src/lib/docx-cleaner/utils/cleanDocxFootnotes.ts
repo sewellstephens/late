@@ -1,4 +1,4 @@
-import { traverseHtmlElements } from '@sewellstephens/plate-common';
+import { traverseHtmlElements } from '@sewell_stephens/late-common';
 
 import { isDocxFootnote } from './isDocxFootnote';
 

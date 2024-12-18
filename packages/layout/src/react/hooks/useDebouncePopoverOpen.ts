@@ -1,5 +1,5 @@
-import { isCollapsed } from '@sewellstephens/plate-common';
-import { useEditorSelector } from '@sewellstephens/plate-common/react';
+import { isCollapsed } from '@sewell_stephens/late-common';
+import { useEditorSelector } from '@sewell_stephens/late-common/react';
 import { useReadOnly, useSelected } from 'slate-react';
 
 export const useDebouncePopoverOpen = () => {

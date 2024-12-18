@@ -4,7 +4,7 @@ import {
   createPathRef,
   getAboveNode,
   removeNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Node, type PathRef, Range } from 'slate';
 
 import { type TTableCellElement, TableRowPlugin } from '../../lib';

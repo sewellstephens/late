@@ -1,4 +1,4 @@
-import type { TNode, TPath } from '@sewellstephens/plate-common';
+import type { TNode, TPath } from '@sewell_stephens/late-common';
 
 export type TabDestinationPath = {
   path: TPath;

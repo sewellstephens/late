@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
-import { createSlateEditor } from '@sewellstephens/plate-common';
-import { HEADING_KEYS } from '@sewellstephens/plate-heading';
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { createSlateEditor } from '@sewell_stephens/late-common';
+import { HEADING_KEYS } from '@sewell_stephens/late-heading';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { NormalizeTypesPlugin } from '../../../lib/NormalizeTypesPlugin';
 

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-import { isHotkey } from '@sewellstephens/plate-common';
+import { isHotkey } from '@sewell_stephens/late-common';
 
 import {
   imagePreviewActions,

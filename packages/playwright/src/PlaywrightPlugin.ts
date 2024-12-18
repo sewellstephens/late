@@ -1,4 +1,4 @@
-import { createLatePlugin } from '@sewellstephens/plate-common/react';
+import { createLatePlugin } from '@sewell_stephens/late-common/react';
 
 import { usePlaywrightAdapter } from './usePlaywrightAdapter';
 

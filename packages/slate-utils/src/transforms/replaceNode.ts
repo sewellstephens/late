@@ -4,7 +4,7 @@ import {
   insertNodes,
   removeNodes,
   withoutNormalizing,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 import type { ReplaceNodeChildrenOptions } from './replaceNodeChildren';
 

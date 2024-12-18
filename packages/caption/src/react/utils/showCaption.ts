@@ -1,6 +1,6 @@
-import type { SlateEditor, TElement } from '@sewellstephens/plate-common';
+import type { SlateEditor, TElement } from '@sewell_stephens/late-common';
 
-import { findNodePath } from '@sewellstephens/plate-common/react';
+import { findNodePath } from '@sewell_stephens/late-common/react';
 
 import { CaptionPlugin } from '../CaptionPlugin';
 

@@ -1,4 +1,4 @@
-import { createZustandStore } from '@sewellstephens/plate-common';
+import { createZustandStore } from '@sewell_stephens/late-common';
 
 export interface PreviewItem {
   url: string;

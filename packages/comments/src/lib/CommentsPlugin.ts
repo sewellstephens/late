@@ -5,7 +5,7 @@ import {
   createTSlatePlugin,
   getNodeString,
   nanoid,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { CommentUser, TComment } from './types';
 

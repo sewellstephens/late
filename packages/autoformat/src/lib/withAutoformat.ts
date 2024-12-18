@@ -1,4 +1,4 @@
-import { type ExtendEditor, isCollapsed } from '@sewellstephens/plate-common';
+import { type ExtendEditor, isCollapsed } from '@sewell_stephens/late-common';
 
 import type { AutoformatConfig } from './AutoformatPlugin';
 

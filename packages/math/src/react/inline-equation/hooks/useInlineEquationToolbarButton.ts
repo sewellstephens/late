@@ -1,5 +1,5 @@
-import { getSelectionText } from '@sewellstephens/plate-common';
-import { useEditorRef } from '@sewellstephens/plate-common/react';
+import { getSelectionText } from '@sewell_stephens/late-common';
+import { useEditorRef } from '@sewell_stephens/late-common/react';
 
 import { insertInlineEquation } from '../../../lib/inline-equation/transforms';
 

@@ -1,6 +1,6 @@
-import type { TEditor, TElement } from '@sewellstephens/plate-common';
+import type { TEditor, TElement } from '@sewell_stephens/late-common';
 
-import { findNodePath } from '@sewellstephens/plate-common/react';
+import { findNodePath } from '@sewell_stephens/late-common/react';
 import { Path } from 'slate';
 
 /** Get table row index of a cell node. */

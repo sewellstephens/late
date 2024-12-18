@@ -3,17 +3,17 @@ import React, { useEffect } from 'react';
 import {
   type WithRequiredKey,
   isSelectionExpanded,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import {
   useEditorSelector,
   useElement,
   useRemoveNodeButton,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import {
   FloatingMedia as FloatingMediaPrimitive,
   floatingMediaActions,
   useFloatingMediaSelectors,
-} from '@sewellstephens/plate-media/react';
+} from '@sewell_stephens/late-media/react';
 import { useReadOnly, useSelected } from 'slate-react';
 
 import { Icons } from '@/components/icons';

@@ -1,4 +1,4 @@
-import type { SlateEditor } from '@sewellstephens/plate-common';
+import type { SlateEditor } from '@sewell_stephens/late-common';
 
 import markdown from 'remark-parse';
 import unified from 'unified';

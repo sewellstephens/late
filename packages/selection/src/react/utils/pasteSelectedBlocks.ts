@@ -5,8 +5,8 @@ import {
   getStartPoint,
   insertNodes,
   isElementEmpty,
-} from '@sewellstephens/plate-common';
-import { focusEditor, insertData } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common';
+import { focusEditor, insertData } from '@sewell_stephens/late-common/react';
 import { Path } from 'slate';
 
 import { BlockSelectionPlugin } from '../BlockSelectionPlugin';

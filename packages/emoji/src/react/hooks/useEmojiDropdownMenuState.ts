@@ -1,4 +1,4 @@
-import { useStableMemo } from '@sewellstephens/plate-common/react';
+import { useStableMemo } from '@sewell_stephens/late-common/react';
 
 import {
   EmojiFloatingIndexSearch,

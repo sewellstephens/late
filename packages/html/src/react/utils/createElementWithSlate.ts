@@ -4,7 +4,7 @@ import {
   Late,
   LateContent,
   type LateProps,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 /** Create a React element wrapped in a Late provider. */
 export const createElementWithSlate = (

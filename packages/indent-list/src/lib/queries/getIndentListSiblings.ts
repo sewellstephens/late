@@ -4,7 +4,7 @@ import type {
   TEditor,
   TElement,
   TNodeEntry,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { GetSiblingIndentListOptions } from './getSiblingIndentList';
 

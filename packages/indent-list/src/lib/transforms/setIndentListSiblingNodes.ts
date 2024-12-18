@@ -4,8 +4,8 @@ import {
   type TEditor,
   unsetNodes,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
-import { IndentPlugin } from '@sewellstephens/plate-indent';
+} from '@sewell_stephens/late-common';
+import { IndentPlugin } from '@sewell_stephens/late-indent';
 
 import type { GetSiblingIndentListOptions } from '../queries/getSiblingIndentList';
 

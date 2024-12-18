@@ -1,14 +1,14 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 
-import { cn } from '@sewellstephens/cn';
-import { BasicElementsPlugin } from "@sewellstephens/plate-basic-elements";
-import { BasicMarksPlugin } from "@sewellstephens/plate-basic-marks";
+import { cn } from '@sewell_stephens/cn';
+import { BasicElementsPlugin } from "@sewell_stephens/late-basic-elements";
+import { BasicMarksPlugin } from "@sewell_stephens/late-basic-marks";
 import {
   type Decorate,
   type TText, createSlatePlugin, isText
-} from "@sewellstephens/plate-common";
-import { Late, type TRenderLeafProps , useLateEditor } from "@sewellstephens/plate-common/react";
+} from "@sewell_stephens/late-common";
+import { Late, type TRenderLeafProps , useLateEditor } from "@sewell_stephens/late-common/react";
 import Prism from 'prismjs';
 
 import { editableProps } from '@/plate/demo/editableProps';

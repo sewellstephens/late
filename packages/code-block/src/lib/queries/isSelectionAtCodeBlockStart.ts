@@ -2,7 +2,7 @@ import {
   type SlateEditor,
   isExpanded,
   isStartPoint,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { getCodeLineEntry } from './getCodeLineEntry';
 

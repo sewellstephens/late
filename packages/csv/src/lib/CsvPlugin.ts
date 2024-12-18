@@ -1,7 +1,7 @@
-import type { OmitFirst, PluginConfig } from '@sewellstephens/plate-common';
+import type { OmitFirst, PluginConfig } from '@sewell_stephens/late-common';
 import type { ParseConfig } from 'papaparse';
 
-import { bindFirst, createTSlatePlugin } from '@sewellstephens/plate-common';
+import { bindFirst, createTSlatePlugin } from '@sewell_stephens/late-common';
 
 import { deserializeCsv } from './deserializer/utils';
 

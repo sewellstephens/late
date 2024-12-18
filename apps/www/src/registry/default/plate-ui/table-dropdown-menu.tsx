@@ -2,15 +2,15 @@ import React from 'react';
 
 import type { DropdownMenuProps } from '@radix-ui/react-dropdown-menu';
 
-import { someNode } from '@sewellstephens/plate-common';
-import { focusEditor, useEditorSelector } from '@sewellstephens/plate-common/react';
-import { deleteTable, insertTableRow } from '@sewellstephens/plate-table';
+import { someNode } from '@sewell_stephens/late-common';
+import { focusEditor, useEditorSelector } from '@sewell_stephens/late-common/react';
+import { deleteTable, insertTableRow } from '@sewell_stephens/late-table';
 import {
   TablePlugin,
   deleteColumn,
   deleteRow,
   insertTable,
-} from '@sewellstephens/plate-table/react';
+} from '@sewell_stephens/late-table/react';
 
 import { Icons, iconVariants } from '@/components/icons';
 import { useMyEditorRef } from '@/types/plate-types';

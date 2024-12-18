@@ -2,7 +2,7 @@ import {
   type InsertNodesOptions,
   type SlateEditor,
   insertNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { CalloutPlugin, type TCalloutElement } from '../CalloutPlugin';
 

@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
-import { BoldPlugin, ItalicPlugin } from '@sewellstephens/plate-basic-marks';
-import { jsx } from '@sewellstephens/plate-test-utils';
-import { toggleMark } from '@sewellstephens/slate-utils';
+import { BoldPlugin, ItalicPlugin } from '@sewell_stephens/late-basic-marks';
+import { jsx } from '@sewell_stephens/late-test-utils';
+import { toggleMark } from '@sewell_stephens/slate-utils';
 
 jsx;
 

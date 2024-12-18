@@ -4,7 +4,7 @@ import {
   isCollapsed,
   isElement,
   isStartPoint,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { ColumnItemPlugin } from './ColumnPlugin';
 import { normalizeColumn } from './normalizers/normalizedColumn';

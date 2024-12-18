@@ -2,7 +2,7 @@ import {
   type PluginConfig,
   createTSlatePlugin,
   isVoid,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { TabbableEntry } from './types';
 

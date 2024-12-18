@@ -1,12 +1,12 @@
 import React from 'react';
 
-import type { UnknownObject } from '@sewellstephens/plate-common';
+import type { UnknownObject } from '@sewell_stephens/late-common';
 import type { Range } from 'slate';
 
 import {
   useEditorRef,
   useIsomorphicLayoutEffect,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import type { CursorOverlayProps } from '../components/CursorOverlay';
 import type { CursorState, SelectionRect } from '../types';

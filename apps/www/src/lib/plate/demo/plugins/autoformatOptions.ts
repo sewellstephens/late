@@ -8,7 +8,7 @@ import {
   autoformatMath,
   autoformatPunctuation,
   autoformatSmartQuotes,
-} from '@sewellstephens/plate-autoformat';
+} from '@sewell_stephens/late-autoformat';
 import {
   BoldPlugin,
   CodePlugin,
@@ -17,13 +17,13 @@ import {
   SubscriptPlugin,
   SuperscriptPlugin,
   UnderlinePlugin,
-} from '@sewellstephens/plate-basic-marks/react';
-import { BlockquotePlugin } from '@sewellstephens/plate-block-quote/react';
+} from '@sewell_stephens/late-basic-marks/react';
+import { BlockquotePlugin } from '@sewell_stephens/late-block-quote/react';
 import {
   CodeBlockPlugin,
   CodeLinePlugin,
   insertEmptyCodeBlock,
-} from '@sewellstephens/plate-code-block';
+} from '@sewell_stephens/late-code-block';
 import {
   ParagraphPlugin,
   type SlateEditor,
@@ -33,27 +33,27 @@ import {
   isElement,
   isType,
   setNodes,
-} from '@sewellstephens/plate-common';
-import { HEADING_KEYS } from '@sewellstephens/plate-heading';
-import { HighlightPlugin } from '@sewellstephens/plate-highlight/react';
-import { HorizontalRulePlugin } from '@sewellstephens/plate-horizontal-rule/react';
+} from '@sewell_stephens/late-common';
+import { HEADING_KEYS } from '@sewell_stephens/late-heading';
+import { HighlightPlugin } from '@sewell_stephens/late-highlight/react';
+import { HorizontalRulePlugin } from '@sewell_stephens/late-horizontal-rule/react';
 import {
   INDENT_LIST_KEYS,
   ListStyleType,
   toggleIndentList,
-} from '@sewellstephens/plate-indent-list';
+} from '@sewell_stephens/late-indent-list';
 import {
   type TTodoListItemElement,
   toggleList,
   unwrapList,
-} from '@sewellstephens/plate-list';
+} from '@sewell_stephens/late-list';
 import {
   BulletedListPlugin,
   ListItemPlugin,
   NumberedListPlugin,
   TodoListPlugin,
-} from '@sewellstephens/plate-list/react';
-import { TogglePlugin, openNextToggles } from '@sewellstephens/plate-toggle/react';
+} from '@sewell_stephens/late-list/react';
+import { TogglePlugin, openNextToggles } from '@sewell_stephens/late-toggle/react';
 
 export const preFormat: AutoformatBlockRule['preFormat'] = (editor) =>
   unwrapList(editor);

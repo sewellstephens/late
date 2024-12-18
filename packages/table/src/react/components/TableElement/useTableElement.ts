@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { collapseSelection } from '@sewellstephens/plate-common';
-import { useEditorRef, useElement } from '@sewellstephens/plate-common/react';
+import { collapseSelection } from '@sewell_stephens/late-common';
+import { useEditorRef, useElement } from '@sewell_stephens/late-common/react';
 
 import { type TTableElement, computeAllCellIndices } from '../../../lib';
 import { TablePlugin } from '../../TablePlugin';

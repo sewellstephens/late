@@ -1,5 +1,5 @@
-import { BoldPlugin } from '@sewellstephens/plate-basic-marks/react';
-import { ParagraphPlugin } from '@sewellstephens/plate-common/react';
+import { BoldPlugin } from '@sewell_stephens/late-basic-marks/react';
+import { ParagraphPlugin } from '@sewell_stephens/late-common/react';
 
 import { serializeHtml } from '../../react/serializeHtml';
 import { createLateUIEditor } from '../create-plate-ui-editor';

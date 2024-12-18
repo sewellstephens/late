@@ -6,8 +6,8 @@ import {
   CommentProvider,
   CommentsPlugin,
   useCommentItemContentState,
-} from '@sewellstephens/plate-comments/react';
-import { useEditorPlugin } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-comments/react';
+import { useEditorPlugin } from '@sewell_stephens/late-common/react';
 import { formatDistance } from 'date-fns';
 
 import { CommentAvatar } from './comment-avatar';

@@ -3,7 +3,7 @@ import type {
   PluginConfig,
   TDescendant,
   TElement,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { insertTableColumn, insertTableRow } from './transforms';
 

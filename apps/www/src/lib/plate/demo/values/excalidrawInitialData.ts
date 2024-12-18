@@ -1,5 +1,5 @@
-import type { TNodeProps } from '@sewellstephens/plate-common';
-import type { TExcalidrawElement } from '@sewellstephens/plate-excalidraw';
+import type { TNodeProps } from '@sewell_stephens/late-common';
+import type { TExcalidrawElement } from '@sewell_stephens/late-excalidraw';
 
 export const excalidrawInitialData: TNodeProps<TExcalidrawElement> = {
   data: {

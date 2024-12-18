@@ -4,7 +4,7 @@ import {
   Late,
   LateContent,
   useLateEditor,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 export default function BasicEditorDefaultDemo() {
   const editor = useLateEditor();

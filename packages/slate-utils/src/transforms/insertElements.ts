@@ -4,7 +4,7 @@ import {
   type TEditor,
   type TElement,
   insertNodes,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 export const insertElements = <E extends TEditor>(
   editor: E,

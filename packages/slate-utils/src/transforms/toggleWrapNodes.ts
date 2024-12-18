@@ -4,7 +4,7 @@ import {
   someNode,
   unwrapNodes,
   wrapNodes,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 /** Unwrap if the node type is in selection. Wrap otherwise. */
 export const toggleWrapNodes = (editor: TEditor, type: string) => {

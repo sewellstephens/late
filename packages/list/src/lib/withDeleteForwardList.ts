@@ -14,7 +14,7 @@ import {
   isSelectionAtBlockEnd,
   removeNodes,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Path, type TextUnit } from 'slate';
 
 import type { ListConfig } from './ListPlugin';

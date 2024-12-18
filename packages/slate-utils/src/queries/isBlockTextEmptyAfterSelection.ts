@@ -3,7 +3,7 @@ import {
   getParentNode,
   isEndPoint,
   isText,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 import { getBlockAbove } from './getBlockAbove';
 import { getNextSiblingNodes } from './getNextSiblingNodes';

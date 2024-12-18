@@ -1,12 +1,12 @@
-# @sewellstephens/plate-common
+# @sewell_stephens/late-common
 
 ## 37.0.0
 
 ### Major Changes
 
 - [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
-  - Split build into `@sewellstephens/plate-common` and `@sewellstephens/plate-common/react`.
-  - NEW `/react` exports `@sewellstephens/react-hotkeys`
+  - Split build into `@sewell_stephens/late-common` and `@sewell_stephens/late-common/react`.
+  - NEW `/react` exports `@sewell_stephens/react-hotkeys`
 
 ## 36.3.9
 
@@ -67,7 +67,7 @@
 ### Minor Changes
 
 - [#2829](https://github.com/sewellstephens/late/pull/2829) by [@zbeyens](https://github.com/zbeyens) –
-  - re-export `@sewellstephens/react-utils`
+  - re-export `@sewell_stephens/react-utils`
 
 ### Patch Changes
 

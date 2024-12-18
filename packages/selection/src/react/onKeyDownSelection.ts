@@ -1,4 +1,4 @@
-import type { KeyboardHandler } from '@sewellstephens/plate-common/react';
+import type { KeyboardHandler } from '@sewell_stephens/late-common/react';
 
 import {
   getAncestorNode,
@@ -6,7 +6,7 @@ import {
   isRangeInSameBlock,
   isSelectionCoverBlock,
   select,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { BlockSelectionConfig } from './BlockSelectionPlugin';
 

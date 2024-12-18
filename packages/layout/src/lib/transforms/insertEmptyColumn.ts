@@ -4,7 +4,7 @@ import {
   type SlateEditor,
   getQueryOptions,
   insertNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { TColumnElement } from '../types';
 

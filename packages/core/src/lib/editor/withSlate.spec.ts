@@ -4,7 +4,7 @@ import {
   createTEditor,
   getEndPoint,
   getStartPoint,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 import { ParagraphPlugin, LateApiPlugin, ReactPlugin } from '../../react';
 import { withLate } from '../../react/editor/withLate';

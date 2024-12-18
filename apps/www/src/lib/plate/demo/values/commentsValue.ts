@@ -1,5 +1,5 @@
-import type { TComment } from '@sewellstephens/plate-comments';
-import type { Value } from '@sewellstephens/plate-common';
+import type { TComment } from '@sewell_stephens/late-comments';
+import type { Value } from '@sewell_stephens/late-common';
 
 export const usersData = {
   1: {

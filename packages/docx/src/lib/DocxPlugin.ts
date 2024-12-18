@@ -3,7 +3,7 @@ import {
   HtmlPlugin,
   type SlatePlugin,
   createSlatePlugin,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { cleanDocx } from './docx-cleaner/cleanDocx';
 import {

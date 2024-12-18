@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
-import { ListItemPlugin } from '@sewellstephens/plate-list';
-import { jsx } from '@sewellstephens/plate-test-utils';
-import { isElement } from '@sewellstephens/slate';
+import { ListItemPlugin } from '@sewell_stephens/late-list';
+import { jsx } from '@sewell_stephens/late-test-utils';
+import { isElement } from '@sewell_stephens/slate';
 
 import { ParagraphPlugin } from '../../../plugins';
 import { mergeDeepToNodes } from '../../../utils';

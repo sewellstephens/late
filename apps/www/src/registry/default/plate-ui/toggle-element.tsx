@@ -1,9 +1,9 @@
-import { withRef } from '@sewellstephens/cn';
-import { LateElement, useElement } from '@sewellstephens/plate-common/react';
+import { withRef } from '@sewell_stephens/cn';
+import { LateElement, useElement } from '@sewell_stephens/late-common/react';
 import {
   useToggleButton,
   useToggleButtonState,
-} from '@sewellstephens/plate-toggle/react';
+} from '@sewell_stephens/late-toggle/react';
 
 import { Icons } from '@/components/icons';
 

@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { HorizontalRulePlugin } from '@sewellstephens/plate-horizontal-rule/react';
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { HorizontalRulePlugin } from '@sewell_stephens/late-horizontal-rule/react';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 jsx;
 

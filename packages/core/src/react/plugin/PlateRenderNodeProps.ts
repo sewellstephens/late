@@ -1,4 +1,4 @@
-import type { AnyObject } from '@sewellstephens/utils';
+import type { AnyObject } from '@sewell_stephens/utils';
 
 import type { AnyPluginConfig, PluginConfig } from '../../lib';
 import type { LatePluginContext } from './LatePlugin';

@@ -1,4 +1,4 @@
-import type { TMentionItemBase } from '@sewellstephens/plate-mention';
+import type { TMentionItemBase } from '@sewell_stephens/late-mention';
 
 export interface MyMentionItem extends TMentionItemBase {
   key: string;

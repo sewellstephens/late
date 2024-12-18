@@ -99,7 +99,7 @@ export default async function DocPage({ params }: DocPageProps) {
   //     'https://github.com/sewellstephens/late/tree/main/packages/' +
   //     pkg.sourcePath +
   //     '/src';
-  //   packageInfo.npm = 'https://www.npmjs.com/package/@sewellstephens/' + pkg.name;
+  //   packageInfo.npm = 'https://www.npmjs.com/package/@sewell_stephens/' + pkg.name;
   // }
 
   if (!doc) {

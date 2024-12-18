@@ -6,7 +6,7 @@ import type { Block } from '@/registry/schema';
 import type { ImperativePanelHandle } from 'react-resizable-panels';
 
 import { Switch } from '@radix-ui/react-switch';
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import { Maximize, Monitor, Smartphone, Tablet } from 'lucide-react';
 
 import { useLiftMode } from '@/hooks/use-lift-mode';

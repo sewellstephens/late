@@ -5,7 +5,7 @@ import {
   type TElement,
   type TElementEntry,
   getAboveNode,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { BulletedListPlugin, NumberedListPlugin } from '../ListPlugin';
 

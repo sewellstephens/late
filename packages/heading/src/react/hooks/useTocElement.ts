@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 
-import { getNode } from '@sewellstephens/plate-common';
+import { getNode } from '@sewell_stephens/late-common';
 import {
   toDOMNode,
   useEditorRef,
   useEditorSelector,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import type { Heading } from '../../lib/types';
 

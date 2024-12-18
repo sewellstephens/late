@@ -1,4 +1,4 @@
-import { Key } from '@sewellstephens/react-hotkeys';
+import { Key } from '@sewell_stephens/react-hotkeys';
 
 import { ParagraphPlugin as BaseParagraphPlugin } from '../../../lib';
 import { toLatePlugin } from '../../plugin/toLatePlugin';

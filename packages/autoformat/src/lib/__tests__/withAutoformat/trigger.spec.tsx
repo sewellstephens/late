@@ -4,12 +4,12 @@ import {
   BoldPlugin,
   ItalicPlugin,
   UnderlinePlugin,
-} from '@sewellstephens/plate-basic-marks';
+} from '@sewell_stephens/late-basic-marks';
 import {
   createLateEditor,
   getEditorPlugin,
-} from '@sewellstephens/plate-common/react';
-import { jsx } from '@sewellstephens/plate-test-utils';
+} from '@sewell_stephens/late-common/react';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { onKeyDownAutoformat } from '../../../react/onKeyDownAutoformat';
 import { AutoformatPlugin } from '../../AutoformatPlugin';

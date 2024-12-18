@@ -7,8 +7,8 @@ import {
   isSelectionAtBlockStart,
   select,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
-import { Hotkeys, type KeyboardHandler } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common';
+import { Hotkeys, type KeyboardHandler } from '@sewell_stephens/late-common/react';
 
 import { CodeLinePlugin } from '../lib';
 import { getCodeLineEntry } from '../lib/queries/getCodeLineEntry';

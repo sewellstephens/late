@@ -2,7 +2,7 @@ import type {
   Simplify,
   UnionToIntersection,
   UnknownObject,
-} from '@sewellstephens/utils';
+} from '@sewell_stephens/utils';
 
 import type { TEditor } from '../editor/TEditor';
 import type { TElement } from '../element/TElement';

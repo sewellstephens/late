@@ -1,15 +1,15 @@
 'use client';
 
 import React from 'react';
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import {
   CommentProvider,
   CommentsPositioner,
   SCOPE_ACTIVE_COMMENT,
   useFloatingCommentsContentState,
   useFloatingCommentsState,
-} from '@sewellstephens/plate-comments';
-import { PortalBody } from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-comments';
+import { PortalBody } from '@sewell_stephens/late-common';
 
 import { CommentCreateForm } from './comment-create-form';
 import { CommentItem } from './comment-item';

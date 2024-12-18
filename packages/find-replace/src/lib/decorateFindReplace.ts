@@ -1,7 +1,7 @@
-import type { Decorate } from '@sewellstephens/plate-common';
+import type { Decorate } from '@sewell_stephens/late-common';
 import type { Range } from 'slate';
 
-import { isText } from '@sewellstephens/plate-common';
+import { isText } from '@sewell_stephens/late-common';
 
 import type { FindReplaceConfig } from './FindReplacePlugin';
 

@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { withRef } from '@sewellstephens/cn';
+import { withRef } from '@sewell_stephens/cn';
 import {
   useToggleToolbarButton,
   useToggleToolbarButtonState,
-} from '@sewellstephens/plate-toggle/react';
+} from '@sewell_stephens/late-toggle/react';
 
 import { Icons } from '@/components/icons';
 

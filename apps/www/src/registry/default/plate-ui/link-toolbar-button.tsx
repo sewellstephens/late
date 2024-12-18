@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { withRef } from '@sewellstephens/cn';
+import { withRef } from '@sewell_stephens/cn';
 import {
   useLinkToolbarButton,
   useLinkToolbarButtonState,
-} from '@sewellstephens/plate-link/react';
+} from '@sewell_stephens/late-link/react';
 
 import { Icons } from '@/components/icons';
 

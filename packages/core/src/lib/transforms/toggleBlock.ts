@@ -2,7 +2,7 @@ import {
   type GetNodeEntriesOptions,
   type TElement,
   someNode,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 import type { SlateEditor } from '../editor';
 

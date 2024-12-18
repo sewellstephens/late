@@ -1,12 +1,12 @@
-import type { TElement, TRange, Value } from '@sewellstephens/slate';
+import type { TElement, TRange, Value } from '@sewell_stephens/slate';
 import type { Path } from 'slate';
 
 import {
   isSelectionAtBlockStart,
   removeSelectionMark,
   toggleMark,
-} from '@sewellstephens/slate-utils';
-import { type OmitFirst, bindFirst } from '@sewellstephens/utils';
+} from '@sewell_stephens/slate-utils';
+import { type OmitFirst, bindFirst } from '@sewell_stephens/utils';
 
 import {
   type ExtendEditor,

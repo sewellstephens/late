@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-import type { Value } from '@sewellstephens/plate-common';
+import type { Value } from '@sewell_stephens/late-common';
 
-import { Late, useLateEditor } from '@sewellstephens/plate-common/react';
+import { Late, useLateEditor } from '@sewell_stephens/late-common/react';
 
 import {
   Accordion,

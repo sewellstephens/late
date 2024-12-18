@@ -1,5 +1,5 @@
-import { AlignPlugin } from '@sewellstephens/plate-alignment';
-import { AutoformatPlugin } from '@sewellstephens/plate-autoformat/react';
+import { AlignPlugin } from '@sewell_stephens/late-alignment';
+import { AutoformatPlugin } from '@sewell_stephens/late-autoformat/react';
 import {
   BoldPlugin,
   CodePlugin,
@@ -8,56 +8,56 @@ import {
   SubscriptPlugin,
   SuperscriptPlugin,
   UnderlinePlugin,
-} from '@sewellstephens/plate-basic-marks/react';
-import { BlockquotePlugin } from '@sewellstephens/plate-block-quote/react';
+} from '@sewell_stephens/late-basic-marks/react';
+import { BlockquotePlugin } from '@sewell_stephens/late-block-quote/react';
 import {
   ExitBreakPlugin,
   SingleLinePlugin,
   SoftBreakPlugin,
-} from '@sewellstephens/plate-break/react';
-import { CaptionPlugin } from '@sewellstephens/plate-caption/react';
+} from '@sewell_stephens/late-break/react';
+import { CaptionPlugin } from '@sewell_stephens/late-caption/react';
 import {
   CodeBlockPlugin,
   CodeLinePlugin,
   CodeSyntaxPlugin,
-} from '@sewellstephens/plate-code-block/react';
-import { CommentsPlugin } from '@sewellstephens/plate-comments/react';
-import { ParagraphPlugin } from '@sewellstephens/plate-common';
-import { CsvPlugin } from '@sewellstephens/plate-csv';
-import { DatePlugin } from '@sewellstephens/plate-date';
-import { DndPlugin } from '@sewellstephens/plate-dnd';
-import { DocxPlugin } from '@sewellstephens/plate-docx';
-import { EmojiPlugin } from '@sewellstephens/plate-emoji';
-import { ExcalidrawPlugin } from '@sewellstephens/plate-excalidraw/react';
+} from '@sewell_stephens/late-code-block/react';
+import { CommentsPlugin } from '@sewell_stephens/late-comments/react';
+import { ParagraphPlugin } from '@sewell_stephens/late-common';
+import { CsvPlugin } from '@sewell_stephens/late-csv';
+import { DatePlugin } from '@sewell_stephens/late-date';
+import { DndPlugin } from '@sewell_stephens/late-dnd';
+import { DocxPlugin } from '@sewell_stephens/late-docx';
+import { EmojiPlugin } from '@sewell_stephens/late-emoji';
+import { ExcalidrawPlugin } from '@sewell_stephens/late-excalidraw/react';
 import {
   FontBackgroundColorPlugin,
   FontColorPlugin,
   FontSizePlugin,
-} from '@sewellstephens/plate-font';
-import { HighlightPlugin } from '@sewellstephens/plate-highlight/react';
-import { HorizontalRulePlugin } from '@sewellstephens/plate-horizontal-rule/react';
-import { IndentPlugin } from '@sewellstephens/plate-indent/react';
-import { IndentListPlugin } from '@sewellstephens/plate-indent-list/react';
-import { JuicePlugin } from '@sewellstephens/plate-juice';
-import { KbdPlugin } from '@sewellstephens/plate-kbd/react';
-import { LineHeightPlugin } from '@sewellstephens/plate-line-height';
-import { LinkPlugin } from '@sewellstephens/plate-link/react';
-import { TodoListPlugin } from '@sewellstephens/plate-list/react';
-import { MarkdownPlugin } from '@sewellstephens/plate-markdown';
-import { ImagePlugin, MediaEmbedPlugin } from '@sewellstephens/plate-media/react';
+} from '@sewell_stephens/late-font';
+import { HighlightPlugin } from '@sewell_stephens/late-highlight/react';
+import { HorizontalRulePlugin } from '@sewell_stephens/late-horizontal-rule/react';
+import { IndentPlugin } from '@sewell_stephens/late-indent/react';
+import { IndentListPlugin } from '@sewell_stephens/late-indent-list/react';
+import { JuicePlugin } from '@sewell_stephens/late-juice';
+import { KbdPlugin } from '@sewell_stephens/late-kbd/react';
+import { LineHeightPlugin } from '@sewell_stephens/late-line-height';
+import { LinkPlugin } from '@sewell_stephens/late-link/react';
+import { TodoListPlugin } from '@sewell_stephens/late-list/react';
+import { MarkdownPlugin } from '@sewell_stephens/late-markdown';
+import { ImagePlugin, MediaEmbedPlugin } from '@sewell_stephens/late-media/react';
 import {
   MentionInputPlugin,
   MentionPlugin,
-} from '@sewellstephens/plate-mention/react';
-import { NodeIdPlugin } from '@sewellstephens/plate-node-id';
-import { NormalizeTypesPlugin } from '@sewellstephens/plate-normalizers';
-import { ResetNodePlugin } from '@sewellstephens/plate-reset-node';
-import { DeletePlugin, SelectOnBackspacePlugin } from '@sewellstephens/plate-select';
-import { BlockSelectionPlugin } from '@sewellstephens/plate-selection/react';
-import { TabbablePlugin } from '@sewellstephens/plate-tabbable';
-import { TablePlugin } from '@sewellstephens/plate-table/react';
-import { TogglePlugin } from '@sewellstephens/plate-toggle/react';
-import { TrailingBlockPlugin } from '@sewellstephens/plate-trailing-block';
+} from '@sewell_stephens/late-mention/react';
+import { NodeIdPlugin } from '@sewell_stephens/late-node-id';
+import { NormalizeTypesPlugin } from '@sewell_stephens/late-normalizers';
+import { ResetNodePlugin } from '@sewell_stephens/late-reset-node';
+import { DeletePlugin, SelectOnBackspacePlugin } from '@sewell_stephens/late-select';
+import { BlockSelectionPlugin } from '@sewell_stephens/late-selection/react';
+import { TabbablePlugin } from '@sewell_stephens/late-tabbable';
+import { TablePlugin } from '@sewell_stephens/late-table/react';
+import { TogglePlugin } from '@sewell_stephens/late-toggle/react';
+import { TrailingBlockPlugin } from '@sewell_stephens/late-trailing-block';
 
 import {
   type CustomizerBadge,
@@ -106,7 +106,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     badges: [customizerBadges.style],
     id: AlignPlugin.key,
     label: 'Align',
-    npmPackage: '@sewellstephens/plate-alignment',
+    npmPackage: '@sewell_stephens/late-alignment',
     pluginFactory: 'AlignPlugin',
     pluginOptions: [`inject: { targetPlugins: ['p', 'h1', 'h2', 'h3'] },`],
     route: customizerPlugins.align.route,
@@ -116,7 +116,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     badges: [customizerBadges.handler],
     id: AutoformatPlugin.key,
     label: 'Autoformat',
-    npmPackage: '@sewellstephens/plate-autoformat',
+    npmPackage: '@sewell_stephens/late-autoformat',
     pluginFactory: 'AutoformatPlugin',
     pluginOptions: [
       `options: {`,
@@ -134,7 +134,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     dependencies: [NodeIdPlugin.key],
     id: BlockSelectionPlugin.key,
     label: 'Block Selection',
-    npmPackage: '@sewellstephens/plate-selection',
+    npmPackage: '@sewell_stephens/late-selection',
     pluginFactory: 'BlockSelectionPlugin',
     // pluginOptions: [
     //   `options: {`,
@@ -160,7 +160,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: BlockquotePlugin.key,
     label: 'Blockquote',
-    npmPackage: '@sewellstephens/plate-block-quote',
+    npmPackage: '@sewell_stephens/late-block-quote',
     pluginFactory: 'BlockquotePlugin',
     reactImport: true,
     route: customizerPlugins.basicnodes.route,
@@ -180,7 +180,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: BoldPlugin.key,
     label: 'Bold',
-    npmPackage: '@sewellstephens/plate-basic-marks',
+    npmPackage: '@sewell_stephens/late-basic-marks',
     pluginFactory: 'BoldPlugin',
     reactImport: true,
     route: customizerPlugins.basicmarks.route,
@@ -189,7 +189,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     badges: [customizerBadges.handler],
     id: CaptionPlugin.key,
     label: 'Caption',
-    npmPackage: '@sewellstephens/plate-caption',
+    npmPackage: '@sewell_stephens/late-caption',
     pluginFactory: 'CaptionPlugin',
     pluginOptions: [`options: { plugins: [ImagePlugin, MediaEmbedPlugin] },`],
     reactImport: true,
@@ -224,7 +224,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: CodeBlockPlugin.key,
     label: 'Code block',
-    npmPackage: '@sewellstephens/plate-code-block',
+    npmPackage: '@sewell_stephens/late-code-block',
     pluginFactory: 'CodeBlockPlugin',
     reactImport: true,
     route: customizerPlugins.basicnodes.route,
@@ -232,7 +232,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
   [CodeLinePlugin.key]: {
     id: CodeLinePlugin.key,
     label: 'Code Line',
-    npmPackage: '@sewellstephens/plate-code-block',
+    npmPackage: '@sewell_stephens/late-code-block',
     pluginFactory: 'CodeLinePlugin',
     reactImport: true,
   },
@@ -249,7 +249,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: CodePlugin.key,
     label: 'Code',
-    npmPackage: '@sewellstephens/plate-basic-marks',
+    npmPackage: '@sewell_stephens/late-basic-marks',
     pluginFactory: 'CodePlugin',
     reactImport: true,
     route: customizerPlugins.basicmarks.route,
@@ -257,7 +257,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
   [CodeSyntaxPlugin.key]: {
     id: CodeSyntaxPlugin.key,
     label: 'Code Syntax',
-    npmPackage: '@sewellstephens/plate-code-block',
+    npmPackage: '@sewell_stephens/late-code-block',
     pluginFactory: 'CodeSyntaxPlugin',
     reactImport: true,
   },
@@ -280,7 +280,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: CommentsPlugin.key,
     label: 'Comments',
-    npmPackage: '@sewellstephens/plate-comments',
+    npmPackage: '@sewell_stephens/late-comments',
     pluginFactory: 'CommentsPlugin',
     reactImport: true,
     route: customizerPlugins.comment.route,
@@ -290,7 +290,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     badges: [customizerBadges.handler],
     id: CsvPlugin.key,
     label: 'CSV',
-    npmPackage: '@sewellstephens/plate-csv',
+    npmPackage: '@sewell_stephens/late-csv',
     pluginFactory: 'CsvPlugin',
     route: customizerPlugins.csv.route,
   },
@@ -307,7 +307,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: DatePlugin.key,
     label: 'Date',
-    npmPackage: '@sewellstephens/plate-date',
+    npmPackage: '@sewell_stephens/late-date',
     pluginFactory: 'DatePlugin',
     reactImport: true,
     route: customizerPlugins.date.route,
@@ -316,7 +316,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     badges: [customizerBadges.handler],
     id: DeletePlugin.key,
     label: 'Delete',
-    npmPackage: '@sewellstephens/plate-select',
+    npmPackage: '@sewell_stephens/late-select',
     pluginFactory: 'DeletePlugin',
   },
   [DndPlugin.key]: {
@@ -338,7 +338,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     dependencies: [NodeIdPlugin.key],
     id: DndPlugin.key,
     label: 'Drag & Drop',
-    npmPackage: '@sewellstephens/plate-dnd',
+    npmPackage: '@sewell_stephens/late-dnd',
     pluginFactory: 'DndPlugin',
     pluginOptions: ['  options: { enableScroller: true },'],
     route: customizerPlugins.dnd.route,
@@ -348,14 +348,14 @@ export const customizerItems: Record<string, SettingPlugin> = {
     dependencies: [JuicePlugin.key],
     id: DocxPlugin.key,
     label: 'DOCX',
-    npmPackage: '@sewellstephens/plate-docx',
+    npmPackage: '@sewell_stephens/late-docx',
     pluginFactory: 'DocxPlugin',
     route: customizerPlugins.docx.route,
   },
   [DragOverCursorPlugin.key]: {
     badges: [customizerBadges.handler, customizerBadges.ui],
     id: DragOverCursorPlugin.key,
-    // npmPackage: '@sewellstephens/plate-cursor',
+    // npmPackage: '@sewell_stephens/late-cursor',
     label: 'Drag Cursor',
     reactImport: true,
     route: customizerPlugins.cursoroverlay.route,
@@ -372,7 +372,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: EmojiPlugin.key,
     label: 'Emoji',
-    npmPackage: '@sewellstephens/plate-emoji',
+    npmPackage: '@sewell_stephens/late-emoji',
     pluginFactory: 'EmojiPlugin',
     reactImport: true,
     route: customizerPlugins.emoji.route,
@@ -390,7 +390,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: ExcalidrawPlugin.key,
     label: 'Excalidraw',
-    npmPackage: '@sewellstephens/plate-excalidraw',
+    npmPackage: '@sewell_stephens/late-excalidraw',
     pluginFactory: 'ExcalidrawPlugin',
     reactImport: true,
     route: customizerPlugins.excalidraw.route,
@@ -399,7 +399,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     badges: [customizerBadges.handler],
     id: ExitBreakPlugin.key,
     label: 'Exit Break',
-    npmPackage: '@sewellstephens/plate-break',
+    npmPackage: '@sewell_stephens/late-break',
     pluginFactory: 'ExitBreakPlugin',
     pluginOptions: [
       `options: {`,
@@ -431,7 +431,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     badges: [customizerBadges.style],
     id: FontBackgroundColorPlugin.key,
     label: 'Font Background',
-    npmPackage: '@sewellstephens/plate-font',
+    npmPackage: '@sewell_stephens/late-font',
     pluginFactory: 'FontBackgroundColorPlugin',
     route: customizerPlugins.font.route,
   },
@@ -439,7 +439,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     badges: [customizerBadges.style],
     id: FontColorPlugin.key,
     label: 'Font Color',
-    npmPackage: '@sewellstephens/plate-font',
+    npmPackage: '@sewell_stephens/late-font',
     pluginFactory: 'FontColorPlugin',
     route: customizerPlugins.font.route,
   },
@@ -447,7 +447,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     badges: [customizerBadges.style],
     id: FontSizePlugin.key,
     label: 'Font Size',
-    npmPackage: '@sewellstephens/plate-font',
+    npmPackage: '@sewell_stephens/late-font',
     pluginFactory: 'FontSizePlugin',
     route: customizerPlugins.font.route,
   },
@@ -464,7 +464,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: HighlightPlugin.key,
     label: 'Highlight',
-    npmPackage: '@sewellstephens/plate-highlight',
+    npmPackage: '@sewell_stephens/late-highlight',
     pluginFactory: 'HighlightPlugin',
     reactImport: true,
     route: customizerPlugins.highlight.route,
@@ -482,7 +482,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: HorizontalRulePlugin.key,
     label: 'Horizontal Rule',
-    npmPackage: '@sewellstephens/plate-horizontal-rule',
+    npmPackage: '@sewell_stephens/late-horizontal-rule',
     pluginFactory: 'HorizontalRulePlugin',
     reactImport: true,
     route: customizerPlugins.hr.route,
@@ -500,7 +500,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: ImagePlugin.key,
     label: 'Image',
-    npmPackage: '@sewellstephens/plate-media',
+    npmPackage: '@sewell_stephens/late-media',
     pluginFactory: 'ImagePlugin',
     reactImport: true,
     route: customizerPlugins.media.route,
@@ -511,7 +511,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     dependencies: [IndentPlugin.key],
     id: IndentListPlugin.key,
     label: 'Indent List',
-    npmPackage: '@sewellstephens/plate-indent-list',
+    npmPackage: '@sewell_stephens/late-indent-list',
     pluginFactory: 'IndentListPlugin',
     pluginOptions: [`inject: { targetPlugins: ['p', 'h1', 'h2', 'h3'] },`],
     reactImport: true,
@@ -521,7 +521,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     badges: [customizerBadges.style],
     id: IndentPlugin.key,
     label: 'Indent',
-    npmPackage: '@sewellstephens/plate-indent',
+    npmPackage: '@sewell_stephens/late-indent',
     pluginFactory: 'IndentPlugin',
     pluginOptions: [`inject: { targetPlugins: ['p', 'h1', 'h2', 'h3'] },`],
     reactImport: true,
@@ -542,7 +542,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: ItalicPlugin.key,
     label: 'Italic',
-    npmPackage: '@sewellstephens/plate-basic-marks',
+    npmPackage: '@sewell_stephens/late-basic-marks',
     pluginFactory: 'ItalicPlugin',
     reactImport: true,
     route: customizerPlugins.basicmarks.route,
@@ -551,7 +551,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     badges: [customizerBadges.handler],
     id: JuicePlugin.key,
     label: 'Juice',
-    npmPackage: '@sewellstephens/plate-juice',
+    npmPackage: '@sewell_stephens/late-juice',
     pluginFactory: 'JuicePlugin',
     route: customizerPlugins.docx.route,
   },
@@ -568,7 +568,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: KbdPlugin.key,
     label: 'Keyboard Input',
-    npmPackage: '@sewellstephens/plate-kbd',
+    npmPackage: '@sewell_stephens/late-kbd',
     pluginFactory: 'KbdPlugin',
     reactImport: true,
     route: customizerPlugins.kbd.route,
@@ -577,7 +577,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     badges: [customizerBadges.style],
     id: LineHeightPlugin.key,
     label: 'Line Height',
-    npmPackage: '@sewellstephens/plate-line-height',
+    npmPackage: '@sewell_stephens/late-line-height',
     pluginFactory: 'LineHeightPlugin',
     pluginOptions: [
       `inject: {`,
@@ -612,7 +612,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: LinkPlugin.key,
     label: 'Link',
-    npmPackage: '@sewellstephens/plate-link',
+    npmPackage: '@sewell_stephens/late-link',
     pluginFactory: 'LinkPlugin',
     reactImport: true,
     route: customizerPlugins.link.route,
@@ -621,7 +621,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     badges: [customizerBadges.handler],
     id: MarkdownPlugin.key,
     label: 'Deserialize MD',
-    npmPackage: '@sewellstephens/plate-markdown',
+    npmPackage: '@sewell_stephens/late-markdown',
     pluginFactory: 'MarkdownPlugin',
     route: customizerPlugins.markdown.route,
   },
@@ -639,7 +639,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: MediaEmbedPlugin.key,
     label: 'Media Embed',
-    npmPackage: '@sewellstephens/plate-media',
+    npmPackage: '@sewell_stephens/late-media',
     pluginFactory: 'MediaEmbedPlugin',
     reactImport: true,
     route: customizerPlugins.media.route,
@@ -647,7 +647,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
   [MentionInputPlugin.key]: {
     id: MentionInputPlugin.key,
     label: 'Mention Input',
-    npmPackage: '@sewellstephens/plate-mention',
+    npmPackage: '@sewell_stephens/late-mention',
     pluginFactory: 'MentionInputPlugin',
     reactImport: true,
   },
@@ -676,7 +676,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: MentionPlugin.key,
     label: 'Mention',
-    npmPackage: '@sewellstephens/plate-mention',
+    npmPackage: '@sewell_stephens/late-mention',
     pluginFactory: 'MentionPlugin',
     reactImport: true,
     route: customizerPlugins.mention.route,
@@ -685,7 +685,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     badges: [customizerBadges.normalizer],
     id: NodeIdPlugin.key,
     label: 'Id',
-    npmPackage: '@sewellstephens/plate-node-id',
+    npmPackage: '@sewell_stephens/late-node-id',
     pluginFactory: 'NodeIdPlugin',
     // route: settingValues.nodeid.route,
   },
@@ -693,7 +693,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     badges: [customizerBadges.normalizer],
     id: NormalizeTypesPlugin.key,
     label: 'Normalize Types',
-    npmPackage: '@sewellstephens/plate-normalizers',
+    npmPackage: '@sewell_stephens/late-normalizers',
     pluginFactory: 'NormalizeTypesPlugin',
     route: customizerPlugins.forcedlayout.route,
   },
@@ -711,7 +711,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     id: ParagraphPlugin.key,
     label: 'Paragraph',
     plateImports: ['ParagraphPlugin'],
-    // npmPackage: '@sewellstephens/plate-common',
+    // npmPackage: '@sewell_stephens/late-common',
     pluginFactory: 'ParagraphPlugin',
     reactImport: true,
     route: customizerPlugins.basicnodes.route,
@@ -720,7 +720,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     badges: [customizerBadges.handler],
     id: ResetNodePlugin.key,
     label: 'Reset Node',
-    npmPackage: '@sewellstephens/plate-reset-node',
+    npmPackage: '@sewell_stephens/late-reset-node',
     pluginFactory: 'ResetNodePlugin',
     pluginOptions: [
       `options: {`,
@@ -736,7 +736,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     badges: [customizerBadges.handler],
     id: SelectOnBackspacePlugin.key,
     label: 'Select on Backspace',
-    npmPackage: '@sewellstephens/plate-select',
+    npmPackage: '@sewell_stephens/late-select',
     pluginFactory: 'SelectOnBackspacePlugin',
     pluginOptions: [
       `options: {`,
@@ -755,7 +755,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     disablePlugins: [TrailingBlockPlugin.key],
     id: SingleLinePlugin.key,
     label: 'Single Line',
-    npmPackage: '@sewellstephens/plate-break',
+    npmPackage: '@sewell_stephens/late-break',
     pluginFactory: 'SingleLinePlugin',
     reactImport: true,
     route: customizerPlugins.singleline.route,
@@ -764,7 +764,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     badges: [customizerBadges.handler],
     id: SoftBreakPlugin.key,
     label: 'Soft Break',
-    npmPackage: '@sewellstephens/plate-break',
+    npmPackage: '@sewell_stephens/late-break',
     pluginFactory: 'SoftBreakPlugin',
     pluginOptions: [
       `options: {`,
@@ -797,7 +797,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: StrikethroughPlugin.key,
     label: 'Strikethrough',
-    npmPackage: '@sewellstephens/plate-basic-marks',
+    npmPackage: '@sewell_stephens/late-basic-marks',
     pluginFactory: 'StrikethroughPlugin',
     reactImport: true,
     route: customizerPlugins.basicmarks.route,
@@ -817,7 +817,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: SubscriptPlugin.key,
     label: 'Subscript',
-    npmPackage: '@sewellstephens/plate-basic-marks',
+    npmPackage: '@sewell_stephens/late-basic-marks',
     pluginFactory: 'SubscriptPlugin',
     reactImport: true,
     route: customizerPlugins.basicmarks.route,
@@ -837,7 +837,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: SuperscriptPlugin.key,
     label: 'Superscript',
-    npmPackage: '@sewellstephens/plate-basic-marks',
+    npmPackage: '@sewell_stephens/late-basic-marks',
     pluginFactory: 'SuperscriptPlugin',
     reactImport: true,
     route: customizerPlugins.basicmarks.route,
@@ -846,7 +846,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     badges: [customizerBadges.handler],
     id: TabbablePlugin.key,
     label: 'Tabbable',
-    npmPackage: '@sewellstephens/plate-tabbable',
+    npmPackage: '@sewell_stephens/late-tabbable',
     pluginFactory: 'TabbablePlugin',
     reactImport: true,
     route: customizerPlugins.tabbable.route,
@@ -890,7 +890,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: TablePlugin.key,
     label: 'Table',
-    npmPackage: '@sewellstephens/plate-table',
+    npmPackage: '@sewell_stephens/late-table',
     pluginFactory: 'TablePlugin',
     reactImport: true,
     route: customizerPlugins.table.route,
@@ -908,7 +908,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: TodoListPlugin.key,
     label: 'Todo List',
-    npmPackage: '@sewellstephens/plate-list',
+    npmPackage: '@sewell_stephens/late-list',
     pluginFactory: 'TodoListPlugin',
     reactImport: true,
     route: customizerPlugins.todoli.route,
@@ -926,7 +926,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: TogglePlugin.key,
     label: 'Toggle',
-    npmPackage: '@sewellstephens/plate-toggle',
+    npmPackage: '@sewell_stephens/late-toggle',
     pluginFactory: 'TogglePlugin',
     reactImport: true,
     route: customizerPlugins.toggle.route,
@@ -937,7 +937,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     disablePlugins: [SingleLinePlugin.key],
     id: TrailingBlockPlugin.key,
     label: 'Trailing Block',
-    npmPackage: '@sewellstephens/plate-trailing-block',
+    npmPackage: '@sewell_stephens/late-trailing-block',
     pluginFactory: 'TrailingBlockPlugin',
     pluginOptions: [`options: { type: 'p' },`],
     route: customizerPlugins.trailingblock.route,
@@ -957,7 +957,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: UnderlinePlugin.key,
     label: 'Underline',
-    npmPackage: '@sewellstephens/plate-basic-marks',
+    npmPackage: '@sewell_stephens/late-basic-marks',
     pluginFactory: 'UnderlinePlugin',
     reactImport: true,
     route: customizerPlugins.basicmarks.route,
@@ -983,7 +983,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     ],
     id: 'column',
     label: 'Column',
-    npmPackage: '@sewellstephens/plate-layout',
+    npmPackage: '@sewell_stephens/late-layout',
     pluginFactory: 'ColumnPlugin',
     reactImport: true,
     route: customizerPlugins.column.route,
@@ -1096,10 +1096,10 @@ export const customizerItems: Record<string, SettingPlugin> = {
         usage: `withProps(HeadingElement, { variant: 'h6' })`,
       },
     ],
-    customImports: [`import { HEADING_KEYS } from '@sewellstephens/plate-heading';`],
+    customImports: [`import { HEADING_KEYS } from '@sewell_stephens/late-heading';`],
     id: 'heading',
     label: 'Heading',
-    npmPackage: '@sewellstephens/plate-heading',
+    npmPackage: '@sewell_stephens/late-heading',
     pluginFactory: 'HeadingPlugin',
     reactImport: true,
     route: customizerPlugins.basicnodes.route,
@@ -1145,7 +1145,7 @@ export const customizerItems: Record<string, SettingPlugin> = {
     conflicts: [IndentListPlugin.key],
     id: 'list',
     label: 'List',
-    npmPackage: '@sewellstephens/plate-list',
+    npmPackage: '@sewell_stephens/late-list',
     pluginFactory: 'ListPlugin',
     reactImport: true,
     route: customizerPlugins.list.route,

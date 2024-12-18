@@ -3,7 +3,7 @@ import {
   getPointAfter,
   getPointBefore,
   getVoidNode,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 import { Path, type Point } from 'slate';
 
 import { getBlockAbove } from './getBlockAbove';

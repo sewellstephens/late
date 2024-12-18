@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 
-import type { TEditableProps } from '@sewellstephens/slate-react';
+import type { TEditableProps } from '@sewell_stephens/slate-react';
 
-import { useComposedRef } from '@sewellstephens/react-utils';
+import { useComposedRef } from '@sewell_stephens/react-utils';
 import { Editable } from 'slate-react';
 
 import { useEditableProps } from '../hooks';

@@ -1,4 +1,4 @@
-import { toLatePlugin } from '@sewellstephens/plate-common/react';
+import { toLatePlugin } from '@sewell_stephens/late-common/react';
 
 import { YjsPlugin as BaseYjsPlugin } from '../lib/YjsPlugin';
 import { YjsAboveEditable } from './YjsAboveEditable';

@@ -1,4 +1,4 @@
-import { useEditorPlugin, useHotkeys } from '@sewellstephens/plate-common/react';
+import { useEditorPlugin, useHotkeys } from '@sewell_stephens/late-common/react';
 
 import { LinkPlugin } from '../../LinkPlugin';
 import { submitFloatingLink } from '../../transforms/submitFloatingLink';

@@ -1,4 +1,4 @@
-import { CARRIAGE_RETURN, LINE_FEED, SPACE } from '@sewellstephens/plate-common';
+import { CARRIAGE_RETURN, LINE_FEED, SPACE } from '@sewell_stephens/late-common';
 
 const END_OF_ID_SEQUENCE_CHARACTERS = [
   '\\',

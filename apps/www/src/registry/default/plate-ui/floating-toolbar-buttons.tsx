@@ -6,8 +6,8 @@ import {
   ItalicPlugin,
   StrikethroughPlugin,
   UnderlinePlugin,
-} from '@sewellstephens/plate-basic-marks/react';
-import { useEditorReadOnly } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-basic-marks/react';
+import { useEditorReadOnly } from '@sewell_stephens/late-common/react';
 
 import { Icons } from '@/components/icons';
 

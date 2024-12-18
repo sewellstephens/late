@@ -1,12 +1,12 @@
 import {
   type TriggerComboboxPluginOptions,
   withTriggerCombobox,
-} from '@sewellstephens/plate-combobox';
+} from '@sewell_stephens/late-combobox';
 import {
   type PluginConfig,
   createSlatePlugin,
   insertNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { TMentionElement } from './types';
 

@@ -1,4 +1,4 @@
-# @sewellstephens/react-hotkeys
+# @sewell_stephens/react-hotkeys
 
 ## 37.0.0
 

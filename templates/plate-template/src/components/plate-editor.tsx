@@ -1,6 +1,6 @@
 'use client';
 
-import { createPlugins, Late } from '@sewellstephens/plate-common';
+import { createPlugins, Late } from '@sewell_stephens/late-common';
 
 import { Editor } from '@/components/plate-ui/editor';
 

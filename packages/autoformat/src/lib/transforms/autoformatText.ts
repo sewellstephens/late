@@ -4,7 +4,7 @@ import {
   type SlateEditor,
   deleteText,
   insertText,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import castArray from 'lodash/castArray.js';
 
 import type { AutoformatTextRule } from '../types';

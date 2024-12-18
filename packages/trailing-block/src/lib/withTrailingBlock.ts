@@ -3,7 +3,7 @@ import {
   getLastNodeByLevel,
   insertElements,
   queryNode,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Path } from 'slate';
 
 import type { TrailingBlockConfig } from './TrailingBlockPlugin';

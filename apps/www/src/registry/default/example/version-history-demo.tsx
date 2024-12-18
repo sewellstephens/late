@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { cn } from '@sewellstephens/cn';
-import { BoldPlugin, ItalicPlugin } from '@sewellstephens/plate-basic-marks/react';
-import { SoftBreakPlugin } from '@sewellstephens/plate-break/react';
-import { type Value, createSlatePlugin, isInline } from '@sewellstephens/plate-common';
+import { cn } from '@sewell_stephens/cn';
+import { BoldPlugin, ItalicPlugin } from '@sewell_stephens/late-basic-marks/react';
+import { SoftBreakPlugin } from '@sewell_stephens/late-break/react';
+import { type Value, createSlatePlugin, isInline } from '@sewell_stephens/late-common';
 import {
   ParagraphPlugin,
   createLatePlugin,
   toLatePlugin,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import {
   Late,
   LateContent,
@@ -19,13 +19,13 @@ import {
   type LateProps,
   createLateEditor,
   useLateEditor,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import {
   type DiffOperation,
   type DiffUpdate,
   computeDiff,
   withGetFragmentExcludeDiff,
-} from '@sewellstephens/plate-diff';
+} from '@sewell_stephens/late-diff';
 import { cloneDeep } from 'lodash';
 import { useSelected } from 'slate-react';
 

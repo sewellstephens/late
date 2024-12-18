@@ -5,7 +5,7 @@ import {
   type TNode,
   type TNodeEntry,
   isAncestor,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 /** Get children node entries of a node entry. TODO: try Node.children */
 export const getChildren = <N extends ChildOf<R>, R extends TNode = TNode>(

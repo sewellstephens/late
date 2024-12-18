@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
-import type { SlateEditor } from '@sewellstephens/plate-common';
+import type { SlateEditor } from '@sewell_stephens/late-common';
 
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { jsx } from '@sewell_stephens/late-test-utils';
 import { Range } from 'slate';
 
 import { isPointAtWordEnd } from '../../isPointAtWordEnd';

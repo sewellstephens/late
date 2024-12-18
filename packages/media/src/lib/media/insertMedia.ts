@@ -2,7 +2,7 @@ import type {
   InsertNodesOptions,
   SlateEditor,
   TEditor,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import {
   ImagePlugin,

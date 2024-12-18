@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
-import { BlockquotePlugin } from '@sewellstephens/plate-block-quote';
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { BlockquotePlugin } from '@sewell_stephens/late-block-quote';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import type { SlateEditor } from '../../../editor';
 

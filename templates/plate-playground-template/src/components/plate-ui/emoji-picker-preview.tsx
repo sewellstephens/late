@@ -1,5 +1,5 @@
 import React from 'react';
-import { UseEmojiPickerType } from '@sewellstephens/plate-emoji';
+import { UseEmojiPickerType } from '@sewell_stephens/late-emoji';
 
 export type EmojiPickerPreviewProps = Pick<
   UseEmojiPickerType,

@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
-import { createSlateEditor } from '@sewellstephens/plate-common';
-import { HorizontalRulePlugin } from '@sewellstephens/plate-horizontal-rule';
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { createSlateEditor } from '@sewell_stephens/late-common';
+import { HorizontalRulePlugin } from '@sewell_stephens/late-horizontal-rule';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { MarkdownPlugin } from '../../MarkdownPlugin';
 import { deserializeMd } from './deserializeMd';

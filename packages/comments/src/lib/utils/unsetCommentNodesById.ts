@@ -1,4 +1,4 @@
-import { type SlateEditor, unsetNodes } from '@sewellstephens/plate-common';
+import { type SlateEditor, unsetNodes } from '@sewell_stephens/late-common';
 
 import type { TCommentText } from '../types';
 

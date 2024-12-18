@@ -1,11 +1,11 @@
-import { focusEditorEdge, isEditorFocused } from '@sewellstephens/slate-react';
+import { focusEditorEdge, isEditorFocused } from '@sewell_stephens/slate-react';
 
 import type { LateEditor } from '../../editor/LateEditor';
 
 import { createLateEditor } from '../../../react';
 
 // Mock the slate-react functions
-jest.mock('@sewellstephens/slate-react', () => ({
+jest.mock('@sewell_stephens/slate-react', () => ({
   focusEditorEdge: jest.fn(),
   isEditorFocused: jest.fn(),
 }));

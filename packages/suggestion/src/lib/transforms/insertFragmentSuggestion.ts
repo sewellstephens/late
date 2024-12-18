@@ -4,7 +4,7 @@ import {
   applyDeepToNodes,
   nanoid,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { SUGGESTION_KEYS, SuggestionPlugin } from '../SuggestionPlugin';
 import { findSuggestionId } from '../queries/findSuggestionId';

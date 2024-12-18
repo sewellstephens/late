@@ -1,4 +1,4 @@
-import type { SlateEditor, TNodeEntry } from '@sewellstephens/plate-common';
+import type { SlateEditor, TNodeEntry } from '@sewell_stephens/late-common';
 
 import last from 'lodash/last.js';
 

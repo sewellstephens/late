@@ -1,4 +1,4 @@
-import { type TEditor, type TNodeEntry, getRange } from '@sewellstephens/slate';
+import { type TEditor, type TNodeEntry, getRange } from '@sewell_stephens/slate';
 
 /** Get node entries range. */
 export const getNodesRange = (editor: TEditor, nodeEntries: TNodeEntry[]) => {

@@ -1,10 +1,10 @@
 /** @jsx jsx */
 
-import { BoldPlugin } from '@sewellstephens/plate-basic-marks';
-import { HeadingPlugin } from '@sewellstephens/plate-heading';
-import { LinkPlugin } from '@sewellstephens/plate-link';
-import { MediaEmbedPlugin } from '@sewellstephens/plate-media';
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { BoldPlugin } from '@sewell_stephens/late-basic-marks';
+import { HeadingPlugin } from '@sewell_stephens/late-heading';
+import { LinkPlugin } from '@sewell_stephens/late-link';
+import { MediaEmbedPlugin } from '@sewell_stephens/late-media';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import type { SlateEditor } from '../../editor';
 

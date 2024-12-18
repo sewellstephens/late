@@ -3,10 +3,10 @@
 import {
   createLateEditor,
   getEditorPlugin,
-} from '@sewellstephens/plate-common/react';
-import * as isHotkey from '@sewellstephens/plate-core';
-import { HEADING_KEYS } from '@sewellstephens/plate-heading';
-import { jsx } from '@sewellstephens/plate-test-utils';
+} from '@sewell_stephens/late-common/react';
+import * as isHotkey from '@sewell_stephens/late-core';
+import { HEADING_KEYS } from '@sewell_stephens/late-heading';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { ExitBreakPlugin } from '../../ExitBreakPlugin';
 import { onKeyDownExitBreak } from '../../onKeyDownExitBreak';

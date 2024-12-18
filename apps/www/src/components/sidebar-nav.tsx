@@ -5,7 +5,7 @@ import React from 'react';
 import type { DocsConfig } from '@/config/docs';
 import type { SidebarNavItem } from '@/types/nav';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 

@@ -1,4 +1,4 @@
-import type { UnknownObject } from '@sewellstephens/utils';
+import type { UnknownObject } from '@sewell_stephens/utils';
 
 import type { TEditor } from '../editor/TEditor';
 import type { TDescendant } from '../node/TDescendant';

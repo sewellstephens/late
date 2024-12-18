@@ -12,7 +12,7 @@ import {
   setElements,
   withoutNormalizing,
   wrapNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Range } from 'slate';
 
 import {

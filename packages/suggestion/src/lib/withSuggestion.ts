@@ -6,7 +6,7 @@ import {
   removeNodes,
   setNodes,
   unsetNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { TSuggestionText } from './types';
 

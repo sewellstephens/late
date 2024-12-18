@@ -1,4 +1,4 @@
-import { replaceTagName, traverseHtmlElements } from '@sewellstephens/plate-common';
+import { replaceTagName, traverseHtmlElements } from '@sewell_stephens/late-common';
 
 /** Replace p.MsoQuote elements with blockquote. */
 export const cleanDocxQuotes = (rootNode: Node): void => {

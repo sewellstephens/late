@@ -3,11 +3,11 @@
 import {
   type TriggerComboboxPluginOptions,
   withTriggerCombobox,
-} from '@sewellstephens/plate-combobox';
-import { createSlatePlugin } from '@sewellstephens/plate-common';
-import { ParagraphPlugin } from '@sewellstephens/plate-common';
-import { createSlateEditor } from '@sewellstephens/plate-common';
-import { jsx } from '@sewellstephens/plate-test-utils';
+} from '@sewell_stephens/late-combobox';
+import { createSlatePlugin } from '@sewell_stephens/late-common';
+import { ParagraphPlugin } from '@sewell_stephens/late-common';
+import { createSlateEditor } from '@sewell_stephens/late-common';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 const ExampleComboboxPlugin = createSlatePlugin<
   string,

@@ -1,6 +1,6 @@
 import React from 'react';
-import { cn } from '@sewellstephens/cn';
-import { UseEmojiPickerType } from '@sewellstephens/plate-emoji';
+import { cn } from '@sewell_stephens/cn';
+import { UseEmojiPickerType } from '@sewell_stephens/late-emoji';
 
 import { Icons } from '@/components/icons';
 

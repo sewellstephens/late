@@ -4,7 +4,7 @@ import {
   bindFirst,
   createTSlatePlugin,
   isUrl,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { deserializeMd } from './deserializer/utils';
 import {

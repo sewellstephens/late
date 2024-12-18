@@ -1,4 +1,4 @@
-import { createSlatePlugin } from '@sewellstephens/plate-common';
+import { createSlatePlugin } from '@sewell_stephens/late-common';
 
 /** Enables support for subscript formatting. */
 export const SubscriptPlugin = createSlatePlugin({

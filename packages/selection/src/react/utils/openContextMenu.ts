@@ -3,7 +3,7 @@ import {
   collapseSelection,
   getAncestorNode,
   getEditorPlugin,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { BlockContextMenuPlugin } from '../BlockContextMenuPlugin';
 import { BlockSelectionPlugin } from '../BlockSelectionPlugin';

@@ -4,7 +4,7 @@ import {
   ListItemPlugin,
   ListPlugin,
   TodoListPlugin,
-} from '@sewellstephens/plate-list';
+} from '@sewell_stephens/late-list';
 
 import { serializeHtml } from '../../react/serializeHtml';
 import { createLateUIEditor } from '../create-plate-ui-editor';

@@ -1,4 +1,4 @@
-import { Key, toLatePlugin } from '@sewellstephens/plate-common/react';
+import { Key, toLatePlugin } from '@sewell_stephens/late-common/react';
 
 import { SubscriptPlugin as BaseSubscriptPlugin } from '../lib/SubscriptPlugin';
 import { SuperscriptPlugin } from './SuperscriptPlugin';

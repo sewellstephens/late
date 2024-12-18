@@ -1,4 +1,4 @@
-import type { TEditor } from '@sewellstephens/slate';
+import type { TEditor } from '@sewell_stephens/slate';
 
 import { getBlockAbove } from './getBlockAbove';
 import { isAncestorEmpty } from './isAncestorEmpty';

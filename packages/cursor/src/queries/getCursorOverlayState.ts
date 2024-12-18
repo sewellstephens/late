@@ -1,4 +1,4 @@
-import type { UnknownObject } from '@sewellstephens/plate-common';
+import type { UnknownObject } from '@sewell_stephens/late-common';
 
 import type { CursorOverlayProps } from '../components';
 import type { CursorOverlayState, SelectionRect } from '../types';

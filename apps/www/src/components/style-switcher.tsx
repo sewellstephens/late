@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import type { SelectTriggerProps } from '@radix-ui/react-select';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 
 import { useConfig } from '@/hooks/use-config';
 import { type Style, styles } from '@/registry/styles';

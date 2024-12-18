@@ -6,8 +6,8 @@ import {
   FontFamilyPlugin,
   FontSizePlugin,
   FontWeightPlugin,
-} from '@sewellstephens/plate-font';
-import { jsx } from '@sewellstephens/plate-test-utils';
+} from '@sewell_stephens/late-font';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { getDocxTestName, testDocxDeserializer } from './testDocxDeserializer';
 

@@ -2,11 +2,11 @@
 
 import React from 'react';
 
-import { cn, withRef, withVariants } from '@sewellstephens/cn';
+import { cn, withRef, withVariants } from '@sewell_stephens/cn';
 import {
   Resizable as ResizablePrimitive,
   ResizeHandle as ResizeHandlePrimitive,
-} from '@sewellstephens/plate-resizable';
+} from '@sewell_stephens/late-resizable';
 import { cva } from 'class-variance-authority';
 
 export const mediaResizeHandleVariants = cva(

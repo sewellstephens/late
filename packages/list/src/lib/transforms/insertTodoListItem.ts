@@ -9,7 +9,7 @@ import {
   select,
   splitNodes,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Path, Range } from 'slate';
 
 import { type TodoListConfig, TodoListPlugin } from '../TodoListPlugin';

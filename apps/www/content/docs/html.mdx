@@ -103,7 +103,7 @@ Plugins can define various properties to control HTML deserialization:
 You can extend or customize the deserialization behavior of any plugin. Here's an example of how you might extend the `CodeBlockPlugin`:
 
 ```typescript
-import { CodeBlockPlugin } from '@sewellstephens/plate-code-block';
+import { CodeBlockPlugin } from '@sewell_stephens/late-code-block';
 
 const CustomCodeBlockPlugin = CodeBlockPlugin.extend({
   parsers: {
@@ -173,14 +173,14 @@ export const IndentListPlugin = createTSlatePlugin<IndentListConfig>({
 ### Installation
 
 ```bash
-npm install @sewellstephens/plate-html
+npm install @sewell_stephens/late-html
 ```
 
 ### Usage
 
 ```tsx
 // ...
-import { HtmlReactPlugin } from '@sewellstephens/plate-html/react';
+import { HtmlReactPlugin } from '@sewell_stephens/late-html/react';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 
@@ -197,7 +197,7 @@ const editor = createLateEditor({
 
 const html = editor.api.htmlReact.serialize({
   nodes: editor.children,
-  // if you use @sewellstephens/plate-dnd
+  // if you use @sewell_stephens/late-dnd
   dndWrapper: (props) => <DndProvider backend={HTML5Backend} {...props} />,
 });
 ```

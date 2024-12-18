@@ -1,5 +1,5 @@
 {
-  "name": "@sewellstephens/react-hotkeys",
+  "name": "@sewell_stephens/react-hotkeys",
   "version": "0.0.1",
   "description": "Fork of react-hotkeys-hook",
   "keywords": [
@@ -46,5 +46,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "3c69df6d17679bbabc43c4cff3370ae8c70ee466"
 }

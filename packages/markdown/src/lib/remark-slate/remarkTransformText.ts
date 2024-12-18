@@ -1,4 +1,4 @@
-import type { TText } from '@sewellstephens/plate-common';
+import type { TText } from '@sewell_stephens/late-common';
 
 import type { MdastNode, RemarkPluginOptions } from './types';
 

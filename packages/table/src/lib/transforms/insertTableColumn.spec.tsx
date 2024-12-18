@@ -1,10 +1,10 @@
 /* eslint-disable react/jsx-key */
 /** @jsx jsx */
 
-import type { TEditor } from '@sewellstephens/plate-common';
+import type { TEditor } from '@sewell_stephens/late-common';
 
-import { createLateEditor } from '@sewellstephens/plate-common/react';
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { createLateEditor } from '@sewell_stephens/late-common/react';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { TablePlugin } from '../TablePlugin';
 import { insertTableColumn } from './insertTableColumn';

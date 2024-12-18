@@ -3,7 +3,7 @@ import {
   type TNodeEntry,
   isDefined,
   unsetNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { INDENT_LIST_KEYS } from '../IndentListPlugin';
 

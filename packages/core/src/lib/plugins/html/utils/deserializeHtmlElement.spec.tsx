@@ -1,10 +1,10 @@
 /** @jsx jsx */
 
-import { BoldPlugin } from '@sewellstephens/plate-basic-marks';
-import { LinkPlugin } from '@sewellstephens/plate-link';
-import { ImagePlugin } from '@sewellstephens/plate-media';
-import { TablePlugin } from '@sewellstephens/plate-table';
-import { getHtmlDocument, jsx } from '@sewellstephens/plate-test-utils';
+import { BoldPlugin } from '@sewell_stephens/late-basic-marks';
+import { LinkPlugin } from '@sewell_stephens/late-link';
+import { ImagePlugin } from '@sewell_stephens/late-media';
+import { TablePlugin } from '@sewell_stephens/late-table';
+import { getHtmlDocument, jsx } from '@sewell_stephens/late-test-utils';
 
 import { createLateEditor } from '../../../../react';
 import { createSlatePlugin } from '../../../plugin';

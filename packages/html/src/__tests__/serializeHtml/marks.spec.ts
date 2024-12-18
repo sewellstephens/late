@@ -1,7 +1,7 @@
-import { BasicMarksPlugin } from '@sewellstephens/plate-basic-marks';
-import { htmlStringToDOMNode } from '@sewellstephens/plate-core';
-import { HighlightPlugin } from '@sewellstephens/plate-highlight';
-import { KbdPlugin } from '@sewellstephens/plate-kbd';
+import { BasicMarksPlugin } from '@sewell_stephens/late-basic-marks';
+import { htmlStringToDOMNode } from '@sewell_stephens/late-core';
+import { HighlightPlugin } from '@sewell_stephens/late-highlight';
+import { KbdPlugin } from '@sewell_stephens/late-kbd';
 
 import { serializeHtml } from '../../react/serializeHtml';
 import { createLateUIEditor } from '../create-plate-ui-editor';

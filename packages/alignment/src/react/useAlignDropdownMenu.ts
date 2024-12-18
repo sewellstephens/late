@@ -1,9 +1,9 @@
-import { getNodeEntries, isBlock, isDefined } from '@sewellstephens/plate-common';
+import { getNodeEntries, isBlock, isDefined } from '@sewell_stephens/late-common';
 import {
   focusEditor,
   useEditorRef,
   useEditorSelector,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import { AlignPlugin, type Alignment, setAlign } from '../index';
 

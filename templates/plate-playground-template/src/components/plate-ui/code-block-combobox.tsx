@@ -1,13 +1,13 @@
 'use client';
 
 import React, { useState } from 'react';
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import {
   CODE_BLOCK_LANGUAGES,
   CODE_BLOCK_LANGUAGES_POPULAR,
   useCodeBlockCombobox,
   useCodeBlockComboboxState,
-} from '@sewellstephens/plate-code-block';
+} from '@sewell_stephens/late-code-block';
 
 import { Icons } from '@/components/icons';
 

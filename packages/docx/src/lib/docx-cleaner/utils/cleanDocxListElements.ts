@@ -1,4 +1,4 @@
-import { traverseHtmlElements } from '@sewellstephens/plate-common';
+import { traverseHtmlElements } from '@sewell_stephens/late-common';
 
 /** Clean elements style mso-list to mso-list:Ignore */
 export const cleanDocxListElements = (rootNode: Node): void => {

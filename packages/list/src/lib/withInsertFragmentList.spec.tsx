@@ -4,8 +4,8 @@ import {
   type SlateEditor,
   type TDescendant,
   createSlateEditor,
-} from '@sewellstephens/plate-common';
-import { jsx } from '@sewellstephens/plate-test-utils';
+} from '@sewell_stephens/late-common';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { ListPlugin } from '../react';
 

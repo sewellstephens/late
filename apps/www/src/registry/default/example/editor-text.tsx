@@ -1,8 +1,8 @@
 'use client';
 
-import { BasicElementsPlugin } from '@sewellstephens/plate-basic-elements/react';
-import { BasicMarksPlugin } from '@sewellstephens/plate-basic-marks/react';
-import { Late, useLateEditor } from '@sewellstephens/plate-common/react';
+import { BasicElementsPlugin } from '@sewell_stephens/late-basic-elements/react';
+import { BasicMarksPlugin } from '@sewell_stephens/late-basic-marks/react';
+import { Late, useLateEditor } from '@sewell_stephens/late-common/react';
 
 import { Label } from '@/components/ui/label';
 import { LateUI } from '@/plate/demo/plate-ui';

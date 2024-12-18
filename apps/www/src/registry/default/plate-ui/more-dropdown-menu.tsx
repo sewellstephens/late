@@ -5,8 +5,8 @@ import type { DropdownMenuProps } from '@radix-ui/react-dropdown-menu';
 import {
   SubscriptPlugin,
   SuperscriptPlugin,
-} from '@sewellstephens/plate-basic-marks/react';
-import { focusEditor, useEditorRef } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-basic-marks/react';
+import { focusEditor, useEditorRef } from '@sewell_stephens/late-common/react';
 
 import { Icons } from '@/components/icons';
 

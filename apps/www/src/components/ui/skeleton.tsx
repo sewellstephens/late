@@ -1,4 +1,4 @@
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 
 function Skeleton({
   className,

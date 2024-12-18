@@ -2,7 +2,7 @@ import {
   type SlateEditor,
   findNode,
   getNodeEntry,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Path } from 'slate';
 
 import type { TTableCellElement } from '../types';

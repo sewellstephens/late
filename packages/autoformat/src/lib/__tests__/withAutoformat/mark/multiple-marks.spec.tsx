@@ -4,9 +4,9 @@ import {
   BoldPlugin,
   ItalicPlugin,
   UnderlinePlugin,
-} from '@sewellstephens/plate-basic-marks';
-import { createSlateEditor } from '@sewellstephens/plate-common';
-import { jsx } from '@sewellstephens/plate-test-utils';
+} from '@sewell_stephens/late-basic-marks';
+import { createSlateEditor } from '@sewell_stephens/late-common';
+import { jsx } from '@sewell_stephens/late-test-utils';
 import { getAutoformatOptions } from 'www/src/lib/plate/demo/plugins/autoformatOptions';
 
 import { AutoformatPlugin } from '../../../AutoformatPlugin';

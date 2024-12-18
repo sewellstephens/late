@@ -1,13 +1,13 @@
 import React from 'react';
-import { cn, withRef } from '@sewellstephens/cn';
-import { LateElement, withHOC } from '@sewellstephens/plate-common';
+import { cn, withRef } from '@sewell_stephens/cn';
+import { LateElement, withHOC } from '@sewell_stephens/late-common';
 import {
   ELEMENT_MEDIA_EMBED,
   parseTwitterUrl,
   parseVideoUrl,
   useMediaState,
-} from '@sewellstephens/plate-media';
-import { ResizableProvider, useResizableStore } from '@sewellstephens/plate-resizable';
+} from '@sewell_stephens/late-media';
+import { ResizableProvider, useResizableStore } from '@sewell_stephens/late-resizable';
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import { Tweet } from 'react-tweet';
 

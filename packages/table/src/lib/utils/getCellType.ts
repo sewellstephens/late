@@ -1,4 +1,4 @@
-import { type SlateEditor, getPluginTypes } from '@sewellstephens/plate-common';
+import { type SlateEditor, getPluginTypes } from '@sewell_stephens/late-common';
 
 import { TableCellHeaderPlugin, TableCellPlugin } from '../TablePlugin';
 

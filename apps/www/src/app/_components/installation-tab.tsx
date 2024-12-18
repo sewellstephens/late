@@ -3,7 +3,7 @@
 import * as React from 'react';
 import { useMemo, useState } from 'react';
 
-import { DndPlugin } from '@sewellstephens/plate-dnd';
+import { DndPlugin } from '@sewell_stephens/late-dnd';
 import { uniqBy } from 'lodash';
 
 import {
@@ -117,7 +117,7 @@ export default function InstallationTab() {
 
   const installCommands = useMemo(() => {
     return {
-      components: `npx @sewellstephens/plate-ui@latest add ${Array.from(
+      components: `npx @sewell_stephens/late-ui@latest add ${Array.from(
         components.reduce(
           (uniqueFilenames, { filename, id, noImport, registry }) => {
             if (noImport) return uniqueFilenames;
@@ -226,11 +226,11 @@ export default function InstallationTab() {
     const imports = [
       `${
         cnImports.length > 0
-          ? `import { ${cnImports} } from '@sewellstephens/cn';\n`
+          ? `import { ${cnImports} } from '@sewell_stephens/cn';\n`
           : ''
       }import { createLateEditor, Late${hasEditor ? '' : ', LateContent'}${
         plateImports.length > 0 ? ', ' + plateImports : ''
-      } } from '@sewellstephens/plate-common/react';`,
+      } } from '@sewell_stephens/late-common/react';`,
       ...importsGroups,
       ...customImports,
       '',
@@ -467,7 +467,7 @@ export default function InstallationTab() {
               bash
               code={[
                 `npm install react react-dom slate slate-react slate-history slate-hyperscript`,
-                `npm install @sewellstephens/plate-common`,
+                `npm install @sewell_stephens/late-common`,
               ].join('\n')}
             >
               Install the peer dependencies and Late:

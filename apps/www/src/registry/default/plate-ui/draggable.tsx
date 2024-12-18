@@ -2,20 +2,20 @@
 
 import React from 'react';
 
-import type { ClassNames, TEditor } from '@sewellstephens/plate-common';
+import type { ClassNames, TEditor } from '@sewell_stephens/late-common';
 import type { DropTargetMonitor } from 'react-dnd';
 
-import { cn, withRef } from '@sewellstephens/cn';
+import { cn, withRef } from '@sewell_stephens/cn';
 import {
   type LateElementProps,
   useEditorRef,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import {
   type DragItemNode,
   useDraggable,
   useDraggableState,
-} from '@sewellstephens/plate-dnd';
-import { BlockSelectionPlugin } from '@sewellstephens/plate-selection/react';
+} from '@sewell_stephens/late-dnd';
+import { BlockSelectionPlugin } from '@sewell_stephens/late-selection/react';
 
 import { Icons } from '@/components/icons';
 

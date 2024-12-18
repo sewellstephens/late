@@ -1,5 +1,5 @@
 {
-  "name": "@sewellstephens/plate-cursor",
+  "name": "@sewell_stephens/late-cursor",
   "version": "0.0.1",
   "description": "Cursor for Late React",
   "keywords": [
@@ -44,10 +44,10 @@
     "typecheck": "yarn p:typecheck"
   },
   "devDependencies": {
-    "@sewellstephens/plate-common": "workspace:^"
+    "@sewell_stephens/late-common": "^0.0.1"
   },
   "peerDependencies": {
-    "@sewellstephens/plate-common": ">=37.0.0",
+    "@sewell_stephens/late-common": ">=37.0.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
     "slate": ">=0.103.0",
@@ -57,5 +57,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "3c69df6d17679bbabc43c4cff3370ae8c70ee466"
 }

@@ -1,10 +1,10 @@
 {
   "dependencies": [
-    "@sewellstephens/plate-find-replace"
+    "@sewell_stephens/late-find-replace"
   ],
   "files": [
     {
-      "content": "import { withCn } from '@sewellstephens/cn';\nimport { LateLeaf } from '@sewellstephens/plate-common/react';\n\nexport const SearchHighlightLeaf = withCn(LateLeaf, 'bg-yellow-100');\n",
+      "content": "import { withCn } from '@sewell_stephens/cn';\nimport { LateLeaf } from '@sewell_stephens/late-common/react';\n\nexport const SearchHighlightLeaf = withCn(LateLeaf, 'bg-yellow-100');\n",
       "name": "search-highlight-leaf.tsx"
     }
   ],

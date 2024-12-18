@@ -1,7 +1,7 @@
 import type { DropTargetMonitor } from 'react-dnd';
 
-import { type TEditor, findNode, moveNodes } from '@sewellstephens/plate-common';
-import { focusEditor } from '@sewellstephens/plate-common/react';
+import { type TEditor, findNode, moveNodes } from '@sewell_stephens/late-common';
+import { focusEditor } from '@sewell_stephens/late-common/react';
 import { Path } from 'slate';
 
 import type { UseDropNodeOptions } from '../hooks';

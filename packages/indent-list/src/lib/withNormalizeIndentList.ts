@@ -2,7 +2,7 @@ import {
   type ExtendEditor,
   type TElement,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { IndentListConfig } from './IndentListPlugin';
 

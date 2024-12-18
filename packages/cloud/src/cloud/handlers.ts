@@ -1,9 +1,9 @@
 import type React from 'react';
 
-import type { SlateEditor } from '@sewellstephens/plate-common';
+import type { SlateEditor } from '@sewell_stephens/late-common';
 
-import { select } from '@sewellstephens/plate-common';
-import { findEventRange } from '@sewellstephens/plate-common/react';
+import { select } from '@sewell_stephens/late-common';
+import { findEventRange } from '@sewell_stephens/late-common/react';
 
 import { uploadFiles } from './uploadFiles';
 

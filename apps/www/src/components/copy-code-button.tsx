@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { CheckIcon, CopyIcon } from '@radix-ui/react-icons';
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import template from 'lodash.template';
 
 import { useConfig } from '@/hooks/use-config';

@@ -7,7 +7,7 @@ import {
   setElements,
   someNode,
   wrapNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { CodeBlockPlugin, CodeLinePlugin } from '../CodeBlockPlugin';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu';
 import { PopoverAnchor } from '@radix-ui/react-popover';
-import { cn, withRef } from '@sewellstephens/cn';
+import { cn, withRef } from '@sewell_stephens/cn';
 import {
   isSelectionExpanded,
   LateElement,
@@ -10,7 +10,7 @@ import {
   useElement,
   useRemoveNodeButton,
   withHOC,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import {
   mergeTableCells,
   TableProvider,
@@ -20,7 +20,7 @@ import {
   useTableElement,
   useTableElementState,
   useTableMergeState,
-} from '@sewellstephens/plate-table';
+} from '@sewell_stephens/late-table';
 import { useReadOnly, useSelected } from 'slate-react';
 
 import { Icons, iconVariants } from '@/components/icons';

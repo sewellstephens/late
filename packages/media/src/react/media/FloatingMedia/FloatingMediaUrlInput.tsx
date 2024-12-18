@@ -1,6 +1,6 @@
 import React from 'react';
 
-import type { WithRequiredKey } from '@sewellstephens/plate-common';
+import type { WithRequiredKey } from '@sewell_stephens/late-common';
 
 import {
   createPrimitiveComponent,
@@ -8,7 +8,7 @@ import {
   useEditorRef,
   useElement,
   useHotkeys,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import type { TMediaElement } from '../../../lib/media/types';
 

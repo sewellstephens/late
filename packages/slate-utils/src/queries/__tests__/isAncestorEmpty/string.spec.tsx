@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
-import type { SlateEditor } from '@sewellstephens/plate-core';
+import type { SlateEditor } from '@sewell_stephens/late-core';
 
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { isAncestorEmpty } from '../../isAncestorEmpty';
 

@@ -65,7 +65,7 @@ test('init config-full', async () => {
     'pnpm',
     [
       'add',
-      '@sewellstephens/cn',
+      '@sewell_stephens/cn',
       'tailwindcss-animate',
       'class-variance-authority',
       'tailwind-merge',
@@ -124,7 +124,7 @@ test('init config-partial', async () => {
     'npm',
     [
       'install',
-      '@sewellstephens/cn',
+      '@sewell_stephens/cn',
       'tailwindcss-animate',
       'class-variance-authority',
       'tailwind-merge',

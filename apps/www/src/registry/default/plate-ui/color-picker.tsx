@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { cn, withRef } from '@sewellstephens/cn';
+import { cn, withRef } from '@sewell_stephens/cn';
 
 import type { TColor } from './color-dropdown-menu';
 

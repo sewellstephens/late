@@ -5,7 +5,7 @@ import {
   getPointAfter,
   getRange,
   getStartPoint,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { OutdentCodeLineOptions } from './outdentCodeLine';
 

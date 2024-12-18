@@ -3,13 +3,13 @@ import {
   createPrimitiveComponent,
   withCn,
   withVariants,
-} from '@sewellstephens/cn';
+} from '@sewell_stephens/cn';
 import {
   Caption as CaptionPrimitive,
   CaptionTextarea as CaptionTextareaPrimitive,
   useCaptionButton,
   useCaptionButtonState,
-} from '@sewellstephens/plate-caption/react';
+} from '@sewell_stephens/late-caption/react';
 import { cva } from 'class-variance-authority';
 
 import { Button } from './button';

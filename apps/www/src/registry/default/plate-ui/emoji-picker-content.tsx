@@ -1,9 +1,9 @@
 import { memo, useCallback } from 'react';
 
-import type { UseEmojiPickerType } from '@sewellstephens/plate-emoji/react';
+import type { UseEmojiPickerType } from '@sewell_stephens/late-emoji/react';
 
-import { cn } from '@sewellstephens/cn';
-import { type Emoji, EmojiSettings, type GridRow } from '@sewellstephens/plate-emoji';
+import { cn } from '@sewell_stephens/cn';
+import { type Emoji, EmojiSettings, type GridRow } from '@sewell_stephens/late-emoji';
 
 export type EmojiPickerContentProps = Pick<
   UseEmojiPickerType,

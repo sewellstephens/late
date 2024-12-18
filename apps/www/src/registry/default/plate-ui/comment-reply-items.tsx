@@ -5,7 +5,7 @@ import React from 'react';
 import {
   SCOPE_ACTIVE_COMMENT,
   useCommentReplies,
-} from '@sewellstephens/plate-comments/react';
+} from '@sewell_stephens/late-comments/react';
 
 import { CommentItem } from './comment-item';
 

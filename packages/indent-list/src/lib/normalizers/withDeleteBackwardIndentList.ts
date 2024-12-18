@@ -4,7 +4,7 @@ import {
   getNodeString,
   isCollapsed,
   isDefined,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { type IndentListConfig, IndentListPlugin } from '../IndentListPlugin';
 import { outdentList } from '../transforms';

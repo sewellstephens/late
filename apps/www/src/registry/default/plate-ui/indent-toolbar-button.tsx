@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { withRef } from '@sewellstephens/cn';
-import { useIndentButton } from '@sewellstephens/plate-indent/react';
+import { withRef } from '@sewell_stephens/cn';
+import { useIndentButton } from '@sewell_stephens/late-indent/react';
 
 import { Icons } from '@/components/icons';
 

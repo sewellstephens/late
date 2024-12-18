@@ -1,6 +1,6 @@
-import type { KeyboardHandler } from '@sewellstephens/plate-common/react';
+import type { KeyboardHandler } from '@sewell_stephens/late-common/react';
 
-import { Hotkeys } from '@sewellstephens/plate-common';
+import { Hotkeys } from '@sewell_stephens/late-common';
 
 export const onKeyDownSingleLine: KeyboardHandler = ({ event }) => {
   if (event.defaultPrevented) return;

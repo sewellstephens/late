@@ -1,4 +1,4 @@
-import { type TElement, getNode, getPreviousPath } from '@sewellstephens/plate-common';
+import { type TElement, getNode, getPreviousPath } from '@sewell_stephens/late-common';
 import { Path } from 'slate';
 
 import { type GetSiblingIndentListOptions, IndentListPlugin } from '../lib';

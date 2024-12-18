@@ -1,4 +1,4 @@
-import type { TEditor, TNode } from '@sewellstephens/slate';
+import type { TEditor, TNode } from '@sewell_stephens/slate';
 import type { Path } from 'slate';
 
 import { ReactEditor } from 'slate-react';

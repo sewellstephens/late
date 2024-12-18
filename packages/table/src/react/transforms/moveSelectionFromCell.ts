@@ -9,7 +9,7 @@ import {
   moveSelection,
   select,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { getCellTypes } from '../../lib/utils/getCellType';
 import { getTableGridAbove } from '../queries/getTableGridAbove';

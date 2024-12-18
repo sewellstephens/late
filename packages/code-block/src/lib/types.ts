@@ -2,7 +2,7 @@ import type {
   InsertNodesOptions,
   TEditor,
   TElement,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import type { Token, languages, tokenize } from 'prismjs';
 
 export type Prism = {

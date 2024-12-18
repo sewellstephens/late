@@ -3,7 +3,7 @@
 import * as React from 'react';
 import type { ReactNode } from 'react';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import { Provider } from 'jotai';
 import Image from 'next/image';
 import { useMDXComponent } from 'next-contentlayer2/hooks';

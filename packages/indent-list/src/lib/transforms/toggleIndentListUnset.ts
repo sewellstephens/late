@@ -2,7 +2,7 @@ import {
   type TEditor,
   type TNodeEntry,
   unsetNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { INDENT_LIST_KEYS, IndentListPlugin } from '../IndentListPlugin';
 import { ListStyleType } from '../types';

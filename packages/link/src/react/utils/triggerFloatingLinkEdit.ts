@@ -3,7 +3,7 @@ import {
   findNode,
   getEditorPlugin,
   getEditorString,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { TLinkElement } from '../../lib';
 

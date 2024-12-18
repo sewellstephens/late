@@ -1,5 +1,5 @@
 import type { JSHandle, Page } from '@playwright/test';
-import type { TNode } from '@sewellstephens/plate-common';
+import type { TNode } from '@sewell_stephens/late-common';
 import type { Path } from 'slate';
 
 import type { EditorHandle } from './types';

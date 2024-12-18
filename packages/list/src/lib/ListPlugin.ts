@@ -6,7 +6,7 @@ import {
   createSlatePlugin,
   createTSlatePlugin,
   someNode,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import {
   toggleBulletedList,

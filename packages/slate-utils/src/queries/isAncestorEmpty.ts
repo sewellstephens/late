@@ -3,7 +3,7 @@ import {
   type TEditor,
   getNodeString,
   isInline,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 /** Is an ancestor empty (empty text and no inline children). */
 export const isAncestorEmpty = (editor: TEditor, node: TAncestor) =>

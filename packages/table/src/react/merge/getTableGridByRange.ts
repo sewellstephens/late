@@ -6,8 +6,8 @@ import {
   type TElementEntry,
   findNode,
   getEditorPlugin,
-} from '@sewellstephens/plate-common';
-import { findNodePath } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common';
+import { findNodePath } from '@sewell_stephens/late-common/react';
 
 import type {
   TTableCellElement,

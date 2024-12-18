@@ -1,9 +1,9 @@
-import type { ElementOf } from '@sewellstephens/slate';
+import type { ElementOf } from '@sewell_stephens/slate';
 
 import {
   type ReplaceNodeChildrenOptions,
   replaceNodeChildren,
-} from '@sewellstephens/slate-utils';
+} from '@sewell_stephens/slate-utils';
 
 import type { SlateEditor } from '../editor';
 

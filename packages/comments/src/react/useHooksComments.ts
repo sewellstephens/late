@@ -1,5 +1,5 @@
-import { isExpanded } from '@sewellstephens/plate-common';
-import { type UseHooks, useHotkeys } from '@sewellstephens/plate-common/react';
+import { isExpanded } from '@sewell_stephens/late-common';
+import { type UseHooks, useHotkeys } from '@sewell_stephens/late-common/react';
 
 import type { CommentsConfig } from './CommentsPlugin';
 

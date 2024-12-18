@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
-import { isHotkey, setNodes } from '@sewellstephens/plate-common';
-import { useEditorRef, useElement } from '@sewellstephens/plate-common/react';
+import { isHotkey, setNodes } from '@sewell_stephens/late-common';
+import { useEditorRef, useElement } from '@sewell_stephens/late-common/react';
 
 import type { TEquationElement } from '../../../lib/equation/types';
 

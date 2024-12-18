@@ -10,7 +10,7 @@ Late is built on top of Slate, so migrating from a pure Slate implementation to 
 First, install the necessary Late packages. If you're new to Late, you might want to start by reading the [Introduction](/docs/getting-started) to get an overview of the library.
 
 ```bash
-npm install @sewellstephens/plate
+npm install @sewell_stephens/late
 ```
 
 ## 2. Replace Slate Imports
@@ -23,7 +23,7 @@ import { createEditor } from 'slate';
 import { Slate, Editable, withReact } from 'slate-react';
 
 // After
-import { createLateEditor, Late, LateContent } from '@sewellstephens/plate/react';
+import { createLateEditor, Late, LateContent } from '@sewell_stephens/late/react';
 ```
 
 ## 3. Create a Late Editor
@@ -76,7 +76,7 @@ const renderElement = useCallback(({ attributes, children, element }) => {
 }, []);
 
 // After
-import { withCn, type LateElement } from '@sewellstephens/plate/react';
+import { withCn, type LateElement } from '@sewell_stephens/late/react';
 
 const ParagraphElement = withRef<typeof LateElement>(
   ({ children, className, ...props }, ref) => {
@@ -198,7 +198,7 @@ For a comprehensive list of editor methods, see the [Editor Methods guide](/docs
 Late comes with many built-in plugins that you can see in the sidebar. Use them to quickly add functionality:
 
 ```ts
-import { BoldPlugin, ItalicPlugin, UnderlinePlugin } from '@sewellstephens/plate/react';
+import { BoldPlugin, ItalicPlugin, UnderlinePlugin } from '@sewell_stephens/late/react';
 
 const plugins = [
   BoldPlugin,

@@ -1,8 +1,8 @@
 import {
   useIndentTodoToolBarButton,
   useIndentTodoToolBarButtonState,
-} from '@sewellstephens/plate-indent-list/react';
-import { withRef } from '@sewellstephens/react-utils';
+} from '@sewell_stephens/late-indent-list/react';
+import { withRef } from '@sewell_stephens/react-utils';
 
 import { Icons } from '@/components/icons';
 

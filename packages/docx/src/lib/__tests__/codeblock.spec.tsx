@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { getDocxTestName, testDocxDeserializer } from './testDocxDeserializer';
 

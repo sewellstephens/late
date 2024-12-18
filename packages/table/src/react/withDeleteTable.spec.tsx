@@ -1,13 +1,13 @@
 /** @jsx jsx */
 
-import type { SlateEditor } from '@sewellstephens/plate-common';
+import type { SlateEditor } from '@sewell_stephens/late-common';
 
 import {
   type LateEditor,
   createLateEditor,
   getEditorPlugin,
-} from '@sewellstephens/plate-common/react';
-import { jsx } from '@sewellstephens/plate-test-utils';
+} from '@sewell_stephens/late-common/react';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { TablePlugin } from '../lib/TablePlugin';
 import { withDeleteTable } from './withDeleteTable';

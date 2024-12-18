@@ -1,4 +1,4 @@
-import { type Value, createTEditor } from '@sewellstephens/slate';
+import { type Value, createTEditor } from '@sewell_stephens/slate';
 
 import type { InferPlugins } from '../../lib/editor/SlateEditor';
 

@@ -2,19 +2,19 @@ import React from 'react';
 
 import type { DropdownMenuProps } from '@radix-ui/react-dropdown-menu';
 
-import { BlockquotePlugin } from '@sewellstephens/plate-block-quote/react';
+import { BlockquotePlugin } from '@sewell_stephens/late-block-quote/react';
 import {
   ParagraphPlugin,
   collapseSelection,
   getNodeEntries,
   isBlock,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import {
   focusEditor,
   useEditorRef,
   useEditorSelector,
-} from '@sewellstephens/plate-common/react';
-import { HEADING_KEYS } from '@sewellstephens/plate-heading';
+} from '@sewell_stephens/late-common/react';
+import { HEADING_KEYS } from '@sewell_stephens/late-heading';
 
 import { Icons } from '@/components/icons';
 

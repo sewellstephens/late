@@ -1,4 +1,4 @@
-# @sewellstephens/plate-excalidraw
+# @sewell_stephens/late-excalidraw
 
 ## 37.0.0
 
@@ -40,13 +40,13 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewell_stephens/late-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.5.2
 
 ### Patch Changes
 
-- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewell_stephens/late-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -120,6 +120,6 @@
 
 ### Minor Changes
 
-- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Renamed package to `@sewellstephens/plate-excalidraw`.
+- [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Renamed package to `@sewell_stephens/late-excalidraw`.
   New hooks:
   - `useExcalidrawElement`

@@ -1,9 +1,9 @@
 'use client';
 
 import React from 'react';
-import { cn, withRef } from '@sewellstephens/cn';
-import { useComposedRef } from '@sewellstephens/plate-common';
-import { useColorInput } from '@sewellstephens/plate-font';
+import { cn, withRef } from '@sewell_stephens/cn';
+import { useComposedRef } from '@sewell_stephens/late-common';
+import { useColorInput } from '@sewell_stephens/late-font';
 
 export const ColorInput = withRef<'input'>(
   ({ value = '#000000', children, className, ...props }, ref) => {

@@ -1,7 +1,7 @@
-import type { PluginConfig, Value } from '@sewellstephens/plate-common';
+import type { PluginConfig, Value } from '@sewell_stephens/late-common';
 
 import * as portiveClient from '@portive/client';
-import { createTLatePlugin } from '@sewellstephens/plate-common/react';
+import { createTLatePlugin } from '@sewell_stephens/late-common/react';
 
 import type { Upload } from '../upload';
 import type { FinishUploadsOptions } from './types';

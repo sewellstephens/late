@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
-import { jsx } from '@sewellstephens/plate-test-utils';
-import { selectEndOfBlockAboveSelection } from '@sewellstephens/slate-utils';
+import { jsx } from '@sewell_stephens/late-test-utils';
+import { selectEndOfBlockAboveSelection } from '@sewell_stephens/slate-utils';
 
 import type { SlateEditor } from '../../../editor';
 

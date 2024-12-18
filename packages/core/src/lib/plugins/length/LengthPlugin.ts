@@ -1,4 +1,4 @@
-import { getEditorString, withoutNormalizing } from '@sewellstephens/slate';
+import { getEditorString, withoutNormalizing } from '@sewell_stephens/slate';
 
 import type { LengthConfig } from '../getCorePlugins';
 

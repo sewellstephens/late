@@ -1,4 +1,4 @@
-import type { SlateEditor } from '@sewellstephens/plate-core';
+import type { SlateEditor } from '@sewell_stephens/late-core';
 
 import castArray from 'lodash/castArray.js';
 

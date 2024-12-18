@@ -4,4 +4,4 @@ export * from './cn';
 export * from './withCn';
 export * from './withProps';
 export * from './withVariants';
-export * from '@sewellstephens/react-utils';
+export * from '@sewell_stephens/react-utils';

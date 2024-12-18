@@ -1,4 +1,4 @@
-import type { PluginConfig, QueryNodeOptions } from '@sewellstephens/plate-common';
+import type { PluginConfig, QueryNodeOptions } from '@sewell_stephens/late-common';
 
 export interface ExitBreakRule {
   /** Hotkey to trigger exit break. */

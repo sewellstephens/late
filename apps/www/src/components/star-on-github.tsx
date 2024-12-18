@@ -1,6 +1,6 @@
 'use client';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import { StarIcon } from 'lucide-react';
 import Link from 'next/link';
 

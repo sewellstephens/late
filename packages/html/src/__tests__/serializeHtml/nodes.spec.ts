@@ -1,7 +1,7 @@
-import { BoldPlugin, ItalicPlugin } from '@sewellstephens/plate-basic-marks';
-import { type Value, htmlStringToDOMNode } from '@sewellstephens/plate-common';
-import { ParagraphPlugin } from '@sewellstephens/plate-common';
-import { ListPlugin } from '@sewellstephens/plate-list';
+import { BoldPlugin, ItalicPlugin } from '@sewell_stephens/late-basic-marks';
+import { type Value, htmlStringToDOMNode } from '@sewell_stephens/late-common';
+import { ParagraphPlugin } from '@sewell_stephens/late-common';
+import { ListPlugin } from '@sewell_stephens/late-list';
 
 import { serializeHtml } from '../../react/serializeHtml';
 import { createLateUIEditor } from '../create-plate-ui-editor';

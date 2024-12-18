@@ -3,7 +3,7 @@ import {
   type RangeBeforeOptions,
   createTSlatePlugin,
   isUrl,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { validateUrl } from './utils/index';
 import { withLink } from './withLink';

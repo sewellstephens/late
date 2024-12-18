@@ -11,7 +11,7 @@ import {
   getStartPoint,
   removeNodes,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { type ListConfig, ListItemPlugin } from './ListPlugin';
 import { getHighestEmptyList } from './queries/getHighestEmptyList';

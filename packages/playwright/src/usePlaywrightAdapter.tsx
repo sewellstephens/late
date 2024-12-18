@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 
-import { getNode } from '@sewellstephens/plate-common';
-import { type LateEditor, useEditorRef } from '@sewellstephens/plate-common/react';
-import { toDOMNode } from '@sewellstephens/plate-common/react';
+import { getNode } from '@sewell_stephens/late-common';
+import { type LateEditor, useEditorRef } from '@sewell_stephens/late-common/react';
+import { toDOMNode } from '@sewell_stephens/late-common/react';
 
 import type { TLatePlaywrightAdapter } from './types';
 

@@ -1,8 +1,8 @@
 import React, { useMemo, useState } from 'react';
 
-import { withRef } from '@sewellstephens/cn';
-import { LateElement } from '@sewellstephens/plate-common/react';
-import { EmojiInlineIndexSearch, insertEmoji } from '@sewellstephens/plate-emoji';
+import { withRef } from '@sewell_stephens/cn';
+import { LateElement } from '@sewell_stephens/late-common/react';
+import { EmojiInlineIndexSearch, insertEmoji } from '@sewell_stephens/late-emoji';
 
 import { useDebounce } from '@/hooks/use-debounce';
 

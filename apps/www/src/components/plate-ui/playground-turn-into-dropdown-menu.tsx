@@ -2,18 +2,18 @@ import React from 'react';
 
 import type { DropdownMenuProps } from '@radix-ui/react-dropdown-menu';
 
-import { BlockquotePlugin } from '@sewellstephens/plate-block-quote/react';
+import { BlockquotePlugin } from '@sewell_stephens/late-block-quote/react';
 import {
   ParagraphPlugin,
   collapseSelection,
   getNodeEntries,
   isBlock,
-} from '@sewellstephens/plate-common';
-import { focusEditor, useEditorSelector } from '@sewellstephens/plate-common/react';
-import { HEADING_KEYS } from '@sewellstephens/plate-heading';
-import { toggleIndentList } from '@sewellstephens/plate-indent-list';
-import { IndentListPlugin } from '@sewellstephens/plate-indent-list/react';
-import { unwrapList } from '@sewellstephens/plate-list';
+} from '@sewell_stephens/late-common';
+import { focusEditor, useEditorSelector } from '@sewell_stephens/late-common/react';
+import { HEADING_KEYS } from '@sewell_stephens/late-heading';
+import { toggleIndentList } from '@sewell_stephens/late-indent-list';
+import { IndentListPlugin } from '@sewell_stephens/late-indent-list/react';
+import { unwrapList } from '@sewell_stephens/late-list';
 
 import { settingsStore } from '@/components/context/settings-store';
 import { Icons } from '@/components/icons';

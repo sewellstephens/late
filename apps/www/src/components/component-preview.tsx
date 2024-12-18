@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 
 import { Index } from '@/__registry__';
 import { useConfig } from '@/hooks/use-config';

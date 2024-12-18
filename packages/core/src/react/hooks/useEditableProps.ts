@@ -1,8 +1,8 @@
 import React from 'react';
 
-import type { TEditableProps } from '@sewellstephens/slate-react';
+import type { TEditableProps } from '@sewell_stephens/slate-react';
 
-import { isDefined } from '@sewellstephens/utils';
+import { isDefined } from '@sewell_stephens/utils';
 import omit from 'lodash/omit.js';
 import { useDeepCompareMemo } from 'use-deep-compare';
 

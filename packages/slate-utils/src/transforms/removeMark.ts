@@ -4,7 +4,7 @@ import {
   getMarks,
   isText,
   unsetNodes,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 import castArray from 'lodash/castArray.js';
 import { Range } from 'slate';
 

@@ -3,7 +3,7 @@ import {
   isCollapsed,
   isRangeAcrossBlocks,
   someNode,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { ListItemPlugin } from '../ListPlugin';
 

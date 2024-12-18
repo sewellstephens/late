@@ -1,5 +1,5 @@
 {
-  "name": "@sewellstephens/plate-table",
+  "name": "@sewell_stephens/late-table",
   "version": "0.0.1",
   "description": "Table plugin for Late",
   "keywords": [
@@ -50,14 +50,14 @@
     "typecheck": "yarn p:typecheck"
   },
   "dependencies": {
-    "@sewellstephens/plate-resizable": "^0.0.1",
+    "@sewell_stephens/late-resizable": "^0.0.1",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@sewellstephens/plate-common": "workspace:^"
+    "@sewell_stephens/late-common": "^0.0.1"
   },
   "peerDependencies": {
-    "@sewellstephens/plate-common": ">=37.0.0",
+    "@sewell_stephens/late-common": ">=37.0.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
     "slate": ">=0.103.0",
@@ -66,5 +66,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "3c69df6d17679bbabc43c4cff3370ae8c70ee466"
 }

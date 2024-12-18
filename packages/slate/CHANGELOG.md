@@ -1,4 +1,4 @@
-# @sewellstephens/slate
+# @sewell_stephens/slate
 
 ## 37.0.0
 

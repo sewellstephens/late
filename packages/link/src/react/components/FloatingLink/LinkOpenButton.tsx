@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { findNode } from '@sewellstephens/plate-common';
+import { findNode } from '@sewell_stephens/late-common';
 import {
   createPrimitiveComponent,
   useEditorRef,
   useEditorSelection,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import type { TLinkElement } from '../../../lib';
 

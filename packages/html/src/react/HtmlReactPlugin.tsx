@@ -1,5 +1,5 @@
-import { bindFirst } from '@sewellstephens/plate-common';
-import { createLatePlugin } from '@sewellstephens/plate-common/react';
+import { bindFirst } from '@sewell_stephens/late-common';
+import { createLatePlugin } from '@sewell_stephens/late-common/react';
 
 import { serializeHtml } from './serializeHtml';
 

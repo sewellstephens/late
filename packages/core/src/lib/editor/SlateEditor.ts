@@ -1,5 +1,5 @@
-import type { TEditor, TRange, Value } from '@sewellstephens/slate';
-import type { UnionToIntersection } from '@sewellstephens/utils';
+import type { TEditor, TRange, Value } from '@sewell_stephens/slate';
+import type { UnionToIntersection } from '@sewell_stephens/utils';
 import type { KeyboardEventLike } from 'is-hotkey';
 import type { SetImmerState, StoreApi } from 'zustand-x';
 

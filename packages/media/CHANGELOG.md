@@ -1,4 +1,4 @@
-# @sewellstephens/plate-media
+# @sewell_stephens/late-media
 
 ## 37.0.0
 
@@ -71,7 +71,7 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewell_stephens/late-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -146,24 +146,24 @@
 - [#2537](https://github.com/sewellstephens/late/pull/2537) by [@haydencarlson](https://github.com/haydencarlson) – `MediaEmbedElement` is now more headless with a smaller bundle size.
   Update the following components:
 
-  - `npx @sewellstephens/plate-ui@latest add media-embed-element`
+  - `npx @sewell_stephens/late-ui@latest add media-embed-element`
     - now uses `react-lite-youtube-embed` for YouTube videos.
     - now uses `react-tweet` for Twitter tweets.
-  - `npx @sewellstephens/plate-ui@latest add image-element`
+  - `npx @sewell_stephens/late-ui@latest add image-element`
 
   Breaking changes:
 
-  - Moved `Resizable` to `@sewellstephens/plate-resizable`
-  - Moved `Caption`, `CaptionTextarea` to `@sewellstephens/plate-caption`
+  - Moved `Resizable` to `@sewell_stephens/late-resizable`
+  - Moved `Caption`, `CaptionTextarea` to `@sewell_stephens/late-caption`
   - Removed `useMediaEmbed`, `MediaEmbedVideo`, `MediaEmbedTweet`, `Tweet`, `parseMediaUrl`, `mediaStore`
-  - Removed `@sewellstephens/resizable`, `scriptjs`, `react-textarea-autosize` dependencies
+  - Removed `@sewell_stephens/resizable`, `scriptjs`, `react-textarea-autosize` dependencies
   - `MediaPlugin`
     - removed `rules`. Use `parsers` option instead.
     - removed `disableCaption`. Use `createCaptionPlugin` instead.
-  - Caption is now a separate plugin. Install `@sewellstephens/plate-caption` and add it to your plugins:
+  - Caption is now a separate plugin. Install `@sewell_stephens/late-caption` and add it to your plugins:
 
   ```ts
-  import { ELEMENT_IMAGE, ELEMENT_MEDIA_EMBED } from '@sewellstephens/plate-media';
+  import { ELEMENT_IMAGE, ELEMENT_MEDIA_EMBED } from '@sewell_stephens/late-media';
 
   createCaptionPlugin({
     options: { pluginKeys: [ELEMENT_IMAGE, ELEMENT_MEDIA_EMBED] },
@@ -227,7 +227,7 @@
 ### Minor Changes
 
 - [#2302](https://github.com/sewellstephens/late/pull/2302) by [@zbeyens](https://github.com/zbeyens) –
-  - Remove depedency on `re-resizable` in favor of new `@sewellstephens/resizable` package.
+  - Remove depedency on `re-resizable` in favor of new `@sewell_stephens/resizable` package.
 
 ## 20.4.0
 

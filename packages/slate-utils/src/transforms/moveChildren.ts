@@ -5,7 +5,7 @@ import {
   getNode,
   isBlock,
   moveNodes,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 import { Path } from 'slate';
 
 export interface MoveChildrenOptions<E extends TEditor = TEditor> {

@@ -1,4 +1,4 @@
-import { bindFirst } from '@sewellstephens/utils';
+import { bindFirst } from '@sewell_stephens/utils';
 
 import { createSlatePlugin } from '../../plugin';
 import { deserializeHtml, parseHtmlDocument } from './utils';

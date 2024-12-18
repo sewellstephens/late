@@ -1,4 +1,4 @@
-# @sewellstephens/slate-react
+# @sewell_stephens/slate-react
 
 ## 37.0.0
 
@@ -6,7 +6,7 @@
 
 - [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) – Types:
 
-  - Remove `TReactEditor` type, as it's now integrated into the main `TEditor` type in `@sewellstephens/slate`. Use `TEditor` instead.
+  - Remove `TReactEditor` type, as it's now integrated into the main `TEditor` type in `@sewell_stephens/slate`. Use `TEditor` instead.
   - Replace `V extends Value` with `E extends TEditor` for improved type inference
   - NEW `TEditableProps`, `TRenderElementProps`
 

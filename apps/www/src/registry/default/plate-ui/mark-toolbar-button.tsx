@@ -2,11 +2,11 @@
 
 import React from 'react';
 
-import { withRef } from '@sewellstephens/cn';
+import { withRef } from '@sewell_stephens/cn';
 import {
   useMarkToolbarButton,
   useMarkToolbarButtonState,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import { ToolbarButton } from './toolbar';
 

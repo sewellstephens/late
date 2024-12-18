@@ -1,4 +1,4 @@
-# @sewellstephens/plate-indent
+# @sewell_stephens/late-indent
 
 ## 37.0.0
 
@@ -33,13 +33,13 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewell_stephens/late-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.5.2
 
 ### Patch Changes
 
-- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewell_stephens/late-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -380,7 +380,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`a6bf8c5e`](https://github.com/sewellstephens/late/commit/a6bf8c5e6897c6ab443e0ac3d69a30befeaddadf)]:
-  - @sewellstephens/plate-common@5.3.5
+  - @sewell_stephens/late-common@5.3.5
 
 ## 5.3.1
 
@@ -389,8 +389,8 @@
 - [#1137](https://github.com/sewellstephens/late/pull/1137) [`2c50679e`](https://github.com/sewellstephens/late/commit/2c50679efb5f9dfdfae0a7b34ab77d2d7120ad6a) Thanks [@zbeyens](https://github.com/zbeyens)! - `setIndent` uses `Array.from(x)` instead of `[...x]`
 
 - Updated dependencies [[`8aec270f`](https://github.com/sewellstephens/late/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118)]:
-  - @sewellstephens/plate-core@5.3.1
-  - @sewellstephens/plate-common@5.3.1
+  - @sewell_stephens/late-core@5.3.1
+  - @sewell_stephens/late-common@5.3.1
 
 ## 5.3.0
 
@@ -401,5 +401,5 @@
 ### Patch Changes
 
 - Updated dependencies [[`7ee21356`](https://github.com/sewellstephens/late/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e)]:
-  - @sewellstephens/plate-core@5.3.0
-  - @sewellstephens/plate-common@5.3.0
+  - @sewell_stephens/late-core@5.3.0
+  - @sewell_stephens/late-common@5.3.0

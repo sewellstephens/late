@@ -1,4 +1,4 @@
-# @sewellstephens/plate-callout
+# @sewell_stephens/late-callout
 
 ## 37.0.0
 

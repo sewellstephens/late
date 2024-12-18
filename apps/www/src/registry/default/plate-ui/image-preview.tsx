@@ -1,11 +1,11 @@
-import { cn, createPrimitiveComponent } from '@sewellstephens/cn';
+import { cn, createPrimitiveComponent } from '@sewell_stephens/cn';
 import {
   PreviewImage,
   useImagePreview,
   useImagePreviewState,
   useScaleInput,
   useScaleInputState,
-} from '@sewellstephens/plate-media/react';
+} from '@sewell_stephens/late-media/react';
 import { cva } from 'class-variance-authority';
 
 import { Icons } from '@/components/icons';

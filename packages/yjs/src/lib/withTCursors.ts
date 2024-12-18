@@ -1,4 +1,4 @@
-import type { SlateEditor } from '@sewellstephens/plate-common';
+import type { SlateEditor } from '@sewell_stephens/late-common';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import type { Awareness } from 'y-protocols/awareness';
 

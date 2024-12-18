@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import { Settings2 } from 'lucide-react';
 import dynamic from 'next/dynamic';
 import { parseAsBoolean, useQueryState } from 'nuqs';

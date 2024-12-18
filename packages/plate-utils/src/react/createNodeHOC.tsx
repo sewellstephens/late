@@ -1,6 +1,6 @@
 import React from 'react';
 
-import type { LateRenderElementProps } from '@sewellstephens/plate-core/react';
+import type { LateRenderElementProps } from '@sewell_stephens/late-core/react';
 
 export const createNodeHOC =
   <T,>(HOC: React.FC<T>) =>

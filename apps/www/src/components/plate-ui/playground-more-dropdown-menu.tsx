@@ -5,11 +5,11 @@ import type { DropdownMenuProps } from '@radix-ui/react-dropdown-menu';
 import {
   SubscriptPlugin,
   SuperscriptPlugin,
-} from '@sewellstephens/plate-basic-marks/react';
-import { collapseSelection } from '@sewellstephens/plate-common';
-import { focusEditor, useEditorRef } from '@sewellstephens/plate-common/react';
-import { HighlightPlugin } from '@sewellstephens/plate-highlight/react';
-import { KbdPlugin } from '@sewellstephens/plate-kbd/react';
+} from '@sewell_stephens/late-basic-marks/react';
+import { collapseSelection } from '@sewell_stephens/late-common';
+import { focusEditor, useEditorRef } from '@sewell_stephens/late-common/react';
+import { HighlightPlugin } from '@sewell_stephens/late-highlight/react';
+import { KbdPlugin } from '@sewell_stephens/late-kbd/react';
 
 import { Icons } from '@/components/icons';
 import {

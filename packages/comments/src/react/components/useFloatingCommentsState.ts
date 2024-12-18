@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { someNode } from '@sewellstephens/plate-common';
-import { useEditorPlugin, useEditorVersion } from '@sewellstephens/plate-common/react';
+import { someNode } from '@sewell_stephens/late-common';
+import { useEditorPlugin, useEditorVersion } from '@sewell_stephens/late-common/react';
 
 import { CommentsPlugin } from '../../lib/CommentsPlugin';
 

@@ -4,7 +4,7 @@ import type {
   HotkeysEvent,
   HotkeysOptions,
   Keys,
-} from '@sewellstephens/react-hotkeys';
+} from '@sewell_stephens/react-hotkeys';
 import type {
   TDescendant,
   TElement,
@@ -12,9 +12,9 @@ import type {
   TRange,
   TText,
   Value,
-} from '@sewellstephens/slate';
-import type { TEditableProps } from '@sewellstephens/slate-react';
-import type { AnyObject } from '@sewellstephens/utils';
+} from '@sewell_stephens/slate';
+import type { TEditableProps } from '@sewell_stephens/slate-react';
+import type { AnyObject } from '@sewell_stephens/utils';
 import type { StoreApi } from 'zustand-x';
 
 import type {

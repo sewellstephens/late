@@ -3,7 +3,7 @@ import React from 'react';
 import {
   createPrimitiveComponent,
   useElement,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import type { TMediaElement } from '../../../lib/media/types';
 

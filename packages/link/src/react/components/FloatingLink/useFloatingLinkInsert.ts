@@ -7,11 +7,11 @@ import {
   useEditorReadOnly,
   useHotkeys,
   useOnClickOutside,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import {
   type UseVirtualFloatingOptions,
   getSelectionBoundingClientRect,
-} from '@sewellstephens/plate-floating';
+} from '@sewell_stephens/late-floating';
 import { useFocused } from 'slate-react';
 
 import { LinkPlugin } from '../../LinkPlugin';

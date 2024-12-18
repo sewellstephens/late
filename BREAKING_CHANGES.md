@@ -1,6 +1,6 @@
 # 34.0.0
 
-## @sewellstephens/plate-selection@34.0.0
+## @sewell_stephens/late-selection@34.0.0
 
 - Breaking Change: The `selectedColor` option for `BlockSelectable` has been deprecated. Please use `useBlockSelected` to customize the style of each node component.
 
@@ -9,7 +9,7 @@
 
 # 33.0.0
 
-## @sewellstephens/plate-serializer-md@33.0.0
+## @sewell_stephens/late-serializer-md@33.0.0
 
 ### Major Changes
 
@@ -26,7 +26,7 @@ None (CI release issue)
 
 # 30.0.0
 
-## @sewellstephens/plate-table@30.0.0
+## @sewell_stephens/late-table@30.0.0
 
 ### Major Changes
 
@@ -34,18 +34,18 @@ None (CI release issue)
 
 # 29.0.0
 
-## @sewellstephens/plate-utils@29.0.0
+## @sewell_stephens/late-utils@29.0.0
 
 ### Major Changes
 
 - [#2829](https://github.com/sewellstephens/late/pull/2829) by [@zbeyens](https://github.com/zbeyens) –
-  - Moved `withProps` to `@sewellstephens/cn`
-  - Moved `PortalBody`, `Text`, `Box`, `createPrimitiveComponent`, `createSlotComponent`, `withProviders` to `@sewellstephens/react-utils`
+  - Moved `withProps` to `@sewell_stephens/cn`
+  - Moved `PortalBody`, `Text`, `Box`, `createPrimitiveComponent`, `createSlotComponent`, `withProviders` to `@sewell_stephens/react-utils`
   - Removed `getRootProps` (unused)
 
 # 28.0.0
 
-## @sewellstephens/plate-core@28.0.0
+## @sewell_stephens/late-core@28.0.0
 
 ### Major Changes
 
@@ -55,15 +55,15 @@ None (CI release issue)
 
 # 27.0.0
 
-## @sewellstephens/plate-comments@27.0.0
+## @sewell_stephens/late-comments@27.0.0
 
 ### Major Changes
 
 - [#2763](https://github.com/sewellstephens/late/pull/2763) by [@12joan](https://github.com/12joan) –
   - Migrate store to `jotai@2`
-  - Revert the breaking changes to `@sewellstephens/plate-comments` made in 26.0.0
+  - Revert the breaking changes to `@sewell_stephens/late-comments` made in 26.0.0
 
-## @sewellstephens/plate-core@27.0.0
+## @sewell_stephens/late-core@27.0.0
 
 ### Major Changes
 
@@ -79,7 +79,7 @@ None (CI release issue)
     - `createStore` -> `createZustandStore`
     - Note that these exports are deprecated and should not be used in new code. They may be removed in a future version of Late.
 
-## @sewellstephens/plate-resizable@27.0.0
+## @sewell_stephens/late-resizable@27.0.0
 
 ### Major Changes
 
@@ -89,7 +89,7 @@ None (CI release issue)
 
 # 26.0.0
 
-## @sewellstephens/plate-comments@26.0.0
+## @sewell_stephens/late-comments@26.0.0
 
 ### Major Changes
 
@@ -107,7 +107,7 @@ None (CI release issue)
     - `onCommentUpdate`
     - `onCommentDelete`
 
-## @sewellstephens/plate-serializer-html@26.0.0
+## @sewell_stephens/late-serializer-html@26.0.0
 
 ### Major Changes
 
@@ -116,14 +116,14 @@ None (CI release issue)
 
 # 25.0.1
 
-## @sewellstephens/plate-core@25.0.1
+## @sewell_stephens/late-core@25.0.1
 
 ### Major Changes
 
 - [#2729](https://github.com/sewellstephens/late/pull/2729) by [@12joan](https://github.com/12joan) – **This is a breaking change meant to be part of v25, hence the patch.**
   On `deserializeHtml`, replace `stripWhitespace` with `collapseWhiteSpace`, defaulting to true. The `collapseWhiteSpace` option aims to parse white space in HTML according to the HTML specification, ensuring greater accuracy when pasting HTML from browsers.
 
-## @sewellstephens/plate-comments@25.0.0
+## @sewell_stephens/late-comments@25.0.0
 
 ### Major Changes
 
@@ -131,7 +131,7 @@ None (CI release issue)
 
 # 24.0.0
 
-## @sewellstephens/plate-core@24.0.0
+## @sewell_stephens/late-core@24.0.0
 
 ### Major Changes
 
@@ -170,47 +170,47 @@ None (CI release issue)
 
 # 23.0.0
 
-## @sewellstephens/plate-media@23.0.0
+## @sewell_stephens/late-media@23.0.0
 
 ### Major Changes
 
 - [#2537](https://github.com/sewellstephens/late/pull/2537) by [@haydencarlson](https://github.com/haydencarlson) – `MediaEmbedElement` is now more headless with a smaller bundle size.
   Update the following components:
 
-  - `npx @sewellstephens/plate-ui@latest add media-embed-element`
+  - `npx @sewell_stephens/late-ui@latest add media-embed-element`
     - now uses `react-lite-youtube-embed` for YouTube videos.
     - now uses `react-tweet` for Twitter tweets.
-  - `npx @sewellstephens/plate-ui@latest add image-element`
+  - `npx @sewell_stephens/late-ui@latest add image-element`
 
   Breaking changes:
 
-  - Moved `Resizable` to `@sewellstephens/plate-resizable`
-  - Moved `Caption`, `CaptionTextarea` to `@sewellstephens/plate-caption`
+  - Moved `Resizable` to `@sewell_stephens/late-resizable`
+  - Moved `Caption`, `CaptionTextarea` to `@sewell_stephens/late-caption`
   - Removed `useMediaEmbed`, `MediaEmbedVideo`, `MediaEmbedTweet`, `Tweet`, `parseMediaUrl`, `mediaStore`
-  - Removed `@sewellstephens/resizable`, `scriptjs`, `react-textarea-autosize` dependencies
+  - Removed `@sewell_stephens/resizable`, `scriptjs`, `react-textarea-autosize` dependencies
   - `MediaPlugin`
     - removed `rules`. Use `parsers` option instead.
     - removed `disableCaption`. Use `createCaptionPlugin` instead.
-  - Caption is now a separate plugin. Install `@sewellstephens/plate-caption` and add it to your plugins:
+  - Caption is now a separate plugin. Install `@sewell_stephens/late-caption` and add it to your plugins:
 
   ```ts
-  import { ELEMENT_IMAGE, ELEMENT_MEDIA_EMBED } from '@sewellstephens/plate-media';
+  import { ELEMENT_IMAGE, ELEMENT_MEDIA_EMBED } from '@sewell_stephens/late-media';
 
   createCaptionPlugin({
     options: { pluginKeys: [ELEMENT_IMAGE, ELEMENT_MEDIA_EMBED] },
   });
   ```
 
-## @sewellstephens/plate-resizable@23.0.0
+## @sewell_stephens/late-resizable@23.0.0
 
 ### Major Changes
 
 - [#2541](https://github.com/sewellstephens/late/pull/2541) by [@zbeyens](https://github.com/zbeyens) –
-  - Package renamed to `@sewellstephens/plate-resizable`.
+  - Package renamed to `@sewell_stephens/late-resizable`.
   - `ResizeHandle` is now fully headless: no style is applied by default. Add your own `Resizable`, `ResizeHandle` components:
-    - `npx @sewellstephens/plate-ui@latest add resizable`
+    - `npx @sewell_stephens/late-ui@latest add resizable`
 
-## @sewellstephens/plate-table@23.0
+## @sewell_stephens/late-table@23.0
 
 ### Major Changes
 
@@ -220,7 +220,7 @@ None (CI release issue)
 
 Headless UI.
 
-## @sewellstephens/plate-ui@22.0.0
+## @sewell_stephens/late-ui@22.0.0
 
 ### Major Changes
 
@@ -229,9 +229,9 @@ Headless UI.
 Migration:
 
 - [Manual installation](https://sewellstephens.github.io/late/docs/components/installation/manual).
-- For each unresolved import not listed in the following major changes (components from `@sewellstephens/plate-ui-x`), generate the component using the [CLI](https://sewellstephens.github.io/late/docs/components/cli).
+- For each unresolved import not listed in the following major changes (components from `@sewell_stephens/late-ui-x`), generate the component using the [CLI](https://sewellstephens.github.io/late/docs/components/cli).
 
-## @sewellstephens/plate-comments@22.0.0
+## @sewell_stephens/late-comments@22.0.0
 
 ### Major Changes
 
@@ -248,7 +248,7 @@ Migration:
   - `CommentLinkDialogInput`
   - `LateCommentLeaf` for `useCommentLeafState`
 
-## @sewellstephens/plate-dnd@22.0.0
+## @sewell_stephens/late-dnd@22.0.0
 
 ### Major Changes
 
@@ -262,7 +262,7 @@ Migration:
   - `DraggableRoot`
   - `DragHandle`
 
-## @sewellstephens/plate-link@22.0.0
+## @sewell_stephens/late-link@22.0.0
 
 ### Major Changes
 
@@ -277,66 +277,66 @@ Migration:
   - `LinkOffIcon`
   - `ShortTextIcon`
 
-## @sewellstephens/plate-media@22.0.0
+## @sewell_stephens/late-media@22.0.0
 
 ### Major Changes
 
 - [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Removed:
   - `MediaEmbed`
 
-## @sewellstephens/plate@22.0.0
+## @sewell_stephens/late@22.0.0
 
 ### Major Changes
 
 - [#2471](https://github.com/sewellstephens/late/pull/2471) by [@zbeyens](https://github.com/zbeyens) – Late 2.0 – Headless UI.
   Read the docs about the new UI pattern: <https://sewellstephens.github.io/late/docs/components>.
 
-  - Removed `@sewellstephens/plate-ui` dependency.
-  - Removed `@sewellstephens/plate-emoji` dependency. You can install it separately.
+  - Removed `@sewell_stephens/late-ui` dependency.
+  - Removed `@sewell_stephens/late-emoji` dependency. You can install it separately.
   - Removed `styled-components` peerDependency.
 
-  Replaced `@sewellstephens/plate-headless` dependency (deprecated) by:
+  Replaced `@sewell_stephens/late-headless` dependency (deprecated) by:
 
-  - `@sewellstephens/plate-alignment`
-  - `@sewellstephens/plate-autoformat`
-  - `@sewellstephens/plate-basic-elements`
-  - `@sewellstephens/plate-basic-marks`
-  - `@sewellstephens/plate-block-quote`
-  - `@sewellstephens/plate-break`
-  - `@sewellstephens/plate-code-block`
-  - `@sewellstephens/plate-combobox`
-  - `@sewellstephens/plate-comments`
-  - `@sewellstephens/plate-common`
-  - `@sewellstephens/plate-find-replace`
-  - `@sewellstephens/plate-floating`
-  - `@sewellstephens/plate-font`
-  - `@sewellstephens/plate-heading`
-  - `@sewellstephens/plate-highlight`
-  - `@sewellstephens/plate-horizontal-rule`
-  - `@sewellstephens/plate-indent`
-  - `@sewellstephens/plate-indent-list`
-  - `@sewellstephens/plate-kbd`
-  - `@sewellstephens/plate-line-height`
-  - `@sewellstephens/plate-link`
-  - `@sewellstephens/plate-list`
-  - `@sewellstephens/plate-media`
-  - `@sewellstephens/plate-mention`
-  - `@sewellstephens/plate-node-id`
-  - `@sewellstephens/plate-normalizers`
-  - `@sewellstephens/plate-paragraph`
-  - `@sewellstephens/plate-reset-node`
-  - `@sewellstephens/plate-select`
-  - `@sewellstephens/plate-serializer-csv`
-  - `@sewellstephens/plate-serializer-docx`
-  - `@sewellstephens/plate-serializer-html`
-  - `@sewellstephens/plate-serializer-md`
-  - `@sewellstephens/plate-suggestion`
-  - `@sewellstephens/plate-tabbable`
-  - `@sewellstephens/plate-table`
-  - `@sewellstephens/plate-trailing-block`
-  - `@sewellstephens/resizable`
+  - `@sewell_stephens/late-alignment`
+  - `@sewell_stephens/late-autoformat`
+  - `@sewell_stephens/late-basic-elements`
+  - `@sewell_stephens/late-basic-marks`
+  - `@sewell_stephens/late-block-quote`
+  - `@sewell_stephens/late-break`
+  - `@sewell_stephens/late-code-block`
+  - `@sewell_stephens/late-combobox`
+  - `@sewell_stephens/late-comments`
+  - `@sewell_stephens/late-common`
+  - `@sewell_stephens/late-find-replace`
+  - `@sewell_stephens/late-floating`
+  - `@sewell_stephens/late-font`
+  - `@sewell_stephens/late-heading`
+  - `@sewell_stephens/late-highlight`
+  - `@sewell_stephens/late-horizontal-rule`
+  - `@sewell_stephens/late-indent`
+  - `@sewell_stephens/late-indent-list`
+  - `@sewell_stephens/late-kbd`
+  - `@sewell_stephens/late-line-height`
+  - `@sewell_stephens/late-link`
+  - `@sewell_stephens/late-list`
+  - `@sewell_stephens/late-media`
+  - `@sewell_stephens/late-mention`
+  - `@sewell_stephens/late-node-id`
+  - `@sewell_stephens/late-normalizers`
+  - `@sewell_stephens/late-paragraph`
+  - `@sewell_stephens/late-reset-node`
+  - `@sewell_stephens/late-select`
+  - `@sewell_stephens/late-serializer-csv`
+  - `@sewell_stephens/late-serializer-docx`
+  - `@sewell_stephens/late-serializer-html`
+  - `@sewell_stephens/late-serializer-md`
+  - `@sewell_stephens/late-suggestion`
+  - `@sewell_stephens/late-tabbable`
+  - `@sewell_stephens/late-table`
+  - `@sewell_stephens/late-trailing-block`
+  - `@sewell_stephens/resizable`
 
-## @sewellstephens/plate-utils@22.0.0
+## @sewell_stephens/late-utils@22.0.0
 
 ### Major Changes
 
@@ -348,7 +348,7 @@ Migration:
   - `createComponentAs`
   - `createElementAs`
 
-## @sewellstephens/plate-table@22.0.0
+## @sewell_stephens/late-table@22.0.0
 
 ### Major Changes
 
@@ -373,7 +373,7 @@ Migration:
 
 # 21.0.0
 
-## @sewellstephens/slate@21.0.0
+## @sewell_stephens/slate@21.0.0
 
 ### Major Changes
 
@@ -381,25 +381,25 @@ Migration:
 
 # 20.0.0
 
-## @sewellstephens/plate-core@20.0.0
+## @sewell_stephens/late-core@20.0.0
 
 ### Major Changes
 
 - [`0077402`](https://github.com/sewellstephens/late/commit/00774029236d37737abdadf49b074e613e290792) by [@zbeyens](https://github.com/zbeyens) –
   - This package has been split into multiple packages for separation of concerns and decoupled versioning:
-    - `@sewellstephens/utils` is a collection of miscellaneous utilities. Can be used by any project.
-    - `@sewellstephens/slate` is a collection of `slate` experimental features and bug fixes that may be moved into `slate` one day. It's essentially composed of the generic types. Can be used by vanilla `slate` consumers without plate.
-    - `@sewellstephens/slate-react` is a collection of `slate-react` experimental features and bug fixes that that may be moved into `slate-react` one day. It's essentially composed of the generic types. Can be used by vanilla `slate-react` consumers without plate.
-    - `@sewellstephens/plate-core` is the minimalistic core of plate. It essentially includes `Late`, `LateProvider` and their dependencies. Note this package is not dependent on the `*-utils` packages.
-    - `@sewellstephens/slate-utils` is a collection of utils depending on `@sewellstephens/slate`. Can be used by vanilla `slate` consumers without plate.
-    - `@sewellstephens/plate-utils` is a collection of utils depending on `@sewellstephens/slate-react` and `@sewellstephens/plate-core`
-    - `@sewellstephens/plate-common` re-exports the 6 previous packages and is a dependency of all the other packages. It's basically replacing `@udecore/plate-core` as a bundle.
+    - `@sewell_stephens/utils` is a collection of miscellaneous utilities. Can be used by any project.
+    - `@sewell_stephens/slate` is a collection of `slate` experimental features and bug fixes that may be moved into `slate` one day. It's essentially composed of the generic types. Can be used by vanilla `slate` consumers without plate.
+    - `@sewell_stephens/slate-react` is a collection of `slate-react` experimental features and bug fixes that that may be moved into `slate-react` one day. It's essentially composed of the generic types. Can be used by vanilla `slate-react` consumers without plate.
+    - `@sewell_stephens/late-core` is the minimalistic core of plate. It essentially includes `Late`, `LateProvider` and their dependencies. Note this package is not dependent on the `*-utils` packages.
+    - `@sewell_stephens/slate-utils` is a collection of utils depending on `@sewell_stephens/slate`. Can be used by vanilla `slate` consumers without plate.
+    - `@sewell_stephens/late-utils` is a collection of utils depending on `@sewell_stephens/slate-react` and `@sewell_stephens/late-core`
+    - `@sewell_stephens/late-common` re-exports the 6 previous packages and is a dependency of all the other packages. It's basically replacing `@udecore/plate-core` as a bundle.
   - Removed `getPreventDefaultHandler` since it is no longer needed.
     **Migration**:
-    - If using `@sewellstephens/plate` or `@sewellstephens/plate-headless`: none
-    - Else: find & replace `@sewellstephens/plate-core` by `@sewellstephens/plate-common`
+    - If using `@sewell_stephens/late` or `@sewell_stephens/late-headless`: none
+    - Else: find & replace `@sewell_stephens/late-core` by `@sewell_stephens/late-common`
 
-## @sewellstephens/plate-link@20.0.0
+## @sewell_stephens/late-link@20.0.0
 
 ### Major Changes
 
@@ -407,7 +407,7 @@ Migration:
   - Add `allowedSchemes` plugin option
     - Any URL schemes other than `http(s)`, `mailto` and `tel` must be added to `allowedSchemes`, otherwise they will not be included in links
 
-## @sewellstephens/plate-table@20.0.0
+## @sewell_stephens/late-table@20.0.0
 
 ### Major Changes
 
@@ -417,21 +417,21 @@ Migration:
     - if using `disableUnsetSingleColSize: false`, use `enableUnsetSingleColSize: true`
   - `getTableColumnIndex` second parameter type is now: `cellNode: TElement`
 
-## @sewellstephens/plate-ui-dnd@20.0.0
+## @sewell_stephens/late-ui-dnd@20.0.0
 
 ### Major Changes
 
-- [#2237](https://github.com/sewellstephens/late/pull/2237) by [@tmorane](https://github.com/tmorane) – Unstyled logic has been moved to `@sewellstephens/plate-dnd`
+- [#2237](https://github.com/sewellstephens/late/pull/2237) by [@tmorane](https://github.com/tmorane) – Unstyled logic has been moved to `@sewell_stephens/late-dnd`
 
   ```ts
   // before
-  import { createDndPlugin } from '@sewellstephens/plate-ui-dnd';
+  import { createDndPlugin } from '@sewell_stephens/late-ui-dnd';
 
   // after
-  import { createDndPlugin } from '@sewellstephens/plate-dnd';
+  import { createDndPlugin } from '@sewell_stephens/late-dnd';
   ```
 
-  Only `withLateDraggable`, `withLateDraggables` and `LateDraggable` are left in `@sewellstephens/plate-ui-dnd`.
+  Only `withLateDraggable`, `withLateDraggables` and `LateDraggable` are left in `@sewell_stephens/late-ui-dnd`.
   Renamed:
 
   - `withDraggables` -> `withLateDraggables`. In the second parameter, draggable props options have been moved under `draggableProps`:
@@ -452,11 +452,11 @@ Migration:
   }
   ```
 
-## @sewellstephens/plate-ui-table@20.0.0
+## @sewell_stephens/late-ui-table@20.0.0
 
 ### Major Changes
 
-- [#2251](https://github.com/sewellstephens/late/pull/2251) by [@zbeyens](https://github.com/zbeyens) – Headless components and hooks moved to `@sewellstephens/plate-table`, so the following components have been renamed:
+- [#2251](https://github.com/sewellstephens/late/pull/2251) by [@zbeyens](https://github.com/zbeyens) – Headless components and hooks moved to `@sewell_stephens/late-table`, so the following components have been renamed:
   - `TableElement` -> `LateTableElement`
     - removed table border to set it at the cell level
     - `margin-left: 1px` to support cell borders
@@ -471,7 +471,7 @@ Migration:
 
 # 19.0.0
 
-## @sewellstephens/plate-core@19.0.0
+## @sewell_stephens/late-core@19.0.0
 
 ### Major Changes
 
@@ -488,17 +488,17 @@ Migration:
   "slate-react": "0.88.0"
   ```
 
-## @sewellstephens/plate@19.0.0
+## @sewell_stephens/late@19.0.0
 
 ### Major Changes
 
 - [#2097](https://github.com/sewellstephens/late/pull/2097) by [@zbeyens](https://github.com/zbeyens) –
-  - due to esm issues, dnd plugin is not part of plate package anymore. To use it, install `@sewellstephens/plate-ui-dnd`
+  - due to esm issues, dnd plugin is not part of plate package anymore. To use it, install `@sewell_stephens/late-ui-dnd`
   ```ts
   // before
-  import { createDndPlugin } from '@sewellstephens/plate';
+  import { createDndPlugin } from '@sewell_stephens/late';
   // after
-  import { createDndPlugin } from '@sewellstephens/plate-ui-dnd';
+  import { createDndPlugin } from '@sewell_stephens/late-ui-dnd';
   ```
   - upgrade peerDeps:
   ```json
@@ -514,19 +514,19 @@ Migration:
 
 # 18.0.0
 
-## @sewellstephens/plate-headless@18.0.0
+## @sewell_stephens/late-headless@18.0.0
 
 ### Major Changes
 
 - [#1889](https://github.com/sewellstephens/late/pull/1889) by [@zbeyens](https://github.com/zbeyens) –
-  - `@sewellstephens/plate-selection` package moved out from `@sewellstephens/plate` because of <https://github.com/Simonwep/selection/issues/124>
+  - `@sewell_stephens/late-selection` package moved out from `@sewell_stephens/late` because of <https://github.com/Simonwep/selection/issues/124>
   - Migration:
     - If not using `createBlockSelectionPlugin`, no migration is needed.
-    - Otherwise, install `@sewellstephens/plate-selection` and import `createBlockSelectionPlugin` from that package.
+    - Otherwise, install `@sewell_stephens/late-selection` and import `createBlockSelectionPlugin` from that package.
 
 # 17.0.0
 
-## @sewellstephens/plate-core@17.0.0
+## @sewell_stephens/late-core@17.0.0
 
 ### Major Changes
 
@@ -609,7 +609,7 @@ Migration:
     - `getLateStore, useLateStore`
     - `EditorId` for `LateId`
 
-## @sewellstephens/plate-code-block@17.0.0
+## @sewell_stephens/late-code-block@17.0.0
 
 ### Major Changes
 
@@ -619,7 +619,7 @@ Migration:
     - `prismjs/components/prism-ejs`
     - `prismjs/components/prism-php`
 
-## @sewellstephens/plate-ui@17.0.0
+## @sewell_stephens/late-ui@17.0.0
 
 ### Major Changes
 
@@ -628,16 +628,16 @@ Migration:
 
 # 16.0.0
 
-## @sewellstephens/plate@16.0.0
+## @sewell_stephens/late@16.0.0
 
-## @sewellstephens/plate-headless@16.0.0
+## @sewell_stephens/late-headless@16.0.0
 
 ### Major Changes
 
 - [#1721](https://github.com/sewellstephens/late/pull/1721) by [@zbeyens](https://github.com/zbeyens) –
-  - deprecate `@sewellstephens/plate-image` and `@sewellstephens/plate-media-embed`, those got merged into `@sewellstephens/plate-media`
+  - deprecate `@sewell_stephens/late-image` and `@sewell_stephens/late-media-embed`, those got merged into `@sewell_stephens/late-media`
 
-## @sewellstephens/plate-media@16.0.0
+## @sewell_stephens/late-media@16.0.0
 
 ### Major Changes
 
@@ -653,7 +653,7 @@ Migration:
     - `useImageCaptionString` to `useCaptionString`
     - `ImageResizable` to `Resizable`
 
-## @sewellstephens/plate-ui-table@16.0.0
+## @sewell_stephens/late-ui-table@16.0.0
 
 ### Major Changes
 
@@ -664,27 +664,27 @@ Migration:
 - deps:
   - replaced `plate-ui-popover` by `plate-floating`
 
-## @sewellstephens/plate-ui@16.0.0
+## @sewell_stephens/late-ui@16.0.0
 
 ### Major Changes
 
 - [#1721](https://github.com/sewellstephens/late/pull/1721) by [@zbeyens](https://github.com/zbeyens) –
-- deprecate `@sewellstephens/plate-ui-popover` for `@sewellstephens/plate-floating`
+- deprecate `@sewell_stephens/late-ui-popover` for `@sewell_stephens/late-floating`
 
 # 15.0.0
 
-## @sewellstephens/plate-combobox@15.0.0
+## @sewell_stephens/late-combobox@15.0.0
 
 ### Major Changes
 
 - [#1677](https://github.com/sewellstephens/late/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
   - deps:
-    - replaced `@sewellstephens/plate-ui-popper` by `@sewellstephens/plate-floating`
+    - replaced `@sewell_stephens/late-ui-popper` by `@sewell_stephens/late-floating`
   - `comboboxStore`:
     - removed `popperContainer`, use `floatingOptions` instead
     - removed `popperOptions`, use `floatingOptions` instead
 
-## @sewellstephens/plate-link@15.0.0
+## @sewell_stephens/late-link@15.0.0
 
 ### Major Changes
 
@@ -698,7 +698,7 @@ Migration:
   - `LinkToolbarButton`:
     - `onClick` now calls `triggerFloatingLink`
 
-## @sewellstephens/plate-table@15.0.0
+## @sewell_stephens/late-table@15.0.0
 
 ### Major Changes
 
@@ -706,83 +706,83 @@ Migration:
 - remove `addRow` for `insertTableRow`
 - remove `addColumn` for `insertTableColumn`
 
-## @sewellstephens/plate@15.0.0
+## @sewell_stephens/late@15.0.0
 
 ### Major Changes
 
 - [#1677](https://github.com/sewellstephens/late/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
-  - remove `@sewellstephens/plate-ui-popper` dep for `@sewellstephens/plate-floating`
+  - remove `@sewell_stephens/late-ui-popper` dep for `@sewell_stephens/late-floating`
 
-## @sewellstephens/plate-ui-button@15.0.0
+## @sewell_stephens/late-ui-button@15.0.0
 
 ### Major Changes
 
 - [#1677](https://github.com/sewellstephens/late/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
-  - moved `Button` to `@sewellstephens/plate-button`
+  - moved `Button` to `@sewell_stephens/late-button`
   - `Button` is now unstyled
 
-## @sewellstephens/plate-ui-popper@15.0.0
+## @sewell_stephens/late-ui-popper@15.0.0
 
 ### Major Changes
 
 - [#1677](https://github.com/sewellstephens/late/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
-- deprecated, use instead `@sewellstephens/plate-floating`
+- deprecated, use instead `@sewell_stephens/late-floating`
 
-## @sewellstephens/plate-ui-toolbar@15.0.0
+## @sewell_stephens/late-ui-toolbar@15.0.0
 
 ### Major Changes
 
 - [#1677](https://github.com/sewellstephens/late/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
-- remove `@sewellstephens/plate-ui-popper` and `react-popper` deps for `@sewellstephens/plate-floating`
+- remove `@sewell_stephens/late-ui-popper` and `react-popper` deps for `@sewell_stephens/late-floating`
 - `BalloonToolbarProps`:
   - removed `popperOptions` for `floatingOptions`
 - remove `useBalloonToolbarPopper` for `useFloatingToolbar`
 
 # 14.0.0
 
-## @sewellstephens/plate-core@14.0.0
+## @sewell_stephens/late-core@14.0.0
 
 ### Major Changes
 
-- [#1633](https://github.com/sewellstephens/late/pull/1633) by [@tjramage](https://github.com/tjramage) – Moved `serializeHtml` and its utils to `@sewellstephens/plate-serializer-html` as it has a new dependency: [html-entities](https://www.npmjs.com/package/html-entities).
-  - If you're using `@sewellstephens/plate`, no migration is needed
-  - Otherwise, import it from `@sewellstephens/plate-serializer-html`
+- [#1633](https://github.com/sewellstephens/late/pull/1633) by [@tjramage](https://github.com/tjramage) – Moved `serializeHtml` and its utils to `@sewell_stephens/late-serializer-html` as it has a new dependency: [html-entities](https://www.npmjs.com/package/html-entities).
+  - If you're using `@sewell_stephens/late`, no migration is needed
+  - Otherwise, import it from `@sewell_stephens/late-serializer-html`
 
 # 13.0.0
 
-## @sewellstephens/plate-core@13.1.0
+## @sewell_stephens/late-core@13.1.0
 
 ### Major Changes
 
 - `Late` children are now rendered as last children of `Slate` (previously first children). To reproduce the previous behavior, move `children` to `firstChildren`
 
-## @sewellstephens/plate@13.0.0
+## @sewell_stephens/late@13.0.0
 
-## @sewellstephens/plate-headless@13.0.0
+## @sewell_stephens/late-headless@13.0.0
 
 ### Major Changes
 
-- [#1585](https://github.com/sewellstephens/late/pull/1585) by [@zbeyens](https://github.com/zbeyens) – Removed `@sewellstephens/plate-juice` from `@sewellstephens/plate`. Install it if using `@sewellstephens/plate-serializer-docx`:
+- [#1585](https://github.com/sewellstephens/late/pull/1585) by [@zbeyens](https://github.com/zbeyens) – Removed `@sewell_stephens/late-juice` from `@sewell_stephens/late`. Install it if using `@sewell_stephens/late-serializer-docx`:
   ```bash
-  yarn install @sewellstephens/plate-juice
+  yarn install @sewell_stephens/late-juice
   ```
 
-## @sewellstephens/plate@13.0.0
+## @sewell_stephens/late@13.0.0
 
-## @sewellstephens/plate-ui@13.0.0
+## @sewell_stephens/late-ui@13.0.0
 
-## @sewellstephens/plate-ui-dnd@13.0.0
+## @sewell_stephens/late-ui-dnd@13.0.0
 
 ### Major Changes
 
-- [#1585](https://github.com/sewellstephens/late/pull/1585) by [@zbeyens](https://github.com/zbeyens) – Moved `react-dnd react-dnd-html5-backend` deps to peer-dependencies. Install these if using `@sewellstephens/plate-ui-dnd`:
+- [#1585](https://github.com/sewellstephens/late/pull/1585) by [@zbeyens](https://github.com/zbeyens) – Moved `react-dnd react-dnd-html5-backend` deps to peer-dependencies. Install these if using `@sewell_stephens/late-ui-dnd`:
   ```bash
   yarn install react-dnd react-dnd-html5-backend
   ```
 
 # 12.0.0
 
-## @sewellstephens/plate-ui-dnd@12.0.0
+## @sewell_stephens/late-ui-dnd@12.0.0
 
 ### Major Changes
 
@@ -816,7 +816,7 @@ Migration:
 
 # 11.0.0
 
-## @sewellstephens/plate-core@11.0.6
+## @sewell_stephens/late-core@11.0.6
 
 ### Major Changes
 
@@ -927,7 +927,7 @@ Removing node props types in favor of element types (same props + extends `TElem
 
 - `deleteFragment` is now using `Editor.deleteFragment`
 
-## @sewellstephens/plate-table@11.0.0
+## @sewell_stephens/late-table@11.0.0
 
 - `getEmptyTableNode` default options changed. Migration:
 
@@ -938,7 +938,7 @@ getEmptyTableNode(editor);
 getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
 ```
 
-## @sewellstephens/plate-styled-components@11.0.0
+## @sewell_stephens/late-styled-components@11.0.0
 
 **Generic types**
 
@@ -946,7 +946,7 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
 
 # 10.0.0
 
-## @sewellstephens/plate-ui-toolbar@10.0.0
+## @sewell_stephens/late-ui-toolbar@10.0.0
 
 ### Major Changes
 
@@ -954,7 +954,7 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
 
 # 9.0.0
 
-## @sewellstephens/plate-core@9.0.0
+## @sewell_stephens/late-core@9.0.0
 
 - [#1303](https://github.com/sewellstephens/late/pull/1303) by [@zbeyens](https://github.com/zbeyens) –
   - `Late`
@@ -981,19 +981,19 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
     - `useLateState`
     - `useLateKey`
 
-## @sewellstephens/plate@9.0.0
+## @sewell_stephens/late@9.0.0
 
 - [#1303](https://github.com/sewellstephens/late/pull/1303) by [@zbeyens](https://github.com/zbeyens) –
 - renamed `plate-x-ui` to `plate-ui-x`: all packages depending on `styled-components` has `plate-ui` prefix
 - renamed `plate-x-serializer` to `plate-serializer-x`
 - is now exporting only these (new) packages:
-  - `@sewellstephens/plate-headless`: all unstyled packages
-  - `@sewellstephens/plate-ui`: all styled packages
+  - `@sewell_stephens/late-headless`: all unstyled packages
+  - `@sewell_stephens/late-ui`: all styled packages
 - renamed `LateState` to `LateStoreState`
 
 # 8.0.0
 
-## @sewellstephens/plate-indent-list@8.0.0
+## @sewell_stephens/late-indent-list@8.0.0
 
 - [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Removed:
 
@@ -1003,7 +1003,7 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
 
   - `getIndentListInjectComponent` to `injectIndentListComponent`
 
-## @sewellstephens/plate-core@8.0.0
+## @sewell_stephens/late-core@8.0.0
 
 - [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Breaking changes:
 
@@ -1269,46 +1269,46 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
   - `RenderNodeOptions`
   - `DeserializedHTMLElement`
 
-## @sewellstephens/plate-find-replace@8.0.0
+## @sewell_stephens/late-find-replace@8.0.0
 
 - [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Removed:
   - `useFindReplacePlugin` for `createFindReplacePlugin`
 
-## @sewellstephens/plate-alignment@8.0.0
+## @sewell_stephens/late-alignment@8.0.0
 
 - [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) –
   - `setAlign`
     - moved param 3 to param 2 as `setNodesOptions`
 
-## @sewellstephens/plate-basic-elements@8.0.0
+## @sewell_stephens/late-basic-elements@8.0.0
 
 - [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) –
   - renamed `createBasicElementPlugins` to `createBasicElementsPlugin`
 
-## @sewellstephens/plate-code-block@8.0.0
+## @sewell_stephens/late-code-block@8.0.0
 
 - [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Removed:
   - `getCodeBlockPluginOptions` for `getPlugin`
   - `getCodeLinePluginOptions` for `getPlugin`
 
-## @sewellstephens/plate-heading@8.0.0
+## @sewell_stephens/late-heading@8.0.0
 
 - [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Renamed:
   - `HeadingPluginOptions` to `HeadingsPlugin`
 
-## @sewellstephens/plate-mention@8.0.0
+## @sewell_stephens/late-mention@8.0.0
 
 - [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Removed:
   - `getMentionInputPluginOptions` for `getPlugin`
   - `getMentionInputType` for `getPluginType`
   - `COMBOBOX_TRIGGER_MENTION`
 
-## @sewellstephens/plate-basic-marks@8.0.0
+## @sewell_stephens/late-basic-marks@8.0.0
 
 - [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) –
   - renamed `createBasicMarkPlugins` to `createBasicMarksPlugin`
 
-## @sewellstephens/plate@8.0.0
+## @sewell_stephens/late@8.0.0
 
 - [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Breaking changes:
 
@@ -1354,13 +1354,13 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
   - `plate-html-serializer`
   - `plate-serializer`
 
-## @sewellstephens/plate-serializer-csv@8.0.0
+## @sewell_stephens/late-serializer-csv@8.0.0
 
 - [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) – Renamed:
   - `createDeserializeCSVPlugin` to `createDeserializeCsvPlugin`
   - `deserializeCSV` to `deserializeCsv`
 
-## @sewellstephens/plate-serializer-md@8.0.0
+## @sewell_stephens/late-serializer-md@8.0.0
 
 - [#1234](https://github.com/sewellstephens/late/pull/1234) by [@zbeyens](https://github.com/zbeyens) –
 
@@ -1374,7 +1374,7 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
 
 # 7.0.0
 
-## `@sewellstephens/plate-core`
+## `@sewell_stephens/late-core`
 
 - renamed:
   - `SPEditor` to `PEditor` (note that `LateEditor` is the new default)
@@ -1399,12 +1399,12 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
     - `useLateEditorState`
     - `useLateX`...
 
-## `@sewellstephens/plate-alignment`
+## `@sewell_stephens/late-alignment`
 
 - `setAlign`: option `align` renamed to `value`
 - removed `getAlignOverrideProps()` in favor of `getOverrideProps(KEY_ALIGN)`
 
-## `@sewellstephens/plate-indent`
+## `@sewell_stephens/late-indent`
 
 - removed `getIndentOverrideProps()` in favor of `getOverrideProps(KEY_INDENT)`
 - rename `onKeyDownHandler` to `getIndentOnKeyDown()`
@@ -1413,25 +1413,25 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
   - rename `cssPropName` to `styleKey`
   - rename `transformCssValue` to `transformNodeValue`
 
-## `@sewellstephens/plate-line-height`
+## `@sewell_stephens/late-line-height`
 
 - `setLineHeight`: option `lineHeight` renamed to `value`
 - removed `getLineHeightOverrideProps` in favor of `getOverrideProps(KEY_LINE_HEIGHT)`
 
-## `@sewellstephens/plate-mention`
+## `@sewell_stephens/late-mention`
 
 - `getMentionOnSelectItem`:
   - removed `createMentionNode` in favor of plugin options
   - removed `insertSpaceAfterMention` in favor of plugin options
 
-## `@sewellstephens/plate-mention-ui`
+## `@sewell_stephens/late-mention-ui`
 
 - `MentionCombobox` props:
   - removed `trigger` in favor of plugin options
   - removed `insertSpaceAfterMention` in favor of plugin options
   - removed `createMentionNode` in favor of plugin options
 
-## `@sewellstephens/plate-x-ui`
+## `@sewell_stephens/late-x-ui`
 
 - renamed `ToolbarAlign` to `AlignToolbarButton`
 - renamed `ToolbarCodeBlock` to `CodeBlockToolbarButton`
@@ -1447,7 +1447,7 @@ getEmptyTableNode(editor, { rowCount: 2, colCount: 2 });
 
 # 6.0.0
 
-## `@sewellstephens/plate-alignment`
+## `@sewell_stephens/late-alignment`
 
 The align plugin is no longer wrapping a block, but instead setting an `align` property to an existing block.
 
@@ -1469,7 +1469,7 @@ Migration (normalizer):
     - run `setAlign(editor, { align }, { at: path })`
     - run `unwrapNodes(editor, { at: path })`
 
-## `@sewellstephens/plate-alignment-ui`
+## `@sewell_stephens/late-alignment-ui`
 
 - `ToolbarAlignProps`:
   - removed `type` in favor of `align`
@@ -1478,7 +1478,7 @@ Migration (normalizer):
 
 # 5.0.0
 
-## `@sewellstephens/plate-mention`
+## `@sewell_stephens/late-mention`
 
 The mention plugin is now using the combobox.
 
@@ -1511,11 +1511,11 @@ export interface ComboboxItemData {
 }
 ```
 
-## `@sewellstephens/plate-mention-ui`
+## `@sewell_stephens/late-mention-ui`
 
 - removed `MentionSelect` in favor of `MentionCombobox`
 
-## `@sewellstephens/plate-toolbar`
+## `@sewell_stephens/late-toolbar`
 
 - removed `setPositionAtSelection` in favor of `useBalloonToolbarPopper`
 - removed `useBalloonMove` in favor of `useBalloonToolbarPopper`
@@ -1527,7 +1527,7 @@ export interface ComboboxItemData {
 
 # 4.0.0
 
-## `@sewellstephens/plate-toolbar`
+## `@sewell_stephens/late-toolbar`
 
 - `BalloonToolbar`: removed `hiddenDelay` prop.
 
@@ -1548,7 +1548,7 @@ Add `styled-components` to your dependencies
 
 # 2.0.0
 
-## `@sewellstephens/plate-autoformat`
+## `@sewell_stephens/late-autoformat`
 
 - `autoformatBlock`:
   - signatude changed

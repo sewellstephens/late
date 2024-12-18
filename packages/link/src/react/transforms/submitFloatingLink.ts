@@ -1,5 +1,5 @@
-import { type SlateEditor, getEditorPlugin } from '@sewellstephens/plate-common';
-import { focusEditor } from '@sewellstephens/plate-common/react';
+import { type SlateEditor, getEditorPlugin } from '@sewell_stephens/late-common';
+import { focusEditor } from '@sewell_stephens/late-common/react';
 
 import { upsertLink, validateUrl } from '../../lib';
 import { LinkPlugin } from '../LinkPlugin';

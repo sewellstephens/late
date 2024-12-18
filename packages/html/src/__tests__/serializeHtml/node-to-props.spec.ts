@@ -1,7 +1,7 @@
-import { CaptionPlugin } from '@sewellstephens/plate-caption/react';
-import { htmlStringToDOMNode } from '@sewellstephens/plate-core';
-import { LinkPlugin } from '@sewellstephens/plate-link/react';
-import { ImagePlugin } from '@sewellstephens/plate-media/react';
+import { CaptionPlugin } from '@sewell_stephens/late-caption/react';
+import { htmlStringToDOMNode } from '@sewell_stephens/late-core';
+import { LinkPlugin } from '@sewell_stephens/late-link/react';
+import { ImagePlugin } from '@sewell_stephens/late-media/react';
 
 import { serializeHtml } from '../../react/serializeHtml';
 import { createLateUIEditor } from '../create-plate-ui-editor';

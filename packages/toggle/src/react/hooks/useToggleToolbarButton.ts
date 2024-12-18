@@ -1,9 +1,9 @@
-import { collapseSelection } from '@sewellstephens/plate-common';
+import { collapseSelection } from '@sewell_stephens/late-common';
 import {
   focusEditor,
   useEditorRef,
   useEditorSelector,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import { someToggle } from '../../lib';
 import { TogglePlugin } from '../TogglePlugin';

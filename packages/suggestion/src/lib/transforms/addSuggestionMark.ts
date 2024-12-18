@@ -1,4 +1,4 @@
-import { type SlateEditor, nanoid } from '@sewellstephens/plate-common';
+import { type SlateEditor, nanoid } from '@sewell_stephens/late-common';
 
 import { SUGGESTION_KEYS, SuggestionPlugin } from '../SuggestionPlugin';
 import { findSuggestionId } from '../queries/findSuggestionId';

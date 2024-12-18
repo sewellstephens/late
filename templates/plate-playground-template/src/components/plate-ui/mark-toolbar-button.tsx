@@ -1,11 +1,11 @@
 'use client';
 
 import React from 'react';
-import { withRef } from '@sewellstephens/cn';
+import { withRef } from '@sewell_stephens/cn';
 import {
   useMarkToolbarButton,
   useMarkToolbarButtonState,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { ToolbarButton } from './toolbar';
 

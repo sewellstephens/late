@@ -1,8 +1,8 @@
 import React from 'react';
 
-import type { PluginConfig } from '@sewellstephens/plate-common';
+import type { PluginConfig } from '@sewell_stephens/late-common';
 
-import { createTLatePlugin } from '@sewellstephens/plate-common/react';
+import { createTLatePlugin } from '@sewell_stephens/late-common/react';
 
 import { DndScroller, type ScrollerProps } from './components/Scroller';
 

@@ -1,7 +1,7 @@
-import type { TEditor } from '@sewellstephens/slate';
+import type { TEditor } from '@sewell_stephens/slate';
 import type { Location } from 'slate';
 
-import { deselect, select, withoutNormalizing } from '@sewellstephens/slate';
+import { deselect, select, withoutNormalizing } from '@sewell_stephens/slate';
 import { ReactEditor } from 'slate-react';
 
 /**

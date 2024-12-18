@@ -3,7 +3,7 @@
  * contributors. See /packages/diff/LICENSE for more information.
  */
 
-import { type TDescendant, isElement, isText } from '@sewellstephens/plate-common';
+import { type TDescendant, isElement, isText } from '@sewell_stephens/late-common';
 import isEqual from 'lodash/isEqual.js';
 
 import type { ComputeDiffOptions } from '../../lib/computeDiff';

@@ -1,4 +1,4 @@
-import type { LateContentProps } from '@sewellstephens/plate-common/react';
+import type { LateContentProps } from '@sewell_stephens/late-common/react';
 
 export const editableProps: LateContentProps = {
   autoFocus: false,

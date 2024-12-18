@@ -1,25 +1,25 @@
 /** @jsx jsx */
 
-import { BlockquotePlugin } from '@sewellstephens/plate-block-quote';
+import { BlockquotePlugin } from '@sewell_stephens/late-block-quote';
 import {
   CodeBlockPlugin,
   isCodeBlockEmpty,
   isSelectionAtCodeBlockStart,
   unwrapCodeBlock,
-} from '@sewellstephens/plate-code-block';
+} from '@sewell_stephens/late-code-block';
 import {
   isBlockAboveEmpty,
   isSelectionAtBlockStart,
-} from '@sewellstephens/plate-common';
-import { ParagraphPlugin } from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
+import { ParagraphPlugin } from '@sewell_stephens/late-common';
 import {
   createLateEditor,
   createTLatePlugin,
   getEditorPlugin,
-} from '@sewellstephens/plate-common/react';
-import * as isHotkey from '@sewellstephens/plate-core';
-import { ListItemPlugin, unwrapList } from '@sewellstephens/plate-list';
-import { jsx } from '@sewellstephens/plate-test-utils';
+} from '@sewell_stephens/late-common/react';
+import * as isHotkey from '@sewell_stephens/late-core';
+import { ListItemPlugin, unwrapList } from '@sewell_stephens/late-list';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import type { ResetNodeConfig } from '../lib/ResetNodePlugin';
 

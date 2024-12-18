@@ -1,4 +1,4 @@
-import type { TDescendant } from '@sewellstephens/slate';
+import type { TDescendant } from '@sewell_stephens/slate';
 
 export type DeserializeHtmlChildren = ChildNode | TDescendant | null | string;
 

@@ -1,7 +1,7 @@
 'use client';
 
 import * as SeparatorPrimitive from '@radix-ui/react-separator';
-import { withProps, withVariants } from '@sewellstephens/cn';
+import { withProps, withVariants } from '@sewell_stephens/cn';
 import { cva } from 'class-variance-authority';
 
 const separatorVariants = cva('shrink-0 bg-border', {

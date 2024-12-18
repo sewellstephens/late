@@ -5,7 +5,7 @@ import type { DropdownMenuProps } from '@radix-ui/react-dropdown-menu';
 import {
   useLineHeightDropdownMenu,
   useLineHeightDropdownMenuState,
-} from '@sewellstephens/plate-line-height/react';
+} from '@sewell_stephens/late-line-height/react';
 
 import { Icons } from '@/components/icons';
 

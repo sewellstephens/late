@@ -1,5 +1,5 @@
-import { type TEditor, getNodeEntries, isText } from '@sewellstephens/plate-common';
-import { toDOMNode, toDOMRange } from '@sewellstephens/plate-common/react';
+import { type TEditor, getNodeEntries, isText } from '@sewell_stephens/late-common';
+import { toDOMNode, toDOMRange } from '@sewell_stephens/late-common/react';
 import { Path, Range } from 'slate';
 
 import type { SelectionRect } from '../types';

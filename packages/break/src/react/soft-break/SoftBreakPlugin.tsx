@@ -1,4 +1,4 @@
-import { toLatePlugin } from '@sewellstephens/plate-common/react';
+import { toLatePlugin } from '@sewell_stephens/late-common/react';
 
 import { SoftBreakPlugin as BaseSoftBreakPlugin } from '../../lib/soft-break/SoftBreakPlugin';
 import { onKeyDownSoftBreak } from './onKeyDownSoftBreak';

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 
 import { NavItem } from '@/types/nav';
 import { siteConfig } from '@/config/site';

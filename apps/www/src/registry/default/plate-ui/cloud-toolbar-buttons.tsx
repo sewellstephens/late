@@ -2,8 +2,8 @@
 
 import React from 'react';
 
-import { CloudPlugin } from '@sewellstephens/plate-cloud';
-import { useEditorPlugin } from '@sewellstephens/plate-common/react';
+import { CloudPlugin } from '@sewell_stephens/late-cloud';
+import { useEditorPlugin } from '@sewell_stephens/late-common/react';
 
 const buttonStyle: React.CSSProperties = {
   background: '#f0f0f0',

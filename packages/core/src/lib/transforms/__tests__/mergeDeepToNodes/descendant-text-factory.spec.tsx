@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
-import { jsx } from '@sewellstephens/plate-test-utils';
-import { isDescendant } from '@sewellstephens/slate';
+import { jsx } from '@sewell_stephens/late-test-utils';
+import { isDescendant } from '@sewell_stephens/slate';
 
 import { mergeDeepToNodes } from '../../../utils';
 

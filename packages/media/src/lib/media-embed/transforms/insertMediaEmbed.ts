@@ -3,7 +3,7 @@ import {
   type SlateEditor,
   getParentNode,
   insertNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { MediaEmbedPlugin, type TMediaEmbedElement } from '../MediaEmbedPlugin';
 

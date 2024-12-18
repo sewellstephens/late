@@ -1,10 +1,10 @@
-import type { TElement, TText } from '@sewellstephens/plate-common';
+import type { TElement, TText } from '@sewell_stephens/late-common';
 
 import {
   BulletedListPlugin,
   ListItemContentPlugin,
   ListItemPlugin,
-} from '@sewellstephens/plate-list/react';
+} from '@sewell_stephens/late-list/react';
 
 export const createList = (
   items: string[],

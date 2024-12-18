@@ -3,8 +3,8 @@ import {
   type TDescendant,
   type ValueOf,
   nanoid,
-} from '@sewellstephens/plate-common';
-import { type ComputeDiffOptions, computeDiff } from '@sewellstephens/plate-diff';
+} from '@sewell_stephens/late-common';
+import { type ComputeDiffOptions, computeDiff } from '@sewell_stephens/late-diff';
 
 import { getSuggestionProps } from './transforms';
 

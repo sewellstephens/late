@@ -7,13 +7,13 @@ import {
   getPreviousNode,
   isHotkey,
   removeNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import {
   type UseHooks,
   focusEditor,
   isEditorReadOnly,
   useEditorPlugin,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import type { BlockSelectionConfig } from './BlockSelectionPlugin';
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import { cn, withRef } from '@sewellstephens/cn';
-import { LateElement, withHOC } from '@sewellstephens/plate-common';
-import { ELEMENT_IMAGE, Image, useMediaState } from '@sewellstephens/plate-media';
-import { ResizableProvider, useResizableStore } from '@sewellstephens/plate-resizable';
+import { cn, withRef } from '@sewell_stephens/cn';
+import { LateElement, withHOC } from '@sewell_stephens/late-common';
+import { ELEMENT_IMAGE, Image, useMediaState } from '@sewell_stephens/late-media';
+import { ResizableProvider, useResizableStore } from '@sewell_stephens/late-resizable';
 
 import { Caption, CaptionTextarea } from './caption';
 import { MediaPopover } from './media-popover';

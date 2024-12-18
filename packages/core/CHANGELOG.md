@@ -1,4 +1,4 @@
-# @sewellstephens/plate-core
+# @sewell_stephens/late-core
 
 ## 37.0.0
 
@@ -8,7 +8,7 @@
 
   Decoupling React in all packages:
 
-  - Split build into `@sewellstephens/plate-core` and `@sewellstephens/plate-core/react`
+  - Split build into `@sewell_stephens/late-core` and `@sewell_stephens/late-core/react`
   - NEW `SlatePlugin` as the foundation for all plugins
   - `LatePlugin` extends `SlatePlugin` with React-specific plugin features
 
@@ -235,7 +235,7 @@
   - `handler` is called with the editor, event, and event details.
   - `keys` is an array of keys to trigger the shortcut.
   - `priority` is the priority of the shortcut over other shortcuts.
-  - `...HotkeysOptions` from `@sewellstephens/react-hotkeys`
+  - `...HotkeysOptions` from `@sewell_stephens/react-hotkeys`
 
   **Plugin Types**:
 
@@ -436,7 +436,7 @@
 
   - `slate >=0.103.0` peer dependency
   - `slate-react >=0.108.0` peer dependency
-  - New dependency `@sewellstephens/react-hotkeys`
+  - New dependency `@sewell_stephens/react-hotkeys`
   - Remove `ELEMENT_`, `MARK_` and `KEY_` constants. Use `NamePlugin.key` instead.
   - Replace `ELEMENT_DEFAULT` with `ParagraphPlugin.key`.
   - Remove `getTEditor`
@@ -448,11 +448,11 @@
   - `toggleBlock` options:
     - Rename `activeType` to `type`
     - Rename `inactiveType` to `defaultType`
-  - Remove `react-hotkeys-hook` re-exports. Use `@sewellstephens/react-hotkeys` instead.
+  - Remove `react-hotkeys-hook` re-exports. Use `@sewell_stephens/react-hotkeys` instead.
 
   Types:
 
-  - Move `TEditableProps`, `TRenderElementProps` to `@sewellstephens/slate-react`
+  - Move `TEditableProps`, `TRenderElementProps` to `@sewell_stephens/slate-react`
   - Remove `<V extends Value>` generic in all functions where not used
   - Remove `LatePluginKey`
   - Remove `OverrideByKey`
@@ -508,7 +508,7 @@
 
 - [#3125](https://github.com/sewellstephens/late/pull/3125) by [@zbeyens](https://github.com/zbeyens) –
   - Use `editor.reset` instead of `resetEditor` to focus the editor after reset so it's decoupled from `slate-react`.
-  - Add a server bundle including `createLateEditor`. It can be imported using `import { createLateEditor } from '@sewellstephens/plate-core/server'`.
+  - Add a server bundle including `createLateEditor`. It can be imported using `import { createLateEditor } from '@sewell_stephens/late-core/server'`.
 
 ## 32.0.1
 
@@ -797,17 +797,17 @@
 
 - [`0077402`](https://github.com/sewellstephens/late/commit/00774029236d37737abdadf49b074e613e290792) by [@zbeyens](https://github.com/zbeyens) –
   - This package has been split into multiple packages for separation of concerns and decoupled versioning:
-    - `@sewellstephens/utils` is a collection of miscellaneous utilities. Can be used by any project.
-    - `@sewellstephens/slate` is a collection of `slate` experimental features and bug fixes that may be moved into `slate` one day. It's essentially composed of the generic types. Can be used by vanilla `slate` consumers without plate.
-    - `@sewellstephens/slate-react` is a collection of `slate-react` experimental features and bug fixes that that may be moved into `slate-react` one day. It's essentially composed of the generic types. Can be used by vanilla `slate-react` consumers without plate.
-    - `@sewellstephens/plate-core` is the minimalistic core of plate. It essentially includes `Late`, `LateProvider` and their dependencies. Note this package is not dependent on the `*-utils` packages.
-    - `@sewellstephens/slate-utils` is a collection of utils depending on `@sewellstephens/slate`. Can be used by vanilla `slate` consumers without plate.
-    - `@sewellstephens/plate-utils` is a collection of utils depending on `@sewellstephens/slate-react` and `@sewellstephens/plate-core`
-    - `@sewellstephens/plate-common` re-exports the 6 previous packages and is a dependency of all the other packages. It's basically replacing `@udecore/plate-core` as a bundle.
+    - `@sewell_stephens/utils` is a collection of miscellaneous utilities. Can be used by any project.
+    - `@sewell_stephens/slate` is a collection of `slate` experimental features and bug fixes that may be moved into `slate` one day. It's essentially composed of the generic types. Can be used by vanilla `slate` consumers without plate.
+    - `@sewell_stephens/slate-react` is a collection of `slate-react` experimental features and bug fixes that that may be moved into `slate-react` one day. It's essentially composed of the generic types. Can be used by vanilla `slate-react` consumers without plate.
+    - `@sewell_stephens/late-core` is the minimalistic core of plate. It essentially includes `Late`, `LateProvider` and their dependencies. Note this package is not dependent on the `*-utils` packages.
+    - `@sewell_stephens/slate-utils` is a collection of utils depending on `@sewell_stephens/slate`. Can be used by vanilla `slate` consumers without plate.
+    - `@sewell_stephens/late-utils` is a collection of utils depending on `@sewell_stephens/slate-react` and `@sewell_stephens/late-core`
+    - `@sewell_stephens/late-common` re-exports the 6 previous packages and is a dependency of all the other packages. It's basically replacing `@udecore/plate-core` as a bundle.
   - Removed `getPreventDefaultHandler` since it is no longer needed.
     **Migration**:
-    - If using `@sewellstephens/plate` or `@sewellstephens/plate-headless`: none
-    - Else: find & replace `@sewellstephens/plate-core` by `@sewellstephens/plate-common`
+    - If using `@sewell_stephens/late` or `@sewell_stephens/late-headless`: none
+    - Else: find & replace `@sewell_stephens/late-core` by `@sewell_stephens/late-common`
 
 ### Minor Changes
 
@@ -1272,9 +1272,9 @@
 
 ### Major Changes
 
-- [#1633](https://github.com/sewellstephens/late/pull/1633) by [@tjramage](https://github.com/tjramage) – Moved `serializeHtml` and its utils to `@sewellstephens/plate-serializer-html` as it has a new dependency: [html-entities](https://www.npmjs.com/package/html-entities).
-  - If you're using `@sewellstephens/plate`, no migration is needed
-  - Otherwise, import it from `@sewellstephens/plate-serializer-html`
+- [#1633](https://github.com/sewellstephens/late/pull/1633) by [@tjramage](https://github.com/tjramage) – Moved `serializeHtml` and its utils to `@sewell_stephens/late-serializer-html` as it has a new dependency: [html-entities](https://www.npmjs.com/package/html-entities).
+  - If you're using `@sewell_stephens/late`, no migration is needed
+  - Otherwise, import it from `@sewell_stephens/late-serializer-html`
 
 ## 13.8.0
 
@@ -1301,7 +1301,7 @@
       - deselect the editor (otherwise it will focus the start of the editor)
       - select the editor
       - focus the editor
-  - re-exports `createStore` from `@sewellstephens/zustood`, so the other packages don't have to install it
+  - re-exports `createStore` from `@sewell_stephens/zustood`, so the other packages don't have to install it
 
 ### Patch Changes
 
@@ -1556,7 +1556,7 @@ Removing node props types in favor of element types (same props + extends `TElem
   Updated deps:
 
   ```bash
-  "@sewellstephens/zustood": "^1.1.1",
+  "@sewell_stephens/zustood": "^1.1.1",
   "jotai": "^1.6.6",
   "lodash": "^4.17.21",
   "zustand": "^3.7.2"
@@ -1733,7 +1733,7 @@ Removing node props types in favor of element types (same props + extends `TElem
 
 - [#1303](https://github.com/sewellstephens/late/pull/1303) by [@zbeyens](https://github.com/zbeyens) –
   - new packages
-    - `@sewellstephens/zustood`
+    - `@sewell_stephens/zustood`
     - `use-deep-compare`
   - `Late`
     - renders a new component: `EditorRefEffect`
@@ -2185,10 +2185,10 @@ Removing node props types in favor of element types (same props + extends `TElem
 
   New utils:
 
-  - `@sewellstephens/plate-common` has been merged into this package as both packages were dependencies of the exact same packages.
-  - `@sewellstephens/plate-html-serializer` has been merged into this package.
-  - `@sewellstephens/plate-ast-serializer` has been merged into this package.
-  - `@sewellstephens/plate-serializer` has been merged into this package.
+  - `@sewell_stephens/late-common` has been merged into this package as both packages were dependencies of the exact same packages.
+  - `@sewell_stephens/late-html-serializer` has been merged into this package.
+  - `@sewell_stephens/late-ast-serializer` has been merged into this package.
+  - `@sewell_stephens/late-serializer` has been merged into this package.
   - `createLateEditor`: Create a plate editor with:
     - `createEditor` or custom `editor`
     - `withLate`
@@ -2421,8 +2421,8 @@ To migrate, find and replace all occurrences of:
 
 ## 1.0.0-next.61
 
-> This is the last version of `@sewellstephens/slate-plugins[-x]`, please install
-> `@sewellstephens/plate[-x]`.
+> This is the last version of `@sewell_stephens/slate-plugins[-x]`, please install
+> `@sewell_stephens/late[-x]`.
 
 ### Minor Changes
 

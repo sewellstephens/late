@@ -8,19 +8,19 @@ import {
   ItalicPlugin,
   StrikethroughPlugin,
   UnderlinePlugin,
-} from '@sewellstephens/plate-basic-marks/react';
-import { useEditorReadOnly } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-basic-marks/react';
+import { useEditorReadOnly } from '@sewell_stephens/late-common/react';
 import {
   FontBackgroundColorPlugin,
   FontColorPlugin,
-} from '@sewellstephens/plate-font';
-import { ListStyleType } from '@sewellstephens/plate-indent-list';
-import { IndentListPlugin } from '@sewellstephens/plate-indent-list/react';
+} from '@sewell_stephens/late-font';
+import { ListStyleType } from '@sewell_stephens/late-indent-list';
+import { IndentListPlugin } from '@sewell_stephens/late-indent-list/react';
 import {
   BulletedListPlugin,
   NumberedListPlugin,
-} from '@sewellstephens/plate-list/react';
-import { ImagePlugin } from '@sewellstephens/plate-media/react';
+} from '@sewell_stephens/late-list/react';
+import { ImagePlugin } from '@sewell_stephens/late-media/react';
 
 import { settingsStore } from '@/components/context/settings-store';
 import { Icons, iconVariants } from '@/components/icons';

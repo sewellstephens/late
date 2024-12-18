@@ -1,9 +1,9 @@
-import { withTriggerCombobox } from '@sewellstephens/plate-combobox';
+import { withTriggerCombobox } from '@sewell_stephens/late-combobox';
 import {
   type PluginConfig,
   createSlatePlugin,
   createTSlatePlugin,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { EmojiPluginOptions } from './types';
 

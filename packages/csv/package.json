@@ -1,5 +1,5 @@
 {
-  "name": "@sewellstephens/plate-csv",
+  "name": "@sewell_stephens/late-csv",
   "version": "0.0.1",
   "description": "CSV serializer plugin for Late",
   "keywords": [
@@ -46,15 +46,15 @@
     "typecheck": "yarn p:typecheck"
   },
   "dependencies": {
-    "@sewellstephens/plate-table": "^0.0.1",
+    "@sewell_stephens/late-table": "^0.0.1",
     "papaparse": "^5.4.1"
   },
   "devDependencies": {
-    "@sewellstephens/plate-common": "workspace:^",
+    "@sewell_stephens/late-common": "^0.0.1",
     "@types/papaparse": "^5.3.14"
   },
   "peerDependencies": {
-    "@sewellstephens/plate-common": ">=37.0.0",
+    "@sewell_stephens/late-common": ">=37.0.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
     "slate": ">=0.103.0",
@@ -64,5 +64,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "3c69df6d17679bbabc43c4cff3370ae8c70ee466"
 }

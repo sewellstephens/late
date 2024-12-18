@@ -2,8 +2,8 @@ import {
   type TEditor,
   type TElement,
   getParentNode,
-} from '@sewellstephens/plate-common';
-import { findNodePath } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common';
+import { findNodePath } from '@sewell_stephens/late-common/react';
 
 /** Get table column index of a cell node. */
 export const getTableColumnIndex = (editor: TEditor, cellNode: TElement) => {

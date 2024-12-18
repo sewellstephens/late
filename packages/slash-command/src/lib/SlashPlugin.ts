@@ -1,13 +1,13 @@
 import {
   type TriggerComboboxPluginOptions,
   withTriggerCombobox,
-} from '@sewellstephens/plate-combobox';
+} from '@sewell_stephens/late-combobox';
 import {
   type PluginConfig,
   type TElement,
   createSlatePlugin,
   createTSlatePlugin,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 export interface TSlashInputElement extends TElement {}
 

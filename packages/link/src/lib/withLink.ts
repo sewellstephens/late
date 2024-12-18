@@ -15,11 +15,11 @@ import {
   select,
   someNode,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import {
   RemoveEmptyNodesPlugin,
   withRemoveEmptyNodes,
-} from '@sewellstephens/plate-normalizers';
+} from '@sewell_stephens/late-normalizers';
 import { Path, type Point, type Range } from 'slate';
 
 import type { LinkConfig } from './LinkPlugin';

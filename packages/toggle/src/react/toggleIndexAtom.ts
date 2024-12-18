@@ -1,14 +1,14 @@
 import { useMemo } from 'react';
 
-import type { Value } from '@sewellstephens/plate-common';
+import type { Value } from '@sewell_stephens/late-common';
 
 import {
   atom,
   plateStore,
   useEditorPlugin,
   useLateStore,
-} from '@sewellstephens/plate-common/react';
-import { IndentPlugin, type TIndentElement } from '@sewellstephens/plate-indent';
+} from '@sewell_stephens/late-common/react';
+import { IndentPlugin, type TIndentElement } from '@sewell_stephens/late-indent';
 
 import { TogglePlugin } from './TogglePlugin';
 

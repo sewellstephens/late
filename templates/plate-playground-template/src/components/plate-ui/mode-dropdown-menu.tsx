@@ -5,7 +5,7 @@ import {
   useEditorReadOnly,
   useEditorRef,
   useLateStore,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { Icons } from '@/components/icons';
 

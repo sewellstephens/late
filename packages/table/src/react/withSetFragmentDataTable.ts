@@ -1,4 +1,4 @@
-import type { ExtendEditor } from '@sewellstephens/plate-common/react';
+import type { ExtendEditor } from '@sewell_stephens/late-common/react';
 
 import {
   type TElement,
@@ -6,7 +6,7 @@ import {
   getStartPoint,
   select,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Path } from 'slate';
 
 import {

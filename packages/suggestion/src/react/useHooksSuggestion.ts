@@ -1,8 +1,8 @@
 import React from 'react';
 
-import type { UseHooks } from '@sewellstephens/plate-common/react';
+import type { UseHooks } from '@sewell_stephens/late-common/react';
 
-import { useEditorVersion } from '@sewellstephens/plate-common/react';
+import { useEditorVersion } from '@sewell_stephens/late-common/react';
 
 import {
   type SuggestionConfig,

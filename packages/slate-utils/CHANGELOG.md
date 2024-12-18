@@ -1,4 +1,4 @@
-# @sewellstephens/slate-utils
+# @sewell_stephens/slate-utils
 
 ## 37.0.0
 

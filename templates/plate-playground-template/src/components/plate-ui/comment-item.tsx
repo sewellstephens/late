@@ -5,7 +5,7 @@ import {
   CommentProvider,
   useCommentById,
   useCommentItemContentState,
-} from '@sewellstephens/plate-comments';
+} from '@sewell_stephens/late-comments';
 import { formatDistance } from 'date-fns';
 
 import { CommentAvatar } from './comment-avatar';

@@ -8,7 +8,7 @@ import {
   type TOperation,
   type TText,
   isText,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Path, createEditor, withoutNormalizing } from 'slate';
 
 import type { ComputeDiffOptions } from '../../lib/computeDiff';

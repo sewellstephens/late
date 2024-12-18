@@ -1,5 +1,5 @@
-import type { TCodeBlockElement } from '@sewellstephens/plate-code-block';
-import type { TElement } from '@sewellstephens/plate-common';
+import type { TCodeBlockElement } from '@sewell_stephens/late-code-block';
+import type { TElement } from '@sewell_stephens/late-common';
 
 import {
   AlignPlugin,
@@ -46,14 +46,14 @@ import {
   TrailingBlockPlugin,
   UnderlinePlugin,
   createSlateEditor,
-} from '@sewellstephens/plate';
-import { ExitBreakPlugin } from '@sewellstephens/plate-break';
-import { CaptionPlugin } from '@sewellstephens/plate-caption';
-import { EmojiPlugin } from '@sewellstephens/plate-emoji';
-import { ExcalidrawPlugin } from '@sewellstephens/plate-excalidraw';
-import { JuicePlugin } from '@sewellstephens/plate-juice';
-import { MarkdownPlugin } from '@sewellstephens/plate-markdown';
-import { ResetNodePlugin } from '@sewellstephens/plate-reset-node';
+} from '@sewell_stephens/late';
+import { ExitBreakPlugin } from '@sewell_stephens/late-break';
+import { CaptionPlugin } from '@sewell_stephens/late-caption';
+import { EmojiPlugin } from '@sewell_stephens/late-emoji';
+import { ExcalidrawPlugin } from '@sewell_stephens/late-excalidraw';
+import { JuicePlugin } from '@sewell_stephens/late-juice';
+import { MarkdownPlugin } from '@sewell_stephens/late-markdown';
+import { ResetNodePlugin } from '@sewell_stephens/late-reset-node';
 
 import { Markdown } from '@/components/MemoizedReactMarkdownClient';
 import { Code } from '@/components/code';

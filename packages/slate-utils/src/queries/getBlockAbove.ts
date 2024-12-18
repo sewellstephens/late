@@ -3,7 +3,7 @@ import {
   type GetAboveNodeOptions,
   type TEditor,
   getAboveNode,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 /** Get the block above a location (default: selection). */
 export const getBlockAbove = <

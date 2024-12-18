@@ -5,7 +5,7 @@ import {
   isSelectionExpanded,
   queryNode,
   removeNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { DeleteConfig } from './DeletePlugin';
 

@@ -1,14 +1,14 @@
-import { AlignPlugin } from '@sewellstephens/plate-alignment';
-import { BlockquotePlugin } from '@sewellstephens/plate-block-quote';
-import { CaptionPlugin } from '@sewellstephens/plate-caption/react';
-import { htmlStringToDOMNode } from '@sewellstephens/plate-common';
-import { ParagraphPlugin } from '@sewellstephens/plate-common';
-import { toLatePlugin } from '@sewellstephens/plate-core/react';
-import { HeadingPlugin } from '@sewellstephens/plate-heading';
-import { LinkPlugin } from '@sewellstephens/plate-link/react';
-import { ListPlugin } from '@sewellstephens/plate-list';
-import { ImagePlugin } from '@sewellstephens/plate-media';
-import { TablePlugin } from '@sewellstephens/plate-table';
+import { AlignPlugin } from '@sewell_stephens/late-alignment';
+import { BlockquotePlugin } from '@sewell_stephens/late-block-quote';
+import { CaptionPlugin } from '@sewell_stephens/late-caption/react';
+import { htmlStringToDOMNode } from '@sewell_stephens/late-common';
+import { ParagraphPlugin } from '@sewell_stephens/late-common';
+import { toLatePlugin } from '@sewell_stephens/late-core/react';
+import { HeadingPlugin } from '@sewell_stephens/late-heading';
+import { LinkPlugin } from '@sewell_stephens/late-link/react';
+import { ListPlugin } from '@sewell_stephens/late-list';
+import { ImagePlugin } from '@sewell_stephens/late-media';
+import { TablePlugin } from '@sewell_stephens/late-table';
 
 import { serializeHtml } from '../../react/serializeHtml';
 import { createLateUIEditor } from '../create-plate-ui-editor';

@@ -2,20 +2,20 @@
 
 import React from 'react';
 
-import { cn, withRef } from '@sewellstephens/cn';
+import { cn, withRef } from '@sewell_stephens/cn';
 import {
   PortalBody,
   useComposedRef,
   useEditorId,
   useEventEditorSelectors,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import {
   type FloatingToolbarState,
   flip,
   offset,
   useFloatingToolbar,
   useFloatingToolbarState,
-} from '@sewellstephens/plate-floating';
+} from '@sewell_stephens/late-floating';
 
 import { Toolbar } from './toolbar';
 

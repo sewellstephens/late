@@ -3,7 +3,7 @@ import {
   type TEditor,
   type WrapNodesOptions,
   wrapNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { TLinkElement } from '../types';
 

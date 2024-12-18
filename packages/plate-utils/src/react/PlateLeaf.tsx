@@ -1,13 +1,13 @@
 import React from 'react';
 
-import type { TText } from '@sewellstephens/slate';
+import type { TText } from '@sewell_stephens/slate';
 
 import {
   type AnyLatePlugin,
   type LateRenderLeafProps,
   omitPluginContext,
-} from '@sewellstephens/plate-core/react';
-import { Text, type TextProps, useComposedRef } from '@sewellstephens/react-utils';
+} from '@sewell_stephens/late-core/react';
+import { Text, type TextProps, useComposedRef } from '@sewell_stephens/react-utils';
 import { clsx } from 'clsx';
 
 export type LateLeafProps<

@@ -2,11 +2,11 @@ import React from 'react';
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import { Tweet } from 'react-tweet';
 
-import { cn, withRef } from '@sewellstephens/cn';
-import { LateElement, withHOC } from '@sewellstephens/plate-common/react';
-import { parseTwitterUrl, parseVideoUrl } from '@sewellstephens/plate-media';
-import { MediaEmbedPlugin, useMediaState } from '@sewellstephens/plate-media/react';
-import { ResizableProvider, useResizableStore } from '@sewellstephens/plate-resizable';
+import { cn, withRef } from '@sewell_stephens/cn';
+import { LateElement, withHOC } from '@sewell_stephens/late-common/react';
+import { parseTwitterUrl, parseVideoUrl } from '@sewell_stephens/late-media';
+import { MediaEmbedPlugin, useMediaState } from '@sewell_stephens/late-media/react';
+import { ResizableProvider, useResizableStore } from '@sewell_stephens/late-resizable';
 
 import { Caption, CaptionTextarea } from './caption';
 import { MediaPopover } from './media-popover';

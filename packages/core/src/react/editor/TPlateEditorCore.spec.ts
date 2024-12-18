@@ -1,4 +1,4 @@
-import type { Value } from '@sewellstephens/slate';
+import type { Value } from '@sewell_stephens/slate';
 
 import {
   DebugPlugin,
@@ -6,9 +6,9 @@ import {
   createSlateEditor,
   createSlatePlugin,
   someHtmlElement,
-} from '@sewellstephens/plate-core';
-import { createLateEditor, withLate } from '@sewellstephens/plate-core/react';
-import { LinkPlugin } from '@sewellstephens/plate-link/react';
+} from '@sewell_stephens/late-core';
+import { createLateEditor, withLate } from '@sewell_stephens/late-core/react';
+import { LinkPlugin } from '@sewell_stephens/late-link/react';
 
 describe('TLateEditor core package', () => {
   const MyCustomPlugin = createSlatePlugin({

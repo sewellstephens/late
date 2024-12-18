@@ -1,4 +1,4 @@
-import type { KeyboardHandler } from '@sewellstephens/plate-common/react';
+import type { KeyboardHandler } from '@sewell_stephens/late-common/react';
 
 import {
   deleteBackward,
@@ -6,7 +6,7 @@ import {
   getPointBefore,
   insertText,
   isHotkey,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Range } from 'slate';
 
 import type { AutoformatConfig } from '../lib/AutoformatPlugin';

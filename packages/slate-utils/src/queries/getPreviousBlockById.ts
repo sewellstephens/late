@@ -9,7 +9,7 @@ import {
   getPreviousNode,
   isBlock,
   queryNode,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 /**
  * Find the block before a block by id. If not found, find the first block by id

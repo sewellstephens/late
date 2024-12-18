@@ -2,8 +2,8 @@ import {
   type ExtendConfig,
   type OmitFirst,
   bindFirst,
-} from '@sewellstephens/plate-common';
-import { Key, toLatePlugin } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common';
+import { Key, toLatePlugin } from '@sewell_stephens/late-common/react';
 
 import {
   type CommentsConfig as BaseCommentsConfig,

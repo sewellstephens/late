@@ -3,8 +3,8 @@ import {
   type TNodeEntry,
   unsetNodes,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
-import { IndentPlugin } from '@sewellstephens/plate-indent';
+} from '@sewell_stephens/late-common';
+import { IndentPlugin } from '@sewell_stephens/late-indent';
 
 import { INDENT_LIST_KEYS, IndentListPlugin } from '../IndentListPlugin';
 import { ListStyleType } from '../types';

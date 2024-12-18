@@ -1,4 +1,4 @@
-import type { Value } from '@sewellstephens/plate-common';
+import type { Value } from '@sewell_stephens/late-common';
 
 import type { Upload } from '../upload/types';
 

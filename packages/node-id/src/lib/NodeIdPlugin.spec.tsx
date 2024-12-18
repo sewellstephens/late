@@ -6,10 +6,10 @@ import {
   insertNodes,
   mergeNodes,
   splitNodes,
-} from '@sewellstephens/plate-common';
-import { ParagraphPlugin } from '@sewellstephens/plate-common';
-import { BulletedListPlugin, ListItemPlugin } from '@sewellstephens/plate-list';
-import { jsx } from '@sewellstephens/plate-test-utils';
+} from '@sewell_stephens/late-common';
+import { ParagraphPlugin } from '@sewell_stephens/late-common';
+import { BulletedListPlugin, ListItemPlugin } from '@sewell_stephens/late-list';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { NodeIdPlugin } from './NodeIdPlugin';
 

@@ -1,7 +1,7 @@
 import {
   createPrimitiveComponent,
   useEditorPlugin,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import { CommentsPlugin } from '../CommentsPlugin';
 import { useComment } from '../stores/comment/CommentProvider';

@@ -1,12 +1,12 @@
-import type { KeyboardHandler } from '@sewellstephens/plate-common/react';
+import type { KeyboardHandler } from '@sewell_stephens/late-common/react';
 
 import {
   isCollapsed,
   select,
   someNode,
   unhangRange,
-} from '@sewellstephens/plate-common';
-import { Hotkeys } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common';
+import { Hotkeys } from '@sewell_stephens/late-common/react';
 import { Range } from 'slate';
 
 import { type ListConfig, ListItemPlugin } from '../lib';

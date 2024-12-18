@@ -2,16 +2,16 @@
 
 import React, { useState } from 'react';
 
-import type { LateRenderElementProps } from '@sewellstephens/plate-common/react';
+import type { LateRenderElementProps } from '@sewell_stephens/late-common/react';
 
-import { BasicElementsPlugin } from '@sewellstephens/plate-basic-elements/react';
-import { BasicMarksPlugin } from '@sewellstephens/plate-basic-marks/react';
-import { ExitBreakPlugin } from '@sewellstephens/plate-break/react';
+import { BasicElementsPlugin } from '@sewell_stephens/late-basic-elements/react';
+import { BasicMarksPlugin } from '@sewell_stephens/late-basic-marks/react';
+import { ExitBreakPlugin } from '@sewell_stephens/late-break/react';
 import {
   Late,
   createLatePlugin,
   useLateEditor,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';

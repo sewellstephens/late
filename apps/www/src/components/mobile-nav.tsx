@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import Link, { type LinkProps } from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 

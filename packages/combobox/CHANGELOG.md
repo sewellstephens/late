@@ -1,11 +1,11 @@
-# @sewellstephens/plate-combobox
+# @sewell_stephens/late-combobox
 
 ## 37.0.0
 
 ### Major Changes
 
 - [#3420](https://github.com/sewellstephens/late/pull/3420) by [@zbeyens](https://github.com/zbeyens) –
-  - Split build into `@sewellstephens/plate-combobox` and `@sewellstephens/plate-combobox/react`.
+  - Split build into `@sewell_stephens/late-combobox` and `@sewell_stephens/late-combobox/react`.
 
 ## 36.0.0
 
@@ -52,13 +52,13 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewell_stephens/late-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.5.2
 
 ### Patch Changes
 
-- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewell_stephens/late-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -236,7 +236,7 @@
 
 - [#1677](https://github.com/sewellstephens/late/pull/1677) by [@zbeyens](https://github.com/zbeyens) –
   - deps:
-    - replaced `@sewellstephens/plate-ui-popper` by `@sewellstephens/plate-floating`
+    - replaced `@sewell_stephens/late-ui-popper` by `@sewell_stephens/late-floating`
   - `comboboxStore`:
     - removed `popperContainer`, use `floatingOptions` instead
     - removed `popperOptions`, use `floatingOptions` instead
@@ -301,7 +301,7 @@
 
 - [#1500](https://github.com/sewellstephens/late/pull/1500) by [@zbeyens](https://github.com/zbeyens) – updated deps:
   ```bash
-  "@sewellstephens/zustood": "^1.1.1",
+  "@sewell_stephens/zustood": "^1.1.1",
   "downshift": "^6.1.7",
   "zustand": "^3.7.2"
   ```
@@ -362,7 +362,7 @@
 ### Minor Changes
 
 - [#1315](https://github.com/sewellstephens/late/pull/1315) by [@zbeyens](https://github.com/zbeyens) –
-  - move UI to `@sewellstephens/plate-ui-combobox`
+  - move UI to `@sewell_stephens/late-ui-combobox`
   - `comboboxActions` alias of `comboboxStore.set`
   - `useComboboxSelectors` alias of `comboboxStore.use`
   - `comboboxSelectors` alias of `comboboxStore.get`
@@ -421,29 +421,29 @@
 ### Patch Changes
 
 - Updated dependencies [[`a6bf8c5e`](https://github.com/sewellstephens/late/commit/a6bf8c5e6897c6ab443e0ac3d69a30befeaddadf)]:
-  - @sewellstephens/plate-common@5.3.5
-  - @sewellstephens/plate-popper@5.3.5
-  - @sewellstephens/plate-styled-components@5.3.5
+  - @sewell_stephens/late-common@5.3.5
+  - @sewell_stephens/late-popper@5.3.5
+  - @sewell_stephens/late-styled-components@5.3.5
 
 ## 5.3.1
 
 ### Patch Changes
 
 - Updated dependencies [[`8aec270f`](https://github.com/sewellstephens/late/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118)]:
-  - @sewellstephens/plate-core@5.3.1
-  - @sewellstephens/plate-common@5.3.1
-  - @sewellstephens/plate-popper@5.3.1
-  - @sewellstephens/plate-styled-components@5.3.1
+  - @sewell_stephens/late-core@5.3.1
+  - @sewell_stephens/late-common@5.3.1
+  - @sewell_stephens/late-popper@5.3.1
+  - @sewell_stephens/late-styled-components@5.3.1
 
 ## 5.3.0
 
 ### Patch Changes
 
 - Updated dependencies [[`7ee21356`](https://github.com/sewellstephens/late/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e), [`1021397d`](https://github.com/sewellstephens/late/commit/1021397df42ee13006892372bd329446f362a930)]:
-  - @sewellstephens/plate-core@5.3.0
-  - @sewellstephens/plate-styled-components@5.3.0
-  - @sewellstephens/plate-common@5.3.0
-  - @sewellstephens/plate-popper@5.3.0
+  - @sewell_stephens/late-core@5.3.0
+  - @sewell_stephens/late-styled-components@5.3.0
+  - @sewell_stephens/late-common@5.3.0
+  - @sewell_stephens/late-popper@5.3.0
 
 ## 5.2.3
 
@@ -478,16 +478,16 @@
 ### Patch Changes
 
 - Updated dependencies [[`503956fd`](https://github.com/sewellstephens/late/commit/503956fd9f71253249b3ad699b81c1c465351b0a)]:
-  - @sewellstephens/plate-common@5.1.0
-  - @sewellstephens/plate-popper@5.1.0
-  - @sewellstephens/plate-styled-components@5.1.0
+  - @sewell_stephens/late-common@5.1.0
+  - @sewell_stephens/late-popper@5.1.0
+  - @sewell_stephens/late-styled-components@5.1.0
 
 ## 5.0.1
 
 ### Patch Changes
 
 - Updated dependencies [[`53d13cbc`](https://github.com/sewellstephens/late/commit/53d13cbcfc7af26040cb86182a7ea0ba9ae5abec), [`53d13cbc`](https://github.com/sewellstephens/late/commit/53d13cbcfc7af26040cb86182a7ea0ba9ae5abec)]:
-  - @sewellstephens/plate-popper@5.0.1
+  - @sewell_stephens/late-popper@5.0.1
 
 ## 5.0.0
 
@@ -498,4 +498,4 @@
 ### Patch Changes
 
 - Updated dependencies [[`9a091446`](https://github.com/sewellstephens/late/commit/9a091446ae393c23f64f0b011e431fb2d002aaf8)]:
-  - @sewellstephens/plate-popper@5.0.0
+  - @sewell_stephens/late-popper@5.0.0

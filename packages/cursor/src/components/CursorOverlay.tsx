@@ -1,8 +1,8 @@
 import React from 'react';
 
-import type { ClassNames, UnknownObject } from '@sewellstephens/plate-common';
+import type { ClassNames, UnknownObject } from '@sewell_stephens/late-common';
 
-import { useLateSelectors } from '@sewellstephens/plate-common/react';
+import { useLateSelectors } from '@sewell_stephens/late-common/react';
 
 import type {
   CursorData,

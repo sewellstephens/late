@@ -1,13 +1,13 @@
 'use client';
 
 import React from 'react';
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import {
   useCommentDeleteButton,
   useCommentDeleteButtonState,
   useCommentEditButton,
   useCommentEditButtonState,
-} from '@sewellstephens/plate-comments';
+} from '@sewell_stephens/late-comments';
 
 import { Icons } from '@/components/icons';
 

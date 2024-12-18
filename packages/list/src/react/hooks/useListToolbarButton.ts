@@ -1,5 +1,5 @@
-import { someNode } from '@sewellstephens/plate-common';
-import { useEditorRef, useEditorSelector } from '@sewellstephens/plate-common/react';
+import { someNode } from '@sewell_stephens/late-common';
+import { useEditorRef, useEditorSelector } from '@sewell_stephens/late-common/react';
 
 import { BulletedListPlugin } from '../../lib/index';
 import { ListPlugin } from '../ListPlugin';

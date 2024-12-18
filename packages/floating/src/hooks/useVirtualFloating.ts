@@ -2,7 +2,7 @@ import React from 'react';
 
 import type { ClientRectObject } from '@floating-ui/core';
 
-import { useIsomorphicLayoutEffect } from '@sewellstephens/plate-common/react';
+import { useIsomorphicLayoutEffect } from '@sewell_stephens/late-common/react';
 
 import { createVirtualElement } from '../createVirtualElement';
 import {

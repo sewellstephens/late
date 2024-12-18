@@ -13,7 +13,7 @@ import {
   moveNodes,
   removeNodes,
   setElements,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Path, type PathRef } from 'slate';
 
 import {

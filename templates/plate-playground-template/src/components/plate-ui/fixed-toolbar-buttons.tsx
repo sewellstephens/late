@@ -5,11 +5,11 @@ import {
   MARK_ITALIC,
   MARK_STRIKETHROUGH,
   MARK_UNDERLINE,
-} from '@sewellstephens/plate-basic-marks';
-import { useEditorReadOnly } from '@sewellstephens/plate-common';
-import { MARK_BG_COLOR, MARK_COLOR } from '@sewellstephens/plate-font';
-import { ListStyleType } from '@sewellstephens/plate-indent-list';
-import { ELEMENT_IMAGE } from '@sewellstephens/plate-media';
+} from '@sewell_stephens/late-basic-marks';
+import { useEditorReadOnly } from '@sewell_stephens/late-common';
+import { MARK_BG_COLOR, MARK_COLOR } from '@sewell_stephens/late-font';
+import { ListStyleType } from '@sewell_stephens/late-indent-list';
+import { ELEMENT_IMAGE } from '@sewell_stephens/late-media';
 
 import { Icons, iconVariants } from '@/components/icons';
 import { AlignDropdownMenu } from '@/components/plate-ui/align-dropdown-menu';

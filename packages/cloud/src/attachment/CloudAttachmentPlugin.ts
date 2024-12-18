@@ -1,5 +1,5 @@
-import { insertNode } from '@sewellstephens/plate-common';
-import { createLatePlugin } from '@sewellstephens/plate-common/react';
+import { insertNode } from '@sewell_stephens/late-common';
+import { createLatePlugin } from '@sewell_stephens/late-common/react';
 import Defer from 'p-defer';
 
 import type { UploadError, UploadSuccess } from '../upload';

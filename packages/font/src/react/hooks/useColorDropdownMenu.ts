@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { getMark, removeMark, select, setMarks } from '@sewellstephens/plate-common';
+import { getMark, removeMark, select, setMarks } from '@sewell_stephens/late-common';
 import {
   focusEditor,
   useEditorRef,
   useEditorSelector,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 export const useColorDropdownMenuState = ({
   closeOnSelect = true,

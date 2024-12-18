@@ -1,5 +1,5 @@
-import { useEditorRef, useEditorSelector } from '@sewellstephens/plate-core/react';
-import { isMarkActive } from '@sewellstephens/slate-utils';
+import { useEditorRef, useEditorSelector } from '@sewell_stephens/late-core/react';
+import { isMarkActive } from '@sewell_stephens/slate-utils';
 
 export const useMarkToolbarButtonState = ({
   clear,

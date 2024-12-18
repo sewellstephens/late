@@ -6,7 +6,7 @@ import * as React from 'react';
 import type { NavItemWithChildren, SidebarNavItem } from '@/types/nav';
 import type { DialogProps } from '@radix-ui/react-alert-dialog';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import { Circle, File, Laptop, Moon, SunMedium } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useTheme } from 'next-themes';

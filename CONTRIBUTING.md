@@ -37,7 +37,7 @@ packages
 | `apps/www/src/app`        | The Next.js application for the website. |
 | `apps/www/src/components` | The React components for the website.    |
 | `apps/www/src/registry`   | The registry for the components.         |
-| `packages/core`           | The `@sewellstephens/plate-core` package.       |
+| `packages/core`           | The `@sewell_stephens/late-core` package.       |
 
 ## Development
 
@@ -71,10 +71,10 @@ You can use the `turbo --filter=[WORKSPACE]` command to start the development pr
 turbo --filter=www dev
 ```
 
-2. To build the `@sewellstephens/plate-core` package:
+2. To build the `@sewell_stephens/late-core` package:
 
 ```
-turbo --filter=@sewellstephens/plate-core build
+turbo --filter=@sewell_stephens/late-core build
 ```
 
 ## Documentation
@@ -111,7 +111,7 @@ When adding or modifying components, please ensure that you update the documenta
 
 ## CLI
 
-The `@sewellstephens/plate-ui` package is a CLI for adding components to your project. You can find the documentation for the CLI [here](https://sewellstephens.github.io/late/docs/components/cli).
+The `@sewell_stephens/late-ui` package is a CLI for adding components to your project. You can find the documentation for the CLI [here](https://sewellstephens.github.io/late/docs/components/cli).
 
 Any changes to the CLI should be made in the `packages/plate-ui` directory. If you can, it would be great if you could add tests for your changes.
 

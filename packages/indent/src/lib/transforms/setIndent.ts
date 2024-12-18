@@ -8,7 +8,7 @@ import {
   setElements,
   unsetNodes,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { IndentPlugin } from '../IndentPlugin';
 

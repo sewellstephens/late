@@ -5,7 +5,7 @@ import {
   someNode,
   withoutNormalizing,
   wrapNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { CodeBlockPlugin, CodeLinePlugin } from '../CodeBlockPlugin';
 import { unwrapCodeBlock } from './unwrapCodeBlock';

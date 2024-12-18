@@ -1,8 +1,8 @@
 import type { ClientRectObject } from '@floating-ui/core';
-import type { TEditor } from '@sewellstephens/plate-common';
+import type { TEditor } from '@sewell_stephens/late-common';
 import type { Range } from 'slate';
 
-import { toDOMRange } from '@sewellstephens/plate-common/react';
+import { toDOMRange } from '@sewell_stephens/late-common/react';
 
 import { getDefaultBoundingClientRect } from '../createVirtualElement';
 

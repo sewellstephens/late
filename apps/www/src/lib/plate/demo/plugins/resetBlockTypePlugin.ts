@@ -1,17 +1,17 @@
-import { BlockquotePlugin } from '@sewellstephens/plate-block-quote/react';
+import { BlockquotePlugin } from '@sewell_stephens/late-block-quote/react';
 import {
   CodeBlockPlugin,
   isCodeBlockEmpty,
   isSelectionAtCodeBlockStart,
   unwrapCodeBlock,
-} from '@sewellstephens/plate-code-block';
+} from '@sewell_stephens/late-code-block';
 import {
   ParagraphPlugin,
   isBlockAboveEmpty,
   isSelectionAtBlockStart,
-} from '@sewellstephens/plate-common';
-import { TodoListPlugin } from '@sewellstephens/plate-list/react';
-import { ResetNodePlugin } from '@sewellstephens/plate-reset-node';
+} from '@sewell_stephens/late-common';
+import { TodoListPlugin } from '@sewell_stephens/late-list/react';
+import { ResetNodePlugin } from '@sewell_stephens/late-reset-node';
 
 const resetBlockTypesCommonRule = {
   defaultType: ParagraphPlugin.key,

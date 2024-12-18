@@ -1,11 +1,11 @@
-import { useEditorRef } from '@sewellstephens/plate-core/react';
+import { useEditorRef } from '@sewell_stephens/late-core/react';
 import {
   type QueryNodeOptions,
   isCollapsed,
   isElementEmpty,
   queryNode,
-} from '@sewellstephens/slate';
-import { findNodePath } from '@sewellstephens/slate-react';
+} from '@sewell_stephens/slate';
+import { findNodePath } from '@sewell_stephens/slate-react';
 import { useFocused, useSelected } from 'slate-react';
 
 import type { LateElementProps } from './LateElement';

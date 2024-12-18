@@ -4,7 +4,7 @@
  */
 
 /* eslint-disable no-restricted-syntax */
-import type { TText } from '@sewellstephens/plate-common';
+import type { TText } from '@sewell_stephens/late-common';
 
 // Get object that will set the properties of before
 // to equal the properties of node, in terms of the

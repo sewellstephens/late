@@ -2,7 +2,7 @@ import {
   type TElement,
   bindFirst,
   createSlatePlugin,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { insertDate } from './transforms';
 import { withDate } from './withDate';

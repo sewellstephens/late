@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
-import { BoldPlugin } from '@sewellstephens/plate-basic-marks/react';
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { BoldPlugin } from '@sewell_stephens/late-basic-marks/react';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { createLateTestEditor } from '../__tests__/createLateTestEditor';
 

@@ -6,7 +6,7 @@ import {
   type PluginConfig,
   type UnknownObject,
   createTSlatePlugin,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { WithYjsOptions } from './withTYjs';
 

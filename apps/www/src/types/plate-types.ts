@@ -1,51 +1,51 @@
 import type React from 'react';
 
 import type { usePlaygroundEditor } from '@/registry/default/example/playground-demo';
-import type { BlockquotePlugin } from '@sewellstephens/plate-block-quote/react';
+import type { BlockquotePlugin } from '@sewell_stephens/late-block-quote/react';
 import type {
   CodeBlockPlugin,
   CodeLinePlugin,
-} from '@sewellstephens/plate-code-block';
-import type { TCommentText } from '@sewellstephens/plate-comments';
+} from '@sewell_stephens/late-code-block';
+import type { TCommentText } from '@sewell_stephens/late-comments';
 import type {
   ElementOf,
   ParagraphPlugin,
   TElement,
   TText,
-} from '@sewellstephens/plate-common';
-import type { TExcalidrawElement } from '@sewellstephens/plate-excalidraw';
-import type { ExcalidrawPlugin } from '@sewellstephens/plate-excalidraw/react';
-import type { HEADING_KEYS } from '@sewellstephens/plate-heading';
-import type { HorizontalRulePlugin } from '@sewellstephens/plate-horizontal-rule/react';
-import type { TLinkElement } from '@sewellstephens/plate-link';
-import type { LinkPlugin } from '@sewellstephens/plate-link/react';
-import type { TTodoListItemElement } from '@sewellstephens/plate-list';
+} from '@sewell_stephens/late-common';
+import type { TExcalidrawElement } from '@sewell_stephens/late-excalidraw';
+import type { ExcalidrawPlugin } from '@sewell_stephens/late-excalidraw/react';
+import type { HEADING_KEYS } from '@sewell_stephens/late-heading';
+import type { HorizontalRulePlugin } from '@sewell_stephens/late-horizontal-rule/react';
+import type { TLinkElement } from '@sewell_stephens/late-link';
+import type { LinkPlugin } from '@sewell_stephens/late-link/react';
+import type { TTodoListItemElement } from '@sewell_stephens/late-list';
 import type {
   BulletedListPlugin,
   ListItemPlugin,
   NumberedListPlugin,
   TodoListPlugin,
-} from '@sewellstephens/plate-list/react';
-import type { TImageElement, TMediaEmbedElement } from '@sewellstephens/plate-media';
-import type { ImagePlugin, MediaEmbedPlugin } from '@sewellstephens/plate-media/react';
+} from '@sewell_stephens/late-list/react';
+import type { TImageElement, TMediaEmbedElement } from '@sewell_stephens/late-media';
+import type { ImagePlugin, MediaEmbedPlugin } from '@sewell_stephens/late-media/react';
 import type {
   TMentionElement,
   TMentionInputElement,
-} from '@sewellstephens/plate-mention';
+} from '@sewell_stephens/late-mention';
 import type {
   MentionInputPlugin,
   MentionPlugin,
-} from '@sewellstephens/plate-mention/react';
-import type { TTableElement } from '@sewellstephens/plate-table';
+} from '@sewell_stephens/late-mention/react';
+import type { TTableElement } from '@sewell_stephens/late-table';
 import type {
   TableCellPlugin,
   TablePlugin,
   TableRowPlugin,
-} from '@sewellstephens/plate-table/react';
-import type { TToggleElement } from '@sewellstephens/plate-toggle';
-import type { TogglePlugin } from '@sewellstephens/plate-toggle/react';
+} from '@sewell_stephens/late-table/react';
+import type { TToggleElement } from '@sewell_stephens/late-toggle';
+import type { TogglePlugin } from '@sewell_stephens/late-toggle/react';
 
-import { useEditorRef } from '@sewellstephens/plate-common/react';
+import { useEditorRef } from '@sewell_stephens/late-common/react';
 
 /** Text */
 

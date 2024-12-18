@@ -6,7 +6,7 @@ import {
   type TNodeEntry,
   getNodeEntry,
   getPreviousPath,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 export const getCellInPreviousTableRow = (
   editor: TEditor,

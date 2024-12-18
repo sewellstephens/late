@@ -1,7 +1,7 @@
 import type { Range } from 'slate';
 
-import { type SlateEditor, getNodesRange, select } from '@sewellstephens/plate-common';
-import { focusEditor } from '@sewellstephens/plate-common/react';
+import { type SlateEditor, getNodesRange, select } from '@sewell_stephens/late-common';
+import { focusEditor } from '@sewell_stephens/late-common/react';
 
 import { getBlocksWithId } from '../queries/getBlocksWithId';
 import { selectBlockById } from './selectBlockById';

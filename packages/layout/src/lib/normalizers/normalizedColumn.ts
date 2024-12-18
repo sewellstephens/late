@@ -5,7 +5,7 @@ import {
   createPathRef,
   getLastChildPath,
   isElement,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { TColumnGroupElement } from '../types';
 

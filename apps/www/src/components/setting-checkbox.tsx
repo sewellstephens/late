@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import Link from 'next/link';
 
 import { type SettingPlugin, customizerItems } from '@/config/customizer-items';

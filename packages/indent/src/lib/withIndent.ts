@@ -1,9 +1,9 @@
-import { getKeyByType } from '@sewellstephens/plate-common';
+import { getKeyByType } from '@sewell_stephens/late-common';
 import {
   type ExtendEditor,
   setElements,
   unsetNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { IndentConfig, TIndentElement } from './IndentPlugin';
 

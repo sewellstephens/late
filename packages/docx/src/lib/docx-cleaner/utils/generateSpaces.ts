@@ -1,4 +1,4 @@
-import { SPACE, TAB } from '@sewellstephens/plate-common';
+import { SPACE, TAB } from '@sewell_stephens/late-common';
 
 export const generateSpaces = (count: number): string =>
   Array.from({ length: count }, () => SPACE).join('');

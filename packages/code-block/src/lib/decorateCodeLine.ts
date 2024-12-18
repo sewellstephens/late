@@ -1,7 +1,7 @@
-import type { Decorate } from '@sewellstephens/plate-common';
+import type { Decorate } from '@sewell_stephens/late-common';
 import type { Range } from 'slate';
 
-import { getNodeString, getParentNode } from '@sewellstephens/plate-common';
+import { getNodeString, getParentNode } from '@sewell_stephens/late-common';
 
 import type { TCodeBlockElement } from './types';
 

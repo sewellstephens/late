@@ -1,4 +1,4 @@
-import { BoldPlugin } from '@sewellstephens/plate-basic-marks';
+import { BoldPlugin } from '@sewell_stephens/late-basic-marks';
 
 import { createLateEditor } from '../../../../react/editor/withLate';
 import { type HtmlDeserializer, createSlatePlugin } from '../../../plugin';

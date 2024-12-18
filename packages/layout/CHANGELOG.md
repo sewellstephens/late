@@ -1,4 +1,4 @@
-# @sewellstephens/plate-layout
+# @sewell_stephens/late-layout
 
 ## 37.0.0
 

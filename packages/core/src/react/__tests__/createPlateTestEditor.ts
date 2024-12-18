@@ -1,4 +1,4 @@
-import type { Value } from '@sewellstephens/slate';
+import type { Value } from '@sewell_stephens/slate';
 import type { RenderEditorReturnTuple } from 'slate-test-utils/dist/esm/buildTestHarness';
 
 import { buildTestHarness } from 'slate-test-utils';

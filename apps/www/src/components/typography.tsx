@@ -4,7 +4,7 @@ import type { Event } from '@/lib/events';
 import type { Style } from '@/registry/styles';
 import type { NpmCommands } from '@/types/unist';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 
 import { CopyButton, CopyNpmCommandButton } from './copy-button';
 import { StyleWrapper } from './style-wrapper';

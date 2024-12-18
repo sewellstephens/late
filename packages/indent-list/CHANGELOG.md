@@ -1,4 +1,4 @@
-# @sewellstephens/plate-indent-list
+# @sewell_stephens/late-indent-list
 
 ## 37.0.0
 
@@ -98,13 +98,13 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewell_stephens/late-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.5.2
 
 ### Patch Changes
 
-- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewell_stephens/late-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -451,4 +451,4 @@
 
 ### Minor Changes
 
-- [#1190](https://github.com/sewellstephens/late/pull/1190) by [@zbeyens](https://github.com/zbeyens) – new package: `@sewellstephens/plate-indent-list`
+- [#1190](https://github.com/sewellstephens/late/pull/1190) by [@zbeyens](https://github.com/zbeyens) – new package: `@sewell_stephens/late-indent-list`

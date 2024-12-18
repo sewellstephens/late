@@ -1,4 +1,4 @@
-# @sewellstephens/plate-comments
+# @sewell_stephens/late-comments
 
 ## 37.0.0
 
@@ -43,13 +43,13 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewell_stephens/late-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.5.2
 
 ### Patch Changes
 
-- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewell_stephens/late-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -85,7 +85,7 @@
 
 - [#2763](https://github.com/sewellstephens/late/pull/2763) by [@12joan](https://github.com/12joan) –
   - Migrate store to jotai@2
-  - Revert the breaking changes to `@sewellstephens/plate-comments` made in 26.0.0
+  - Revert the breaking changes to `@sewell_stephens/late-comments` made in 26.0.0
 
 ## 26.0.0
 

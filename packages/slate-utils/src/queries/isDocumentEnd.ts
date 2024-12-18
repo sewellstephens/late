@@ -1,4 +1,4 @@
-import { type TEditor, getEndPoint, isEndPoint } from '@sewellstephens/slate';
+import { type TEditor, getEndPoint, isEndPoint } from '@sewell_stephens/slate';
 import { Path } from 'slate';
 
 export const isDocumentEnd = (editor: TEditor) => {

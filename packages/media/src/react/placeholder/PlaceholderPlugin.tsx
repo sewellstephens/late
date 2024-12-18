@@ -1,5 +1,5 @@
-import { isHotkey } from '@sewellstephens/plate-common';
-import { blurEditor, toLatePlugin } from '@sewellstephens/plate-common/react';
+import { isHotkey } from '@sewell_stephens/late-common';
+import { blurEditor, toLatePlugin } from '@sewell_stephens/late-common/react';
 
 import { PlaceholderPlugin as BasePlaceholderPlugin } from '../../lib/placeholder/PlaceholderPlugin';
 

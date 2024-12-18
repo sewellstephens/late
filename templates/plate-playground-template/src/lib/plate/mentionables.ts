@@ -1,4 +1,4 @@
-import { TComboboxItem } from '@sewellstephens/plate-combobox';
+import { TComboboxItem } from '@sewell_stephens/late-combobox';
 
 export const MENTIONABLES: TComboboxItem[] = [
   { key: '0', text: 'Aayla Secura' },

@@ -1,4 +1,4 @@
-import type { TEditor } from '@sewellstephens/slate';
+import type { TEditor } from '@sewell_stephens/slate';
 import type { DOMNode } from 'slate-react/dist/utils/dom';
 
 import { ReactEditor } from 'slate-react';

@@ -1,4 +1,4 @@
-import { deserializeHtml, htmlStringToDOMNode } from '@sewellstephens/plate-common';
+import { deserializeHtml, htmlStringToDOMNode } from '@sewell_stephens/late-common';
 
 import { serializeHtml } from '../../react/serializeHtml';
 import { createLateUIEditor } from '../create-plate-ui-editor';

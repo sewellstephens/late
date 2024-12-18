@@ -2,7 +2,7 @@ import {
   type ExtendEditor,
   type TElement,
   isSelectionExpanded,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { isPointNextToNode } from './queries';
 

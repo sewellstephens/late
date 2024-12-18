@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
-import { CodeBlockPlugin } from '@sewellstephens/plate-code-block';
-import { jsx } from '@sewellstephens/plate-test-utils';
-import { toggleWrapNodes } from '@sewellstephens/slate-utils';
+import { CodeBlockPlugin } from '@sewell_stephens/late-code-block';
+import { jsx } from '@sewell_stephens/late-test-utils';
+import { toggleWrapNodes } from '@sewell_stephens/slate-utils';
 
 jsx;
 

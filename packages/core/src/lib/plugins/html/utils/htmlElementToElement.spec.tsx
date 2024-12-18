@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 /** @jsx jsx */
 
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { ParagraphPlugin } from '../../../../react';
 import { createLateEditor } from '../../../../react/editor/withLate';

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { setNodes } from '@sewellstephens/plate-common';
+import { setNodes } from '@sewell_stephens/late-common';
 import {
   findNodePath,
   useEditorRef,
   useElement,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import { useReadOnly } from 'slate-react';
 
 import { CodeBlockPlugin, type TCodeBlockElement } from '../../lib';

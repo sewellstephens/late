@@ -2,7 +2,7 @@ import {
   type SlateEditor,
   getEditorPlugin,
   isBlock,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { BlockSelectionPlugin } from '../BlockSelectionPlugin';
 

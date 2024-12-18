@@ -1,6 +1,6 @@
 import type React from 'react';
 
-import type { EmojiCategoryList } from '@sewellstephens/plate-emoji';
+import type { EmojiCategoryList } from '@sewell_stephens/late-emoji';
 
 import {
   AppleIcon,

@@ -6,7 +6,7 @@ import {
   getNodeChildren,
   removeNodes,
   withoutNormalizing,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 /** Remove node children. */
 export const removeNodeChildren = <E extends TEditor>(

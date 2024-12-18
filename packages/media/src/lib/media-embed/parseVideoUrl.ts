@@ -1,4 +1,4 @@
-import { isUrl } from '@sewellstephens/plate-common';
+import { isUrl } from '@sewell_stephens/late-common';
 import videoParser from 'js-video-url-parser';
 
 import type { EmbedUrlData } from '../media';

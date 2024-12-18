@@ -1,10 +1,10 @@
 import React, { type ComponentType, type SVGProps } from 'react';
 
-import { withRef } from '@sewellstephens/cn';
-import { type LateEditor, LateElement } from '@sewellstephens/plate-common/react';
-import { DatePlugin } from '@sewellstephens/plate-date';
-import { HEADING_KEYS } from '@sewellstephens/plate-heading';
-import { ListStyleType, toggleIndentList } from '@sewellstephens/plate-indent-list';
+import { withRef } from '@sewell_stephens/cn';
+import { type LateEditor, LateElement } from '@sewell_stephens/late-common/react';
+import { DatePlugin } from '@sewell_stephens/late-date';
+import { HEADING_KEYS } from '@sewell_stephens/late-heading';
+import { ListStyleType, toggleIndentList } from '@sewell_stephens/late-indent-list';
 
 import { Icons } from '@/components/icons';
 

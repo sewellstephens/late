@@ -5,7 +5,7 @@ import {
   isExpanded,
   removeNodes,
   someNode,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { type TTableElement, TableRowPlugin } from '../../lib';
 import { TablePlugin } from '../TablePlugin';

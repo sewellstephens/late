@@ -6,8 +6,8 @@ import {
   insertElements,
   setNodes,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
-import { getEditorPlugin } from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
+import { getEditorPlugin } from '@sewell_stephens/late-common';
 import { Path } from 'slate';
 
 import type {

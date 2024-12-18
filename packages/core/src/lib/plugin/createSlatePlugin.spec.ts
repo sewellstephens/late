@@ -1,5 +1,5 @@
-import { BasicElementsPlugin } from '@sewellstephens/plate-basic-elements';
-import { LinkPlugin } from '@sewellstephens/plate-link';
+import { BasicElementsPlugin } from '@sewell_stephens/late-basic-elements';
+import { LinkPlugin } from '@sewell_stephens/late-link';
 
 import { createLateEditor } from '../../react';
 import {

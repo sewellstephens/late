@@ -2,7 +2,7 @@ import React from 'react';
 
 import type { Emoji } from '@emoji-mart/data';
 
-import { useEditorRef } from '@sewellstephens/plate-common/react';
+import { useEditorRef } from '@sewell_stephens/late-common/react';
 
 import {
   type AIndexSearch,

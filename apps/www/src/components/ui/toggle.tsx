@@ -1,7 +1,7 @@
 'use client';
 
 import * as TogglePrimitive from '@radix-ui/react-toggle';
-import { cn, withVariants } from '@sewellstephens/cn';
+import { cn, withVariants } from '@sewell_stephens/cn';
 import { cva } from 'class-variance-authority';
 
 export const toggleVariants = cva(

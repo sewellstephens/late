@@ -3,7 +3,7 @@ import {
   type TElement,
   type TNodeEntry,
   getNodeEntry,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Path } from 'slate';
 
 export const getCellInNextTableRow = (

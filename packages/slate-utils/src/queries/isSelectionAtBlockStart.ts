@@ -3,7 +3,7 @@ import {
   type TEditor,
   isExpanded,
   isStartPoint,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 import { getBlockAbove } from './getBlockAbove';
 

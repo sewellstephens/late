@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react';
 import * as Popover from '@radix-ui/react-popover';
-import { cn, withRef } from '@sewellstephens/cn';
+import { cn, withRef } from '@sewell_stephens/cn';
 import {
   comboboxActions,
   ComboboxContentItemProps,
@@ -14,14 +14,14 @@ import {
   useComboboxControls,
   useComboboxItem,
   useComboboxSelectors,
-} from '@sewellstephens/plate-combobox';
+} from '@sewell_stephens/late-combobox';
 import {
   useEditorRef,
   useEditorSelector,
   useEventEditorSelectors,
   useLateSelectors,
-} from '@sewellstephens/plate-common';
-import { createVirtualRef } from '@sewellstephens/plate-floating';
+} from '@sewell_stephens/late-common';
+import { createVirtualRef } from '@sewell_stephens/late-floating';
 
 export const ComboboxItem = withRef<'div', ComboboxContentItemProps>(
   ({ combobox, index, item, onRenderItem, className, ...rest }, ref) => {

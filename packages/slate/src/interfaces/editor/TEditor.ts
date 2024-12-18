@@ -1,4 +1,4 @@
-import type { Modify, UnknownObject } from '@sewellstephens/utils';
+import type { Modify, UnknownObject } from '@sewell_stephens/utils';
 import type { Editor, Path, Range } from 'slate';
 import type { HistoryEditor } from 'slate-history';
 

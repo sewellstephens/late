@@ -1,4 +1,4 @@
-import { createAtomStore } from '@sewellstephens/plate-common/react';
+import { createAtomStore } from '@sewell_stephens/late-common/react';
 
 interface MediaStore {
   showCaption: boolean;

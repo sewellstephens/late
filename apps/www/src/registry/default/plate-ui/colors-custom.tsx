@@ -5,7 +5,7 @@ import React from 'react';
 import {
   useColorsCustom,
   useColorsCustomState,
-} from '@sewellstephens/plate-font/react';
+} from '@sewell_stephens/late-font/react';
 
 import type { TColor } from './color-dropdown-menu';
 

@@ -1,4 +1,4 @@
-import { createSlatePlugin, someHtmlElement } from '@sewellstephens/plate-common';
+import { createSlatePlugin, someHtmlElement } from '@sewell_stephens/late-common';
 
 /** Enables support for bold formatting */
 export const BoldPlugin = createSlatePlugin({

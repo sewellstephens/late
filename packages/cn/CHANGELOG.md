@@ -1,4 +1,4 @@
-# @sewellstephens/cn
+# @sewell_stephens/cn
 
 ## 37.0.0
 

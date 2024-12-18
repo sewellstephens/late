@@ -1,18 +1,18 @@
-import type { ResetNodeConfig } from '@sewellstephens/plate-reset-node';
+import type { ResetNodeConfig } from '@sewell_stephens/late-reset-node';
 
 import {
   ParagraphPlugin,
   createTSlatePlugin,
   isBlockAboveEmpty,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import {
   type ExtendEditor,
   getEditorPlugin,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import {
   SIMULATE_BACKSPACE,
   onKeyDownResetNode,
-} from '@sewellstephens/plate-reset-node/react';
+} from '@sewell_stephens/late-reset-node/react';
 
 import { type ListConfig, ListItemPlugin } from '../lib/ListPlugin';
 import { getListItemEntry } from '../lib/queries/getListItemEntry';

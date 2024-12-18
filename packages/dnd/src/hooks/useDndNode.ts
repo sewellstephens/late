@@ -3,7 +3,7 @@ import { getEmptyImage } from 'react-dnd-html5-backend';
 
 import type { DropTargetMonitor } from 'react-dnd';
 
-import { type LateEditor, useEditorRef } from '@sewellstephens/plate-common/react';
+import { type LateEditor, useEditorRef } from '@sewell_stephens/late-common/react';
 
 import type { DragItemNode, DropLineDirection } from '../types';
 

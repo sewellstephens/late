@@ -1,7 +1,7 @@
 import React from 'react';
-import { withRef } from '@sewellstephens/cn';
-import { LateElement } from '@sewellstephens/plate-common';
-import { useExcalidrawElement } from '@sewellstephens/plate-excalidraw';
+import { withRef } from '@sewell_stephens/cn';
+import { LateElement } from '@sewell_stephens/late-common';
+import { useExcalidrawElement } from '@sewell_stephens/late-excalidraw';
 
 export const ExcalidrawElement = withRef<typeof LateElement>(
   ({ nodeProps, ...props }, ref) => {

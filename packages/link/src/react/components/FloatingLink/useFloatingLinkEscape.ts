@@ -2,7 +2,7 @@ import {
   focusEditor,
   useEditorPlugin,
   useHotkeys,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import { LinkPlugin } from '../../LinkPlugin';
 

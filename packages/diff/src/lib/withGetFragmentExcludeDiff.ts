@@ -1,4 +1,4 @@
-import type { ExtendEditor, TDescendant } from '@sewellstephens/plate-common';
+import type { ExtendEditor, TDescendant } from '@sewell_stephens/late-common';
 
 import cloneDeep from 'lodash/cloneDeep.js';
 

@@ -2,7 +2,7 @@ import {
   type FindNodeOptions,
   type SlateEditor,
   findNode,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { TCommentText } from '../types';
 

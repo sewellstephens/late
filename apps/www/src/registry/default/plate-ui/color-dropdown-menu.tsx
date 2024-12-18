@@ -7,7 +7,7 @@ import type { DropdownMenuProps } from '@radix-ui/react-dropdown-menu';
 import {
   useColorDropdownMenu,
   useColorDropdownMenuState,
-} from '@sewellstephens/plate-font/react';
+} from '@sewell_stephens/late-font/react';
 
 import { DEFAULT_COLORS, DEFAULT_CUSTOM_COLORS } from './color-constants';
 import { ColorPicker } from './color-picker';

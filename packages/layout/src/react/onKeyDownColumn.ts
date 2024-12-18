@@ -1,4 +1,4 @@
-import type { KeyboardHandler } from '@sewellstephens/plate-common/react';
+import type { KeyboardHandler } from '@sewell_stephens/late-common/react';
 
 import {
   getAboveNode,
@@ -6,7 +6,7 @@ import {
   isHotkey,
   isSelectionCoverBlock,
   select,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Path } from 'slate';
 
 import { ColumnPlugin } from './ColumnPlugin';

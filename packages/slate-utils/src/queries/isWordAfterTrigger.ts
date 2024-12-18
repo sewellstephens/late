@@ -5,8 +5,8 @@ import {
   getEditorString,
   getPointBefore,
   getRange,
-} from '@sewellstephens/slate';
-import { escapeRegExp } from '@sewellstephens/utils';
+} from '@sewell_stephens/slate';
+import { escapeRegExp } from '@sewell_stephens/utils';
 
 /**
  * Is the word at the point after a trigger (punctuation character)

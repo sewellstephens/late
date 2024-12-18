@@ -3,7 +3,7 @@ import {
   type TText,
   getNodeProps,
   isText,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 export class InlineNodeCharMap {
   private _charGenerator: Generator<string>;

@@ -5,7 +5,7 @@ import {
   type TElement,
   type TElementEntry,
   getEdgeBlocksAbove,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Path } from 'slate';
 
 import { getCellTypes, getEmptyTableNode } from '../../lib/utils';

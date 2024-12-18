@@ -1,21 +1,24 @@
 {
-  "name": "@sewellstephens/utils",
+  "name": "@sewell_stephens/utils",
   "version": "0.0.1",
   "description": "Udecode utils",
-  "keywords": [
-    "utils"
-  ],
+  "license": "MIT",
   "homepage": "https://sewellstephens.github.io/late",
-  "bugs": {
-    "url": "https://github.com/sewellstephens/late/issues"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/sewellstephens/late.git",
     "directory": "packages/utils"
   },
-  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sewellstephens/late/issues"
+  },
   "sideEffects": false,
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -24,16 +27,10 @@
       "require": "./dist/index.js"
     }
   },
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist/**/*"
-  ],
   "scripts": {
-    "brl": "yarn p:brl",
     "build": "yarn p:build",
     "build:watch": "yarn p:build:watch",
+    "brl": "yarn p:brl",
     "clean": "yarn p:clean",
     "lint": "yarn p:lint",
     "lint:fix": "yarn p:lint:fix",
@@ -41,7 +38,11 @@
     "test:watch": "yarn p:test:watch",
     "typecheck": "yarn p:typecheck"
   },
+  "keywords": [
+    "utils"
+  ],
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "3c69df6d17679bbabc43c4cff3370ae8c70ee466"
 }

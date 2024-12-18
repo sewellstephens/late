@@ -1,4 +1,4 @@
-import type { TDescendant } from '@sewellstephens/plate-common';
+import type { TDescendant } from '@sewell_stephens/late-common';
 
 import type { MdastNode, RemarkPluginOptions } from './types';
 

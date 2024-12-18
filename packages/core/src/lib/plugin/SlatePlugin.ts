@@ -1,5 +1,5 @@
-import type { TDescendant, TNodeEntry, Value } from '@sewellstephens/slate';
-import type { AnyObject } from '@sewellstephens/utils';
+import type { TDescendant, TNodeEntry, Value } from '@sewell_stephens/slate';
+import type { AnyObject } from '@sewell_stephens/utils';
 import type { Range } from 'slate';
 
 import type { SlateEditor } from '../editor';

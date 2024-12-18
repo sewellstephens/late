@@ -1,6 +1,6 @@
-import type { Value } from '@sewellstephens/slate';
+import type { Value } from '@sewell_stephens/slate';
 
-import { createDocumentNode } from '@sewellstephens/slate-utils';
+import { createDocumentNode } from '@sewell_stephens/slate-utils';
 
 const output: Value = [
   {

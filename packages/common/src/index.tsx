@@ -1,9 +1,9 @@
-export * from '@sewellstephens/plate-core';
+export * from '@sewell_stephens/late-core';
 
-export * from '@sewellstephens/plate-utils';
+export * from '@sewell_stephens/late-utils';
 
-export * from '@sewellstephens/slate';
+export * from '@sewell_stephens/slate';
 
-export * from '@sewellstephens/slate-utils';
+export * from '@sewell_stephens/slate-utils';
 
-export * from '@sewellstephens/utils';
+export * from '@sewell_stephens/utils';

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { cn, withRef } from '@sewellstephens/cn';
-import { LateElement } from '@sewellstephens/plate-common/react';
+import { cn, withRef } from '@sewell_stephens/cn';
+import { LateElement } from '@sewell_stephens/late-common/react';
 import {
   useTodoListElement,
   useTodoListElementState,
-} from '@sewellstephens/plate-list/react';
+} from '@sewell_stephens/late-list/react';
 
 import { Checkbox } from './checkbox';
 

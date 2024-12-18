@@ -1,10 +1,10 @@
 /** @jsx jsx */
 
-import type { SlateEditor } from '@sewellstephens/plate-common';
+import type { SlateEditor } from '@sewell_stephens/late-common';
 
-import { ParagraphPlugin } from '@sewellstephens/plate-common';
-import { createLateEditor } from '@sewellstephens/plate-common/react';
-import { createDataTransfer, jsx } from '@sewellstephens/plate-test-utils';
+import { ParagraphPlugin } from '@sewell_stephens/late-common';
+import { createLateEditor } from '@sewell_stephens/late-common/react';
+import { createDataTransfer, jsx } from '@sewell_stephens/late-test-utils';
 
 import { CodeBlockPlugin } from '../react/CodeBlockPlugin';
 

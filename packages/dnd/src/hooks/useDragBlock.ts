@@ -1,4 +1,4 @@
-import type { LateEditor } from '@sewellstephens/plate-common/react';
+import type { LateEditor } from '@sewell_stephens/late-common/react';
 
 import { useDragNode } from './useDragNode';
 

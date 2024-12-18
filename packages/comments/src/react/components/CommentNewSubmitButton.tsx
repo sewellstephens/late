@@ -1,8 +1,8 @@
-import { nanoid } from '@sewellstephens/plate-common';
+import { nanoid } from '@sewell_stephens/late-common';
 import {
   createPrimitiveComponent,
   useEditorPlugin,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import { CommentsPlugin } from '../CommentsPlugin';
 import {

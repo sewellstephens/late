@@ -4,7 +4,7 @@ import {
   getRange,
   isEndPoint,
   isStartPoint,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Path, type Point } from 'slate';
 
 export const isPointNextToNode = (

@@ -1,10 +1,10 @@
-import { CodeBlockPlugin } from '@sewellstephens/plate-code-block/react';
-import { isSelectionAtBlockStart, someNode } from '@sewellstephens/plate-common';
-import { createLatePlugin } from '@sewellstephens/plate-common/react';
-import { IndentListPlugin } from '@sewellstephens/plate-indent-list/react';
-import { ListItemPlugin } from '@sewellstephens/plate-list/react';
-import { TabbablePlugin } from '@sewellstephens/plate-tabbable';
-import { TablePlugin } from '@sewellstephens/plate-table/react';
+import { CodeBlockPlugin } from '@sewell_stephens/late-code-block/react';
+import { isSelectionAtBlockStart, someNode } from '@sewell_stephens/late-common';
+import { createLatePlugin } from '@sewell_stephens/late-common/react';
+import { IndentListPlugin } from '@sewell_stephens/late-indent-list/react';
+import { ListItemPlugin } from '@sewell_stephens/late-list/react';
+import { TabbablePlugin } from '@sewell_stephens/late-tabbable';
+import { TablePlugin } from '@sewell_stephens/late-table/react';
 
 import { TabbableElement } from './TabbableElement';
 

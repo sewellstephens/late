@@ -1,8 +1,8 @@
 /** @jsxRuntime classic */
-import type { TDescendant, Value } from '@sewellstephens/plate-common';
+import type { TDescendant, Value } from '@sewell_stephens/late-common';
 
 /** @jsx jsx */
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 jsx;
 

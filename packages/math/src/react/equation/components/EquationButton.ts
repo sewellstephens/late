@@ -1,4 +1,4 @@
-import { useEditorRef, useElement } from '@sewellstephens/plate-common/react';
+import { useEditorRef, useElement } from '@sewell_stephens/late-common/react';
 
 import type { TEquationElement } from '../../../lib/equation/types';
 

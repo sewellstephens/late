@@ -11,7 +11,7 @@ import {
   setNodes,
   unsetNodes,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Point } from 'slate';
 
 import type { ResetNodePluginOptions } from './types';

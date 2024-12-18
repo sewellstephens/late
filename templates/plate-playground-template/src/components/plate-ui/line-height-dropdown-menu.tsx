@@ -3,7 +3,7 @@ import { DropdownMenuProps } from '@radix-ui/react-dropdown-menu';
 import {
   useLineHeightDropdownMenu,
   useLineHeightDropdownMenuState,
-} from '@sewellstephens/plate-line-height';
+} from '@sewell_stephens/late-line-height';
 
 import { Icons } from '@/components/icons';
 

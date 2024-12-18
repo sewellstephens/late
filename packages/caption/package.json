@@ -1,5 +1,5 @@
 {
-  "name": "@sewellstephens/plate-caption",
+  "name": "@sewell_stephens/late-caption",
   "version": "0.0.1",
   "description": "Primitive components for caption.",
   "keywords": [
@@ -52,10 +52,10 @@
     "react-textarea-autosize": "^8.5.3"
   },
   "devDependencies": {
-    "@sewellstephens/plate-common": "workspace:^"
+    "@sewell_stephens/late-common": "^0.0.1"
   },
   "peerDependencies": {
-    "@sewellstephens/plate-common": ">=37.0.0",
+    "@sewell_stephens/late-common": ">=37.0.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
     "slate": ">=0.103.0",
@@ -65,5 +65,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "3c69df6d17679bbabc43c4cff3370ae8c70ee466"
 }

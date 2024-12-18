@@ -2,13 +2,13 @@
 
 import React from 'react';
 
-import { cn } from '@sewellstephens/cn';
-import { useFormInputProps } from '@sewellstephens/plate-common/react';
+import { cn } from '@sewell_stephens/cn';
+import { useFormInputProps } from '@sewell_stephens/late-common/react';
 import {
   type UseVirtualFloatingOptions,
   flip,
   offset,
-} from '@sewellstephens/plate-floating';
+} from '@sewell_stephens/late-floating';
 import {
   FloatingLinkUrlInput,
   type LinkFloatingToolbarState,
@@ -17,7 +17,7 @@ import {
   useFloatingLinkEditState,
   useFloatingLinkInsert,
   useFloatingLinkInsertState,
-} from '@sewellstephens/plate-link/react';
+} from '@sewell_stephens/late-link/react';
 
 import { Icons } from '@/components/icons';
 

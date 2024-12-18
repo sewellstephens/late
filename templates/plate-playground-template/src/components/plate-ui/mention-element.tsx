@@ -1,11 +1,11 @@
 import React from 'react';
-import { cn, withRef } from '@sewellstephens/cn';
+import { cn, withRef } from '@sewell_stephens/cn';
 import {
   getHandler,
   LateElement,
   useElement,
-} from '@sewellstephens/plate-common/react';
-import { TMentionElement } from '@sewellstephens/plate-mention';
+} from '@sewell_stephens/late-common/react';
+import { TMentionElement } from '@sewell_stephens/late-mention';
 import { useFocused, useSelected } from 'slate-react';
 
 export const MentionElement = withRef<

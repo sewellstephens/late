@@ -1,6 +1,6 @@
 import React from 'react';
 
-import type { TElement } from '@sewellstephens/slate';
+import type { TElement } from '@sewell_stephens/slate';
 
 import { act, render } from '@testing-library/react';
 

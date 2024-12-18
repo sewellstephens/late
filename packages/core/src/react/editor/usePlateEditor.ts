@@ -1,6 +1,6 @@
 import React from 'react';
 
-import type { Value } from '@sewellstephens/slate';
+import type { Value } from '@sewell_stephens/slate';
 
 import type { AnyPluginConfig } from '../../lib';
 

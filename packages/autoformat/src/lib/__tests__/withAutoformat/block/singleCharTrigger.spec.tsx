@@ -5,10 +5,10 @@ import {
   getEditorString,
   insertText,
   wrapNodes,
-} from '@sewellstephens/plate-common';
-import { createSlateEditor } from '@sewellstephens/plate-common';
-import { LinkPlugin } from '@sewellstephens/plate-link';
-import { jsx } from '@sewellstephens/plate-test-utils';
+} from '@sewell_stephens/late-common';
+import { createSlateEditor } from '@sewell_stephens/late-common';
+import { LinkPlugin } from '@sewell_stephens/late-link';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import type { AutoformatPluginOptions } from '../../../types';
 

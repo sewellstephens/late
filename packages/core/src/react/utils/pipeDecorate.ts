@@ -1,5 +1,5 @@
-import type { TNodeEntry } from '@sewellstephens/slate';
-import type { TEditableProps } from '@sewellstephens/slate-react';
+import type { TNodeEntry } from '@sewell_stephens/slate';
+import type { TEditableProps } from '@sewell_stephens/slate-react';
 import type { Range } from 'slate';
 
 import type { LateEditor } from '../editor/LateEditor';

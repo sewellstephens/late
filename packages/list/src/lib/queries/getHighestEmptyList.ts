@@ -1,4 +1,4 @@
-import { type SlateEditor, getAboveNode } from '@sewellstephens/plate-common';
+import { type SlateEditor, getAboveNode } from '@sewell_stephens/late-common';
 import { Path } from 'slate';
 
 import { ListItemPlugin } from '../ListPlugin';

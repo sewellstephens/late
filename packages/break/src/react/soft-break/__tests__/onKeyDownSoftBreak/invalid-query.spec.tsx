@@ -1,12 +1,12 @@
 /** @jsx jsx */
 
-import { CodeBlockPlugin } from '@sewellstephens/plate-code-block';
+import { CodeBlockPlugin } from '@sewell_stephens/late-code-block';
 import {
   createLateEditor,
   getEditorPlugin,
-} from '@sewellstephens/plate-common/react';
-import * as isHotkey from '@sewellstephens/plate-core';
-import { jsx } from '@sewellstephens/plate-test-utils';
+} from '@sewell_stephens/late-common/react';
+import * as isHotkey from '@sewell_stephens/late-core';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { SoftBreakPlugin } from '../../SoftBreakPlugin';
 import { onKeyDownSoftBreak } from '../../onKeyDownSoftBreak';

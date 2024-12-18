@@ -1,5 +1,5 @@
 import React, { CSSProperties } from 'react';
-import { LateElementProps } from '@sewellstephens/plate-common';
+import { LateElementProps } from '@sewell_stephens/late-common';
 import { useFocused, useSelected } from 'slate-react';
 
 const boxStyle: CSSProperties = {

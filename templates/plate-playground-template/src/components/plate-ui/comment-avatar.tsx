@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { useUserById } from '@sewellstephens/plate-comments';
+import { useUserById } from '@sewell_stephens/late-comments';
 
 import {
   Avatar,

@@ -4,7 +4,7 @@ import {
   getAboveNode,
   getEditorString,
   replaceNodeChildren,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { TLinkElement } from '../types';
 import type { UpsertLinkOptions } from './upsertLink';

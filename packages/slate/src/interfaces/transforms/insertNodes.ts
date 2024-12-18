@@ -1,4 +1,4 @@
-import type { Modify } from '@sewellstephens/utils';
+import type { Modify } from '@sewell_stephens/utils';
 
 import { Path, Transforms, removeNodes, withoutNormalizing } from 'slate';
 

@@ -1,4 +1,4 @@
-import { createTEditor } from '@sewellstephens/slate';
+import { createTEditor } from '@sewell_stephens/slate';
 
 import { wrapNodeChildren } from './wrapNodeChildren';
 

@@ -5,7 +5,7 @@ import {
   getEditorString,
   getPointAfter,
   getRange,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 // Starts with whitespace char or nothing
 const AFTER_MATCH_REGEX = /^(?:\s|$)/;

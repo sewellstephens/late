@@ -1,4 +1,4 @@
-import { useEditorPlugin } from '@sewellstephens/plate-common/react';
+import { useEditorPlugin } from '@sewell_stephens/late-common/react';
 
 import { CommentsPlugin } from '../CommentsPlugin';
 import {

@@ -1,4 +1,4 @@
-import type { TDescendant, TElement, TText } from '@sewellstephens/plate-common';
+import type { TDescendant, TElement, TText } from '@sewell_stephens/late-common';
 
 import type { MdastNode, RemarkElementRules } from './types';
 

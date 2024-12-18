@@ -2,8 +2,8 @@
 
 import React from 'react';
 
-import { cn, withRef } from '@sewellstephens/cn';
-import { LateElement } from '@sewellstephens/plate-common/react';
+import { cn, withRef } from '@sewell_stephens/cn';
+import { LateElement } from '@sewell_stephens/late-common/react';
 
 export const BlockquoteElement = withRef<typeof LateElement>(
   ({ children, className, ...props }, ref) => {

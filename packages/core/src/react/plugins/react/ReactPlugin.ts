@@ -1,4 +1,4 @@
-import { focusEditorEdge, isEditorFocused } from '@sewellstephens/slate-react';
+import { focusEditorEdge, isEditorFocused } from '@sewell_stephens/slate-react';
 
 import { createSlatePlugin } from '../../../lib';
 import { withLateReact } from './withLateReact';

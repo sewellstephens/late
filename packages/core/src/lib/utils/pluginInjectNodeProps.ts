@@ -1,5 +1,5 @@
-import { type TElement, type TText, isElement } from '@sewellstephens/slate';
-import { type AnyObject, isDefined } from '@sewellstephens/utils';
+import { type TElement, type TText, isElement } from '@sewell_stephens/slate';
+import { type AnyObject, isDefined } from '@sewell_stephens/utils';
 import { clsx } from 'clsx';
 
 import type { SlateEditor } from '../editor';

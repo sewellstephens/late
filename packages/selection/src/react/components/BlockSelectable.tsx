@@ -6,8 +6,8 @@ import {
   isInline,
   isVoid,
   queryNode,
-} from '@sewellstephens/plate-common';
-import { findNodePath, useEditorPlugin } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common';
+import { findNodePath, useEditorPlugin } from '@sewell_stephens/late-common/react';
 import { Path } from 'slate';
 
 import { BlockSelectionPlugin } from '../BlockSelectionPlugin';

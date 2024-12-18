@@ -1,6 +1,6 @@
 import type React from 'react';
 
-import type { UnknownObject } from '@sewellstephens/plate-common';
+import type { UnknownObject } from '@sewell_stephens/late-common';
 import type { Range } from 'slate';
 
 export type SelectionRect = {

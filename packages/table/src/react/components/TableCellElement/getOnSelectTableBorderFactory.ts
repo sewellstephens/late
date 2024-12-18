@@ -1,6 +1,6 @@
-import type { SlateEditor, TElement } from '@sewellstephens/plate-common';
+import type { SlateEditor, TElement } from '@sewell_stephens/late-common';
 
-import { focusEditor } from '@sewellstephens/plate-common/react';
+import { focusEditor } from '@sewell_stephens/late-common/react';
 
 import {
   type BorderDirection,

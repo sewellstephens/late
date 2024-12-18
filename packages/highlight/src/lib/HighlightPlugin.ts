@@ -1,4 +1,4 @@
-import { createTSlatePlugin } from '@sewellstephens/plate-common';
+import { createTSlatePlugin } from '@sewell_stephens/late-common';
 
 /**
  * Enables support for highlights, useful when reviewing content or highlighting

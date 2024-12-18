@@ -9,7 +9,7 @@ import {
   isElementEmpty,
   removeNodes,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import cloneDeep from 'lodash/cloneDeep.js';
 
 import {

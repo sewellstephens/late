@@ -1,12 +1,12 @@
 import React from 'react';
 
-import type { EmojiCategoryList } from '@sewellstephens/plate-emoji';
+import type { EmojiCategoryList } from '@sewell_stephens/late-emoji';
 import type {
   IEmojiFloatingLibrary,
   UseEmojiPickerType,
-} from '@sewellstephens/plate-emoji/react';
+} from '@sewell_stephens/late-emoji/react';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 
 import { Button } from './button';
 

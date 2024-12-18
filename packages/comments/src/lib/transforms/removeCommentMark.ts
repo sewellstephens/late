@@ -1,4 +1,4 @@
-import { type SlateEditor, withoutNormalizing } from '@sewellstephens/plate-common';
+import { type SlateEditor, withoutNormalizing } from '@sewell_stephens/late-common';
 
 import { CommentsPlugin } from '../CommentsPlugin';
 import { findCommentNode } from '../queries/index';

@@ -1,4 +1,4 @@
-import { type TEditor, isElementEmpty } from '@sewellstephens/slate';
+import { type TEditor, isElementEmpty } from '@sewell_stephens/slate';
 
 /**
  * Whether the editor is empty. An editor is empty if it has only one empty

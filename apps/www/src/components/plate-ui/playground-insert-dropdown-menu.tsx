@@ -4,24 +4,24 @@ import React from 'react';
 
 import type { DropdownMenuProps } from '@radix-ui/react-dropdown-menu';
 
-import { BlockquotePlugin } from '@sewellstephens/plate-block-quote/react';
+import { BlockquotePlugin } from '@sewell_stephens/late-block-quote/react';
 import {
   CodeBlockPlugin,
   insertEmptyCodeBlock,
-} from '@sewellstephens/plate-code-block';
-import { ParagraphPlugin, insertEmptyElement } from '@sewellstephens/plate-common';
-import { focusEditor } from '@sewellstephens/plate-common/react';
-import { ExcalidrawPlugin } from '@sewellstephens/plate-excalidraw/react';
-import { HEADING_KEYS } from '@sewellstephens/plate-heading';
-import { HorizontalRulePlugin } from '@sewellstephens/plate-horizontal-rule/react';
-import { toggleIndentList } from '@sewellstephens/plate-indent-list';
-import { IndentListPlugin } from '@sewellstephens/plate-indent-list/react';
-import { insertColumnGroup } from '@sewellstephens/plate-layout';
-import { ColumnPlugin } from '@sewellstephens/plate-layout/react';
-import { LinkPlugin, triggerFloatingLink } from '@sewellstephens/plate-link/react';
-import { insertMedia } from '@sewellstephens/plate-media';
-import { ImagePlugin, MediaEmbedPlugin } from '@sewellstephens/plate-media/react';
-import { TablePlugin, insertTable } from '@sewellstephens/plate-table/react';
+} from '@sewell_stephens/late-code-block';
+import { ParagraphPlugin, insertEmptyElement } from '@sewell_stephens/late-common';
+import { focusEditor } from '@sewell_stephens/late-common/react';
+import { ExcalidrawPlugin } from '@sewell_stephens/late-excalidraw/react';
+import { HEADING_KEYS } from '@sewell_stephens/late-heading';
+import { HorizontalRulePlugin } from '@sewell_stephens/late-horizontal-rule/react';
+import { toggleIndentList } from '@sewell_stephens/late-indent-list';
+import { IndentListPlugin } from '@sewell_stephens/late-indent-list/react';
+import { insertColumnGroup } from '@sewell_stephens/late-layout';
+import { ColumnPlugin } from '@sewell_stephens/late-layout/react';
+import { LinkPlugin, triggerFloatingLink } from '@sewell_stephens/late-link/react';
+import { insertMedia } from '@sewell_stephens/late-media';
+import { ImagePlugin, MediaEmbedPlugin } from '@sewell_stephens/late-media/react';
+import { TablePlugin, insertTable } from '@sewell_stephens/late-table/react';
 
 import { settingsStore } from '@/components/context/settings-store';
 import { Icons } from '@/components/icons';

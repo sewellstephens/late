@@ -1,10 +1,10 @@
 import React from 'react';
 
-import type { TLinkElement } from '@sewellstephens/plate-link';
+import type { TLinkElement } from '@sewell_stephens/late-link';
 
-import { cn, withRef } from '@sewellstephens/cn';
-import { LateElement, useElement } from '@sewellstephens/plate-common/react';
-import { useLink } from '@sewellstephens/plate-link/react';
+import { cn, withRef } from '@sewell_stephens/cn';
+import { LateElement, useElement } from '@sewell_stephens/late-common/react';
+import { useLink } from '@sewell_stephens/late-link/react';
 
 export const LinkElement = withRef<typeof LateElement>(
   ({ children, className, ...props }, ref) => {

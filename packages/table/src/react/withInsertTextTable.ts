@@ -1,6 +1,6 @@
-import type { ExtendEditor } from '@sewellstephens/plate-common/react';
+import type { ExtendEditor } from '@sewell_stephens/late-common/react';
 
-import { collapseSelection, isExpanded } from '@sewellstephens/plate-common';
+import { collapseSelection, isExpanded } from '@sewell_stephens/late-common';
 
 import { type TableConfig, getTableAbove } from '../lib';
 import { getTableGridAbove } from './queries';

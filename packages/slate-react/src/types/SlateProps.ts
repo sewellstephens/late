@@ -1,7 +1,7 @@
 import type React from 'react';
 
-import type { TSelection, Value } from '@sewellstephens/slate';
-import type { UnknownObject } from '@sewellstephens/utils';
+import type { TSelection, Value } from '@sewell_stephens/slate';
+import type { UnknownObject } from '@sewell_stephens/utils';
 import type { ReactEditor } from 'slate-react';
 
 export interface SlateProps extends UnknownObject {

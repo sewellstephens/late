@@ -4,7 +4,7 @@ import {
   createPrimitiveComponent,
   toDOMNode,
   useEditorPlugin,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import { CommentsPlugin } from '../CommentsPlugin';
 import { getCommentPosition } from '../queries';

@@ -1,6 +1,6 @@
-import type { OnChange } from '@sewellstephens/plate-common/react';
+import type { OnChange } from '@sewell_stephens/late-common/react';
 
-import { getEditorPlugin } from '@sewellstephens/plate-common';
+import { getEditorPlugin } from '@sewell_stephens/late-common';
 
 import type { BlockSelectionConfig } from '../BlockSelectionPlugin';
 

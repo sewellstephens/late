@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
-import { getEditorPlugin } from '@sewellstephens/plate-common/react';
-import { createLateEditor } from '@sewellstephens/plate-common/react';
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { getEditorPlugin } from '@sewell_stephens/late-common/react';
+import { createLateEditor } from '@sewell_stephens/late-common/react';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { BulletedListPlugin, ListPlugin } from './ListPlugin';
 import { onKeyDownList } from './onKeyDownList';

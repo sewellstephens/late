@@ -1,5 +1,5 @@
-import { type Value, getNodeString } from '@sewellstephens/plate-common';
-import { createAtomStore, useEditorPlugin } from '@sewellstephens/plate-common/react';
+import { type Value, getNodeString } from '@sewell_stephens/late-common';
+import { createAtomStore, useEditorPlugin } from '@sewell_stephens/late-common/react';
 
 import type { CommentUser, TComment } from '../../../lib/types';
 

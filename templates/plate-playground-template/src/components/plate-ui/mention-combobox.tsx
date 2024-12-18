@@ -1,11 +1,11 @@
 import React from 'react';
-import { ComboboxProps } from '@sewellstephens/plate-combobox';
-import { getPluginOptions, useEditorRef } from '@sewellstephens/plate-common';
+import { ComboboxProps } from '@sewell_stephens/late-combobox';
+import { getPluginOptions, useEditorRef } from '@sewell_stephens/late-common';
 import {
   ELEMENT_MENTION,
   getMentionOnSelectItem,
   MentionPlugin,
-} from '@sewellstephens/plate-mention';
+} from '@sewell_stephens/late-mention';
 
 import { Combobox } from './combobox';
 

@@ -11,7 +11,7 @@ import {
   withProps,
   withRef,
   withVariants,
-} from '@sewellstephens/cn';
+} from '@sewell_stephens/cn';
 import { cva } from 'class-variance-authority';
 
 import { Icons } from '@/components/icons';

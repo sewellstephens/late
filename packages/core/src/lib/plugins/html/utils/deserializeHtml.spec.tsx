@@ -1,6 +1,6 @@
 /** @jsx jsx */
 
-import { AlignPlugin } from '@sewellstephens/plate-alignment';
+import { AlignPlugin } from '@sewell_stephens/late-alignment';
 import {
   BoldPlugin,
   CodePlugin,
@@ -9,19 +9,19 @@ import {
   SubscriptPlugin,
   SuperscriptPlugin,
   UnderlinePlugin,
-} from '@sewellstephens/plate-basic-marks';
-import { BlockquotePlugin } from '@sewellstephens/plate-block-quote';
-import { SoftBreakPlugin } from '@sewellstephens/plate-break';
-import { CodeBlockPlugin } from '@sewellstephens/plate-code-block/react';
-import { FindReplacePlugin } from '@sewellstephens/plate-find-replace';
-import { HeadingPlugin } from '@sewellstephens/plate-heading';
-import { HighlightPlugin } from '@sewellstephens/plate-highlight';
-import { KbdPlugin } from '@sewellstephens/plate-kbd';
-import { LinkPlugin } from '@sewellstephens/plate-link';
-import { ListPlugin } from '@sewellstephens/plate-list';
-import { ImagePlugin, MediaEmbedPlugin } from '@sewellstephens/plate-media';
-import { TablePlugin } from '@sewellstephens/plate-table';
-import { getHtmlDocument, jsx } from '@sewellstephens/plate-test-utils';
+} from '@sewell_stephens/late-basic-marks';
+import { BlockquotePlugin } from '@sewell_stephens/late-block-quote';
+import { SoftBreakPlugin } from '@sewell_stephens/late-break';
+import { CodeBlockPlugin } from '@sewell_stephens/late-code-block/react';
+import { FindReplacePlugin } from '@sewell_stephens/late-find-replace';
+import { HeadingPlugin } from '@sewell_stephens/late-heading';
+import { HighlightPlugin } from '@sewell_stephens/late-highlight';
+import { KbdPlugin } from '@sewell_stephens/late-kbd';
+import { LinkPlugin } from '@sewell_stephens/late-link';
+import { ListPlugin } from '@sewell_stephens/late-list';
+import { ImagePlugin, MediaEmbedPlugin } from '@sewell_stephens/late-media';
+import { TablePlugin } from '@sewell_stephens/late-table';
+import { getHtmlDocument, jsx } from '@sewell_stephens/late-test-utils';
 
 import { createLateEditor } from '../../../../react';
 import { ParagraphPlugin } from '../../paragraph';

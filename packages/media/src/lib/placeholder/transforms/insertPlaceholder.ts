@@ -3,7 +3,7 @@ import {
   type SlateEditor,
   insertNodes,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { TPlaceholderElement } from '../types';
 

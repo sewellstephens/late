@@ -1,9 +1,9 @@
 import React from 'react';
 
-import type { UseEmojiPickerType } from '@sewellstephens/plate-emoji/react';
+import type { UseEmojiPickerType } from '@sewell_stephens/late-emoji/react';
 
-import { cn } from '@sewellstephens/cn';
-import { EmojiSettings } from '@sewellstephens/plate-emoji';
+import { cn } from '@sewell_stephens/cn';
+import { EmojiSettings } from '@sewell_stephens/late-emoji';
 
 import { EmojiPickerContent } from './emoji-picker-content';
 import { EmojiPickerNavigation } from './emoji-picker-navigation';

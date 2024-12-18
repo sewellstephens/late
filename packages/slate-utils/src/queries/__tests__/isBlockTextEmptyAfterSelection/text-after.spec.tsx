@@ -1,10 +1,10 @@
 /** @jsx jsx */
 
-import type { SlateEditor } from '@sewellstephens/plate-common';
+import type { SlateEditor } from '@sewell_stephens/late-common';
 
-import { createLateEditor } from '@sewellstephens/plate-common/react';
-import { LinkPlugin } from '@sewellstephens/plate-link';
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { createLateEditor } from '@sewell_stephens/late-common/react';
+import { LinkPlugin } from '@sewell_stephens/late-link';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { isBlockTextEmptyAfterSelection } from '../../isBlockTextEmptyAfterSelection';
 

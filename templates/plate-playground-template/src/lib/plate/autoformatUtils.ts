@@ -1,15 +1,15 @@
-import { AutoformatBlockRule } from '@sewellstephens/plate-autoformat';
+import { AutoformatBlockRule } from '@sewell_stephens/late-autoformat';
 import {
   ELEMENT_CODE_BLOCK,
   ELEMENT_CODE_LINE,
-} from '@sewellstephens/plate-code-block';
+} from '@sewell_stephens/late-code-block';
 import {
   getParentNode,
   isElement,
   isType,
   LateEditor,
-} from '@sewellstephens/plate-common';
-import { toggleList, unwrapList } from '@sewellstephens/plate-list';
+} from '@sewell_stephens/late-common';
+import { toggleList, unwrapList } from '@sewell_stephens/late-list';
 
 export const preFormat: AutoformatBlockRule['preFormat'] = (editor) =>
   unwrapList(editor);

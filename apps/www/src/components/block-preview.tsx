@@ -6,7 +6,7 @@ import * as React from 'react';
 import type { Block } from '@/registry/schema';
 import type { ImperativePanelHandle } from 'react-resizable-panels';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 
 import { useLiftMode } from '@/hooks/use-lift-mode';
 import PlaygroundDemo from '@/registry/default/example/playground-demo';

@@ -7,7 +7,7 @@ import {
   getStartPoint,
   normalizeEditor,
   select,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 import type { AnyPluginConfig } from '../plugin/BasePlugin';
 import type { AnySlatePlugin } from '../plugin/SlatePlugin';

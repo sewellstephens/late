@@ -1,4 +1,4 @@
-import { createSlatePlugin } from '@sewellstephens/plate-common';
+import { createSlatePlugin } from '@sewell_stephens/late-common';
 
 export const FontFamilyPlugin = createSlatePlugin({
   inject: {

@@ -1,7 +1,7 @@
 /** @jsx jsx */
-import { type SlateEditor, createSlateEditor } from '@sewellstephens/plate-core';
-import { jsx } from '@sewellstephens/plate-test-utils';
-import { isType } from '@sewellstephens/plate-utils';
+import { type SlateEditor, createSlateEditor } from '@sewell_stephens/late-core';
+import { jsx } from '@sewell_stephens/late-test-utils';
+import { isType } from '@sewell_stephens/late-utils';
 
 jsx;
 

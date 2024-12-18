@@ -1,6 +1,6 @@
-import type { KeyboardHandler } from '@sewellstephens/plate-common/react';
+import type { KeyboardHandler } from '@sewell_stephens/late-common/react';
 
-import { getBlockAbove, getPluginTypes, isHotkey } from '@sewellstephens/plate-common';
+import { getBlockAbove, getPluginTypes, isHotkey } from '@sewell_stephens/late-common';
 
 import type { CaptionConfig } from '../lib/CaptionPlugin';
 

@@ -2,9 +2,9 @@
 
 import React from 'react';
 
-import { cn, withRef } from '@sewellstephens/cn';
-import { useCodeBlockElementState } from '@sewellstephens/plate-code-block/react';
-import { LateElement } from '@sewellstephens/plate-common/react';
+import { cn, withRef } from '@sewell_stephens/cn';
+import { useCodeBlockElementState } from '@sewell_stephens/late-code-block/react';
+import { LateElement } from '@sewell_stephens/late-common/react';
 
 import { CodeBlockCombobox } from './code-block-combobox';
 

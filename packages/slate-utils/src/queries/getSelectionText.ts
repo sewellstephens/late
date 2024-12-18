@@ -1,4 +1,4 @@
-import { type TEditor, getEditorString } from '@sewellstephens/slate';
+import { type TEditor, getEditorString } from '@sewell_stephens/slate';
 
 /** Get the selected text. Return empty string if no selection. */
 export const getSelectionText = (editor: TEditor) =>

@@ -5,8 +5,8 @@ import {
   MARK_ITALIC,
   MARK_STRIKETHROUGH,
   MARK_UNDERLINE,
-} from '@sewellstephens/plate-basic-marks';
-import { useEditorReadOnly } from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-basic-marks';
+import { useEditorReadOnly } from '@sewell_stephens/late-common';
 
 import { Icons } from '@/components/icons';
 import { CommentToolbarButton } from '@/components/plate-ui/comment-toolbar-button';

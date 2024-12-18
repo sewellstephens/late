@@ -1,6 +1,6 @@
 import React from 'react';
-import { withRef, withVariants } from '@sewellstephens/cn';
-import { LateElement } from '@sewellstephens/plate-common';
+import { withRef, withVariants } from '@sewell_stephens/cn';
+import { LateElement } from '@sewell_stephens/late-common';
 import { cva } from 'class-variance-authority';
 
 const headingVariants = cva('', {

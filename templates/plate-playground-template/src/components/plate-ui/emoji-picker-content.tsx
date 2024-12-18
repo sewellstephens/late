@@ -1,11 +1,11 @@
 import React, { memo, useCallback } from 'react';
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import {
   Emoji,
   EmojiSettings,
   GridRow,
   UseEmojiPickerType,
-} from '@sewellstephens/plate-emoji';
+} from '@sewell_stephens/late-emoji';
 
 export type EmojiPickerContentProps = Pick<
   UseEmojiPickerType,

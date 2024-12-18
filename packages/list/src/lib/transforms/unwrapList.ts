@@ -10,7 +10,7 @@ import {
   setElements,
   unwrapNodes,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import {
   BulletedListPlugin,

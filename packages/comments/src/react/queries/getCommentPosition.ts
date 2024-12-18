@@ -1,6 +1,6 @@
-import type { SlateEditor } from '@sewellstephens/plate-common';
+import type { SlateEditor } from '@sewell_stephens/late-common';
 
-import { toDOMNode } from '@sewellstephens/plate-common/react';
+import { toDOMNode } from '@sewell_stephens/late-common/react';
 import clamp from 'lodash/clamp.js';
 
 import type { TCommentText } from '../../lib/types';

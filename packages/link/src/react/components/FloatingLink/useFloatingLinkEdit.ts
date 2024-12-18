@@ -5,17 +5,17 @@ import {
   getEndPoint,
   getStartPoint,
   someNode,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import {
   useEditorPlugin,
   useEditorReadOnly,
   useEditorVersion,
   useHotkeys,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import {
   getDefaultBoundingClientRect,
   getRangeBoundingClientRect,
-} from '@sewellstephens/plate-floating';
+} from '@sewell_stephens/late-floating';
 
 import type { LinkFloatingToolbarState } from './useFloatingLinkInsert';
 

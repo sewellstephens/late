@@ -26,13 +26,13 @@ For an existing project, jump to the next step.
 Install the core and the plugins you need. You need at least:
 
 ```bash
-npm install @sewellstephens/plate-common slate slate-react slate-history slate-hyperscript react react-dom
+npm install @sewell_stephens/late-common slate slate-react slate-history slate-hyperscript react react-dom
 ```
 
-Alternatively you can install **`@sewellstephens/plate`** that contains all the packages excluding the ones with heavy dependencies (e.g. **`@sewellstephens/plate-dnd`**).
+Alternatively you can install **`@sewell_stephens/late`** that contains all the packages excluding the ones with heavy dependencies (e.g. **`@sewell_stephens/late-dnd`**).
 
 ```bash
-npm install @sewellstephens/plate slate slate-react slate-history slate-hyperscript react react-dom
+npm install @sewell_stephens/late slate slate-react slate-history slate-hyperscript react react-dom
 ```
 
 ### Basic Editor
@@ -40,7 +40,7 @@ npm install @sewellstephens/plate slate slate-react slate-history slate-hyperscr
 Let's start with a minimal editor setup.
 
 ```tsx showLineNumbers {4,7-9}
-import { useLateEditor, Late, LateContent } from '@sewellstephens/plate-common/react';
+import { useLateEditor, Late, LateContent } from '@sewell_stephens/late-common/react';
 
 export default function BasicEditor() {
   const editor = useLateEditor();
@@ -143,10 +143,10 @@ Let's use the basic plugins for a rich-text editor.
 ```tsx showLineNumbers {15-23}
 // ...
 
-import { BoldPlugin, ItalicPlugin, UnderlinePlugin, CodePlugin } from '@sewellstephens/plate-basic-marks/react';
-import { HeadingPlugin } from '@sewellstephens/plate-heading/react';
-import { BlockquotePlugin } from '@sewellstephens/plate-block-quote/react';
-import { CodeBlockPlugin } from '@sewellstephens/plate-code-block/react';
+import { BoldPlugin, ItalicPlugin, UnderlinePlugin, CodePlugin } from '@sewell_stephens/late-basic-marks/react';
+import { HeadingPlugin } from '@sewell_stephens/late-heading/react';
+import { BlockquotePlugin } from '@sewell_stephens/late-block-quote/react';
+import { CodeBlockPlugin } from '@sewell_stephens/late-code-block/react';
 
 const value = [
   // ...

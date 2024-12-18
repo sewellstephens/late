@@ -1,9 +1,9 @@
 /** @jsx jsx */
 
-import { getEditorPlugin } from '@sewellstephens/plate-common/react';
-import { createLateEditor } from '@sewellstephens/plate-common/react';
-import * as isHotkey from '@sewellstephens/plate-core';
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { getEditorPlugin } from '@sewell_stephens/late-common/react';
+import { createLateEditor } from '@sewell_stephens/late-common/react';
+import * as isHotkey from '@sewell_stephens/late-core';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { ExitBreakPlugin } from '../../ExitBreakPlugin';
 import { onKeyDownExitBreak } from '../../onKeyDownExitBreak';

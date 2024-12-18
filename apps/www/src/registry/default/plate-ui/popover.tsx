@@ -3,7 +3,7 @@
 import * as React from 'react';
 
 import * as PopoverPrimitive from '@radix-ui/react-popover';
-import { cn, withRef } from '@sewellstephens/cn';
+import { cn, withRef } from '@sewell_stephens/cn';
 import { cva } from 'class-variance-authority';
 
 export const Popover = PopoverPrimitive.Root;

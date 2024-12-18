@@ -1,4 +1,4 @@
-import type { TElement } from '@sewellstephens/slate';
+import type { TElement } from '@sewell_stephens/slate';
 
 import { getTableColumnCount } from './getTableColumnCount';
 

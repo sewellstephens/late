@@ -4,7 +4,7 @@ import {
   findNodePath,
   useEditorRef,
   useElement,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import type { TInlineEquationElement } from '../../../lib/inline-equation/types';
 

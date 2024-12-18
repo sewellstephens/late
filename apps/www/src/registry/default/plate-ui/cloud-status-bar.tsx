@@ -2,9 +2,9 @@
 
 import React, { type HTMLAttributes, useEffect, useRef, useState } from 'react';
 
-import type { Upload, UploadProgress } from '@sewellstephens/plate-cloud';
+import type { Upload, UploadProgress } from '@sewell_stephens/late-cloud';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 
 export function ProgressBar({
   className,

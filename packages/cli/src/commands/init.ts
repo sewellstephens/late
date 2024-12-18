@@ -34,7 +34,7 @@ import * as templates from '../utils/templates';
 import { applyPrefixesCss } from '../utils/transformers/transform-tw-prefix';
 
 const PROJECT_DEPENDENCIES = [
-  '@sewellstephens/cn',
+  '@sewell_stephens/cn',
   'tailwindcss-animate',
   'class-variance-authority',
   'tailwind-merge',

@@ -1,7 +1,7 @@
 import type { Path } from 'slate';
 
-import { type TEditor, setElements } from '@sewellstephens/plate-common';
-import { IndentPlugin } from '@sewellstephens/plate-indent';
+import { type TEditor, setElements } from '@sewell_stephens/late-common';
+import { IndentPlugin } from '@sewell_stephens/late-indent';
 
 import { INDENT_LIST_KEYS, IndentListPlugin } from '../IndentListPlugin';
 import { ListStyleType } from '../types';

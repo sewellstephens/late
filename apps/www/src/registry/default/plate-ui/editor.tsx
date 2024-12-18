@@ -1,10 +1,10 @@
 import React from 'react';
 
-import type { LateContentProps } from '@sewellstephens/plate-common/react';
+import type { LateContentProps } from '@sewell_stephens/late-common/react';
 import type { VariantProps } from 'class-variance-authority';
 
-import { cn } from '@sewellstephens/cn';
-import { LateContent } from '@sewellstephens/plate-common/react';
+import { cn } from '@sewell_stephens/cn';
+import { LateContent } from '@sewell_stephens/late-common/react';
 import { cva } from 'class-variance-authority';
 
 const editorVariants = cva(

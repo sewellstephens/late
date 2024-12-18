@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo } from 'react';
 
-import { isHotkey } from '@sewellstephens/plate-common';
-import { useEditorRef } from '@sewellstephens/plate-common/react';
+import { isHotkey } from '@sewell_stephens/late-common';
+import { useEditorRef } from '@sewell_stephens/late-common/react';
 
 import {
   imagePreviewActions,

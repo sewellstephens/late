@@ -5,7 +5,7 @@ import {
   insertElements,
   isElement,
   setElements,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { NormalizeTypesConfig } from './NormalizeTypesPlugin';
 

@@ -1,13 +1,13 @@
 'use client';
 
 import React from 'react';
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import {
   TCommentText,
   useCommentLeaf,
   useCommentLeafState,
-} from '@sewellstephens/plate-comments';
-import { LateLeaf, LateLeafProps, Value } from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-comments';
+import { LateLeaf, LateLeafProps, Value } from '@sewell_stephens/late-common';
 
 export function CommentLeaf({
   className,

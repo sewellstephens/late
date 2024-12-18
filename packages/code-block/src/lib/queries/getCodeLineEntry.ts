@@ -9,7 +9,7 @@ import {
   getParentNode,
   isElement,
   someNode,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { CodeLinePlugin } from '../CodeBlockPlugin';
 

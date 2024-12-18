@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { type TEditor, type Value, createTEditor } from '@sewellstephens/slate';
+import { type TEditor, type Value, createTEditor } from '@sewell_stephens/slate';
 
 import type { AnyLatePlugin } from '../plugin';
 import type { LateApiPlugin } from '../plugins';

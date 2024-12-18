@@ -5,11 +5,11 @@ import {
   ItalicPlugin,
   StrikethroughPlugin,
   UnderlinePlugin,
-} from '@sewellstephens/plate-basic-marks/react';
-import { BlockquotePlugin } from '@sewellstephens/plate-block-quote/react';
-import { CodeBlockPlugin } from '@sewellstephens/plate-code-block/react';
-import { Late, useLateEditor } from '@sewellstephens/plate-common/react';
-import { HeadingPlugin } from '@sewellstephens/plate-heading/react';
+} from '@sewell_stephens/late-basic-marks/react';
+import { BlockquotePlugin } from '@sewell_stephens/late-block-quote/react';
+import { CodeBlockPlugin } from '@sewell_stephens/late-code-block/react';
+import { Late, useLateEditor } from '@sewell_stephens/late-common/react';
+import { HeadingPlugin } from '@sewell_stephens/late-heading/react';
 import Prism from 'prismjs';
 
 import { createLateUI } from '@/lib/plate/create-plate-ui';

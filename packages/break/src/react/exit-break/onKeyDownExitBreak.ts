@@ -1,6 +1,6 @@
-import type { KeyboardHandler } from '@sewellstephens/plate-common/react';
+import type { KeyboardHandler } from '@sewell_stephens/late-common/react';
 
-import { getBlockAbove, isHotkey, queryNode } from '@sewellstephens/plate-common';
+import { getBlockAbove, isHotkey, queryNode } from '@sewell_stephens/late-common';
 
 import type { ExitBreakConfig } from '../../lib/exit-break/types';
 

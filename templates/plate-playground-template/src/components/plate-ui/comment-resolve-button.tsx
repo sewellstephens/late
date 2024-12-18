@@ -1,11 +1,11 @@
 'use client';
 
 import React from 'react';
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import {
   CommentResolveButton as CommentResolveButtonPrimitive,
   useComment,
-} from '@sewellstephens/plate-comments';
+} from '@sewell_stephens/late-comments';
 
 import { Icons } from '@/components/icons';
 

@@ -1,4 +1,4 @@
-import { hexToBase64, traverseHtmlElements } from '@sewellstephens/plate-common';
+import { hexToBase64, traverseHtmlElements } from '@sewell_stephens/late-common';
 import validator from 'validator';
 
 import { getRtfImagesMap } from './getRtfImagesMap';

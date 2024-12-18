@@ -5,8 +5,8 @@ import {
   getEndPoint,
   getStartPoint,
   select,
-} from '@sewellstephens/slate';
-import { focusEditor } from '@sewellstephens/slate-react';
+} from '@sewell_stephens/slate';
+import { focusEditor } from '@sewell_stephens/slate-react';
 
 export interface SelectEditorOptions {
   /** Specific location if edge is not defined. */

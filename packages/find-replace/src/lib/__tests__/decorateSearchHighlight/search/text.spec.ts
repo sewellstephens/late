@@ -1,5 +1,5 @@
-import { getEditorPlugin } from '@sewellstephens/plate-common';
-import { createSlateEditor } from '@sewellstephens/plate-common';
+import { getEditorPlugin } from '@sewell_stephens/late-common';
+import { createSlateEditor } from '@sewell_stephens/late-common';
 
 import { FindReplacePlugin } from '../../../FindReplacePlugin';
 

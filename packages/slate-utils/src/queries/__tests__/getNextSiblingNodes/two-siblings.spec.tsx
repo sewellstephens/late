@@ -2,10 +2,10 @@
 
 import type { Range } from 'slate';
 
-import { type SlateEditor, getBlockAbove } from '@sewellstephens/plate-common';
-import { createLateEditor } from '@sewellstephens/plate-common/react';
-import { LinkPlugin } from '@sewellstephens/plate-link';
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { type SlateEditor, getBlockAbove } from '@sewell_stephens/late-common';
+import { createLateEditor } from '@sewell_stephens/late-common/react';
+import { LinkPlugin } from '@sewell_stephens/late-link';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { getNextSiblingNodes } from '../../getNextSiblingNodes';
 

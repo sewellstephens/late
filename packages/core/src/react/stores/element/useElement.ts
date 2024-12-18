@@ -1,4 +1,4 @@
-import type { TElement } from '@sewellstephens/slate';
+import type { TElement } from '@sewell_stephens/slate';
 
 import { useEditorRef } from '../plate';
 import { SCOPE_ELEMENT, useElementStore } from './useElementStore';

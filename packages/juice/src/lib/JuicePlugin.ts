@@ -1,4 +1,4 @@
-import { HtmlPlugin, createSlatePlugin } from '@sewellstephens/plate-common';
+import { HtmlPlugin, createSlatePlugin } from '@sewell_stephens/late-common';
 import juice from 'juice';
 
 export const JuicePlugin = createSlatePlugin({

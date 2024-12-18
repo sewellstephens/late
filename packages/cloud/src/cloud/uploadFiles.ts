@@ -1,7 +1,7 @@
-import type { SlateEditor } from '@sewellstephens/plate-common';
+import type { SlateEditor } from '@sewell_stephens/late-common';
 
 import * as portiveClient from '@portive/client';
-import { nanoid } from '@sewellstephens/plate-common';
+import { nanoid } from '@sewell_stephens/late-common';
 
 import type { FileEvent, ProgressEvent } from './types';
 

@@ -4,7 +4,7 @@ import {
   type ErrorHandler,
   type PluginConfig,
   createTSlatePlugin,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { withNormalizeTypes } from './withNormalizeTypes';
 

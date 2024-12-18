@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { BoldPlugin } from '@sewellstephens/plate-basic-marks/react';
-import { htmlStringToDOMNode } from '@sewellstephens/plate-common';
+import { BoldPlugin } from '@sewell_stephens/late-basic-marks/react';
+import { htmlStringToDOMNode } from '@sewell_stephens/late-common';
 import {
   type LatePlugins,
   createLateEditor,
   createLatePlugin,
   toLatePlugin,
-} from '@sewellstephens/plate-core/react';
-import { ImagePlugin } from '@sewellstephens/plate-media';
+} from '@sewell_stephens/late-core/react';
+import { ImagePlugin } from '@sewell_stephens/late-media';
 
 import { serializeHtml } from '../../react/serializeHtml';
 import { createLateUIEditor } from '../create-plate-ui-editor';

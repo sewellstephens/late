@@ -1,4 +1,4 @@
-import { type TEditor, getEditorString } from '@sewellstephens/plate-common';
+import { type TEditor, getEditorString } from '@sewell_stephens/late-common';
 
 import type { IndentCodeLineOptions } from '../transforms/indentCodeLine';
 

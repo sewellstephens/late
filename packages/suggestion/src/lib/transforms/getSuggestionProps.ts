@@ -1,4 +1,4 @@
-import type { SlateEditor } from '@sewellstephens/plate-common';
+import type { SlateEditor } from '@sewell_stephens/late-common';
 
 import { SUGGESTION_KEYS, SuggestionPlugin } from '../SuggestionPlugin';
 import { getSuggestionKey } from '../utils/index';

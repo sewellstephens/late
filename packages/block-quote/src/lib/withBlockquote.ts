@@ -1,4 +1,4 @@
-import type { ExtendEditor, TElement } from '@sewellstephens/plate-common';
+import type { ExtendEditor, TElement } from '@sewell_stephens/late-common';
 
 import { BlockquotePlugin } from './BlockquotePlugin';
 

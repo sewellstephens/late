@@ -1,9 +1,9 @@
 /** @jsx jsx */
 
-import type { SlateEditor } from '@sewellstephens/plate-core';
+import type { SlateEditor } from '@sewell_stephens/late-core';
 
-import { jsx } from '@sewellstephens/plate-test-utils';
-import { findNode } from '@sewellstephens/slate';
+import { jsx } from '@sewell_stephens/late-test-utils';
+import { findNode } from '@sewell_stephens/slate';
 import { Path } from 'slate';
 
 import { moveChildren } from './moveChildren';

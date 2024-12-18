@@ -1,4 +1,4 @@
-import type { GetAboveNodeOptions, TEditor } from '@sewellstephens/slate';
+import type { GetAboveNodeOptions, TEditor } from '@sewell_stephens/slate';
 import type { Range } from 'slate';
 
 import { isRangeInSameBlock } from './isRangeInSameBlock';

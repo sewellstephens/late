@@ -1,4 +1,4 @@
-import { type SlateEditor, someNode } from '@sewellstephens/plate-common';
+import { type SlateEditor, someNode } from '@sewell_stephens/late-common';
 
 import { INDENT_LIST_KEYS, IndentListPlugin, ListStyleType } from '../../index';
 

@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { useEditorPlugin } from '@sewellstephens/plate-common/react';
+import { useEditorPlugin } from '@sewell_stephens/late-common/react';
 
 import { BlockContextMenuPlugin } from '../BlockContextMenuPlugin';
 import { BlockSelectionPlugin } from '../BlockSelectionPlugin';

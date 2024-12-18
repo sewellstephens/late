@@ -1,4 +1,4 @@
-import type { SlateEditor, TElement } from '@sewellstephens/plate-common';
+import type { SlateEditor, TElement } from '@sewell_stephens/late-common';
 
 export type MdastElementType =
   | 'blockquote'

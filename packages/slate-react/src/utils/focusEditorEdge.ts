@@ -1,4 +1,4 @@
-import { type TEditor, getEndPoint, getStartPoint } from '@sewellstephens/slate';
+import { type TEditor, getEndPoint, getStartPoint } from '@sewell_stephens/slate';
 
 import { focusEditor } from '../react-editor/index';
 

@@ -5,8 +5,8 @@ import {
   getNextNodeStartPoint,
   getPreviousNodeEndPoint,
   setSelection,
-} from '@sewellstephens/plate-common';
-import { focusEditor } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common';
+import { focusEditor } from '@sewell_stephens/late-common/react';
 
 export const setSelectionInlineEquation = (
   editor: SlateEditor,

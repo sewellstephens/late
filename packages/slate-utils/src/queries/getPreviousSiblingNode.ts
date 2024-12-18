@@ -1,6 +1,6 @@
 import type { Path } from 'slate';
 
-import { type TEditor, getNode } from '@sewellstephens/slate';
+import { type TEditor, getNode } from '@sewell_stephens/slate';
 import last from 'lodash/last.js';
 
 export const getPreviousSiblingNode = (editor: TEditor, path: Path) => {

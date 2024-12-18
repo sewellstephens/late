@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 /** @jsx jsx */
 
-import { BoldPlugin, ItalicPlugin } from '@sewellstephens/plate-basic-marks';
-import { ListPlugin } from '@sewellstephens/plate-list';
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { BoldPlugin, ItalicPlugin } from '@sewell_stephens/late-basic-marks';
+import { ListPlugin } from '@sewell_stephens/late-list';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { createLateEditor } from '../../../../react';
 import { createSlatePlugin } from '../../../plugin';

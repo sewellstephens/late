@@ -1,4 +1,4 @@
-import { type TEditor, getMarks } from '@sewellstephens/slate';
+import { type TEditor, getMarks } from '@sewell_stephens/slate';
 
 /** Get selection mark value by key. */
 export const getMark = (editor: TEditor, key: string) => {

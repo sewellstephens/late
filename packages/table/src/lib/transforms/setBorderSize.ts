@@ -7,7 +7,7 @@ import {
   isElement,
   setNodes,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { BorderDirection, BorderStyle, TTableCellElement } from '../types';
 

@@ -7,7 +7,7 @@ import {
   useEditorReadOnly,
   useEditorRef,
   useLateStore,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import { Icons } from '@/components/icons';
 

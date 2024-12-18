@@ -2,13 +2,13 @@
 
 import React from 'react';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import {
   CommentNewSubmitButton,
   CommentNewTextarea,
   CommentsPlugin,
-} from '@sewellstephens/plate-comments/react';
-import { useEditorPlugin } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-comments/react';
+import { useEditorPlugin } from '@sewell_stephens/late-common/react';
 
 import { buttonVariants } from './button';
 import { CommentAvatar } from './comment-avatar';

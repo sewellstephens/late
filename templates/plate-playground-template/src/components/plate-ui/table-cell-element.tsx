@@ -1,12 +1,12 @@
 import React from 'react';
-import { cn, withProps, withRef } from '@sewellstephens/cn';
-import { LateElement } from '@sewellstephens/plate-common';
+import { cn, withProps, withRef } from '@sewell_stephens/cn';
+import { LateElement } from '@sewell_stephens/late-common';
 import {
   useTableCellElement,
   useTableCellElementResizable,
   useTableCellElementResizableState,
   useTableCellElementState,
-} from '@sewellstephens/plate-table';
+} from '@sewell_stephens/late-table';
 
 import { ResizeHandle } from './resizable';
 

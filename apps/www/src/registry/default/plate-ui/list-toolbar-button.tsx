@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { withRef } from '@sewellstephens/cn';
+import { withRef } from '@sewell_stephens/cn';
 import {
   BulletedListPlugin,
   useListToolbarButton,
   useListToolbarButtonState,
-} from '@sewellstephens/plate-list/react';
+} from '@sewell_stephens/late-list/react';
 
 import { Icons } from '@/components/icons';
 

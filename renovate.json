@@ -8,7 +8,7 @@
       "enabled": false
     },
     {
-      "matchPackagePrefixes": ["@sewellstephens/"],
+      "matchPackagePrefixes": ["@sewell_stephens/"],
       "matchUpdateTypes": ["major", "minor", "patch", "pin", "digest"],
       "automerge": true,
       "groupName": "Internal packages updates"
@@ -20,7 +20,7 @@
       "groupName": "Slate packages updates"
     },
     {
-      "excludePackagePrefixes": ["@sewellstephens/", "slate"],
+      "excludePackagePrefixes": ["@sewell_stephens/", "slate"],
       "matchPackagePatterns": ["*"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true,
@@ -28,7 +28,7 @@
       "groupName": "External updates"
     },
     {
-      "excludePackagePrefixes": ["@sewellstephens/", "slate"],
+      "excludePackagePrefixes": ["@sewell_stephens/", "slate"],
       "matchPackagePatterns": ["*"],
       "matchUpdateTypes": ["major"],
       "automerge": false,

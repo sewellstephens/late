@@ -1,9 +1,9 @@
-import { setNodes } from '@sewellstephens/plate-common';
+import { setNodes } from '@sewell_stephens/late-common';
 import {
   findNodePath,
   useEditorRef,
   useElement,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import type { TColumnGroupElement } from '../lib/types';
 

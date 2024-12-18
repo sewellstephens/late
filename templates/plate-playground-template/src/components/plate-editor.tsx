@@ -1,10 +1,10 @@
 'use client';
 
 import React, { useRef } from 'react';
-import { cn } from '@sewellstephens/cn';
-import { CommentsProvider } from '@sewellstephens/plate-comments';
-import { Late } from '@sewellstephens/plate-common';
-import { ELEMENT_PARAGRAPH } from '@sewellstephens/plate-paragraph';
+import { cn } from '@sewell_stephens/cn';
+import { CommentsProvider } from '@sewell_stephens/late-comments';
+import { Late } from '@sewell_stephens/late-common';
+import { ELEMENT_PARAGRAPH } from '@sewell_stephens/late-paragraph';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 

@@ -141,9 +141,9 @@ export const TableElement = withHOC(
 ### December 27 #6.3
 
 - remove `clsx` from dependency: `class-variance-utility` already exports it as `cx`
-- new dependency: `@sewellstephens/cn`
-- remove `@/lib/utils.ts` in favor of `cn` from `@sewellstephens/cn`. Replace all imports from `@/lib/utils` with `@sewellstephens/cn`
-- import `withProps` from `@sewellstephens/cn` instead of `@sewellstephens/plate-common
+- new dependency: `@sewell_stephens/cn`
+- remove `@/lib/utils.ts` in favor of `cn` from `@sewell_stephens/cn`. Replace all imports from `@/lib/utils` with `@sewell_stephens/cn`
+- import `withProps` from `@sewell_stephens/cn` instead of `@sewell_stephens/late-common
 
   `
 - all components using `forwardRef` are now using `withRef`. `withProps`, `withCn` and `withVariants` are also used to reduce boilerplate.

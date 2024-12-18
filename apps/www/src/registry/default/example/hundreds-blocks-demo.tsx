@@ -1,10 +1,10 @@
 import React, { useCallback, useMemo, useState } from 'react';
 
-import type { TElement, Value } from '@sewellstephens/plate-common';
+import type { TElement, Value } from '@sewell_stephens/late-common';
 
-import { BasicElementsPlugin } from '@sewellstephens/plate-basic-elements/react';
-import { BasicMarksPlugin } from '@sewellstephens/plate-basic-marks/react';
-import { Late, useLateEditor } from '@sewellstephens/plate-common/react';
+import { BasicElementsPlugin } from '@sewell_stephens/late-basic-elements/react';
+import { BasicMarksPlugin } from '@sewell_stephens/late-basic-marks/react';
+import { Late, useLateEditor } from '@sewell_stephens/late-common/react';
 import { createEditor } from 'slate';
 import {
   Editable,

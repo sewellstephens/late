@@ -2,7 +2,7 @@ import {
   type GetAboveNodeOptions,
   type TEditor,
   isEndPoint,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 import { getBlockAbove } from './getBlockAbove';
 

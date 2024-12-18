@@ -1,4 +1,4 @@
-# @sewellstephens/plate-playwright
+# @sewell_stephens/late-playwright
 
 ## 37.0.0
 

@@ -1,4 +1,4 @@
-import type { TText, Value } from '@sewellstephens/plate-common';
+import type { TText, Value } from '@sewell_stephens/late-common';
 
 export interface CommentUser {
   id: string;

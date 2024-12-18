@@ -1,4 +1,4 @@
-import { type SlateEditor, sanitizeUrl } from '@sewellstephens/plate-common';
+import { type SlateEditor, sanitizeUrl } from '@sewell_stephens/late-common';
 
 import { LinkPlugin } from '../LinkPlugin';
 

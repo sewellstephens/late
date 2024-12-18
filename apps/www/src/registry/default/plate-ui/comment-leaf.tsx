@@ -2,14 +2,14 @@
 
 import React from 'react';
 
-import type { TCommentText } from '@sewellstephens/plate-comments';
+import type { TCommentText } from '@sewell_stephens/late-comments';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import {
   useCommentLeaf,
   useCommentLeafState,
-} from '@sewellstephens/plate-comments/react';
-import { LateLeaf, type LateLeafProps } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-comments/react';
+import { LateLeaf, type LateLeafProps } from '@sewell_stephens/late-common/react';
 
 export function CommentLeaf({
   className,

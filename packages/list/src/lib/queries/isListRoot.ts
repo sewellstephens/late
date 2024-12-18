@@ -2,7 +2,7 @@ import {
   type SlateEditor,
   type TDescendant,
   isElement,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { getListTypes } from './getListTypes';
 

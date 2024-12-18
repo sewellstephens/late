@@ -1,11 +1,11 @@
-import type { KeyboardHandler } from '@sewellstephens/plate-common/react';
+import type { KeyboardHandler } from '@sewell_stephens/late-common/react';
 
 import {
   isCollapsed,
   isHotkey,
   setElements,
   someNode,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { ResetNodeConfig } from '../lib/ResetNodePlugin';
 

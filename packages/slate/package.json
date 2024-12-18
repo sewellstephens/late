@@ -1,5 +1,5 @@
 {
-  "name": "@sewellstephens/slate",
+  "name": "@sewell_stephens/slate",
   "version": "0.0.1",
   "description": "Slate extension",
   "keywords": [
@@ -42,7 +42,7 @@
     "typecheck": "yarn p:typecheck"
   },
   "dependencies": {
-    "@sewellstephens/utils": "^0.0.1"
+    "@sewell_stephens/utils": "^0.0.1"
   },
   "peerDependencies": {
     "slate": ">=0.103.0",
@@ -50,5 +50,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "3c69df6d17679bbabc43c4cff3370ae8c70ee466"
 }

@@ -8,7 +8,7 @@ import {
   setNodes,
   unwrapNodes,
   wrapNodeChildren,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { TTableElement, TableConfig } from './types';
 

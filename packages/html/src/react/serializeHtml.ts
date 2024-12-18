@@ -1,8 +1,8 @@
 import type React from 'react';
 
-import type { LateEditor, LateProps } from '@sewellstephens/plate-common/react';
+import type { LateEditor, LateProps } from '@sewell_stephens/late-common/react';
 
-import { type TDescendant, isText } from '@sewellstephens/plate-common';
+import { type TDescendant, isText } from '@sewell_stephens/late-common';
 import { encode } from 'html-entities';
 
 import { newLinesToHtmlBr } from '../lib/newLinesToHtmlBr';

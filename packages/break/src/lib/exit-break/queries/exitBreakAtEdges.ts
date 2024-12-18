@@ -3,7 +3,7 @@ import {
   isExpanded,
   isSelectionAtBlockEnd,
   isSelectionAtBlockStart,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 /**
  * Check if the selection is at the edge of its parent block. If it is and if

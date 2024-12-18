@@ -1,13 +1,13 @@
 import React from 'react';
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import {
   createNodeHOC,
   createNodesHOC,
   PlaceholderProps,
   usePlaceholderState,
-} from '@sewellstephens/plate-common';
-import { ELEMENT_H1 } from '@sewellstephens/plate-heading';
-import { ELEMENT_PARAGRAPH } from '@sewellstephens/plate-paragraph';
+} from '@sewell_stephens/late-common';
+import { ELEMENT_H1 } from '@sewell_stephens/late-heading';
+import { ELEMENT_PARAGRAPH } from '@sewell_stephens/late-paragraph';
 
 export const Placeholder = (props: PlaceholderProps) => {
   const { children, placeholder, nodeProps } = props;

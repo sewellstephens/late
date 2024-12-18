@@ -2,8 +2,8 @@ import {
   type ExtendConfig,
   type OmitFirst,
   bindFirst,
-} from '@sewellstephens/plate-common';
-import { toTLatePlugin } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common';
+import { toTLatePlugin } from '@sewell_stephens/late-common/react';
 
 import {
   type LinkConfig as BaseLinkConfig,

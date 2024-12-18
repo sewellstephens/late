@@ -3,7 +3,7 @@
  * contributors. See /packages/diff/LICENSE for more information.
  */
 
-import type { TDescendant } from '@sewellstephens/plate-common';
+import type { TDescendant } from '@sewell_stephens/late-common';
 
 import isEqual from 'lodash/isEqual.js';
 

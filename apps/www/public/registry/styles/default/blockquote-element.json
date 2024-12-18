@@ -1,10 +1,10 @@
 {
   "dependencies": [
-    "@sewellstephens/plate-block-quote"
+    "@sewell_stephens/late-block-quote"
   ],
   "files": [
     {
-      "content": "'use client';\n\nimport React from 'react';\n\nimport { cn, withRef } from '@sewellstephens/cn';\nimport { LateElement } from '@sewellstephens/plate-common/react';\n\nexport const BlockquoteElement = withRef<typeof LateElement>(\n  ({ children, className, ...props }, ref) => {\n    return (\n      <LateElement\n        asChild\n        className={cn('my-1 border-l-2 pl-6 italic', className)}\n        ref={ref}\n        {...props}\n      >\n        <blockquote>{children}</blockquote>\n      </LateElement>\n    );\n  }\n);\n",
+      "content": "'use client';\n\nimport React from 'react';\n\nimport { cn, withRef } from '@sewell_stephens/cn';\nimport { LateElement } from '@sewell_stephens/late-common/react';\n\nexport const BlockquoteElement = withRef<typeof LateElement>(\n  ({ children, className, ...props }, ref) => {\n    return (\n      <LateElement\n        asChild\n        className={cn('my-1 border-l-2 pl-6 italic', className)}\n        ref={ref}\n        {...props}\n      >\n        <blockquote>{children}</blockquote>\n      </LateElement>\n    );\n  }\n);\n",
       "name": "blockquote-element.tsx"
     }
   ],

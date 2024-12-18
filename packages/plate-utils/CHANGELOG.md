@@ -1,4 +1,4 @@
-# @sewellstephens/plate-utils
+# @sewell_stephens/late-utils
 
 ## 37.0.0
 
@@ -70,7 +70,7 @@
 
 ### Minor Changes
 
-- [#3155](https://github.com/sewellstephens/late/pull/3155) by [@felixfeng33](https://github.com/felixfeng33) – Move `moveSelectionByOffset` from `@sewellstephens/plate-mention` to `@sewellstephens/plate-utils`
+- [#3155](https://github.com/sewellstephens/late/pull/3155) by [@felixfeng33](https://github.com/felixfeng33) – Move `moveSelectionByOffset` from `@sewell_stephens/late-mention` to `@sewell_stephens/late-utils`
 
 ## 31.3.2
 
@@ -91,8 +91,8 @@
 ### Major Changes
 
 - [#2829](https://github.com/sewellstephens/late/pull/2829) by [@zbeyens](https://github.com/zbeyens) –
-  - Moved `withProps` to `@sewellstephens/cn`
-  - Moved `PortalBody`, `Text`, `Box`, `createPrimitiveComponent`, `createSlotComponent`, `withProviders` to `@sewellstephens/react-utils`
+  - Moved `withProps` to `@sewell_stephens/cn`
+  - Moved `PortalBody`, `Text`, `Box`, `createPrimitiveComponent`, `createSlotComponent`, `withProviders` to `@sewell_stephens/react-utils`
   - Removed `getRootProps` (unused)
 
 ## 28.0.0

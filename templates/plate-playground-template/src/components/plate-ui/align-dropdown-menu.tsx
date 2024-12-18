@@ -5,7 +5,7 @@ import { DropdownMenuProps } from '@radix-ui/react-dropdown-menu';
 import {
   useAlignDropdownMenu,
   useAlignDropdownMenuState,
-} from '@sewellstephens/plate-alignment';
+} from '@sewell_stephens/late-alignment';
 
 import { Icons, iconVariants } from '@/components/icons';
 

@@ -1,4 +1,4 @@
-import type { TElement } from '@sewellstephens/slate';
+import type { TElement } from '@sewell_stephens/slate';
 import type { RenderElementProps } from 'slate-react';
 
 export type TRenderElementProps<E extends TElement = TElement> = {

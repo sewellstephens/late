@@ -1,5 +1,5 @@
-import { type SlateEditor, isHotkey } from '@sewellstephens/plate-core';
-import { moveSelection } from '@sewellstephens/slate';
+import { type SlateEditor, isHotkey } from '@sewell_stephens/late-core';
+import { moveSelection } from '@sewell_stephens/slate';
 import { Range } from 'slate';
 
 export interface MoveSelectionByOffsetOptions {

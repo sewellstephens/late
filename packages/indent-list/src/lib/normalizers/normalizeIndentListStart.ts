@@ -6,7 +6,7 @@ import {
   getNode,
   setElements,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { GetSiblingIndentListOptions } from '../queries/getSiblingIndentList';
 

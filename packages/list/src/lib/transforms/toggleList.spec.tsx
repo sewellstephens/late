@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
-import { type SlateEditor, createSlateEditor } from '@sewellstephens/plate-common';
-import { ImagePlugin } from '@sewellstephens/plate-media';
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { type SlateEditor, createSlateEditor } from '@sewell_stephens/late-common';
+import { ImagePlugin } from '@sewell_stephens/late-media';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import {
   BulletedListPlugin,

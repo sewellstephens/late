@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
-import { type SlateEditor, getNode } from '@sewellstephens/plate-common';
-import { createLateEditor } from '@sewellstephens/plate-common/react';
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { type SlateEditor, getNode } from '@sewell_stephens/late-common';
+import { createLateEditor } from '@sewell_stephens/late-common/react';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { CodeBlockPlugin } from '../../react/CodeBlockPlugin';
 

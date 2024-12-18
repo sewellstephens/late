@@ -1,5 +1,5 @@
-import { AutoformatPlugin } from '@sewellstephens/plate-autoformat';
-import { LatePlugin } from '@sewellstephens/plate-common';
+import { AutoformatPlugin } from '@sewell_stephens/late-autoformat';
+import { LatePlugin } from '@sewell_stephens/late-common';
 
 import { autoformatRules } from '@/lib/plate/autoformatRules';
 

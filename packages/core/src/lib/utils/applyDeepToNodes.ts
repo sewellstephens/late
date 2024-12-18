@@ -7,7 +7,7 @@ import {
   type TNodeEntry,
   isAncestor,
   queryNode,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 export interface ApplyDeepToNodesOptions<N extends TNode> {
   // Function to call on each node following the query.

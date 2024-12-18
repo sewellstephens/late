@@ -21,7 +21,7 @@ import { Foo } from "bar"
     import { Label} from "ui/label"
     import { Box } from "@/registry/default/box"
 
-    import { cn } from "@sewellstephens/cn"
+    import { cn } from "@sewell_stephens/cn"
     `,
     })
   ).toMatchSnapshot();
@@ -40,7 +40,7 @@ import { Foo } from "bar"
     import { Label} from "ui/label"
     import { Box } from "@/registry/default/box"
 
-    import { cn, foo, bar } from "@sewellstephens/cn"
+    import { cn, foo, bar } from "@sewell_stephens/cn"
     `,
     })
   ).toMatchSnapshot();
@@ -59,7 +59,7 @@ import { Foo } from "bar"
     import { Label} from "ui/label"
     import { Box } from "@/registry/default/box"
 
-    import { cn } from "@sewellstephens/cn"
+    import { cn } from "@sewell_stephens/cn"
     `,
     })
   ).toMatchSnapshot();

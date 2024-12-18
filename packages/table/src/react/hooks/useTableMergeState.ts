@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { isSelectionExpanded } from '@sewellstephens/plate-common';
-import { useEditorRef, useEditorSelector } from '@sewellstephens/plate-common/react';
+import { isSelectionExpanded } from '@sewell_stephens/late-common';
+import { useEditorRef, useEditorSelector } from '@sewell_stephens/late-common/react';
 import { useReadOnly, useSelected } from 'slate-react';
 
 import {

@@ -1,4 +1,4 @@
-import { ParagraphPlugin } from '@sewellstephens/plate-common/react';
+import { ParagraphPlugin } from '@sewell_stephens/late-common/react';
 
 import { serializeHtml } from '../../react/serializeHtml';
 import { createLateUIEditor } from '../create-plate-ui-editor';

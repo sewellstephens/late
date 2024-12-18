@@ -1,4 +1,4 @@
-import type { SlateEditor } from '@sewellstephens/plate-common';
+import type { SlateEditor } from '@sewell_stephens/late-common';
 
 import { findSuggestionNode } from '../queries/index';
 import { getSuggestionKey, getSuggestionUserIds } from './getSuggestionKeys';

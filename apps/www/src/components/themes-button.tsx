@@ -3,7 +3,7 @@
 import * as React from 'react';
 
 import { CheckIcon } from '@radix-ui/react-icons';
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import { Paintbrush } from 'lucide-react';
 import { useTheme } from 'next-themes';
 

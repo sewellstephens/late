@@ -1,4 +1,4 @@
-import type { ExtendEditor, SlateEditor } from '@sewellstephens/plate-common';
+import type { ExtendEditor, SlateEditor } from '@sewell_stephens/late-common';
 
 import * as Y from 'yjs';
 

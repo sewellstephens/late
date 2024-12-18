@@ -13,7 +13,7 @@ import {
   getPath,
   isVoid,
   match,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 import { Path, Range, Span } from 'slate';
 
 /** Get the first descendant node matching the condition. */

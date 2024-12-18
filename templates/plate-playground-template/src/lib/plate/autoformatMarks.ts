@@ -6,8 +6,8 @@ import {
   MARK_SUBSCRIPT,
   MARK_SUPERSCRIPT,
   MARK_UNDERLINE,
-} from '@sewellstephens/plate-basic-marks';
-import { MARK_HIGHLIGHT } from '@sewellstephens/plate-highlight';
+} from '@sewell_stephens/late-basic-marks';
+import { MARK_HIGHLIGHT } from '@sewell_stephens/late-highlight';
 
 import { MyAutoformatRule } from '@/lib/plate/plate-types';
 

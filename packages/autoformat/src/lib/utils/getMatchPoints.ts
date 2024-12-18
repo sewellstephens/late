@@ -1,6 +1,6 @@
 import type { Point, Range } from 'slate';
 
-import { type TEditor, getPointBeforeLocation } from '@sewellstephens/plate-common';
+import { type TEditor, getPointBeforeLocation } from '@sewell_stephens/late-common';
 
 import type { MatchRange } from '../types';
 

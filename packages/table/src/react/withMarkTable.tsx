@@ -1,4 +1,4 @@
-import type { ExtendEditor } from '@sewellstephens/plate-common/react';
+import type { ExtendEditor } from '@sewell_stephens/late-common/react';
 
 import {
   type TElement,
@@ -7,7 +7,7 @@ import {
   isText,
   setNodes,
   unsetNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { TableConfig } from '../lib';
 

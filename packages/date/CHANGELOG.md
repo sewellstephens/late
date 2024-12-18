@@ -1,4 +1,4 @@
-# @sewellstephens/plate-date
+# @sewell_stephens/late-date
 
 ## 37.0.0
 

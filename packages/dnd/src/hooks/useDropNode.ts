@@ -4,7 +4,7 @@ import {
   useDrop,
 } from 'react-dnd';
 
-import type { LateEditor } from '@sewellstephens/plate-common/react';
+import type { LateEditor } from '@sewell_stephens/late-common/react';
 
 import type { DragItemNode, DropLineDirection } from '../types';
 

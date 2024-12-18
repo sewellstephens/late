@@ -1,7 +1,7 @@
 {
   "files": [
     {
-      "content": "import { withCn } from '@sewellstephens/cn';\nimport { LateElement } from '@sewellstephens/plate-common/react';\n\nexport const ParagraphElement = withCn(LateElement, 'm-0 px-0 py-1');\n",
+      "content": "import { withCn } from '@sewell_stephens/cn';\nimport { LateElement } from '@sewell_stephens/late-common/react';\n\nexport const ParagraphElement = withCn(LateElement, 'm-0 px-0 py-1');\n",
       "name": "paragraph-element.tsx"
     }
   ],

@@ -1,4 +1,4 @@
-import { type TText, addRangeMarks } from '@sewellstephens/plate-common';
+import { type TText, addRangeMarks } from '@sewell_stephens/late-common';
 import isEqual from 'lodash/isEqual.js';
 import uniqWith from 'lodash/uniqWith.js';
 import {

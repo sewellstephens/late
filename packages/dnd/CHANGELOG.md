@@ -1,4 +1,4 @@
-# @sewellstephens/plate-dnd
+# @sewell_stephens/late-dnd
 
 ## 37.0.0
 
@@ -13,7 +13,7 @@
 
 ### Patch Changes
 
-- [#3366](https://github.com/sewellstephens/late/pull/3366) by [@zbeyens](https://github.com/zbeyens) – Remove `getNodesRange`, import it from `@sewellstephens/plate-common` instead
+- [#3366](https://github.com/sewellstephens/late/pull/3366) by [@zbeyens](https://github.com/zbeyens) – Remove `getNodesRange`, import it from `@sewell_stephens/late-common` instead
 
 ## 36.0.0
 
@@ -39,13 +39,13 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewell_stephens/late-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.5.2
 
 ### Patch Changes
 
-- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewell_stephens/late-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -171,4 +171,4 @@
 
 ### Minor Changes
 
-- [#2237](https://github.com/sewellstephens/late/pull/2237) by [@TomMorane](https://github.com/TomMorane) – New package extracting unstyled logic from `@sewellstephens/plate-ui-dnd`
+- [#2237](https://github.com/sewellstephens/late/pull/2237) by [@TomMorane](https://github.com/TomMorane) – New package extracting unstyled logic from `@sewell_stephens/late-ui-dnd`

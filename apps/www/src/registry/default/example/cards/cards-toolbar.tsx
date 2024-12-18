@@ -6,13 +6,13 @@ import {
   ItalicPlugin,
   StrikethroughPlugin,
   UnderlinePlugin,
-} from '@sewellstephens/plate-basic-marks/react';
+} from '@sewell_stephens/late-basic-marks/react';
 import {
   FontBackgroundColorPlugin,
   FontColorPlugin,
-} from '@sewellstephens/plate-font';
-import { ListStyleType } from '@sewellstephens/plate-indent-list';
-import { ImagePlugin } from '@sewellstephens/plate-media/react';
+} from '@sewell_stephens/late-font';
+import { ListStyleType } from '@sewell_stephens/late-indent-list';
+import { ImagePlugin } from '@sewell_stephens/late-media/react';
 
 import { Icons, iconVariants } from '@/components/icons';
 import { AlignDropdownMenu } from '@/registry/default/plate-ui/align-dropdown-menu';

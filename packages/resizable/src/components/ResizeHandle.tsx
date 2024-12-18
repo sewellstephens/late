@@ -1,11 +1,11 @@
 import React from 'react';
 
-import type { Nullable } from '@sewellstephens/plate-common';
+import type { Nullable } from '@sewell_stephens/late-common';
 
 import {
   createAtomStore,
   createPrimitiveComponent,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import type { ResizeDirection, ResizeEvent } from '../types';
 

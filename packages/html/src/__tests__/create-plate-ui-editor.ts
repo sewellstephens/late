@@ -1,10 +1,10 @@
-import type { AnyPluginConfig, Value } from '@sewellstephens/plate-common';
+import type { AnyPluginConfig, Value } from '@sewell_stephens/late-common';
 
 import {
   type CreateLateEditorOptions,
   type LateCorePlugin,
   createLateEditor,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import { createLateUI } from 'www/src/lib/plate/create-plate-ui';
 
 /** Create a plate editor with default UI. */

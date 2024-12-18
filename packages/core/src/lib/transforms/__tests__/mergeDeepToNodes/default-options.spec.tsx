@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
-import type { TNode } from '@sewellstephens/slate';
+import type { TNode } from '@sewell_stephens/slate';
 
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import type { SlateEditor } from '../../../editor';
 

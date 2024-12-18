@@ -6,7 +6,7 @@ import {
   type TNodeEntry,
   getLastNode,
   isAncestor,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 const getLastChild = <N extends ChildOf<R>, R extends TNode>(
   node: R,

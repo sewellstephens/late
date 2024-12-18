@@ -1,4 +1,4 @@
-import type { TIndentElement } from '@sewellstephens/plate-indent';
+import type { TIndentElement } from '@sewell_stephens/late-indent';
 
 import { buildToggleIndex } from '../toggleIndexAtom';
 

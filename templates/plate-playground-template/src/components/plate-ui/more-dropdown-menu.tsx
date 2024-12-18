@@ -1,7 +1,7 @@
 import React from 'react';
 import { DropdownMenuProps } from '@radix-ui/react-dropdown-menu';
-import { MARK_SUBSCRIPT, MARK_SUPERSCRIPT } from '@sewellstephens/plate-basic-marks';
-import { focusEditor, toggleMark, useEditorRef } from '@sewellstephens/plate-common';
+import { MARK_SUBSCRIPT, MARK_SUPERSCRIPT } from '@sewell_stephens/late-basic-marks';
+import { focusEditor, toggleMark, useEditorRef } from '@sewell_stephens/late-common';
 
 import { Icons } from '@/components/icons';
 

@@ -1,4 +1,4 @@
-import type { TNode } from '@sewellstephens/plate-common';
+import type { TNode } from '@sewell_stephens/late-common';
 
 import { getCommentKey } from './getCommentKey';
 

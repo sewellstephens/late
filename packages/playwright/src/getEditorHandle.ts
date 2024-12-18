@@ -1,5 +1,5 @@
 import type { Locator, Page } from '@playwright/test';
-import type { LateEditor } from '@sewellstephens/plate-common/react';
+import type { LateEditor } from '@sewell_stephens/late-common/react';
 
 import type { EditorHandle } from './types';
 

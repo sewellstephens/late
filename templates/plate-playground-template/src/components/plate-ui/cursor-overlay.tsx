@@ -1,12 +1,12 @@
 import React from 'react';
-import { cn } from '@sewellstephens/cn';
-import { createZustandStore } from '@sewellstephens/plate-common';
+import { cn } from '@sewell_stephens/cn';
+import { createZustandStore } from '@sewell_stephens/late-common';
 import {
   CursorData,
   CursorOverlay as CursorOverlayPrimitive,
   CursorOverlayProps,
   CursorProps,
-} from '@sewellstephens/plate-cursor';
+} from '@sewell_stephens/late-cursor';
 
 export const cursorStore = createZustandStore('cursor')({
   cursors: {},

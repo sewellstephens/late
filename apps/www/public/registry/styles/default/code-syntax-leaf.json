@@ -1,10 +1,10 @@
 {
   "dependencies": [
-    "@sewellstephens/plate-code-block"
+    "@sewell_stephens/late-code-block"
   ],
   "files": [
     {
-      "content": "'use client';\n\nimport React from 'react';\n\nimport { withRef } from '@sewellstephens/cn';\nimport { useCodeSyntaxLeaf } from '@sewellstephens/plate-code-block/react';\nimport { LateLeaf } from '@sewellstephens/plate-common/react';\n\nexport const CodeSyntaxLeaf = withRef<typeof LateLeaf>(\n  ({ children, ...props }, ref) => {\n    const { leaf } = props;\n\n    const { tokenProps } = useCodeSyntaxLeaf({ leaf });\n\n    return (\n      <LateLeaf ref={ref} {...props}>\n        <span {...tokenProps}>{children}</span>\n      </LateLeaf>\n    );\n  }\n);\n",
+      "content": "'use client';\n\nimport React from 'react';\n\nimport { withRef } from '@sewell_stephens/cn';\nimport { useCodeSyntaxLeaf } from '@sewell_stephens/late-code-block/react';\nimport { LateLeaf } from '@sewell_stephens/late-common/react';\n\nexport const CodeSyntaxLeaf = withRef<typeof LateLeaf>(\n  ({ children, ...props }, ref) => {\n    const { leaf } = props;\n\n    const { tokenProps } = useCodeSyntaxLeaf({ leaf });\n\n    return (\n      <LateLeaf ref={ref} {...props}>\n        <span {...tokenProps}>{children}</span>\n      </LateLeaf>\n    );\n  }\n);\n",
       "name": "code-syntax-leaf.tsx"
     }
   ],

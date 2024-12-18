@@ -3,8 +3,8 @@ import {
   getAboveNode,
   isHotkey,
   select,
-} from '@sewellstephens/plate-common';
-import { Hotkeys, type KeyboardHandler } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common';
+import { Hotkeys, type KeyboardHandler } from '@sewell_stephens/late-common/react';
 
 import {
   KEY_SHIFT_EDGES,

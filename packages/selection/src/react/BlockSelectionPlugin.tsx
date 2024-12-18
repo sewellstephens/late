@@ -5,8 +5,8 @@ import {
   type QueryNodeOptions,
   type TNodeEntry,
   getNodeEntries,
-} from '@sewellstephens/plate-common';
-import { createTLatePlugin } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common';
+import { createTLatePlugin } from '@sewell_stephens/late-common/react';
 
 import type { ChangedElements, PartialSelectionOptions } from '../internal';
 

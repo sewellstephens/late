@@ -5,7 +5,7 @@ import {
   type TNodeEntry,
   getNodeEntry,
   getPreviousPath,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { getCellInPreviousTableRow } from './getCellInPreviousTableRow';
 

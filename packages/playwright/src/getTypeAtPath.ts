@@ -1,7 +1,7 @@
 import type { Page } from '@playwright/test';
 import type { Path } from 'slate';
 
-import { isElement } from '@sewellstephens/plate-common';
+import { isElement } from '@sewell_stephens/late-common';
 
 import type { EditorHandle } from './types';
 

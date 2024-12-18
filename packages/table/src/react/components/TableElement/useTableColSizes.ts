@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { unsetNodes } from '@sewellstephens/plate-common';
-import { findNodePath, useEditorRef } from '@sewellstephens/plate-common/react';
+import { unsetNodes } from '@sewell_stephens/late-common';
+import { findNodePath, useEditorRef } from '@sewell_stephens/late-common/react';
 
 import {
   type TTableElement,

@@ -1,5 +1,5 @@
-import type { TDescendant, TElement } from '@sewellstephens/plate-common';
-import type { ExtendEditor } from '@sewellstephens/plate-common/react';
+import type { TDescendant, TElement } from '@sewell_stephens/late-common';
+import type { ExtendEditor } from '@sewell_stephens/late-common/react';
 
 import type { TTableRowElement, TableConfig } from '../lib/types';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useEditorRef } from '@sewellstephens/plate-common/react';
+import { useEditorRef } from '@sewell_stephens/late-common/react';
 import { useReadOnly, useSelected } from 'slate-react';
 
 import { getTableGridAbove } from '../../queries';

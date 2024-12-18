@@ -1,13 +1,13 @@
 import React from 'react';
 
-import type { TElement } from '@sewellstephens/slate';
+import type { TElement } from '@sewell_stephens/slate';
 
 import {
   type AnyLatePlugin,
   type LateRenderElementProps,
   omitPluginContext,
-} from '@sewellstephens/plate-core/react';
-import { Box, type BoxProps, useComposedRef } from '@sewellstephens/react-utils';
+} from '@sewell_stephens/late-core/react';
+import { Box, type BoxProps, useComposedRef } from '@sewell_stephens/react-utils';
 import { clsx } from 'clsx';
 
 export type LateElementProps<

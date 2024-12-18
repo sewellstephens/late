@@ -14,7 +14,7 @@ import {
   splitNodes,
   withoutNormalizing,
   wrapNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Path, Range } from 'slate';
 
 import { ListItemContentPlugin, ListItemPlugin } from '../ListPlugin';

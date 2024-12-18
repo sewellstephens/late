@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { BasicElementsPlugin } from '@sewellstephens/plate-basic-elements/react';
-import { BasicMarksPlugin } from '@sewellstephens/plate-basic-marks/react';
+import { BasicElementsPlugin } from '@sewell_stephens/late-basic-elements/react';
+import { BasicMarksPlugin } from '@sewell_stephens/late-basic-marks/react';
 import {
   CloudAttachmentPlugin,
   CloudImagePlugin,
   CloudPlugin,
-} from '@sewellstephens/plate-cloud';
-import { Late } from '@sewellstephens/plate-common/react';
-import { useLateEditor } from '@sewellstephens/plate-core/react';
+} from '@sewell_stephens/late-cloud';
+import { Late } from '@sewell_stephens/late-common/react';
+import { useLateEditor } from '@sewell_stephens/late-core/react';
 
 import { uploadStoreInitialValue } from '@/plate/demo/cloud/uploadStoreInitialValue';
 import { editableProps } from '@/plate/demo/editableProps';

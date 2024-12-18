@@ -1,4 +1,4 @@
-import { Key, toLatePlugin } from '@sewellstephens/plate-common/react';
+import { Key, toLatePlugin } from '@sewell_stephens/late-common/react';
 
 import {
   CodeBlockPlugin as BaseCodeBlockPlugin,

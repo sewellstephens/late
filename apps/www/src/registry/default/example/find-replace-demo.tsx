@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-import { BasicElementsPlugin } from '@sewellstephens/plate-basic-elements/react';
-import { BasicMarksPlugin } from '@sewellstephens/plate-basic-marks/react';
-import { Late } from '@sewellstephens/plate-common/react';
-import { useLateEditor } from '@sewellstephens/plate-core/react';
-import { FindReplacePlugin } from '@sewellstephens/plate-find-replace';
+import { BasicElementsPlugin } from '@sewell_stephens/late-basic-elements/react';
+import { BasicMarksPlugin } from '@sewell_stephens/late-basic-marks/react';
+import { Late } from '@sewell_stephens/late-common/react';
+import { useLateEditor } from '@sewell_stephens/late-core/react';
+import { FindReplacePlugin } from '@sewell_stephens/late-find-replace';
 
 import { Icons } from '@/components/icons';
 import { editableProps } from '@/plate/demo/editableProps';

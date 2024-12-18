@@ -7,7 +7,7 @@ import {
   insertElements,
   select,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Path } from 'slate';
 
 import {

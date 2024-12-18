@@ -1,8 +1,8 @@
 import type React from 'react';
 
-import type { TEditor } from '@sewellstephens/slate';
+import type { TEditor } from '@sewell_stephens/slate';
 
-import { isComposing } from '@sewellstephens/slate-react';
+import { isComposing } from '@sewell_stephens/slate-react';
 
 import { Hotkeys as VanillaHotkeys, createHotkey } from '../../lib';
 

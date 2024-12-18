@@ -1,4 +1,4 @@
-import { IS_APPLE } from '@sewellstephens/utils';
+import { IS_APPLE } from '@sewell_stephens/utils';
 import { type KeyboardEventLike, isKeyHotkey } from 'is-hotkey';
 
 export { isHotkey } from 'is-hotkey';

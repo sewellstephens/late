@@ -1,4 +1,4 @@
-import { type TEditor, getMarks, removeEditorMark } from '@sewellstephens/slate';
+import { type TEditor, getMarks, removeEditorMark } from '@sewell_stephens/slate';
 
 /** Remove selection marks. */
 export const removeSelectionMark = (editor: TEditor) => {

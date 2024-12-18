@@ -2,7 +2,7 @@ import {
   type SetNodesOptions,
   type SlateEditor,
   setNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 type props = {
   isUpload?: boolean;

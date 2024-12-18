@@ -1,6 +1,6 @@
 /** @jsx jsx */
-import { LinkPlugin } from '@sewellstephens/plate-link';
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { LinkPlugin } from '@sewell_stephens/late-link';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { createLateEditor } from '../../react';
 import { normalizeDescendantsToDocumentFragment } from './index';

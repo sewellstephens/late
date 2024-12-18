@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
-import { type SlateEditor, normalizeEditor } from '@sewellstephens/plate-common';
-import { createSlateEditor } from '@sewellstephens/plate-common';
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { type SlateEditor, normalizeEditor } from '@sewell_stephens/late-common';
+import { createSlateEditor } from '@sewell_stephens/late-common';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { SUGGESTION_KEYS } from './SuggestionPlugin';
 import { SuggestionPlugin } from './SuggestionPlugin';

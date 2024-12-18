@@ -1,5 +1,5 @@
-import { setNodes } from '@sewellstephens/plate-common';
-import { findNodePath, useEditorRef } from '@sewellstephens/plate-common/react';
+import { setNodes } from '@sewell_stephens/late-common';
+import { findNodePath, useEditorRef } from '@sewell_stephens/late-common/react';
 import { useReadOnly } from 'slate-react';
 
 import type { TTodoListItemElement } from '../../lib';

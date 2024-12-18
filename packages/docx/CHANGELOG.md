@@ -1,4 +1,4 @@
-# @sewellstephens/plate-docx-serializer
+# @sewell_stephens/late-docx-serializer
 
 ## 37.0.0
 
@@ -116,7 +116,7 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewell_stephens/late-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.5.2
 
@@ -493,7 +493,7 @@
 ### Minor Changes
 
 - [#1303](https://github.com/sewellstephens/late/pull/1303) by [@zbeyens](https://github.com/zbeyens) –
-  - moved many utils to `@sewellstephens/plate-core`
+  - moved many utils to `@sewell_stephens/late-core`
   - deserialize `textIndent` to indent list
   - changed indent step from `32` to `36`
 

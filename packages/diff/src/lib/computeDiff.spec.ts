@@ -7,7 +7,7 @@ import {
   type TElement,
   type Value,
   getNodeString,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { type ComputeDiffOptions, computeDiff } from './computeDiff';
 

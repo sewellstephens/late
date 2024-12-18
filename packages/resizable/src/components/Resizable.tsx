@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { select, setNodes } from '@sewellstephens/plate-common';
+import { select, setNodes } from '@sewell_stephens/late-common';
 import {
   findNodePath,
   useEditorRef,
   useElement,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import type { ResizeEvent, ResizeLength } from '../types';
 import type { TResizableElement } from './TResizableElement';

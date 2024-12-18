@@ -1,4 +1,4 @@
-import { withCn } from '@sewellstephens/cn';
+import { withCn } from '@sewell_stephens/cn';
 
 import { Toolbar } from './toolbar';
 

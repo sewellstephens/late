@@ -1,6 +1,6 @@
-import type { TEditor } from '@sewellstephens/slate';
+import type { TEditor } from '@sewell_stephens/slate';
 
-import { isDefined } from '@sewellstephens/utils';
+import { isDefined } from '@sewell_stephens/utils';
 
 import { getMark } from './getMark';
 

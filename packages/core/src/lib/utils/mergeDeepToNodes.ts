@@ -1,4 +1,4 @@
-import type { TNode } from '@sewellstephens/slate';
+import type { TNode } from '@sewell_stephens/slate';
 
 import merge from 'lodash/merge.js';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { EmojiCategoryList } from '@sewellstephens/plate-emoji';
+import { EmojiCategoryList } from '@sewell_stephens/late-emoji';
 
 export const emojiCategoryIcons: Record<
   EmojiCategoryList,

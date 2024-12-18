@@ -1,6 +1,6 @@
 import type React from 'react';
 
-import type { TEditor } from '@sewellstephens/plate-common';
+import type { TEditor } from '@sewell_stephens/late-common';
 import type { Location } from 'slate';
 
 import { getBoundingClientRect } from './getBoundingClientRect';

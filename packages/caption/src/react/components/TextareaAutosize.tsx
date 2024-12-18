@@ -3,7 +3,7 @@ import ReactTextareaAutosize, {
   type TextareaAutosizeProps,
 } from 'react-textarea-autosize';
 
-import { useIsomorphicLayoutEffect } from '@sewellstephens/plate-common/react';
+import { useIsomorphicLayoutEffect } from '@sewell_stephens/late-common/react';
 
 /**
  * `<textarea />` component for React which grows with content.

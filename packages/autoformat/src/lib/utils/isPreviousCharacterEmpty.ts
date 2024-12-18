@@ -4,7 +4,7 @@ import {
   type TEditor,
   getEditorString,
   getRangeBefore,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 export const isPreviousCharacterEmpty = (editor: TEditor, at: Location) => {
   const range = getRangeBefore(editor, at);

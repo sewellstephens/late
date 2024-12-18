@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { cn, withRef } from '@sewellstephens/cn';
+import { cn, withRef } from '@sewell_stephens/cn';
 
 import { buttonVariants } from './button';
 import { TColor } from './color-dropdown-menu';

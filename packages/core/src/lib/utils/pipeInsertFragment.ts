@@ -1,4 +1,4 @@
-import { type TDescendant, withoutNormalizing } from '@sewellstephens/slate';
+import { type TDescendant, withoutNormalizing } from '@sewell_stephens/slate';
 
 import type { SlateEditor } from '../editor';
 import type { ParserOptions } from '../plugin/BasePlugin';

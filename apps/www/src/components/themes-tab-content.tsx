@@ -9,7 +9,7 @@ import {
   ResetIcon,
   SunIcon,
 } from '@radix-ui/react-icons';
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import { useTheme } from 'next-themes';
 
 import { useConfig } from '@/hooks/use-config';

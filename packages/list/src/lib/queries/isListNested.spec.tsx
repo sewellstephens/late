@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
-import { findNode } from '@sewellstephens/plate-common';
-import { createLateEditor } from '@sewellstephens/plate-common/react';
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { findNode } from '@sewell_stephens/late-common';
+import { createLateEditor } from '@sewell_stephens/late-common/react';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { isListNested } from './isListNested';
 

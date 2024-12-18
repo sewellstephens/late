@@ -1,9 +1,9 @@
 'use client';
 
 import React from 'react';
-import { withRef } from '@sewellstephens/cn';
-import { useCodeSyntaxLeaf } from '@sewellstephens/plate-code-block';
-import { LateLeaf } from '@sewellstephens/plate-common';
+import { withRef } from '@sewell_stephens/cn';
+import { useCodeSyntaxLeaf } from '@sewell_stephens/late-code-block';
+import { LateLeaf } from '@sewell_stephens/late-common';
 
 export const CodeSyntaxLeaf = withRef<typeof LateLeaf>(
   ({ children, ...props }, ref) => {

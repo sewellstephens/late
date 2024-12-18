@@ -2,7 +2,7 @@ import {
   type InsertNodesOptions,
   type TEditor,
   getQueryOptions,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 import { insertElements } from './insertElements';
 

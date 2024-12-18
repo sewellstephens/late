@@ -1,6 +1,6 @@
 import type { Path } from 'slate';
 
-import { type TEditor, getNodeEntry } from '@sewellstephens/slate';
+import { type TEditor, getNodeEntry } from '@sewell_stephens/slate';
 
 /** Get the top-level block. */
 export const getAncestorNode = (editor: TEditor, path?: Path) => {

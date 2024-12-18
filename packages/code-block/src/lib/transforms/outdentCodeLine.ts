@@ -1,4 +1,4 @@
-import type { TEditor, TElementEntry } from '@sewellstephens/plate-common';
+import type { TEditor, TElementEntry } from '@sewell_stephens/late-common';
 
 import { deleteStartSpace } from './deleteStartSpace';
 

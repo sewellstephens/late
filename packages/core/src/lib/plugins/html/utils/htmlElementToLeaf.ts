@@ -1,4 +1,4 @@
-import { type TDescendant, isElement, isText } from '@sewellstephens/slate';
+import { type TDescendant, isElement, isText } from '@sewell_stephens/slate';
 import { jsx } from 'slate-hyperscript';
 
 import type { SlateEditor } from '../../../editor';

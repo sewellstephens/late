@@ -1,4 +1,4 @@
-import { type TEditor, withoutNormalizing } from '@sewellstephens/slate';
+import { type TEditor, withoutNormalizing } from '@sewell_stephens/slate';
 import castArray from 'lodash/castArray.js';
 
 import { isMarkActive } from '../queries';

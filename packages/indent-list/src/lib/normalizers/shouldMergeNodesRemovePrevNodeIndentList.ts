@@ -4,7 +4,7 @@ import {
   type SlateEditor,
   type TElement,
   isDefined,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { IndentListPlugin } from '../IndentListPlugin';
 

@@ -1,5 +1,5 @@
-import { AlignPlugin } from '@sewellstephens/plate-alignment';
-import { AutoformatPlugin } from '@sewellstephens/plate-autoformat/react';
+import { AlignPlugin } from '@sewell_stephens/late-alignment';
+import { AutoformatPlugin } from '@sewell_stephens/late-autoformat/react';
 import {
   BoldPlugin,
   CodePlugin,
@@ -8,47 +8,47 @@ import {
   SubscriptPlugin,
   SuperscriptPlugin,
   UnderlinePlugin,
-} from '@sewellstephens/plate-basic-marks/react';
-import { BlockquotePlugin } from '@sewellstephens/plate-block-quote/react';
+} from '@sewell_stephens/late-basic-marks/react';
+import { BlockquotePlugin } from '@sewell_stephens/late-block-quote/react';
 import {
   ExitBreakPlugin,
   SingleLinePlugin,
   SoftBreakPlugin,
-} from '@sewellstephens/plate-break/react';
-import { CommentsPlugin } from '@sewellstephens/plate-comments/react';
-import { ParagraphPlugin } from '@sewellstephens/plate-common';
-import { CsvPlugin } from '@sewellstephens/plate-csv';
-import { DatePlugin } from '@sewellstephens/plate-date';
-import { DndPlugin } from '@sewellstephens/plate-dnd';
-import { DocxPlugin } from '@sewellstephens/plate-docx';
-import { EmojiPlugin } from '@sewellstephens/plate-emoji';
-import { ExcalidrawPlugin } from '@sewellstephens/plate-excalidraw/react';
+} from '@sewell_stephens/late-break/react';
+import { CommentsPlugin } from '@sewell_stephens/late-comments/react';
+import { ParagraphPlugin } from '@sewell_stephens/late-common';
+import { CsvPlugin } from '@sewell_stephens/late-csv';
+import { DatePlugin } from '@sewell_stephens/late-date';
+import { DndPlugin } from '@sewell_stephens/late-dnd';
+import { DocxPlugin } from '@sewell_stephens/late-docx';
+import { EmojiPlugin } from '@sewell_stephens/late-emoji';
+import { ExcalidrawPlugin } from '@sewell_stephens/late-excalidraw/react';
 import {
   FontBackgroundColorPlugin,
   FontColorPlugin,
   FontSizePlugin,
-} from '@sewellstephens/plate-font';
-import { HighlightPlugin } from '@sewellstephens/plate-highlight/react';
-import { HorizontalRulePlugin } from '@sewellstephens/plate-horizontal-rule/react';
-import { IndentPlugin } from '@sewellstephens/plate-indent/react';
-import { IndentListPlugin } from '@sewellstephens/plate-indent-list/react';
-import { JuicePlugin } from '@sewellstephens/plate-juice';
-import { KbdPlugin } from '@sewellstephens/plate-kbd/react';
-import { LineHeightPlugin } from '@sewellstephens/plate-line-height';
-import { LinkPlugin } from '@sewellstephens/plate-link/react';
-import { TodoListPlugin } from '@sewellstephens/plate-list/react';
-import { MarkdownPlugin } from '@sewellstephens/plate-markdown';
-import { ImagePlugin, MediaEmbedPlugin } from '@sewellstephens/plate-media/react';
-import { MentionPlugin } from '@sewellstephens/plate-mention/react';
-import { NodeIdPlugin } from '@sewellstephens/plate-node-id';
-import { NormalizeTypesPlugin } from '@sewellstephens/plate-normalizers';
-import { ResetNodePlugin } from '@sewellstephens/plate-reset-node';
-import { DeletePlugin, SelectOnBackspacePlugin } from '@sewellstephens/plate-select';
-import { BlockSelectionPlugin } from '@sewellstephens/plate-selection/react';
-import { TabbablePlugin } from '@sewellstephens/plate-tabbable';
-import { TablePlugin } from '@sewellstephens/plate-table/react';
-import { TogglePlugin } from '@sewellstephens/plate-toggle/react';
-import { TrailingBlockPlugin } from '@sewellstephens/plate-trailing-block';
+} from '@sewell_stephens/late-font';
+import { HighlightPlugin } from '@sewell_stephens/late-highlight/react';
+import { HorizontalRulePlugin } from '@sewell_stephens/late-horizontal-rule/react';
+import { IndentPlugin } from '@sewell_stephens/late-indent/react';
+import { IndentListPlugin } from '@sewell_stephens/late-indent-list/react';
+import { JuicePlugin } from '@sewell_stephens/late-juice';
+import { KbdPlugin } from '@sewell_stephens/late-kbd/react';
+import { LineHeightPlugin } from '@sewell_stephens/late-line-height';
+import { LinkPlugin } from '@sewell_stephens/late-link/react';
+import { TodoListPlugin } from '@sewell_stephens/late-list/react';
+import { MarkdownPlugin } from '@sewell_stephens/late-markdown';
+import { ImagePlugin, MediaEmbedPlugin } from '@sewell_stephens/late-media/react';
+import { MentionPlugin } from '@sewell_stephens/late-mention/react';
+import { NodeIdPlugin } from '@sewell_stephens/late-node-id';
+import { NormalizeTypesPlugin } from '@sewell_stephens/late-normalizers';
+import { ResetNodePlugin } from '@sewell_stephens/late-reset-node';
+import { DeletePlugin, SelectOnBackspacePlugin } from '@sewell_stephens/late-select';
+import { BlockSelectionPlugin } from '@sewell_stephens/late-selection/react';
+import { TabbablePlugin } from '@sewell_stephens/late-tabbable';
+import { TablePlugin } from '@sewell_stephens/late-table/react';
+import { TogglePlugin } from '@sewell_stephens/late-toggle/react';
+import { TrailingBlockPlugin } from '@sewell_stephens/late-trailing-block';
 
 import { DragOverCursorPlugin } from '@/plate/demo/plugins/DragOverCursorPlugin';
 

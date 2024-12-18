@@ -1,12 +1,12 @@
 import React from 'react';
 
-import type { TEditor } from '@sewellstephens/plate-common';
+import type { TEditor } from '@sewell_stephens/late-common';
 import type { Path } from 'slate';
 
 import {
   type LateRenderElementProps,
   findNodePath,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import { useReadOnly } from 'slate-react';
 
 export interface WithDraggableOptions<T = any> {

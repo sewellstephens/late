@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo } from 'react';
 
-import { createPrimitiveComponent } from '@sewellstephens/plate-common/react';
+import { createPrimitiveComponent } from '@sewell_stephens/late-common/react';
 
 import {
   imagePreviewActions,

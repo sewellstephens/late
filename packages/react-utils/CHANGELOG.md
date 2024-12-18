@@ -1,4 +1,4 @@
-# @sewellstephens/react-utils
+# @sewell_stephens/react-utils
 
 ## 37.0.0
 
@@ -23,5 +23,5 @@
 
 - [#2829](https://github.com/sewellstephens/late/pull/2829) by [@zbeyens](https://github.com/zbeyens) – New package
 
-  - `PortalBody`, `Text`, `Box`, `createPrimitiveComponent`, `createSlotComponent`, `withProviders` from `@sewellstephens/plate-utils`
+  - `PortalBody`, `Text`, `Box`, `createPrimitiveComponent`, `createSlotComponent`, `withProviders` from `@sewell_stephens/late-utils`
   - `createPrimitiveElement`: Creates a component from an element type

@@ -1,6 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
-import { withProps } from '@sewellstephens/cn';
+import { withProps } from '@sewell_stephens/cn';
 import {
   BoldPlugin,
   CodePlugin,
@@ -9,49 +9,49 @@ import {
   SubscriptPlugin,
   SuperscriptPlugin,
   UnderlinePlugin,
-} from '@sewellstephens/plate-basic-marks/react';
-import { BlockquotePlugin } from '@sewellstephens/plate-block-quote/react';
+} from '@sewell_stephens/late-basic-marks/react';
+import { BlockquotePlugin } from '@sewell_stephens/late-block-quote/react';
 import {
   CodeBlockPlugin,
   CodeLinePlugin,
   CodeSyntaxPlugin,
-} from '@sewellstephens/plate-code-block/react';
-import { CommentsPlugin } from '@sewellstephens/plate-comments/react';
-import { ParagraphPlugin } from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-code-block/react';
+import { CommentsPlugin } from '@sewell_stephens/late-comments/react';
+import { ParagraphPlugin } from '@sewell_stephens/late-common';
 import {
   type NodeComponent,
   LateElement,
   LateLeaf,
-} from '@sewellstephens/plate-common/react';
-import { DatePlugin } from '@sewellstephens/plate-date';
-import { EmojiInputPlugin } from '@sewellstephens/plate-emoji';
-import { ExcalidrawPlugin } from '@sewellstephens/plate-excalidraw/react';
-import { FindReplacePlugin } from '@sewellstephens/plate-find-replace';
-import { HEADING_KEYS } from '@sewellstephens/plate-heading';
-import { HighlightPlugin } from '@sewellstephens/plate-highlight/react';
-import { HorizontalRulePlugin } from '@sewellstephens/plate-horizontal-rule/react';
-import { KbdPlugin } from '@sewellstephens/plate-kbd/react';
-import { ColumnItemPlugin, ColumnPlugin } from '@sewellstephens/plate-layout/react';
-import { LinkPlugin } from '@sewellstephens/plate-link/react';
+} from '@sewell_stephens/late-common/react';
+import { DatePlugin } from '@sewell_stephens/late-date';
+import { EmojiInputPlugin } from '@sewell_stephens/late-emoji';
+import { ExcalidrawPlugin } from '@sewell_stephens/late-excalidraw/react';
+import { FindReplacePlugin } from '@sewell_stephens/late-find-replace';
+import { HEADING_KEYS } from '@sewell_stephens/late-heading';
+import { HighlightPlugin } from '@sewell_stephens/late-highlight/react';
+import { HorizontalRulePlugin } from '@sewell_stephens/late-horizontal-rule/react';
+import { KbdPlugin } from '@sewell_stephens/late-kbd/react';
+import { ColumnItemPlugin, ColumnPlugin } from '@sewell_stephens/late-layout/react';
+import { LinkPlugin } from '@sewell_stephens/late-link/react';
 import {
   BulletedListPlugin,
   ListItemPlugin,
   NumberedListPlugin,
   TodoListPlugin,
-} from '@sewellstephens/plate-list/react';
-import { ImagePlugin, MediaEmbedPlugin } from '@sewellstephens/plate-media/react';
+} from '@sewell_stephens/late-list/react';
+import { ImagePlugin, MediaEmbedPlugin } from '@sewell_stephens/late-media/react';
 import {
   MentionInputPlugin,
   MentionPlugin,
-} from '@sewellstephens/plate-mention/react';
-import { SlashInputPlugin } from '@sewellstephens/plate-slash-command';
+} from '@sewell_stephens/late-mention/react';
+import { SlashInputPlugin } from '@sewell_stephens/late-slash-command';
 import {
   TableCellHeaderPlugin,
   TableCellPlugin,
   TablePlugin,
   TableRowPlugin,
-} from '@sewellstephens/plate-table/react';
-import { TogglePlugin } from '@sewellstephens/plate-toggle/react';
+} from '@sewell_stephens/late-table/react';
+import { TogglePlugin } from '@sewell_stephens/late-toggle/react';
 
 import { BlockquoteElement } from '@/registry/default/plate-ui/blockquote-element';
 import { CodeBlockElement } from '@/registry/default/plate-ui/code-block-element';

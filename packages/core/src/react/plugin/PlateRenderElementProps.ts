@@ -1,5 +1,5 @@
-import type { TElement } from '@sewellstephens/slate';
-import type { TRenderElementProps } from '@sewellstephens/slate-react';
+import type { TElement } from '@sewell_stephens/slate';
+import type { TRenderElementProps } from '@sewell_stephens/slate-react';
 
 import type { AnyPluginConfig, PluginConfig } from '../../lib';
 import type { LateRenderNodeProps } from './LateRenderNodeProps';

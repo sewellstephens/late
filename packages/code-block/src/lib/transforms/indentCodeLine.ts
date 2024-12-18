@@ -6,7 +6,7 @@ import {
   getStartPoint,
   insertText,
   isExpanded,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 export interface IndentCodeLineOptions {
   codeBlock: TElementEntry;

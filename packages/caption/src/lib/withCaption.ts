@@ -7,7 +7,7 @@ import {
   getPluginTypes,
   isCollapsed,
   isHotkey,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { type CaptionConfig, CaptionPlugin } from './CaptionPlugin';
 

@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { cn } from '@sewellstephens/cn';
-import { useEditorRef } from '@sewellstephens/plate-core/react';
+import { cn } from '@sewell_stephens/cn';
+import { useEditorRef } from '@sewell_stephens/late-core/react';
 import {
   type CursorData,
   CursorOverlay as CursorOverlayPrimitive,
   type CursorOverlayProps,
   type CursorProps,
-} from '@sewellstephens/plate-cursor';
+} from '@sewell_stephens/late-cursor';
 
 import { DragOverCursorPlugin } from '@/lib/plate/demo/plugins/DragOverCursorPlugin';
 

@@ -1,4 +1,4 @@
-import { type TEditor, isExpanded } from '@sewellstephens/slate';
+import { type TEditor, isExpanded } from '@sewell_stephens/slate';
 
 /** Is the selection expanded. */
 export const isSelectionExpanded = (editor: TEditor) =>

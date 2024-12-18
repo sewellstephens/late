@@ -4,12 +4,12 @@ import {
   useEditorSelector,
   useElement,
   useRemoveNodeButton,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import {
   floatingMediaActions,
   FloatingMedia as FloatingMediaPrimitive,
   useFloatingMediaSelectors,
-} from '@sewellstephens/plate-media';
+} from '@sewell_stephens/late-media';
 import { useReadOnly, useSelected } from 'slate-react';
 
 import { Icons } from '@/components/icons';

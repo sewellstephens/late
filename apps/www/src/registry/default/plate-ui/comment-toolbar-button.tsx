@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { useCommentAddButton } from '@sewellstephens/plate-comments/react';
+import { useCommentAddButton } from '@sewell_stephens/late-comments/react';
 
 import { Icons } from '@/components/icons';
 

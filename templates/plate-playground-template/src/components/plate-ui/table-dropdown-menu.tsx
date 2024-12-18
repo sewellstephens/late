@@ -1,11 +1,11 @@
 import React from 'react';
 import { DropdownMenuProps } from '@radix-ui/react-dropdown-menu';
-import { someNode } from '@sewellstephens/plate-common';
+import { someNode } from '@sewell_stephens/late-common';
 import {
   focusEditor,
   useEditorRef,
   useEditorSelector,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import {
   deleteColumn,
   deleteRow,
@@ -14,7 +14,7 @@ import {
   insertTable,
   insertTableColumn,
   insertTableRow,
-} from '@sewellstephens/plate-table';
+} from '@sewell_stephens/late-table';
 
 import { Icons, iconVariants } from '@/components/icons';
 

@@ -16,7 +16,7 @@ import {
   insertElements,
   isElement,
   removeNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Path } from 'slate';
 
 import {

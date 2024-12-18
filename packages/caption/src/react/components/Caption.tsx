@@ -4,7 +4,7 @@ import {
   createPrimitiveComponent,
   useEditorRef,
   useElement,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import { useReadOnly, useSelected } from 'slate-react';
 
 import { CaptionPlugin } from '../CaptionPlugin';

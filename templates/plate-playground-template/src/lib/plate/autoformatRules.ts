@@ -5,7 +5,7 @@ import {
   autoformatMath,
   autoformatPunctuation,
   autoformatSmartQuotes,
-} from '@sewellstephens/plate-autoformat';
+} from '@sewell_stephens/late-autoformat';
 
 import { autoformatBlocks } from '@/lib/plate/autoformatBlocks';
 import { autoformatIndentLists } from '@/lib/plate/autoformatIndentLists';

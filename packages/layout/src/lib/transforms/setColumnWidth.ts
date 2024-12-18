@@ -6,7 +6,7 @@ import {
   getNodeEntry,
   isElement,
   setNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { TColumnElement, TColumnGroupElement } from '../types';
 

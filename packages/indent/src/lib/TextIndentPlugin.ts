@@ -2,7 +2,7 @@ import {
   ParagraphPlugin,
   type PluginConfig,
   createTSlatePlugin,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { IndentConfig } from './IndentPlugin';
 

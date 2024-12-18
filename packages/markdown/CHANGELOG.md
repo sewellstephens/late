@@ -1,4 +1,4 @@
-# @sewellstephens/plate-md-serializer
+# @sewell_stephens/late-md-serializer
 
 ## 37.0.0
 
@@ -144,7 +144,7 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewell_stephens/late-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.5.2
 
@@ -531,22 +531,22 @@
 ### Patch Changes
 
 - Updated dependencies [[`3718c6d1`](https://github.com/sewellstephens/late/commit/3718c6d1abe1af8a94b41e9debef0cb5301d051c), [`a6bf8c5e`](https://github.com/sewellstephens/late/commit/a6bf8c5e6897c6ab443e0ac3d69a30befeaddadf), [`25dcad65`](https://github.com/sewellstephens/late/commit/25dcad654b8297a50c905cc427a59e68c0ff8093)]:
-  - @sewellstephens/plate-list@5.3.5
-  - @sewellstephens/plate-common@5.3.5
-  - @sewellstephens/plate-code-block@5.3.5
-  - @sewellstephens/plate-block-quote@5.3.5
-  - @sewellstephens/plate-heading@5.3.5
-  - @sewellstephens/plate-link@5.3.5
-  - @sewellstephens/plate-paragraph@5.3.5
-  - @sewellstephens/plate-serializer@5.3.5
+  - @sewell_stephens/late-list@5.3.5
+  - @sewell_stephens/late-common@5.3.5
+  - @sewell_stephens/late-code-block@5.3.5
+  - @sewell_stephens/late-block-quote@5.3.5
+  - @sewell_stephens/late-heading@5.3.5
+  - @sewell_stephens/late-link@5.3.5
+  - @sewell_stephens/late-paragraph@5.3.5
+  - @sewell_stephens/late-serializer@5.3.5
 
 ## 5.3.4
 
 ### Patch Changes
 
 - Updated dependencies [[`f45ed8cf`](https://github.com/sewellstephens/late/commit/f45ed8cff140a604169bfa0d042447a8fd0236ed), [`9b61b9d5`](https://github.com/sewellstephens/late/commit/9b61b9d5a631c9b0e14dfd081f70a633a3c0b436), [`a574a753`](https://github.com/sewellstephens/late/commit/a574a7537f7a4a25bb6a527a08ad6698da1dc7b1)]:
-  - @sewellstephens/plate-serializer@5.3.4
-  - @sewellstephens/plate-code-block@5.3.4
+  - @sewell_stephens/late-serializer@5.3.4
+  - @sewell_stephens/late-code-block@5.3.4
 
 ## 5.3.3
 
@@ -561,160 +561,160 @@
 - [#1136](https://github.com/sewellstephens/late/pull/1136) [`8aec270f`](https://github.com/sewellstephens/late/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118) Thanks [@dylans](https://github.com/dylans)! - allow disabling deserializer by paste target
 
 - Updated dependencies [[`8aec270f`](https://github.com/sewellstephens/late/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118)]:
-  - @sewellstephens/plate-core@5.3.1
-  - @sewellstephens/plate-code-block@5.3.1
-  - @sewellstephens/plate-serializer@5.3.1
-  - @sewellstephens/plate-common@5.3.1
-  - @sewellstephens/plate-block-quote@5.3.1
-  - @sewellstephens/plate-heading@5.3.1
-  - @sewellstephens/plate-link@5.3.1
-  - @sewellstephens/plate-list@5.3.1
-  - @sewellstephens/plate-paragraph@5.3.1
+  - @sewell_stephens/late-core@5.3.1
+  - @sewell_stephens/late-code-block@5.3.1
+  - @sewell_stephens/late-serializer@5.3.1
+  - @sewell_stephens/late-common@5.3.1
+  - @sewell_stephens/late-block-quote@5.3.1
+  - @sewell_stephens/late-heading@5.3.1
+  - @sewell_stephens/late-link@5.3.1
+  - @sewell_stephens/late-list@5.3.1
+  - @sewell_stephens/late-paragraph@5.3.1
 
 ## 5.3.0
 
 ### Patch Changes
 
 - Updated dependencies [[`7ee21356`](https://github.com/sewellstephens/late/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e), [`5c68eb04`](https://github.com/sewellstephens/late/commit/5c68eb04b5f528d08d45a4f994ef8c1d7924ab33)]:
-  - @sewellstephens/plate-core@5.3.0
-  - @sewellstephens/plate-code-block@5.3.0
-  - @sewellstephens/plate-common@5.3.0
-  - @sewellstephens/plate-block-quote@5.3.0
-  - @sewellstephens/plate-heading@5.3.0
-  - @sewellstephens/plate-link@5.3.0
-  - @sewellstephens/plate-list@5.3.0
-  - @sewellstephens/plate-paragraph@5.3.0
-  - @sewellstephens/plate-serializer@5.3.0
+  - @sewell_stephens/late-core@5.3.0
+  - @sewell_stephens/late-code-block@5.3.0
+  - @sewell_stephens/late-common@5.3.0
+  - @sewell_stephens/late-block-quote@5.3.0
+  - @sewell_stephens/late-heading@5.3.0
+  - @sewell_stephens/late-link@5.3.0
+  - @sewell_stephens/late-list@5.3.0
+  - @sewell_stephens/late-paragraph@5.3.0
+  - @sewell_stephens/late-serializer@5.3.0
 
 ## 5.1.0
 
 ### Patch Changes
 
 - Updated dependencies [[`503956fd`](https://github.com/sewellstephens/late/commit/503956fd9f71253249b3ad699b81c1c465351b0a), [`503956fd`](https://github.com/sewellstephens/late/commit/503956fd9f71253249b3ad699b81c1c465351b0a)]:
-  - @sewellstephens/plate-list@5.1.0
-  - @sewellstephens/plate-common@5.1.0
-  - @sewellstephens/plate-block-quote@5.1.0
-  - @sewellstephens/plate-code-block@5.1.0
-  - @sewellstephens/plate-heading@5.1.0
-  - @sewellstephens/plate-link@5.1.0
-  - @sewellstephens/plate-paragraph@5.1.0
-  - @sewellstephens/plate-serializer@5.1.0
+  - @sewell_stephens/late-list@5.1.0
+  - @sewell_stephens/late-common@5.1.0
+  - @sewell_stephens/late-block-quote@5.1.0
+  - @sewell_stephens/late-code-block@5.1.0
+  - @sewell_stephens/late-heading@5.1.0
+  - @sewell_stephens/late-link@5.1.0
+  - @sewell_stephens/late-paragraph@5.1.0
+  - @sewell_stephens/late-serializer@5.1.0
 
 ## 4.4.0
 
 ### Patch Changes
 
 - Updated dependencies [[`c353b008`](https://github.com/sewellstephens/late/commit/c353b0085804fa9099f0c18405ca01b0b25da03a), [`7c32d4ef`](https://github.com/sewellstephens/late/commit/7c32d4efc0e84f6e2878473a3dd0efad3740ba9e), [`b22c06aa`](https://github.com/sewellstephens/late/commit/b22c06aad1cfed08069dadc7ec39bcbfb1d0af37)]:
-  - @sewellstephens/plate-list@4.4.0
-  - @sewellstephens/plate-code-block@4.4.0
-  - @sewellstephens/plate-common@4.4.0
-  - @sewellstephens/plate-block-quote@4.4.0
-  - @sewellstephens/plate-heading@4.4.0
-  - @sewellstephens/plate-link@4.4.0
-  - @sewellstephens/plate-paragraph@4.4.0
-  - @sewellstephens/plate-serializer@4.4.0
+  - @sewell_stephens/late-list@4.4.0
+  - @sewell_stephens/late-code-block@4.4.0
+  - @sewell_stephens/late-common@4.4.0
+  - @sewell_stephens/late-block-quote@4.4.0
+  - @sewell_stephens/late-heading@4.4.0
+  - @sewell_stephens/late-link@4.4.0
+  - @sewell_stephens/late-paragraph@4.4.0
+  - @sewell_stephens/late-serializer@4.4.0
 
 ## 4.3.7
 
 ### Patch Changes
 
 - Updated dependencies [[`58f6fb53`](https://github.com/sewellstephens/late/commit/58f6fb53bf45a2e0509f4aca617aa21356952fca)]:
-  - @sewellstephens/plate-core@4.3.7
-  - @sewellstephens/plate-common@4.3.7
-  - @sewellstephens/plate-block-quote@4.3.7
-  - @sewellstephens/plate-code-block@4.3.7
-  - @sewellstephens/plate-heading@4.3.7
-  - @sewellstephens/plate-link@4.3.7
-  - @sewellstephens/plate-list@4.3.7
-  - @sewellstephens/plate-paragraph@4.3.7
-  - @sewellstephens/plate-serializer@4.3.7
+  - @sewell_stephens/late-core@4.3.7
+  - @sewell_stephens/late-common@4.3.7
+  - @sewell_stephens/late-block-quote@4.3.7
+  - @sewell_stephens/late-code-block@4.3.7
+  - @sewell_stephens/late-heading@4.3.7
+  - @sewell_stephens/late-link@4.3.7
+  - @sewell_stephens/late-list@4.3.7
+  - @sewell_stephens/late-paragraph@4.3.7
+  - @sewell_stephens/late-serializer@4.3.7
 
 ## 4.3.5
 
 ### Patch Changes
 
 - Updated dependencies [[`8525af01`](https://github.com/sewellstephens/late/commit/8525af01b2ca705665bad3ada73b8e906620dad8)]:
-  - @sewellstephens/plate-code-block@4.3.5
+  - @sewell_stephens/late-code-block@4.3.5
 
 ## 4.3.1
 
 ### Patch Changes
 
 - Updated dependencies [[`a692c078`](https://github.com/sewellstephens/late/commit/a692c078f9386ebb63aea9cb704decf554b07e8e)]:
-  - @sewellstephens/plate-code-block@4.3.1
+  - @sewell_stephens/late-code-block@4.3.1
 
 ## 4.3.0
 
 ### Patch Changes
 
 - Updated dependencies [[`7b892a59`](https://github.com/sewellstephens/late/commit/7b892a59f27bdaa81c90097534c411cc80b92e8a), [`6af469cd`](https://github.com/sewellstephens/late/commit/6af469cd5ac310e831eb8a99a71eba73bde62fc6)]:
-  - @sewellstephens/plate-code-block@4.3.0
-  - @sewellstephens/plate-core@4.3.0
-  - @sewellstephens/plate-common@4.3.0
-  - @sewellstephens/plate-block-quote@4.3.0
-  - @sewellstephens/plate-heading@4.3.0
-  - @sewellstephens/plate-link@4.3.0
-  - @sewellstephens/plate-list@4.3.0
-  - @sewellstephens/plate-paragraph@4.3.0
-  - @sewellstephens/plate-serializer@4.3.0
+  - @sewell_stephens/late-code-block@4.3.0
+  - @sewell_stephens/late-core@4.3.0
+  - @sewell_stephens/late-common@4.3.0
+  - @sewell_stephens/late-block-quote@4.3.0
+  - @sewell_stephens/late-heading@4.3.0
+  - @sewell_stephens/late-link@4.3.0
+  - @sewell_stephens/late-list@4.3.0
+  - @sewell_stephens/late-paragraph@4.3.0
+  - @sewell_stephens/late-serializer@4.3.0
 
 ## 4.2.0
 
 ### Patch Changes
 
 - Updated dependencies [[`87cca4a0`](https://github.com/sewellstephens/late/commit/87cca4a0894b512a8257257570952e827924c13b), [`6fe49e22`](https://github.com/sewellstephens/late/commit/6fe49e22e51b5fbec8695629e77ab149d80ce4cb)]:
-  - @sewellstephens/plate-list@4.2.0
+  - @sewell_stephens/late-list@4.2.0
 
 ## 4.1.0
 
 ### Patch Changes
 
 - Updated dependencies [[`eb30aa5d`](https://github.com/sewellstephens/late/commit/eb30aa5d355abb81bc3e8577fedb3800e1b056aa)]:
-  - @sewellstephens/plate-list@4.1.0
+  - @sewell_stephens/late-list@4.1.0
 
 ## 4.0.0
 
 ### Patch Changes
 
 - Updated dependencies [[`22da824e`](https://github.com/sewellstephens/late/commit/22da824e9acea62cbd9073a150b543348a1b128b)]:
-  - @sewellstephens/plate-link@4.0.0
+  - @sewell_stephens/late-link@4.0.0
 
 ## 3.5.1
 
 ### Patch Changes
 
 - Updated dependencies [[`b758cfb6`](https://github.com/sewellstephens/late/commit/b758cfb6ea955ab4d054c0873ab632aaf1c3e866), [`0db393e1`](https://github.com/sewellstephens/late/commit/0db393e1cebec792c89a633cb8929a0786943713)]:
-  - @sewellstephens/plate-list@3.5.1
-  - @sewellstephens/plate-serializer@3.5.1
+  - @sewell_stephens/late-list@3.5.1
+  - @sewell_stephens/late-serializer@3.5.1
 
 ## 3.5.0
 
 ### Patch Changes
 
 - Updated dependencies [[`7ab01674`](https://github.com/sewellstephens/late/commit/7ab016745c5eddcf4daa73bbc1958f087d0c4b90)]:
-  - @sewellstephens/plate-link@3.5.0
+  - @sewell_stephens/late-link@3.5.0
 
 ## 3.4.0
 
 ### Patch Changes
 
 - Updated dependencies [[`f1da7267`](https://github.com/sewellstephens/late/commit/f1da7267d46d94e207f4477f73e42b63736a9085), [`35caf35d`](https://github.com/sewellstephens/late/commit/35caf35d48fff851518648ff66e64a4268dcc97c)]:
-  - @sewellstephens/plate-common@3.4.0
-  - @sewellstephens/plate-core@3.4.0
-  - @sewellstephens/plate-block-quote@3.4.0
-  - @sewellstephens/plate-code-block@3.4.0
-  - @sewellstephens/plate-heading@3.4.0
-  - @sewellstephens/plate-link@3.4.0
-  - @sewellstephens/plate-list@3.4.0
-  - @sewellstephens/plate-paragraph@3.4.0
-  - @sewellstephens/plate-serializer@3.4.0
+  - @sewell_stephens/late-common@3.4.0
+  - @sewell_stephens/late-core@3.4.0
+  - @sewell_stephens/late-block-quote@3.4.0
+  - @sewell_stephens/late-code-block@3.4.0
+  - @sewell_stephens/late-heading@3.4.0
+  - @sewell_stephens/late-link@3.4.0
+  - @sewell_stephens/late-list@3.4.0
+  - @sewell_stephens/late-paragraph@3.4.0
+  - @sewell_stephens/late-serializer@3.4.0
 
 ## 3.2.1
 
 ### Patch Changes
 
 - Updated dependencies [[`baddeb11`](https://github.com/sewellstephens/late/commit/baddeb117c1a13451f7f4da271ea441fafe3c02d)]:
-  - @sewellstephens/plate-list@3.2.1
+  - @sewell_stephens/late-list@3.2.1
 
 ## 3.2.0
 
@@ -727,36 +727,36 @@
 - [#996](https://github.com/sewellstephens/late/pull/996) [`8662815f`](https://github.com/sewellstephens/late/commit/8662815f8c714ba9efb8cc6772bb675ea075332b) Thanks [@dylans](https://github.com/dylans)! - add additional nodeTypes to markdown deserializer
 
 - Updated dependencies [[`3a590663`](https://github.com/sewellstephens/late/commit/3a5906637b008e85a6d907a7492a78fe9961bf34), [`58387c6d`](https://github.com/sewellstephens/late/commit/58387c6d34e86be7880999b40a9105b6178f4ce4), [`5eb42cdd`](https://github.com/sewellstephens/late/commit/5eb42cdd47db4fd41936420b86b0bf7df9a8aa09)]:
-  - @sewellstephens/plate-serializer@3.2.0
-  - @sewellstephens/plate-common@3.2.0
-  - @sewellstephens/plate-core@3.2.0
-  - @sewellstephens/plate-block-quote@3.2.0
-  - @sewellstephens/plate-code-block@3.2.0
-  - @sewellstephens/plate-heading@3.2.0
-  - @sewellstephens/plate-link@3.2.0
-  - @sewellstephens/plate-list@3.2.0
-  - @sewellstephens/plate-paragraph@3.2.0
+  - @sewell_stephens/late-serializer@3.2.0
+  - @sewell_stephens/late-common@3.2.0
+  - @sewell_stephens/late-core@3.2.0
+  - @sewell_stephens/late-block-quote@3.2.0
+  - @sewell_stephens/late-code-block@3.2.0
+  - @sewell_stephens/late-heading@3.2.0
+  - @sewell_stephens/late-link@3.2.0
+  - @sewell_stephens/late-list@3.2.0
+  - @sewell_stephens/late-paragraph@3.2.0
 
 ## 3.1.3
 
 ### Patch Changes
 
 - Updated dependencies [[`f6c58134`](https://github.com/sewellstephens/late/commit/f6c581347cc5877b7afa0774ef1ad78ad227564e), [`d73b22d0`](https://github.com/sewellstephens/late/commit/d73b22d03a0fc270265cbd1bdecfcc4adc70b9d8)]:
-  - @sewellstephens/plate-common@3.1.3
-  - @sewellstephens/plate-list@3.1.3
-  - @sewellstephens/plate-block-quote@3.1.3
-  - @sewellstephens/plate-code-block@3.1.3
-  - @sewellstephens/plate-heading@3.1.3
-  - @sewellstephens/plate-link@3.1.3
-  - @sewellstephens/plate-paragraph@3.1.3
-  - @sewellstephens/plate-serializer@3.1.3
+  - @sewell_stephens/late-common@3.1.3
+  - @sewell_stephens/late-list@3.1.3
+  - @sewell_stephens/late-block-quote@3.1.3
+  - @sewell_stephens/late-code-block@3.1.3
+  - @sewell_stephens/late-heading@3.1.3
+  - @sewell_stephens/late-link@3.1.3
+  - @sewell_stephens/late-paragraph@3.1.3
+  - @sewell_stephens/late-serializer@3.1.3
 
 ## 3.1.2
 
 ### Patch Changes
 
 - Updated dependencies [[`2906a0a4`](https://github.com/sewellstephens/late/commit/2906a0a45fa00b38a1e71ed8e3c57203f429db4d)]:
-  - @sewellstephens/plate-list@3.1.2
+  - @sewell_stephens/late-list@3.1.2
 
 ## 3.0.5
 
@@ -769,42 +769,42 @@
 ### Patch Changes
 
 - Updated dependencies [[`46398095`](https://github.com/sewellstephens/late/commit/4639809567e4c96d58912c2a16e74948474d4547)]:
-  - @sewellstephens/plate-list@3.0.4
+  - @sewell_stephens/late-list@3.0.4
 
 ## 2.0.0
 
 ### Patch Changes
 
 - Updated dependencies [[`ec4d5b7b`](https://github.com/sewellstephens/late/commit/ec4d5b7bd01b6fd21ba14a28f782c143d32c7532)]:
-  - @sewellstephens/plate-common@2.0.0
-  - @sewellstephens/plate-block-quote@2.0.0
-  - @sewellstephens/plate-code-block@2.0.0
-  - @sewellstephens/plate-heading@2.0.0
-  - @sewellstephens/plate-link@2.0.0
-  - @sewellstephens/plate-list@2.0.0
-  - @sewellstephens/plate-paragraph@2.0.0
-  - @sewellstephens/plate-serializer@2.0.0
+  - @sewell_stephens/late-common@2.0.0
+  - @sewell_stephens/late-block-quote@2.0.0
+  - @sewell_stephens/late-code-block@2.0.0
+  - @sewell_stephens/late-heading@2.0.0
+  - @sewell_stephens/late-link@2.0.0
+  - @sewell_stephens/late-list@2.0.0
+  - @sewell_stephens/late-paragraph@2.0.0
+  - @sewell_stephens/late-serializer@2.0.0
 
 ## 1.1.8
 
 ### Patch Changes
 
 - Updated dependencies [[`a3825e35`](https://github.com/sewellstephens/late/commit/a3825e3556e9980b8cce39d454aa4d3c8ea78586)]:
-  - @sewellstephens/plate-list@1.1.8
+  - @sewell_stephens/late-list@1.1.8
 
 ## 1.1.6
 
 ### Patch Changes
 
 - Updated dependencies [[`7d045d8d`](https://github.com/sewellstephens/late/commit/7d045d8db39515d4574c5313cc97287486c5866b)]:
-  - @sewellstephens/plate-common@1.1.6
-  - @sewellstephens/plate-block-quote@1.1.6
-  - @sewellstephens/plate-code-block@1.1.6
-  - @sewellstephens/plate-heading@1.1.6
-  - @sewellstephens/plate-link@1.1.6
-  - @sewellstephens/plate-list@1.1.6
-  - @sewellstephens/plate-paragraph@1.1.6
-  - @sewellstephens/plate-serializer@1.1.6
+  - @sewell_stephens/late-common@1.1.6
+  - @sewell_stephens/late-block-quote@1.1.6
+  - @sewell_stephens/late-code-block@1.1.6
+  - @sewell_stephens/late-heading@1.1.6
+  - @sewell_stephens/late-link@1.1.6
+  - @sewell_stephens/late-list@1.1.6
+  - @sewell_stephens/late-paragraph@1.1.6
+  - @sewell_stephens/late-serializer@1.1.6
 
 ## 1.0.0
 
@@ -812,7 +812,7 @@
 
 🎉 The **Slate Plugins** project has evolved to **Late** 🎉
 
-To migrate, install `@sewellstephens/plate[-x]` then find and replace all
+To migrate, install `@sewell_stephens/late[-x]` then find and replace all
 occurrences of:
 
 - `slate-plugins` to `plate`
@@ -821,8 +821,8 @@ occurrences of:
 
 ## 1.0.0-next.61
 
-> This is the last version of `@sewellstephens/slate-plugins[-x]`, please install
-> `@sewellstephens/plate[-x]`.
+> This is the last version of `@sewell_stephens/slate-plugins[-x]`, please install
+> `@sewell_stephens/late[-x]`.
 
 ### Major Changes
 
@@ -831,15 +831,15 @@ occurrences of:
 ### Patch Changes
 
 - Updated dependencies [[`546ee49b`](https://github.com/udecode/slate-plugins/commit/546ee49b1e22464a8a0c0fad7f254da85bcfde3d), [`7c26cf32`](https://github.com/udecode/slate-plugins/commit/7c26cf32e8b501d531c6d823ab55bf361e228bc3)]:
-  - @sewellstephens/slate-plugins-serializer@1.0.0-next.61
-  - @sewellstephens/slate-plugins-core@1.0.0-next.61
-  - @sewellstephens/slate-plugins-common@1.0.0-next.61
-  - @sewellstephens/slate-plugins-block-quote@1.0.0-next.61
-  - @sewellstephens/slate-plugins-code-block@1.0.0-next.61
-  - @sewellstephens/slate-plugins-heading@1.0.0-next.61
-  - @sewellstephens/slate-plugins-link@1.0.0-next.61
-  - @sewellstephens/slate-plugins-list@1.0.0-next.61
-  - @sewellstephens/slate-plugins-paragraph@1.0.0-next.61
+  - @sewell_stephens/slate-plugins-serializer@1.0.0-next.61
+  - @sewell_stephens/slate-plugins-core@1.0.0-next.61
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.61
+  - @sewell_stephens/slate-plugins-block-quote@1.0.0-next.61
+  - @sewell_stephens/slate-plugins-code-block@1.0.0-next.61
+  - @sewell_stephens/slate-plugins-heading@1.0.0-next.61
+  - @sewell_stephens/slate-plugins-link@1.0.0-next.61
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.61
+  - @sewell_stephens/slate-plugins-paragraph@1.0.0-next.61
 
 ## 1.0.0-next.60
 
@@ -852,13 +852,13 @@ occurrences of:
 ### Patch Changes
 
 - Updated dependencies [[`3a3eb1b8`](https://github.com/udecode/slate-plugins/commit/3a3eb1b8565789b7ba49e8170479df8245ed5b22)]:
-  - @sewellstephens/slate-plugins-common@1.0.0-next.59
-  - @sewellstephens/slate-plugins-block-quote@1.0.0-next.59
-  - @sewellstephens/slate-plugins-code-block@1.0.0-next.59
-  - @sewellstephens/slate-plugins-heading@1.0.0-next.59
-  - @sewellstephens/slate-plugins-link@1.0.0-next.59
-  - @sewellstephens/slate-plugins-list@1.0.0-next.59
-  - @sewellstephens/slate-plugins-paragraph@1.0.0-next.59
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.59
+  - @sewell_stephens/slate-plugins-block-quote@1.0.0-next.59
+  - @sewell_stephens/slate-plugins-code-block@1.0.0-next.59
+  - @sewell_stephens/slate-plugins-heading@1.0.0-next.59
+  - @sewell_stephens/slate-plugins-link@1.0.0-next.59
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.59
+  - @sewell_stephens/slate-plugins-paragraph@1.0.0-next.59
 
 ## 1.0.0-next.58
 
@@ -871,62 +871,62 @@ occurrences of:
 ### Patch Changes
 
 - Updated dependencies [[`5abacbc2`](https://github.com/udecode/slate-plugins/commit/5abacbc23af67f9388536f73076d026b89b24c5c)]:
-  - @sewellstephens/slate-plugins-list@1.0.0-next.57
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.57
 
 ## 1.0.0-next.56
 
 ### Patch Changes
 
 - Updated dependencies [[`75b39f18`](https://github.com/udecode/slate-plugins/commit/75b39f18901d38f80847573cd3431ece1d1d4b3d)]:
-  - @sewellstephens/slate-plugins-core@1.0.0-next.56
-  - @sewellstephens/slate-plugins-common@1.0.0-next.56
-  - @sewellstephens/slate-plugins-block-quote@1.0.0-next.56
-  - @sewellstephens/slate-plugins-code-block@1.0.0-next.56
-  - @sewellstephens/slate-plugins-heading@1.0.0-next.56
-  - @sewellstephens/slate-plugins-link@1.0.0-next.56
-  - @sewellstephens/slate-plugins-list@1.0.0-next.56
-  - @sewellstephens/slate-plugins-paragraph@1.0.0-next.56
+  - @sewell_stephens/slate-plugins-core@1.0.0-next.56
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.56
+  - @sewell_stephens/slate-plugins-block-quote@1.0.0-next.56
+  - @sewell_stephens/slate-plugins-code-block@1.0.0-next.56
+  - @sewell_stephens/slate-plugins-heading@1.0.0-next.56
+  - @sewell_stephens/slate-plugins-link@1.0.0-next.56
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.56
+  - @sewell_stephens/slate-plugins-paragraph@1.0.0-next.56
 
 ## 1.0.0-next.55
 
 ### Patch Changes
 
 - Updated dependencies [[`abaf4a11`](https://github.com/udecode/slate-plugins/commit/abaf4a11d3b69157983b6cf77b023a6008478a79)]:
-  - @sewellstephens/slate-plugins-core@1.0.0-next.55
-  - @sewellstephens/slate-plugins-common@1.0.0-next.55
-  - @sewellstephens/slate-plugins-block-quote@1.0.0-next.55
-  - @sewellstephens/slate-plugins-code-block@1.0.0-next.55
-  - @sewellstephens/slate-plugins-heading@1.0.0-next.55
-  - @sewellstephens/slate-plugins-link@1.0.0-next.55
-  - @sewellstephens/slate-plugins-list@1.0.0-next.55
-  - @sewellstephens/slate-plugins-paragraph@1.0.0-next.55
+  - @sewell_stephens/slate-plugins-core@1.0.0-next.55
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.55
+  - @sewell_stephens/slate-plugins-block-quote@1.0.0-next.55
+  - @sewell_stephens/slate-plugins-code-block@1.0.0-next.55
+  - @sewell_stephens/slate-plugins-heading@1.0.0-next.55
+  - @sewell_stephens/slate-plugins-link@1.0.0-next.55
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.55
+  - @sewell_stephens/slate-plugins-paragraph@1.0.0-next.55
 
 ## 1.0.0-next.54
 
 ### Patch Changes
 
 - Updated dependencies [[`477bab57`](https://github.com/udecode/slate-plugins/commit/477bab572d943b21d3390c440f28e76074484a56), [`d906095d`](https://github.com/udecode/slate-plugins/commit/d906095d20cf8755a200d254f6c20c510a748f29)]:
-  - @sewellstephens/slate-plugins-list@1.0.0-next.54
-  - @sewellstephens/slate-plugins-common@1.0.0-next.54
-  - @sewellstephens/slate-plugins-block-quote@1.0.0-next.54
-  - @sewellstephens/slate-plugins-code-block@1.0.0-next.54
-  - @sewellstephens/slate-plugins-heading@1.0.0-next.54
-  - @sewellstephens/slate-plugins-link@1.0.0-next.54
-  - @sewellstephens/slate-plugins-paragraph@1.0.0-next.54
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.54
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.54
+  - @sewell_stephens/slate-plugins-block-quote@1.0.0-next.54
+  - @sewell_stephens/slate-plugins-code-block@1.0.0-next.54
+  - @sewell_stephens/slate-plugins-heading@1.0.0-next.54
+  - @sewell_stephens/slate-plugins-link@1.0.0-next.54
+  - @sewell_stephens/slate-plugins-paragraph@1.0.0-next.54
 
 ## 1.0.0-next.53
 
 ### Patch Changes
 
 - Updated dependencies [[`42360b44`](https://github.com/udecode/slate-plugins/commit/42360b444d6a2959847d5619eda32319e360e3af)]:
-  - @sewellstephens/slate-plugins-core@1.0.0-next.53
-  - @sewellstephens/slate-plugins-common@1.0.0-next.53
-  - @sewellstephens/slate-plugins-block-quote@1.0.0-next.53
-  - @sewellstephens/slate-plugins-code-block@1.0.0-next.53
-  - @sewellstephens/slate-plugins-heading@1.0.0-next.53
-  - @sewellstephens/slate-plugins-link@1.0.0-next.53
-  - @sewellstephens/slate-plugins-list@1.0.0-next.53
-  - @sewellstephens/slate-plugins-paragraph@1.0.0-next.53
+  - @sewell_stephens/slate-plugins-core@1.0.0-next.53
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.53
+  - @sewell_stephens/slate-plugins-block-quote@1.0.0-next.53
+  - @sewell_stephens/slate-plugins-code-block@1.0.0-next.53
+  - @sewell_stephens/slate-plugins-heading@1.0.0-next.53
+  - @sewell_stephens/slate-plugins-link@1.0.0-next.53
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.53
+  - @sewell_stephens/slate-plugins-paragraph@1.0.0-next.53
 
 ## 1.0.0-next.48
 
@@ -939,7 +939,7 @@ occurrences of:
 - [#819](https://github.com/udecode/slate-plugins/pull/819) [`b82f47a6`](https://github.com/udecode/slate-plugins/commit/b82f47a66ea1521dc426ae87e1ec37f004593cbe) Thanks [@dylans](https://github.com/dylans)! - Markdown deserializer was breaking the pasting of a simple URL into the editor. Now checks the content and if it's simply a URL, it skips the handling of the content as markdown
 
 - Updated dependencies [[`a15ab621`](https://github.com/udecode/slate-plugins/commit/a15ab6217c6e2d4eb2a1320f6b76c483fc963047)]:
-  - @sewellstephens/slate-plugins-list@1.0.0-next.48
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.48
 
 ## 1.0.0-next.47
 
@@ -954,13 +954,13 @@ occurrences of:
 ### Patch Changes
 
 - Updated dependencies [[`6e9068f6`](https://github.com/udecode/slate-plugins/commit/6e9068f6f483b698b6b3aae6819333103504f41b)]:
-  - @sewellstephens/slate-plugins-common@1.0.0-next.46
-  - @sewellstephens/slate-plugins-block-quote@1.0.0-next.46
-  - @sewellstephens/slate-plugins-code-block@1.0.0-next.46
-  - @sewellstephens/slate-plugins-heading@1.0.0-next.46
-  - @sewellstephens/slate-plugins-link@1.0.0-next.46
-  - @sewellstephens/slate-plugins-list@1.0.0-next.46
-  - @sewellstephens/slate-plugins-paragraph@1.0.0-next.46
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.46
+  - @sewell_stephens/slate-plugins-block-quote@1.0.0-next.46
+  - @sewell_stephens/slate-plugins-code-block@1.0.0-next.46
+  - @sewell_stephens/slate-plugins-heading@1.0.0-next.46
+  - @sewell_stephens/slate-plugins-link@1.0.0-next.46
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.46
+  - @sewell_stephens/slate-plugins-paragraph@1.0.0-next.46
 
 ## 1.0.0-next.44
 
@@ -973,139 +973,139 @@ occurrences of:
 ### Patch Changes
 
 - Updated dependencies [[`e70f8043`](https://github.com/udecode/slate-plugins/commit/e70f8043125d06161fa3ea5d47810749782e0a8a)]:
-  - @sewellstephens/slate-plugins-list@1.0.0-next.43
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.43
 
 ## 1.0.0-next.42
 
 ### Patch Changes
 
 - Updated dependencies [[`e10f2fa4`](https://github.com/udecode/slate-plugins/commit/e10f2fa4963efdfef9e642a5125942c4819cfe9c), [`558a89da`](https://github.com/udecode/slate-plugins/commit/558a89da4217e9be57bc6ab2abcc48482c9f60bd)]:
-  - @sewellstephens/slate-plugins-list@1.0.0-next.42
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.42
 
 ## 1.0.0-next.40
 
 ### Patch Changes
 
 - Updated dependencies [[`15048e6f`](https://github.com/udecode/slate-plugins/commit/15048e6facbefc5fe21b0b9bd9a586f269cada89)]:
-  - @sewellstephens/slate-plugins-core@1.0.0-next.40
-  - @sewellstephens/slate-plugins-common@1.0.0-next.40
-  - @sewellstephens/slate-plugins-block-quote@1.0.0-next.40
-  - @sewellstephens/slate-plugins-code-block@1.0.0-next.40
-  - @sewellstephens/slate-plugins-heading@1.0.0-next.40
-  - @sewellstephens/slate-plugins-link@1.0.0-next.40
-  - @sewellstephens/slate-plugins-list@1.0.0-next.40
-  - @sewellstephens/slate-plugins-paragraph@1.0.0-next.40
+  - @sewell_stephens/slate-plugins-core@1.0.0-next.40
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.40
+  - @sewell_stephens/slate-plugins-block-quote@1.0.0-next.40
+  - @sewell_stephens/slate-plugins-code-block@1.0.0-next.40
+  - @sewell_stephens/slate-plugins-heading@1.0.0-next.40
+  - @sewell_stephens/slate-plugins-link@1.0.0-next.40
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.40
+  - @sewell_stephens/slate-plugins-paragraph@1.0.0-next.40
 
 ## 1.0.0-next.39
 
 ### Patch Changes
 
 - Updated dependencies [[`b444071e`](https://github.com/udecode/slate-plugins/commit/b444071e2673803dba05c770c5dfbbde14f7a631)]:
-  - @sewellstephens/slate-plugins-core@1.0.0-next.39
-  - @sewellstephens/slate-plugins-common@1.0.0-next.39
-  - @sewellstephens/slate-plugins-block-quote@1.0.0-next.39
-  - @sewellstephens/slate-plugins-code-block@1.0.0-next.39
-  - @sewellstephens/slate-plugins-heading@1.0.0-next.39
-  - @sewellstephens/slate-plugins-link@1.0.0-next.39
-  - @sewellstephens/slate-plugins-list@1.0.0-next.39
-  - @sewellstephens/slate-plugins-paragraph@1.0.0-next.39
+  - @sewell_stephens/slate-plugins-core@1.0.0-next.39
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.39
+  - @sewell_stephens/slate-plugins-block-quote@1.0.0-next.39
+  - @sewell_stephens/slate-plugins-code-block@1.0.0-next.39
+  - @sewell_stephens/slate-plugins-heading@1.0.0-next.39
+  - @sewell_stephens/slate-plugins-link@1.0.0-next.39
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.39
+  - @sewell_stephens/slate-plugins-paragraph@1.0.0-next.39
 
 ## 1.0.0-next.38
 
 ### Patch Changes
 
 - Updated dependencies [[`f4c3b4fb`](https://github.com/udecode/slate-plugins/commit/f4c3b4fbe1f8c057f3f2d33ee4f8a6ae9768f9bf), [`317f6205`](https://github.com/udecode/slate-plugins/commit/317f620598d19f2f9ebf01b4f92256bf0ca05097)]:
-  - @sewellstephens/slate-plugins-list@1.0.0-next.38
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.38
 
 ## 1.0.0-next.37
 
 ### Patch Changes
 
 - Updated dependencies [[`2cf618c3`](https://github.com/udecode/slate-plugins/commit/2cf618c3a0220ca03c1d95e0b51d1ff58d73578c)]:
-  - @sewellstephens/slate-plugins-common@1.0.0-next.37
-  - @sewellstephens/slate-plugins-block-quote@1.0.0-next.37
-  - @sewellstephens/slate-plugins-code-block@1.0.0-next.37
-  - @sewellstephens/slate-plugins-heading@1.0.0-next.37
-  - @sewellstephens/slate-plugins-link@1.0.0-next.37
-  - @sewellstephens/slate-plugins-list@1.0.0-next.37
-  - @sewellstephens/slate-plugins-paragraph@1.0.0-next.37
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.37
+  - @sewell_stephens/slate-plugins-block-quote@1.0.0-next.37
+  - @sewell_stephens/slate-plugins-code-block@1.0.0-next.37
+  - @sewell_stephens/slate-plugins-heading@1.0.0-next.37
+  - @sewell_stephens/slate-plugins-link@1.0.0-next.37
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.37
+  - @sewell_stephens/slate-plugins-paragraph@1.0.0-next.37
 
 ## 1.0.0-next.36
 
 ### Patch Changes
 
 - Updated dependencies [[`7cbd7bd9`](https://github.com/udecode/slate-plugins/commit/7cbd7bd95b64e06fde38dcd68935984de8f3a82f), [`806e1632`](https://github.com/udecode/slate-plugins/commit/806e16322e655802822079d8540a6983a9dfb06e)]:
-  - @sewellstephens/slate-plugins-common@1.0.0-next.36
-  - @sewellstephens/slate-plugins-core@1.0.0-next.36
-  - @sewellstephens/slate-plugins-block-quote@1.0.0-next.36
-  - @sewellstephens/slate-plugins-code-block@1.0.0-next.36
-  - @sewellstephens/slate-plugins-heading@1.0.0-next.36
-  - @sewellstephens/slate-plugins-link@1.0.0-next.36
-  - @sewellstephens/slate-plugins-list@1.0.0-next.36
-  - @sewellstephens/slate-plugins-paragraph@1.0.0-next.36
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.36
+  - @sewell_stephens/slate-plugins-core@1.0.0-next.36
+  - @sewell_stephens/slate-plugins-block-quote@1.0.0-next.36
+  - @sewell_stephens/slate-plugins-code-block@1.0.0-next.36
+  - @sewell_stephens/slate-plugins-heading@1.0.0-next.36
+  - @sewell_stephens/slate-plugins-link@1.0.0-next.36
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.36
+  - @sewell_stephens/slate-plugins-paragraph@1.0.0-next.36
 
 ## 1.0.0-next.32
 
 ### Patch Changes
 
 - Updated dependencies [[`73b77853`](https://github.com/udecode/slate-plugins/commit/73b77853cb38f61d4bfb31a0d604e947c130ee0f)]:
-  - @sewellstephens/slate-plugins-block-quote@1.0.0-next.32
-  - @sewellstephens/slate-plugins-code-block@1.0.0-next.32
-  - @sewellstephens/slate-plugins-link@1.0.0-next.32
-  - @sewellstephens/slate-plugins-list@1.0.0-next.32
+  - @sewell_stephens/slate-plugins-block-quote@1.0.0-next.32
+  - @sewell_stephens/slate-plugins-code-block@1.0.0-next.32
+  - @sewell_stephens/slate-plugins-link@1.0.0-next.32
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.32
 
 ## 1.0.0-next.31
 
 ### Patch Changes
 
 - Updated dependencies [[`15cdf5d7`](https://github.com/udecode/slate-plugins/commit/15cdf5d7614734c78c31f290586d0d64b0cff3fd)]:
-  - @sewellstephens/slate-plugins-list@1.0.0-next.31
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.31
 
 ## 1.0.0-next.30
 
 ### Patch Changes
 
 - Updated dependencies [[`84b5feed`](https://github.com/udecode/slate-plugins/commit/84b5feedd20b12f0ec23e082d90314b045a69e62), [`33605a49`](https://github.com/udecode/slate-plugins/commit/33605a495ccc3fd9b4f6cfdaf2eb0e6e59bd7a67), [`28f30c8a`](https://github.com/udecode/slate-plugins/commit/28f30c8a6b0a2d245d6f6403c8399f2e59d98b92), [`75e6d25d`](https://github.com/udecode/slate-plugins/commit/75e6d25de0f9cf2487adecff54c2993ebc795aa0)]:
-  - @sewellstephens/slate-plugins-list@1.0.0-next.30
-  - @sewellstephens/slate-plugins-core@1.0.0-next.30
-  - @sewellstephens/slate-plugins-common@1.0.0-next.30
-  - @sewellstephens/slate-plugins-code-block@1.0.0-next.30
-  - @sewellstephens/slate-plugins-block-quote@1.0.0-next.30
-  - @sewellstephens/slate-plugins-heading@1.0.0-next.30
-  - @sewellstephens/slate-plugins-link@1.0.0-next.30
-  - @sewellstephens/slate-plugins-paragraph@1.0.0-next.30
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.30
+  - @sewell_stephens/slate-plugins-core@1.0.0-next.30
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.30
+  - @sewell_stephens/slate-plugins-code-block@1.0.0-next.30
+  - @sewell_stephens/slate-plugins-block-quote@1.0.0-next.30
+  - @sewell_stephens/slate-plugins-heading@1.0.0-next.30
+  - @sewell_stephens/slate-plugins-link@1.0.0-next.30
+  - @sewell_stephens/slate-plugins-paragraph@1.0.0-next.30
 
 ## 1.0.0-next.29
 
 ### Patch Changes
 
 - Updated dependencies [[`dfbde8bd`](https://github.com/udecode/slate-plugins/commit/dfbde8bd856e1e646e3d8fe2cbf1df8f9b8c67c3), [`dfbde8bd`](https://github.com/udecode/slate-plugins/commit/dfbde8bd856e1e646e3d8fe2cbf1df8f9b8c67c3)]:
-  - @sewellstephens/slate-plugins-core@1.0.0-next.29
-  - @sewellstephens/slate-plugins-common@1.0.0-next.29
-  - @sewellstephens/slate-plugins-block-quote@1.0.0-next.29
-  - @sewellstephens/slate-plugins-code-block@1.0.0-next.29
-  - @sewellstephens/slate-plugins-heading@1.0.0-next.29
-  - @sewellstephens/slate-plugins-link@1.0.0-next.29
-  - @sewellstephens/slate-plugins-list@1.0.0-next.29
-  - @sewellstephens/slate-plugins-paragraph@1.0.0-next.29
+  - @sewell_stephens/slate-plugins-core@1.0.0-next.29
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.29
+  - @sewell_stephens/slate-plugins-block-quote@1.0.0-next.29
+  - @sewell_stephens/slate-plugins-code-block@1.0.0-next.29
+  - @sewell_stephens/slate-plugins-heading@1.0.0-next.29
+  - @sewell_stephens/slate-plugins-link@1.0.0-next.29
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.29
+  - @sewell_stephens/slate-plugins-paragraph@1.0.0-next.29
 
 ## 1.0.0-next.27
 
 ### Patch Changes
 
 - Updated dependencies [[`88d49713`](https://github.com/udecode/slate-plugins/commit/88d497138c2f8a1ce51af6910c5052b1ddf8dabc)]:
-  - @sewellstephens/slate-plugins-list@1.0.0-next.27
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.27
 
 ## 1.0.0-next.26
 
 ### Patch Changes
 
 - Updated dependencies [[`201a7993`](https://github.com/udecode/slate-plugins/commit/201a799342ff88405e120182d8554e70b726beea)]:
-  - @sewellstephens/slate-plugins-core@1.0.0-next.26
-  - @sewellstephens/slate-plugins-common@1.0.0-next.26
-  - @sewellstephens/slate-plugins-block-quote@1.0.0-next.26
-  - @sewellstephens/slate-plugins-code-block@1.0.0-next.26
-  - @sewellstephens/slate-plugins-heading@1.0.0-next.26
-  - @sewellstephens/slate-plugins-link@1.0.0-next.26
-  - @sewellstephens/slate-plugins-list@1.0.0-next.26
-  - @sewellstephens/slate-plugins-paragraph@1.0.0-next.26
+  - @sewell_stephens/slate-plugins-core@1.0.0-next.26
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.26
+  - @sewell_stephens/slate-plugins-block-quote@1.0.0-next.26
+  - @sewell_stephens/slate-plugins-code-block@1.0.0-next.26
+  - @sewell_stephens/slate-plugins-heading@1.0.0-next.26
+  - @sewell_stephens/slate-plugins-link@1.0.0-next.26
+  - @sewell_stephens/slate-plugins-list@1.0.0-next.26
+  - @sewell_stephens/slate-plugins-paragraph@1.0.0-next.26

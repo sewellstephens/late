@@ -1,4 +1,4 @@
-import { withVariants } from '@sewellstephens/cn';
+import { withVariants } from '@sewell_stephens/cn';
 import { cva } from 'class-variance-authority';
 
 export const inputVariants = cva(

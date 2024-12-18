@@ -1,4 +1,4 @@
-import type { TNodeEntry } from '@sewellstephens/slate';
+import type { TNodeEntry } from '@sewell_stephens/slate';
 import type { Range } from 'slate';
 import type { EditableProps } from 'slate-react/dist/components/editable';
 

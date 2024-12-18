@@ -2,7 +2,7 @@ import React from 'react';
 import {
   EmojiDropdownMenuOptions,
   useEmojiDropdownMenuState,
-} from '@sewellstephens/plate-emoji';
+} from '@sewell_stephens/late-emoji';
 
 import { Icons } from '@/components/icons';
 

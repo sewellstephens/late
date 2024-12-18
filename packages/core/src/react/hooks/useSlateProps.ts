@@ -1,7 +1,7 @@
 import React from 'react';
 
-import type { TSelection, Value } from '@sewellstephens/slate';
-import type { SlateProps } from '@sewellstephens/slate-react';
+import type { TSelection, Value } from '@sewell_stephens/slate';
+import type { SlateProps } from '@sewell_stephens/slate-react';
 
 import { useEditorRef, useLateSelectors } from '../stores';
 import { pipeOnChange } from '../utils/pipeOnChange';

@@ -1,18 +1,18 @@
 import React from 'react';
 
-import type { TColumnElement } from '@sewellstephens/plate-layout';
+import type { TColumnElement } from '@sewell_stephens/late-layout';
 
-import { cn, withRef } from '@sewellstephens/cn';
+import { cn, withRef } from '@sewell_stephens/cn';
 import {
   LateElement,
   useElement,
   useRemoveNodeButton,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import {
   ColumnItemPlugin,
   useColumnState,
   useDebouncePopoverOpen,
-} from '@sewellstephens/plate-layout/react';
+} from '@sewell_stephens/late-layout/react';
 import { useReadOnly } from 'slate-react';
 
 import { Icons } from '@/components/icons';

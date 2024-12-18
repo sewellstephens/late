@@ -2,14 +2,14 @@
 
 import React from 'react';
 import { DropdownMenuProps } from '@radix-ui/react-dropdown-menu';
-import { ELEMENT_BLOCKQUOTE } from '@sewellstephens/plate-block-quote';
+import { ELEMENT_BLOCKQUOTE } from '@sewell_stephens/late-block-quote';
 import {
   focusEditor,
   insertEmptyElement,
   useEditorRef,
-} from '@sewellstephens/plate-common';
-import { ELEMENT_H1, ELEMENT_H2, ELEMENT_H3 } from '@sewellstephens/plate-heading';
-import { ELEMENT_PARAGRAPH } from '@sewellstephens/plate-paragraph';
+} from '@sewell_stephens/late-common';
+import { ELEMENT_H1, ELEMENT_H2, ELEMENT_H3 } from '@sewell_stephens/late-heading';
+import { ELEMENT_PARAGRAPH } from '@sewell_stephens/late-paragraph';
 
 import { Icons } from '@/components/icons';
 

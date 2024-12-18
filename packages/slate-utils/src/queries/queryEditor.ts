@@ -2,7 +2,7 @@ import {
   type QueryEditorOptions,
   type TEditor,
   someNode,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 import castArray from 'lodash/castArray.js';
 
 import { isSelectionAtBlockEnd } from './isSelectionAtBlockEnd';

@@ -12,12 +12,12 @@ jest.mock('nanoid', () => ({
   nanoid: () => '1',
 }));
 
-jest.mock('@sewellstephens/plate-core', () => ({
+jest.mock('@sewell_stephens/late-core', () => ({
   __esModule: true,
-  ...jest.requireActual('@sewellstephens/plate-core'),
+  ...jest.requireActual('@sewell_stephens/late-core'),
 }));
 
-// jest.mock('@sewellstephens/plate-core/react', () => ({
+// jest.mock('@sewell_stephens/late-core/react', () => ({
 //   __esModule: true,
-//   ...jest.requireActual('@sewellstephens/plate-core/react'),
+//   ...jest.requireActual('@sewell_stephens/late-core/react'),
 // }));

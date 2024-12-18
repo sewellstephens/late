@@ -1,4 +1,4 @@
-import { type SlateEditor, insertElements } from '@sewellstephens/plate-common';
+import { type SlateEditor, insertElements } from '@sewell_stephens/late-common';
 
 import { CodeLinePlugin } from '../CodeBlockPlugin';
 

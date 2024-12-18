@@ -1,4 +1,4 @@
-import type { SlateEditor, TElementEntry } from '@sewellstephens/plate-common';
+import type { SlateEditor, TElementEntry } from '@sewell_stephens/late-common';
 
 import { isListNested } from '../queries/isListNested';
 import { moveListItemUp } from './moveListItemUp';

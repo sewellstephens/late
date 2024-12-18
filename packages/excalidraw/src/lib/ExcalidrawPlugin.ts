@@ -1,4 +1,4 @@
-import { type TElement, createSlatePlugin } from '@sewellstephens/plate-common';
+import { type TElement, createSlatePlugin } from '@sewell_stephens/late-common';
 
 import type { ExcalidrawDataState } from './types';
 

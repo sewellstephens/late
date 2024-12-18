@@ -1,10 +1,10 @@
 import React from 'react';
-import { withRef } from '@sewellstephens/cn';
+import { withRef } from '@sewell_stephens/cn';
 import {
   ELEMENT_UL,
   useListToolbarButton,
   useListToolbarButtonState,
-} from '@sewellstephens/plate-list';
+} from '@sewell_stephens/late-list';
 
 import { Icons } from '@/components/icons';
 

@@ -6,7 +6,7 @@ import {
   getEditorString,
   getPoint,
   getPointBefore,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 import castArray from 'lodash/castArray.js';
 import map from 'lodash/map.js';
 

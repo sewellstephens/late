@@ -1,4 +1,4 @@
-import { Key, toTLatePlugin } from '@sewellstephens/plate-common/react';
+import { Key, toTLatePlugin } from '@sewell_stephens/late-common/react';
 
 import { TodoListPlugin as BaseTodoListPlugin } from '../lib/TodoListPlugin';
 

@@ -1,7 +1,7 @@
-import type { CursorData, CursorState } from '@sewellstephens/plate-cursor';
+import type { CursorData, CursorState } from '@sewell_stephens/late-cursor';
 
-import { createLatePlugin, findEventRange } from '@sewellstephens/plate-common/react';
-import { DndPlugin } from '@sewellstephens/plate-dnd';
+import { createLatePlugin, findEventRange } from '@sewell_stephens/late-common/react';
+import { DndPlugin } from '@sewell_stephens/late-dnd';
 
 export const DragOverCursorPlugin = createLatePlugin({
   handlers: {

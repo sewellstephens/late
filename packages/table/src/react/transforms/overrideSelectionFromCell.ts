@@ -4,7 +4,7 @@ import {
   isHotkey,
   isRangeAcrossBlocks,
   isRangeInSameBlock,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { KEY_SHIFT_EDGES, getCellTypes } from '../../lib';
 import { moveSelectionFromCell } from './moveSelectionFromCell';

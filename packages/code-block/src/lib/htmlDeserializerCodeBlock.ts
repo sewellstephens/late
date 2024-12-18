@@ -1,4 +1,4 @@
-import type { HtmlDeserializer } from '@sewellstephens/plate-common';
+import type { HtmlDeserializer } from '@sewell_stephens/late-common';
 
 import { CodeBlockPlugin, CodeLinePlugin } from './CodeBlockPlugin';
 

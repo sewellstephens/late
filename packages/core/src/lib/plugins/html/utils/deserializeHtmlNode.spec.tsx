@@ -1,6 +1,6 @@
 /** @jsx jsx */
 
-import { getHtmlDocument, jsx } from '@sewellstephens/plate-test-utils';
+import { getHtmlDocument, jsx } from '@sewell_stephens/late-test-utils';
 
 import { createLateEditor } from '../../../../react';
 import { deserializeHtmlNode } from './deserializeHtmlNode';

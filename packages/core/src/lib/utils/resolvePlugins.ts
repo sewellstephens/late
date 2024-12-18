@@ -1,4 +1,4 @@
-import { isDefined } from '@sewellstephens/utils';
+import { isDefined } from '@sewell_stephens/utils';
 import { createZustandStore } from 'zustand-x';
 
 import type { SlateEditor } from '../editor';

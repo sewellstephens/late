@@ -1,4 +1,4 @@
-# @sewellstephens/plate-autoformat
+# @sewell_stephens/late-autoformat
 
 ## 37.0.0
 
@@ -33,13 +33,13 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewell_stephens/late-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.5.2
 
 ### Patch Changes
 
-- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [#2961](https://github.com/sewellstephens/late/pull/2961) by [@zbeyens](https://github.com/zbeyens) – Move `@sewell_stephens/late-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -310,53 +310,53 @@
 ### Patch Changes
 
 - Updated dependencies [[`a6bf8c5e`](https://github.com/sewellstephens/late/commit/a6bf8c5e6897c6ab443e0ac3d69a30befeaddadf)]:
-  - @sewellstephens/plate-common@5.3.5
+  - @sewell_stephens/late-common@5.3.5
 
 ## 5.3.1
 
 ### Patch Changes
 
 - Updated dependencies [[`8aec270f`](https://github.com/sewellstephens/late/commit/8aec270f8b06a3b25b8d7144c2e23b0dc12de118)]:
-  - @sewellstephens/plate-core@5.3.1
-  - @sewellstephens/plate-common@5.3.1
+  - @sewell_stephens/late-core@5.3.1
+  - @sewell_stephens/late-common@5.3.1
 
 ## 5.3.0
 
 ### Patch Changes
 
 - Updated dependencies [[`7ee21356`](https://github.com/sewellstephens/late/commit/7ee21356f0a4e67e367232b3dbc9957254a0c11e)]:
-  - @sewellstephens/plate-core@5.3.0
-  - @sewellstephens/plate-common@5.3.0
+  - @sewell_stephens/late-core@5.3.0
+  - @sewell_stephens/late-common@5.3.0
 
 ## 5.1.0
 
 ### Patch Changes
 
 - Updated dependencies [[`503956fd`](https://github.com/sewellstephens/late/commit/503956fd9f71253249b3ad699b81c1c465351b0a)]:
-  - @sewellstephens/plate-common@5.1.0
+  - @sewell_stephens/late-common@5.1.0
 
 ## 4.4.0
 
 ### Patch Changes
 
 - Updated dependencies [[`b22c06aa`](https://github.com/sewellstephens/late/commit/b22c06aad1cfed08069dadc7ec39bcbfb1d0af37)]:
-  - @sewellstephens/plate-common@4.4.0
+  - @sewell_stephens/late-common@4.4.0
 
 ## 4.3.7
 
 ### Patch Changes
 
 - Updated dependencies [[`58f6fb53`](https://github.com/sewellstephens/late/commit/58f6fb53bf45a2e0509f4aca617aa21356952fca)]:
-  - @sewellstephens/plate-core@4.3.7
-  - @sewellstephens/plate-common@4.3.7
+  - @sewell_stephens/late-core@4.3.7
+  - @sewell_stephens/late-common@4.3.7
 
 ## 4.3.0
 
 ### Patch Changes
 
 - Updated dependencies [[`6af469cd`](https://github.com/sewellstephens/late/commit/6af469cd5ac310e831eb8a99a71eba73bde62fc6)]:
-  - @sewellstephens/plate-core@4.3.0
-  - @sewellstephens/plate-common@4.3.0
+  - @sewell_stephens/late-core@4.3.0
+  - @sewell_stephens/late-common@4.3.0
 
 ## 4.0.0
 
@@ -369,8 +369,8 @@
 ### Patch Changes
 
 - Updated dependencies [[`f1da7267`](https://github.com/sewellstephens/late/commit/f1da7267d46d94e207f4477f73e42b63736a9085), [`35caf35d`](https://github.com/sewellstephens/late/commit/35caf35d48fff851518648ff66e64a4268dcc97c)]:
-  - @sewellstephens/plate-common@3.4.0
-  - @sewellstephens/plate-core@3.4.0
+  - @sewell_stephens/late-common@3.4.0
+  - @sewell_stephens/late-core@3.4.0
 
 ## 3.2.0
 
@@ -381,15 +381,15 @@
 ### Patch Changes
 
 - Updated dependencies [[`58387c6d`](https://github.com/sewellstephens/late/commit/58387c6d34e86be7880999b40a9105b6178f4ce4)]:
-  - @sewellstephens/plate-common@3.2.0
-  - @sewellstephens/plate-core@3.2.0
+  - @sewell_stephens/late-common@3.2.0
+  - @sewell_stephens/late-core@3.2.0
 
 ## 3.1.3
 
 ### Patch Changes
 
 - Updated dependencies [[`f6c58134`](https://github.com/sewellstephens/late/commit/f6c581347cc5877b7afa0774ef1ad78ad227564e)]:
-  - @sewellstephens/plate-common@3.1.3
+  - @sewell_stephens/late-common@3.1.3
 
 ## 2.0.0
 
@@ -432,7 +432,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`ec4d5b7b`](https://github.com/sewellstephens/late/commit/ec4d5b7bd01b6fd21ba14a28f782c143d32c7532)]:
-  - @sewellstephens/plate-common@2.0.0
+  - @sewell_stephens/late-common@2.0.0
 
 ## 1.1.6
 
@@ -441,7 +441,7 @@
 - [#918](https://github.com/sewellstephens/late/pull/918) [`7d045d8d`](https://github.com/sewellstephens/late/commit/7d045d8db39515d4574c5313cc97287486c5866b) Thanks [@zbeyens](https://github.com/zbeyens)! - add `slate-history` as a peerDep
 
 - Updated dependencies [[`7d045d8d`](https://github.com/sewellstephens/late/commit/7d045d8db39515d4574c5313cc97287486c5866b)]:
-  - @sewellstephens/plate-common@1.1.6
+  - @sewell_stephens/late-common@1.1.6
 
 ## 1.0.0
 
@@ -449,7 +449,7 @@
 
 🎉 The **Slate Plugins** project has evolved to **Late** 🎉
 
-To migrate, install `@sewellstephens/plate[-x]` then find and replace all
+To migrate, install `@sewell_stephens/late[-x]` then find and replace all
 occurrences of:
 
 - `slate-plugins` to `plate`
@@ -458,111 +458,111 @@ occurrences of:
 
 ## 1.0.0-next.61
 
-> This is the last version of `@sewellstephens/slate-plugins[-x]`, please install
-> `@sewellstephens/plate[-x]`.
+> This is the last version of `@sewell_stephens/slate-plugins[-x]`, please install
+> `@sewell_stephens/late[-x]`.
 
 ### Patch Changes
 
 - Updated dependencies [[`7c26cf32`](https://github.com/udecode/slate-plugins/commit/7c26cf32e8b501d531c6d823ab55bf361e228bc3)]:
-  - @sewellstephens/slate-plugins-core@1.0.0-next.61
-  - @sewellstephens/slate-plugins-common@1.0.0-next.61
+  - @sewell_stephens/slate-plugins-core@1.0.0-next.61
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.61
 
 ## 1.0.0-next.59
 
 ### Patch Changes
 
 - Updated dependencies [[`3a3eb1b8`](https://github.com/udecode/slate-plugins/commit/3a3eb1b8565789b7ba49e8170479df8245ed5b22)]:
-  - @sewellstephens/slate-plugins-common@1.0.0-next.59
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.59
 
 ## 1.0.0-next.56
 
 ### Patch Changes
 
 - Updated dependencies [[`75b39f18`](https://github.com/udecode/slate-plugins/commit/75b39f18901d38f80847573cd3431ece1d1d4b3d)]:
-  - @sewellstephens/slate-plugins-core@1.0.0-next.56
-  - @sewellstephens/slate-plugins-common@1.0.0-next.56
+  - @sewell_stephens/slate-plugins-core@1.0.0-next.56
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.56
 
 ## 1.0.0-next.55
 
 ### Patch Changes
 
 - Updated dependencies [[`abaf4a11`](https://github.com/udecode/slate-plugins/commit/abaf4a11d3b69157983b6cf77b023a6008478a79)]:
-  - @sewellstephens/slate-plugins-core@1.0.0-next.55
-  - @sewellstephens/slate-plugins-common@1.0.0-next.55
+  - @sewell_stephens/slate-plugins-core@1.0.0-next.55
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.55
 
 ## 1.0.0-next.54
 
 ### Patch Changes
 
 - Updated dependencies [[`d906095d`](https://github.com/udecode/slate-plugins/commit/d906095d20cf8755a200d254f6c20c510a748f29)]:
-  - @sewellstephens/slate-plugins-common@1.0.0-next.54
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.54
 
 ## 1.0.0-next.53
 
 ### Patch Changes
 
 - Updated dependencies [[`42360b44`](https://github.com/udecode/slate-plugins/commit/42360b444d6a2959847d5619eda32319e360e3af)]:
-  - @sewellstephens/slate-plugins-core@1.0.0-next.53
-  - @sewellstephens/slate-plugins-common@1.0.0-next.53
+  - @sewell_stephens/slate-plugins-core@1.0.0-next.53
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.53
 
 ## 1.0.0-next.46
 
 ### Patch Changes
 
 - Updated dependencies [[`6e9068f6`](https://github.com/udecode/slate-plugins/commit/6e9068f6f483b698b6b3aae6819333103504f41b)]:
-  - @sewellstephens/slate-plugins-common@1.0.0-next.46
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.46
 
 ## 1.0.0-next.40
 
 ### Patch Changes
 
 - Updated dependencies [[`15048e6f`](https://github.com/udecode/slate-plugins/commit/15048e6facbefc5fe21b0b9bd9a586f269cada89)]:
-  - @sewellstephens/slate-plugins-core@1.0.0-next.40
-  - @sewellstephens/slate-plugins-common@1.0.0-next.40
+  - @sewell_stephens/slate-plugins-core@1.0.0-next.40
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.40
 
 ## 1.0.0-next.39
 
 ### Patch Changes
 
 - Updated dependencies [[`b444071e`](https://github.com/udecode/slate-plugins/commit/b444071e2673803dba05c770c5dfbbde14f7a631)]:
-  - @sewellstephens/slate-plugins-core@1.0.0-next.39
-  - @sewellstephens/slate-plugins-common@1.0.0-next.39
+  - @sewell_stephens/slate-plugins-core@1.0.0-next.39
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.39
 
 ## 1.0.0-next.37
 
 ### Patch Changes
 
 - Updated dependencies [[`2cf618c3`](https://github.com/udecode/slate-plugins/commit/2cf618c3a0220ca03c1d95e0b51d1ff58d73578c)]:
-  - @sewellstephens/slate-plugins-common@1.0.0-next.37
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.37
 
 ## 1.0.0-next.36
 
 ### Patch Changes
 
 - Updated dependencies [[`7cbd7bd9`](https://github.com/udecode/slate-plugins/commit/7cbd7bd95b64e06fde38dcd68935984de8f3a82f), [`806e1632`](https://github.com/udecode/slate-plugins/commit/806e16322e655802822079d8540a6983a9dfb06e)]:
-  - @sewellstephens/slate-plugins-common@1.0.0-next.36
-  - @sewellstephens/slate-plugins-core@1.0.0-next.36
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.36
+  - @sewell_stephens/slate-plugins-core@1.0.0-next.36
 
 ## 1.0.0-next.30
 
 ### Patch Changes
 
 - Updated dependencies [[`33605a49`](https://github.com/udecode/slate-plugins/commit/33605a495ccc3fd9b4f6cfdaf2eb0e6e59bd7a67), [`28f30c8a`](https://github.com/udecode/slate-plugins/commit/28f30c8a6b0a2d245d6f6403c8399f2e59d98b92), [`75e6d25d`](https://github.com/udecode/slate-plugins/commit/75e6d25de0f9cf2487adecff54c2993ebc795aa0)]:
-  - @sewellstephens/slate-plugins-core@1.0.0-next.30
-  - @sewellstephens/slate-plugins-common@1.0.0-next.30
+  - @sewell_stephens/slate-plugins-core@1.0.0-next.30
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.30
 
 ## 1.0.0-next.29
 
 ### Patch Changes
 
 - Updated dependencies [[`dfbde8bd`](https://github.com/udecode/slate-plugins/commit/dfbde8bd856e1e646e3d8fe2cbf1df8f9b8c67c3), [`dfbde8bd`](https://github.com/udecode/slate-plugins/commit/dfbde8bd856e1e646e3d8fe2cbf1df8f9b8c67c3)]:
-  - @sewellstephens/slate-plugins-core@1.0.0-next.29
-  - @sewellstephens/slate-plugins-common@1.0.0-next.29
+  - @sewell_stephens/slate-plugins-core@1.0.0-next.29
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.29
 
 ## 1.0.0-next.26
 
 ### Patch Changes
 
 - Updated dependencies [[`201a7993`](https://github.com/udecode/slate-plugins/commit/201a799342ff88405e120182d8554e70b726beea)]:
-  - @sewellstephens/slate-plugins-core@1.0.0-next.26
-  - @sewellstephens/slate-plugins-common@1.0.0-next.26
+  - @sewell_stephens/slate-plugins-core@1.0.0-next.26
+  - @sewell_stephens/slate-plugins-common@1.0.0-next.26

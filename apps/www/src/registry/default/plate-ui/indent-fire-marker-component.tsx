@@ -1,5 +1,5 @@
-import type { LateRenderElementProps } from '@sewellstephens/plate-common/react';
-import type { TIndentElement } from '@sewellstephens/plate-indent';
+import type { LateRenderElementProps } from '@sewell_stephens/late-common/react';
+import type { TIndentElement } from '@sewell_stephens/late-indent';
 
 export const FireMarker = (
   props: Omit<LateRenderElementProps, 'children'>

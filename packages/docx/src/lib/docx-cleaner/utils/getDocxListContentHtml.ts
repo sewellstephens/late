@@ -1,7 +1,7 @@
 import {
   removeHtmlNodesBetweenComments,
   traverseHtmlElements,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 export const getDocxListContentHtml = (rootElement: Element): string => {
   const clonedElement = rootElement.cloneNode(true) as Element;

@@ -4,7 +4,7 @@ import {
   type TDescendant,
   type TElement,
   type TNode,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import papaparse from 'papaparse';
 
 import { type CsvParseOptions, CsvPlugin } from '../../CsvPlugin';

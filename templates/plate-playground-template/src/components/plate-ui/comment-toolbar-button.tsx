@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { useCommentAddButton } from '@sewellstephens/plate-comments';
+import { useCommentAddButton } from '@sewell_stephens/late-comments';
 
 import { Icons } from '@/components/icons';
 

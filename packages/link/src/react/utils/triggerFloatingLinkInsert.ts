@@ -4,7 +4,7 @@ import {
   getEditorString,
   isRangeAcrossBlocks,
   someNode,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { LinkPlugin } from '../LinkPlugin';
 

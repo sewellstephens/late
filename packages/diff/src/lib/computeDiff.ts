@@ -3,7 +3,7 @@
  * contributors. See /packages/diff/LICENSE for more information.
  */
 
-import type { SlateEditor, TDescendant, TElement } from '@sewellstephens/plate-common';
+import type { SlateEditor, TDescendant, TElement } from '@sewell_stephens/late-common';
 
 import type { DiffProps } from './types';
 

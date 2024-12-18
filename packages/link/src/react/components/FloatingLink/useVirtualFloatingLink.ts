@@ -1,8 +1,8 @@
-import { useEditorPlugin } from '@sewellstephens/plate-common/react';
+import { useEditorPlugin } from '@sewell_stephens/late-common/react';
 import {
   type UseVirtualFloatingOptions,
   useVirtualFloating,
-} from '@sewellstephens/plate-floating';
+} from '@sewell_stephens/late-floating';
 
 import { LinkPlugin } from '../../LinkPlugin';
 

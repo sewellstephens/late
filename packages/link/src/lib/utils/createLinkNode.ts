@@ -1,4 +1,4 @@
-import type { SlateEditor, TText } from '@sewellstephens/plate-common';
+import type { SlateEditor, TText } from '@sewell_stephens/late-common';
 
 import type { TLinkElement } from '../types';
 

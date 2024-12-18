@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
-import type { LateEditor } from '@sewellstephens/plate-common/react';
+import type { LateEditor } from '@sewell_stephens/late-common/react';
 
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { createLateTestEditor } from '../../../core/src/react/__tests__/createLateTestEditor';
 import { DatePlugin } from './DatePlugin';

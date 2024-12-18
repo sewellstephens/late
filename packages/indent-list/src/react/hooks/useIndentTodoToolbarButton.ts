@@ -1,4 +1,4 @@
-import { useEditorRef, useEditorSelector } from '@sewellstephens/plate-common/react';
+import { useEditorRef, useEditorSelector } from '@sewell_stephens/late-common/react';
 
 import { ListStyleType, toggleIndentList } from '../../index';
 import { someIndentTodo } from './someIndentTodo';

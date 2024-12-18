@@ -1,11 +1,11 @@
 import React from 'react';
-import { AutoformatRule } from '@sewellstephens/plate-autoformat';
-import { ELEMENT_BLOCKQUOTE } from '@sewellstephens/plate-block-quote';
+import { AutoformatRule } from '@sewell_stephens/late-autoformat';
+import { ELEMENT_BLOCKQUOTE } from '@sewell_stephens/late-block-quote';
 import {
   ELEMENT_CODE_BLOCK,
   ELEMENT_CODE_LINE,
-} from '@sewellstephens/plate-code-block';
-import { TCommentText } from '@sewellstephens/plate-comments';
+} from '@sewell_stephens/late-code-block';
+import { TCommentText } from '@sewell_stephens/late-comments';
 import {
   createLateEditor,
   CreateLateEditorOptions,
@@ -47,11 +47,11 @@ import {
   useEditorRef,
   useEditorState,
   WithOverride,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import {
   ELEMENT_EXCALIDRAW,
   TExcalidrawElement,
-} from '@sewellstephens/plate-excalidraw';
+} from '@sewell_stephens/late-excalidraw';
 import {
   ELEMENT_H1,
   ELEMENT_H2,
@@ -59,35 +59,35 @@ import {
   ELEMENT_H4,
   ELEMENT_H5,
   ELEMENT_H6,
-} from '@sewellstephens/plate-heading';
-import { ELEMENT_HR } from '@sewellstephens/plate-horizontal-rule';
-import { ELEMENT_LINK, TLinkElement } from '@sewellstephens/plate-link';
+} from '@sewell_stephens/late-heading';
+import { ELEMENT_HR } from '@sewell_stephens/late-horizontal-rule';
+import { ELEMENT_LINK, TLinkElement } from '@sewell_stephens/late-link';
 import {
   ELEMENT_LI,
   ELEMENT_OL,
   ELEMENT_TODO_LI,
   ELEMENT_UL,
   TTodoListItemElement,
-} from '@sewellstephens/plate-list';
+} from '@sewell_stephens/late-list';
 import {
   ELEMENT_IMAGE,
   ELEMENT_MEDIA_EMBED,
   TImageElement,
   TMediaEmbedElement,
-} from '@sewellstephens/plate-media';
+} from '@sewell_stephens/late-media';
 import {
   ELEMENT_MENTION,
   ELEMENT_MENTION_INPUT,
   TMentionElement,
   TMentionInputElement,
-} from '@sewellstephens/plate-mention';
-import { ELEMENT_PARAGRAPH } from '@sewellstephens/plate-paragraph';
+} from '@sewell_stephens/late-mention';
+import { ELEMENT_PARAGRAPH } from '@sewell_stephens/late-paragraph';
 import {
   ELEMENT_TABLE,
   ELEMENT_TD,
   ELEMENT_TR,
   TTableElement,
-} from '@sewellstephens/plate-table';
+} from '@sewell_stephens/late-table';
 
 /**
  * Text

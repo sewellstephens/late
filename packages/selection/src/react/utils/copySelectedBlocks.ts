@@ -6,7 +6,7 @@ import {
   getStartPoint,
   select,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import copyToClipboard from 'copy-to-clipboard';
 
 import { BlockSelectionPlugin } from '../BlockSelectionPlugin';

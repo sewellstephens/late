@@ -1,4 +1,4 @@
-import { type PluginConfig, createTSlatePlugin } from '@sewellstephens/plate-common';
+import { type PluginConfig, createTSlatePlugin } from '@sewell_stephens/late-common';
 
 import type { MediaPluginOptions, TMediaElement } from '../media';
 

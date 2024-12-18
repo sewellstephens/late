@@ -1,10 +1,10 @@
 import React from 'react';
-import { withRef } from '@sewellstephens/cn';
+import { withRef } from '@sewell_stephens/cn';
 import {
   ListStyleType,
   useIndentListToolbarButton,
   useIndentListToolbarButtonState,
-} from '@sewellstephens/plate-indent-list';
+} from '@sewell_stephens/late-indent-list';
 
 import { Icons } from '@/components/icons';
 

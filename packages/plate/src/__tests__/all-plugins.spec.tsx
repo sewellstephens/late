@@ -1,29 +1,29 @@
 import React from 'react';
 
 import { render } from '@testing-library/react';
-import { AlignPlugin } from '@sewellstephens/plate-alignment';
-import { AutoformatPlugin } from '@sewellstephens/plate-autoformat';
-import { BasicElementsPlugin } from '@sewellstephens/plate-basic-elements';
-import { BasicMarksPlugin } from '@sewellstephens/plate-basic-marks';
-import { BlockquotePlugin } from '@sewellstephens/plate-block-quote';
-import { ExitBreakPlugin, SoftBreakPlugin } from '@sewellstephens/plate-break';
+import { AlignPlugin } from '@sewell_stephens/late-alignment';
+import { AutoformatPlugin } from '@sewell_stephens/late-autoformat';
+import { BasicElementsPlugin } from '@sewell_stephens/late-basic-elements';
+import { BasicMarksPlugin } from '@sewell_stephens/late-basic-marks';
+import { BlockquotePlugin } from '@sewell_stephens/late-block-quote';
+import { ExitBreakPlugin, SoftBreakPlugin } from '@sewell_stephens/late-break';
 import {
   Late,
   LateContent,
   useLateEditor,
-} from '@sewellstephens/plate-common/react';
-import { HeadingPlugin } from '@sewellstephens/plate-heading';
-import { HighlightPlugin } from '@sewellstephens/plate-highlight';
-import { LinkPlugin } from '@sewellstephens/plate-link';
-import { ListPlugin, TodoListPlugin } from '@sewellstephens/plate-list';
-import { ImagePlugin, MediaEmbedPlugin } from '@sewellstephens/plate-media';
-import { MentionPlugin } from '@sewellstephens/plate-mention';
-import { NodeIdPlugin } from '@sewellstephens/plate-node-id';
-import { NormalizeTypesPlugin } from '@sewellstephens/plate-normalizers';
-import { ResetNodePlugin } from '@sewellstephens/plate-reset-node';
-import { SelectOnBackspacePlugin } from '@sewellstephens/plate-select';
-import { TablePlugin } from '@sewellstephens/plate-table';
-import { TrailingBlockPlugin } from '@sewellstephens/plate-trailing-block';
+} from '@sewell_stephens/late-common/react';
+import { HeadingPlugin } from '@sewell_stephens/late-heading';
+import { HighlightPlugin } from '@sewell_stephens/late-highlight';
+import { LinkPlugin } from '@sewell_stephens/late-link';
+import { ListPlugin, TodoListPlugin } from '@sewell_stephens/late-list';
+import { ImagePlugin, MediaEmbedPlugin } from '@sewell_stephens/late-media';
+import { MentionPlugin } from '@sewell_stephens/late-mention';
+import { NodeIdPlugin } from '@sewell_stephens/late-node-id';
+import { NormalizeTypesPlugin } from '@sewell_stephens/late-normalizers';
+import { ResetNodePlugin } from '@sewell_stephens/late-reset-node';
+import { SelectOnBackspacePlugin } from '@sewell_stephens/late-select';
+import { TablePlugin } from '@sewell_stephens/late-table';
+import { TrailingBlockPlugin } from '@sewell_stephens/late-trailing-block';
 
 function LateContainer() {
   const editor = useLateEditor({

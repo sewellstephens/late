@@ -1,4 +1,4 @@
-import { isUrl } from '@sewellstephens/plate-common';
+import { isUrl } from '@sewell_stephens/late-common';
 
 const imageExtensions = new Set([
   'ase',

@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
-import { IndentListPlugin } from '@sewellstephens/plate-indent-list';
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { IndentListPlugin } from '@sewell_stephens/late-indent-list';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { getDocxTestName, testDocxDeserializer } from './testDocxDeserializer';
 

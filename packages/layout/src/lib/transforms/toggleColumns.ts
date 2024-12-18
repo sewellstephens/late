@@ -3,7 +3,7 @@ import {
   type TElement,
   type TNodeEntry,
   replaceNode,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { ColumnItemPlugin, ColumnPlugin } from '../ColumnPlugin';
 

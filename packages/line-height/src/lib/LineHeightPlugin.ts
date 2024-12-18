@@ -1,4 +1,4 @@
-import { ParagraphPlugin, createSlatePlugin } from '@sewellstephens/plate-common';
+import { ParagraphPlugin, createSlatePlugin } from '@sewell_stephens/late-common';
 
 /**
  * Enables support for text alignment, useful to align your content to left,

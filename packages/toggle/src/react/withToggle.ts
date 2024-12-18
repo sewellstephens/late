@@ -1,12 +1,12 @@
-import type { ExtendEditor } from '@sewellstephens/plate-common/react';
+import type { ExtendEditor } from '@sewell_stephens/late-common/react';
 
 import {
   type SlateEditor,
   getBlockAbove,
   isNode,
   moveNodes,
-} from '@sewellstephens/plate-common';
-import { type TIndentElement, indent } from '@sewellstephens/plate-indent';
+} from '@sewell_stephens/late-common';
+import { type TIndentElement, indent } from '@sewell_stephens/late-indent';
 
 import type { ToggleConfig } from './TogglePlugin';
 

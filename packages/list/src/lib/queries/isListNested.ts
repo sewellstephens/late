@@ -4,7 +4,7 @@ import {
   type SlateEditor,
   type TElement,
   getParentNode,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { ListItemPlugin } from '../ListPlugin';
 

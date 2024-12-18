@@ -1,5 +1,5 @@
-import { type TEditor, getRange } from '@sewellstephens/plate-common';
-import { toDOMRange } from '@sewellstephens/plate-common/react';
+import { type TEditor, getRange } from '@sewell_stephens/late-common';
+import { toDOMRange } from '@sewell_stephens/late-common/react';
 import { type Location, Path, type Range } from 'slate';
 
 import { mergeClientRects } from './mergeClientRects';

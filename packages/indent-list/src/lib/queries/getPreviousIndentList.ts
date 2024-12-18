@@ -5,7 +5,7 @@ import {
   type TNodeEntry,
   getNode,
   getPreviousPath,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import {
   type GetSiblingIndentListOptions,

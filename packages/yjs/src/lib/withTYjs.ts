@@ -1,4 +1,4 @@
-import type { SlateEditor, TOperation } from '@sewellstephens/plate-common';
+import type { SlateEditor, TOperation } from '@sewell_stephens/late-common';
 import type * as Y from 'yjs';
 
 import { type YjsEditor, withYjs } from '@slate-yjs/core';

@@ -1,6 +1,6 @@
 import type { Emoji } from '@emoji-mart/data';
 
-import { type SlateEditor, insertNodes } from '@sewellstephens/plate-common';
+import { type SlateEditor, insertNodes } from '@sewell_stephens/late-common';
 
 import { EmojiPlugin } from '../EmojiPlugin';
 

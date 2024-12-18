@@ -1,4 +1,4 @@
-import { getHtmlComments } from '@sewellstephens/plate-common';
+import { getHtmlComments } from '@sewell_stephens/late-common';
 
 export const getVShapes = (document: Document): Record<string, string> => {
   const comments = getHtmlComments(document);

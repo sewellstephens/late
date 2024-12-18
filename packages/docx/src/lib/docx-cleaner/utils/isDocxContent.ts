@@ -1,4 +1,4 @@
-import { traverseHtmlElements } from '@sewellstephens/plate-common';
+import { traverseHtmlElements } from '@sewell_stephens/late-common';
 
 /**
  * Check if the element contains docx content. True if one element has:

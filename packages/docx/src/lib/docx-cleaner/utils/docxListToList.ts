@@ -1,4 +1,4 @@
-import { parseHtmlElement } from '@sewellstephens/plate-common';
+import { parseHtmlElement } from '@sewell_stephens/late-common';
 
 import { getDocxListContentHtml } from './getDocxListContentHtml';
 import { getDocxListIndent } from './getDocxListIndent';

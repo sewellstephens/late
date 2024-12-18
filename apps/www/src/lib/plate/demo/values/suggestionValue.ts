@@ -1,5 +1,5 @@
-import type { Value } from '@sewellstephens/plate-common';
-import type { SuggestionUser, TSuggestion } from '@sewellstephens/plate-suggestion';
+import type { Value } from '@sewell_stephens/late-common';
+import type { SuggestionUser, TSuggestion } from '@sewell_stephens/late-suggestion';
 
 export const usersData: Record<string, SuggestionUser> = {
   1: {

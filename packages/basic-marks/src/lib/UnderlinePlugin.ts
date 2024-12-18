@@ -1,4 +1,4 @@
-import { createSlatePlugin, someHtmlElement } from '@sewellstephens/plate-common';
+import { createSlatePlugin, someHtmlElement } from '@sewell_stephens/late-common';
 
 /** Enables support for underline formatting. */
 export const UnderlinePlugin = createSlatePlugin({

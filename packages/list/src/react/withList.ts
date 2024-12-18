@@ -1,4 +1,4 @@
-import type { ExtendEditor, LateEditor } from '@sewellstephens/plate-common/react';
+import type { ExtendEditor, LateEditor } from '@sewell_stephens/late-common/react';
 
 import type { ListConfig } from '../lib/ListPlugin';
 

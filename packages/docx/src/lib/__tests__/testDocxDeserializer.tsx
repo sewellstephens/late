@@ -1,23 +1,23 @@
 /** @jsx jsx */
 
-import { AlignPlugin } from '@sewellstephens/plate-alignment';
-import { BasicElementsPlugin } from '@sewellstephens/plate-basic-elements';
-import { BasicMarksPlugin } from '@sewellstephens/plate-basic-marks';
+import { AlignPlugin } from '@sewell_stephens/late-alignment';
+import { BasicElementsPlugin } from '@sewell_stephens/late-basic-elements';
+import { BasicMarksPlugin } from '@sewell_stephens/late-basic-marks';
 import {
   type SlatePlugin,
   type SlatePlugins,
   createSlateEditor,
-} from '@sewellstephens/plate-common';
-import { ParagraphPlugin } from '@sewellstephens/plate-common';
-import { HEADING_KEYS } from '@sewellstephens/plate-heading';
-import { HorizontalRulePlugin } from '@sewellstephens/plate-horizontal-rule';
-import { IndentPlugin } from '@sewellstephens/plate-indent';
-import { JuicePlugin } from '@sewellstephens/plate-juice';
-import { LineHeightPlugin } from '@sewellstephens/plate-line-height';
-import { LinkPlugin } from '@sewellstephens/plate-link';
-import { ImagePlugin } from '@sewellstephens/plate-media';
-import { TablePlugin } from '@sewellstephens/plate-table';
-import { jsx } from '@sewellstephens/plate-test-utils';
+} from '@sewell_stephens/late-common';
+import { ParagraphPlugin } from '@sewell_stephens/late-common';
+import { HEADING_KEYS } from '@sewell_stephens/late-heading';
+import { HorizontalRulePlugin } from '@sewell_stephens/late-horizontal-rule';
+import { IndentPlugin } from '@sewell_stephens/late-indent';
+import { JuicePlugin } from '@sewell_stephens/late-juice';
+import { LineHeightPlugin } from '@sewell_stephens/late-line-height';
+import { LinkPlugin } from '@sewell_stephens/late-link';
+import { ImagePlugin } from '@sewell_stephens/late-media';
+import { TablePlugin } from '@sewell_stephens/late-table';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { DocxPlugin } from '../DocxPlugin';
 import { readTestFile } from './readTestFile';

@@ -1,4 +1,4 @@
-import type { ExtendEditor } from '@sewellstephens/plate-common/react';
+import type { ExtendEditor } from '@sewell_stephens/late-common/react';
 
 import {
   getBlockAbove,
@@ -6,7 +6,7 @@ import {
   getPointBefore,
   getStartPoint,
   isRangeAcrossBlocks,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Range } from 'slate';
 
 import type { TableConfig } from '../lib';

@@ -96,7 +96,7 @@ const nextConfig = async (phase, { defaultConfig }) => {
           return null;
         }
       })
-      .filter((pkg) => pkg?.startsWith('@sewellstephens'));
+      .filter((pkg) => pkg?.startsWith('@sewell_stephens'));
 
     config.transpilePackages = packageNames;
   }

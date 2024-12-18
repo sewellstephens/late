@@ -3,7 +3,7 @@ import {
   type TEditor,
   getNodeEntries,
   isBlock,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 /** Get blocks with an id */
 export const getBlocksWithId = <E extends TEditor>(

@@ -11,7 +11,7 @@ import {
   queryNode,
   removeNodes,
   select,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { SelectOnBackspaceConfig } from './SelectOnBackspacePlugin';
 

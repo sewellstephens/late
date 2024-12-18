@@ -7,7 +7,7 @@ import {
   moveNodes,
   withoutNormalizing,
   wrapNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Path } from 'slate';
 
 import { getListTypes } from '../queries/index';

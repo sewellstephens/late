@@ -7,8 +7,8 @@ import {
   insertNodes,
   someNode,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
-import { selectEditor } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common';
+import { selectEditor } from '@sewell_stephens/late-common/react';
 
 import type { TTableElement } from '../../lib/types';
 

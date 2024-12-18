@@ -1,6 +1,6 @@
 import React from 'react';
-import { cn, withRef } from '@sewellstephens/cn';
-import { getHandler, LateElement } from '@sewellstephens/plate-common';
+import { cn, withRef } from '@sewell_stephens/cn';
+import { getHandler, LateElement } from '@sewell_stephens/late-common';
 import { useFocused, useSelected } from 'slate-react';
 
 export const MentionInputElement = withRef<

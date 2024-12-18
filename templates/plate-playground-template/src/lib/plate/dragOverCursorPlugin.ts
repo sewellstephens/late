@@ -1,4 +1,4 @@
-import { findEventRange, LatePlugin } from '@sewellstephens/plate-common';
+import { findEventRange, LatePlugin } from '@sewell_stephens/late-common';
 
 import { cursorStore } from '@/components/plate-ui/cursor-overlay';
 

@@ -1,9 +1,9 @@
-import type { ExtendConfig } from '@sewellstephens/plate-common';
+import type { ExtendConfig } from '@sewell_stephens/late-common';
 
 import {
   type LateRenderElementProps,
   toTLatePlugin,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import {
   type IndentListConfig as BaseIndentListConfig,

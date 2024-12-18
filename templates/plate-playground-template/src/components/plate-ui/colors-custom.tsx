@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { useColorsCustom, useColorsCustomState } from '@sewellstephens/plate-font';
+import { useColorsCustom, useColorsCustomState } from '@sewell_stephens/late-font';
 
 import { buttonVariants } from '@/components/plate-ui/button';
 import { DropdownMenuItem } from '@/components/plate-ui/dropdown-menu';

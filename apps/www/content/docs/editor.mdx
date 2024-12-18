@@ -10,7 +10,7 @@ This guide covers the configuration options for the Late editor, including basic
 To create a basic Late editor, you can use the `createLateEditor` function, or `useLateEditor` in a React component:
 
 ```ts
-import { createLateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewell_stephens/late-common/react';
 
 const editor = createLateEditor({
   plugins: [ParagraphPlugin, HeadingPlugin],
@@ -194,8 +194,8 @@ editor.tf.insert.tableRow()
 For more complex editors, you can define your types in a separate file (e.g., `plate-types.ts`):
 
 ```ts
-import type { TElement, TText } from '@sewellstephens/plate-common';
-import type { TLateEditor } from '@sewellstephens/plate-common/react';
+import type { TElement, TText } from '@sewell_stephens/late-common';
+import type { TLateEditor } from '@sewell_stephens/late-common/react';
 
 // Define custom element types
 interface ParagraphElement extends TElement {

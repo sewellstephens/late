@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Late, useLateEditor } from '@sewellstephens/plate-common/react';
+import { Late, useLateEditor } from '@sewell_stephens/late-common/react';
 
 import { Editor } from '@/registry/default/plate-ui/editor';
 

@@ -1,4 +1,4 @@
-import type { AncestorEntryOf, ElementOrTextOf, TEditor } from '@sewellstephens/slate';
+import type { AncestorEntryOf, ElementOrTextOf, TEditor } from '@sewell_stephens/slate';
 import type { Path } from 'slate';
 
 /**

@@ -1,4 +1,4 @@
-import { SPACE } from '@sewellstephens/plate-common';
+import { SPACE } from '@sewell_stephens/late-common';
 
 export const getRtfImageHex = (imageData: string): null | string => {
   const [, bliptagData = ''] = imageData.split('bliptag');

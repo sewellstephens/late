@@ -1,4 +1,4 @@
-import { toLatePlugin } from '@sewellstephens/plate-common/react';
+import { toLatePlugin } from '@sewell_stephens/late-common/react';
 
 import { ResetNodePlugin as BaseResetNodePlugin } from '../lib/ResetNodePlugin';
 import { onKeyDownResetNode } from './onKeyDownResetNode';

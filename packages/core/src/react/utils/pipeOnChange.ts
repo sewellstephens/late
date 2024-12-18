@@ -1,4 +1,4 @@
-import type { Value } from '@sewellstephens/slate';
+import type { Value } from '@sewell_stephens/slate';
 
 import type { LateEditor } from '../editor/LateEditor';
 

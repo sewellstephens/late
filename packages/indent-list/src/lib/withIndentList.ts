@@ -5,8 +5,8 @@ import {
   type TElement,
   createPathRef,
   getNode,
-} from '@sewellstephens/plate-common';
-import { IndentPlugin } from '@sewellstephens/plate-indent';
+} from '@sewell_stephens/late-common';
+import { IndentPlugin } from '@sewell_stephens/late-indent';
 
 import { type IndentListConfig, IndentListPlugin } from './IndentListPlugin';
 import {

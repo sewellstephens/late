@@ -1,6 +1,6 @@
 import React from 'react';
 
-import type { TEditor, TElement } from '@sewellstephens/plate-common';
+import type { TEditor, TElement } from '@sewell_stephens/late-common';
 import type { DropTargetMonitor } from 'react-dnd';
 
 import { type DragItemNode, type DropLineDirection, useDndBlock } from '..';

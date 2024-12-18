@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { isDefined } from '@sewellstephens/utils';
+import { isDefined } from '@sewell_stephens/utils';
 import { clsx } from 'clsx';
 
 import { createSlotComponent } from './createSlotComponent';

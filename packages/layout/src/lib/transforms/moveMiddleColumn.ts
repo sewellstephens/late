@@ -5,7 +5,7 @@ import {
   moveNodes,
   removeNodes,
   unwrapNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Node } from 'slate';
 
 import type { TColumnElement } from '../types';

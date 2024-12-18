@@ -16,7 +16,7 @@ import {
   removeNodes,
   unhangCharacterRange,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Point, type Range } from 'slate';
 
 import { SuggestionPlugin } from '../SuggestionPlugin';

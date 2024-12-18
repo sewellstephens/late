@@ -5,7 +5,7 @@ import {
   getEdgePoints,
   getPointAfter,
   getPointBefore,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { SUGGESTION_KEYS } from '../SuggestionPlugin';
 import { findSuggestionNode } from './findSuggestionNode';

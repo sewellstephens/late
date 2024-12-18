@@ -1,7 +1,7 @@
 import {
   createSlatePlugin,
   findHtmlParentElement,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 /** Enables support for code formatting */
 export const CodePlugin = createSlatePlugin({

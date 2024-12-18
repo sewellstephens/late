@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { BasicElementsPlugin } from '@sewellstephens/plate-basic-elements/react';
-import { BasicMarksPlugin } from '@sewellstephens/plate-basic-marks/react';
-import { Late, useLateEditor } from '@sewellstephens/plate-common/react';
-import { HorizontalRulePlugin } from '@sewellstephens/plate-horizontal-rule/react';
-import { ImagePlugin } from '@sewellstephens/plate-media/react';
-import { SelectOnBackspacePlugin } from '@sewellstephens/plate-select';
+import { BasicElementsPlugin } from '@sewell_stephens/late-basic-elements/react';
+import { BasicMarksPlugin } from '@sewell_stephens/late-basic-marks/react';
+import { Late, useLateEditor } from '@sewell_stephens/late-common/react';
+import { HorizontalRulePlugin } from '@sewell_stephens/late-horizontal-rule/react';
+import { ImagePlugin } from '@sewell_stephens/late-media/react';
+import { SelectOnBackspacePlugin } from '@sewell_stephens/late-select';
 
 import { PlaygroundTurnIntoDropdownMenu } from '@/components/plate-ui/playground-turn-into-dropdown-menu';
 import { LateUI } from '@/plate/demo/plate-ui';

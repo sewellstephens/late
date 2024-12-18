@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { getNode } from '@sewellstephens/plate-common';
+import { getNode } from '@sewell_stephens/late-common';
 import {
   toDOMNode,
   useEditorRef,
   useEditorSelector,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import { getHeadingList } from '../../internal/getHeadingList';
 

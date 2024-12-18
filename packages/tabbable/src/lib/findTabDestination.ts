@@ -2,7 +2,7 @@ import {
   type SlateEditor,
   getPoint,
   getPointAfter,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Path } from 'slate';
 
 import type { TabDestination, TabbableEntry } from './types';

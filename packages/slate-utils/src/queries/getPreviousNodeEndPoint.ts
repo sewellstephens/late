@@ -1,6 +1,6 @@
 import type { Path } from 'slate';
 
-import { type TEditor, getEndPoint, getPreviousNode } from '@sewellstephens/slate';
+import { type TEditor, getEndPoint, getPreviousNode } from '@sewell_stephens/slate';
 
 /** Get the end point of the previous node. */
 export const getPreviousNodeEndPoint = (editor: TEditor, at: Path) => {

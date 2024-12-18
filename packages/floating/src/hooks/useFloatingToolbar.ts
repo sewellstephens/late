@@ -4,8 +4,8 @@ import {
   getSelectionText,
   isSelectionExpanded,
   mergeProps,
-} from '@sewellstephens/plate-common';
-import { useEditorSelector } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common';
+import { useEditorSelector } from '@sewell_stephens/late-common/react';
 import { useFocused } from 'slate-react';
 
 import {

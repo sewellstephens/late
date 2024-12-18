@@ -1,4 +1,4 @@
-import { type ExtendEditor, removeNodes } from '@sewellstephens/plate-common';
+import { type ExtendEditor, removeNodes } from '@sewell_stephens/late-common';
 
 export const withSingleLine: ExtendEditor = ({ editor }) => {
   const { normalizeNode } = editor;

@@ -1,4 +1,4 @@
-import { toLatePlugin } from '@sewellstephens/plate-common/react';
+import { toLatePlugin } from '@sewell_stephens/late-common/react';
 
 import { CaptionPlugin as BaseCaptionPlugin } from '../lib/CaptionPlugin';
 import { onKeyDownCaption } from './onKeyDownCaption';

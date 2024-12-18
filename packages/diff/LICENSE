@@ -1,6 +1,6 @@
 # License
 
-Changes introduced by "@sewellstephens/plate-diff" are dual-licensed under the same Apache License 2.0 as `slate-diff`, in addition to the following MIT License:
+Changes introduced by "@sewell_stephens/late-diff" are dual-licensed under the same Apache License 2.0 as `slate-diff`, in addition to the following MIT License:
 
 > The MIT License (MIT)
 > 
@@ -235,7 +235,7 @@ Changes introduced by "@sewellstephens/plate-diff" are dual-licensed under the s
 
 ## diff-match-patch library
 
-`@sewellstephens/plate-diff` is itself a derivative work of "diff-match-patch" by Neil Fraser (https://github.com/GerHobbelt/google-diff-match-patch), used under the following Apache License, Version 2.0:
+`@sewell_stephens/late-diff` is itself a derivative work of "diff-match-patch" by Neil Fraser (https://github.com/GerHobbelt/google-diff-match-patch), used under the following Apache License, Version 2.0:
 
 > Copyright 2006 Google Inc.
 > http://code.google.com/p/google-diff-match-patch/

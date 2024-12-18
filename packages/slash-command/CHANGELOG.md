@@ -1,4 +1,4 @@
-# @sewellstephens/plate-slash-command
+# @sewell_stephens/late-slash-command
 
 ## 37.0.0
 

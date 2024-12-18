@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { getNodeString } from '@sewellstephens/plate-common';
-import { useElement } from '@sewellstephens/plate-common/react';
+import { getNodeString } from '@sewell_stephens/late-common';
+import { useElement } from '@sewell_stephens/late-common/react';
 
 import type { TCaptionElement } from '../../lib';
 

@@ -1,6 +1,6 @@
-import type { UseEmojiPickerType } from '@sewellstephens/plate-emoji/react';
+import type { UseEmojiPickerType } from '@sewell_stephens/late-emoji/react';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import { DeleteIcon, SearchIcon } from 'lucide-react';
 
 import { Button } from './button';

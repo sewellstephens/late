@@ -1,6 +1,6 @@
 import React, { type CSSProperties } from 'react';
 
-import type { LateElementProps } from '@sewellstephens/plate-common/react';
+import type { LateElementProps } from '@sewell_stephens/late-common/react';
 
 import { useFocused, useSelected } from 'slate-react';
 

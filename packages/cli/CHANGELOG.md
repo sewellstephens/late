@@ -1,4 +1,4 @@
-# @sewellstephens/plate-ui
+# @sewell_stephens/late-ui
 
 ## 34.0.2
 
@@ -18,7 +18,7 @@
 
 ### Patch Changes
 
-- [`a350e4364`](https://github.com/sewellstephens/late/commit/a350e436441389471bd5ff633221db71dd6c7241) by [@zbeyens](https://github.com/zbeyens) – `npx @sewellstephens/plate-ui@latest init` should now create `plate-components.json` instead of `components.json`
+- [`a350e4364`](https://github.com/sewellstephens/late/commit/a350e436441389471bd5ff633221db71dd6c7241) by [@zbeyens](https://github.com/zbeyens) – `npx @sewell_stephens/late-ui@latest init` should now create `plate-components.json` instead of `components.json`
 
 ## 30.3.3
 
@@ -36,7 +36,7 @@
 
 ### Patch Changes
 
-- [#2879](https://github.com/sewellstephens/late/pull/2879) by [@zbeyens](https://github.com/zbeyens) – 🔧 add `@sewellstephens/cn` dependency to cli `init`
+- [#2879](https://github.com/sewellstephens/late/pull/2879) by [@zbeyens](https://github.com/zbeyens) – 🔧 add `@sewell_stephens/cn` dependency to cli `init`
 
 ## 30.1.0
 
@@ -51,7 +51,7 @@
 ### Minor Changes
 
 - [#2829](https://github.com/sewellstephens/late/pull/2829) by [@zbeyens](https://github.com/zbeyens) –
-  - Remove `utils` aliases: `@sewellstephens/cn` dependency is now used
+  - Remove `utils` aliases: `@sewell_stephens/cn` dependency is now used
   - Remove `clsx` dependency
 
 ## 28.1.0

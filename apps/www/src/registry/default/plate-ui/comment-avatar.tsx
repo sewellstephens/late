@@ -2,8 +2,8 @@
 
 import React from 'react';
 
-import { CommentsPlugin } from '@sewellstephens/plate-comments/react';
-import { useEditorPlugin } from '@sewellstephens/plate-common/react';
+import { CommentsPlugin } from '@sewell_stephens/late-comments/react';
+import { useEditorPlugin } from '@sewell_stephens/late-common/react';
 
 import { Avatar, AvatarFallback, AvatarImage } from './avatar';
 

@@ -3,7 +3,7 @@ import {
   type TNode,
   type TNodeEntry,
   isText,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 import { Path } from 'slate';
 
 /** Get the last child of a node or null if no children. */

@@ -1,9 +1,9 @@
 'use client';
 
-import { SingleLinePlugin } from '@sewellstephens/plate-break/react';
-import { createZustandStore } from '@sewellstephens/plate-common';
-import { NormalizeTypesPlugin } from '@sewellstephens/plate-normalizers';
-import { SelectOnBackspacePlugin } from '@sewellstephens/plate-select';
+import { SingleLinePlugin } from '@sewell_stephens/late-break/react';
+import { createZustandStore } from '@sewell_stephens/late-common';
+import { NormalizeTypesPlugin } from '@sewell_stephens/late-normalizers';
+import { SelectOnBackspacePlugin } from '@sewell_stephens/late-select';
 import { toast } from 'sonner';
 
 import { type SettingPlugin, customizerItems } from '@/config/customizer-items';

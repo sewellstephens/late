@@ -1,5 +1,5 @@
-const packageJsonLate = require('@sewellstephens/plate/package.json');
-const packageJsonLateCore = require('@sewellstephens/plate-core/package.json');
+const packageJsonLate = require('@sewell_stephens/late/package.json');
+const packageJsonLateCore = require('@sewell_stephens/late-core/package.json');
 
 module.exports = (_plop) => {
   /** @type {import('plop').NodePlopAPI} */
@@ -35,7 +35,7 @@ module.exports = (_plop) => {
     description: 'New package',
     prompts: [
       {
-        message: 'Package name set after @sewellstephens/plate-',
+        message: 'Package name set after @sewell_stephens/late-',
         name: 'name',
         type: 'input',
       },

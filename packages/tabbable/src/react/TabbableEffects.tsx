@@ -7,7 +7,7 @@ import {
   toSlateNode,
   useEditorReadOnly,
   useEditorRef,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import { Path } from 'slate';
 import { tabbable } from 'tabbable';
 

@@ -1,13 +1,13 @@
 'use client';
 
 import React from 'react';
-import { cn, withRef } from '@sewellstephens/cn';
-import { ClassNames, LateElementProps, TEditor } from '@sewellstephens/plate-common';
+import { cn, withRef } from '@sewell_stephens/cn';
+import { ClassNames, LateElementProps, TEditor } from '@sewell_stephens/late-common';
 import {
   DragItemNode,
   useDraggable,
   useDraggableState,
-} from '@sewellstephens/plate-dnd';
+} from '@sewell_stephens/late-dnd';
 import { DropTargetMonitor } from 'react-dnd';
 
 import { Icons } from '@/components/icons';

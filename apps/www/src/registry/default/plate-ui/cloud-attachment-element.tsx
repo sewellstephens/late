@@ -2,15 +2,15 @@
 
 import React from 'react';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import {
   type TCloudAttachmentElement,
   useCloudAttachmentElementState,
-} from '@sewellstephens/plate-cloud';
+} from '@sewell_stephens/late-cloud';
 import {
   LateElement,
   type LateElementProps,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 
 import { Icons } from '@/components/icons';
 

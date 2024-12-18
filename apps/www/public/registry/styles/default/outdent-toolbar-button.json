@@ -1,10 +1,10 @@
 {
   "dependencies": [
-    "@sewellstephens/plate-indent"
+    "@sewell_stephens/late-indent"
   ],
   "files": [
     {
-      "content": "import React from 'react';\n\nimport { withRef } from '@sewellstephens/cn';\nimport { useOutdentButton } from '@sewellstephens/plate-indent/react';\n\nimport { Icons } from '@/components/icons';\n\nimport { ToolbarButton } from './toolbar';\n\nexport const OutdentToolbarButton = withRef<typeof ToolbarButton>(\n  (rest, ref) => {\n    const { props } = useOutdentButton();\n\n    return (\n      <ToolbarButton ref={ref} tooltip=\"Outdent\" {...props} {...rest}>\n        <Icons.outdent />\n      </ToolbarButton>\n    );\n  }\n);\n",
+      "content": "import React from 'react';\n\nimport { withRef } from '@sewell_stephens/cn';\nimport { useOutdentButton } from '@sewell_stephens/late-indent/react';\n\nimport { Icons } from '@/components/icons';\n\nimport { ToolbarButton } from './toolbar';\n\nexport const OutdentToolbarButton = withRef<typeof ToolbarButton>(\n  (rest, ref) => {\n    const { props } = useOutdentButton();\n\n    return (\n      <ToolbarButton ref={ref} tooltip=\"Outdent\" {...props} {...rest}>\n        <Icons.outdent />\n      </ToolbarButton>\n    );\n  }\n);\n",
       "name": "outdent-toolbar-button.tsx"
     }
   ],

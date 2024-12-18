@@ -3,7 +3,7 @@ import {
   collapseSelection,
   getEdgePoints,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { deleteSuggestion } from './deleteSuggestion';
 

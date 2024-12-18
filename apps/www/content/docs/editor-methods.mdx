@@ -18,7 +18,7 @@ Use one of these hooks:
 - `useEditorState`: Re-render on every change.
 
 ```ts
-import { useEditorRef, useEditorSelector, useEditorState } from '@sewellstephens/plate-common/react';
+import { useEditorRef, useEditorSelector, useEditorState } from '@sewell_stephens/late-common/react';
 
 const MyComponent = () => {
   const editor = useEditorRef();
@@ -56,7 +56,7 @@ const MyComponent = () => {
 To access the editor outside the `Late` component or work with multiple editors, use the `LateController` component:
 
 ```ts
-import { LateController } from '@sewellstephens/plate-common/react';
+import { LateController } from '@sewell_stephens/late-common/react';
 
 const App = () => (
   <LateController>

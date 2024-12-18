@@ -1,10 +1,10 @@
 {
   "dependencies": [
-    "@sewellstephens/plate-link"
+    "@sewell_stephens/late-link"
   ],
   "files": [
     {
-      "content": "import React from 'react';\n\nimport type { TLinkElement } from '@sewellstephens/plate-link';\n\nimport { cn, withRef } from '@sewellstephens/cn';\nimport { LateElement, useElement } from '@sewellstephens/plate-common/react';\nimport { useLink } from '@sewellstephens/plate-link/react';\n\nexport const LinkElement = withRef<typeof LateElement>(\n  ({ children, className, ...props }, ref) => {\n    const element = useElement<TLinkElement>();\n    const { props: linkProps } = useLink({ element });\n\n    return (\n      <LateElement\n        asChild\n        className={cn(\n          'font-medium text-primary underline decoration-primary underline-offset-4',\n          className\n        )}\n        ref={ref}\n        {...(linkProps as any)}\n        {...props}\n      >\n        <a>{children}</a>\n      </LateElement>\n    );\n  }\n);\n",
+      "content": "import React from 'react';\n\nimport type { TLinkElement } from '@sewell_stephens/late-link';\n\nimport { cn, withRef } from '@sewell_stephens/cn';\nimport { LateElement, useElement } from '@sewell_stephens/late-common/react';\nimport { useLink } from '@sewell_stephens/late-link/react';\n\nexport const LinkElement = withRef<typeof LateElement>(\n  ({ children, className, ...props }, ref) => {\n    const element = useElement<TLinkElement>();\n    const { props: linkProps } = useLink({ element });\n\n    return (\n      <LateElement\n        asChild\n        className={cn(\n          'font-medium text-primary underline decoration-primary underline-offset-4',\n          className\n        )}\n        ref={ref}\n        {...(linkProps as any)}\n        {...props}\n      >\n        <a>{children}</a>\n      </LateElement>\n    );\n  }\n);\n",
       "name": "link-element.tsx"
     }
   ],

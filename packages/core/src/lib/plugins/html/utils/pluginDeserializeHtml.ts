@@ -1,4 +1,4 @@
-import { type AnyObject, isDefined } from '@sewellstephens/utils';
+import { type AnyObject, isDefined } from '@sewell_stephens/utils';
 import castArray from 'lodash/castArray.js';
 
 import type { SlateEditor } from '../../../editor';

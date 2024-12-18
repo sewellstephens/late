@@ -1,5 +1,5 @@
-import { ExitBreakPlugin } from '@sewellstephens/plate-break/react';
-import { HEADING_LEVELS } from '@sewellstephens/plate-heading';
+import { ExitBreakPlugin } from '@sewell_stephens/late-break/react';
+import { HEADING_LEVELS } from '@sewell_stephens/late-heading';
 
 export const exitBreakPlugin = ExitBreakPlugin.configure({
   options: {

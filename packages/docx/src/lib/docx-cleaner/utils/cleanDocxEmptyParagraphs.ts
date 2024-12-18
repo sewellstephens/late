@@ -1,4 +1,4 @@
-import { NO_BREAK_SPACE, traverseHtmlElements } from '@sewellstephens/plate-common';
+import { NO_BREAK_SPACE, traverseHtmlElements } from '@sewell_stephens/late-common';
 
 const isHtmlOpEmpty = (element: Element): boolean =>
   element.nodeName === 'O:P' && element.textContent === NO_BREAK_SPACE;

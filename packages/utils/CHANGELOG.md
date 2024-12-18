@@ -1,4 +1,4 @@
-# @sewellstephens/utils
+# @sewell_stephens/utils
 
 ## 37.0.0
 

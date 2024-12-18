@@ -1,5 +1,5 @@
 {
-  "name": "@sewellstephens/slate-utils",
+  "name": "@sewell_stephens/slate-utils",
   "version": "0.0.1",
   "description": "Slate utils",
   "keywords": [
@@ -42,8 +42,8 @@
     "typecheck": "yarn p:typecheck"
   },
   "dependencies": {
-    "@sewellstephens/slate": "^0.0.1",
-    "@sewellstephens/utils": "^0.0.1",
+    "@sewell_stephens/slate": "^0.0.1",
+    "@sewell_stephens/utils": "^0.0.1",
     "lodash": "^4.17.21"
   },
   "peerDependencies": {
@@ -52,5 +52,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "3c69df6d17679bbabc43c4cff3370ae8c70ee466"
 }

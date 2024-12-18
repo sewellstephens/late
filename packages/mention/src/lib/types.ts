@@ -1,4 +1,4 @@
-import type { TElement } from '@sewellstephens/plate-common';
+import type { TElement } from '@sewell_stephens/late-common';
 
 export interface TMentionItemBase {
   text: string;

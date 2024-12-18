@@ -1,6 +1,6 @@
 import type React from 'react';
 
-import type { TEditableProps } from '@sewellstephens/slate-react';
+import type { TEditableProps } from '@sewell_stephens/slate-react';
 
 import type { LateEditor } from '../editor/LateEditor';
 import type { DOMHandlers } from '../plugin/DOMHandlers';

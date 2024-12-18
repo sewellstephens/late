@@ -1,13 +1,13 @@
 import type React from 'react';
 
-import type { TRenderElementProps } from '@sewellstephens/slate-react';
+import type { TRenderElementProps } from '@sewell_stephens/slate-react';
 
-import { getEditorPlugin, pipeInjectNodeProps } from '@sewellstephens/plate-common';
+import { getEditorPlugin, pipeInjectNodeProps } from '@sewell_stephens/late-common';
 import {
   type LateEditor,
   type LateProps,
   pluginRenderElement,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import { decode } from 'html-entities';
 
 import { stripClassNames } from '../lib/stripClassNames';

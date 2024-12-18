@@ -5,14 +5,14 @@ import type { Range } from 'slate';
 import {
   CodeBlockPlugin,
   insertEmptyCodeBlock,
-} from '@sewellstephens/plate-code-block';
+} from '@sewell_stephens/late-code-block';
 import {
   ParagraphPlugin,
   getEditorString,
   getRangeFromBlockStart,
-} from '@sewellstephens/plate-common';
-import { createSlateEditor } from '@sewellstephens/plate-common';
-import { jsx } from '@sewellstephens/plate-test-utils';
+} from '@sewell_stephens/late-common';
+import { createSlateEditor } from '@sewell_stephens/late-common';
+import { jsx } from '@sewell_stephens/late-test-utils';
 import {
   getAutoformatOptions,
   preFormat,

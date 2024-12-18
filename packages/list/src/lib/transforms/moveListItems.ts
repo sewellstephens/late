@@ -5,7 +5,7 @@ import {
   getNodeEntries,
   getParentNode,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Path, type PathRef } from 'slate';
 
 import { ListItemContentPlugin } from '../ListPlugin';

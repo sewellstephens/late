@@ -2,7 +2,7 @@ import {
   isHtmlComment,
   removeHtmlNodesBetweenComments,
   traverseHtmlElements,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 /** Remove HTML nodes between comments in the next sibling after BR. */
 export const cleanDocxBrComments = (rootNode: Node): void => {

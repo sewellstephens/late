@@ -1,4 +1,4 @@
-import type { Modify } from '@sewellstephens/utils';
+import type { Modify } from '@sewell_stephens/utils';
 import type { Path } from 'slate';
 
 import {
@@ -9,7 +9,7 @@ import {
   getNode,
   withoutNormalizing,
   wrapNodes,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 import { moveChildren } from './moveChildren';
 

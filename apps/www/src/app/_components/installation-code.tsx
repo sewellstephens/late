@@ -3,7 +3,7 @@ import * as React from 'react';
 import type { ReactNode } from 'react';
 import { Prism, type SyntaxHighlighterProps } from 'react-syntax-highlighter';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import { vscDarkPlus as theme } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import { CopyButton, CopyNpmCommandButton } from '@/components/copy-button';

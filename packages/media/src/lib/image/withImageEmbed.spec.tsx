@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
-import { getEditorPlugin } from '@sewellstephens/plate-common';
-import { createSlateEditor } from '@sewellstephens/plate-common';
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { getEditorPlugin } from '@sewell_stephens/late-common';
+import { createSlateEditor } from '@sewell_stephens/late-common';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { ImagePlugin } from './ImagePlugin';
 import { withImageEmbed } from './withImageEmbed';

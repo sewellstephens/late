@@ -1,4 +1,4 @@
-import { createLateEditor } from '@sewellstephens/plate-common/react';
+import { createLateEditor } from '@sewell_stephens/late-common/react';
 
 import {
   HeadingPlugin,

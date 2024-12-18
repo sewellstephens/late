@@ -1,5 +1,5 @@
-import type { Value } from '@sewellstephens/slate';
-import type { UnionToIntersection } from '@sewellstephens/utils';
+import type { Value } from '@sewell_stephens/slate';
+import type { UnionToIntersection } from '@sewell_stephens/utils';
 import type { EqualityChecker } from 'zustand-x';
 
 import type {

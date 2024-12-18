@@ -1,4 +1,4 @@
-import type { ExtendEditor } from '@sewellstephens/plate-common/react';
+import type { ExtendEditor } from '@sewell_stephens/late-common/react';
 
 import {
   type SlateEditor,
@@ -14,7 +14,7 @@ import {
   replaceNodeChildren,
   select,
   withoutNormalizing,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { Point } from 'slate';
 
 import { type TableConfig, getCellTypes } from '../lib';

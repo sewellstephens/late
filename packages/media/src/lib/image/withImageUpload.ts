@@ -2,7 +2,7 @@ import {
   type ExtendEditor,
   getInjectedPlugins,
   pipeInsertDataQuery,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import type { ImageConfig } from './ImagePlugin';
 

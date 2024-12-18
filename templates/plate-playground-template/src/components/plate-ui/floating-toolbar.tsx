@@ -1,15 +1,15 @@
 'use client';
 
 import React from 'react';
-import { cn, withRef } from '@sewellstephens/cn';
-import { PortalBody, useComposedRef } from '@sewellstephens/plate-common';
+import { cn, withRef } from '@sewell_stephens/cn';
+import { PortalBody, useComposedRef } from '@sewell_stephens/late-common';
 import {
   flip,
   FloatingToolbarState,
   offset,
   useFloatingToolbar,
   useFloatingToolbarState,
-} from '@sewellstephens/plate-floating';
+} from '@sewell_stephens/late-floating';
 
 import { Toolbar } from './toolbar';
 

@@ -4,11 +4,11 @@
 
 import React, { useState } from 'react';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import {
   useCodeBlockCombobox,
   useCodeBlockComboboxState,
-} from '@sewellstephens/plate-code-block/react';
+} from '@sewell_stephens/late-code-block/react';
 // Prism must be imported before all language files
 import Prism from 'prismjs';
 

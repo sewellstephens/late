@@ -4,8 +4,8 @@ import {
   type TEditor,
   collapseSelection,
   isExpanded,
-} from '@sewellstephens/plate-common';
-import { focusEditor } from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common';
+import { focusEditor } from '@sewell_stephens/late-common/react';
 
 import type { UseDropNodeOptions } from '../hooks/useDropNode';
 import type { DragItemNode } from '../types';

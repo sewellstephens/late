@@ -3,7 +3,7 @@
 import * as React from 'react';
 import { DayPicker } from 'react-day-picker';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 import { buttonVariants } from './button';

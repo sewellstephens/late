@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
-import { useHotkeys } from '@sewellstephens/react-hotkeys';
-import { isDefined } from '@sewellstephens/utils';
+import { useHotkeys } from '@sewell_stephens/react-hotkeys';
+import { isDefined } from '@sewell_stephens/utils';
 
 import type { Shortcut } from '../plugin';
 

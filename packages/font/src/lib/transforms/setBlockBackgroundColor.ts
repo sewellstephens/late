@@ -2,7 +2,7 @@ import {
   type SlateEditor,
   type TNodeEntry,
   setNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { FontBackgroundColorPlugin } from '../FontBackgroundColorPlugin';
 

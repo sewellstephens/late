@@ -24,25 +24,25 @@ import {
   useComboboxContext,
   useComboboxStore,
 } from '@ariakit/react';
-import { cn } from '@sewellstephens/cn';
-import { filterWords } from '@sewellstephens/plate-combobox';
+import { cn } from '@sewell_stephens/cn';
+import { filterWords } from '@sewell_stephens/late-combobox';
 import {
   type UseComboboxInputResult,
   useComboboxInput,
   useHTMLInputCursorState,
-} from '@sewellstephens/plate-combobox/react';
+} from '@sewell_stephens/late-combobox/react';
 import {
   type TElement,
   createPointRef,
   getPointBefore,
   insertText,
   moveSelection,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import {
   findNodePath,
   useComposedRef,
   useEditorRef,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import { cva } from 'class-variance-authority';
 
 type FilterFn = (

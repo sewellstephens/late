@@ -4,7 +4,7 @@ import {
   type TEditor,
   type TNodeEntry,
   getEdgePoints,
-} from '@sewellstephens/slate';
+} from '@sewell_stephens/slate';
 
 import { getBlockAbove } from './getBlockAbove';
 

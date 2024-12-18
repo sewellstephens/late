@@ -2,7 +2,7 @@ import React from 'react';
 
 import type { Metadata, Viewport } from 'next';
 
-import { cn } from '@sewellstephens/cn';
+import { cn } from '@sewell_stephens/cn';
 
 import { Analytics } from '@/components/analytics';
 import { Body } from '@/components/body';

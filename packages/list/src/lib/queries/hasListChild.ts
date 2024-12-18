@@ -1,4 +1,4 @@
-import { type SlateEditor, type TAncestor, match } from '@sewellstephens/plate-common';
+import { type SlateEditor, type TAncestor, match } from '@sewell_stephens/late-common';
 
 import { getListTypes } from './getListTypes';
 

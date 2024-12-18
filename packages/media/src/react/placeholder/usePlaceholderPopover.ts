@@ -1,9 +1,9 @@
-import { isSelectionExpanded } from '@sewellstephens/plate-common';
+import { isSelectionExpanded } from '@sewell_stephens/late-common';
 import {
   useEditorRef,
   useEditorSelector,
   useElement,
-} from '@sewellstephens/plate-common/react';
+} from '@sewell_stephens/late-common/react';
 import { useFocused, useReadOnly, useSelected } from 'slate-react';
 
 import type { TPlaceholderElement } from '../../lib/placeholder/types';

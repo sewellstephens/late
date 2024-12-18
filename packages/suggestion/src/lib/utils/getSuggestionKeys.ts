@@ -1,4 +1,4 @@
-import { type TNode, isDefined } from '@sewellstephens/plate-common';
+import { type TNode, isDefined } from '@sewell_stephens/late-common';
 
 import { SuggestionPlugin } from '../SuggestionPlugin';
 

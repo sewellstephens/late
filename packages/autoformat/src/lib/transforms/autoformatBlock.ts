@@ -11,7 +11,7 @@ import {
   isVoid,
   setElements,
   someNode,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import castArray from 'lodash/castArray.js';
 
 import type { AutoformatBlockRule } from '../types';

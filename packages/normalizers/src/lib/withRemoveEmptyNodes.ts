@@ -3,7 +3,7 @@ import {
   getNodeString,
   isElement,
   removeNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import castArray from 'lodash/castArray.js';
 
 import type { RemoveEmptyNodesConfig } from './RemoveEmptyNodesPlugin';

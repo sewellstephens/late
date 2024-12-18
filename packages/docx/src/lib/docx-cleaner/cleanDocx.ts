@@ -7,7 +7,7 @@ import {
   copyBlockMarksToSpanChild,
   postCleanHtml,
   preCleanHtml,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import {
   cleanDocxBrComments,

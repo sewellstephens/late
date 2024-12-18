@@ -6,7 +6,7 @@ import {
   isElement,
   isSelectionAtBlockEnd,
   moveNodes,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { isInClosedToggle } from '../queries';
 

@@ -3,8 +3,8 @@
 import {
   createLateEditor,
   getEditorPlugin,
-} from '@sewellstephens/plate-common/react';
-import { jsx } from '@sewellstephens/plate-test-utils';
+} from '@sewell_stephens/late-common/react';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { SoftBreakPlugin } from '../../SoftBreakPlugin';
 import { onKeyDownSoftBreak } from '../../onKeyDownSoftBreak';

@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
-import type { TEditor } from '@sewellstephens/slate';
+import type { TEditor } from '@sewell_stephens/slate';
 
-import { jsx } from '@sewellstephens/plate-test-utils';
+import { jsx } from '@sewell_stephens/late-test-utils';
 
 import { isRangeAcrossBlocks } from './isRangeAcrossBlocks';
 

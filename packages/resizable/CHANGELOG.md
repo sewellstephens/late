@@ -1,4 +1,4 @@
-# @sewellstephens/plate-resizable
+# @sewell_stephens/late-resizable
 
 ## 37.0.0
 
@@ -27,7 +27,7 @@
 
 ### Patch Changes
 
-- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewellstephens/plate-common` to peerDeps to fix a bug when multiple instances were installed
+- [`4cbed7159`](https://github.com/sewellstephens/late/commit/4cbed7159d51f7427051686e45bcf2a8899aeede) by [@zbeyens](https://github.com/zbeyens) – Move `@sewell_stephens/late-common` to peerDeps to fix a bug when multiple instances were installed
 
 ## 30.4.5
 
@@ -116,9 +116,9 @@
 ### Major Changes
 
 - [#2541](https://github.com/sewellstephens/late/pull/2541) by [@zbeyens](https://github.com/zbeyens) –
-  - Package renamed to `@sewellstephens/plate-resizable`.
+  - Package renamed to `@sewell_stephens/late-resizable`.
   - `ResizeHandle` is now fully headless: no style is applied by default. Add your own `Resizable`, `ResizeHandle` components:
-    - `npx @sewellstephens/plate-ui@latest add resizable`
+    - `npx @sewell_stephens/late-ui@latest add resizable`
 
 ## 22.0.2
 
@@ -158,4 +158,4 @@
 
 ### Patch Changes
 
-- [#2324](https://github.com/sewellstephens/late/pull/2324) by [@dylans](https://github.com/dylans) – Add missing peer dependencies to `@sewellstephens/resizable`
+- [#2324](https://github.com/sewellstephens/late/pull/2324) by [@dylans](https://github.com/dylans) – Add missing peer dependencies to `@sewell_stephens/resizable`

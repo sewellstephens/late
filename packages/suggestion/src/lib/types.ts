@@ -1,4 +1,4 @@
-import type { TText, UnknownObject } from '@sewellstephens/plate-common';
+import type { TText, UnknownObject } from '@sewell_stephens/late-common';
 
 export interface SuggestionUser extends UnknownObject {
   id: string;

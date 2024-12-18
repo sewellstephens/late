@@ -6,7 +6,7 @@ import {
   getNode,
   getParentNode,
   isCollapsed,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import { type Location, type Path, Range } from 'slate';
 
 import { ListItemPlugin } from '../ListPlugin';

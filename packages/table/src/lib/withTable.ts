@@ -1,4 +1,4 @@
-import type { ExtendEditor } from '@sewellstephens/plate-common';
+import type { ExtendEditor } from '@sewell_stephens/late-common';
 
 import type { TableConfig } from './types';
 

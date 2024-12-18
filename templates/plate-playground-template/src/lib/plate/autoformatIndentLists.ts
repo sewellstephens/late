@@ -1,5 +1,5 @@
-import { AutoformatRule } from '@sewellstephens/plate-autoformat';
-import { ListStyleType, toggleIndentList } from '@sewellstephens/plate-indent-list';
+import { AutoformatRule } from '@sewell_stephens/late-autoformat';
+import { ListStyleType, toggleIndentList } from '@sewell_stephens/late-indent-list';
 
 export const autoformatIndentLists: AutoformatRule[] = [
   {

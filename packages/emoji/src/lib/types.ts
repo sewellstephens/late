@@ -1,6 +1,6 @@
 import type { Emoji } from '@emoji-mart/data';
-import type { TriggerComboboxPluginOptions } from '@sewellstephens/plate-combobox';
-import type { TDescendant } from '@sewellstephens/plate-common';
+import type { TriggerComboboxPluginOptions } from '@sewell_stephens/late-combobox';
+import type { TDescendant } from '@sewell_stephens/late-common';
 
 type ReverseMap<T> = T[keyof T];
 

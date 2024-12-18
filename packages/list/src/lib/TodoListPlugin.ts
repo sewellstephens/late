@@ -2,7 +2,7 @@ import {
   type PluginConfig,
   type TElement,
   createTSlatePlugin,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 
 import { withTodoList } from './withTodoList';
 

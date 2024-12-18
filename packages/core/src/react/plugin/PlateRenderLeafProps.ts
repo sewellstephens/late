@@ -1,5 +1,5 @@
-import type { TText } from '@sewellstephens/slate';
-import type { TRenderLeafProps } from '@sewellstephens/slate-react';
+import type { TText } from '@sewell_stephens/slate';
+import type { TRenderLeafProps } from '@sewell_stephens/slate-react';
 
 import type { AnyPluginConfig, PluginConfig } from '../../lib';
 import type { LateRenderNodeProps } from './LateRenderNodeProps';

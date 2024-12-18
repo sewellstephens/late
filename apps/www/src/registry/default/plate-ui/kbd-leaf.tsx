@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { cn, withRef } from '@sewellstephens/cn';
-import { LateLeaf } from '@sewellstephens/plate-common/react';
+import { cn, withRef } from '@sewell_stephens/cn';
+import { LateLeaf } from '@sewell_stephens/late-common/react';
 
 export const KbdLeaf = withRef<typeof LateLeaf>(
   ({ children, className, ...props }, ref) => (

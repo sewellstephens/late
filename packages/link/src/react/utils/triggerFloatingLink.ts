@@ -1,4 +1,4 @@
-import { type SlateEditor, getEditorPlugin } from '@sewellstephens/plate-common';
+import { type SlateEditor, getEditorPlugin } from '@sewell_stephens/late-common';
 
 import { LinkPlugin } from '../LinkPlugin';
 import { triggerFloatingLinkEdit } from './triggerFloatingLinkEdit';

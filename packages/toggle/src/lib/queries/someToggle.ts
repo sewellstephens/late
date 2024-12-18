@@ -1,4 +1,4 @@
-import { type SlateEditor, someNode } from '@sewellstephens/plate-common';
+import { type SlateEditor, someNode } from '@sewell_stephens/late-common';
 
 import { TogglePlugin } from '../TogglePlugin';
 

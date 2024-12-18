@@ -1,12 +1,12 @@
-import { AutoformatRule } from '@sewellstephens/plate-autoformat';
-import { isBlock, setNodes } from '@sewellstephens/plate-common';
+import { AutoformatRule } from '@sewell_stephens/late-autoformat';
+import { isBlock, setNodes } from '@sewell_stephens/late-common';
 import {
   ELEMENT_LI,
   ELEMENT_OL,
   ELEMENT_TODO_LI,
   ELEMENT_UL,
   TTodoListItemElement,
-} from '@sewellstephens/plate-list';
+} from '@sewell_stephens/late-list';
 
 import { formatList, preFormat } from '@/lib/plate/autoformatUtils';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { deselectEditor, useEditorPlugin } from '@sewellstephens/plate-common/react';
+import { deselectEditor, useEditorPlugin } from '@sewell_stephens/late-common/react';
 
 import { SelectionArea } from '../internal';
 import { BlockSelectionPlugin } from './BlockSelectionPlugin';

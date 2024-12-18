@@ -8,7 +8,7 @@ import {
   isDefined,
   queryNode,
   someNode,
-} from '@sewellstephens/plate-common';
+} from '@sewell_stephens/late-common';
 import castArray from 'lodash/castArray.js';
 import cloneDeep from 'lodash/cloneDeep.js';
 
