@@ -32,9 +32,10 @@ export const getRenderNodeProps = ({
         ? plugin.node.props(props as any)
         : plugin.node.props) ?? {};
   }
-  if (!newProps.nodeProps && attributes) {
+  //removed due to xss vulnerability
+  /*if (!newProps.nodeProps && attributes) {
     newProps.nodeProps = attributes;
-  }
+  }*/
 
   props = { ...props, ...newProps };
 
