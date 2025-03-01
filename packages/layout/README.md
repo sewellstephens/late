@@ -1,1 +1,0 @@
-# Late Column plugin
